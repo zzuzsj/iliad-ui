@@ -9,24 +9,23 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
-@import './spectrum-dropdown.css';
 
-sp-popover {
-    display: none;
-}
+import { html } from 'lit-element';
+import { fixture, elementUpdated, expect } from '@open-wc/testing';
 
-#button {
-    border-radius: var(
-        --spectrum-dropdown-button-border-radius,
-        var(--spectrum-global-dimension-size-50)
-    );
-}
+import '..';
+import { SearchWithin } from '..';
 
-#label ~ .dropdown {
-    /* .spectrum-Icon + .spectrum-Dropdown-icon
-        with specificity bump to counteract #label ~ .dropdown elsewhere */
-    margin-left: var(
-        --spectrum-dropdown-icon-gap,
-        var(--spectrum-global-dimension-size-100)
-    );
-}
+describe('SearchWithin', () => {
+    it('loads default search-within accessibly', async () => {
+        const el = await fixture<SearchWithin>(
+            html`
+                <sp-search-within></sp-search-within>
+            `
+        );
+
+        await elementUpdated(el);
+
+        expect(el).to.be.accessible();
+    });
+});

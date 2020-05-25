@@ -9,24 +9,24 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
-@import './spectrum-dropdown.css';
 
-sp-popover {
-    display: none;
-}
+import { html, TemplateResult } from 'lit-html';
 
-#button {
-    border-radius: var(
-        --spectrum-dropdown-button-border-radius,
-        var(--spectrum-global-dimension-size-50)
-    );
-}
+import '../';
+import '@spectrum-web-components/menu/sp-menu-item.js';
 
-#label ~ .dropdown {
-    /* .spectrum-Icon + .spectrum-Dropdown-icon
-        with specificity bump to counteract #label ~ .dropdown elsewhere */
-    margin-left: var(
-        --spectrum-dropdown-icon-gap,
-        var(--spectrum-global-dimension-size-100)
-    );
-}
+export default {
+    title: 'Search Within',
+    component: 'sp-search-within',
+};
+
+export const Default = (): TemplateResult => {
+    return html`
+        <sp-search-within>
+            <sp-menu-item>All</sp-menu-item>
+            <sp-menu-item>Most</sp-menu-item>
+            <sp-menu-item>Some</sp-menu-item>
+            <sp-menu-item>A few</sp-menu-item>
+        </sp-search-within>
+    `;
+};

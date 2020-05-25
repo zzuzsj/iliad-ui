@@ -9,24 +9,18 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
-@import './spectrum-dropdown.css';
 
-sp-popover {
-    display: none;
+export * from './search-within.js';
+
+import { SearchWithin } from './search-within.js';
+
+/* istanbul ignore else */
+if (!customElements.get('sp-search-within')) {
+    customElements.define('sp-search-within', SearchWithin);
 }
 
-#button {
-    border-radius: var(
-        --spectrum-dropdown-button-border-radius,
-        var(--spectrum-global-dimension-size-50)
-    );
-}
-
-#label ~ .dropdown {
-    /* .spectrum-Icon + .spectrum-Dropdown-icon
-        with specificity bump to counteract #label ~ .dropdown elsewhere */
-    margin-left: var(
-        --spectrum-dropdown-icon-gap,
-        var(--spectrum-global-dimension-size-100)
-    );
+declare global {
+    interface HTMLElementTagNameMap {
+        'sp-search-within': SearchWithin;
+    }
 }

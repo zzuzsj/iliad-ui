@@ -186,6 +186,7 @@ export class Menu extends SpectrumElement {
         this.updateSelectedItemIndex();
         const focusInItem = this.menuItems[this.focusInItemIndex] as MenuItem;
         focusInItem.tabIndex = 0;
+        this.dispatchEvent(new Event('items-updates', { bubbles: true }));
     };
 
     public render(): TemplateResult {

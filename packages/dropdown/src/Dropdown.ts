@@ -103,6 +103,9 @@ export class DropdownBase extends Focusable {
     @property({ type: Boolean, reflect: true })
     public quiet = false;
 
+    @property({ type: Boolean, reflect: true })
+    public overflows = false;
+
     @property({ type: String })
     public value = '';
 
@@ -289,7 +292,8 @@ export class DropdownBase extends Focusable {
 
     protected sizePopover(popover: HTMLElement): void {
         // only use `this.offsetWidth` when Standard variant
-        const menuWidth = !this.quiet && `${this.offsetWidth}px`;
+        const menuWidth =
+            !this.quiet && !this.overflows && `${this.offsetWidth}px`;
         if (menuWidth) {
             popover.style.setProperty('width', menuWidth);
         }
@@ -431,6 +435,13 @@ export class DropdownBase extends Focusable {
 
 export class Dropdown extends DropdownBase {
     public static get styles(): CSSResultArray {
-        return [...super.styles, fieldButtonStyles];
+        return [
+            buttonBaseStyles,
+            actionButtonStyles,
+            fieldButtonStyles,
+            dropdownStyles,
+            alertSmallStyles,
+            chevronDownMediumStyles,
+        ];
     }
 }

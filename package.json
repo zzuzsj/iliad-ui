@@ -206,6 +206,8 @@
         "yargs": "^15.1.0"
     },
     "resolutions": {
-        "cssnano/**/postcss-calc": "7.0.0"
+        "cssnano/**/postcss-calc": "7.0.0",
+        "@spectrum-css/typography": "3.0.0-beta.0",
+        "@spectrum-css/vars": "3.0.0-beta.1"
     }
 }
