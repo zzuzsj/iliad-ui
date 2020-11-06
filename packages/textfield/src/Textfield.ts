@@ -14,12 +14,9 @@ import {
     html,
     property,
     CSSResultArray,
-    query,
     TemplateResult,
     PropertyValues,
     nothing,
-    ifDefined,
-    live,
 } from '@spectrum-web-components/base';
 
 import { Focusable } from '@spectrum-web-components/shared/src/focusable.js';
@@ -40,8 +37,9 @@ export class TextfieldBase extends Focusable {
     @property({ type: Boolean, reflect: true })
     public focused = false;
 
-    @query('.input')
-    protected inputElement!: HTMLInputElement | HTMLTextAreaElement;
+    protected get inputElement(): HTMLInputElement | HTMLTextAreaElement {
+        return this.querySelector('input, textarea') as HTMLInputElement;
+    }
 
     @property({ type: Boolean, reflect: true })
     public invalid = false;
@@ -59,16 +57,16 @@ export class TextfieldBase extends Focusable {
     public grows = false;
 
     @property({ type: Number })
-    public maxlength = -1;
+    public maxLength = -1;
 
     @property({ type: Number })
-    public minlength = -1;
+    public minLength = -1;
 
     @property({ type: Boolean, reflect: true })
     public multiline = false;
 
     @property({ type: Boolean, reflect: true })
-    public readonly = false;
+    public readOnly = false;
 
     @property({ type: Boolean, reflect: true })
     public valid = false;
@@ -174,60 +172,64 @@ export class TextfieldBase extends Focusable {
                       <div id="sizer">${this.value}</div>
                   `
                 : nothing}
-            <!-- @ts-ignore -->
-            <textarea
-                aria-label=${this.label || this.placeholder}
-                aria-invalid=${ifDefined(this.invalid || undefined)}
-                class="input"
-                maxlength=${ifDefined(
-                    this.maxlength > -1 ? this.maxlength : undefined
-                )}
-                minlength=${ifDefined(
-                    this.minlength > -1 ? this.minlength : undefined
-                )}
-                pattern=${ifDefined(this.pattern)}
-                placeholder=${this.placeholder}
-                .value=${this.displayValue}
-                @change=${this.onChange}
-                @input=${this.onInput}
-                @focus=${this.onFocus}
-                @blur=${this.onBlur}
-                ?disabled=${this.disabled}
-                ?required=${this.required}
-                ?readonly=${this.readonly}
-                autocomplete=${ifDefined(this.autocomplete)}
-            ></textarea>
+            <slot></slot>
         `;
     }
 
+    // <!-- @ts-ignore -->
+    // <textarea
+    //     aria-label=${this.label || this.placeholder}
+    //     aria-invalid=${ifDefined(this.invalid || undefined)}
+    //     class="input"
+    //     maxlength=${ifDefined(
+    //         this.maxlength > -1 ? this.maxlength : undefined
+    //     )}
+    //     minlength=${ifDefined(
+    //         this.minlength > -1 ? this.minlength : undefined
+    //     )}
+    //     pattern=${ifDefined(this.pattern)}
+    //     placeholder=${this.placeholder}
+    //     .value=${this.displayValue}
+    //     @change=${this.onChange}
+    //     @input=${this.onInput}
+    //     @focus=${this.onFocus}
+    //     @blur=${this.onBlur}
+    //     ?disabled=${this.disabled}
+    //     ?required=${this.required}
+    //     ?readonly=${this.readonly}
+    //     autocomplete=${ifDefined(this.autocomplete)}
+    // ></textarea>
+
     private get renderInput(): TemplateResult {
         return html`
-            <!-- @ts-ignore -->
-            <input
-                type="text"
-                aria-label=${this.label || this.placeholder}
-                aria-invalid=${ifDefined(this.invalid || undefined)}
-                class="input"
-                maxlength=${ifDefined(
-                    this.maxlength > -1 ? this.maxlength : undefined
-                )}
-                minlength=${ifDefined(
-                    this.minlength > -1 ? this.minlength : undefined
-                )}
-                pattern=${ifDefined(this.pattern)}
-                placeholder=${this.placeholder}
-                .value=${live(this.displayValue)}
-                @change=${this.onChange}
-                @input=${this.onInput}
-                @focus=${this.onFocus}
-                @blur=${this.onBlur}
-                ?disabled=${this.disabled}
-                ?required=${this.required}
-                ?readonly=${this.readonly}
-                autocomplete=${ifDefined(this.autocomplete)}
-            />
+            <slot></slot>
         `;
     }
+
+    // <!-- @ts-ignore -->
+    // <input
+    //     type="text"
+    //     aria-label=${this.label || this.placeholder}
+    //     aria-invalid=${ifDefined(this.invalid || undefined)}
+    //     class="input"
+    //     maxlength=${ifDefined(
+    //         this.maxlength > -1 ? this.maxlength : undefined
+    //     )}
+    //     minlength=${ifDefined(
+    //         this.minlength > -1 ? this.minlength : undefined
+    //     )}
+    //     pattern=${ifDefined(this.pattern)}
+    //     placeholder=${this.placeholder}
+    //     .value=${live(this.displayValue)}
+    //     @change=${this.onChange}
+    //     @input=${this.onInput}
+    //     @focus=${this.onFocus}
+    //     @blur=${this.onBlur}
+    //     ?disabled=${this.disabled}
+    //     ?required=${this.required}
+    //     ?readonly=${this.readonly}
+    //     autocomplete=${ifDefined(this.autocomplete)}
+    // />
 
     protected render(): TemplateResult {
         return html`
@@ -236,7 +238,40 @@ export class TextfieldBase extends Focusable {
         `;
     }
 
+    protected firstUpdated(changes: PropertyValues): void {
+        super.firstUpdated(changes);
+        if (!this.inputElement) return;
+        this.inputElement.addEventListener('change', this.onChange.bind(this));
+        this.inputElement.addEventListener('input', this.onInput.bind(this));
+        this.inputElement.addEventListener('focus', this.onFocus.bind(this));
+        this.inputElement.addEventListener('blur', this.onBlur.bind(this));
+    }
+
     protected updated(changedProperties: PropertyValues): void {
+        if (!this.inputElement) return;
+        this.inputElement.setAttribute(
+            'aria-label',
+            this.label || this.placeholder
+        );
+        this.pattern && this.inputElement.setAttribute('pattern', this.pattern);
+        this.inputElement.setAttribute('placeholder', this.placeholder);
+        this.inputElement.value = this.value as string;
+        this.inputElement.disabled = this.disabled;
+        this.inputElement.required = this.required;
+        this.inputElement.readOnly = this.readOnly;
+        if (this.maxLength > -1) {
+            this.inputElement.maxLength = this.maxLength;
+        }
+        if (this.minLength > -1) {
+            this.inputElement.minLength = this.maxLength;
+        }
+        if (this.invalid) {
+            this.inputElement.setAttribute('aria-invalid', 'true');
+        } else {
+            this.inputElement.removeAttribute('aria-invalid');
+        }
+        this.autocomplete &&
+            this.inputElement.setAttribute('autocomplete', this.autocomplete);
         if (
             changedProperties.has('value') ||
             (changedProperties.has('required') && this.required)
@@ -252,9 +287,8 @@ export class TextfieldBase extends Focusable {
                 const regex = new RegExp(`^${this.pattern}$`, 'u');
                 validity = regex.test(this.value.toString());
             }
-            if (typeof this.minlength !== 'undefined') {
-                validity =
-                    validity && this.value.toString().length > this.minlength;
+            if (typeof this.minLength !== 'undefined') {
+                validity = validity && this.value.toString().length > this.minLength;
             }
             this.valid = validity;
             this.invalid = !validity;

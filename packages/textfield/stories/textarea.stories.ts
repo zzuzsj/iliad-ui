@@ -26,13 +26,17 @@ export const Default = (): TemplateResult => {
             multiline
             label="Enter your life story"
             placeholder="Enter your life story"
-        ></sp-textfield>
+        >
+            <textarea></textarea>
+        </sp-textfield>
         <sp-textfield
             multiline
             label="Enter your life story"
             disabled
             placeholder="Enter your life story"
-        ></sp-textfield>
+        >
+            <textarea></textarea>
+        </sp-textfield>
         <sp-textfield
             multiline
             label="Enter your life story"
@@ -41,7 +45,9 @@ export const Default = (): TemplateResult => {
             valid
             value="A valid input"
             placeholder="Enter your life story"
-        ></sp-textfield>
+        >
+            <textarea></textarea>
+        </sp-textfield>
         <sp-textfield
             multiline
             label="Enter your life story"
@@ -50,7 +56,9 @@ export const Default = (): TemplateResult => {
             value="A valid input"
             disabled
             placeholder="Enter your life story"
-        ></sp-textfield>
+        >
+            <textarea></textarea>
+        </sp-textfield>
         <sp-textfield
             multiline
             label="Enter your life story"
@@ -58,7 +66,9 @@ export const Default = (): TemplateResult => {
             required
             value="Not a valid input"
             placeholder="Enter your life story"
-        ></sp-textfield>
+        >
+            <textarea></textarea>
+        </sp-textfield>
         <sp-textfield
             multiline
             label="Enter your life story"
@@ -68,7 +78,9 @@ export const Default = (): TemplateResult => {
             value="Not a valid input"
             disabled
             placeholder="Enter your life story"
-        ></sp-textfield>
+        >
+            <textarea></textarea>
+        </sp-textfield>
     `;
 };
 
@@ -90,5 +102,7 @@ export const readonly = (): TemplateResult => html`
         value="A readonly textarea"
         readonly
         placeholder="Enter your life story"
-    ></sp-textfield>
+    >
+        <textarea></textarea>
+    </sp-textfield>
 `;

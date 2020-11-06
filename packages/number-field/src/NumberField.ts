@@ -407,7 +407,7 @@ export class NumberField extends TextfieldBase {
                               tabindex="-1"
                               ?focused=${this.focused}
                               ?disabled=${this.disabled ||
-                              this.readonly ||
+                              this.readOnly ||
                               (typeof this.max !== 'undefined' &&
                                   this.value === this.max)}
                           >
@@ -422,7 +422,7 @@ export class NumberField extends TextfieldBase {
                               tabindex="-1"
                               ?focused=${this.focused}
                               ?disabled=${this.disabled ||
-                              this.readonly ||
+                              this.readOnly ||
                               (typeof this.min !== 'undefined' &&
                                   this.value === this.min)}
                           >

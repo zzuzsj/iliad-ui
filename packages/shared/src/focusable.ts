@@ -105,10 +105,6 @@ export class Focusable extends FocusVisiblePolyfillMixin(SpectrumElement) {
             // Make element NOT focusable.
             this.setAttribute('tabindex', '-1');
             this.removeAttribute('focusable');
-            if (tabIndex !== -1) {
-                // Cache all NON-`-1` values on the `focusElement`.
-                this.manageFocusElementTabindex(tabIndex);
-            }
             return;
         }
         this.setAttribute('focusable', '');
@@ -134,6 +130,13 @@ export class Focusable extends FocusVisiblePolyfillMixin(SpectrumElement) {
         if (!this.focusElement) {
             // allow setting these values to be async when needed.
             await this.updateComplete;
+        }
+        if (
+            this.disabled &&
+            typeof this.focusElement.disabled === 'undefined'
+        ) {
+            // `focusElement` has no native `disabled` attribute
+            this.setAttribute('tabindex', '-1');
         }
         if (tabIndex === null) {
             this.focusElement.removeAttribute('tabindex');
