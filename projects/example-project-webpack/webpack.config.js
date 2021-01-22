@@ -13,8 +13,8 @@ governing permissions and limitations under the License.
 
 const { resolve, join } = require('path');
 
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
@@ -29,25 +29,18 @@ const IS_DEV_SERVER = process.argv.find((arg) =>
 const OUTPUT_PATH = IS_DEV_SERVER ? resolve('dist') : resolve('dist');
 
 /**
- * === Copy static files configuration
+ * Plugin configuration
  */
-const copyStatics = {
-    copyOthers: [
+const plugins = [
+    new CleanWebpackPlugin(),
+    new CopyPlugin([
         {
             from: 'index.html',
             context: resolve('./src'),
             to: OUTPUT_PATH,
         },
-    ],
-};
-
-/**
- * Plugin configuration
- */
-const plugins = [
-    new CleanWebpackPlugin(),
-    new CopyWebpackPlugin([].concat(copyStatics.copyOthers)),
-    new ExtractTextPlugin('[name].bundle.css'),
+    ]),
+    new MiniCssExtractPlugin(),
 ];
 
 function srcPath(subdir) {
@@ -104,11 +97,8 @@ const shared = (env) => {
         module: {
             rules: [
                 {
-                    test: /\.css$/,
-                    use: ExtractTextPlugin.extract({
-                        fallback: 'style-loader',
-                        use: cssLoaders,
-                    }),
+                    test: /\.css$/i,
+                    use: [MiniCssExtractPlugin.loader, 'css-loader'],
                 },
             ],
         },
