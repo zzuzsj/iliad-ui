@@ -100,6 +100,17 @@ const shared = (env) => {
                     test: /\.css$/i,
                     use: [MiniCssExtractPlugin.loader, 'css-loader'],
                 },
+                {
+                    test: /\.js$/,
+                    exclude: /node_modules\/(?!(@spectrum-web-components)\/).*/,
+                    loader: 'string-replace-loader',
+                    options: {
+                        search: /customElements.define\('(.*)'/,
+                        replace: (_match, p1) =>
+                            `!customElements.get('${p1}') && customElements.define('${p1}'`,
+                        flags: 'g',
+                    },
+                },
             ],
         },
         resolve: {
