@@ -221,6 +221,13 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
 .input:-moz-ui-invalid {
     box-shadow: none; /* .spectrum-Textfield-input:-moz-ui-invalid */
 }
+:host(:dir(ltr)[valid]) .input {
+    padding-right: calc(
+        var(--spectrum-textfield-padding-right) +
+            var(--spectrum-icon-checkmark-medium-width) +
+            var(--spectrum-textfield-success-icon-margin-left)
+    ); /* [dir=ltr] .spectrum-Textfield.is-valid .spectrum-Textfield-input */
+}
 :host([dir='ltr'][valid]) .input {
     padding-right: calc(
         var(--spectrum-textfield-padding-right) +
@@ -228,12 +235,28 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
             var(--spectrum-textfield-success-icon-margin-left)
     ); /* [dir=ltr] .spectrum-Textfield.is-valid .spectrum-Textfield-input */
 }
+:host(:dir(rtl)[valid]) .input {
+    padding-left: calc(
+        var(--spectrum-textfield-padding-right) +
+            var(--spectrum-icon-checkmark-medium-width) +
+            var(--spectrum-textfield-success-icon-margin-left)
+    ); /* [dir=rtl] .spectrum-Textfield.is-valid .spectrum-Textfield-input */
+}
 :host([dir='rtl'][valid]) .input {
     padding-left: calc(
         var(--spectrum-textfield-padding-right) +
             var(--spectrum-icon-checkmark-medium-width) +
             var(--spectrum-textfield-success-icon-margin-left)
     ); /* [dir=rtl] .spectrum-Textfield.is-valid .spectrum-Textfield-input */
+}
+:host(:dir(ltr)[invalid]) .input {
+    padding-right: calc(
+        var(--spectrum-textfield-padding-right) +
+            var(
+                --spectrum-icon-alert-medium-width,
+                var(--spectrum-global-dimension-size-225)
+            ) + var(--spectrum-textfield-error-icon-margin-left)
+    ); /* [dir=ltr] .spectrum-Textfield.is-invalid .spectrum-Textfield-input */
 }
 :host([dir='ltr'][invalid]) .input {
     padding-right: calc(
@@ -243,6 +266,15 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
                 var(--spectrum-global-dimension-size-225)
             ) + var(--spectrum-textfield-error-icon-margin-left)
     ); /* [dir=ltr] .spectrum-Textfield.is-invalid .spectrum-Textfield-input */
+}
+:host(:dir(rtl)[invalid]) .input {
+    padding-left: calc(
+        var(--spectrum-textfield-padding-right) +
+            var(
+                --spectrum-icon-alert-medium-width,
+                var(--spectrum-global-dimension-size-225)
+            ) + var(--spectrum-textfield-error-icon-margin-left)
+    ); /* [dir=rtl] .spectrum-Textfield.is-invalid .spectrum-Textfield-input */
 }
 :host([dir='rtl'][invalid]) .input {
     padding-left: calc(
@@ -264,20 +296,40 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-textarea-padding-bottom)
         calc(var(--spectrum-textarea-padding-left) - 1px);
 }
+:host(:dir(ltr)[quiet]) .input {
+    padding-left: var(
+        --spectrum-textfield-quiet-padding-left
+    ); /* [dir=ltr] .spectrum-Textfield--quiet .spectrum-Textfield-input */
+}
 :host([dir='ltr'][quiet]) .input {
     padding-left: var(
         --spectrum-textfield-quiet-padding-left
     ); /* [dir=ltr] .spectrum-Textfield--quiet .spectrum-Textfield-input */
+}
+:host(:dir(rtl)[quiet]) .input {
+    padding-right: var(
+        --spectrum-textfield-quiet-padding-left
+    ); /* [dir=rtl] .spectrum-Textfield--quiet .spectrum-Textfield-input */
 }
 :host([dir='rtl'][quiet]) .input {
     padding-right: var(
         --spectrum-textfield-quiet-padding-left
     ); /* [dir=rtl] .spectrum-Textfield--quiet .spectrum-Textfield-input */
 }
+:host(:dir(ltr)[quiet]) .input {
+    padding-right: var(
+        --spectrum-textfield-quiet-padding-right
+    ); /* [dir=ltr] .spectrum-Textfield--quiet .spectrum-Textfield-input */
+}
 :host([dir='ltr'][quiet]) .input {
     padding-right: var(
         --spectrum-textfield-quiet-padding-right
     ); /* [dir=ltr] .spectrum-Textfield--quiet .spectrum-Textfield-input */
+}
+:host(:dir(rtl)[quiet]) .input {
+    padding-left: var(
+        --spectrum-textfield-quiet-padding-right
+    ); /* [dir=rtl] .spectrum-Textfield--quiet .spectrum-Textfield-input */
 }
 :host([dir='rtl'][quiet]) .input {
     padding-left: var(
@@ -295,6 +347,14 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
     overflow-y: hidden;
     resize: none;
 }
+:host(:dir(ltr)[invalid][quiet]) .input {
+    padding-right: calc(
+        var(
+                --spectrum-icon-alert-medium-width,
+                var(--spectrum-global-dimension-size-225)
+            ) + var(--spectrum-textfield-quiet-error-icon-margin-left)
+    ); /* [dir=ltr] .is-invalid.spectrum-Textfield--quiet .spectrum-Textfield-input */
+}
 :host([dir='ltr'][invalid][quiet]) .input {
     padding-right: calc(
         var(
@@ -302,6 +362,14 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
                 var(--spectrum-global-dimension-size-225)
             ) + var(--spectrum-textfield-quiet-error-icon-margin-left)
     ); /* [dir=ltr] .is-invalid.spectrum-Textfield--quiet .spectrum-Textfield-input */
+}
+:host(:dir(rtl)[invalid][quiet]) .input {
+    padding-left: calc(
+        var(
+                --spectrum-icon-alert-medium-width,
+                var(--spectrum-global-dimension-size-225)
+            ) + var(--spectrum-textfield-quiet-error-icon-margin-left)
+    ); /* [dir=rtl] .is-invalid.spectrum-Textfield--quiet .spectrum-Textfield-input */
 }
 :host([dir='rtl'][invalid][quiet]) .input {
     padding-left: calc(
@@ -311,11 +379,23 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
             ) + var(--spectrum-textfield-quiet-error-icon-margin-left)
     ); /* [dir=rtl] .is-invalid.spectrum-Textfield--quiet .spectrum-Textfield-input */
 }
+:host(:dir(ltr)[valid][quiet]) .input {
+    padding-right: calc(
+        var(--spectrum-icon-checkmark-medium-width) +
+            var(--spectrum-textfield-quiet-success-icon-margin-left)
+    ); /* [dir=ltr] .is-valid.spectrum-Textfield--quiet .spectrum-Textfield-input */
+}
 :host([dir='ltr'][valid][quiet]) .input {
     padding-right: calc(
         var(--spectrum-icon-checkmark-medium-width) +
             var(--spectrum-textfield-quiet-success-icon-margin-left)
     ); /* [dir=ltr] .is-valid.spectrum-Textfield--quiet .spectrum-Textfield-input */
+}
+:host(:dir(rtl)[valid][quiet]) .input {
+    padding-left: calc(
+        var(--spectrum-icon-checkmark-medium-width) +
+            var(--spectrum-textfield-quiet-success-icon-margin-left)
+    ); /* [dir=rtl] .is-valid.spectrum-Textfield--quiet .spectrum-Textfield-input */
 }
 :host([dir='rtl'][valid][quiet]) .input {
     padding-left: calc(
@@ -327,16 +407,32 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
     pointer-events: all;
     position: absolute; /* .spectrum-Textfield-validationIcon */
 }
+:host(:dir(ltr)[quiet]) .icon {
+    padding-right: 0; /* [dir=ltr] .spectrum-Textfield--quiet .spectrum-Textfield-validationIcon */
+}
 :host([dir='ltr'][quiet]) .icon {
     padding-right: 0; /* [dir=ltr] .spectrum-Textfield--quiet .spectrum-Textfield-validationIcon */
 }
+:host(:dir(rtl)[quiet]) .icon {
+    padding-left: 0; /* [dir=rtl] .spectrum-Textfield--quiet .spectrum-Textfield-validationIcon */
+}
 :host([dir='rtl'][quiet]) .icon {
     padding-left: 0; /* [dir=rtl] .spectrum-Textfield--quiet .spectrum-Textfield-validationIcon */
+}
+:host(:dir(ltr)[invalid]) .icon {
+    right: var(
+        --spectrum-textfield-error-icon-margin-left
+    ); /* [dir=ltr] .spectrum-Textfield.is-invalid .spectrum-Textfield-validationIcon */
 }
 :host([dir='ltr'][invalid]) .icon {
     right: var(
         --spectrum-textfield-error-icon-margin-left
     ); /* [dir=ltr] .spectrum-Textfield.is-invalid .spectrum-Textfield-validationIcon */
+}
+:host(:dir(rtl)[invalid]) .icon {
+    left: var(
+        --spectrum-textfield-error-icon-margin-left
+    ); /* [dir=rtl] .spectrum-Textfield.is-invalid .spectrum-Textfield-validationIcon */
 }
 :host([dir='rtl'][invalid]) .icon {
     left: var(
@@ -353,16 +449,32 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         --spectrum-textfield-error-icon-width
     ); /* .spectrum-Textfield.is-invalid .spectrum-Textfield-validationIcon */
 }
+:host(:dir(ltr)[quiet][invalid]) .icon {
+    right: 0; /* [dir=ltr] .spectrum-Textfield--quiet.spectrum-Textfield.is-invalid .spectrum-Textfield-validationIcon */
+}
 :host([dir='ltr'][quiet][invalid]) .icon {
     right: 0; /* [dir=ltr] .spectrum-Textfield--quiet.spectrum-Textfield.is-invalid .spectrum-Textfield-validationIcon */
 }
+:host(:dir(rtl)[quiet][invalid]) .icon {
+    left: 0; /* [dir=rtl] .spectrum-Textfield--quiet.spectrum-Textfield.is-invalid .spectrum-Textfield-validationIcon */
+}
 :host([dir='rtl'][quiet][invalid]) .icon {
     left: 0; /* [dir=rtl] .spectrum-Textfield--quiet.spectrum-Textfield.is-invalid .spectrum-Textfield-validationIcon */
+}
+:host(:dir(ltr)[valid]) .icon {
+    right: var(
+        --spectrum-textfield-success-icon-margin-left
+    ); /* [dir=ltr] .spectrum-Textfield.is-valid .spectrum-Textfield-validationIcon */
 }
 :host([dir='ltr'][valid]) .icon {
     right: var(
         --spectrum-textfield-success-icon-margin-left
     ); /* [dir=ltr] .spectrum-Textfield.is-valid .spectrum-Textfield-validationIcon */
+}
+:host(:dir(rtl)[valid]) .icon {
+    left: var(
+        --spectrum-textfield-success-icon-margin-left
+    ); /* [dir=rtl] .spectrum-Textfield.is-valid .spectrum-Textfield-validationIcon */
 }
 :host([dir='rtl'][valid]) .icon {
     left: var(
@@ -379,16 +491,32 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         --spectrum-textfield-success-icon-width
     ); /* .spectrum-Textfield.is-valid .spectrum-Textfield-validationIcon */
 }
+:host(:dir(ltr)[quiet][valid]) .icon {
+    right: 0; /* [dir=ltr] .spectrum-Textfield--quiet.spectrum-Textfield.is-valid .spectrum-Textfield-validationIcon */
+}
 :host([dir='ltr'][quiet][valid]) .icon {
     right: 0; /* [dir=ltr] .spectrum-Textfield--quiet.spectrum-Textfield.is-valid .spectrum-Textfield-validationIcon */
 }
+:host(:dir(rtl)[quiet][valid]) .icon {
+    left: 0; /* [dir=rtl] .spectrum-Textfield--quiet.spectrum-Textfield.is-valid .spectrum-Textfield-validationIcon */
+}
 :host([dir='rtl'][quiet][valid]) .icon {
     left: 0; /* [dir=rtl] .spectrum-Textfield--quiet.spectrum-Textfield.is-valid .spectrum-Textfield-validationIcon */
+}
+:host(:dir(ltr)) .icon-workflow {
+    left: var(
+        --spectrum-textfield-error-icon-margin-left
+    ); /* [dir=ltr] .spectrum-Textfield-icon */
 }
 :host([dir='ltr']) .icon-workflow {
     left: var(
         --spectrum-textfield-error-icon-margin-left
     ); /* [dir=ltr] .spectrum-Textfield-icon */
+}
+:host(:dir(rtl)) .icon-workflow {
+    right: var(
+        --spectrum-textfield-error-icon-margin-left
+    ); /* [dir=rtl] .spectrum-Textfield-icon */
 }
 :host([dir='rtl']) .icon-workflow {
     right: var(
@@ -414,11 +542,25 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-global-dimension-size-225)
     );
 }
+:host(:dir(ltr)[quiet]) .icon-workflow {
+    left: 0; /* [dir=ltr] .spectrum-Textfield--quiet .spectrum-Textfield-icon */
+}
 :host([dir='ltr'][quiet]) .icon-workflow {
     left: 0; /* [dir=ltr] .spectrum-Textfield--quiet .spectrum-Textfield-icon */
 }
+:host(:dir(rtl)[quiet]) .icon-workflow {
+    right: 0; /* [dir=rtl] .spectrum-Textfield--quiet .spectrum-Textfield-icon */
+}
 :host([dir='rtl'][quiet]) .icon-workflow {
     right: 0; /* [dir=rtl] .spectrum-Textfield--quiet .spectrum-Textfield-icon */
+}
+:host(:dir(ltr)[quiet]) .icon-workflow ~ .input {
+    padding-left: calc(
+        var(
+                --spectrum-alias-workflow-icon-size-m,
+                var(--spectrum-global-dimension-size-225)
+            ) + var(--spectrum-textfield-quiet-icon-gap)
+    ); /* [dir=ltr] .spectrum-Textfield--quiet .spectrum-Textfield-icon~.spectrum-Textfield-input */
 }
 :host([dir='ltr'][quiet]) .icon-workflow ~ .input {
     padding-left: calc(
@@ -428,6 +570,14 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
             ) + var(--spectrum-textfield-quiet-icon-gap)
     ); /* [dir=ltr] .spectrum-Textfield--quiet .spectrum-Textfield-icon~.spectrum-Textfield-input */
 }
+:host(:dir(rtl)[quiet]) .icon-workflow ~ .input {
+    padding-right: calc(
+        var(
+                --spectrum-alias-workflow-icon-size-m,
+                var(--spectrum-global-dimension-size-225)
+            ) + var(--spectrum-textfield-quiet-icon-gap)
+    ); /* [dir=rtl] .spectrum-Textfield--quiet .spectrum-Textfield-icon~.spectrum-Textfield-input */
+}
 :host([dir='rtl'][quiet]) .icon-workflow ~ .input {
     padding-right: calc(
         var(
@@ -435,6 +585,15 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
                 var(--spectrum-global-dimension-size-225)
             ) + var(--spectrum-textfield-quiet-icon-gap)
     ); /* [dir=rtl] .spectrum-Textfield--quiet .spectrum-Textfield-icon~.spectrum-Textfield-input */
+}
+:host(:dir(ltr)) .icon-workflow + .input {
+    padding-left: calc(
+        var(--spectrum-textfield-error-icon-margin-left) +
+            var(
+                --spectrum-alias-workflow-icon-size-m,
+                var(--spectrum-global-dimension-size-225)
+            ) + var(--spectrum-textfield-icon-gap)
+    ); /* [dir=ltr] .spectrum-Textfield-icon+.spectrum-Textfield-input */
 }
 :host([dir='ltr']) .icon-workflow + .input {
     padding-left: calc(
@@ -444,6 +603,15 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
                 var(--spectrum-global-dimension-size-225)
             ) + var(--spectrum-textfield-icon-gap)
     ); /* [dir=ltr] .spectrum-Textfield-icon+.spectrum-Textfield-input */
+}
+:host(:dir(rtl)) .icon-workflow + .input {
+    padding-right: calc(
+        var(--spectrum-textfield-error-icon-margin-left) +
+            var(
+                --spectrum-alias-workflow-icon-size-m,
+                var(--spectrum-global-dimension-size-225)
+            ) + var(--spectrum-textfield-icon-gap)
+    ); /* [dir=rtl] .spectrum-Textfield-icon+.spectrum-Textfield-input */
 }
 :host([dir='rtl']) .icon-workflow + .input {
     padding-right: calc(

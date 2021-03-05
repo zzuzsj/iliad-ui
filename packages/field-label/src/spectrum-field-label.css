@@ -146,11 +146,23 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
     padding-top: var(--spectrum-fieldlabel-padding-top);
     vertical-align: top;
 }
+:host(:dir(ltr)) .requiredIcon {
+    margin-left: var(
+        --spectrum-fieldlabel-asterisk-gap
+    ); /* [dir=ltr] .spectrum-FieldLabel-requiredIcon */
+    margin-right: 0;
+}
 :host([dir='ltr']) .requiredIcon {
     margin-left: var(
         --spectrum-fieldlabel-asterisk-gap
     ); /* [dir=ltr] .spectrum-FieldLabel-requiredIcon */
     margin-right: 0;
+}
+:host(:dir(rtl)) .requiredIcon {
+    margin-left: 0;
+    margin-right: var(
+        --spectrum-fieldlabel-asterisk-gap
+    ); /* [dir=rtl] .spectrum-FieldLabel-requiredIcon */
 }
 :host([dir='rtl']) .requiredIcon {
     margin-left: 0;
@@ -164,12 +176,26 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         --spectrum-fieldlabel-asterisk-margin-y
     ); /* .spectrum-FieldLabel-requiredIcon */
 }
+:host(:dir(ltr)[side-aligned='start']) {
+    padding-left: 0; /* [dir=ltr] .spectrum-FieldLabel--left */
+    padding-right: var(
+        --spectrum-fieldlabel-side-m-padding-right,
+        var(--spectrum-global-dimension-size-150)
+    );
+}
 :host([dir='ltr'][side-aligned='start']) {
     padding-left: 0; /* [dir=ltr] .spectrum-FieldLabel--left */
     padding-right: var(
         --spectrum-fieldlabel-side-m-padding-right,
         var(--spectrum-global-dimension-size-150)
     );
+}
+:host(:dir(rtl)[side-aligned='start']) {
+    padding-left: var(
+        --spectrum-fieldlabel-side-m-padding-right,
+        var(--spectrum-global-dimension-size-150)
+    );
+    padding-right: 0; /* [dir=rtl] .spectrum-FieldLabel--left */
 }
 :host([dir='rtl'][side-aligned='start']) {
     padding-left: var(
@@ -186,11 +212,23 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-global-dimension-size-100)
     );
 }
+:host(:dir(ltr)[side-aligned='start']) .requiredIcon {
+    margin-left: var(
+        --spectrum-fieldlabel-asterisk-gap
+    ); /* [dir=ltr] .spectrum-FieldLabel--left .spectrum-FieldLabel-requiredIcon */
+    margin-right: 0;
+}
 :host([dir='ltr'][side-aligned='start']) .requiredIcon {
     margin-left: var(
         --spectrum-fieldlabel-asterisk-gap
     ); /* [dir=ltr] .spectrum-FieldLabel--left .spectrum-FieldLabel-requiredIcon */
     margin-right: 0;
+}
+:host(:dir(rtl)[side-aligned='start']) .requiredIcon {
+    margin-left: 0;
+    margin-right: var(
+        --spectrum-fieldlabel-asterisk-gap
+    ); /* [dir=rtl] .spectrum-FieldLabel--left .spectrum-FieldLabel-requiredIcon */
 }
 :host([dir='rtl'][side-aligned='start']) .requiredIcon {
     margin-left: 0;
@@ -205,11 +243,24 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-global-dimension-size-50)
     ); /* .spectrum-FieldLabel--left .spectrum-FieldLabel-requiredIcon */
 }
+:host(:dir(ltr)[side-aligned='end']) {
+    text-align: right; /* [dir=ltr] .spectrum-FieldLabel--right */
+}
 :host([dir='ltr'][side-aligned='end']) {
     text-align: right; /* [dir=ltr] .spectrum-FieldLabel--right */
 }
+:host(:dir(rtl)[side-aligned='end']) {
+    text-align: left; /* [dir=rtl] .spectrum-FieldLabel--right */
+}
 :host([dir='rtl'][side-aligned='end']) {
     text-align: left; /* [dir=rtl] .spectrum-FieldLabel--right */
+}
+:host(:dir(ltr)[side-aligned='end']) {
+    padding-left: 0; /* [dir=ltr] .spectrum-FieldLabel--right */
+    padding-right: var(
+        --spectrum-fieldlabel-side-m-padding-right,
+        var(--spectrum-global-dimension-size-150)
+    );
 }
 :host([dir='ltr'][side-aligned='end']) {
     padding-left: 0; /* [dir=ltr] .spectrum-FieldLabel--right */
@@ -217,6 +268,13 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         --spectrum-fieldlabel-side-m-padding-right,
         var(--spectrum-global-dimension-size-150)
     );
+}
+:host(:dir(rtl)[side-aligned='end']) {
+    padding-left: var(
+        --spectrum-fieldlabel-side-m-padding-right,
+        var(--spectrum-global-dimension-size-150)
+    );
+    padding-right: 0; /* [dir=rtl] .spectrum-FieldLabel--right */
 }
 :host([dir='rtl'][side-aligned='end']) {
     padding-left: var(

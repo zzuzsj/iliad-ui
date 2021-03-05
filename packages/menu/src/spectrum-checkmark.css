@@ -16,11 +16,25 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
     opacity: 1; /* .spectrum-Menu-checkmark */
     transform: scale(1); /* .spectrum-Menu-checkmark */
 }
+:host(:dir(ltr)) .checkmark {
+    margin-left: var(
+        --spectrum-listitem-icon-gap
+    ); /* [dir=ltr] .spectrum-Menu-checkmark,
+   * [dir=ltr] 
+.spectrum-Menu-chevron */
+}
 :host([dir='ltr']) .checkmark {
     margin-left: var(
         --spectrum-listitem-icon-gap
     ); /* [dir=ltr] .spectrum-Menu-checkmark,
    * [dir=ltr] 
+.spectrum-Menu-chevron */
+}
+:host(:dir(rtl)) .checkmark {
+    margin-right: var(
+        --spectrum-listitem-icon-gap
+    ); /* [dir=rtl] .spectrum-Menu-checkmark,
+   * [dir=rtl] 
 .spectrum-Menu-chevron */
 }
 :host([dir='rtl']) .checkmark {
