@@ -16,12 +16,14 @@ import '@spectrum-web-components/theme/src/diet/core.js';
 import '@spectrum-web-components/theme/diet/theme-light.js';
 import '@spectrum-web-components/theme/diet/scale-medium.js';
 
+import '@spectrum-web-components/theme/theme-dark';
+import '@spectrum-web-components/theme/theme-light';
+
+import '@spectrum-web-components/theme/scale-medium';
+
 // import the components we'll use in this page
+import '@spectrum-web-components/action-button/sp-action-button';
+import '@spectrum-web-components/action-group/sp-action-group.js';
 import '@spectrum-web-components/button/sp-button';
 import '@spectrum-web-components/field-label/sp-field-label';
-// use the following import to chunk your build at the async boundary infront of the Overlay package
-import '@spectrum-web-components/picker/sp-picker';
-// use the following import to chunk your build as defaulted in the Rollup config.
-// import '@spectrum-web-components/picker/sync/sp-picker';
-import '@spectrum-web-components/menu/sp-menu';
-import '@spectrum-web-components/menu/sp-menu-item';
+import '@spectrum-web-components/textfield/sp-textfield';

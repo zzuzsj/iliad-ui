@@ -1,0 +1,11 @@
+{
+  "name": "@spectrum-css/dieticons",
+  "version": "1.0.0",
+  "description": "Diet variants of Spectrum Workflow Icons",
+  "license": "Apache-2.0",
+  "author": "Garth Braithwaite <garthdb@gmail.com> (http://garthdb.com/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
