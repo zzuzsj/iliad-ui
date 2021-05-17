@@ -11,7 +11,6 @@ governing permissions and limitations under the License.
 
 THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
 #label {
-    /* .spectrum-TreeView-itemLabel */
-    overflow: hidden;
+    overflow: hidden; /* .spectrum-TreeView-itemLabel */
     text-overflow: ellipsis;
 }

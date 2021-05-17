@@ -11,10 +11,9 @@ governing permissions and limitations under the License.
 
 THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
 :host {
-    /* .spectrum-TreeView */
     --spectrum-treeview-item-min-height: var(
         --spectrum-global-dimension-size-400
-    );
+    ); /* .spectrum-TreeView */
     --spectrum-treeview-item-padding-y: var(
         --spectrum-global-dimension-size-75
     );
@@ -41,33 +40,35 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
     --spectrum-treeview-item-height-layers: var(
         --spectrum-global-dimension-size-550
     );
-    display: block;
-    position: relative;
-    padding: 0;
+}
+:host {
+    display: block; /* .spectrum-TreeView */
     list-style: none;
     outline: none;
+    padding: 0;
+    position: relative;
     -webkit-user-select: none;
     user-select: none;
 }
 :host([dir='ltr']) ::slotted(sp-tree-view) {
-    /* [dir=ltr] .spectrum-TreeView .spectrum-TreeView */
-    padding-left: var(--spectrum-treeview-item-indentation);
+    padding-left: var(
+        --spectrum-treeview-item-indentation
+    ); /* [dir=ltr] .spectrum-TreeView .spectrum-TreeView */
 }
 :host([dir='rtl']) ::slotted(sp-tree-view) {
-    /* [dir=rtl] .spectrum-TreeView .spectrum-TreeView */
-    padding-right: var(--spectrum-treeview-item-indentation);
+    padding-right: var(
+        --spectrum-treeview-item-indentation
+    ); /* [dir=rtl] .spectrum-TreeView .spectrum-TreeView */
 }
 sp-tree-view {
-    /* .spectrum-TreeView .spectrum-TreeView */
-    position: static;
     height: 0;
+    position: static; /* .spectrum-TreeView .spectrum-TreeView */
     visibility: hidden;
 }
 :host {
-    /* .spectrum-TreeView */
     --spectrum-treeview-item-background-color-selected: var(
         --spectrum-alias-highlight-selected
-    );
+    ); /* .spectrum-TreeView */
     --spectrum-treeview-item-background-color-quiet-selected: var(
         --spectrum-alias-highlight-hover
     );

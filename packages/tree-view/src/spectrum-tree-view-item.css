@@ -11,330 +11,361 @@ governing permissions and limitations under the License.
 
 THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
 :host {
-    /* .spectrum-TreeView-item */
-    overflow: hidden;
+    overflow: hidden; /* .spectrum-TreeView-item */
 }
 :host([dir='ltr'][open]) > .link > #indicator {
-    /* [dir=ltr] .spectrum-TreeView-item.is-open>.spectrum-TreeView-itemLink>.spectrum-TreeView-itemIndicator */
-    transform: rotate(90deg);
+    transform: rotate(
+        90deg
+    ); /* [dir=ltr] .spectrum-TreeView-item.is-open>.spectrum-TreeView-itemLink>.spectrum-TreeView-itemIndicator */
 }
 :host([dir='rtl'][open]) > .link > #indicator {
-    /* [dir=rtl] .spectrum-TreeView-item.is-open>.spectrum-TreeView-itemLink>.spectrum-TreeView-itemIndicator */
-    transform: matrix(-1, 0, 0, 1, 0, 0) rotate(90deg);
+    transform: matrix(-1, 0, 0, 1, 0, 0) rotate(90deg); /* [dir=rtl] .spectrum-TreeView-item.is-open>.spectrum-TreeView-itemLink>.spectrum-TreeView-itemIndicator */
 }
 :host([open]) > ::slotted([slot='children']) {
-    /* .spectrum-TreeView-item.is-open>.spectrum-TreeView */
-    height: auto;
+    height: auto; /* .spectrum-TreeView-item.is-open>.spectrum-TreeView */
     visibility: visible;
 }
 :host([drop-target]) .link:before {
-    /* .spectrum-TreeView-item.is-drop-target .spectrum-TreeView-itemLink:before */
     border-width: var(
         --spectrum-treeview-item-border-size,
         var(--spectrum-global-dimension-static-size-25)
-    );
+    ); /* .spectrum-TreeView-item.is-drop-target .spectrum-TreeView-itemLink:before */
 }
 :host([selected]) .link:not(:focus-visible):before {
-    /* .spectrum-TreeView-item.is-selected .spectrum-TreeView-itemLink:not(.focus-ring):before */
-    border-width: var(--spectrum-treeview-item-border-size-selected);
+    border-width: var(
+        --spectrum-treeview-item-border-size-selected
+    ); /* .spectrum-TreeView-item.is-selected .spectrum-TreeView-itemLink:not(.focus-ring):before */
 }
 .link {
-    /* .spectrum-TreeView-itemLink */
-    display: flex;
-    flex-direction: row;
     align-items: center;
     box-sizing: border-box;
     cursor: pointer;
+    display: flex; /* .spectrum-TreeView-itemLink */
+    flex-direction: row;
+    height: var(--spectrum-treeview-item-min-height);
+    outline: none;
+    overflow: hidden;
     padding: var(
             --spectrum-treeview-item-padding-y,
             var(--spectrum-global-dimension-static-size-100)
         )
         var(--spectrum-treeview-item-affordance-width);
     text-decoration: none;
-    height: var(--spectrum-treeview-item-min-height);
     white-space: nowrap;
-    overflow: hidden;
-    outline: none;
 }
 :host([dir='ltr']) .link ::slotted([slot='icon']) {
-    /* [dir=ltr] .spectrum-TreeView-itemLink .spectrum-TreeView-itemIcon */
-    margin-right: var(--spectrum-treeview-item-icon-margin-right);
+    margin-right: var(
+        --spectrum-treeview-item-icon-margin-right
+    ); /* [dir=ltr] .spectrum-TreeView-itemLink .spectrum-TreeView-itemIcon */
 }
 :host([dir='rtl']) .link ::slotted([slot='icon']) {
-    /* [dir=rtl] .spectrum-TreeView-itemLink .spectrum-TreeView-itemIcon */
-    margin-left: var(--spectrum-treeview-item-icon-margin-right);
+    margin-left: var(
+        --spectrum-treeview-item-icon-margin-right
+    ); /* [dir=rtl] .spectrum-TreeView-itemLink .spectrum-TreeView-itemIcon */
 }
 .link ::slotted([slot='icon']) {
-    /* .spectrum-TreeView-itemLink .spectrum-TreeView-itemIcon */
-    vertical-align: top;
+    vertical-align: top; /* .spectrum-TreeView-itemLink .spectrum-TreeView-itemIcon */
 }
 :host([dir='ltr']) .link:before {
-    /* [dir=ltr] .spectrum-TreeView-itemLink:before */
     left: var(
         --spectrum-treeview-item-border-size,
         var(--spectrum-global-dimension-static-size-25)
-    );
+    ); /* [dir=ltr] .spectrum-TreeView-itemLink:before */
 }
 :host([dir='rtl']) .link:before {
-    /* [dir=rtl] .spectrum-TreeView-itemLink:before */
     right: var(
         --spectrum-treeview-item-border-size,
         var(--spectrum-global-dimension-static-size-25)
-    );
+    ); /* [dir=rtl] .spectrum-TreeView-itemLink:before */
 }
 :host([dir='ltr']) .link:before {
-    /* [dir=ltr] .spectrum-TreeView-itemLink:before */
-    right: 0;
+    right: 0; /* [dir=ltr] .spectrum-TreeView-itemLink:before */
 }
 :host([dir='rtl']) .link:before {
-    /* [dir=rtl] .spectrum-TreeView-itemLink:before */
-    left: 0;
+    left: 0; /* [dir=rtl] .spectrum-TreeView-itemLink:before */
 }
 .link:before {
-    /* .spectrum-TreeView-itemLink:before */
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    height: calc(
-        var(
-                --spectrum-treeview-item-height,
-                var(--spectrum-global-dimension-size-450)
-            ) - var(--spectrum-treeview-item-hover-offset) * 2
-    );
-    border-left: 0 solid transparent;
+    background-color: transparent;
     border-bottom: var(
             --spectrum-treeview-item-border-size,
             var(--spectrum-global-dimension-static-size-25)
         )
         solid transparent;
+    border-left: 0 solid transparent;
     border-right: 0 solid transparent;
     border-top: var(
             --spectrum-treeview-item-border-size,
             var(--spectrum-global-dimension-static-size-25)
         )
         solid transparent;
-    background-color: initial;
+    box-sizing: border-box;
+    content: ''; /* .spectrum-TreeView-itemLink:before */
+    height: calc(
+        var(
+                --spectrum-treeview-item-height,
+                var(--spectrum-global-dimension-size-450)
+            ) - var(--spectrum-treeview-item-hover-offset) * 2
+    );
+    position: absolute;
 }
 .link:focus-visible:before {
-    /* .spectrum-TreeView--standalone .spectrum-TreeView-itemLink:before,
-   * .spectrum-TreeView-itemLink.focus-ring:before */
     border-width: var(
         --spectrum-treeview-item-border-size,
         var(--spectrum-global-dimension-static-size-25)
-    );
+    ); /* .spectrum-TreeView-itemLink.focus-ring:before */
 }
 :host([dir='ltr']) ::slotted([slot='thumbnail']) {
-    /* [dir=ltr] .spectrum-TreeView--thumbnail .spectrum-TreeView-itemThumbnail */
-    margin-right: var(--spectrum-treeview-item-icon-margin-right);
+    margin-right: var(
+        --spectrum-treeview-item-icon-margin-right
+    ); /* [dir=ltr] .spectrum-TreeView--thumbnail .spectrum-TreeView-itemThumbnail */
 }
 :host([dir='rtl']) ::slotted([slot='thumbnail']) {
-    /* [dir=rtl] .spectrum-TreeView--thumbnail .spectrum-TreeView-itemThumbnail */
-    margin-left: var(--spectrum-treeview-item-icon-margin-right);
+    margin-left: var(
+        --spectrum-treeview-item-icon-margin-right
+    ); /* [dir=rtl] .spectrum-TreeView--thumbnail .spectrum-TreeView-itemThumbnail */
 }
 :host([dir='ltr']) #indicator {
-    /* [dir=ltr] .spectrum-TreeView-itemIndicator */
-    float: left;
+    float: left; /* [dir=ltr] .spectrum-TreeView-itemIndicator */
 }
 :host([dir='rtl']) #indicator {
-    /* [dir=rtl] .spectrum-TreeView-itemIndicator */
-    float: right;
+    float: right; /* [dir=rtl] .spectrum-TreeView-itemIndicator */
 }
 :host([dir='ltr']) #indicator {
-    /* [dir=ltr] .spectrum-TreeView-itemIndicator */
-    left: var(--spectrum-global-dimension-size-125);
+    left: var(
+        --spectrum-global-dimension-size-125
+    ); /* [dir=ltr] .spectrum-TreeView-itemIndicator */
 }
 :host([dir='rtl']) #indicator {
-    /* [dir=rtl] .spectrum-TreeView-itemIndicator */
-    right: var(--spectrum-global-dimension-size-125);
+    right: var(
+        --spectrum-global-dimension-size-125
+    ); /* [dir=rtl] .spectrum-TreeView-itemIndicator */
 }
 :host([dir='ltr']) #indicator {
-    /* [dir=ltr] .spectrum-TreeView-itemIndicator */
-    margin-left: calc(-1 * var(--spectrum-global-dimension-size-500));
+    margin-left: calc(
+        -1 * var(--spectrum-global-dimension-size-500)
+    ); /* [dir=ltr] .spectrum-TreeView-itemIndicator */
 }
 :host([dir='rtl']) #indicator {
-    /* [dir=rtl] .spectrum-TreeView-itemIndicator */
-    margin-right: calc(-1 * var(--spectrum-global-dimension-size-500));
+    margin-right: calc(
+        -1 * var(--spectrum-global-dimension-size-500)
+    ); /* [dir=rtl] .spectrum-TreeView-itemIndicator */
 }
 :host([dir='ltr']) #indicator {
-    /* [dir=ltr] .spectrum-TreeView-itemIndicator */
-    margin-right: var(--spectrum-global-dimension-size-85);
+    margin-right: var(
+        --spectrum-global-dimension-size-85
+    ); /* [dir=ltr] .spectrum-TreeView-itemIndicator */
 }
 :host([dir='rtl']) #indicator {
-    /* [dir=rtl] .spectrum-TreeView-itemIndicator */
-    margin-left: var(--spectrum-global-dimension-size-85);
-    transform: matrix(-1, 0, 0, 1, 0, 0);
+    margin-left: var(
+        --spectrum-global-dimension-size-85
+    ); /* [dir=rtl] .spectrum-TreeView-itemIndicator */
+}
+:host([dir='rtl']) #indicator {
+    transform: matrix(
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0
+    ); /* [dir=rtl] .spectrum-TreeView-itemIndicator */
 }
 #indicator {
-    /* .spectrum-TreeView-itemIndicator */
-    display: block;
-    box-sizing: initial;
-    position: relative;
-    z-index: 1;
-    top: calc(-1 * var(--spectrum-global-dimension-size-65));
+    box-sizing: content-box;
+    display: block; /* .spectrum-TreeView-itemIndicator */
     margin-bottom: calc(-1 * var(--spectrum-global-dimension-size-125));
     padding: var(--spectrum-global-dimension-size-125)
         var(--spectrum-global-dimension-size-150);
+    pointer-events: all !important;
+    position: relative;
+    top: calc(-1 * var(--spectrum-global-dimension-size-65));
     transition: transform ease
         var(--spectrum-global-animation-duration-100, 0.13s);
-    pointer-events: all !important;
+    z-index: 1;
 }
 :host([dir='ltr'][indent='1']) {
-    /* [dir=ltr] .spectrum-TreeView-item--indent1 */
-    padding-left: var(--spectrum-treeview-item-indentation);
+    padding-left: var(
+        --spectrum-treeview-item-indentation
+    ); /* [dir=ltr] .spectrum-TreeView-item--indent1 */
 }
 :host([dir='rtl'][indent='1']) {
-    /* [dir=rtl] .spectrum-TreeView-item--indent1 */
-    padding-right: var(--spectrum-treeview-item-indentation);
+    padding-right: var(
+        --spectrum-treeview-item-indentation
+    ); /* [dir=rtl] .spectrum-TreeView-item--indent1 */
 }
 :host([dir='ltr'][indent='2']) {
-    /* [dir=ltr] .spectrum-TreeView-item--indent2 */
-    padding-left: calc(2 * var(--spectrum-treeview-item-indentation));
+    padding-left: calc(
+        2 * var(--spectrum-treeview-item-indentation)
+    ); /* [dir=ltr] .spectrum-TreeView-item--indent2 */
 }
 :host([dir='rtl'][indent='2']) {
-    /* [dir=rtl] .spectrum-TreeView-item--indent2 */
-    padding-right: calc(2 * var(--spectrum-treeview-item-indentation));
+    padding-right: calc(
+        2 * var(--spectrum-treeview-item-indentation)
+    ); /* [dir=rtl] .spectrum-TreeView-item--indent2 */
 }
 :host([dir='ltr'][indent='3']) {
-    /* [dir=ltr] .spectrum-TreeView-item--indent3 */
-    padding-left: calc(3 * var(--spectrum-treeview-item-indentation));
+    padding-left: calc(
+        3 * var(--spectrum-treeview-item-indentation)
+    ); /* [dir=ltr] .spectrum-TreeView-item--indent3 */
 }
 :host([dir='rtl'][indent='3']) {
-    /* [dir=rtl] .spectrum-TreeView-item--indent3 */
-    padding-right: calc(3 * var(--spectrum-treeview-item-indentation));
+    padding-right: calc(
+        3 * var(--spectrum-treeview-item-indentation)
+    ); /* [dir=rtl] .spectrum-TreeView-item--indent3 */
 }
 :host([dir='ltr'][indent='4']) {
-    /* [dir=ltr] .spectrum-TreeView-item--indent4 */
-    padding-left: calc(4 * var(--spectrum-treeview-item-indentation));
+    padding-left: calc(
+        4 * var(--spectrum-treeview-item-indentation)
+    ); /* [dir=ltr] .spectrum-TreeView-item--indent4 */
 }
 :host([dir='rtl'][indent='4']) {
-    /* [dir=rtl] .spectrum-TreeView-item--indent4 */
-    padding-right: calc(4 * var(--spectrum-treeview-item-indentation));
+    padding-right: calc(
+        4 * var(--spectrum-treeview-item-indentation)
+    ); /* [dir=rtl] .spectrum-TreeView-item--indent4 */
 }
 :host([dir='ltr'][indent='5']) {
-    /* [dir=ltr] .spectrum-TreeView-item--indent5 */
-    padding-left: calc(5 * var(--spectrum-treeview-item-indentation));
+    padding-left: calc(
+        5 * var(--spectrum-treeview-item-indentation)
+    ); /* [dir=ltr] .spectrum-TreeView-item--indent5 */
 }
 :host([dir='rtl'][indent='5']) {
-    /* [dir=rtl] .spectrum-TreeView-item--indent5 */
-    padding-right: calc(5 * var(--spectrum-treeview-item-indentation));
+    padding-right: calc(
+        5 * var(--spectrum-treeview-item-indentation)
+    ); /* [dir=rtl] .spectrum-TreeView-item--indent5 */
 }
 :host([dir='ltr'][indent='6']) {
-    /* [dir=ltr] .spectrum-TreeView-item--indent6 */
-    padding-left: calc(6 * var(--spectrum-treeview-item-indentation));
+    padding-left: calc(
+        6 * var(--spectrum-treeview-item-indentation)
+    ); /* [dir=ltr] .spectrum-TreeView-item--indent6 */
 }
 :host([dir='rtl'][indent='6']) {
-    /* [dir=rtl] .spectrum-TreeView-item--indent6 */
-    padding-right: calc(6 * var(--spectrum-treeview-item-indentation));
+    padding-right: calc(
+        6 * var(--spectrum-treeview-item-indentation)
+    ); /* [dir=rtl] .spectrum-TreeView-item--indent6 */
 }
 :host([dir='ltr'][indent='7']) {
-    /* [dir=ltr] .spectrum-TreeView-item--indent7 */
-    padding-left: calc(7 * var(--spectrum-treeview-item-indentation));
+    padding-left: calc(
+        7 * var(--spectrum-treeview-item-indentation)
+    ); /* [dir=ltr] .spectrum-TreeView-item--indent7 */
 }
 :host([dir='rtl'][indent='7']) {
-    /* [dir=rtl] .spectrum-TreeView-item--indent7 */
-    padding-right: calc(7 * var(--spectrum-treeview-item-indentation));
+    padding-right: calc(
+        7 * var(--spectrum-treeview-item-indentation)
+    ); /* [dir=rtl] .spectrum-TreeView-item--indent7 */
 }
 :host([dir='ltr'][indent='8']) {
-    /* [dir=ltr] .spectrum-TreeView-item--indent8 */
-    padding-left: calc(8 * var(--spectrum-treeview-item-indentation));
+    padding-left: calc(
+        8 * var(--spectrum-treeview-item-indentation)
+    ); /* [dir=ltr] .spectrum-TreeView-item--indent8 */
 }
 :host([dir='rtl'][indent='8']) {
-    /* [dir=rtl] .spectrum-TreeView-item--indent8 */
-    padding-right: calc(8 * var(--spectrum-treeview-item-indentation));
+    padding-right: calc(
+        8 * var(--spectrum-treeview-item-indentation)
+    ); /* [dir=rtl] .spectrum-TreeView-item--indent8 */
 }
 :host([dir='ltr'][indent='9']) {
-    /* [dir=ltr] .spectrum-TreeView-item--indent9 */
-    padding-left: calc(9 * var(--spectrum-treeview-item-indentation));
+    padding-left: calc(
+        9 * var(--spectrum-treeview-item-indentation)
+    ); /* [dir=ltr] .spectrum-TreeView-item--indent9 */
 }
 :host([dir='rtl'][indent='9']) {
-    /* [dir=rtl] .spectrum-TreeView-item--indent9 */
-    padding-right: calc(9 * var(--spectrum-treeview-item-indentation));
+    padding-right: calc(
+        9 * var(--spectrum-treeview-item-indentation)
+    ); /* [dir=rtl] .spectrum-TreeView-item--indent9 */
 }
 :host([dir='ltr'][indent='10']) {
-    /* [dir=ltr] .spectrum-TreeView-item--indent10 */
-    padding-left: calc(10 * var(--spectrum-treeview-item-indentation));
+    padding-left: calc(
+        10 * var(--spectrum-treeview-item-indentation)
+    ); /* [dir=ltr] .spectrum-TreeView-item--indent10 */
 }
 :host([dir='rtl'][indent='10']) {
-    /* [dir=rtl] .spectrum-TreeView-item--indent10 */
-    padding-right: calc(10 * var(--spectrum-treeview-item-indentation));
+    padding-right: calc(
+        10 * var(--spectrum-treeview-item-indentation)
+    ); /* [dir=rtl] .spectrum-TreeView-item--indent10 */
 }
 :host([disabled]) > .link {
-    /* .spectrum-TreeView-item.is-disabled>.spectrum-TreeView-itemLink */
-    color: var(--spectrum-treeview-item-text-color-disabled);
+    color: var(
+        --spectrum-treeview-item-text-color-disabled
+    ); /* .spectrum-TreeView-item.is-disabled>.spectrum-TreeView-itemLink */
 }
 :host([disabled]) > .link .spectrum-Icon {
-    /* .spectrum-TreeView-item.is-disabled>.spectrum-TreeView-itemLink .spectrum-Icon */
-    color: var(--spectrum-treeview-item-icon-color-disabled);
+    color: var(
+        --spectrum-treeview-item-icon-color-disabled
+    ); /* .spectrum-TreeView-item.is-disabled>.spectrum-TreeView-itemLink .spectrum-Icon */
 }
 :host([selected]) > .link {
-    /* .spectrum-TreeView-item.is-selected>.spectrum-TreeView-itemLink */
-    color: var(--spectrum-treeview-item-text-color-selected);
+    color: var(
+        --spectrum-treeview-item-text-color-selected
+    ); /* .spectrum-TreeView-item.is-selected>.spectrum-TreeView-itemLink */
 }
 :host([selected]) > .link:before {
-    /* .spectrum-TreeView-item.is-selected>.spectrum-TreeView-itemLink:before */
-    background-color: var(--spectrum-treeview-item-background-color-selected);
+    background-color: var(
+        --spectrum-treeview-item-background-color-selected
+    ); /* .spectrum-TreeView-item.is-selected>.spectrum-TreeView-itemLink:before */
     border-color: var(
         --spectrum-treeview-item-border-color-key-focus,
         var(--spectrum-alias-focus-color)
     );
 }
 :host([selected]) > .link ::slotted([slot='icon']) {
-    /* .spectrum-TreeView-item.is-selected>.spectrum-TreeView-itemLink .spectrum-TreeView-itemIcon */
-    color: var(--spectrum-treeview-item-icon-color-selected);
+    color: var(
+        --spectrum-treeview-item-icon-color-selected
+    ); /* .spectrum-TreeView-item.is-selected>.spectrum-TreeView-itemLink .spectrum-TreeView-itemIcon */
 }
 :host([drop-target]) > .link:before {
-    /* .spectrum-TreeView-item.is-drop-target>.spectrum-TreeView-itemLink:before */
-    background-color: var(--spectrum-alias-highlight-selected);
+    background-color: var(
+        --spectrum-alias-highlight-selected
+    ); /* .spectrum-TreeView-item.is-drop-target>.spectrum-TreeView-itemLink:before */
     border-color: var(
         --spectrum-treeview-item-border-color-key-focus,
         var(--spectrum-alias-focus-color)
     );
 }
 ::slotted([slot='icon']) {
-    /* .spectrum-TreeView-itemIcon */
-    color: var(--spectrum-treeview-item-icon-color);
+    color: var(
+        --spectrum-treeview-item-icon-color
+    ); /* .spectrum-TreeView-itemIcon */
 }
 .link {
-    /* .spectrum-TreeView-itemLink */
     color: var(
         --spectrum-treeview-item-text-color,
         var(--spectrum-global-color-gray-800)
-    );
+    ); /* .spectrum-TreeView-itemLink */
 }
 .link:hover {
-    /* .spectrum-TreeView-itemLink:hover */
     color: var(
         --spectrum-treeview-item-text-color-hover,
         var(--spectrum-global-color-gray-900)
-    );
+    ); /* .spectrum-TreeView-itemLink:hover */
 }
 .link:hover:before {
-    /* .spectrum-TreeView-itemLink:hover:before */
     background-color: var(
         --spectrum-treeview-item-background-color-hover,
         var(--spectrum-alias-background-color-hover-overlay)
-    );
+    ); /* .spectrum-TreeView-itemLink:hover:before */
 }
 .link:hover ::slotted([slot='icon']) {
-    /* .spectrum-TreeView-itemLink:hover .spectrum-TreeView-itemIcon */
-    color: var(--spectrum-treeview-item-icon-color-hover);
+    color: var(
+        --spectrum-treeview-item-icon-color-hover
+    ); /* .spectrum-TreeView-itemLink:hover .spectrum-TreeView-itemIcon */
 }
 .link:focus-visible {
-    /* .spectrum-TreeView-itemLink.focus-ring */
-    color: var(--spectrum-treeview-item-text-color-focus);
+    color: var(
+        --spectrum-treeview-item-text-color-focus
+    ); /* .spectrum-TreeView-itemLink.focus-ring */
 }
 .link:focus-visible:before {
-    /* .spectrum-TreeView-itemLink.focus-ring:before */
     background-color: var(
         --spectrum-treeview-item-background-color-key-focus,
         var(--spectrum-alias-background-color-hover-overlay)
-    );
+    ); /* .spectrum-TreeView-itemLink.focus-ring:before */
     border-color: var(
         --spectrum-treeview-item-border-color-key-focus,
         var(--spectrum-alias-focus-color)
     );
 }
 .link:focus-visible ::slotted([slot='icon']) {
-    /* .spectrum-TreeView-itemLink.focus-ring .spectrum-TreeView-itemIcon */
-    color: var(--spectrum-treeview-item-icon-color-focus);
+    color: var(
+        --spectrum-treeview-item-icon-color-focus
+    ); /* .spectrum-TreeView-itemLink.focus-ring .spectrum-TreeView-itemIcon */
 }

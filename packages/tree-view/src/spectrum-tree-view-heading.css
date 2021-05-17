@@ -11,14 +11,14 @@ governing permissions and limitations under the License.
 
 THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
 :host {
-    /* .spectrum-TreeView-heading */
+    font-weight: var(--spectrum-treeview-heading-font-weight);
     padding: var(
         --spectrum-treeview-item-padding-y,
         var(--spectrum-global-dimension-static-size-100)
-    );
-    font-weight: var(--spectrum-treeview-heading-font-weight);
+    ); /* .spectrum-TreeView-heading */
 }
 :host(:not(:first-child)) {
-    /* .spectrum-TreeView-heading:not(:first-child) */
-    margin-top: var(--spectrum-global-dimension-size-200);
+    margin-top: var(
+        --spectrum-global-dimension-size-200
+    ); /* .spectrum-TreeView-heading:not(:first-child) */
 }
