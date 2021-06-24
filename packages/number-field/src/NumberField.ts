@@ -66,6 +66,9 @@ export class NumberField extends TextfieldBase {
     @property({ type: Boolean, reflect: true })
     public focused = false;
 
+    @property({ type: Boolean, reflect: true })
+    public scrubbing = false;
+
     /**
      * An `<sp-number-field>` element will process its numeric value with
      * `new Intl.NumberFormat(this.resolvedLanguage, this.formatOptions).format(this.valueAsNumber)`
@@ -104,6 +107,12 @@ export class NumberField extends TextfieldBase {
      */
     @property({ type: Number })
     public step?: number;
+
+    @property({ type: Number, reflect: true, attribute: 'step-modifier' })
+    public stepModifier = 10;
+
+    @property({ type: Number })
+    public stepperpixel?: number;
 
     @property({ type: Number })
     public set value(value: number) {
@@ -156,34 +165,51 @@ export class NumberField extends TextfieldBase {
     private findChange!: (event: PointerEvent) => void;
     private change!: () => void;
     private safty!: number;
+    private pointerDragXLocation?: number;
+    private pointerDownTime?: number;
+    private scrubDistance = 0;
 
     private handlePointerdown(event: PointerEvent): void {
         if (event.button !== 0) {
             event.preventDefault();
             return;
         }
-        this.buttons.setPointerCapture(event.pointerId);
-        const stepUpRect = this.buttons.children[0].getBoundingClientRect();
-        const stepDownRect = this.buttons.children[1].getBoundingClientRect();
-        this.findChange = (event: PointerEvent) => {
-            if (
-                event.clientX >= stepUpRect.x &&
-                event.clientY >= stepUpRect.y &&
-                event.clientX <= stepUpRect.x + stepUpRect.width &&
-                event.clientY <= stepUpRect.y + stepUpRect.height
-            ) {
-                this.change = () => this.increment();
-            } else if (
-                event.clientX >= stepDownRect.x &&
-                event.clientY >= stepDownRect.y &&
-                event.clientX <= stepDownRect.x + stepDownRect.width &&
-                event.clientY <= stepDownRect.y + stepDownRect.height
-            ) {
-                this.change = () => this.decrement();
-            }
-        };
-        this.findChange(event);
-        this.startChange();
+        if (
+            event.target === this.buttons?.children[0] ||
+            event.target === this.buttons?.children[1]
+        ) {
+            this.buttons?.setPointerCapture(event.pointerId);
+            const stepUpRect = this.buttons?.children[0].getBoundingClientRect();
+            const stepDownRect = this.buttons?.children[1].getBoundingClientRect();
+            this.findChange = (event: PointerEvent) => {
+                if (
+                    event.clientX >= stepUpRect.x &&
+                    event.clientY >= stepUpRect.y &&
+                    event.clientX <= stepUpRect.x + stepUpRect.width &&
+                    event.clientY <= stepUpRect.y + stepUpRect.height
+                ) {
+                    this.change = () =>
+                        this.increment(
+                            this.shiftPressed ? this.stepModifier : 1
+                        );
+                } else if (
+                    event.clientX >= stepDownRect.x &&
+                    event.clientY >= stepDownRect.y &&
+                    event.clientX <= stepDownRect.x + stepDownRect.width &&
+                    event.clientY <= stepDownRect.y + stepDownRect.height
+                ) {
+                    this.change = () =>
+                        this.decrement(
+                            this.shiftPressed ? this.stepModifier : 1
+                        );
+                }
+            };
+            this.findChange(event);
+            this.startChange();
+        } else if (!this.focused) {
+            this.setPointerCapture(event.pointerId);
+            this.scrub(event);
+        }
     }
 
     private startChange(): void {
@@ -199,11 +225,20 @@ export class NumberField extends TextfieldBase {
     }
 
     private handlePointermove(event: PointerEvent): void {
-        this.findChange(event);
+        if (
+            event.target === this.buttons?.children[0] ||
+            event.target === this.buttons?.children[1]
+        ) {
+            this.findChange(event);
+        } else {
+            this.scrub(event);
+        }
     }
 
     private handlePointerup(event: PointerEvent): void {
-        this.buttons.releasePointerCapture(event.pointerId);
+        this.buttons?.releasePointerCapture(event.pointerId);
+        this.releasePointerCapture(event.pointerId);
+        this.scrub(event);
         cancelAnimationFrame(this.nextChange);
         clearTimeout(this.safty);
         this.dispatchEvent(
@@ -236,35 +271,126 @@ export class NumberField extends TextfieldBase {
         this.focus();
     }
 
-    private increment(): void {
-        this.stepBy(1);
+    private increment(factor = 1): void {
+        this.stepBy(1 * factor);
     }
 
-    private decrement(): void {
-        this.stepBy(-1);
+    private decrement(factor = 1): void {
+        this.stepBy(-1 * factor);
+    }
+
+    private shiftPressed = false;
+
+    private documentMoveListener = (event: PointerEvent): void => {
+        this.handlePointermove(event);
+    };
+
+    private documentUpListener = (event: PointerEvent): void => {
+        this.handlePointerup(event);
+    };
+
+    private scrub(event: PointerEvent): void {
+        switch (event.type) {
+            case 'pointerdown':
+                this.scrubbing = true;
+                this.pointerDragXLocation = event.clientX;
+                this.pointerDownTime = Date.now();
+                this.inputElement.disabled = true;
+                document.body.addEventListener(
+                    'pointermove',
+                    this.documentMoveListener
+                );
+                document.body.addEventListener(
+                    'pointerup',
+                    this.documentUpListener
+                );
+                document.body.addEventListener(
+                    'pointercancel',
+                    this.documentUpListener
+                );
+                event.preventDefault();
+                break;
+
+            case 'pointermove':
+                if (
+                    this.pointerDragXLocation &&
+                    this.pointerDownTime &&
+                    Date.now() - this.pointerDownTime > 250
+                ) {
+                    const amtPerPixel = this.stepperpixel || this._step;
+                    const dist: number =
+                        event.clientX - this.pointerDragXLocation;
+                    const delta =
+                        Math.round(dist * amtPerPixel) *
+                        (event.shiftKey ? this.stepModifier : 1);
+                    this.scrubDistance += Math.abs(dist);
+                    this.pointerDragXLocation = event.clientX;
+                    this.stepBy(delta);
+                    event.preventDefault();
+                }
+                break;
+
+            default:
+                this.pointerDragXLocation = undefined;
+                this.scrubbing = false;
+                this.inputElement.disabled = false;
+                document.body.removeEventListener(
+                    'pointermove',
+                    this.documentMoveListener
+                );
+                document.body.removeEventListener(
+                    'pointerup',
+                    this.documentUpListener
+                );
+                document.body.removeEventListener(
+                    'pointercancel',
+                    this.documentUpListener
+                );
+
+                // if user has scrubbed, disallow focus of field
+                const bounds = this.getBoundingClientRect();
+                if (
+                    this.scrubDistance > 0 &&
+                    this.pointerDownTime &&
+                    Date.now() - this.pointerDownTime > 250
+                ) {
+                    event.preventDefault();
+                } else if (
+                    event.clientX >= bounds.x &&
+                    event.clientX <= bounds.x + bounds.width &&
+                    event.clientY >= bounds.y &&
+                    event.clientY <= bounds.y + bounds.height
+                ) {
+                    this.focus();
+                }
+                this.scrubDistance = 0;
+                this.pointerDownTime = undefined;
+                break;
+        }
     }
 
     private handleKeydown(event: KeyboardEvent): void {
-        if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) {
-            // Don't do work when modifiers are present.
-            return;
-        }
+        this.shiftPressed = event.shiftKey;
         switch (event.code) {
             case 'ArrowUp':
                 event.preventDefault();
-                this.increment();
+                this.increment(this.shiftPressed ? this.stepModifier : 1);
                 this.dispatchEvent(
                     new Event('change', { bubbles: true, composed: true })
                 );
                 break;
             case 'ArrowDown':
                 event.preventDefault();
-                this.decrement();
+                this.decrement(this.shiftPressed ? this.stepModifier : 1);
                 this.dispatchEvent(
                     new Event('change', { bubbles: true, composed: true })
                 );
                 break;
         }
+    }
+
+    private handleKeyup(event: KeyboardEvent): void {
+        this.shiftPressed = event.shiftKey;
     }
 
     protected onScroll(event: WheelEvent): void {
@@ -276,6 +402,9 @@ export class NumberField extends TextfieldBase {
     }
 
     protected onFocus(): void {
+        if (this.pointerDragXLocation) {
+            return;
+        }
         super.onFocus();
         this.keyboardFocused = true;
         this.addEventListener('wheel', this.onScroll);
@@ -447,6 +576,8 @@ export class NumberField extends TextfieldBase {
         super.firstUpdated(changes);
         this.multiline = false;
         this.addEventListener('keydown', this.handleKeydown);
+        this.addEventListener('keydown', this.handleKeyup);
+        this.onpointerdown = this.handlePointerdown;
     }
 
     protected updated(changes: PropertyValues<this>): void {
