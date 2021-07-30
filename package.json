@@ -223,6 +223,9 @@
     "resolutions": {
         "@web/storybook-prebuilt": "0.1.27-alpha.0",
         "cssnano/**/postcss-calc": "7.0.0",
+        "lit": "2.0.0-rc.4",
+        "lit-element": "3.0.0-rc.4",
+        "lit-html": "2.0.0-rc.5",
         "playwright": "1.13.0"
     },
     "customElements": ".storybook/custom-elements.json",
