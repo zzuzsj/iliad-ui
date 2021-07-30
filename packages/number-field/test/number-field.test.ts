@@ -563,11 +563,15 @@ describe('NumberField', () => {
     });
     it('accepts pointer interactions with the stepper UI', async () => {
         const inputSpy = spy();
-        const el = await getElFrom(Default({ value: 50 }));
-        el.addEventListener('input', () => inputSpy());
-        expect(el.formattedValue).to.equal('50');
-        expect(el.valueAsString).to.equal('50');
-        expect(el.value).to.equal(50);
+        let value = 50;
+        const el = await getElFrom(Default({ value }));
+        el.addEventListener('input', (event: Event) => {
+            value = (event.target as NumberField).value;
+            inputSpy();
+        });
+        expect(el.formattedValue).to.equal(String(value));
+        expect(el.valueAsString).to.equal(String(value));
+        expect(el.value).to.equal(value);
         const buttonUp = el.shadowRoot.querySelector('.stepUp') as HTMLElement;
         const buttonUpRect = buttonUp.getBoundingClientRect();
         const buttonUpPosition = [
@@ -598,7 +602,6 @@ describe('NumberField', () => {
             ],
         });
         await oneEvent(el, 'input');
-        let value = 50 + inputSpy.callCount;
         expect(el.formattedValue).to.equal(String(value));
         expect(el.valueAsString).to.equal(String(value));
         expect(el.value).to.equal(value);
@@ -611,7 +614,6 @@ describe('NumberField', () => {
                 },
             ],
         });
-        value = value - inputSpy.callCount;
         expect(el.formattedValue).to.equal(String(value));
         expect(el.valueAsString).to.equal(String(value));
         expect(el.value).to.equal(value);
@@ -624,13 +626,11 @@ describe('NumberField', () => {
                 },
             ],
         });
-        value = value - inputSpy.callCount;
         expect(el.formattedValue).to.equal(String(value));
         expect(el.valueAsString).to.equal(String(value));
         expect(el.value).to.equal(value);
         inputSpy.resetHistory();
         await oneEvent(el, 'input');
-        value = value - inputSpy.callCount;
         expect(el.formattedValue).to.equal(String(value));
         expect(el.valueAsString).to.equal(String(value));
         expect(el.value).to.equal(value);
@@ -649,7 +649,6 @@ describe('NumberField', () => {
             await nextFrame();
         }
         await elementUpdated(el);
-        value = value - inputSpy.callCount;
         expect(el.formattedValue).to.equal(String(value));
         expect(el.valueAsString).to.equal(String(value));
         expect(el.value).to.equal(value);
