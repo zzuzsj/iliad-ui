@@ -213,8 +213,9 @@ describe('Menu', () => {
         el.focus();
         await elementUpdated(el);
         // Activate :focus-visible
-        await sendKeys({ press: 'ArrowDown' });
-        await sendKeys({ press: 'ArrowUp' });
+        await sendKeys({
+            steps: [{ press: 'ArrowUp' }, { press: 'ArrowDown' }],
+        });
 
         expect(document.activeElement === el).to.be.true;
         expect(firstItem.focused).to.be.true;
@@ -258,8 +259,9 @@ describe('Menu', () => {
 
         await elementUpdated(el);
         // Activate :focus-visible
-        await sendKeys({ press: 'ArrowDown' });
-        await sendKeys({ press: 'ArrowUp' });
+        await sendKeys({
+            steps: [{ press: 'ArrowUp' }, { press: 'ArrowDown' }],
+        });
 
         expect(document.activeElement === el, 'active element').to.be.true;
         expect(firstItem.focused, 'visually focused').to.be.true;
@@ -286,8 +288,9 @@ describe('Menu', () => {
 
         el.focus();
         // Activate :focus-visible
-        await sendKeys({ press: 'ArrowDown' });
-        await sendKeys({ press: 'ArrowUp' });
+        await sendKeys({
+            steps: [{ press: 'ArrowUp' }, { press: 'ArrowDown' }],
+        });
 
         expect(document.activeElement === el, 'another active element').to.be
             .true;
@@ -327,8 +330,9 @@ describe('Menu', () => {
 
         el.focus();
         // Activate :focus-visible
-        await sendKeys({ press: 'ArrowDown' });
-        await sendKeys({ press: 'ArrowUp' });
+        await sendKeys({
+            steps: [{ press: 'ArrowUp' }, { press: 'ArrowDown' }],
+        });
         expect(document.activeElement === el).to.be.true;
         expect(firstItem.focused, 'first').to.be.true;
         el.dispatchEvent(arrowDownEvent);

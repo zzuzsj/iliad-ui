@@ -765,8 +765,9 @@ describe('Picker', () => {
         el.open = true;
         await opened;
         await elementUpdated(el);
-        await sendKeys({ press: 'ArrowDown' });
-        await sendKeys({ press: 'ArrowUp' });
+        await sendKeys({
+            steps: [{ press: 'ArrowUp' }, { press: 'ArrowDown' }],
+        });
 
         await waitUntil(
             () => firstItem.focused,
@@ -783,8 +784,9 @@ describe('Picker', () => {
         expect(el.open).to.be.true;
         expect(isMenuActiveElement()).to.be.true;
         // Force :focus-visible heuristic
-        await sendKeys({ press: 'ArrowDown' });
-        await sendKeys({ press: 'ArrowUp' });
+        await sendKeys({
+            steps: [{ press: 'ArrowUp' }, { press: 'ArrowDown' }],
+        });
         expect(firstItem.focused).to.be.true;
     });
     it('allows tabing to close', async () => {
@@ -893,8 +895,9 @@ describe('Picker', () => {
 
         expect(focusFirstSpy.called, 'do not focus first element').to.be.false;
         // Force :focus-visible heuristic
-        await sendKeys({ press: 'ArrowDown' });
-        await sendKeys({ press: 'ArrowUp' });
+        await sendKeys({
+            steps: [{ press: 'ArrowUp' }, { press: 'ArrowDown' }],
+        });
         expect(secondItem.focused, 'secondItem "focused"').to.be.true;
     });
     it('resets value when item not available', async () => {

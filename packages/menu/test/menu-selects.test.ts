@@ -652,8 +652,9 @@ describe('Menu w/ groups [selects]', () => {
         options[0].focus();
 
         await elementUpdated(el);
-        await sendKeys({ press: 'ArrowDown' });
-        await sendKeys({ press: 'ArrowUp' });
+        await sendKeys({
+            steps: [{ press: 'ArrowUp' }, { press: 'ArrowDown' }],
+        });
         for (const option of options) {
             const parentElement = option.parentElement as Menu;
             expect(document.activeElement === parentElement, 'parent focused')

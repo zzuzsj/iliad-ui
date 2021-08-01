@@ -56,8 +56,9 @@ export const test = (
                 const test = await fixture<StoryDecorator>(wrap());
                 await elementUpdated(test);
                 test.focus();
-                await sendKeys({ press: 'ArrowUp' });
-                await sendKeys({ press: 'ArrowDown' });
+                await sendKeys({
+                    steps: [{ press: 'ArrowUp' }, { press: 'ArrowDown' }],
+                });
                 const testsDefault = (tests as any).default;
                 const args = {
                     ...(testsDefault.args || {}),

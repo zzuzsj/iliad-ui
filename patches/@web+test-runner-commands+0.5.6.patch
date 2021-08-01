@@ -1,0 +1,272 @@
+diff --git a/node_modules/@web/test-runner-commands/dist/sendKeysPlugin.d.ts b/node_modules/@web/test-runner-commands/dist/sendKeysPlugin.d.ts
+index 1eacc6f..07003e3 100644
+--- a/node_modules/@web/test-runner-commands/dist/sendKeysPlugin.d.ts
++++ b/node_modules/@web/test-runner-commands/dist/sendKeysPlugin.d.ts
+@@ -11,7 +11,10 @@ declare type DownPayload = {
+ declare type UpPayload = {
+     up: string;
+ };
+-export declare type SendKeysPayload = TypePayload | PressPayload | DownPayload | UpPayload;
++declare type StepsPayload = {
++    steps: SendKeysPayload[];
++};
++export declare type SendKeysPayload = TypePayload | PressPayload | DownPayload | UpPayload | StepsPayload;
+ export declare function sendKeysPlugin(): TestRunnerPlugin<SendKeysPayload>;
+ export {};
+ //# sourceMappingURL=sendKeysPlugin.d.ts.map
+\ No newline at end of file
+diff --git a/node_modules/@web/test-runner-commands/dist/sendKeysPlugin.d.ts.map b/node_modules/@web/test-runner-commands/dist/sendKeysPlugin.d.ts.map
+index af7101e..cf19f84 100644
+--- a/node_modules/@web/test-runner-commands/dist/sendKeysPlugin.d.ts.map
++++ b/node_modules/@web/test-runner-commands/dist/sendKeysPlugin.d.ts.map
+@@ -1 +1 @@
+-{"version":3,"file":"sendKeysPlugin.d.ts","sourceRoot":"","sources":["../src/sendKeysPlugin.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,gBAAgB,EAAE,MAAM,uBAAuB,CAAC;AAIzD,aAAK,WAAW,GAAG;IAAE,IAAI,EAAE,MAAM,CAAA;CAAE,CAAC;AACpC,aAAK,YAAY,GAAG;IAAE,KAAK,EAAE,MAAM,CAAA;CAAE,CAAC;AACtC,aAAK,WAAW,GAAG;IAAE,IAAI,EAAE,MAAM,CAAA;CAAE,CAAC;AACpC,aAAK,SAAS,GAAG;IAAE,EAAE,EAAE,MAAM,CAAA;CAAE,CAAC;AAEhC,oBAAY,eAAe,GAAG,WAAW,GAAG,YAAY,GAAG,WAAW,GAAG,SAAS,CAAC;AAkDnF,wBAAgB,cAAc,IAAI,gBAAgB,CAAC,eAAe,CAAC,CAiDlE"}
+\ No newline at end of file
++{"version":3,"file":"sendKeysPlugin.d.ts","sourceRoot":"","sources":["../src/sendKeysPlugin.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,gBAAgB,EAAE,MAAM,uBAAuB,CAAC;AAMzD,aAAK,WAAW,GAAG;IAAE,IAAI,EAAE,MAAM,CAAA;CAAE,CAAC;AACpC,aAAK,YAAY,GAAG;IAAE,KAAK,EAAE,MAAM,CAAA;CAAE,CAAC;AACtC,aAAK,WAAW,GAAG;IAAE,IAAI,EAAE,MAAM,CAAA;CAAE,CAAC;AACpC,aAAK,SAAS,GAAG;IAAE,EAAE,EAAE,MAAM,CAAA;CAAE,CAAC;AAChC,aAAK,YAAY,GAAG;IAClB,KAAK,EAAE,eAAe,EAAE,CAAC;CAC1B,CAAC;AAEF,oBAAY,eAAe,GAAG,WAAW,GAAG,YAAY,GAAG,WAAW,GAAG,SAAS,GAAG,YAAY,CAAC;AAsDlG,wBAAgB,cAAc,IAAI,gBAAgB,CAAC,eAAe,CAAC,CAqElE"}
+\ No newline at end of file
+diff --git a/node_modules/@web/test-runner-commands/dist/sendKeysPlugin.js b/node_modules/@web/test-runner-commands/dist/sendKeysPlugin.js
+index d12d053..4920c6a 100644
+--- a/node_modules/@web/test-runner-commands/dist/sendKeysPlugin.js
++++ b/node_modules/@web/test-runner-commands/dist/sendKeysPlugin.js
+@@ -5,7 +5,7 @@ function isObject(payload) {
+     return payload != null && typeof payload === 'object';
+ }
+ function isSendKeysPayload(payload) {
+-    const validOptions = ['type', 'press', 'down', 'up'];
++    const validOptions = ['type', 'press', 'down', 'up', 'steps'];
+     if (!isObject(payload))
+         throw new Error('You must provide a `SendKeysPayload` object');
+     const numberOfValidOptions = Object.keys(payload).filter(key => validOptions.includes(key)).length;
+@@ -31,51 +31,74 @@ function isDownPayload(payload) {
+ function isUpPayload(payload) {
+     return 'up' in payload;
+ }
++function isStepsPayload(payload) {
++    return 'steps' in payload;
++}
+ function sendKeysPlugin() {
+     return {
+         name: 'send-keys-command',
+         async executeCommand({ command, payload, session }) {
++            async function doStepPlaywright(step, page) {
++                if (isTypePayload(step)) {
++                    await page.keyboard.type(step.type);
++                }
++                else if (isPressPayload(step)) {
++                    await page.keyboard.press(step.press);
++                }
++                else if (isDownPayload(step)) {
++                    await page.keyboard.down(step.down);
++                }
++                else if (isUpPayload(step)) {
++                    await page.keyboard.up(step.up);
++                }
++            }
++            async function doStepPuppeteer(step, page) {
++                if (isTypePayload(step)) {
++                    await page.keyboard.type(step.type);
++                    return true;
++                }
++                else if (isPressPayload(step)) {
++                    await page.keyboard.press(step.press);
++                    return true;
++                }
++                else if (isDownPayload(step)) {
++                    await page.keyboard.down(step.down);
++                    return true;
++                }
++                else if (isUpPayload(step)) {
++                    await page.keyboard.up(step.up);
++                    return true;
++                }
++            }
+             if (command === 'send-keys') {
+                 if (!isSendKeysPayload(payload) || !payload) {
+-                    throw new Error('You must provide a `SendKeysPayload` object');
++                    throw new Error('You must provide a `SendKeysPayload` object for every step');
+                 }
+                 // handle specific behavior for playwright
+                 if (session.browser.type === 'playwright') {
+                     const page = session.browser.getPage(session.id);
+-                    if (isTypePayload(payload)) {
+-                        await page.keyboard.type(payload.type);
+-                        return true;
+-                    }
+-                    else if (isPressPayload(payload)) {
+-                        await page.keyboard.press(payload.press);
+-                        return true;
+-                    }
+-                    else if (isDownPayload(payload)) {
+-                        await page.keyboard.down(payload.down);
++                    if (isStepsPayload(payload)) {
++                        for (const step of payload.steps) {
++                            await doStepPlaywright(step, page);
++                        }
+                         return true;
+                     }
+-                    else if (isUpPayload(payload)) {
+-                        await page.keyboard.up(payload.up);
++                    else {
++                        await doStepPlaywright(payload, page);
+                         return true;
+                     }
+                 }
+                 // handle specific behavior for puppeteer
+                 if (session.browser.type === 'puppeteer') {
+                     const page = session.browser.getPage(session.id);
+-                    if (isTypePayload(payload)) {
+-                        await page.keyboard.type(payload.type);
+-                        return true;
+-                    }
+-                    else if (isPressPayload(payload)) {
+-                        await page.keyboard.press(payload.press);
+-                        return true;
+-                    }
+-                    else if (isDownPayload(payload)) {
+-                        await page.keyboard.down(payload.down);
++                    if (isStepsPayload(payload)) {
++                        for (const step of payload.steps) {
++                            await doStepPuppeteer(step, page);
++                        }
+                         return true;
+                     }
+-                    else if (isUpPayload(payload)) {
+-                        await page.keyboard.up(payload.up);
++                    else {
++                        await doStepPuppeteer(payload, page);
+                         return true;
+                     }
+                 }
+diff --git a/node_modules/@web/test-runner-commands/dist/sendKeysPlugin.js.map b/node_modules/@web/test-runner-commands/dist/sendKeysPlugin.js.map
+index 20a76fe..97f48e9 100644
+--- a/node_modules/@web/test-runner-commands/dist/sendKeysPlugin.js.map
++++ b/node_modules/@web/test-runner-commands/dist/sendKeysPlugin.js.map
+@@ -1 +1 @@
+-{"version":3,"file":"sendKeysPlugin.js","sourceRoot":"","sources":["../src/sendKeysPlugin.ts"],"names":[],"mappings":";;;AAWA,SAAS,QAAQ,CAAC,OAAgB;IAChC,OAAO,OAAO,IAAI,IAAI,IAAI,OAAO,OAAO,KAAK,QAAQ,CAAC;AACxD,CAAC;AAED,SAAS,iBAAiB,CAAC,OAAgB;IACzC,MAAM,YAAY,GAAG,CAAC,MAAM,EAAE,OAAO,EAAE,MAAM,EAAE,IAAI,CAAC,CAAC;IAErD,IAAI,CAAC,QAAQ,CAAC,OAAO,CAAC;QAAE,MAAM,IAAI,KAAK,CAAC,6CAA6C,CAAC,CAAC;IAEvF,MAAM,oBAAoB,GAAG,MAAM,CAAC,IAAI,CAAC,OAAO,CAAC,CAAC,MAAM,CAAC,GAAG,CAAC,EAAE,CAC7D,YAAY,CAAC,QAAQ,CAAC,GAAG,CAAC,CAC3B,CAAC,MAAM,CAAC;IACT,MAAM,cAAc,GAAG,MAAM,CAAC,IAAI,CAAC,OAAO,CAAC,CAAC,MAAM,CAAC,GAAG,CAAC,EAAE,CAAC,CAAC,YAAY,CAAC,QAAQ,CAAC,GAAG,CAAC,CAAC,CAAC;IAEvF,IAAI,oBAAoB,GAAG,CAAC;QAC1B,MAAM,IAAI,KAAK,CACb,wFAAwF,YAAY,CAAC,IAAI,CACvG,IAAI,CACL,GAAG,CACL,CAAC;IACJ,IAAI,oBAAoB,KAAK,CAAC;QAC5B,MAAM,IAAI,KAAK,CACb,mFAAmF,YAAY,CAAC,IAAI,CAClG,IAAI,CACL,GAAG,CACL,CAAC;IACJ,IAAI,cAAc,CAAC,MAAM,GAAG,CAAC,EAAE;QAC7B,MAAM,IAAI,KAAK,CAAC,mBAAmB,GAAG,cAAc,CAAC,IAAI,CAAC,IAAI,CAAC,GAAG,YAAY,CAAC,CAAC;KACjF;IACD,OAAO,IAAI,CAAC;AACd,CAAC;AAED,SAAS,aAAa,CAAC,OAAwB;IAC7C,OAAO,MAAM,IAAI,OAAO,CAAC;AAC3B,CAAC;AAED,SAAS,cAAc,CAAC,OAAwB;IAC9C,OAAO,OAAO,IAAI,OAAO,CAAC;AAC5B,CAAC;AAED,SAAS,aAAa,CAAC,OAAwB;IAC7C,OAAO,MAAM,IAAI,OAAO,CAAC;AAC3B,CAAC;AAED,SAAS,WAAW,CAAC,OAAwB;IAC3C,OAAO,IAAI,IAAI,OAAO,CAAC;AACzB,CAAC;AAED,SAAgB,cAAc;IAC5B,OAAO;QACL,IAAI,EAAE,mBAAmB;QACzB,KAAK,CAAC,cAAc,CAAC,EAAE,OAAO,EAAE,OAAO,EAAE,OAAO,EAAE;YAChD,IAAI,OAAO,KAAK,WAAW,EAAE;gBAC3B,IAAI,CAAC,iBAAiB,CAAC,OAAO,CAAC,IAAI,CAAC,OAAO,EAAE;oBAC3C,MAAM,IAAI,KAAK,CAAC,6CAA6C,CAAC,CAAC;iBAChE;gBACD,0CAA0C;gBAC1C,IAAI,OAAO,CAAC,OAAO,CAAC,IAAI,KAAK,YAAY,EAAE;oBACzC,MAAM,IAAI,GAAI,OAAO,CAAC,OAA8B,CAAC,OAAO,CAAC,OAAO,CAAC,EAAE,CAAC,CAAC;oBACzE,IAAI,aAAa,CAAC,OAAO,CAAC,EAAE;wBAC1B,MAAM,IAAI,CAAC,QAAQ,CAAC,IAAI,CAAC,OAAO,CAAC,IAAI,CAAC,CAAC;wBACvC,OAAO,IAAI,CAAC;qBACb;yBAAM,IAAI,cAAc,CAAC,OAAO,CAAC,EAAE;wBAClC,MAAM,IAAI,CAAC,QAAQ,CAAC,KAAK,CAAC,OAAO,CAAC,KAAK,CAAC,CAAC;wBACzC,OAAO,IAAI,CAAC;qBACb;yBAAM,IAAI,aAAa,CAAC,OAAO,CAAC,EAAE;wBACjC,MAAM,IAAI,CAAC,QAAQ,CAAC,IAAI,CAAC,OAAO,CAAC,IAAI,CAAC,CAAC;wBACvC,OAAO,IAAI,CAAC;qBACb;yBAAM,IAAI,WAAW,CAAC,OAAO,CAAC,EAAE;wBAC/B,MAAM,IAAI,CAAC,QAAQ,CAAC,EAAE,CAAC,OAAO,CAAC,EAAE,CAAC,CAAC;wBACnC,OAAO,IAAI,CAAC;qBACb;iBACF;gBAED,yCAAyC;gBACzC,IAAI,OAAO,CAAC,OAAO,CAAC,IAAI,KAAK,WAAW,EAAE;oBACxC,MAAM,IAAI,GAAI,OAAO,CAAC,OAA0B,CAAC,OAAO,CAAC,OAAO,CAAC,EAAE,CAAC,CAAC;oBACrE,IAAI,aAAa,CAAC,OAAO,CAAC,EAAE;wBAC1B,MAAM,IAAI,CAAC,QAAQ,CAAC,IAAI,CAAC,OAAO,CAAC,IAAI,CAAC,CAAC;wBACvC,OAAO,IAAI,CAAC;qBACb;yBAAM,IAAI,cAAc,CAAC,OAAO,CAAC,EAAE;wBAClC,MAAM,IAAI,CAAC,QAAQ,CAAC,KAAK,CAAC,OAAO,CAAC,KAA+B,CAAC,CAAC;wBACnE,OAAO,IAAI,CAAC;qBACb;yBAAM,IAAI,aAAa,CAAC,OAAO,CAAC,EAAE;wBACjC,MAAM,IAAI,CAAC,QAAQ,CAAC,IAAI,CAAC,OAAO,CAAC,IAA8B,CAAC,CAAC;wBACjE,OAAO,IAAI,CAAC;qBACb;yBAAM,IAAI,WAAW,CAAC,OAAO,CAAC,EAAE;wBAC/B,MAAM,IAAI,CAAC,QAAQ,CAAC,EAAE,CAAC,OAAO,CAAC,EAA4B,CAAC,CAAC;wBAC7D,OAAO,IAAI,CAAC;qBACb;iBACF;gBAED,yDAAyD;gBACzD,MAAM,IAAI,KAAK,CAAC,kDAAkD,OAAO,CAAC,OAAO,CAAC,IAAI,GAAG,CAAC,CAAC;aAC5F;QACH,CAAC;KACF,CAAC;AACJ,CAAC;AAjDD,wCAiDC"}
+\ No newline at end of file
++{"version":3,"file":"sendKeysPlugin.js","sourceRoot":"","sources":["../src/sendKeysPlugin.ts"],"names":[],"mappings":";;;AAgBA,SAAS,QAAQ,CAAC,OAAgB;IAChC,OAAO,OAAO,IAAI,IAAI,IAAI,OAAO,OAAO,KAAK,QAAQ,CAAC;AACxD,CAAC;AAED,SAAS,iBAAiB,CAAC,OAAgB;IACzC,MAAM,YAAY,GAAG,CAAC,MAAM,EAAE,OAAO,EAAE,MAAM,EAAE,IAAI,EAAE,OAAO,CAAC,CAAC;IAE9D,IAAI,CAAC,QAAQ,CAAC,OAAO,CAAC;QAAE,MAAM,IAAI,KAAK,CAAC,6CAA6C,CAAC,CAAC;IAEvF,MAAM,oBAAoB,GAAG,MAAM,CAAC,IAAI,CAAC,OAAO,CAAC,CAAC,MAAM,CAAC,GAAG,CAAC,EAAE,CAC7D,YAAY,CAAC,QAAQ,CAAC,GAAG,CAAC,CAC3B,CAAC,MAAM,CAAC;IACT,MAAM,cAAc,GAAG,MAAM,CAAC,IAAI,CAAC,OAAO,CAAC,CAAC,MAAM,CAAC,GAAG,CAAC,EAAE,CAAC,CAAC,YAAY,CAAC,QAAQ,CAAC,GAAG,CAAC,CAAC,CAAC;IAEvF,IAAI,oBAAoB,GAAG,CAAC;QAC1B,MAAM,IAAI,KAAK,CACb,wFAAwF,YAAY,CAAC,IAAI,CACvG,IAAI,CACL,GAAG,CACL,CAAC;IACJ,IAAI,oBAAoB,KAAK,CAAC;QAC5B,MAAM,IAAI,KAAK,CACb,mFAAmF,YAAY,CAAC,IAAI,CAClG,IAAI,CACL,GAAG,CACL,CAAC;IACJ,IAAI,cAAc,CAAC,MAAM,GAAG,CAAC,EAAE;QAC7B,MAAM,IAAI,KAAK,CAAC,mBAAmB,GAAG,cAAc,CAAC,IAAI,CAAC,IAAI,CAAC,GAAG,YAAY,CAAC,CAAC;KACjF;IACD,OAAO,IAAI,CAAC;AACd,CAAC;AAED,SAAS,aAAa,CAAC,OAAwB;IAC7C,OAAO,MAAM,IAAI,OAAO,CAAC;AAC3B,CAAC;AAED,SAAS,cAAc,CAAC,OAAwB;IAC9C,OAAO,OAAO,IAAI,OAAO,CAAC;AAC5B,CAAC;AAED,SAAS,aAAa,CAAC,OAAwB;IAC7C,OAAO,MAAM,IAAI,OAAO,CAAC;AAC3B,CAAC;AAED,SAAS,WAAW,CAAC,OAAwB;IAC3C,OAAO,IAAI,IAAI,OAAO,CAAC;AACzB,CAAC;AAED,SAAS,cAAc,CAAC,OAAwB;IAC9C,OAAO,OAAO,IAAI,OAAO,CAAC;AAC5B,CAAC;AAED,SAAgB,cAAc;IAC5B,OAAO;QACL,IAAI,EAAE,mBAAmB;QACzB,KAAK,CAAC,cAAc,CAAC,EAAE,OAAO,EAAE,OAAO,EAAE,OAAO,EAAE;YAChD,KAAK,UAAU,gBAAgB,CAAC,IAAqB,EAAE,IAAoB;gBACzE,IAAI,aAAa,CAAC,IAAI,CAAC,EAAE;oBACvB,MAAM,IAAI,CAAC,QAAQ,CAAC,IAAI,CAAC,IAAI,CAAC,IAAI,CAAC,CAAC;iBACrC;qBAAM,IAAI,cAAc,CAAC,IAAI,CAAC,EAAE;oBAC/B,MAAM,IAAI,CAAC,QAAQ,CAAC,KAAK,CAAC,IAAI,CAAC,KAAK,CAAC,CAAC;iBACvC;qBAAM,IAAI,aAAa,CAAC,IAAI,CAAC,EAAE;oBAC9B,MAAM,IAAI,CAAC,QAAQ,CAAC,IAAI,CAAC,IAAI,CAAC,IAAI,CAAC,CAAC;iBACrC;qBAAM,IAAI,WAAW,CAAC,IAAI,CAAC,EAAE;oBAC5B,MAAM,IAAI,CAAC,QAAQ,CAAC,EAAE,CAAC,IAAI,CAAC,EAAE,CAAC,CAAC;iBACjC;YACH,CAAC;YAED,KAAK,UAAU,eAAe,CAAC,IAAqB,EAAE,IAAmB;gBACvE,IAAI,aAAa,CAAC,IAAI,CAAC,EAAE;oBACvB,MAAM,IAAI,CAAC,QAAQ,CAAC,IAAI,CAAC,IAAI,CAAC,IAAI,CAAC,CAAC;oBACpC,OAAO,IAAI,CAAC;iBACb;qBAAM,IAAI,cAAc,CAAC,IAAI,CAAC,EAAE;oBAC/B,MAAM,IAAI,CAAC,QAAQ,CAAC,KAAK,CAAC,IAAI,CAAC,KAA+B,CAAC,CAAC;oBAChE,OAAO,IAAI,CAAC;iBACb;qBAAM,IAAI,aAAa,CAAC,IAAI,CAAC,EAAE;oBAC9B,MAAM,IAAI,CAAC,QAAQ,CAAC,IAAI,CAAC,IAAI,CAAC,IAA8B,CAAC,CAAC;oBAC9D,OAAO,IAAI,CAAC;iBACb;qBAAM,IAAI,WAAW,CAAC,IAAI,CAAC,EAAE;oBAC5B,MAAM,IAAI,CAAC,QAAQ,CAAC,EAAE,CAAC,IAAI,CAAC,EAA4B,CAAC,CAAC;oBAC1D,OAAO,IAAI,CAAC;iBACb;YACH,CAAC;YAED,IAAI,OAAO,KAAK,WAAW,EAAE;gBAC3B,IAAI,CAAC,iBAAiB,CAAC,OAAO,CAAC,IAAI,CAAC,OAAO,EAAE;oBAC3C,MAAM,IAAI,KAAK,CAAC,4DAA4D,CAAC,CAAC;iBAC/E;gBACD,0CAA0C;gBAC1C,IAAI,OAAO,CAAC,OAAO,CAAC,IAAI,KAAK,YAAY,EAAE;oBACzC,MAAM,IAAI,GAAI,OAAO,CAAC,OAA8B,CAAC,OAAO,CAAC,OAAO,CAAC,EAAE,CAAC,CAAC;oBACzE,IAAI,cAAc,CAAC,OAAO,CAAC,EAAE;wBAC3B,KAAK,MAAM,IAAI,IAAI,OAAO,CAAC,KAAK,EAAE;4BAChC,MAAM,gBAAgB,CAAC,IAAI,EAAE,IAAI,CAAC,CAAC;yBACpC;wBACD,OAAO,IAAI,CAAC;qBACb;yBAAM;wBACL,MAAM,gBAAgB,CAAC,OAAO,EAAE,IAAI,CAAC,CAAC;wBACtC,OAAO,IAAI,CAAC;qBACb;iBACF;gBAED,yCAAyC;gBACzC,IAAI,OAAO,CAAC,OAAO,CAAC,IAAI,KAAK,WAAW,EAAE;oBACxC,MAAM,IAAI,GAAI,OAAO,CAAC,OAA0B,CAAC,OAAO,CAAC,OAAO,CAAC,EAAE,CAAC,CAAC;oBACrE,IAAI,cAAc,CAAC,OAAO,CAAC,EAAE;wBAC3B,KAAK,MAAM,IAAI,IAAI,OAAO,CAAC,KAAK,EAAE;4BAChC,MAAM,eAAe,CAAC,IAAI,EAAE,IAAI,CAAC,CAAC;yBACnC;wBACD,OAAO,IAAI,CAAC;qBACb;yBAAM;wBACL,MAAM,eAAe,CAAC,OAAO,EAAE,IAAI,CAAC,CAAC;wBACrC,OAAO,IAAI,CAAC;qBACb;iBACF;gBAED,yDAAyD;gBACzD,MAAM,IAAI,KAAK,CAAC,kDAAkD,OAAO,CAAC,OAAO,CAAC,IAAI,GAAG,CAAC,CAAC;aAC5F;QACH,CAAC;KACF,CAAC;AACJ,CAAC;AArED,wCAqEC"}
+\ No newline at end of file
+diff --git a/node_modules/@web/test-runner-commands/src/sendKeysPlugin.ts b/node_modules/@web/test-runner-commands/src/sendKeysPlugin.ts
+index 6a5ca40..08c76bb 100644
+--- a/node_modules/@web/test-runner-commands/src/sendKeysPlugin.ts
++++ b/node_modules/@web/test-runner-commands/src/sendKeysPlugin.ts
+@@ -1,20 +1,25 @@
+ import { TestRunnerPlugin } from '@web/test-runner-core';
+ import type { ChromeLauncher, puppeteerCore } from '@web/test-runner-chrome';
+ import type { PlaywrightLauncher } from '@web/test-runner-playwright';
++import type { Page as PlaywrightPage } from 'playwright';
++import type { Page as PuppeteerPage } from 'puppeteer-core';
+ 
+ type TypePayload = { type: string };
+ type PressPayload = { press: string };
+ type DownPayload = { down: string };
+ type UpPayload = { up: string };
++type StepsPayload = {
++  steps: SendKeysPayload[];
++};
+ 
+-export type SendKeysPayload = TypePayload | PressPayload | DownPayload | UpPayload;
++export type SendKeysPayload = TypePayload | PressPayload | DownPayload | UpPayload | StepsPayload;
+ 
+ function isObject(payload: unknown): payload is Record<string, unknown> {
+   return payload != null && typeof payload === 'object';
+ }
+ 
+ function isSendKeysPayload(payload: unknown): boolean {
+-  const validOptions = ['type', 'press', 'down', 'up'];
++  const validOptions = ['type', 'press', 'down', 'up', 'steps'];
+ 
+   if (!isObject(payload)) throw new Error('You must provide a `SendKeysPayload` object');
+ 
+@@ -57,28 +62,56 @@ function isUpPayload(payload: SendKeysPayload): payload is UpPayload {
+   return 'up' in payload;
+ }
+ 
++function isStepsPayload(payload: SendKeysPayload): payload is StepsPayload {
++  return 'steps' in payload;
++}
++
+ export function sendKeysPlugin(): TestRunnerPlugin<SendKeysPayload> {
+   return {
+     name: 'send-keys-command',
+     async executeCommand({ command, payload, session }): Promise<any> {
++      async function doStepPlaywright(step: SendKeysPayload, page: PlaywrightPage) {
++        if (isTypePayload(step)) {
++          await page.keyboard.type(step.type);
++        } else if (isPressPayload(step)) {
++          await page.keyboard.press(step.press);
++        } else if (isDownPayload(step)) {
++          await page.keyboard.down(step.down);
++        } else if (isUpPayload(step)) {
++          await page.keyboard.up(step.up);
++        }
++      }
++
++      async function doStepPuppeteer(step: SendKeysPayload, page: PuppeteerPage) {
++        if (isTypePayload(step)) {
++          await page.keyboard.type(step.type);
++          return true;
++        } else if (isPressPayload(step)) {
++          await page.keyboard.press(step.press as puppeteerCore.KeyInput);
++          return true;
++        } else if (isDownPayload(step)) {
++          await page.keyboard.down(step.down as puppeteerCore.KeyInput);
++          return true;
++        } else if (isUpPayload(step)) {
++          await page.keyboard.up(step.up as puppeteerCore.KeyInput);
++          return true;
++        }
++      }
++
+       if (command === 'send-keys') {
+         if (!isSendKeysPayload(payload) || !payload) {
+-          throw new Error('You must provide a `SendKeysPayload` object');
++          throw new Error('You must provide a `SendKeysPayload` object for every step');
+         }
+         // handle specific behavior for playwright
+         if (session.browser.type === 'playwright') {
+           const page = (session.browser as PlaywrightLauncher).getPage(session.id);
+-          if (isTypePayload(payload)) {
+-            await page.keyboard.type(payload.type);
+-            return true;
+-          } else if (isPressPayload(payload)) {
+-            await page.keyboard.press(payload.press);
++          if (isStepsPayload(payload)) {
++            for (const step of payload.steps) {
++              await doStepPlaywright(step, page);
++            }
+             return true;
+-          } else if (isDownPayload(payload)) {
+-            await page.keyboard.down(payload.down);
+-            return true;
+-          } else if (isUpPayload(payload)) {
+-            await page.keyboard.up(payload.up);
++          } else {
++            await doStepPlaywright(payload, page);
+             return true;
+           }
+         }
+@@ -86,17 +119,13 @@ export function sendKeysPlugin(): TestRunnerPlugin<SendKeysPayload> {
+         // handle specific behavior for puppeteer
+         if (session.browser.type === 'puppeteer') {
+           const page = (session.browser as ChromeLauncher).getPage(session.id);
+-          if (isTypePayload(payload)) {
+-            await page.keyboard.type(payload.type);
+-            return true;
+-          } else if (isPressPayload(payload)) {
+-            await page.keyboard.press(payload.press as puppeteerCore.KeyInput);
+-            return true;
+-          } else if (isDownPayload(payload)) {
+-            await page.keyboard.down(payload.down as puppeteerCore.KeyInput);
++          if (isStepsPayload(payload)) {
++            for (const step of payload.steps) {
++              await doStepPuppeteer(step, page);
++            }
+             return true;
+-          } else if (isUpPayload(payload)) {
+-            await page.keyboard.up(payload.up as puppeteerCore.KeyInput);
++          } else {
++            await doStepPuppeteer(payload, page);
+             return true;
+           }
+         }
