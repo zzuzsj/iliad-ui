@@ -98,6 +98,9 @@ export class FieldLabel extends SizedMixin(SpectrumElement) {
             } else {
                 this.target.setAttribute('aria-label', this.labelText);
             }
+            if (this.required) {
+                this.target.setAttribute('aria-required', 'true');
+            }
         }
         return Promise.resolve();
     }

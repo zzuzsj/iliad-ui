@@ -192,4 +192,22 @@ describe('FieldLabel', () => {
         expect(document.activeElement === picker);
         expect(picker.focused);
     });
+    it('makes the associated input field required if the label is required', async () => {
+        const test = await fixture<HTMLDivElement>(
+            html`
+                <div>
+                    <sp-field-label required for="test"></sp-field-label>
+                    <sp-textfield id="test"></sp-textfield>
+                </div>
+            `
+        );
+        const el = test.querySelector('sp-field-label') as FieldLabel;
+        const input = (test.querySelector('sp-textfield') as Textfield)
+            .focusElement as HTMLInputElement;
+
+        await elementUpdated(el);
+
+        expect(input.hasAttribute('aria-required'));
+        expect(input.getAttribute('aria-required')).to.equal('true');
+    });
 });
