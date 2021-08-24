@@ -99,7 +99,13 @@ export class FieldLabel extends SizedMixin(SpectrumElement) {
                 this.target.setAttribute('aria-label', this.labelText);
             }
             if (this.required) {
-                this.target.setAttribute('aria-required', 'true');
+                if (this.target.nodeName == 'BUTTON') {
+                    console.warn(
+                        `Accessibility Warning: ${this.target.tagName.toLowerCase()} does not support being marked as required. Please ensure the aria-label for ${this.target.tagName.toLowerCase()} indicates it is required.`
+                    );
+                } else {
+                    this.target.setAttribute('aria-required', 'true');
+                }
             }
         }
         return Promise.resolve();
