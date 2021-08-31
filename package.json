@@ -121,13 +121,13 @@
         "@typescript-eslint/eslint-plugin": "^4.26.1",
         "@typescript-eslint/parser": "^4.26.1",
         "@vaadin/router": "^1.2.0",
-        "@web/dev-server": "^0.1.21",
+        "@web/dev-server": "^0.1.22",
         "@web/dev-server-rollup": "^0.3.9",
         "@web/dev-server-storybook": "^0.3.6-next.0",
         "@web/rollup-plugin-copy": "^0.3.0",
         "@web/rollup-plugin-html": "^1.9.1",
         "@web/test-runner": "^0.13.16",
-        "@web/test-runner-commands": "^0.5.11",
+        "@web/test-runner-commands": "^0.5.12",
         "@web/test-runner-junit-reporter": "^0.4.6",
         "@web/test-runner-playwright": "^0.8.8",
         "@web/test-runner-visual-regression": "^0.6.2",
@@ -175,7 +175,7 @@
         "node-fetch": "^2.6.0",
         "npm-run-all": "^4.1.5",
         "patch-package": "^6.4.7",
-        "playwright": "1.13.0",
+        "playwright": "^1.14.1",
         "plugin-error": "^1.0.1",
         "pngjs": "^6.0.0",
         "polymer-webpack-loader": "^2.0.3",
@@ -221,8 +221,7 @@
         "yargs": "^17.0.1"
     },
     "resolutions": {
-        "cssnano/**/postcss-calc": "7.0.0",
-        "playwright": "1.13.0"
+        "cssnano/**/postcss-calc": "7.0.0"
     },
     "customElements": "documentation/custom-elements.json",
     "workspaces": [
