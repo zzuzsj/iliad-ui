@@ -1280,7 +1280,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
    * .spectrum-ActionButton--quiet.is-selected:disabled */
     background-color: var(
         --spectrum-actionbutton-m-quiet-textonly-background-color-selected-disabled,
-        var(--spectrum-global-color-gray-200)
+        var(--spectrum-alias-background-color-transparent)
     );
     border-color: var(
         --spectrum-actionbutton-m-quiet-textonly-border-color-selected-disabled,

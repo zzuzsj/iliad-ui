@@ -10,90 +10,8 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 
 THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
-:host([size='s']) {
-    /* .spectrum-Tabs--sizeS */
-    --spectrum-tabs-focus-ring-border-radius: var(
-        --spectrum-tabs-s-focus-ring-border-radius
-    );
-    --spectrum-tabs-item-height: var(
-        --spectrum-tabs-s-item-height,
-        var(--spectrum-global-dimension-size-300)
-    );
-    --spectrum-tabs-item-gap: var(
-        --spectrum-tabs-s-item-gap,
-        var(--spectrum-global-dimension-size-250)
-    );
-    --spectrum-tabs-text-size: var(
-        --spectrum-tabs-s-text-size,
-        var(--spectrum-global-dimension-font-size-75)
-    );
-    --spectrum-tabs-text-font-weight: var(
-        --spectrum-tabs-s-text-font-weight,
-        var(--spectrum-alias-body-text-font-weight)
-    );
-    --spectrum-tabs-icon-gap: var(
-        --spectrum-tabs-s-icon-gap,
-        var(--spectrum-global-dimension-size-85)
-    );
-    --spectrum-tabs-divider-border-radius: var(
-        --spectrum-tabs-s-divider-border-radius,
-        var(--spectrum-global-dimension-static-size-10)
-    );
-    --spectrum-tabs-divider-size: var(
-        --spectrum-tabs-s-divider-size,
-        var(--spectrum-alias-border-size-thick)
-    );
-    --spectrum-tabs-focus-ring-size: var(
-        --spectrum-tabs-s-focus-ring-size,
-        var(--spectrum-alias-border-size-thick)
-    );
-    --spectrum-tabs-focus-ring-height: var(
-        --spectrum-tabs-s-focus-ring-height,
-        var(--spectrum-global-dimension-size-300)
-    );
-    --spectrum-tabs-focus-ring-padding-x: var(
-        --spectrum-tabs-s-focus-ring-padding-x,
-        var(--spectrum-global-dimension-size-115)
-    );
-    --spectrum-tabs-selection-indicator-animation-duration: var(
-        --spectrum-tabs-s-selection-indicator-animation-duration,
-        var(--spectrum-global-animation-duration-100)
-    );
-    --spectrum-tabs-vertical-item-height: var(
-        --spectrum-tabs-s-vertical-item-height,
-        var(--spectrum-global-dimension-size-450)
-    );
-    --spectrum-tabs-vertical-item-gap: var(
-        --spectrum-tabs-s-vertical-item-gap,
-        var(--spectrum-global-dimension-size-50)
-    );
-    --spectrum-tabs-vertical-item-margin-left: var(
-        --spectrum-tabs-s-vertical-item-margin-left,
-        var(--spectrum-global-dimension-size-150)
-    );
-    --spectrum-tabs-vertical-divider-size: var(
-        --spectrum-tabs-s-vertical-divider-size,
-        var(--spectrum-alias-border-size-thick)
-    );
-    --spectrum-tabs-compact-quiet-height: var(
-        --spectrum-tabs-s-compact-quiet-height,
-        var(--spectrum-global-dimension-size-300)
-    );
-    --spectrum-tabs-compact-item-height: var(
-        --spectrum-tabs-s-compact-item-height,
-        var(--spectrum-global-dimension-size-300)
-    );
-    --spectrum-tabs-compact-vertical-item-height: var(
-        --spectrum-tabs-s-compact-vertical-item-height,
-        var(--spectrum-global-dimension-size-300)
-    );
-    --spectrum-tabs-compact-vertical-item-gap: var(
-        --spectrum-tabs-s-compact-vertical-item-gap,
-        var(--spectrum-global-dimension-size-50)
-    );
-}
-:host([size='m']) {
-    /* .spectrum-Tabs--sizeM */
+:host {
+    /* .spectrum-Tabs */
     --spectrum-tabs-focus-ring-border-radius: var(
         --spectrum-tabs-m-focus-ring-border-radius
     );
@@ -137,6 +55,10 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         --spectrum-tabs-m-focus-ring-padding-x,
         var(--spectrum-global-dimension-size-150)
     );
+    --spectrum-tabs-height: var(
+        --spectrum-tabs-m-height,
+        var(--spectrum-global-dimension-size-600)
+    );
     --spectrum-tabs-selection-indicator-animation-duration: var(
         --spectrum-tabs-m-selection-indicator-animation-duration,
         var(--spectrum-global-animation-duration-100)
@@ -173,176 +95,16 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         --spectrum-tabs-m-compact-vertical-item-gap,
         var(--spectrum-global-dimension-size-50)
     );
-}
-:host([size='l']) {
-    /* .spectrum-Tabs--sizeL */
-    --spectrum-tabs-focus-ring-border-radius: var(
-        --spectrum-tabs-l-focus-ring-border-radius
+    --spectrum-tabs-item-height: calc(
+        var(--spectrum-tabs-height) - var(--spectrum-tabs-divider-size)
     );
-    --spectrum-tabs-item-height: var(
-        --spectrum-tabs-l-item-height,
-        var(--spectrum-global-dimension-size-500)
-    );
-    --spectrum-tabs-item-gap: var(
-        --spectrum-tabs-l-item-gap,
-        var(--spectrum-global-dimension-size-350)
-    );
-    --spectrum-tabs-text-size: var(
-        --spectrum-tabs-l-text-size,
-        var(--spectrum-global-dimension-font-size-200)
-    );
-    --spectrum-tabs-text-font-weight: var(
-        --spectrum-tabs-l-text-font-weight,
-        var(--spectrum-alias-body-text-font-weight)
-    );
-    --spectrum-tabs-icon-gap: var(
-        --spectrum-tabs-l-icon-gap,
-        var(--spectrum-global-dimension-size-115)
-    );
-    --spectrum-tabs-divider-border-radius: var(
-        --spectrum-tabs-l-divider-border-radius,
-        var(--spectrum-global-dimension-static-size-10)
-    );
-    --spectrum-tabs-divider-size: var(
-        --spectrum-tabs-l-divider-size,
-        var(--spectrum-alias-border-size-thick)
-    );
-    --spectrum-tabs-focus-ring-size: var(
-        --spectrum-tabs-l-focus-ring-size,
-        var(--spectrum-alias-border-size-thick)
-    );
-    --spectrum-tabs-focus-ring-height: var(
-        --spectrum-tabs-l-focus-ring-height,
-        var(--spectrum-global-dimension-size-500)
-    );
-    --spectrum-tabs-focus-ring-padding-x: var(
-        --spectrum-tabs-l-focus-ring-padding-x,
-        var(--spectrum-global-dimension-size-185)
-    );
-    --spectrum-tabs-selection-indicator-animation-duration: var(
-        --spectrum-tabs-l-selection-indicator-animation-duration,
-        var(--spectrum-global-animation-duration-100)
-    );
-    --spectrum-tabs-vertical-item-height: var(
-        --spectrum-tabs-l-vertical-item-height,
-        var(--spectrum-global-dimension-size-650)
-    );
-    --spectrum-tabs-vertical-item-gap: var(
-        --spectrum-tabs-l-vertical-item-gap,
-        var(--spectrum-global-dimension-size-65)
-    );
-    --spectrum-tabs-vertical-item-margin-left: var(
-        --spectrum-tabs-l-vertical-item-margin-left,
-        var(--spectrum-global-dimension-size-160)
-    );
-    --spectrum-tabs-vertical-divider-size: var(
-        --spectrum-tabs-l-vertical-divider-size,
-        var(--spectrum-alias-border-size-thick)
-    );
-    --spectrum-tabs-compact-quiet-height: var(
-        --spectrum-tabs-l-compact-quiet-height,
-        var(--spectrum-global-dimension-size-500)
-    );
-    --spectrum-tabs-compact-item-height: var(
-        --spectrum-tabs-l-compact-item-height,
-        var(--spectrum-global-dimension-size-500)
-    );
-    --spectrum-tabs-compact-vertical-item-height: var(
-        --spectrum-tabs-l-compact-vertical-item-height,
-        var(--spectrum-global-dimension-size-500)
-    );
-    --spectrum-tabs-compact-vertical-item-gap: var(
-        --spectrum-tabs-l-compact-vertical-item-gap,
-        var(--spectrum-global-dimension-size-65)
-    );
-}
-:host([size='xl']) {
-    /* .spectrum-Tabs--sizeXL */
-    --spectrum-tabs-focus-ring-border-radius: var(
-        --spectrum-tabs-xl-focus-ring-border-radius
-    );
-    --spectrum-tabs-item-height: var(
-        --spectrum-tabs-xl-item-height,
-        var(--spectrum-global-dimension-size-600)
-    );
-    --spectrum-tabs-item-gap: var(
-        --spectrum-tabs-xl-item-gap,
-        var(--spectrum-global-dimension-size-400)
-    );
-    --spectrum-tabs-text-size: var(
-        --spectrum-tabs-xl-text-size,
-        var(--spectrum-global-dimension-font-size-300)
-    );
-    --spectrum-tabs-text-font-weight: var(
-        --spectrum-tabs-xl-text-font-weight,
-        var(--spectrum-alias-body-text-font-weight)
-    );
-    --spectrum-tabs-icon-gap: var(
-        --spectrum-tabs-xl-icon-gap,
-        var(--spectrum-global-dimension-size-125)
-    );
-    --spectrum-tabs-divider-border-radius: var(
-        --spectrum-tabs-xl-divider-border-radius,
-        var(--spectrum-global-dimension-static-size-10)
-    );
-    --spectrum-tabs-divider-size: var(
-        --spectrum-tabs-xl-divider-size,
-        var(--spectrum-alias-border-size-thick)
-    );
-    --spectrum-tabs-focus-ring-size: var(
-        --spectrum-tabs-xl-focus-ring-size,
-        var(--spectrum-alias-border-size-thick)
-    );
-    --spectrum-tabs-focus-ring-height: var(
-        --spectrum-tabs-xl-focus-ring-height,
-        var(--spectrum-global-dimension-size-600)
-    );
-    --spectrum-tabs-focus-ring-padding-x: var(
-        --spectrum-tabs-xl-focus-ring-padding-x,
-        var(--spectrum-global-dimension-size-225)
-    );
-    --spectrum-tabs-selection-indicator-animation-duration: var(
-        --spectrum-tabs-xl-selection-indicator-animation-duration,
-        var(--spectrum-global-animation-duration-100)
-    );
-    --spectrum-tabs-vertical-item-height: var(
-        --spectrum-tabs-xl-vertical-item-height,
-        var(--spectrum-global-dimension-size-750)
-    );
-    --spectrum-tabs-vertical-item-gap: var(
-        --spectrum-tabs-xl-vertical-item-gap,
-        var(--spectrum-global-dimension-size-65)
-    );
-    --spectrum-tabs-vertical-item-margin-left: var(
-        --spectrum-tabs-xl-vertical-item-margin-left,
-        var(--spectrum-global-dimension-size-160)
-    );
-    --spectrum-tabs-vertical-divider-size: var(
-        --spectrum-tabs-xl-vertical-divider-size,
-        var(--spectrum-alias-border-size-thick)
-    );
-    --spectrum-tabs-compact-quiet-height: var(
-        --spectrum-tabs-xl-compact-quiet-height,
-        var(--spectrum-global-dimension-size-600)
-    );
-    --spectrum-tabs-compact-item-height: var(
-        --spectrum-tabs-xl-compact-item-height,
-        var(--spectrum-global-dimension-size-600)
-    );
-    --spectrum-tabs-compact-vertical-item-height: var(
-        --spectrum-tabs-xl-compact-vertical-item-height,
-        var(--spectrum-global-dimension-size-600)
-    );
-    --spectrum-tabs-compact-vertical-item-gap: var(
-        --spectrum-tabs-xl-compact-vertical-item-gap,
-        var(--spectrum-global-dimension-size-65)
-    );
-}
-:host {
-    /* .spectrum-Tabs */
     --spectrum-tabs-compact-item-height: calc(
         var(--spectrum-tabs-compact-quiet-height) -
             var(--spectrum-tabs-divider-size)
+    );
+    --spectrum-tabs-text-size: var(
+        --spectrum-alias-font-size-default,
+        var(--spectrum-global-dimension-font-size-100)
     );
 }
 #list {
@@ -353,6 +115,8 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
     margin: 0;
     padding-top: 0;
     padding-bottom: 0;
+    padding-left: var(--spectrum-tabs-focus-ring-padding-x);
+    padding-right: var(--spectrum-tabs-focus-ring-padding-x);
     vertical-align: top;
 }
 :host([dir='ltr']) ::slotted(*):before {
@@ -464,7 +228,6 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
 :host([direction^='vertical']) ::slotted(*) {
     /* .spectrum-Tabs--vertical .spectrum-Tabs-item */
     height: var(--spectrum-tabs-vertical-item-height);
-    line-height: var(--spectrum-tabs-vertical-item-height);
     padding-top: 0;
     padding-bottom: 0;
     padding-left: var(--spectrum-tabs-focus-ring-padding-x);
@@ -490,11 +253,6 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
 :host([direction^='vertical']) ::slotted(*):before {
     /* .spectrum-Tabs--vertical .spectrum-Tabs-item:before */
     margin-top: calc(var(--spectrum-tabs-focus-ring-height) / -2);
-}
-:host([direction^='vertical']) .spectrum-Icon {
-    /* .spectrum-Tabs--vertical .spectrum-Icon */
-    height: var(--spectrum-tabs-vertical-item-height);
-    line-height: var(--spectrum-tabs-vertical-item-height);
 }
 :host([direction^='vertical'][compact]) #list ::slotted(*) {
     /* .spectrum-Tabs--vertical.spectrum-Tabs--compact .spectrum-Tabs-item */
