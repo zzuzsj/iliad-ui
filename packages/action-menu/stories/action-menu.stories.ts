@@ -67,7 +67,7 @@ interface StoryArgs {
     disabled?: boolean;
     open?: boolean;
     customIcon?: string | TemplateResult;
-    selects?: 'single';
+    selects?: 'single' | 'multiple';
     selected?: boolean;
 }
 
@@ -76,13 +76,23 @@ const Template = (args: StoryArgs = {}): TemplateResult =>
 
 export const Default = (args: StoryArgs = {}): TemplateResult => Template(args);
 
-export const selects = (args: StoryArgs = {}): TemplateResult =>
+export const selectsSingle = (args: StoryArgs = {}): TemplateResult =>
     Template({
         ...args,
         selects: 'single',
         selected: true,
     });
-selects.args = {
+selectsSingle.args = {
+    open: true,
+};
+
+export const selectsMultiple = (args: StoryArgs = {}): TemplateResult =>
+    Template({
+        ...args,
+        selects: 'multiple',
+        selected: true,
+    });
+selectsMultiple.args = {
     open: true,
 };
 

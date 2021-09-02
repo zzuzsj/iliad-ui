@@ -59,6 +59,8 @@ export class SplitButton extends SizedMixin(PickerBase) {
     @property({ reflect: true })
     public variant: ButtonVariants = 'cta';
 
+    public selects: undefined | 'single' = 'single';
+
     public get target(): HTMLButtonElement | this {
         return this;
     }
@@ -185,10 +187,14 @@ export class SplitButton extends SizedMixin(PickerBase) {
         `;
     }
 
-    protected updated(changedProperties: PropertyValues): void {
+    protected updated(changedProperties: PropertyValues<this>): void {
         super.updated(changedProperties);
         if (changedProperties.has('value')) {
             this.manageSplitButtonItems();
+        }
+        if (this.selects) {
+            // Always force `selects` to "single" when set.
+            this.selects = 'single';
         }
     }
 

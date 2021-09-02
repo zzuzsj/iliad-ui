@@ -25,6 +25,7 @@ import '@spectrum-web-components/action-button/sp-action-button.js';
 import { ObserveSlotText } from '@spectrum-web-components/shared/src/observe-slot-text.js';
 import '@spectrum-web-components/icons-workflow/icons/sp-icon-more.js';
 import actionMenuStyles from './action-menu.css.js';
+import type { Menu, MenuItem } from '@spectrum-web-components/menu';
 
 /**
  * @element sp-action-menu
@@ -42,12 +43,81 @@ export class ActionMenu extends ObserveSlotText(PickerBase, 'label') {
     }
 
     @property({ type: String })
-    public selects: undefined | 'single' = undefined;
+    public selects: undefined | 'single' | 'multiple' = undefined;
 
     protected listRole: 'listbox' | 'menu' = 'menu';
     protected itemRole = 'menuitem';
     private get hasLabel(): boolean {
         return this.slotHasContent;
+    }
+
+    public async setValueFromItem(
+        item: MenuItem,
+        menuChangeEvent?: Event
+    ): Promise<void> {
+        const oldSelectedItem = this.selectedItem;
+        const oldValue = this.value;
+        this.selectedItem = item;
+        this.value = (menuChangeEvent?.target as Menu).value;
+        this.open = false;
+        await this.updateComplete;
+        const applyDefault = this.dispatchEvent(
+            new Event('change', {
+                cancelable: true,
+            })
+        );
+        if (!applyDefault) {
+            if (menuChangeEvent) {
+                menuChangeEvent.preventDefault();
+            }
+            this.selectedItem = oldSelectedItem;
+            this.value = oldValue;
+            this.open = true;
+            return;
+        }
+        if (oldSelectedItem) {
+            oldSelectedItem.selected =
+                this.selects === 'multiple' ? oldSelectedItem.selected : false;
+        }
+        item.selected = !!this.selects ? true : false;
+    }
+
+    protected manageSelection(): void {
+        if (!this.open) {
+            this.updateMenuItems();
+        }
+        if (this.menuItems.length > 0) {
+            const selectedItems = [] as MenuItem[];
+            this.menuItems.forEach((item) => {
+                if (
+                    (item.selected || this.value.search(item.value) !== -1) &&
+                    !item.disabled
+                ) {
+                    if (this.selects === 'multiple' || !selectedItems.length) {
+                        selectedItems.push(item);
+                    } else {
+                        item.selected = false;
+                    }
+                } else {
+                    item.selected = false;
+                }
+            });
+            if (selectedItems.length) {
+                selectedItems.forEach((item) => {
+                    item.selected = !!this.selects ? true : false;
+                });
+                this.selectedItem = selectedItems[0];
+            } else {
+                this.value = '';
+                this.selectedItem = undefined;
+            }
+            if (this.open) {
+                this.optionsMenu.updateComplete.then(() => {
+                    this.optionsMenu.updateSelectedItemIndex();
+                });
+            }
+            return;
+        }
     }
 
     protected get buttonContent(): TemplateResult[] {
@@ -90,13 +160,13 @@ export class ActionMenu extends ObserveSlotText(PickerBase, 'label') {
                     id="menu"
                     role="${this.listRole}"
                     @change=${this.handleChange}
-                    .selects=${this.selects}
+                    selects=${ifDefined(this.selects)}
                 ></sp-menu>
             </sp-popover>
         `;
     }
 
-    protected updated(changedProperties: PropertyValues): void {
+    protected updated(changedProperties: PropertyValues<this>): void {
         super.updated(changedProperties);
         if (changedProperties.has('invalid')) {
             this.invalid = false;

@@ -100,7 +100,7 @@ export class PickerBase extends SizedMixin(Focusable) {
     @property({ type: Boolean, reflect: true })
     public readonly = false;
 
-    public selects: undefined | 'single' = 'single';
+    public selects: undefined | 'single' | 'multiple' = 'single';
 
     public menuItems: MenuItem[] = [];
     private restoreChildren?: () => void;
@@ -370,11 +370,6 @@ export class PickerBase extends SizedMixin(Focusable) {
         if (changes.has('selectedItem')) {
             this._selectedItemContent = undefined;
         }
-        if (this.selects) {
-            // Always force `selects` to "single" when set.
-            // TODO: Add support functionally and visually for "multiple"
-            this.selects = 'single';
-        }
         super.update(changes);
     }
 
@@ -419,7 +414,7 @@ export class PickerBase extends SizedMixin(Focusable) {
         }
     }
 
-    protected updated(changedProperties: PropertyValues): void {
+    protected updated(changedProperties: PropertyValues<this>): void {
         super.updated(changedProperties);
         if (
             changedProperties.has('value') &&
@@ -501,6 +496,17 @@ export class PickerBase extends SizedMixin(Focusable) {
 export class Picker extends PickerBase {
     public static get styles(): CSSResultArray {
         return [pickerStyles, chevronStyles];
+    }
+
+    public selects: undefined | 'single' = 'single';
+
+    public updated(changes: PropertyValues<this>): void {
+        super.updated(changes);
+        if (this.selects) {
+            // Always force `selects` to "single" when set.
+            // TODO: Add support functionally and visually for "multiple"
+            this.selects = 'single';
+        }
     }
 
     protected onKeydown = (event: KeyboardEvent): void => {

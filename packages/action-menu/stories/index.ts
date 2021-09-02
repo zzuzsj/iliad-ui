@@ -24,7 +24,7 @@ export const ActionMenuMarkup = ({
     visibleLabel = '',
     customIcon = '' as string | TemplateResult,
     size = 'm' as 'm' | 's' | 'l' | 'xl' | 'xxl',
-    selects = '' as 'single',
+    selects = '' as 'single' | 'multiple',
     selected = false,
 } = {}): TemplateResult => {
     return html`
@@ -46,7 +46,9 @@ export const ActionMenuMarkup = ({
             <sp-menu-item>Deselect</sp-menu-item>
             <sp-menu-item ?selected=${selected}>Select Inverse</sp-menu-item>
             <sp-menu-item>Feather...</sp-menu-item>
-            <sp-menu-item>Select and Mask...</sp-menu-item>
+            <sp-menu-item ?selected=${selects === 'multiple'}>
+                Select and Mask...
+            </sp-menu-item>
             <sp-menu-divider></sp-menu-divider>
             <sp-menu-item>Save Selection</sp-menu-item>
             <sp-menu-item disabled>Make Work Path</sp-menu-item>
