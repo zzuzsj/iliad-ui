@@ -18,6 +18,48 @@ const config = {
             host: {
                 selector: '.spectrum-Badge',
             },
+            attributes: [
+                {
+                    type: 'enum',
+                    name: 'size',
+                    values: [
+                        {
+                            name: 's',
+                            selector: '.spectrum-Badge--sizeS',
+                        },
+                        {
+                            name: 'm',
+                            selector: '.spectrum-Badge--sizeM',
+                        },
+                        {
+                            name: 'l',
+                            selector: '.spectrum-Badge--sizeL',
+                        },
+                        {
+                            name: 'xl',
+                            selector: '.spectrum-Badge--sizeXL',
+                        },
+                    ]
+                },
+                {
+                    type: 'enum',
+                    name: 'variant',
+                    values: [
+                        // semantic
+                        '.spectrum-Badge--positive',
+                        '.spectrum-Badge--informative',
+                        '.spectrum-Badge--negative',
+                        '.spectrum-Badge--neutral',
+                        // non-semantic
+                        '.spectrum-Badge--seafoam',
+                        '.spectrum-Badge--indigo',
+                        '.spectrum-Badge--purple',
+                        '.spectrum-Badge--fuchsia',
+                        '.spectrum-Badge--magenta',
+                        '.spectrum-Badge--yellow',
+                    ]
+                }
+            ]
         },
     ],
 };

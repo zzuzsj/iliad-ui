@@ -10,7 +10,7 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 
 THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
-.spectrum-Badge--sizeS {
+:host([size='s']) {
     /* .spectrum-Badge--sizeS */
     --spectrum-badge-neutral-texticon-text-line-height: var(
         --spectrum-badge-s-neutral-texticon-text-line-height,
@@ -53,7 +53,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-alias-border-radius-regular)
     );
 }
-.spectrum-Badge--sizeM {
+:host([size='m']) {
     /* .spectrum-Badge--sizeM */
     --spectrum-badge-neutral-texticon-text-line-height: var(
         --spectrum-badge-m-neutral-texticon-text-line-height,
@@ -96,7 +96,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-alias-border-radius-regular)
     );
 }
-.spectrum-Badge--sizeL {
+:host([size='l']) {
     /* .spectrum-Badge--sizeL */
     --spectrum-badge-neutral-texticon-text-line-height: var(
         --spectrum-badge-l-neutral-texticon-text-line-height,
@@ -139,7 +139,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-alias-border-radius-regular)
     );
 }
-.spectrum-Badge--sizeXL {
+:host([size='xl']) {
     /* .spectrum-Badge--sizeXL */
     --spectrum-badge-neutral-texticon-text-line-height: var(
         --spectrum-badge-xl-neutral-texticon-text-line-height,
@@ -210,7 +210,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
     -moz-osx-font-smoothing: auto;
     font-smoothing: subpixel-antialiased;
 }
-.spectrum-Badge--neutral {
+:host([variant='neutral']) {
     /* .spectrum-Badge--neutral */
     --spectrum-badge-m-texticon-background-color: var(
         --spectrum-badge-m-neutral-texticon-background-color,
@@ -229,7 +229,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-global-color-static-white)
     );
 }
-.spectrum-Badge--informative {
+:host([variant='informative']) {
     /* .spectrum-Badge--informative */
     --spectrum-badge-m-texticon-background-color: var(
         --spectrum-badge-m-informative-texticon-background-color,
@@ -248,7 +248,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-global-color-static-white)
     );
 }
-.spectrum-Badge--positive {
+:host([variant='positive']) {
     /* .spectrum-Badge--positive */
     --spectrum-badge-m-texticon-background-color: var(
         --spectrum-badge-m-positive-texticon-background-color,
@@ -267,7 +267,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-global-color-static-white)
     );
 }
-.spectrum-Badge--negative {
+:host([variant='negative']) {
     /* .spectrum-Badge--negative */
     --spectrum-badge-m-texticon-background-color: var(
         --spectrum-badge-m-negative-texticon-background-color,
@@ -286,7 +286,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-global-color-static-white)
     );
 }
-.spectrum-Badge--fuchsia {
+:host([variant='fuchsia']) {
     /* .spectrum-Badge--fuchsia */
     --spectrum-badge-m-texticon-background-color: var(
         --spectrum-badge-m-fuchsia-texticon-background-color,
@@ -305,7 +305,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-global-color-static-white)
     );
 }
-.spectrum-Badge--indigo {
+:host([variant='indigo']) {
     /* .spectrum-Badge--indigo */
     --spectrum-badge-m-texticon-background-color: var(
         --spectrum-badge-m-indigo-texticon-background-color,
@@ -324,7 +324,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-global-color-static-white)
     );
 }
-.spectrum-Badge--magenta {
+:host([variant='magenta']) {
     /* .spectrum-Badge--magenta */
     --spectrum-badge-m-texticon-background-color: var(
         --spectrum-badge-m-magenta-texticon-background-color,
@@ -343,7 +343,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-global-color-static-white)
     );
 }
-.spectrum-Badge--purple {
+:host([variant='purple']) {
     /* .spectrum-Badge--purple */
     --spectrum-badge-m-texticon-background-color: var(
         --spectrum-badge-m-purple-texticon-background-color,
@@ -362,7 +362,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-global-color-static-white)
     );
 }
-.spectrum-Badge--seafoam {
+:host([variant='seafoam']) {
     /* .spectrum-Badge--seafoam */
     --spectrum-badge-m-texticon-background-color: var(
         --spectrum-badge-m-seafoam-texticon-background-color,
@@ -381,7 +381,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-global-color-static-white)
     );
 }
-.spectrum-Badge--yellow {
+:host([variant='yellow']) {
     /* .spectrum-Badge--yellow */
     --spectrum-badge-m-texticon-background-color: var(
         --spectrum-badge-m-yellow-texticon-background-color,

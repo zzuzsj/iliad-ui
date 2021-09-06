@@ -15,6 +15,8 @@ import {
     SpectrumElement,
     CSSResultArray,
     TemplateResult,
+    SizedMixin,
+    property,
 } from '@spectrum-web-components/base';
 
 import styles from './badge.css.js';
@@ -22,14 +24,18 @@ import styles from './badge.css.js';
 /**
  * @element sp-badge
  */
-export class Badge extends SpectrumElement {
+export class Badge extends SizedMixin(SpectrumElement) {
+    @property({ type: String, reflect: true })
+    public variant = "informative"
+
     public static get styles(): CSSResultArray {
         return [styles];
     }
 
     protected render(): TemplateResult {
         return html`
-            
+            <slot name="icon"></slot>
+            <slot></slot>
         `;
     }
 }

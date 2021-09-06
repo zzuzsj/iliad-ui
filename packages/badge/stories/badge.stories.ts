@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 
 import '../sp-badge.js';
 import { html, TemplateResult } from '@spectrum-web-components/base';
-import '@spectrum-web-components/icons-workflow/icons/sp-icon-checkmark-circle';
+import '@spectrum-web-components/icons-workflow/icons/sp-icon-checkmark-circle.js';
 
 export default {
     title: 'Badge',
@@ -26,22 +26,34 @@ export const Default = (): TemplateResult => {
 export const WIcon = (): TemplateResult => {
     return html`
         <sp-badge>
-            <sp-icon-checkmark-circle slot="icon" size="s"></sp-icon-checkmark-circle>
+            <sp-icon-checkmark-circle slot="icon"></sp-icon-checkmark-circle>
             Badge
         </sp-badge>
 
         <sp-badge>
-            <sp-icon-checkmark-circle slot="icon" size="s"></sp-icon-checkmark-circle>
+            <sp-icon-checkmark-circle slot="icon"></sp-icon-checkmark-circle>
         </sp-badge>
     `;
 };
 
 export const Sizes = (): TemplateResult => {
     return html`
-        <sp-badge size="s">Small</sp-badge>
-        <sp-badge size="m">Medium</sp-badge>
-        <sp-badge size="l">Large</sp-badge>
-        <sp-badge size="xl">Extra-large</sp-badge>
+        <sp-badge size="s">
+            <sp-icon-checkmark-circle slot="icon"></sp-icon-checkmark-circle>
+            Small
+        </sp-badge>
+        <sp-badge size="m">
+            <sp-icon-checkmark-circle slot="icon"></sp-icon-checkmark-circle>
+            Medium
+        </sp-badge>
+        <sp-badge size="l">
+            <sp-icon-checkmark-circle slot="icon"></sp-icon-checkmark-circle>
+            Large
+        </sp-badge>
+        <sp-badge size="xl">
+            <sp-icon-checkmark-circle slot="icon"></sp-icon-checkmark-circle>
+            Extra-large
+        </sp-badge>
     `;
 }
 
@@ -79,10 +91,16 @@ export const Fixed = (): TemplateResult => {
 
 export const Behaviors = (): TemplateResult => {
     return html`
-        <sp-badge disabled>Disabled</sp-badge>
+        <sp-badge disabled>
+            <sp-icon-checkmark-circle slot="icon"></sp-icon-checkmark-circle>
+            Disabled
+        </sp-badge>
 
-        <div style="width: 150px; border: solid 2px #ccc;">
-            <sp-badge>This text should automatically wrap, but for no more than two lines</sp-badge>
+        <div style="width: 100px; border: solid 2px #ccc;">
+            <sp-badge>
+                <sp-icon-checkmark-circle slot="icon"></sp-icon-checkmark-circle>
+                This text should automatically wrap, but for no more than two lines
+            </sp-badge>
         </div>
     `;
 }

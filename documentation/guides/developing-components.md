@@ -105,7 +105,7 @@ follows:
 1. Make the directory <sp-link href="https://github.com/adobe/spectrum-web-components/tree/master/src/button">`src/components/button`</sp-link>
 2. In that new directory, create a <sp-link href="https://github.com/adobe/spectrum-web-components/blob/main/packages/button/src/spectrum-config.js">`spectrum-config.js`</sp-link>
    file with the above contents
-3. Run the command `npm run process-spectrum` to create the <sp-link href="https://github.com/adobe/spectrum-web-components/blob/main/packages/button/src/spectrum-button.css">CSS file</sp-link>
+3. Run the command `yarn process-spectrum` to create the <sp-link href="https://github.com/adobe/spectrum-web-components/blob/main/packages/button/src/spectrum-button.css">CSS file</sp-link>
 
 When you do the above, the <sp-link href="https://github.com/adobe/spectrum-web-components/blob/main/scripts/process-spectrum-postcss-plugin.js">config-driven processor</sp-link>
 will look in the <sp-link href="https://github.com/adobe/spectrum-css">`spectrum-css`</sp-link> project
