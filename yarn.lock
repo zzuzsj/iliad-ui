@@ -1537,19 +1537,27 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@formatjs/ecma402-abstract@1.9.3":
-  version "1.9.3"
-  resolved "https://registry.yarnpkg.com/@formatjs/ecma402-abstract/-/ecma402-abstract-1.9.3.tgz#00892014c805935b5b1345d238246e9bf3a2de50"
-  integrity sha512-DBrRUL65m4SVtfq+T4Qltd8+upAzfb9K1MX0UZ0hqQ0wpBY0PSIti9XJe0ZQ/j2v/KxpwQ0Jw5NLumKVezJFQg==
+"@formatjs/ecma402-abstract@1.9.8":
+  version "1.9.8"
+  resolved "https://registry.yarnpkg.com/@formatjs/ecma402-abstract/-/ecma402-abstract-1.9.8.tgz#f3dad447fbc7f063f88e2a148b7a353161740e74"
+  integrity sha512-2U4n11bLmTij/k4ePCEFKJILPYwdMcJTdnKVBi+JMWBgu5O1N+XhCazlE6QXqVO1Agh2Doh0b/9Jf1mSmSVfhA==
+  dependencies:
+    "@formatjs/intl-localematcher" "0.2.20"
+    tslib "^2.1.0"
+
+"@formatjs/intl-localematcher@0.2.20":
+  version "0.2.20"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-localematcher/-/intl-localematcher-0.2.20.tgz#782aef53d1c1b6112ee67468dc59f9b8d1ba7b17"
+  integrity sha512-/Ro85goRZnCojzxOegANFYL0LaDIpdPjAukR7xMTjOtRx+3yyjR0ifGTOW3/Kjhmab3t6GnyHBYWZSudxEOxPA==
   dependencies:
     tslib "^2.1.0"
 
-"@formatjs/intl-numberformat@7.1.4":
-  version "7.1.4"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-7.1.4.tgz#67f35b2c1f22d126879c7c7fb048cc627b2f38a3"
-  integrity sha512-rOFMlx1oLaQ7tLUwWWaqMvjQ8n4Z/C7jUlBG0qfM4oSOksluKO4MEyJZZeYjRVuNEMipIj34h12t8KicXj6gKg==
+"@formatjs/intl-numberformat@^7.1.4":
+  version "7.2.3"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-7.2.3.tgz#c7956b7cc93dff107d5edfedf6aeea49f047f33e"
+  integrity sha512-Rb2hfjiBl5976mbAMl/VDXO5Bp7+Oq5GAK+LBy13mUWM2JiqM7pBqQWYRRHusoYiQfkhdgfs/uY+8wxlbr5rOg==
   dependencies:
-    "@formatjs/ecma402-abstract" "1.9.3"
+    "@formatjs/ecma402-abstract" "1.9.8"
     tslib "^2.1.0"
 
 "@hapi/address@2.x.x":
@@ -3541,6 +3549,11 @@
   version "4.0.0-alpha.3"
   resolved "https://registry.yarnpkg.com/@spectrum-css/avatar/-/avatar-4.0.0-alpha.3.tgz#70dc1d69555923fb62f94728787dafa432cb2bf4"
   integrity sha512-8tm1tCPbujgb9fByi6gnnB7N3sqoehDE2W+yxyGlB1d7ZaiTQ7ecE0dUnjWx8vSPfeGkoEAEKfdxz0XbiO0ntg==
+
+"@spectrum-css/badge@^1.0.1-alpha.0":
+  version "1.0.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/@spectrum-css/badge/-/badge-1.0.1-alpha.0.tgz#4c05420a522b4edd8061801ba78ef22c434fefac"
+  integrity sha512-e547pQgGWA+y238oD4SA5BQVsxRHyhCCL034A3nwLiubDIYmehHMnVWQ+zJ/c5+/yhmTp4vjh/RKF2LdVOqdlQ==
 
 "@spectrum-css/banner@3.0.0-beta.2":
   version "3.0.0-beta.2"
