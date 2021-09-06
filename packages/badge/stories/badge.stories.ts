@@ -23,7 +23,7 @@ export const Default = (): TemplateResult => {
     return html`<sp-badge>Badge</sp-badge>`;
 };
 
-export const WIcon = (): TemplateResult => {
+export const WithIcon = (): TemplateResult => {
     return html`
         <sp-badge>
             <sp-icon-checkmark-circle slot="icon"></sp-icon-checkmark-circle>
