@@ -29,7 +29,7 @@ export class Badge extends SpectrumElement {
 
     protected render(): TemplateResult {
         return html`
-            Markup goes here
+            
         `;
     }
 }

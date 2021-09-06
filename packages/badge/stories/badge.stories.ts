@@ -10,9 +10,9 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { html, TemplateResult } from '@spectrum-web-components/base';
-
 import '../sp-badge.js';
+import { html, TemplateResult } from '@spectrum-web-components/base';
+import '@spectrum-web-components/icons-workflow/icons/sp-icon-checkmark-circle';
 
 export default {
     title: 'Badge',
@@ -20,5 +20,69 @@ export default {
 };
 
 export const Default = (): TemplateResult => {
-    return html`<sp-badge></sp-badge>`;
+    return html`<sp-badge>Badge</sp-badge>`;
 };
+
+export const WIcon = (): TemplateResult => {
+    return html`
+        <sp-badge>
+            <sp-icon-checkmark-circle slot="icon" size="s"></sp-icon-checkmark-circle>
+            Badge
+        </sp-badge>
+
+        <sp-badge>
+            <sp-icon-checkmark-circle slot="icon" size="s"></sp-icon-checkmark-circle>
+        </sp-badge>
+    `;
+};
+
+export const Sizes = (): TemplateResult => {
+    return html`
+        <sp-badge size="s">Small</sp-badge>
+        <sp-badge size="m">Medium</sp-badge>
+        <sp-badge size="l">Large</sp-badge>
+        <sp-badge size="xl">Extra-large</sp-badge>
+    `;
+}
+
+export const Semantic = (): TemplateResult => {
+    return html`
+        <sp-badge variant="positive">Positive</sp-badge>
+        <sp-badge variant="informative">Informative</sp-badge>
+        <sp-badge variant="negative">Negative</sp-badge>
+        <sp-badge variant="neutral">Neutral</sp-badge>
+    `;
+} 
+
+export const NonSemantic = (): TemplateResult => {
+    return html`
+        <sp-badge variant="seafoam">Seafoam</sp-badge>
+        <sp-badge variant="indigo">Indigo</sp-badge>
+        <sp-badge variant="purple">Purple</sp-badge>
+        <sp-badge variant="fuchsia">Fuchsia</sp-badge>
+        <sp-badge variant="magenta">Magenta</sp-badge>
+        <sp-badge variant="yellow">Yellow</sp-badge>
+    `;
+}
+
+export const Fixed = (): TemplateResult => {
+    return html`
+        <div style="width: 400px; height: 300px; background: #eee">
+            <sp-badge>None</sp-badge>
+            <sp-badge fixed="top">Top</sp-badge>
+            <sp-badge fixed="right">Right</sp-badge>
+            <sp-badge fixed="bottom">Bottom</sp-badge>
+            <sp-badge fixed="left">Left</sp-badge>
+        </div>
+    `;
+}
+
+export const Behaviors = (): TemplateResult => {
+    return html`
+        <sp-badge disabled>Disabled</sp-badge>
+
+        <div style="width: 150px; border: solid 2px #ccc;">
+            <sp-badge>This text should automatically wrap, but for no more than two lines</sp-badge>
+        </div>
+    `;
+}
