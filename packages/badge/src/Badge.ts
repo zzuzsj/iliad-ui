@@ -18,6 +18,7 @@ import {
     SizedMixin,
     property,
 } from '@spectrum-web-components/base';
+import { PropertyValues } from 'lit-element';
 import { ObserveSlotText } from '@spectrum-web-components/shared/src/observe-slot-text.js';
 import styles from './badge.css.js';
 
@@ -35,7 +36,19 @@ export class Badge extends SizedMixin(ObserveSlotText(SpectrumElement, '')) {
     protected render(): TemplateResult {
         return html`
             <slot name="icon" ?icon-only=${!this.slotHasContent}></slot>
-            <slot></slot>
+            <div id="label">
+                <slot></slot>
+            </div>
         `;
+    }
+
+    protected updated(_: PropertyValues) {
+        const label = this.shadowRoot.querySelector('#label') as HTMLDivElement;
+        if (label.scrollHeight > label.clientHeight) {
+            this.setAttribute('truncated', '');
+        }
+        else {
+            this.removeAttribute('truncated');
+        }
     }
 }

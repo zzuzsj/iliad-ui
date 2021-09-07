@@ -135,3 +135,15 @@ slot[icon-only]::slotted([slot='icon']) {
         - var(--spectrum-badge-neutral-texticon-padding-left)
     );
 }
+
+/* limit label length to two lines
+ */
+
+#label {
+    max-height: calc(
+        var(--spectrum-badge-neutral-texticon-text-line-height)
+        * var(--spectrum-badge-neutral-texticon-text-size)
+        * 2
+    );
+    overflow: hidden;
+}

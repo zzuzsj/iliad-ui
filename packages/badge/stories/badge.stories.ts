@@ -98,10 +98,10 @@ export const Behaviors = (): TemplateResult => {
             Disabled
         </sp-badge>
 
-        <div style="width: 100px; margin-top: 24px;">
+        <div style="width: 180px; margin-top: 24px;">
             <sp-badge>
                 <sp-icon-checkmark-circle slot="icon"></sp-icon-checkmark-circle>
-                This text should automatically wrap, but for no more than two lines
+                This has a truncated attribute, and automatically wraps, but shows no more than two lines
             </sp-badge>
         </div>
     `;
