@@ -81,12 +81,12 @@ export const NonSemantic = (): TemplateResult => {
 
 export const Fixed = (): TemplateResult => {
     return html`
-        <div style="width: 400px; height: 300px; background: #eee">
+        <div style="position: relative; width: 400px; height: 200px; background: #eee">
             <sp-badge>None</sp-badge>
-            <sp-badge fixed="top">Top</sp-badge>
-            <sp-badge fixed="right">Right</sp-badge>
-            <sp-badge fixed="bottom">Bottom</sp-badge>
-            <sp-badge fixed="left">Left</sp-badge>
+            <sp-badge fixed="top" style="position: absolute; top: 0; left: 200px;">Top</sp-badge>
+            <sp-badge fixed="right" style="position: absolute; right: 0; top: 100px;">Right</sp-badge>
+            <sp-badge fixed="bottom" style="position: absolute; bottom: 0; left: 200px;">Bottom</sp-badge>
+            <sp-badge fixed="left" style="position: absolute; left: 0; top: 100px;">Left</sp-badge>
         </div>
     `;
 }
