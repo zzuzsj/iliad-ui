@@ -23,11 +23,13 @@ export const Default = (): TemplateResult => {
     return html`<sp-badge>Badge</sp-badge>`;
 };
 
-export const WithIcon = (): TemplateResult => {
+export const Icons = (): TemplateResult => {
     return html`
+        <sp-badge>No icon</sp-badge>
+
         <sp-badge>
             <sp-icon-checkmark-circle slot="icon"></sp-icon-checkmark-circle>
-            Badge
+            Icon and label
         </sp-badge>
 
         <sp-badge>
@@ -96,7 +98,7 @@ export const Behaviors = (): TemplateResult => {
             Disabled
         </sp-badge>
 
-        <div style="width: 100px; border: solid 2px #ccc;">
+        <div style="width: 100px; margin-top: 24px;">
             <sp-badge>
                 <sp-icon-checkmark-circle slot="icon"></sp-icon-checkmark-circle>
                 This text should automatically wrap, but for no more than two lines

@@ -95,3 +95,43 @@ governing permissions and limitations under the License.
         --spectrum-alias-ui-icon-cornertriangle-size-300
     );
 }
+
+/* center align icons and text
+ * TODO: learn why top/bottom and left/right padding aren't symmetrical in spectrum css
+ */
+
+:host {
+    display: inline-flex;
+    align-items: center;
+}
+
+:host {
+    --spectrum-badge-neutral-texticon-text-padding-bottom: var(
+        --spectrum-badge-neutral-texticon-text-padding-top
+    ) !important;
+    --spectrum-badge-neutral-texticon-padding-left: var(
+        --spectrum-badge-neutral-texticon-padding-right
+    ) !important;
+}
+
+/* don't shrink icons
+ * and ensure they're separated from labels
+ * TODO: see which value (maybe missing?) to use for the padding
+ * TODO: confirm that the design uses top/bottom padding for left/right padding in icon-only mode
+ */
+
+::slotted([slot='icon']) {
+    flex-shrink: 0;
+    margin-right: var(--spectrum-badge-neutral-texticon-padding-left);
+}
+
+slot[icon-only]::slotted([slot='icon']) {
+    margin-right: calc(
+        var(--spectrum-badge-neutral-texticon-text-padding-bottom)
+        - var(--spectrum-badge-neutral-texticon-padding-left)
+    );
+    margin-left: calc(
+        var(--spectrum-badge-neutral-texticon-text-padding-bottom)
+        - var(--spectrum-badge-neutral-texticon-padding-left)
+    );
+}

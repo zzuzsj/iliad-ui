@@ -18,13 +18,13 @@ import {
     SizedMixin,
     property,
 } from '@spectrum-web-components/base';
-
+import { ObserveSlotText } from '@spectrum-web-components/shared/src/observe-slot-text.js';
 import styles from './badge.css.js';
 
 /**
  * @element sp-badge
  */
-export class Badge extends SizedMixin(SpectrumElement) {
+export class Badge extends SizedMixin(ObserveSlotText(SpectrumElement, '')) {
     @property({ type: String, reflect: true })
     public variant = "informative"
 
@@ -34,7 +34,7 @@ export class Badge extends SizedMixin(SpectrumElement) {
 
     protected render(): TemplateResult {
         return html`
-            <slot name="icon"></slot>
+            <slot name="icon" ?icon-only=${!this.slotHasContent}></slot>
             <slot></slot>
         `;
     }
