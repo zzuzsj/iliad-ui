@@ -43,7 +43,9 @@ commands:
                   name: Count baseline images
                   command: find test/visual/screenshots-baseline -type f | wc -l > count_start.txt
             - run: |
-                  yarn test:ci --config web-test-runner.config.vrt.js --group vrt-<< parameters.regression_color >>-<< parameters.regression_scale >>-<< parameters.regression_dir >>
+                  yarn test:build
+                  TEST=$(circleci tests glob packages/*/test/*.test-vrt.js | circleci tests split --split-by=timings)
+                  yarn test:start --files $TEST --config web-test-runner.config.vrt.js --group vrt-<< parameters.regression_color >>-<< parameters.regression_scale >>-<< parameters.regression_dir >>-ci
             # store results and artifacts before rearranging things for the new cache.
             - store_test_results:
                   path: /root/project/results/
@@ -63,6 +65,11 @@ commands:
                       branch=$(npx slugify-cli $branch)
                       yarn netlify deploy --alias=$branch-<< parameters.regression_color >>-<< parameters.regression_scale >>-<< parameters.regression_dir >> --dir=test/visual
             # move "updated" screenshot into the baseline directory before making the new cache
+            - persist_to_workspace:
+                  root: test/visual
+                  paths:
+                      - screenshots-baseline
+                      - screenshots-actual
             - run:
                   when: always
                   command: |
@@ -73,13 +80,13 @@ commands:
                   name: Count current images
                   command: find test/visual/screenshots-baseline -type f | wc -l > count_end.txt
             # prevent removing regression tests without requiring a new golden cache
-            - run:
-                  when: on_success
-                  name: Fail if there are a different number of images...
-                  command: |
-                      echo $(cat count_start.txt)
-                      echo $(cat count_end.txt)
-                      if [[ $(cat count_start.txt) -eq $(cat count_end.txt) ]]; then exit 0; else exit 1; fi
+            # - run:
+            #       when: on_success
+            #       name: Fail if there are a different number of images...
+            #       command: |
+            #           echo $(cat count_start.txt)
+            #           echo $(cat count_end.txt)
+            #           if [[ $(cat count_start.txt) -eq $(cat count_end.txt) ]]; then exit 0; else exit 1; fi
             - save_cache:
                   when: on_fail
                   name: Build Golden Images Revision Cache
@@ -95,7 +102,7 @@ commands:
 jobs:
     commitlint:
         executor: node
-
+        parallelism: 11
         steps:
             - checkout
             - restore_cache:
@@ -119,7 +126,7 @@ jobs:
 
     test:
         executor: node
-
+        parallelism: 11
         steps:
             - downstream
             - run:
@@ -128,7 +135,10 @@ jobs:
             - run: yarn analyze
             - run:
                   name: Run tests
-                  command: yarn test:ci --config web-test-runner.config.ci.js --group unit --coverage
+                  command: |
+                      yarn test:build
+                      TEST=$(circleci tests glob packages/*/test/*.test.js | circleci tests split --split-by=timings)
+                      yarn test:start --files $TEST --config web-test-runner.config.ci.js --group unit-ci
             - store_test_results:
                   path: /root/project/results/
             - store_artifacts:
@@ -153,7 +163,7 @@ jobs:
 
     visual-lightest-medium-ltr:
         executor: node
-
+        parallelism: 11
         steps:
             - downstream
             - run-regressions:
@@ -163,7 +173,7 @@ jobs:
 
     visual-lightest-medium-rtl:
         executor: node
-
+        parallelism: 11
         steps:
             - downstream
             - run-regressions:
@@ -173,7 +183,7 @@ jobs:
 
     visual-lightest-large-ltr:
         executor: node
-
+        parallelism: 11
         steps:
             - downstream
             - run-regressions:
@@ -183,7 +193,7 @@ jobs:
 
     visual-lightest-large-rtl:
         executor: node
-
+        parallelism: 11
         steps:
             - downstream
             - run-regressions:
@@ -193,7 +203,7 @@ jobs:
 
     visual-light-medium-ltr:
         executor: node
-
+        parallelism: 11
         steps:
             - downstream
             - run-regressions:
@@ -203,7 +213,7 @@ jobs:
 
     visual-light-medium-rtl:
         executor: node
-
+        parallelism: 11
         steps:
             - downstream
             - run-regressions:
@@ -213,7 +223,7 @@ jobs:
 
     visual-light-large-ltr:
         executor: node
-
+        parallelism: 11
         steps:
             - downstream
             - run-regressions:
@@ -223,7 +233,7 @@ jobs:
 
     visual-light-large-rtl:
         executor: node
-
+        parallelism: 11
         steps:
             - downstream
             - run-regressions:
@@ -233,7 +243,7 @@ jobs:
 
     visual-dark-medium-ltr:
         executor: node
-
+        parallelism: 11
         steps:
             - downstream
             - run-regressions:
@@ -243,7 +253,7 @@ jobs:
 
     visual-dark-medium-rtl:
         executor: node
-
+        parallelism: 11
         steps:
             - downstream
             - run-regressions:
@@ -253,7 +263,7 @@ jobs:
 
     visual-dark-large-ltr:
         executor: node
-
+        parallelism: 11
         steps:
             - downstream
             - run-regressions:
@@ -263,7 +273,7 @@ jobs:
 
     visual-dark-large-rtl:
         executor: node
-
+        parallelism: 11
         steps:
             - downstream
             - run-regressions:
@@ -273,7 +283,7 @@ jobs:
 
     visual-darkest-medium-ltr:
         executor: node
-
+        parallelism: 11
         steps:
             - downstream
             - run-regressions:
@@ -283,7 +293,7 @@ jobs:
 
     visual-darkest-medium-rtl:
         executor: node
-
+        parallelism: 11
         steps:
             - downstream
             - run-regressions:
@@ -293,7 +303,7 @@ jobs:
 
     visual-darkest-large-ltr:
         executor: node
-
+        parallelism: 11
         steps:
             - downstream
             - run-regressions:
@@ -303,13 +313,32 @@ jobs:
 
     visual-darkest-large-rtl:
         executor: node
-
+        parallelism: 11
         steps:
             - downstream
             - run-regressions:
                   regression_color: darkest
                   regression_scale: large
                   regression_dir: rtl
+
+    visual-publish:
+        executor: node
+        steps:
+            - downstream
+            - run:
+                  name: Count baseline images
+                  command: find test/visual/screenshots-baseline -type f | wc -l > count_start.txt
+            - run:
+                  name: Count baseline images
+                  command: find test/visual/screenshots-actual -type f | wc -l > count_end.txt
+            # prevent removing regression tests without requiring a new golden cache
+            - run:
+                  when: on_success
+                  name: Fail if there are a different number of images...
+                  command: |
+                      echo $(cat count_start.txt)
+                      echo $(cat count_end.txt)
+                      if [[ $(cat count_start.txt) -eq $(cat count_end.txt) ]]; then exit 0; else exit 1; fi
 
     docs-publish:
         executor: node
@@ -333,6 +362,24 @@ workflows:
         jobs:
             - test
             - docs-preview
+            - visual-publish:
+                  requires:
+                      - visual-lightest-medium-ltr
+                      - visual-lightest-medium-rtl
+                      - visual-lightest-large-ltr
+                      - visual-lightest-large-rtl
+                      - visual-light-medium-ltr
+                      - visual-light-medium-rtl
+                      - visual-light-large-ltr
+                      - visual-light-large-rtl
+                      - visual-darkest-medium-ltr
+                      - visual-darkest-medium-rtl
+                      - visual-darkest-large-ltr
+                      - visual-darkest-large-rtl
+                      - visual-dark-medium-ltr
+                      - visual-dark-medium-rtl
+                      - visual-dark-large-ltr
+                      - visual-dark-large-rtl
             - visual-lightest-medium-ltr:
                   filters:
                       branches:

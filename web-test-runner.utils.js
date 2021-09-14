@@ -18,35 +18,37 @@ export const packages = fs
     .readdirSync('packages')
     .filter((dir) => fs.statSync(`packages/${dir}`).isDirectory());
 
-const vrtHTML = ({ color, scale, dir, reduceMotion }) => (testFramework) =>
-    `<!doctype html>
-    <html dir=${dir}>
-        <head>
-            <link rel="preconnect" href="https://use.typekit.net" />
-            <link rel="dns-prefetch" href="https://use.typekit.net" />
-            <!-- For Adobe Clean font support -->
-            <link rel="stylesheet" href="https://use.typekit.net/evk7lzt.css" />
-            <style>
-                body {
-                    margin: 0;
-                }
-                sp-story-decorator {
-                    display: block;
-                }
-            </style>
-        </head>
-        <body>
-        <script>
-            window.__swc_hack_knobs__ = {
-                defaultColor: "${color || ''}",
-                defaultScale: "${scale || ''}",
-                defaultDirection: "${dir || ''}",
-                defaultReduceMotion: ${reduceMotion},
-            };
-        </script>
-        <script type="module" src="${testFramework}"></script>
-        </body>
-    </html>`;
+const vrtHTML =
+    ({ color, scale, dir, reduceMotion }) =>
+    (testFramework) =>
+        `<!doctype html>
+        <html dir=${dir}>
+            <head>
+                <link rel="preconnect" href="https://use.typekit.net" />
+                <link rel="dns-prefetch" href="https://use.typekit.net" />
+                <!-- For Adobe Clean font support -->
+                <link rel="stylesheet" href="https://use.typekit.net/evk7lzt.css" />
+                <style>
+                    body {
+                        margin: 0;
+                    }
+                    sp-story-decorator {
+                        display: block;
+                    }
+                </style>
+            </head>
+            <body>
+            <script>
+                window.__swc_hack_knobs__ = {
+                    defaultColor: "${color || ''}",
+                    defaultScale: "${scale || ''}",
+                    defaultDirection: "${dir || ''}",
+                    defaultReduceMotion: ${reduceMotion},
+                };
+            </script>
+            <script type="module" src="${testFramework}"></script>
+            </body>
+        </html>`;
 
 export let vrtGroups = [];
 const colors = ['lightest', 'light', 'dark', 'darkest'];
@@ -65,6 +67,11 @@ colors.forEach((color) => {
             vrtGroups.push({
                 name: `vrt-${color}-${scale}-${dir}`,
                 files: 'packages/*/test/*.test-vrt.js',
+                testRunnerHtml: testHTML,
+                browsers: [playwrightLauncher({ product: 'chromium' })],
+            });
+            vrtGroups.push({
+                name: `vrt-${color}-${scale}-${dir}-ci`,
                 testRunnerHtml: testHTML,
                 browsers: [playwrightLauncher({ product: 'chromium' })],
             });
