@@ -49,7 +49,7 @@ class SearchComponent extends LitElement {
     private popover!: Popover;
 
     @query('sp-search')
-    private searchField!: HTMLElement;
+    private searchField!: Search;
 
     public static get styles(): CSSResultArray {
         return [sideNavSearchMenuStyles];
@@ -114,32 +114,15 @@ class SearchComponent extends LitElement {
         this.openPopover();
     }
 
+    private goToSelectedResult(event: Event): void {
+        const { value: url } = event.target as Menu;
+        AppRouter.go(url);
+        this.closePopover();
+        this.searchField.value = '';
+    }
+
     renderResults(): TemplateResult {
-        if (this.results.length > 0) {
-            return html`
-                <sp-menu>
-                    ${this.results.map(
-                        (category) => html`
-                            <sp-menu-group>
-                                <span slot="header">${category.name}</span>
-                                ${category.results.map(
-                                    (result) => html`
-                                        <sp-menu-item
-                                            @click=${() => {
-                                                AppRouter.go(result.url);
-                                                this.closePopover();
-                                            }}
-                                        >
-                                            ${result.label}
-                                        </sp-menu-item>
-                                    `
-                                )}
-                            </sp-menu-group>
-                        `
-                    )}
-                </sp-menu>
-            `;
-        } else {
+        if (this.results.length === 0) {
             return html`
                 <sp-illustrated-message
                     heading="No results found"
@@ -147,6 +130,24 @@ class SearchComponent extends LitElement {
                 ></sp-illustrated-message>
             `;
         }
+        return html`
+            <sp-menu @change=${this.goToSelectedResult}>
+                ${this.results.map(
+                    (category) => html`
+                        <sp-menu-group>
+                            <span slot="header">${category.name}</span>
+                            ${category.results.map(
+                                (result) => html`
+                                    <sp-menu-item value=${result.url}>
+                                        ${result.label}
+                                    </sp-menu-item>
+                                `
+                            )}
+                        </sp-menu-group>
+                    `
+                )}
+            </sp-menu>
+        `;
     }
 
     render(): TemplateResult {
