@@ -14,6 +14,7 @@ import {
     fixture,
     elementUpdated,
     expect,
+    assert,
     html,
     waitUntil,
 } from '@open-wc/testing';
@@ -206,13 +207,13 @@ describe('ActionGroup', () => {
         const thirdElement = el.querySelector('.third') as ActionButton;
 
         await elementUpdated(el);
-        expect(el.selected.length === 0);
+        assert(el.selected.length === 0);
 
         thirdElement.click();
 
         await elementUpdated(el);
 
-        expect(el.selected.length === 0);
+        assert(el.selected.length === 0);
     });
     it('selects via `click` while [selects="single"]', async () => {
         const el = await fixture<ActionGroup>(
@@ -231,14 +232,14 @@ describe('ActionGroup', () => {
         const thirdElement = el.querySelector('.third') as ActionButton;
 
         await elementUpdated(el);
-        expect(el.selected.length === 1);
-        expect(el.selected.includes('second'));
+        assert(el.selected.length === 1);
+        assert(el.selected.includes('second'));
 
         thirdElement.click();
 
         await elementUpdated(el);
 
-        expect(thirdElement.selected, 'third child selected');
+        assert(thirdElement.selected, 'third child selected');
 
         await waitUntil(
             () => el.selected.length === 1 && el.selected.includes('third'),
@@ -265,8 +266,8 @@ describe('ActionGroup', () => {
         const thirdElement = el.querySelector('.third') as ActionButton;
 
         await elementUpdated(el);
-        expect(el.selected.length === 1);
-        expect(el.selected.includes('First'));
+        assert(el.selected.length === 1);
+        assert(el.selected.includes('First'));
 
         firstElement.click();
         secondElement.click();
@@ -274,8 +275,8 @@ describe('ActionGroup', () => {
 
         await elementUpdated(el);
 
-        expect(secondElement.selected, 'second child selected');
-        expect(thirdElement.selected, 'third child selected');
+        assert(secondElement.selected, 'second child selected');
+        assert(thirdElement.selected, 'third child selected');
 
         await waitUntil(
             () =>
@@ -329,23 +330,23 @@ describe('ActionGroup', () => {
 
         await elementUpdated(el);
 
-        expect(!thirdElement.selected, 'third child not selected');
+        assert(!thirdElement.selected, 'third child not selected');
         expect(el.selected.length).to.equal(0);
     });
     const acceptKeyboardInput = async (el: ActionGroup): Promise<void> => {
         const thirdElement = el.querySelector('.third') as ActionButton;
 
         await elementUpdated(el);
-        expect(el.selected.length === 1);
-        expect(el.selected.includes('Second'));
+        assert(el.selected.length === 1);
+        assert(el.selected.includes('Second'));
 
         thirdElement.click();
 
         await elementUpdated(el);
 
-        expect(thirdElement.selected, 'third child selected');
-        expect(el.selected.length === 1);
-        expect(el.selected.includes('Third'));
+        assert(thirdElement.selected, 'third child selected');
+        assert(el.selected.length === 1);
+        assert(el.selected.includes('Third'));
 
         el.dispatchEvent(arrowRightEvent);
         let activeElement = document.activeElement as ActionButton;
@@ -353,41 +354,41 @@ describe('ActionGroup', () => {
 
         await elementUpdated(el);
 
-        expect(el.selected.length === 1);
-        expect(el.selected.includes('First'));
+        assert(el.selected.length === 1);
+        assert(el.selected.includes('First'), 'selected element includes "First"');
 
         el.dispatchEvent(arrowLeftEvent);
         el.dispatchEvent(arrowUpEvent);
         activeElement = document.activeElement as ActionButton;
         activeElement.dispatchEvent(enterEvent);
 
-        expect(el.selected.length === 1);
-        expect(el.selected.includes('Second'));
+        assert(el.selected.length === 1);
+        assert(el.selected.includes('Second'));
 
         el.dispatchEvent(endEvent);
         activeElement = document.activeElement as ActionButton;
         activeElement.dispatchEvent(enterEvent);
 
-        expect(el.selected.length === 1);
-        expect(el.selected.includes('Third'));
+        assert(el.selected.length === 1);
+        assert(el.selected.includes('Third'));
 
         activeElement.dispatchEvent(pageUpEvent);
         activeElement = document.activeElement as ActionButton;
-        expect(activeElement === thirdElement);
+        assert(activeElement === thirdElement);
 
         el.dispatchEvent(homeEvent);
         activeElement = document.activeElement as ActionButton;
         activeElement.dispatchEvent(enterEvent);
 
-        expect(el.selected.length === 1);
-        expect(el.selected.includes('First'));
+        assert(el.selected.length === 1);
+        assert(el.selected.includes('First'));
 
         el.dispatchEvent(arrowDownEvent);
         activeElement = document.activeElement as ActionButton;
         activeElement.dispatchEvent(enterEvent);
 
-        expect(el.selected.length === 1);
-        expect(el.selected.includes('Second'));
+        assert(el.selected.length === 1);
+        assert(el.selected.includes('Second'));
     };
     it('accepts keybord input', async () => {
         const el = await fixture<ActionGroup>(
@@ -449,16 +450,16 @@ describe('ActionGroup', () => {
         const thirdElement = el.querySelector('.third') as ActionButton;
 
         await elementUpdated(el);
-        expect(el.selected.length === 1);
-        expect(el.selected.includes('Second'));
+        assert(el.selected.length === 1, 'one child is selected');
+        assert(el.selected.includes('Second'));
 
         thirdElement.click();
 
         await elementUpdated(el);
 
-        expect(thirdElement.selected, 'third child selected');
-        expect(el.selected.length === 1);
-        expect(el.selected.includes('Third'));
+        assert(thirdElement.selected, 'third child selected');
+        assert(el.selected.length === 1);
+        assert(el.selected.includes('Third'));
 
         el.dispatchEvent(arrowRightEvent);
         let activeElement = document.activeElement as ActionButton;
@@ -466,16 +467,16 @@ describe('ActionGroup', () => {
 
         await elementUpdated(el);
 
-        expect(el.selected.length === 1);
-        expect(el.selected.includes('First'));
+        assert(el.selected.length === 1);
+        assert(el.selected.includes('First'));
 
         el.dispatchEvent(arrowLeftEvent);
         el.dispatchEvent(arrowUpEvent);
         activeElement = document.activeElement as ActionButton;
         activeElement.dispatchEvent(enterEvent);
 
-        expect(el.selected.length === 1);
-        expect(el.selected.includes('Third'));
+        assert(el.selected.length === 1);
+        assert(el.selected.includes('Third'));
     });
     it('accepts "PageUp" and "PageUp"', async () => {
         const el = await fixture<ActionGroup>(
@@ -517,22 +518,22 @@ describe('ActionGroup', () => {
         activeElement.dispatchEvent(pageDownEvent);
 
         activeElement = document.activeElement as ActionButton;
-        expect(activeElement === secondElement);
+        assert(activeElement === secondElement, 'second element is active');
 
         activeElement.dispatchEvent(pageUpEvent);
 
         activeElement = document.activeElement as ActionButton;
-        expect(activeElement === firstElement);
+        assert(activeElement === firstElement);
 
         activeElement = document.activeElement as ActionButton;
         activeElement.dispatchEvent(pageDownEvent);
 
         activeElement = document.activeElement as ActionButton;
-        expect(activeElement === firstElement);
+        assert(activeElement === firstElement);
 
         activeElement.dispatchEvent(pageUpEvent);
 
         activeElement = document.activeElement as ActionButton;
-        expect(activeElement === secondElement);
+        assert(activeElement === secondElement);
     });
 });
