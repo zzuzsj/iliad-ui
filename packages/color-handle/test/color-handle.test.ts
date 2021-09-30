@@ -10,7 +10,7 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { fixture, elementUpdated, expect, html } from '@open-wc/testing';
+import { fixture, elementUpdated, expect, assert, html } from '@open-wc/testing';
 
 import '../sp-color-handle.js';
 import { ColorHandle } from '..';
@@ -61,7 +61,7 @@ describe('ColorHandle', () => {
 
         await elementUpdated(el);
 
-        expect(el.open);
+        assert(el.open, 'opens after click');
 
         el.dispatchEvent(
             new PointerEvent('pointerdown', {
@@ -71,7 +71,7 @@ describe('ColorHandle', () => {
 
         await elementUpdated(el);
 
-        expect(!el.open);
+        assert(!el.open);
 
         el.dispatchEvent(
             new PointerEvent('pointerdown', {
@@ -81,7 +81,7 @@ describe('ColorHandle', () => {
 
         await elementUpdated(el);
 
-        expect(el.open);
+        assert(el.open);
 
         el.dispatchEvent(
             new PointerEvent('pointercancel', {
@@ -91,6 +91,6 @@ describe('ColorHandle', () => {
 
         await elementUpdated(el);
 
-        expect(!el.open);
+        assert(!el.open);
     });
 });

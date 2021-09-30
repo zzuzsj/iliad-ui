@@ -10,7 +10,7 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { fixture, elementUpdated, expect, html } from '@open-wc/testing';
+import { fixture, elementUpdated, expect, assert, html } from '@open-wc/testing';
 import {
     arrowUpEvent,
     arrowDownEvent,
@@ -111,12 +111,12 @@ describe('ColorSlider', () => {
         el.focusElement.dispatchEvent(new FocusEvent('focus'));
         await elementUpdated(el);
 
-        expect(el.focused);
+        assert(el.focused, 'is focused after focus event');
 
         el.focusElement.dispatchEvent(new FocusEvent('blur'));
         await elementUpdated(el);
 
-        expect(!el.focused);
+        assert(!el.focused);
     });
     it('dispatches input and change events in response to "Arrow*" keypresses', async () => {
         const inputSpy = spy();

@@ -16,7 +16,7 @@ import '@spectrum-web-components/action-menu/sp-action-menu.js';
 import '@spectrum-web-components/menu/sp-menu.js';
 import '@spectrum-web-components/menu/sp-menu-item.js';
 import '@spectrum-web-components/menu/sp-menu-divider.js';
-import { fixture, elementUpdated, html, expect } from '@open-wc/testing';
+import { fixture, elementUpdated, html, expect, assert } from '@open-wc/testing';
 
 import {
     Default,
@@ -217,7 +217,7 @@ describe('card', () => {
         await elementUpdated(el);
         expect(el.focused, 'still not focused, again 2').to.be.false;
         // change event is prevented
-        expect(el.selected, 'still selected, again 3');
+        assert(el.selected, 'still selected, again 3');
     });
 
     it('announces when `[toggles]`', async () => {
@@ -233,7 +233,7 @@ describe('card', () => {
         checkbox.click();
         await elementUpdated(el);
 
-        expect(el.selected, 'selected');
+        assert(el.selected, 'selected');
         expect(changeSpy.callCount).to.equal(1);
         checkbox.click();
         await elementUpdated(el);

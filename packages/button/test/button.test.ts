@@ -16,6 +16,7 @@ import {
     fixture,
     elementUpdated,
     expect,
+    assert,
     html,
     waitUntil,
 } from '@open-wc/testing';
@@ -190,7 +191,7 @@ describe('Button', () => {
         await elementUpdated(el);
         el.click();
         await elementUpdated(el);
-        expect(clickSpy.calledOnce);
+        assert(clickSpy.calledOnce);
 
         clickSpy.resetHistory();
         el.disabled = true;
@@ -209,7 +210,7 @@ describe('Button', () => {
         el.disabled = false;
         el.click();
         await elementUpdated(el);
-        expect(clickSpy.calledOnce);
+        assert(clickSpy.calledOnce);
     });
     it('manages `aria-disabled`', async () => {
         const el = await fixture<Button>(
