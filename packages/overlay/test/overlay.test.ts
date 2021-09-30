@@ -21,6 +21,7 @@ import {
     fixture,
     html,
     expect,
+    assert,
     elementUpdated,
     waitUntil,
     oneEvent,
@@ -414,26 +415,26 @@ describe('Overlays', () => {
             press: 'Tab',
         });
 
-        expect(document.activeElement === input);
+        assert(document.activeElement === input);
         expect(input.closest('active-overlay') !== null);
 
         await sendKeys({
             press: 'Shift+Tab',
         });
 
-        expect(document.activeElement === trigger);
+        assert(document.activeElement === trigger, 'trigger activates after shift+tab');
 
         await sendKeys({
             press: 'Tab',
         });
 
-        expect(document.activeElement === input);
+        assert(document.activeElement === input);
 
         await sendKeys({
             press: 'Tab',
         });
 
-        expect(document.activeElement === after);
+        assert(document.activeElement === after);
         await waitUntil(
             () => document.querySelector('active-element') === null
         );
@@ -465,20 +466,20 @@ describe('Overlays', () => {
             press: 'Tab',
         });
 
-        expect(document.activeElement === input);
+        assert(document.activeElement === input);
         expect(input.closest('active-overlay') !== null);
 
         await sendKeys({
             press: 'Shift+Tab',
         });
 
-        expect(document.activeElement === trigger);
+        assert(document.activeElement === trigger, 'trigger activates after shift+tab');
 
         await sendKeys({
             press: 'Shift+Tab',
         });
 
-        expect(document.activeElement === before);
+        assert(document.activeElement === before);
         await waitUntil(
             () => document.querySelector('active-element') === null
         );

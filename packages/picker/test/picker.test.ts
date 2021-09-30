@@ -25,6 +25,7 @@ import {
     elementUpdated,
     html,
     expect,
+    assert,
     waitUntil,
     nextFrame,
     oneEvent,
@@ -287,7 +288,7 @@ describe('Picker', () => {
         el.invalid = true;
         await elementUpdated(el);
 
-        expect(el.invalid);
+        assert(el.invalid);
         await expect(el).to.be.accessible();
     });
     it('renders selection accessibly', async () => {
@@ -596,7 +597,7 @@ describe('Picker', () => {
         await closed;
         await opened;
         await elementUpdated(el);
-        expect(preventChangeSpy.calledOnce);
+        assert(preventChangeSpy.calledOnce);
         expect(secondItem.selected, 'selection prevented').to.be.false;
     });
 

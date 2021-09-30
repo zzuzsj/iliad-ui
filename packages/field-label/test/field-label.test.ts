@@ -10,7 +10,7 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { fixture, elementUpdated, expect, html } from '@open-wc/testing';
+import { fixture, elementUpdated, expect, assert, html } from '@open-wc/testing';
 import { stub } from 'sinon';
 
 import '@spectrum-web-components/textfield/sp-textfield.js';
@@ -128,7 +128,7 @@ describe('FieldLabel', () => {
         el.click();
         await elementUpdated(el);
 
-        expect(document.activeElement === input);
+        assert(document.activeElement === input);
     });
     it('associates itself to an element with a focueElement whose "id" matches its "for" attribute', async () => {
         const test = await fixture<HTMLDivElement>(
@@ -145,7 +145,7 @@ describe('FieldLabel', () => {
 
         await elementUpdated(el);
 
-        expect(input.hasAttribute('aria-label'));
+        assert(input.hasAttribute('aria-label'));
         expect(input.getAttribute('aria-label')).to.equal(
             (el.textContent || '').trim()
         );
@@ -167,7 +167,7 @@ describe('FieldLabel', () => {
         el.click();
         await elementUpdated(el);
 
-        expect(document.activeElement === input);
+        assert(document.activeElement === input);
     });
     it('forces focus visible when available', async () => {
         const test = await fixture<HTMLDivElement>(
@@ -184,12 +184,12 @@ describe('FieldLabel', () => {
         const picker = test.querySelector('sp-picker') as Picker;
 
         await elementUpdated(el);
-        expect(!picker.focused);
+        assert(!picker.focused);
 
         el.click();
         await elementUpdated(el);
 
-        expect(document.activeElement === picker);
-        expect(picker.focused);
+        assert(document.activeElement === picker);
+        assert(picker.focused);
     });
 });

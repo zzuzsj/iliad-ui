@@ -17,6 +17,7 @@ import {
     elementUpdated,
     html,
     expect,
+    assert,
     nextFrame,
     waitUntil,
 } from '@open-wc/testing';
@@ -249,17 +250,17 @@ describe('Toast', () => {
         );
 
         await elementUpdated(el);
-        expect(el.open);
+        assert(el.open);
 
         el.open = false;
 
         await elementUpdated(el);
-        expect(!el.open);
+        assert(!el.open);
 
         el.open = true;
 
         await elementUpdated(el);
-        expect(el.open);
+        assert(el.open);
         expect(closeSpy.callCount).to.equal(1);
     });
 });

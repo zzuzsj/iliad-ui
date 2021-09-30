@@ -14,6 +14,7 @@ import {
     fixture,
     elementUpdated,
     expect,
+    assert,
     html,
     oneEvent,
 } from '@open-wc/testing';
@@ -126,14 +127,14 @@ describe('Splitbutton', () => {
         el1.focus();
         await elementUpdated(el1);
 
-        expect(document.activeElement === el1);
-        expect(el1.shadowRoot.activeElement === el1FocusElement);
+        assert(document.activeElement === el1);
+        assert(el1.shadowRoot.activeElement === el1FocusElement);
 
         el2.focus();
         await elementUpdated(el2);
 
-        expect(document.activeElement === el2);
-        expect(el1.shadowRoot.activeElement === el2FocusElement);
+        assert(document.activeElement === el2);
+        assert(el1.shadowRoot.activeElement === el2FocusElement, 'split button shadow root focuses its trigger');
     });
     it('[type="field"] manages `selectedItem`', async () => {
         const test = await fixture<HTMLDivElement>(

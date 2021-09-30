@@ -19,6 +19,7 @@ import {
     nextFrame,
     html,
     expect,
+    assert,
     waitUntil,
 } from '@open-wc/testing';
 import {
@@ -370,14 +371,14 @@ describe('Menu', () => {
 
         el.focus();
 
-        expect(document.activeElement === el);
-        expect(selectedItem.focused);
+        assert(document.activeElement === el);
+        assert(selectedItem.focused);
 
         selectedItem.remove();
         await elementUpdated(el);
 
-        expect(document.activeElement === el);
-        expect(firstItem.focused);
+        assert(document.activeElement === el);
+        assert(firstItem.focused, 'focus returns to the first item after the selected one is removed');
     });
     it('handles single selection', async () => {
         const el = await fixture<Menu>(

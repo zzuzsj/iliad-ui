@@ -17,6 +17,7 @@ import {
     fixture,
     html,
     expect,
+    assert,
     elementUpdated,
     oneEvent,
 } from '@open-wc/testing';
@@ -656,8 +657,7 @@ describe('Menu w/ groups [selects]', () => {
         await sendKeys({ press: 'ArrowUp' });
         for (const option of options) {
             const parentElement = option.parentElement as Menu;
-            expect(document.activeElement === parentElement, 'parent focused')
-                .to.be.true;
+            assert(document.activeElement === parentElement, 'parent focused');
             expect(option.focused, 'option visually focused').to.be.true;
             await sendKeys({ press: 'Space' });
             expect(parentElement.value).to.equal(option.value);
