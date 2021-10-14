@@ -44,7 +44,7 @@
         "lit-html"
     ],
     "dependencies": {
-        "@spectrum-web-components/base": "^0.4.5",
+        "@spectrum-web-components/base": "^0.5.0",
         "@spectrum-web-components/checkbox": "^0.10.10",
         "tslib": "^2.0.0"
     },

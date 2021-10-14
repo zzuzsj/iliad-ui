@@ -20,11 +20,11 @@
     "tsc:watch": "tsc --watch"
   },
   "dependencies": {
-    "@spectrum-web-components/button": "^0.14.10",
+    "@spectrum-web-components/button": "^0.15.0",
     "@spectrum-web-components/field-label": "^0.5.10",
-    "@spectrum-web-components/menu": "^0.9.7",
-    "@spectrum-web-components/picker": "^0.7.6",
-    "@spectrum-web-components/styles": "^0.9.11"
+    "@spectrum-web-components/menu": "^0.10.0",
+    "@spectrum-web-components/picker": "^0.8.0",
+    "@spectrum-web-components/styles": "^0.9.12"
   },
   "devDependencies": {
     "@open-wc/building-rollup": "^1.6.3",
