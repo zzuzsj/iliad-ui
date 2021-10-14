@@ -1,5 +1,5 @@
 {
-    "name": "@saiye/spectrum-web-components",
+    "name": "@iliad/iliad-ui",
     "version": "0.1.0",
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"
