@@ -1,5 +1,5 @@
 {
-    "name": "@adobe/spectrum-web-components",
+    "name": "@saiye/spectrum-web-components",
     "version": "0.1.0",
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"
