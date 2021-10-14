@@ -1,9 +1,8 @@
 {
     "name": "@adobe/spectrum-web-components",
-    "version": "0.0.9",
-    "private": true,
+    "version": "0.1.0",
     "publishConfig": {
-        "registry": "https://artifactory.corp.adobe.com/artifactory/api/npm/npm-crisp-release-local/"
+        "registry": "https://registry.npmjs.org/"
     },
     "description": "",
     "type": "module",
