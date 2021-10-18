@@ -4,6 +4,10 @@
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"
     },
+    "maintainers": [{
+        "name": "saiye",
+        "email": "saiye@gaoding.com"
+    }],
     "description": "",
     "type": "module",
     "engines": {
