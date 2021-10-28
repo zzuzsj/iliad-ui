@@ -3,6 +3,7 @@
     "compilerOptions": {
         "composite": true,
         "rootDir": "./",
+        "baseUrl": "./",
         "resolveJsonModule": true,
     },
     "include": ["*.ts", "src/*.ts","*.json"],
