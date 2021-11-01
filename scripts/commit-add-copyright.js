@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /*
 Copyright 2020 Adobe. All rights reserved.
 Copyright 2021 Gaoding. All rights reserved.
@@ -10,6 +11,7 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
+// 对commit更改的文件增加copyright
 import * as fs from 'fs';
 import path from 'path';
 import yargs from 'yargs';
@@ -64,8 +66,11 @@ async function getCommitChangedFiles() {
     const fullFileList = detailList
         .filter((cv) => cv)
         .map((cv) => {
-            const fileName = cv.slice(3);
+            let fileName = cv.slice(3);
             const fileType = getChangeType(cv.slice(0, 2));
+            if (fileType === 'renamed') {
+                fileName = fileName.split(' -> ')[1];
+            }
             const fileExt = path.extname(fileName);
             return {
                 name: fileName,
@@ -76,10 +81,12 @@ async function getCommitChangedFiles() {
     return fullFileList;
 
     function getChangeType(gitType) {
-        if (gitType.includes(' M')) {
-            return 'modified';
-        } else if (gitType.includes(' D')) {
+        if (gitType.includes('R')) {
+            return 'renamed';
+        } else if (gitType.includes('D')) {
             return 'deleted';
+        } else if (gitType.includes('M')) {
+            return 'modified';
         } else {
             return 'added';
         }
