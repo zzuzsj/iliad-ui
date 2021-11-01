@@ -93,7 +93,6 @@
         "common-tags": "^1.8.0",
         "prismjs": "^1.15.0"
     },
-    "dependencies": {},
     "devDependencies": {
         "@babel/core": "^7.12.3",
         "@babel/plugin-syntax-import-meta": "^7.10.4",
