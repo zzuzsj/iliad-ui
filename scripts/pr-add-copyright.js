@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /*
 Copyright 2020 Adobe. All rights reserved.
 Copyright 2021 Gaoding. All rights reserved.
@@ -10,6 +11,7 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
+//给pr中的所有文件增加copyright
 import * as fs from 'fs';
 import path from 'path';
 import * as github from './github.js';
