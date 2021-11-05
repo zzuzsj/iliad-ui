@@ -15,8 +15,6 @@ export { IconClose } from './elements/Close.js';
 export { IconFormatCenter } from './elements/FormatCenter.js';
 export { IconFormatJustified } from './elements/FormatJustified.js';
 export { IconFormatLeft } from './elements/FormatLeft.js';
-export { IconFormatLetterSpacing } from './elements/FormatLetterSpacing.js';
-export { IconFormatLineSpacing } from './elements/FormatLineSpacing.js';
 export { IconFormatRight } from './elements/FormatRight.js';
 export { IconTextBold } from './elements/TextBold.js';
 export { IconTextDeleteline } from './elements/TextDeleteline.js';
