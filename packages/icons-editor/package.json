@@ -1,6 +1,6 @@
 {
-    "name": "icons-editor",
-    "version": "0.0.1",
+    "name": "@iliad-ui/icons-editor",
+    "version": "0.0.2",
     "publishConfig": {
         "access": "public"
     },

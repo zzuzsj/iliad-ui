@@ -5,7 +5,7 @@
 ## Usage
 
 ```
-import { IconTextBold } from 'iliad-ui/icon-figma';
+import { IconTextBold } from 'iliad-ui/icon-editor';
 
 <IconTextBold></IconTectBold>
 ```
