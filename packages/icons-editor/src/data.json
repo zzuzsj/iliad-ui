@@ -60,7 +60,7 @@
         "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/d81c/d632/b39bed3aab6b045a13ee6f6458ad680d"
     },
     "0:28": {
-        "name": "format-line spacing",
+        "name": "format-pacing-lines",
         "id": "0:28",
         "key": "507ccff15037b9379e31a4f383837f6e8ab5eeb1",
         "file": "RTJwK4z4uVvkxsLo6Fd3Yi",
@@ -70,7 +70,7 @@
         "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/4b47/8fe0/9e6a8c79d61ea3dda2851b2bb7c59d75"
     },
     "0:32": {
-        "name": "format-letter spacing",
+        "name": "format-spacing-letter",
         "id": "0:32",
         "key": "1853b69050a6b864fb29e9f0d90ce3544ded86dc",
         "file": "RTJwK4z4uVvkxsLo6Fd3Yi",
