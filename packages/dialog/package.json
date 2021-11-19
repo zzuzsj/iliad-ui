@@ -64,7 +64,7 @@
     },
     "types": "./src/index.d.ts",
     "customElements": "custom-elements.json",
-    "gitHead": "9bbd945c65ea91178a699382b30c499e57e3f450",
+    "gitHead": "2c03ae2437dbe18e8d274b92575c57aeddd90344",
     "maintainers": [
         {
             "name": "saiye",
