@@ -10,17 +10,14 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
-// 自带副作用 默认注册风格为 sp-*
-import '@iliad-ui/bundle/elements';
-import * as SpComponents from './src';
-import {
-    iliadCustomElementsDefine,
-    lliadCustomElementsHas,
-} from '@iliad-ui/base';
+import * as React from 'react';
+import { createComponent } from '@lit-labs/react';
+import { Popover as Component } from '@iliad-ui/bundle';
 
-// 引入所有Sp组件 并重新定义成React组件
-import { generatePackageReactComs } from './generate.js';
-const ReactComponents = generatePackageReactComs(SpComponents);
-
-export { SpComponents, ReactComponents };
-export { iliadCustomElementsDefine, lliadCustomElementsHas };
+export const Popover = createComponent(
+  React,
+  'sp-popover',
+  Component,
+  {},
+  'Popover'
+);

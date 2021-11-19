@@ -10,4 +10,14 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
-export * from '@iliad-ui/bundle';
+import * as React from 'react';
+import { createComponent } from '@lit-labs/react';
+import { Coachmark as Component } from '@iliad-ui/bundle';
+
+export const Coachmark = createComponent(
+  React,
+  'sp-coachmark',
+  Component,
+  {},
+  'Coachmark'
+);

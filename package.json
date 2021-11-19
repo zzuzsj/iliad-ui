@@ -24,8 +24,8 @@
         "build:ts": "node ./tasks/build-packages.js",
         "build:ts:clean": "node ./tasks/build-packages-clean.js",
         "build:watch": "node ./tasks/watch-packages.js",
-        "copyright:commit": "node ./scripts/commit-add-copyright.js",
-        "copyright:pr": "node ./scripts/pr-add-copyright.js",
+        "copyright:commit": "node ./tasks/build-add-copyright.js",
+        "copyright:pr": "node ./scripts/add-copyright.js",
         "custom-element-json": "yarn custom-element-json:elements && yarn custom-element-json:icons",
         "custom-element-json:elements": "lerna exec --ignore \"{@iliad-ui/{base,bundle,react,icons-ui,icons-workflow,modal,iconset,shared,styles},example-project-rollup,example-project-webpack,swc-templates}\" -- cem analyze --config ../../custom-elements-manifest.config.js",
         "custom-element-json:icons": "lerna exec --scope \"@iliad-ui/{icons-ui,icons-workflow}\" -- cem analyze --config ../../custom-elements-manifest.config.js",
@@ -93,6 +93,7 @@
         "common-tags": "^1.8.0",
         "prismjs": "^1.15.0"
     },
+    "dependencies": {},
     "devDependencies": {
         "@babel/core": "^7.12.3",
         "@babel/plugin-syntax-import-meta": "^7.10.4",
@@ -143,6 +144,7 @@
         "babel-plugin-transform-node-env-inline": "^0.4.3",
         "chalk": "^4.0.0",
         "chromedriver": "^93.0.1",
+        "command-line-args": "^5.1.1",
         "common-tags": "^1.8.0",
         "css-loader": "^5.2.0",
         "cssnano": "^5.0.8",

@@ -10,7 +10,16 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
-import * as UIIcons from '@iliad-ui/icons-ui';
-export { UIIcons };
-import * as WorkflowIcons from '@iliad-ui/icons-workflow';
-export { WorkflowIcons };
+import * as React from 'react';
+import { createComponent } from '@lit-labs/react';
+import { SideNavItem as Component } from '@iliad-ui/bundle';
+
+export const SideNavItem = createComponent(
+  React,
+  'sp-sidenav-item',
+  Component,
+  {
+    keydown: 'keydown',
+  },
+  'SideNavItem'
+);
