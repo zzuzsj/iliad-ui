@@ -1,15 +1,9 @@
 {
     "name": "@iliad-ui/styles",
-    "version": "0.13.1",
+    "version": "0.13.2",
     "publishConfig": {
         "access": "public"
     },
-    "maintainers": [
-        {
-            "name": "saiye",
-            "email": "saiye@gaoding.com"
-        }
-    ],
     "description": "",
     "license": "Apache-2.0",
     "repository": {
@@ -75,7 +69,7 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.10.1"
+        "@iliad-ui/base": "^0.10.2"
     },
     "devDependencies": {
         "@spectrum-css/commons": "^3.0.2",
@@ -84,6 +78,12 @@
     },
     "customElements": "custom-elements.json",
     "gitHead": "9bbd945c65ea91178a699382b30c499e57e3f450",
+    "maintainers": [
+        {
+            "name": "saiye",
+            "email": "saiye@gaoding.com"
+        }
+    ],
     "sideEffects": [
         "./*.css"
     ],

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.14.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/card@0.14.1...@iliad-ui/card@0.14.2) (2021-11-19)
+
+### Features
+
+-   update lit-\* dependencies, wip ([70743bf](https://github.com/gaoding-inc/iliad-ui/commit/70743bf6855c08924a0a3ec1a14dc43862f9cf42))
+
 ## [0.14.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/card@0.14.0...@iliad-ui/card@0.14.1) (2021-10-21)
 
 **Note:** Version bump only for package @iliad-ui/card

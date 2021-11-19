@@ -1,15 +1,9 @@
 {
     "name": "@iliad-ui/action-menu",
-    "version": "0.15.1",
+    "version": "0.15.2",
     "publishConfig": {
         "access": "public"
     },
-    "maintainers": [
-        {
-            "name": "saiye",
-            "email": "saiye@gaoding.com"
-        }
-    ],
     "description": "",
     "license": "Apache-2.0",
     "repository": {
@@ -52,18 +46,24 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/action-button": "^0.11.1",
-        "@iliad-ui/base": "^0.10.1",
-        "@iliad-ui/icon": "^0.15.1",
-        "@iliad-ui/icons-workflow": "^0.12.1",
-        "@iliad-ui/menu": "^0.15.1",
-        "@iliad-ui/picker": "^0.13.1",
-        "@iliad-ui/shared": "^0.18.1",
+        "@iliad-ui/action-button": "^0.11.2",
+        "@iliad-ui/base": "^0.10.2",
+        "@iliad-ui/icon": "^0.15.2",
+        "@iliad-ui/icons-workflow": "^0.12.2",
+        "@iliad-ui/menu": "^0.15.2",
+        "@iliad-ui/picker": "^0.13.2",
+        "@iliad-ui/shared": "^0.18.2",
         "tslib": "^2.0.0"
     },
     "types": "./src/index.d.ts",
     "customElements": "custom-elements.json",
     "gitHead": "9bbd945c65ea91178a699382b30c499e57e3f450",
+    "maintainers": [
+        {
+            "name": "saiye",
+            "email": "saiye@gaoding.com"
+        }
+    ],
     "sideEffects": [
         "./sp-*.js",
         "./sync/sp-*.js"

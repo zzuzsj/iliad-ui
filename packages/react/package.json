@@ -1,19 +1,9 @@
 {
     "name": "@iliad-ui/react",
-    "version": "0.4.11",
+    "version": "0.4.12",
     "publishConfig": {
         "access": "public"
     },
-    "maintainers": [
-        {
-            "name": "saiye",
-            "email": "saiye@gaoding.com"
-        },
-        {
-            "name": "yase",
-            "email": "yase@gaoding.com"
-        }
-    ],
     "description": "",
     "license": "Apache-2.0",
     "repository": {
@@ -47,7 +37,7 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/bundle": "^0.26.2",
+        "@iliad-ui/bundle": "^0.26.3",
         "@lit-labs/react": "^1.0.1",
         "@types/lodash": "^4.14.175",
         "@types/react": "^17.0.30",
@@ -57,6 +47,16 @@
     "types": "./index.d.ts",
     "customElements": "custom-elements.json",
     "gitHead": "9bbd945c65ea91178a699382b30c499e57e3f450",
+    "maintainers": [
+        {
+            "name": "saiye",
+            "email": "saiye@gaoding.com"
+        },
+        {
+            "name": "yase",
+            "email": "yase@gaoding.com"
+        }
+    ],
     "sideEffects": [
         "./react-elements.js"
     ]

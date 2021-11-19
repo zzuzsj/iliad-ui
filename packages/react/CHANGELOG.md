@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.12](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/react@0.4.5...@iliad-ui/react@0.4.12) (2021-11-19)
+
+### Bug Fixes
+
+-   脚本生成 react 包时，遗漏 picker ([be4a517](https://github.com/gaoding-inc/iliad-ui/commit/be4a517dafeb7b96d139d42426c9399a45684cbb))
+-   react 包注册 web components ([0fbd882](https://github.com/gaoding-inc/iliad-ui/commit/0fbd88253877276e429c8d2460753654c2988d6a))
+-   react 导出组件类型为 any ([a66562c](https://github.com/gaoding-inc/iliad-ui/commit/a66562c71d928d54760679c323f24a074869a9d7))
+-   react types 入口 ([c5244b3](https://github.com/gaoding-inc/iliad-ui/commit/c5244b374aa4b760db524da3bbad36f30d34a89f))
+
 ## [0.4.5](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/react@0.4.4...@iliad-ui/react@0.4.5) (2021-10-21)
 
 **Note:** Version bump only for package @iliad-ui/react

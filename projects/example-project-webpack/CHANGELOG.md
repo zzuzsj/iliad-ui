@@ -3,133 +3,75 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.13](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.12...example-project-webpack@1.5.13) (2021-11-19)
+
+### Features
+
+-   update lit-\* dependencies, wip ([70743bf](https://github.com/zzuzsj/spectrum-web-components/commit/70743bf6855c08924a0a3ec1a14dc43862f9cf42))
+
 ## [1.5.12](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.11...example-project-webpack@1.5.12) (2021-10-21)
 
 **Note:** Version bump only for package example-project-webpack
-
-
-
-
 
 ## [1.5.11](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.10...example-project-webpack@1.5.11) (2021-10-21)
 
 **Note:** Version bump only for package example-project-webpack
 
-
-
-
-
 ## [1.5.10](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.9...example-project-webpack@1.5.10) (2021-10-21)
 
 **Note:** Version bump only for package example-project-webpack
-
-
-
-
 
 ## [1.5.9](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.9-alpha.3...example-project-webpack@1.5.9) (2021-10-21)
 
 **Note:** Version bump only for package example-project-webpack
 
-
-
-
-
 ## [1.5.9-alpha.3](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.9-alpha.2...example-project-webpack@1.5.9-alpha.3) (2021-10-21)
 
 **Note:** Version bump only for package example-project-webpack
-
-
-
-
 
 ## [1.5.9-alpha.2](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.9-alpha.1...example-project-webpack@1.5.9-alpha.2) (2021-10-21)
 
 **Note:** Version bump only for package example-project-webpack
 
-
-
-
-
 ## [1.5.9-alpha.1](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.8...example-project-webpack@1.5.9-alpha.1) (2021-10-20)
 
 **Note:** Version bump only for package example-project-webpack
-
-
-
-
 
 ## [1.5.9-alpha.0](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.8...example-project-webpack@1.5.9-alpha.0) (2021-10-20)
 
 **Note:** Version bump only for package example-project-webpack
 
-
-
-
-
 ## [1.5.8](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.6...example-project-webpack@1.5.8) (2021-10-20)
 
 **Note:** Version bump only for package example-project-webpack
-
-
-
-
 
 ## [1.5.7](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.6...example-project-webpack@1.5.7) (2021-10-19)
 
 **Note:** Version bump only for package example-project-webpack
 
-
-
-
-
 ## [1.5.6](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.4...example-project-webpack@1.5.6) (2021-10-19)
 
 **Note:** Version bump only for package example-project-webpack
-
-
-
-
 
 ## [1.5.5](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.4...example-project-webpack@1.5.5) (2021-10-18)
 
 **Note:** Version bump only for package example-project-webpack
 
-
-
-
-
 ## [1.5.4](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.1...example-project-webpack@1.5.4) (2021-10-18)
 
 **Note:** Version bump only for package example-project-webpack
-
-
-
-
 
 ## [1.5.3](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.1...example-project-webpack@1.5.3) (2021-10-18)
 
 **Note:** Version bump only for package example-project-webpack
 
-
-
-
-
 ## [1.5.2](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.1...example-project-webpack@1.5.2) (2021-10-15)
 
 **Note:** Version bump only for package example-project-webpack
 
-
-
-
-
 ## [1.5.1](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.0...example-project-webpack@1.5.1) (2021-10-14)
 
 **Note:** Version bump only for package example-project-webpack
-
-
-
-
 
 # [1.5.0](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.3.17...example-project-webpack@1.5.0) (2021-10-14)
 

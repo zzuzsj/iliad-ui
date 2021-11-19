@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.26.3](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/bundle@0.26.2...@iliad-ui/bundle@0.26.3) (2021-11-19)
+
+### Bug Fixes
+
+-   breadcrumb 和 tree 组件之后增加引用路径，保证打包正确 ([c550a06](https://github.com/gaoding-inc/iliad-ui/commit/c550a06a437609b286963cf2f2c7f5c026f1439c))
+
 ## [0.26.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/bundle@0.26.1...@iliad-ui/bundle@0.26.2) (2021-10-21)
 
 **Note:** Version bump only for package @iliad-ui/bundle
