@@ -16,17 +16,25 @@ const { Buffer } = require('buffer');
 const through2 = require('through2');
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+const concat = require('./gulp-concat-dir.cjs');
+const order = require('gulp-order');
 const replace = require('gulp-replace');
 
 gulp.task('scss', function scss() {
     return gulp
         .src([
+            // 'scss/**/*.scss',
             'scss/**/*.scss',
-            '!**/node_modules/**/*.*',
-            '!**/_story/**/*.scss',
         ])
+        .pipe(order(['scss/**/spectrum.scss', 'scss/**/iliad.scss']))
+        .pipe(
+            concat({
+                ext: '.scss',
+                sort: ['spectrum', 'iliad'],
+            })
+        )
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./css'));
+        .pipe(gulp.dest('.'));
 });
 
 gulp.task('watch', function watch() {
