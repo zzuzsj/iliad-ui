@@ -10,10 +10,21 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
+/* eslint-disable */
+const path = require('path');
+const { Buffer } = require('buffer');
+const through2 = require('through2');
+const gulp = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const replace = require('gulp-replace');
 
-@import 'core-global.css';
-@import './css/iliad-token.css';
-@import 'fonts.css';
-@import 'theme-dark.css';
-@import './css/theme-dark.css';
-@import 'scale-medium.css';
+gulp.task('scss', function scss() {
+    return gulp
+        .src(['scss/*.scss', '!**/node_modules/**/*.*', '!**/_story/**/*.scss'])
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./css'));
+});
+
+gulp.task('watch', function watch() {
+    gulp.watch('scss/*.scss', gulp.series(['scss']));
+});

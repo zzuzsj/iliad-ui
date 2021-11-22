@@ -51,6 +51,8 @@
         "./src/*": "./src/*"
     },
     "scripts": {
+        "scss": "gulp scss -f gulpfile.cjs",
+        "scss:watch": "gulp watch -f gulpfile.cjs",
         "test": "echo \"Error: run tests from mono-repo root.\" && exit 1"
     },
     "files": [
@@ -74,7 +76,11 @@
     "devDependencies": {
         "@spectrum-css/commons": "^3.0.2",
         "@spectrum-css/typography": "^3.0.2",
-        "@spectrum-css/vars": "^3.0.2"
+        "@spectrum-css/vars": "^3.0.2",
+        "gulp": "^4.0.2",
+        "gulp-replace": "^1.1.3",
+        "gulp-sass": "^5.0.0",
+        "sass": "1.32.13"
     },
     "customElements": "custom-elements.json",
     "gitHead": "2c03ae2437dbe18e8d274b92575c57aeddd90344",
