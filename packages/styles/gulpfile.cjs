@@ -20,11 +20,15 @@ const replace = require('gulp-replace');
 
 gulp.task('scss', function scss() {
     return gulp
-        .src(['scss/*.scss', '!**/node_modules/**/*.*', '!**/_story/**/*.scss'])
+        .src([
+            'scss/**/*.scss',
+            '!**/node_modules/**/*.*',
+            '!**/_story/**/*.scss',
+        ])
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./css'));
 });
 
 gulp.task('watch', function watch() {
-    gulp.watch('scss/*.scss', gulp.series(['scss']));
+    gulp.watch('scss/**/*.scss', gulp.series(['scss']));
 });
