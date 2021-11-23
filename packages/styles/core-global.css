@@ -1378,7 +1378,6 @@ governing permissions and limitations under the License.
     /* color white and black */
     --spectrum-global-color-static-white: #ffffff;
     --spectrum-global-color-static-black: #000000;
-    color: red;
     --spectrum-global-color-extend: #ffffff;
     /* color primary */
     --spectrum-global-color-static-primary-100: #eef4fe;

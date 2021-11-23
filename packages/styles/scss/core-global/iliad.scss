@@ -11,9 +11,6 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 @import './variable-core.scss';
-$color: red;
-$color2: $color;
-$color: black;
 :host,
 :root {
     /* 
@@ -25,7 +22,6 @@ $color: black;
     /* color white and black */
     --spectrum-global-color-static-white: #{$global-color-static-white};
     --spectrum-global-color-static-black: #{$global-color-static-black};
-    color: $color2;
     --spectrum-global-color-extend: #{$global-color-extend};
     /* color primary */
     --spectrum-global-color-static-primary-100: #{$global-color-static-primary-100};
