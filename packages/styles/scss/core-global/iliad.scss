@@ -1,7 +1,7 @@
 /*
 Copyright 2020 Adobe. All rights reserved.
 Copyright 2021 Gaoding. All rights reserved.
-This file is licensed to you under the Apache License, Version 2.0 (the "License");
+This file is licensed to you under the Apache License, Version 2.0 (the "License")};
 you may not use this file except in compliance with the License. You may obtain a copy
 of the License at http://www.apache.org/licenses/LICENSE-2.0
 
@@ -10,318 +10,242 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
+@import './variable-core.scss';
+$color: red;
+$color2: $color;
+$color: black;
 :host,
 :root {
     /* 
         global static token (--${project}-${global | alias | null}-${attribute}-${staic | null}-${}-${size}) 
         size: number | xs,s,m,l,xl,xxl | others
     */
-
     /* PART STATIC */
     /* # Part Color */
     /* color white and black */
-    --spectrum-global-color-static-white: #ffffff;
-    --spectrum-global-color-static-black: #000000;
-
-    /* color gray */
-    --spectrum-global-color-static-gray-100: #ffffff;
-    --spectrum-global-color-static-gray-200: #fafafa;
-    --spectrum-global-color-static-gray-300: #f5f5f5;
-    --spectrum-global-color-static-gray-400: #ebebeb;
-    --spectrum-global-color-static-gray-500: #e0e0e0; //*
-    --spectrum-global-color-static-gray-600: #b8b8b8;
-    --spectrum-global-color-static-gray-700: #949494;
-    --spectrum-global-color-static-gray-800: #5c5c5c;
-    --spectrum-global-color-static-gray-900: #1f1f1f;
-
+    --spectrum-global-color-static-white: #{$global-color-static-white};
+    --spectrum-global-color-static-black: #{$global-color-static-black};
+    color: $color2;
+    --spectrum-global-color-extend: #{$global-color-extend};
     /* color primary */
-    --spectrum-global-color-static-primary-100: #eef4fe;
-    --spectrum-global-color-static-primary-200: #cadefb;
-    --spectrum-global-color-static-primary-300: #8fb8f7;
-    --spectrum-global-color-static-primary-400: #5393f3;
-    --spectrum-global-color-static-primary-500: #2576f0; //*
-    --spectrum-global-color-static-primary-600: #1f61ed;
-    --spectrum-global-color-static-primary-700: #1544ea;
+    --spectrum-global-color-static-primary-100: #{$global-color-static-primary-100};
+    --spectrum-global-color-static-primary-200: #{$global-color-static-primary-200};
+    --spectrum-global-color-static-primary-300: #{$global-color-static-primary-300};
+    --spectrum-global-color-static-primary-400: #{$global-color-static-primary-400};
+    --spectrum-global-color-static-primary-500: #{$global-color-static-primary-500}; //*
+    --spectrum-global-color-static-primary-600: #{$global-color-static-primary-600};
+    --spectrum-global-color-static-primary-700: #{$global-color-static-primary-700};
     /* TODO: to extend */
-    --spectrum-global-color-static-primary-800: ;
-    --spectrum-global-color-static-primary-900: ;
+    --spectrum-global-color-static-primary-800: #{$global-color-static-primary-800};
+    --spectrum-global-color-static-primary-900: #{$global-color-static-primary-900};
 
     /* color green */
-    --spectrum-global-color-static-green-100: #ebf9f4;
-    --spectrum-global-color-static-green-200: #c3eedc;
-    --spectrum-global-color-static-green-300: #7fdbb5;
-    --spectrum-global-color-static-green-400: #3cc78f;
-    --spectrum-global-color-static-green-500: #07b871; //*
-    --spectrum-global-color-static-green-600: #06ab5d;
-    --spectrum-global-color-static-green-700: #049a42;
+    --spectrum-global-color-static-green-100: #{$global-color-static-green-100};
+    --spectrum-global-color-static-green-200: #{$global-color-static-green-200};
+    --spectrum-global-color-static-green-300: #{$global-color-static-green-300};
+    --spectrum-global-color-static-green-400: #{$global-color-static-green-400};
+    --spectrum-global-color-static-green-500: #{$global-color-static-green-500}; //*
+    --spectrum-global-color-static-green-600: #{$global-color-static-green-600};
+    --spectrum-global-color-static-green-700: #{$global-color-static-green-700};
     /* TODO: to extend */
-    --spectrum-global-color-static-green-800: ;
-    --spectrum-global-color-static-green-900: ;
+    --spectrum-global-color-static-green-800: #{$global-color-static-green-800};
+    --spectrum-global-color-static-green-900: #{$global-color-static-green-900};
 
     /* color orange */
-    --spectrum-global-color-static-orange-100: #fff7ec;
-    --spectrum-global-color-static-orange-200: #fee7c4;
-    --spectrum-global-color-static-orange-300: #fccc82;
-    --spectrum-global-color-static-orange-400: #fbb03f;
-    --spectrum-global-color-static-orange-500: #fa9b0c; //*
-    --spectrum-global-color-static-orange-600: #f9890a;
-    --spectrum-global-color-static-orange-700: #f87107;
+    --spectrum-global-color-static-orange-100: #{$global-color-static-orange-100};
+    --spectrum-global-color-static-orange-200: #{$global-color-static-orange-200};
+    --spectrum-global-color-static-orange-300: #{$global-color-static-orange-300};
+    --spectrum-global-color-static-orange-400: #{$global-color-static-orange-400};
+    --spectrum-global-color-static-orange-500: #{$global-color-static-orange-500}; //*
+    --spectrum-global-color-static-orange-600: #{$global-color-static-orange-600};
+    --spectrum-global-color-static-orange-700: #{$global-color-static-orange-700};
     /* TODO: to extend */
-    --spectrum-global-color-static-orange-800: ;
-    --spectrum-global-color-static-orange-900: ;
+    --spectrum-global-color-static-orange-800: #{$global-color-static-orange-800};
+    --spectrum-global-color-static-orange-900: #{$global-color-static-orange-900};
 
     /* color red */
-    --spectrum-global-color-static-red-100: #fef1f0;
-    --spectrum-global-color-static-red-200: #fdd5d1;
-    --spectrum-global-color-static-red-300: #faa69d;
-    --spectrum-global-color-static-red-400: #f77769;
-    --spectrum-global-color-static-red-500: #f55240; //*
-    --spectrum-global-color-static-red-600: #f34334;
-    --spectrum-global-color-static-red-700: #f13025;
+    --spectrum-global-color-static-red-100: #{$global-color-static-red-100};
+    --spectrum-global-color-static-red-200: #{$global-color-static-red-200};
+    --spectrum-global-color-static-red-300: #{$global-color-static-red-300};
+    --spectrum-global-color-static-red-400: #{$global-color-static-red-400};
+    --spectrum-global-color-static-red-500: #{$global-color-static-red-500}; //*
+    --spectrum-global-color-static-red-600: #{$global-color-static-red-600};
+    --spectrum-global-color-static-red-700: #{$global-color-static-red-700};
     /* TODO: to extend */
-    --spectrum-global-color-static-red-800: ;
-    --spectrum-global-color-static-red-900: ;
+    --spectrum-global-color-static-red-800: #{$global-color-static-red-800};
+    --spectrum-global-color-static-red-900: #{$global-color-static-red-900};
 
     /* color purple */
-    --spectrum-global-color-static-purple-100: #f2f1ff;
-    --spectrum-global-color-static-purple-200: #d7d2ff;
-    --spectrum-global-color-static-purple-300: #aaa0ff;
-    --spectrum-global-color-static-purple-400: #7d6eff;
-    --spectrum-global-color-static-purple-500: #5a47ff; //*
-    --spectrum-global-color-static-purple-600: #4a3aff;
-    --spectrum-global-color-static-purple-700: #3429ff;
+    --spectrum-global-color-static-purple-100: #{$global-color-static-purple-100};
+    --spectrum-global-color-static-purple-200: #{$global-color-static-purple-200};
+    --spectrum-global-color-static-purple-300: #{$global-color-static-purple-300};
+    --spectrum-global-color-static-purple-400: #{$global-color-static-purple-400};
+    --spectrum-global-color-static-purple-500: #{$global-color-static-purple-500}; //*
+    --spectrum-global-color-static-purple-600: #{$global-color-static-purple-600};
+    --spectrum-global-color-static-purple-700: #{$global-color-static-purple-700};
     /* TODO: to extend */
-    --spectrum-global-color-static-purple-800: ;
-    --spectrum-global-color-static-purple-900: ;
+    --spectrum-global-color-static-purple-800: #{$global-color-static-purple-800};
+    --spectrum-global-color-static-purple-900: #{$global-color-static-purple-900};
 
     /* color blue */
-    --spectrum-global-color-static-blue-100: #ebf7fe;
-    --spectrum-global-color-static-blue-200: #c1e7fb;
-    --spectrum-global-color-static-blue-300: #7bccf7;
-    --spectrum-global-color-static-blue-400: #36b1f3;
-    --spectrum-global-color-static-blue-500: #009cf0; //*
-    --spectrum-global-color-static-blue-600: #008aed;
-    --spectrum-global-color-static-blue-700: #0072ea;
+    --spectrum-global-color-static-blue-100: #{$global-color-static-blue-100};
+    --spectrum-global-color-static-blue-200: #{$global-color-static-blue-200};
+    --spectrum-global-color-static-blue-300: #{$global-color-static-blue-300};
+    --spectrum-global-color-static-blue-400: #{$global-color-static-blue-400};
+    --spectrum-global-color-static-blue-500: #{$global-color-static-blue-500}; //*
+    --spectrum-global-color-static-blue-600: #{$global-color-static-blue-600};
+    --spectrum-global-color-static-blue-700: #{$global-color-static-blue-700};
     /* TODO: to extend */
-    --spectrum-global-color-static-blue-800: ;
-    --spectrum-global-color-static-blue-900: ;
+    --spectrum-global-color-static-blue-800: #{$global-color-static-blue-800};
+    --spectrum-global-color-static-blue-900: #{$global-color-static-blue-900};
 
     /* color lakeblue */
-    --spectrum-global-color-static-lakeblue-100: #ebfbfd;
-    --spectrum-global-color-static-lakeblue-200: #c2f2f7;
-    --spectrum-global-color-static-lakeblue-300: #7ee4ef;
-    --spectrum-global-color-static-lakeblue-400: #39d5e6;
-    --spectrum-global-color-static-lakeblue-500: #04cae0; //*
-    --spectrum-global-color-static-lakeblue-600: #03c0da;
-    --spectrum-global-color-static-lakeblue-700: #02b4d3;
+    --spectrum-global-color-static-lakeblue-100: #{$global-color-static-lakeblue-100};
+    --spectrum-global-color-static-lakeblue-200: #{$global-color-static-lakeblue-200};
+    --spectrum-global-color-static-lakeblue-300: #{$global-color-static-lakeblue-300};
+    --spectrum-global-color-static-lakeblue-400: #{$global-color-static-lakeblue-400};
+    --spectrum-global-color-static-lakeblue-500: #{$global-color-static-lakeblue-500}; //*
+    --spectrum-global-color-static-lakeblue-600: #{$global-color-static-lakeblue-600};
+    --spectrum-global-color-static-lakeblue-700: #{$global-color-static-lakeblue-700};
     /* TODO: to extend */
-    --spectrum-global-color-static-lakeblue-800: ;
-    --spectrum-global-color-static-lakeblue-900: ;
+    --spectrum-global-color-static-lakeblue-800: #{$global-color-static-lakeblue-800};
+    --spectrum-global-color-static-lakeblue-900: #{$global-color-static-lakeblue-900};
 
     /* color magenta */
-    --spectrum-global-color-static-magenta-100: #fff1f3;
-    --spectrum-global-color-static-magenta-200: #ffd4db;
-    --spectrum-global-color-static-magenta-300: #ffa4b2;
-    --spectrum-global-color-static-magenta-400: #ff748a;
-    --spectrum-global-color-static-magenta-500: #ff4f6a; //*
-    --spectrum-global-color-static-magenta-600: #ff4157;
-    --spectrum-global-color-static-magenta-700: #ff2e3d;
+    --spectrum-global-color-static-magenta-100: #{$global-color-static-magenta-100};
+    --spectrum-global-color-static-magenta-200: #{$global-color-static-magenta-200};
+    --spectrum-global-color-static-magenta-300: #{$global-color-static-magenta-300};
+    --spectrum-global-color-static-magenta-400: #{$global-color-static-magenta-400};
+    --spectrum-global-color-static-magenta-500: #{$global-color-static-magenta-500}; //*
+    --spectrum-global-color-static-magenta-600: #{$global-color-static-magenta-600};
+    --spectrum-global-color-static-magenta-700: #{$global-color-static-magenta-700};
     /* TODO: to extend */
-    --spectrum-global-color-static-magenta-800: ;
-    --spectrum-global-color-static-magenta-900: ;
+    --spectrum-global-color-static-magenta-800: #{$global-color-static-magenta-800};
+    --spectrum-global-color-static-magenta-900: #{$global-color-static-magenta-900};
 
     /* # Part Animation */
-    --spectrum-global-animation-static-duration-0: 0ms;
-    --spectrum-global-animation-static-duration-100: 130ms;
-    --spectrum-global-animation-static-duration-200: 220ms;
-    --spectrum-global-animation-static-duration-300: 350ms;
-    --spectrum-global-animation-static-duration-400: 500ms;
-    --spectrum-global-animation-static-delay-100: 50ms;
-    --spectrum-global-animation-static-ease-in-out: cubic-bezier(
-        0.45,
-        0,
-        0.4,
-        1
-    );
-    --spectrum-global-animation-static-ease-in: cubic-bezier(0.5, 0, 1, 1);
-    --spectrum-global-animation-static-ease-out: cubic-bezier(0, 0, 0.4, 1);
-    --spectrum-global-animation-static-linear: cubic-bezier(0, 0, 1, 1);
+    --spectrum-global-animation-static-duration-0: #{$global-animation-static-duration-0};
+    --spectrum-global-animation-static-duration-100: #{$global-animation-static-duration-100};
+    --spectrum-global-animation-static-duration-200: #{$global-animation-static-duration-200};
+    --spectrum-global-animation-static-duration-300: #{$global-animation-static-duration-300};
+    --spectrum-global-animation-static-duration-400: #{$global-animation-static-duration-400};
+    --spectrum-global-animation-static-delay-100: #{$global-animation-static-delay-100};
+    --spectrum-global-animation-static-ease-in-out: #{$global-animation-static-ease-in-out};
+    --spectrum-global-animation-static-ease-in: #{$global-animation-static-ease-in};
+    --spectrum-global-animation-static-ease-out: #{$global-animation-static-ease-out};
+    --spectrum-global-animation-static-linear: #{$global-animation-static-linear};
 
     /* # Part FontSize */
-    --spectrum-global-font-size-static-s: 12px;
-    --spectrum-global-font-size-static-m: 14px;
-    --spectrum-global-font-size-static-l: 18px;
+    --spectrum-global-font-size-static-s: #{$global-font-size-static-s};
+    --spectrum-global-font-size-static-m: #{$global-font-size-static-m};
+    --spectrum-global-font-size-static-l: #{$global-font-size-static-l};
 
     /* # Part FontWeight */
-    --spectrum-global-font-weight-static-s: 400;
-    --spectrum-global-font-weight-static-m: 500;
-    --spectrum-global-font-weight-static-l: 600;
+    --spectrum-global-font-weight-static-s: #{$global-font-weight-static-s};
+    --spectrum-global-font-weight-static-m: #{$global-font-weight-static-m};
+    --spectrum-global-font-weight-static-l: #{$global-font-weight-static-l};
 
     /* # Part LineHeight */
-    --spectrum-global-line-height-static-s: 1.5;
-    --spectrum-global-line-height-static-m: 1.7;
-    --spectrum-global-line-height-static-l: 2;
+    --spectrum-global-line-height-static-s: #{$global-line-height-static-s};
+    --spectrum-global-line-height-static-m: #{$global-line-height-static-m};
+    --spectrum-global-line-height-static-l: #{$global-line-height-static-l};
 
     /* # Part BorderCorner*/
-    --spectrum-global-border-corner-static-xs: 2px;
-    --spectrum-global-border-corner-static-s: 4px;
-    --spectrum-global-border-corner-static-m: 6px;
-    --spectrum-global-border-corner-static-l: 12px;
-    --spectrum-global-border-corner-static-full: 9999px;
+    --spectrum-global-border-corner-static-xs: #{$global-border-corner-static-xs};
+    --spectrum-global-border-corner-static-s: #{$global-border-corner-static-s};
+    --spectrum-global-border-corner-static-m: #{$global-border-corner-static-m};
+    --spectrum-global-border-corner-static-l: #{$global-border-corner-static-l};
+    --spectrum-global-border-corner-static-full: #{$global-border-corner-static-full};
 
     /* # Part Border */
-    --spectrum-global-border-static-s: 1px;
-    --spectrum-global-border-static-m: 2px;
-    --spectrum-global-border-static-l: 4px;
+    --spectrum-global-border-static-s: #{$global-border-static-s};
+    --spectrum-global-border-static-m: #{$global-border-static-m};
+    --spectrum-global-border-static-l: #{$global-border-static-l};
 
     /* # Part Shadow */
-    --spectrum-global-shadow-static-s: 0px 0px 4px rgba(0, 0, 0, 0.04),
-        0px 4px 24px rgba(0, 0, 0, 0.04);
-    --spectrum-global-shadow-static-m: 0px 0px 1px rgba(0, 0, 0, 0.16),
-        0px 6px 32px 4px rgba(0, 0, 0, 0.08);
-    --spectrum-global-shadow-static-l: 0px 2px 8px rgba(0, 0, 0, 0.03),
-        0px 16px 48px 8px rgba(0, 0, 0, 0.08);
+    --spectrum-global-shadow-static-s: #{$global-shadow-static-s};
+    --spectrum-global-shadow-static-m: #{$global-shadow-static-m};
+    --spectrum-global-shadow-static-l: #{$global-shadow-static-l};
 
     /* # Part ControlHeight */
-    --spectrum-global-control-height-static-s: 28px;
-    --spectrum-global-control-height-static-m: 32px;
-    --spectrum-global-control-height-static-l: 40px;
-    --spectrum-global-control-height-static-xl: 48px;
+    --spectrum-global-control-height-static-s: #{$global-control-height-static-s};
+    --spectrum-global-control-height-static-m: #{$global-control-height-static-m};
+    --spectrum-global-control-height-static-l: #{$global-control-height-static-l};
+    --spectrum-global-control-height-static-xl: #{$global-control-height-static-xl};
 
     /* # Part IconSize */
-    --spectrum-global-icon-size-static-s: 12px;
-    --spectrum-global-icon-size-static-m: 16px;
-    --spectrum-global-icon-size-static-l: 20px;
+    --spectrum-global-icon-size-static-s: #{$global-icon-size-static-s};
+    --spectrum-global-icon-size-static-m: #{$global-icon-size-static-m};
+    --spectrum-global-icon-size-static-l: #{$global-icon-size-static-l};
 
     /* # Part Space */
-    --spectrum-global-space-static-none: 0;
-    --spectrum-global-space-static-extra-tight: 4px;
-    --spectrum-global-space-static-tight: 8px;
-    --spectrum-global-space-static-base-tight: 12px;
-    --spectrum-global-space-static-base: 16px;
-    --spectrum-global-space-static-base-loose: 24px;
-    --spectrum-global-space-static-loose: 32px;
-    --spectrum-global-space-static-extra-loose: 40px;
+    --spectrum-global-space-static-none: #{$global-space-static-none};
+    --spectrum-global-space-static-extra-tight: #{$global-space-static-extra-tight};
+    --spectrum-global-space-static-tight: #{$global-space-static-tight};
+    --spectrum-global-space-static-base-tight: #{$global-space-static-base-tight};
+    --spectrum-global-space-static-base: #{$global-space-static-base};
+    --spectrum-global-space-static-base-loose: #{$global-space-static-base-loose};
+    --spectrum-global-space-static-loose: #{$global-space-static-loose};
+    --spectrum-global-space-static-extra-loose: #{$global-space-static-extra-loose};
 
     /* # Part ZIndex */
-    --spectrum-global-zindex-static-deepdive: -99999;
-    --spectrum-global-zindex-static-default: 1;
-    --spectrum-global-zindex-static-docked: 4;
-    --spectrum-global-zindex-static-sticky: 10;
-    --spectrum-global-zindex-static-popover: 5000;
-    --spectrum-global-zindex-static-dialog: 6000;
-    --spectrum-global-zindex-static-dropdown: 7000;
-    --spectrum-global-zindex-static-overlay: 8000;
-    --spectrum-global-zindex-static-modal: 9000;
-    --spectrum-global-zindex-static-spinner: 9050;
-    --spectrum-global-zindex-static-toast: 10000;
+    --spectrum-global-zindex-static-deepdive: #{$global-zindex-static-deepdive};
+    --spectrum-global-zindex-static-default: #{$global-zindex-static-default};
+    --spectrum-global-zindex-static-docked: #{$global-zindex-static-docked};
+    --spectrum-global-zindex-static-sticky: #{$global-zindex-static-sticky};
+    --spectrum-global-zindex-static-popover: #{$global-zindex-static-popover};
+    --spectrum-global-zindex-static-dialog: #{$global-zindex-static-dialog};
+    --spectrum-global-zindex-static-dropdown: #{$global-zindex-static-dropdown};
+    --spectrum-global-zindex-static-overlay: #{$global-zindex-static-overlay};
+    --spectrum-global-zindex-static-modal: #{$global-zindex-static-modal};
+    --spectrum-global-zindex-static-spinner: #{$global-zindex-static-spinner};
+    --spectrum-global-zindex-static-toast: #{$global-zindex-static-toast};
 
     /* PART OTHERS (default Theme Light)*/
+    /* color gray */
+    --spectrum-global-color-gray-100: #{$global-color-gray-100};
+    --spectrum-global-color-gray-200: #{$global-color-gray-200};
+    --spectrum-global-color-gray-300: #{$global-color-gray-300};
+    --spectrum-global-color-gray-400: #{$global-color-gray-400};
+    --spectrum-global-color-gray-500: #{$global-color-gray-500}; //*
+    --spectrum-global-color-gray-600: #{$global-color-gray-600};
+    --spectrum-global-color-gray-700: #{$global-color-gray-700};
+    --spectrum-global-color-gray-800: #{$global-color-gray-800};
+    --spectrum-global-color-gray-900: #{$global-color-gray-900};
+
     /* Part Brand */
-    --spectrum-global-color-info: rgba(
-        var(--spectrum-global-color-primary-500),
-        1
-    );
-    --spectrum-global-color-negative: rgba(
-        var(--spectrum-global-color-red-500),
-        1
-    );
-    --spectrum-global-color-tips: rgba(
-        var(--spectrum-global-color-orange-500),
-        1
-    );
-    --spectrum-global-color-positive: rgba(
-        var(--spectrum-global-color-green-500),
-        1
-    );
+    --spectrum-global-color-info: #{$global-color-info};
+    --spectrum-global-color-negative: #{$global-color-negative};
+    --spectrum-global-color-tips: #{$global-color-tips};
+    --spectrum-global-color-positive: #{$global-color-positive};
 
     /* Part TextColor */
-    --spectrum-global-text-color-primary: rgba(
-        var(--spectrum-global-color-static-black),
-        0.88
-    );
-    --spectrum-global-text-color-secondary: rgba(
-        var(--spectrum-global-color-static-black),
-        0.64
-    );
-    --spectrum-global-text-color-placeholder: rgba(
-        var(--spectrum-global-color-static-black),
-        0.42
-    );
-    --spectrum-global-text-color-disabled: rgba(
-        var(--spectrum-global-color-static-black),
-        0.28
-    );
-    --spectrum-global-text-color-link: rgba(
-        var(--spectrum-global-color-static-blue-500),
-        1
-    );
+    --spectrum-global-text-color-primary: #{$global-text-color-primary};
+    --spectrum-global-text-color-secondary: #{$global-text-color-secondary};
+    --spectrum-global-text-color-placeholder: #{$global-text-color-placeholder};
+    --spectrum-global-text-color-disabled: #{$global-text-color-disabled};
+    --spectrum-global-text-color-link: #{$global-text-color-link};
 
     /* Part IconColor */
-    --spectrum-global-icon-color-primary: rgba(
-        var(--spectrum-global-color-static-gray-800),
-        1 1
-    );
-    --spectrum-global-icon-color-secondary: rgba(
-        var(--spectrum-global-color-static-gray-800),
-        1 1
-    );
-    --spectrum-global-icon-color-tertiary: rgba(
-        var(--spectrum-global-color-static-gray-700),
-        1 1
-    );
-    --spectrum-global-icon-color-disabled: rgba(
-        var(--spectrum-global-color-static-gray-600),
-        1
-    );
-    --spectrum-global-icon-color-activited: rgba(
-        var(--spectrum-global-color-static-blue-500),
-        1
-    );
+    --spectrum-global-icon-color-primary: #{$global-icon-color-primary};
+    --spectrum-global-icon-color-secondary: #{$global-icon-color-secondary};
+    --spectrum-global-icon-color-tertiary: #{$global-icon-color-tertiary};
+    --spectrum-global-icon-color-disabled: #{$global-icon-color-disabled};
+    --spectrum-global-icon-color-activited: #{$global-icon-color-activited};
 
     /* Part BgColor */
-    --spectrum-global-bg-color-0: rgba(
-        var(--spectrum-global-color-static-gray-100),
-        1
-    );
-    --spectrum-global-bg-color-100: rgba(
-        var(--spectrum-global-color-static-gray-200),
-        1
-    );
-    --spectrum-global-bg-color-200: rgba(
-        var(--spectrum-global-color-static-gray-100),
-        1
-    );
-    --spectrum-global-bg-color-300: rgba(
-        var(--spectrum-global-color-static-gray-100),
-        1
-    );
-    --spectrum-global-bg-color-disabled: rgba(
-        var(--spectrum-global-color-static-gray-100),
-        1
-    );
+    --spectrum-global-bg-color-0: #{$global-bg-color-0};
+    --spectrum-global-bg-color-100: #{$global-bg-color-100};
+    --spectrum-global-bg-color-200: #{$global-bg-color-200};
+    --spectrum-global-bg-color-300: #{$global-bg-color-300};
+    --spectrum-global-bg-color-disabled: #{$global-bg-color-disabled};
 
     /* Part CoverColor */
-    --spectrum-global-cover-color-0: rgba(
-        var(--spectrum-global-color-static-black),
-        0
-    );
-    --spectrum-global-cover-color-100: rgba(
-        var(--spectrum-global-color-static-black),
-        0.08
-    );
-    --spectrum-global-cover-color-200: rgba(
-        var(--spectrum-global-color-static-black),
-        0.16
-    );
+    --spectrum-global-cover-color-0: #{$global-cover-color-0};
+    --spectrum-global-cover-color-100: #{$global-cover-color-100};
+    --spectrum-global-cover-color-200: #{$global-cover-color-200};
 
     /* Part BorderColor */
-    --spectrum-global-border-color-100: rgba(
-        var(--spectrum-global-color-static-black),
-        0.08
-    );
-    --spectrum-global-border-color-200: rgba(
-        var(--spectrum-global-color-static-black),
-        0.16
-    );
+    --spectrum-global-border-color-100: #{$global-border-color-100};
+    --spectrum-global-border-color-200: #{$global-border-color-200};
 }

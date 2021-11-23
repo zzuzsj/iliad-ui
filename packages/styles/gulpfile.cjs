@@ -15,18 +15,37 @@ const path = require('path');
 const { Buffer } = require('buffer');
 const through2 = require('through2');
 const gulp = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
+const sass = require('gulp-dart-sass');
 const concat = require('./gulp-concat-dir.cjs');
 const order = require('gulp-order');
 const replace = require('gulp-replace');
+const fs = require('fs-extra');
+const multiDest = require('gulp-multi-dest');
+const del = require('del');
+
+gulp.task('variable', function variable() {
+    const allFiles = fs.readdirSync('scss');
+    const outputDirs = allFiles
+        .map((cv) => {
+            return `scss/${cv}`;
+        })
+        .filter((cv) => {
+            return fs.lstatSync(cv).isDirectory();
+        });
+
+    return gulp.src(['scss/variable-*.scss']).pipe(
+        multiDest(outputDirs, {
+            mode: 0755,
+        })
+    );
+});
+gulp.task('variable-clean', function variable() {
+    return del(['scss/**/variable-*.scss', '!scss/variable-*.scss']);
+});
 
 gulp.task('scss', function scss() {
     return gulp
-        .src([
-            // 'scss/**/*.scss',
-            'scss/**/*.scss',
-        ])
-        .pipe(order(['scss/**/spectrum.scss', 'scss/**/iliad.scss']))
+        .src(['scss/**/*.scss', '!scss/*.scss'])
         .pipe(
             concat({
                 ext: '.scss',
@@ -37,6 +56,13 @@ gulp.task('scss', function scss() {
         .pipe(gulp.dest('.'));
 });
 
-gulp.task('watch', function watch() {
-    gulp.watch('scss/**/*.scss', gulp.series(['scss']));
-});
+gulp.task(
+    'build',
+    gulp.series(['variable', 'scss'], (cb) => {
+        del(['scss/**/variable-*.scss', '!scss/variable-*.scss']);
+        cb();
+    })
+);
+// gulp.task('watch', function watch() {
+//     gulp.watch('scss/**/*.scss', gulp.series(['scss']));
+// });

@@ -84,7 +84,7 @@ module.exports = function (options) {
                     base: concatFirstFile.base,
                     cwd: concatFirstFile.cwd,
                     path: path.join(concatFirstFile.base, filename),
-                    contents: new Buffer(concatFileContents),
+                    contents: Buffer.from(concatFileContents),
                 });
                 this.push(concatenatedFile);
             }
