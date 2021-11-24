@@ -11,11 +11,53 @@
 
     <title>example-app</title>
     <!-- To use the following you must have a full build of the app to draw the styles from... -->
-    <!-- <link rel="stylesheet" href="dist/styles.css" /> -->
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .divider {
+        margin: 8px 0;
+      }
+    </style>
   </head>
 
   <body>
-    <sp-theme color="light" scale="large">
+    <sp-theme color="light" scale="medium">
+      <sp-picker
+        class="themeSelect"
+        invalid
+        label="Theme"
+        onchange="handleThemeChange"
+      >
+        <sp-menu-item> light </sp-menu-item>
+        <sp-menu-item> lightest </sp-menu-item>
+        <sp-menu-item> dark </sp-menu-item>
+        <sp-menu-item> darkest </sp-menu-item>
+      </sp-picker>
+      <sp-divider class="divider"></sp-divider>
+      <sp-action-menu size="m">
+        <span slot="label">More Actions</span>
+        <sp-menu-group id="group-1" selects="single">
+          <span slot="header">Group 1</span>
+          <sp-menu-item> Central Park </sp-menu-item>
+          <sp-menu-item> Flushing Meadows Corona Park </sp-menu-item>
+          <sp-menu-item> Prospect Park </sp-menu-item>
+        </sp-menu-group>
+        <sp-menu-group id="group-1" selects="single">
+          <span slot="header">Group 2</span>
+          <sp-menu-item>
+            <sp-icon-chevron100 slot="icon"></sp-icon-chevron100> Deselect
+          </sp-menu-item>
+          <sp-menu-item>
+            <span slot="value">MenuItem Label</span>
+            Select inverse
+          </sp-menu-item>
+          <sp-menu-item selected> Feather... </sp-menu-item>
+          <sp-menu-item> Select and mask... </sp-menu-item>
+          <sp-menu-divider size="m"></sp-menu-divider>
+          <sp-menu-item> Save selection </sp-menu-item>
+          <sp-menu-item disabled> Make work path </sp-menu-item>
+        </sp-menu-group>
+      </sp-action-menu>
+      <sp-divider class="divider"></sp-divider>
       <div>
         <sp-button variant="primary">Primary</sp-button>
         <sp-button variant="secondary" autofocus>secondary</sp-button>
@@ -185,5 +227,16 @@
     </sp-theme>
 
     <script type="module" src="./out-tsc/src/example-app.js"></script>
+    <script>
+      document
+        .querySelector('.themeSelect')
+        .addEventListener('change', handleThemeChange);
+      function handleThemeChange(e) {
+        console.log(e.target.value);
+        const theme = document.querySelector('sp-theme');
+        // this.value = e.target.value;
+        theme.color = e.target.value;
+      }
+    </script>
   </body>
 </html>

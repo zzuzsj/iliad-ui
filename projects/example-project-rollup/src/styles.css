@@ -12,12 +12,14 @@ governing permissions and limitations under the License.
 */
 
 /* import the global stylesheets */
-@import '@iliad-ui/styles/all-medium-light.css';
+/* @import '@iliad-ui/styles/all-medium-light.css'; */
+@import '@iliad-ui/styles/core-global.css';
+/* @import '@iliad-ui/styles/theme-light.css'; */
+/* @import url('@iliad-ui/styles/all-large-light.css'); */
 
 html,
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #ededed;
 }
