@@ -259,6 +259,12 @@ governing permissions and limitations under the License.
     --spectrum-alias-pasteboard-background-color: #f5f5f5;
     --spectrum-alias-appframe-border-color: #f5f5f5;
     --spectrum-alias-appframe-separator-color: #f5f5f5;
+    --spectrum-alias-box-shadow-s: 0px 0px 4px rgba(0, 0, 0, 0.04),
+        0px 4px 24px rgba(0, 0, 0, 0.04);
+    --spectrum-alias-box-shadow-m: 0px 0px 1px rgba(0, 0, 0, 0.16),
+        0px 6px 32px 4px rgba(0, 0, 0, 0.08);
+    --spectrum-alias-box-shadow-l: 0px 2px 8px rgba(0, 0, 0, 0.03),
+        0px 16px 48px 8px rgba(0, 0, 0, 0.08);
 }
 
 /* stylelint-enable */

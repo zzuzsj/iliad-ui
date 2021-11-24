@@ -95,5 +95,10 @@ governing permissions and limitations under the License.
     --spectrum-alias-pasteboard-background-color: #{$global-color-gray-300};
     --spectrum-alias-appframe-border-color: #{$global-color-gray-300};
     --spectrum-alias-appframe-separator-color: #{$global-color-gray-300};
+
+    // box-shadow
+    --spectrum-alias-box-shadow-s: #{$global-shadow-static-s};
+    --spectrum-alias-box-shadow-m: #{$global-shadow-static-m};
+    --spectrum-alias-box-shadow-l: #{$global-shadow-static-l};
 }
 /* stylelint-enable */

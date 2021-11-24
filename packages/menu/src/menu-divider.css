@@ -1,5 +1,6 @@
 /*
 Copyright 2020 Adobe. All rights reserved.
+Copyright 2021 Gaoding. All rights reserved.
 This file is licensed to you under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License. You may obtain a copy
 of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -11,6 +12,62 @@ governing permissions and limitations under the License.
 */
 
 @import './spectrum-menu-divider.css';
+/* override */
+:host {
+    --spectrum-divider-s-background-color: var(
+        --spectrum-global-border-color-common-default
+    );
+    --spectrum-divider-s-border-radius: var(
+        --spectrum-alias-border-radius-none
+    );
+    --spectrum-divider-s-height: var(--spectrum-global-dimension-size-10);
+    --spectrum-divider-s-vertical-background-color: var(
+        --spectrum-alias-border-color-common-default
+    );
+    --spectrum-divider-s-vertical-border-radius: var(
+        --spectrum-alias-border-radius-none
+    );
+    --spectrum-divider-s-vertical-width: var(
+        --spectrum-global-dimension-size-10
+    );
+    --spectrum-divider-m-background-color: var(
+        --spectrum-global-border-color-common-default
+    );
+    --spectrum-divider-m-border-radius: var(
+        --spectrum-alias-border-radius-none
+    );
+    --spectrum-divider-m-height: var(--spectrum-global-dimension-size-25);
+    --spectrum-divider-m-vertical-background-color: var(
+        --spectrum-alias-border-color-common-default
+    );
+    --spectrum-divider-m-vertical-border-radius: var(
+        --spectrum-alias-border-radius-none
+    );
+    --spectrum-divider-m-vertical-width: var(
+        --spectrum-global-dimension-size-25
+    );
+    --spectrum-divider-l-background-color: var(
+        --spectrum-global-border-color-common-default
+    );
+    --spectrum-divider-l-border-radius: var(
+        --spectrum-alias-border-radius-none
+    );
+    --spectrum-divider-l-height: var(--spectrum-global-dimension-size-50);
+    --spectrum-divider-l-vertical-background-color: var(
+        --spectrum-alias-border-color-common-default
+    );
+    --spectrum-divider-l-vertical-border-radius: var(
+        --spectrum-alias-border-radius-none
+    );
+    --spectrum-divider-l-vertical-width: var(
+        --spectrum-global-dimension-size-50
+    );
+    --spectrum-divider-margin-size: var(--spectrum-global-dimension-size-100);
+}
+:host {
+    margin: var(--spectrum-divider-margin-size) 0;
+}
+/* override */
 
 :host {
     display: block;

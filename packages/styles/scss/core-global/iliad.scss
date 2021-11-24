@@ -22,6 +22,7 @@ governing permissions and limitations under the License.
     /* color white and black */
     --spectrum-global-color-static-white: #{$global-color-static-white};
     --spectrum-global-color-static-black: #{$global-color-static-black};
+    --spectrum-global-color-static-transparent: #{$global-color-static-transparent};
     --spectrum-global-color-extend: #{$global-color-extend};
     /* color primary */
     --spectrum-global-color-static-primary-100: #{$global-color-static-primary-100};
@@ -147,16 +148,24 @@ governing permissions and limitations under the License.
     --spectrum-global-line-height-static-l: #{$global-line-height-static-l};
 
     /* # Part BorderCorner*/
+    --spectrum-global-border-corner-static-none: #{$global-border-corner-static-xs};
     --spectrum-global-border-corner-static-xs: #{$global-border-corner-static-xs};
     --spectrum-global-border-corner-static-s: #{$global-border-corner-static-s};
     --spectrum-global-border-corner-static-m: #{$global-border-corner-static-m};
     --spectrum-global-border-corner-static-l: #{$global-border-corner-static-l};
     --spectrum-global-border-corner-static-full: #{$global-border-corner-static-full};
+    --spectrum-alias-border-radius-none: var(
+        --spectrum-global-border-corner-static-none
+    );
 
     /* # Part Border */
     --spectrum-global-border-static-s: #{$global-border-static-s};
     --spectrum-global-border-static-m: #{$global-border-static-m};
     --spectrum-global-border-static-l: #{$global-border-static-l};
+    /* #Part Border Size */
+    --spectrum-alias-border-size-none: var(
+        --spectrum-global-dimension-static-size-0
+    );
 
     /* # Part Shadow */
     --spectrum-global-shadow-static-s: #{$global-shadow-static-s};
@@ -244,4 +253,27 @@ governing permissions and limitations under the License.
     /* Part BorderColor */
     --spectrum-global-border-color-100: #{$global-border-color-100};
     --spectrum-global-border-color-200: #{$global-border-color-200};
+
+    /* Part BorderColor */
+    --spectrum-alias-border-color-default: var(
+        --spectrum-global-border-color-100
+    );
+    --spectrum-alias-border-color-dark: var(--spectrum-global-border-color-200);
+
+    /* Part Space */
+    --spectrum-alias-space-none: 0;
+    --spectrum-alias-space-extra-tight: 4px;
+    --spectrum-alias-space-tight: 8px;
+    --spectrum-alias-space-base-tight: 12px;
+    --spectrum-alias-space-base: 16px;
+    --spectrum-alias-space-base-loose: 24px;
+    --spectrum-alias-space-loose: 32px;
+    --spectrum-alias-space-extra-loose: 40px;
+
+    /* Part Padding */
+    --spectrum-alias-padding-none: ;
+    --spectrum-alias-padding-s: var(--spectrum-alias-space-extra-tight);
+    --spectrum-alias-padding-m: var(--spectrum-alias-space-tight);
+    --spectrum-alias-padding-l: var(--spectrum-alias-space-base-tight);
+    --spectrum-alias-padding-xl: var(--spectrum-alias-space-extra);
 }

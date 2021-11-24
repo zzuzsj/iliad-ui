@@ -1,5 +1,6 @@
 /*
 Copyright 2020 Adobe. All rights reserved.
+Copyright 2021 Gaoding. All rights reserved.
 This file is licensed to you under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License. You may obtain a copy
 of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -11,6 +12,30 @@ governing permissions and limitations under the License.
 */
 
 @import './spectrum-menu-sectionHeading.css';
+/* override */
+:host {
+    --spectrum-listitem-heading-text-size: var(
+        --spectrum-global-dimension-font-size-50
+    );
+    --spectrum-listitem-heading-text-font-weight: var(
+        --spectrum-alias-font-weight-s
+    );
+    --spectrum-listitem-heading-text-transform: uppercase;
+    --spectrum-listitem-heading-letter-spacing: 0.06em;
+    --spectrum-listitem-heading-margin: 0 0 0 0;
+    --spectrum-listitem-heading-padding: 0 var(--spectrum-alias-padding-l) 0
+        var(--spectrum-alias-padding-m);
+    --spectrum-listitem-heading-line-height: var(
+        --spectrum-alias-body-text-line-height,
+        var(--spectrum-global-font-line-height-medium)
+    );
+    --spectrum-listheading-text-color: var(
+        --spectrum-global-text-color-disabled
+    );
+}
+:host {
+}
+/* override */
 
 :host {
     margin: 0;
@@ -25,14 +50,12 @@ governing permissions and limitations under the License.
  */
 :host([dir='ltr']) .header {
     /* .spectrum-Menu-sectionHeading */
-    padding: 0 var(--spectrum-global-dimension-size-450) 0
-        var(--spectrum-global-dimension-size-150);
+    padding: 0 var(--spectrum-alias-padding-l) 0 var(--spectrum-alias-padding-m);
 }
 
 :host([dir='rtl']) .header {
     /* .spectrum-Menu-sectionHeading */
-    padding: 0 var(--spectrum-global-dimension-size-150) 0
-        var(--spectrum-global-dimension-size-450);
+    padding: 0 var(--spectrum-alias-padding-m) 0 var(--spectrum-alias-padding-l);
 }
 
 sp-menu {

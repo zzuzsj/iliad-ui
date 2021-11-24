@@ -1378,6 +1378,7 @@ governing permissions and limitations under the License.
     /* color white and black */
     --spectrum-global-color-static-white: #ffffff;
     --spectrum-global-color-static-black: #000000;
+    --spectrum-global-color-static-transparent: #000000;
     --spectrum-global-color-extend: #ffffff;
     /* color primary */
     --spectrum-global-color-static-primary-100: #eef4fe;
@@ -1496,15 +1497,23 @@ governing permissions and limitations under the License.
     --spectrum-global-line-height-static-m: 1.7;
     --spectrum-global-line-height-static-l: 2;
     /* # Part BorderCorner*/
+    --spectrum-global-border-corner-static-none: 2px;
     --spectrum-global-border-corner-static-xs: 2px;
     --spectrum-global-border-corner-static-s: 4px;
     --spectrum-global-border-corner-static-m: 6px;
     --spectrum-global-border-corner-static-l: 12px;
     --spectrum-global-border-corner-static-full: 9999px;
+    --spectrum-alias-border-radius-none: var(
+        --spectrum-global-border-corner-static-none
+    );
     /* # Part Border */
     --spectrum-global-border-static-s: 1px;
     --spectrum-global-border-static-m: 2px;
     --spectrum-global-border-static-l: 4px;
+    /* #Part Border Size */
+    --spectrum-alias-border-size-none: var(
+        --spectrum-global-dimension-static-size-0
+    );
     /* # Part Shadow */
     --spectrum-global-shadow-static-s: 0px 0px 4px rgba(0, 0, 0, 0.04),
         0px 4px 24px rgba(0, 0, 0, 0.04);
@@ -1583,4 +1592,9 @@ governing permissions and limitations under the License.
     /* Part BorderColor */
     --spectrum-global-border-color-100: rgba(0, 0, 0, 0.08);
     --spectrum-global-border-color-200: rgba(0, 0, 0, 0.16);
+    /* Part BorderColor */
+    --spectrum-alias-border-color-default: var(
+        --spectrum-global-border-color-100
+    );
+    --spectrum-alias-border-color-dark: var(--spectrum-global-border-color-200);
 }
