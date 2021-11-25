@@ -61,12 +61,8 @@ module.exports = function (options) {
                         sortMap.set(cv, index === -1 ? sort.length : index);
                     });
                     concatFiles = concatFiles.sort((a, b) => {
-                        return sortMap[a] > sortMap[b] ? 1 : -1;
+                        return sortMap.get(a) > sortMap.get(b) ? 1 : -1;
                     });
-                    console.log(
-                        `sorted`,
-                        concatFiles.map((cv) => cv.name)
-                    );
                 }
                 var concatFirstFile = concatFiles[0].file;
 

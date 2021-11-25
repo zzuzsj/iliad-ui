@@ -45,11 +45,17 @@ gulp.task('variable-clean', function variable() {
 
 gulp.task('scss', function scss() {
     return gulp
-        .src(['scss/**/*.scss', '!scss/*.scss'])
+        .src(['scss/**/*.scss', '!scss/*.scss', '!scss/variable-*.scss'])
         .pipe(
             concat({
                 ext: '.scss',
-                sort: ['spectrum', 'iliad'],
+                sort: [
+                    'colorGlobals',
+                    'dimensionGlobals',
+                    'Globals',
+                    'Aliases',
+                    'Semantic',
+                ],
             })
         )
         .pipe(sass().on('error', sass.logError))

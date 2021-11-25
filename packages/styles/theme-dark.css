@@ -27,11 +27,19 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
+/* Part Theme Custom */
+/* Part Color */
+/* Part Brand */
+/* Part TextColor */
+/* Part IconColor */
+/* Part BgColor */
+/* Part CoverColor */
+/* Part BorderColor */
 /* stylelint-disable */
 :host,
 :root {
     --spectrum-global-color-status: Verified;
-    --spectrum-global-color-version: 5.1;
+    --spectrum-global-color-version: 5.3;
     --spectrum-global-color-celery-400: #44b556;
     --spectrum-global-color-celery-500: #4bc35f;
     --spectrum-global-color-celery-600: #51d267;
@@ -44,18 +52,10 @@ governing permissions and limitations under the License.
     --spectrum-global-color-yellow-500: #edcc00;
     --spectrum-global-color-yellow-600: #fad900;
     --spectrum-global-color-yellow-700: #ffe22e;
-    --spectrum-global-color-magenta-400: #d83790;
-    --spectrum-global-color-magenta-500: #e2499d;
-    --spectrum-global-color-magenta-600: #ec5aaa;
-    --spectrum-global-color-magenta-700: #f56bb7;
     --spectrum-global-color-fuchsia-400: #c038cc;
     --spectrum-global-color-fuchsia-500: #cf3edc;
     --spectrum-global-color-fuchsia-600: #d951e5;
     --spectrum-global-color-fuchsia-700: #e366ef;
-    --spectrum-global-color-purple-400: #9256d9;
-    --spectrum-global-color-purple-500: #9d64e1;
-    --spectrum-global-color-purple-600: #a873e9;
-    --spectrum-global-color-purple-700: #b483f0;
     --spectrum-global-color-indigo-400: #6767ec;
     --spectrum-global-color-indigo-500: #7575f1;
     --spectrum-global-color-indigo-600: #8282f6;
@@ -64,41 +64,47 @@ governing permissions and limitations under the License.
     --spectrum-global-color-seafoam-500: #20a3a8;
     --spectrum-global-color-seafoam-600: #23b2b8;
     --spectrum-global-color-seafoam-700: #26c0c7;
-    --spectrum-global-color-red-400: #e34850;
-    --spectrum-global-color-red-500: #ec5b62;
-    --spectrum-global-color-red-600: #f76d74;
-    --spectrum-global-color-red-700: #ff7b82;
-    --spectrum-global-color-orange-400: #e68619;
-    --spectrum-global-color-orange-500: #f29423;
-    --spectrum-global-color-orange-600: #f9a43f;
-    --spectrum-global-color-orange-700: #ffb55b;
-    --spectrum-global-color-green-400: #2d9d78;
-    --spectrum-global-color-green-500: #33ab84;
-    --spectrum-global-color-green-600: #39b990;
-    --spectrum-global-color-green-700: #3fc89c;
-    --spectrum-global-color-blue-400: #2680eb;
-    --spectrum-global-color-blue-500: #378ef0;
-    --spectrum-global-color-blue-600: #4b9cf5;
-    --spectrum-global-color-blue-700: #5aa9fa;
-    --spectrum-global-color-gray-50: #252525;
-    --spectrum-global-color-gray-75: #2f2f2f;
-    --spectrum-global-color-gray-100: #323232;
-    --spectrum-global-color-gray-200: #3e3e3e;
-    --spectrum-global-color-gray-300: #4a4a4a;
-    --spectrum-global-color-gray-400: #5a5a5a;
-    --spectrum-global-color-gray-500: #6e6e6e;
-    --spectrum-global-color-gray-600: #909090;
-    --spectrum-global-color-gray-700: #b9b9b9;
-    --spectrum-global-color-gray-800: #e3e3e3;
-    --spectrum-global-color-gray-900: #fff;
+    --spectrum-global-color-magenta-400: #ff748a;
+    --spectrum-global-color-magenta-500: #ff4f6a;
+    --spectrum-global-color-magenta-600: #ff4157;
+    --spectrum-global-color-magenta-700: #ff2e3d;
+    --spectrum-global-color-purple-400: #7d6eff;
+    --spectrum-global-color-purple-500: #5a47ff;
+    --spectrum-global-color-purple-600: #4a3aff;
+    --spectrum-global-color-purple-700: #3429ff;
+    --spectrum-global-color-red-400: #f77769;
+    --spectrum-global-color-red-500: #f55240;
+    --spectrum-global-color-red-600: #f34334;
+    --spectrum-global-color-red-700: #f13025;
+    --spectrum-global-color-orange-400: #fbb03f;
+    --spectrum-global-color-orange-500: #fa9b0c;
+    --spectrum-global-color-orange-600: #f9890a;
+    --spectrum-global-color-orange-700: #f87107;
+    --spectrum-global-color-green-400: #3cc78f;
+    --spectrum-global-color-green-500: #07b871;
+    --spectrum-global-color-green-600: #06ab5d;
+    --spectrum-global-color-green-700: #049a42;
+    --spectrum-global-color-blue-400: #36b1f3;
+    --spectrum-global-color-blue-500: #009cf0;
+    --spectrum-global-color-blue-600: #008aed;
+    --spectrum-global-color-blue-700: #0072ea;
+    --spectrum-global-color-gray-100: #191919;
+    --spectrum-global-color-gray-200: #242424;
+    --spectrum-global-color-gray-300: #292929;
+    --spectrum-global-color-gray-400: #383838;
+    --spectrum-global-color-gray-500: #474747;
+    --spectrum-global-color-gray-600: #525252;
+    --spectrum-global-color-gray-700: #7a7a7a;
+    --spectrum-global-color-gray-800: #b8b8b8;
+    --spectrum-global-color-gray-900: #f5f5f5;
     --spectrum-alias-background-color-primary: var(
         --spectrum-global-color-gray-100
     );
     --spectrum-alias-background-color-secondary: var(
-        --spectrum-global-color-gray-75
+        --spectrum-global-color-gray-200
     );
     --spectrum-alias-background-color-tertiary: var(
-        --spectrum-global-color-gray-50
+        --spectrum-global-color-gray-400
     );
     --spectrum-alias-background-color-modal-overlay: rgba(0, 0, 0, 0.5);
     --spectrum-alias-dropshadow-color: rgba(0, 0, 0, 0.5);
@@ -162,107 +168,26 @@ governing permissions and limitations under the License.
     --spectrum-colorwheel-border-color-down: rgba(255, 255, 255, 0.1);
     --spectrum-colorwheel-border-color-key-focus: rgba(255, 255, 255, 0.1);
     --spectrum-well-border-color: rgba(255, 255, 255, 0.05);
-}
-
-/* stylelint-enable */
-/*
-Copyright 2020 Adobe. All rights reserved.
-Copyright 2021 Gaoding. All rights reserved.
-This file is licensed to you under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License. You may obtain a copy
-of the License at http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software distributed under
-the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
-OF ANY KIND, either express or implied. See the License for the specific language
-governing permissions and limitations under the License.
-*/
-/* Part Theme Custom */
-/* Part Color */
-/* Part Brand */
-/* Part TextColor */
-/* Part IconColor */
-/* Part BgColor */
-/* Part CoverColor */
-/* Part BorderColor */
-/* stylelint-disable */
-:host,
-:root {
-    /* Token Global */
-    /* Part Color */
-    --spectrum-global-color-status: Verified;
-    --spectrum-global-color-version: 5.2;
-    --spectrum-global-color-magenta-400: #ff748a;
-    --spectrum-global-color-magenta-500: #ff4f6a;
-    --spectrum-global-color-magenta-600: #ff4157;
-    --spectrum-global-color-magenta-700: #ff2e3d;
-    --spectrum-global-color-purple-400: #7d6eff;
-    --spectrum-global-color-purple-500: #5a47ff;
-    --spectrum-global-color-purple-600: #4a3aff;
-    --spectrum-global-color-purple-700: #3429ff;
-    --spectrum-global-color-red-400: #f77769;
-    --spectrum-global-color-red-500: #f55240;
-    --spectrum-global-color-red-600: #f34334;
-    --spectrum-global-color-red-700: #f13025;
-    --spectrum-global-color-orange-400: #fbb03f;
-    --spectrum-global-color-orange-500: #fa9b0c;
-    --spectrum-global-color-orange-600: #f9890a;
-    --spectrum-global-color-orange-700: #f87107;
-    --spectrum-global-color-green-400: #3cc78f;
-    --spectrum-global-color-green-500: #07b871;
-    --spectrum-global-color-green-600: #06ab5d;
-    --spectrum-global-color-green-700: #049a42;
-    --spectrum-global-color-blue-400: #36b1f3;
-    --spectrum-global-color-blue-500: #009cf0;
-    --spectrum-global-color-blue-600: #008aed;
-    --spectrum-global-color-blue-700: #0072ea;
-    --spectrum-global-color-gray-100: #191919;
-    --spectrum-global-color-gray-200: #242424;
-    --spectrum-global-color-gray-300: #292929;
-    --spectrum-global-color-gray-400: #383838;
-    --spectrum-global-color-gray-500: #474747;
-    --spectrum-global-color-gray-600: #525252;
-    --spectrum-global-color-gray-700: #7a7a7a;
-    --spectrum-global-color-gray-800: #b8b8b8;
-    --spectrum-global-color-gray-900: #f5f5f5;
-    /* Part Brand */
-    --spectrum-global-color-info: #2576f0;
-    --spectrum-global-color-negative: #f55240;
-    --spectrum-global-color-tips: #fa9b0c;
-    --spectrum-global-color-positive: #07b871;
-    /* Part TextColor */
     --spectrum-global-text-color-primary: rgba(255, 255, 255, 0.96);
     --spectrum-global-text-color-secondary: rgba(255, 255, 255, 0.72);
     --spectrum-global-text-color-placeholder: rgba(255, 255, 255, 0.48);
     --spectrum-global-text-color-disabled: rgba(255, 255, 255, 0.32);
     --spectrum-global-text-color-link: #009cf0;
-    /* Part IconColor */
     --spectrum-global-icon-color-primary: #b8b8b8;
     --spectrum-global-icon-color-secondary: #b8b8b8;
     --spectrum-global-icon-color-tertiary: #7a7a7a;
     --spectrum-global-icon-color-disabled: #525252;
     --spectrum-global-icon-color-activited: #009cf0;
-    /* Part BgColor */
     --spectrum-global-bg-color-0: #191919;
     --spectrum-global-bg-color-100: #242424;
     --spectrum-global-bg-color-200: #383838;
     --spectrum-global-bg-color-300: #292929;
     --spectrum-global-bg-color-disabled: #292929;
-    /* Part CoverColor */
     --spectrum-global-cover-color-0: rgba(255, 255, 255, 0);
     --spectrum-global-cover-color-100: rgba(255, 255, 255, 0.08);
     --spectrum-global-cover-color-200: rgba(255, 255, 255, 0.16);
-    /* Part BorderColor */
     --spectrum-global-border-color-100: rgba(255, 255, 255, 0.08);
     --spectrum-global-border-color-200: rgba(255, 255, 255, 0.16);
-    /* Token Alias */
-    --spectrum-alias-background-color-primary: #191919;
-    --spectrum-alias-background-color-secondary: #242424;
-    --spectrum-alias-background-color-tertiary: #292929;
-    --spectrum-alias-border-color-selected: #009cf0;
-    --spectrum-alias-pasteboard-background-color: #292929;
-    --spectrum-alias-appframe-border-color: #292929;
-    --spectrum-alias-appframe-separator-color: #292929;
 }
 
 /* stylelint-enable */
