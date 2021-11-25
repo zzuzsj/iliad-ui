@@ -166,6 +166,30 @@ governing permissions and limitations under the License.
     --spectrum-global-color-opacity-6: 0.06;
     --spectrum-global-color-opacity-5: 0.05;
     --spectrum-global-color-opacity-4: 0.04;
+    --spectrum-global-color-primary-cover-100: rgba(36, 114, 233, 0.53);
+    --spectrum-global-color-primary-cover-200: rgba(35, 111, 226, 0.56);
+    --spectrum-global-color-red-cover-100: rgba(238, 80, 62, 0.53);
+    --spectrum-global-color-red-cover-200: rgba(230, 77, 60, 0.56);
+    --spectrum-global-color-green-cover-100: rgba(7, 178, 110, 0.53);
+    --spectrum-global-color-green-cover-200: rgba(7, 173, 106, 0.56);
+    --spectrum-global-color-gray-cover-100: rgba(217, 217, 217, 0.53);
+    --spectrum-global-color-gray-cover-200: rgba(211, 211, 211, 0.56);
+    --spectrum-global-color-gray-100-cover-100: rgba(247, 247, 247, 0.53);
+    --spectrum-global-color-gray-100-cover-200: rgba(240, 240, 240, 0.56);
+    --spectrum-global-color-gray-200-cover-100: rgba(243, 243, 243, 0.53);
+    --spectrum-global-color-gray-200-cover-200: rgba(235, 235, 235, 0.56);
+    --spectrum-global-color-gray-300-cover-100: rgba(238, 238, 238, 0.53);
+    --spectrum-global-color-gray-300-cover-200: rgba(230, 230, 230, 0.56);
+    --spectrum-global-color-gray-400-cover-100: rgba(228, 228, 228, 0.53);
+    --spectrum-global-color-gray-400-cover-200: rgba(221, 221, 221, 0.56);
+    --spectrum-global-color-gray-600-cover-100: rgba(188, 188, 188, 0.53);
+    --spectrum-global-color-gray-600-cover-200: rgba(182, 182, 182, 0.56);
+    --spectrum-global-color-gray-700-cover-100: rgba(144, 144, 144, 0.53);
+    --spectrum-global-color-gray-700-cover-200: rgba(139, 139, 139, 0.56);
+    --spectrum-global-color-gray-800-cover-100: rgba(69, 69, 69, 0.53);
+    --spectrum-global-color-gray-800-cover-200: rgba(67, 67, 67, 0.56);
+    --spectrum-global-color-gray-900-cover-100: rgba(30, 30, 30, 0.53);
+    --spectrum-global-color-gray-900-cover-200: #1f1f1f;
 }
 
 /*
@@ -251,39 +275,6 @@ governing permissions and limitations under the License.
     --spectrum-global-dimension-static-grid-columns: 12;
     --spectrum-global-dimension-static-grid-fluid-width: 100%;
     --spectrum-global-dimension-static-grid-fixed-max-width: 1280px;
-}
-
-/*
-Copyright 2020 Adobe. All rights reserved.
-Copyright 2021 Gaoding. All rights reserved.
-This file is licensed to you under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License. You may obtain a copy
-of the License at http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software distributed under
-the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
-OF ANY KIND, either express or implied. See the License for the specific language
-governing permissions and limitations under the License.
-*/
-:host,
-:root {
-    --spectrum-global-zindex-static-deepdive: -99999;
-    --spectrum-global-zindex-static-default: 1;
-    --spectrum-global-zindex-static-docked: 4;
-    --spectrum-global-zindex-static-sticky: 10;
-    --spectrum-global-zindex-static-popover: 5000;
-    --spectrum-global-zindex-static-dialog: 6000;
-    --spectrum-global-zindex-static-dropdown: 7000;
-    --spectrum-global-zindex-static-overlay: 8000;
-    --spectrum-global-zindex-static-modal: 9000;
-    --spectrum-global-zindex-static-spinner: 9050;
-    --spectrum-global-zindex-static-toast: 10000;
-    --spectrum-global-shadow-static-s: 0px 0px 4px rgba(0, 0, 0, 0.04),
-        0px 4px 24px rgba(0, 0, 0, 0.04);
-    --spectrum-global-shadow-static-m: 0px 0px 1px rgba(0, 0, 0, 0.16),
-        0px 6px 32px 4px rgba(0, 0, 0, 0.08);
-    --spectrum-global-shadow-static-l: 0px 2px 8px rgba(0, 0, 0, 0.03),
-        0px 16px 48px 8px rgba(0, 0, 0, 0.08);
 }
 
 /*
@@ -1367,8 +1358,8 @@ governing permissions and limitations under the License.
         --spectrum-global-color-gray-300
     );
     --spectrum-alias-cover-color-0: rgba(0, 0, 0, 0);
-    --spectrum-alias-cover-color-100: rgba(0, 0, 0, 0.08);
-    --spectrum-alias-cover-color-200: rgba(0, 0, 0, 0.16);
+    --spectrum-alias-cover-color-100: rgba(0, 0, 0, 0.06);
+    --spectrum-alias-cover-color-200: rgba(0, 0, 0, 0.12);
     --spectrum-alias-border-color-100: rgba(0, 0, 0, 0.08);
     --spectrum-alias-border-color-200: rgba(0, 0, 0, 0.16);
     --spectrum-alias-border-color-light: var(--spectrum-alias-border-color-100);
@@ -1378,11 +1369,15 @@ governing permissions and limitations under the License.
     --spectrum-alias-text-color-placeholder: rgba(0, 0, 0, 0.42);
     --spectrum-alias-text-color-disabled: rgba(0, 0, 0, 0.28);
     --spectrum-alias-text-color-link: #009cf0;
-    --spectrum-alias-icon-color-primary: #5c5c5c;
-    --spectrum-alias-icon-color-secondary: #5c5c5c;
-    --spectrum-alias-icon-color-tertiary: #949494;
-    --spectrum-alias-icon-color-disabled: #b8b8b8;
-    --spectrum-alias-icon-color-activited: #009cf0;
+    --spectrum-alias-icon-color-primary: var(--spectrum-global-color-gray-900);
+    --spectrum-alias-icon-color-secondary: var(
+        --spectrum-global-color-gray-800
+    );
+    --spectrum-alias-icon-color-tertiary: var(--spectrum-global-color-gray-700);
+    --spectrum-alias-icon-color-disabled: var(--spectrum-global-color-gray-500);
+    --spectrum-alias-icon-color-activited: var(
+        --spectrum-global-color-static-primary-500
+    );
 }
 
 /*
@@ -1571,7 +1566,7 @@ governing permissions and limitations under the License.
         --spectrum-global-color-static-green-700
     );
     --spectrum-semantic-informative-color-background: var(
-        --spectrum-global-color-static-blue-700
+        --spectrum-global-color-static-primary-700
     );
     --spectrum-semantic-informative-color-default: var(
         --spectrum-global-color-blue-500
@@ -1601,40 +1596,40 @@ governing permissions and limitations under the License.
         --spectrum-global-color-blue-400
     );
     --spectrum-semantic-informative-background-color-default: var(
-        --spectrum-global-color-static-blue-600
+        --spectrum-global-color-static-primary-500
     );
     --spectrum-semantic-informative-background-color-hover: var(
-        --spectrum-global-color-static-blue-700
+        --spectrum-global-color-static-primary-600
     );
     --spectrum-semantic-informative-background-color-down: var(
-        --spectrum-global-color-static-blue-800
+        --spectrum-global-color-static-primary-700
     );
     --spectrum-semantic-informative-background-color-key-focus: var(
-        --spectrum-global-color-static-blue-700
+        --spectrum-global-color-static-primary-600
     );
     --spectrum-semantic-cta-color-background-default: var(
-        --spectrum-global-color-static-blue-600
+        --spectrum-global-color-static-primary-500
     );
     --spectrum-semantic-cta-color-background-hover: var(
-        --spectrum-global-color-static-blue-700
+        --spectrum-global-color-static-primary-600
     );
     --spectrum-semantic-cta-color-background-down: var(
-        --spectrum-global-color-static-blue-800
+        --spectrum-global-color-static-primary-700
     );
     --spectrum-semantic-cta-color-background-key-focus: var(
-        --spectrum-global-color-static-blue-600
+        --spectrum-global-color-static-primary-500
     );
     --spectrum-semantic-neutral-background-color-default: var(
-        --spectrum-global-color-static-gray-700
+        --spectrum-global-color-static-gray-600
     );
     --spectrum-semantic-neutral-background-color-hover: var(
-        --spectrum-global-color-static-gray-800
+        --spectrum-global-color-static-gray-700
     );
     --spectrum-semantic-neutral-background-color-down: var(
-        --spectrum-global-color-static-gray-900
+        --spectrum-global-color-static-gray-800
     );
     --spectrum-semantic-neutral-background-color-key-focus: var(
-        --spectrum-global-color-static-gray-800
+        --spectrum-global-color-static-gray-700
     );
     --spectrum-semantic-presence-color-1: var(
         --spectrum-global-color-static-red-500
@@ -1666,20 +1661,35 @@ governing permissions and limitations under the License.
     );
 }
 
-/* PART OTHERS (default Theme Light)*/
-/* Part Theme Custom */
-/* Part Color */
-/* Part Brand */
-/* Part TextColor */
-/* Part IconColor */
-/* Part BgColor */
-/* Part CoverColor */
-/* Part BorderColor */
-/* Part Theme Custom */
-/* Part Color */
-/* Part Brand */
-/* Part TextColor */
-/* Part IconColor */
-/* Part BgColor */
-/* Part CoverColor */
-/* Part BorderColor */
+/*
+Copyright 2020 Adobe. All rights reserved.
+Copyright 2021 Gaoding. All rights reserved.
+This file is licensed to you under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License. You may obtain a copy
+of the License at http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under
+the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+OF ANY KIND, either express or implied. See the License for the specific language
+governing permissions and limitations under the License.
+*/
+:host,
+:root {
+    --spectrum-global-zindex-static-deepdive: -99999;
+    --spectrum-global-zindex-static-default: 1;
+    --spectrum-global-zindex-static-docked: 4;
+    --spectrum-global-zindex-static-sticky: 10;
+    --spectrum-global-zindex-static-popover: 5000;
+    --spectrum-global-zindex-static-dialog: 6000;
+    --spectrum-global-zindex-static-dropdown: 7000;
+    --spectrum-global-zindex-static-overlay: 8000;
+    --spectrum-global-zindex-static-modal: 9000;
+    --spectrum-global-zindex-static-spinner: 9050;
+    --spectrum-global-zindex-static-toast: 10000;
+    --spectrum-global-shadow-static-s: 0px 0px 4px rgba(0, 0, 0, 0.04),
+        0px 4px 24px rgba(0, 0, 0, 0.04);
+    --spectrum-global-shadow-static-m: 0px 0px 1px rgba(0, 0, 0, 0.16),
+        0px 6px 32px 4px rgba(0, 0, 0, 0.08);
+    --spectrum-global-shadow-static-l: 0px 2px 8px rgba(0, 0, 0, 0.03),
+        0px 16px 48px 8px rgba(0, 0, 0, 0.08);
+}

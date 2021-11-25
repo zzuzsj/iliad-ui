@@ -165,10 +165,41 @@ governing permissions and limitations under the License.
     --spectrum-alias-text-color-link: #{$global-text-color-link};
 
     // Part IconColor
-    --spectrum-alias-icon-color-primary: #{$global-icon-color-primary};
-    --spectrum-alias-icon-color-secondary: #{$global-icon-color-secondary};
-    --spectrum-alias-icon-color-tertiary: #{$global-icon-color-tertiary};
-    --spectrum-alias-icon-color-disabled: #{$global-icon-color-disabled};
-    --spectrum-alias-icon-color-activited: #{$global-icon-color-activited};
+    --spectrum-alias-icon-color-primary: var(--spectrum-global-color-gray-900);
+    --spectrum-alias-icon-color-secondary: var(
+        --spectrum-global-color-gray-800
+    );
+    --spectrum-alias-icon-color-tertiary: var(--spectrum-global-color-gray-700);
+    --spectrum-alias-icon-color-disabled: var(--spectrum-global-color-gray-500);
+    --spectrum-alias-icon-color-activited: var(
+        --spectrum-global-color-static-white
+    );
+
+    // Part FillColor
+    --spectrum-global-color-primary-cover-100: #{$global-color-primary-cover-100};
+    --spectrum-global-color-primary-cover-200: #{$global-color-primary-cover-200};
+    --spectrum-global-color-red-cover-100: #{$global-color-red-cover-100};
+    --spectrum-global-color-red-cover-200: #{$global-color-red-cover-200};
+    --spectrum-global-color-green-cover-100: #{$global-color-green-cover-100};
+    --spectrum-global-color-green-cover-200: #{$global-color-green-cover-200};
+    --spectrum-global-color-gray-cover-100: #{$global-color-gray-cover-100};
+    --spectrum-global-color-gray-cover-200: #{$global-color-gray-cover-200};
+
+    --spectrum-global-color-gray-100-cover-100: #{$global-color-gray-100-cover-100};
+    --spectrum-global-color-gray-100-cover-200: #{$global-color-gray-100-cover-200};
+    --spectrum-global-color-gray-200-cover-100: #{$global-color-gray-200-cover-100};
+    --spectrum-global-color-gray-200-cover-200: #{$global-color-gray-200-cover-200};
+    --spectrum-global-color-gray-300-cover-100: #{$global-color-gray-300-cover-100};
+    --spectrum-global-color-gray-300-cover-200: #{$global-color-gray-300-cover-200};
+    --spectrum-global-color-gray-400-cover-100: #{$global-color-gray-400-cover-100};
+    --spectrum-global-color-gray-400-cover-200: #{$global-color-gray-400-cover-200};
+    --spectrum-global-color-gray-600-cover-100: #{$global-color-gray-600-cover-100};
+    --spectrum-global-color-gray-600-cover-200: #{$global-color-gray-600-cover-200};
+    --spectrum-global-color-gray-700-cover-100: #{$global-color-gray-700-cover-100};
+    --spectrum-global-color-gray-700-cover-200: #{$global-color-gray-700-cover-200};
+    --spectrum-global-color-gray-800-cover-100: #{$global-color-gray-800-cover-100};
+    --spectrum-global-color-gray-800-cover-200: #{$global-color-gray-800-cover-200};
+    --spectrum-global-color-gray-900-cover-100: #{$global-color-gray-900-cover-100};
+    --spectrum-global-color-gray-900-cover-200: #{$global-color-gray-900-cover-200};
 }
 /* stylelint-enable */

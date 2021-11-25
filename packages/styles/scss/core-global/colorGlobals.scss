@@ -11,7 +11,7 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-@import './variable-core.scss';
+@import './variable-theme-light.scss';
 :host,
 :root {
     --spectrum-global-color-status: Verified;
@@ -182,4 +182,31 @@ governing permissions and limitations under the License.
     --spectrum-global-color-opacity-6: 0.06;
     --spectrum-global-color-opacity-5: 0.05;
     --spectrum-global-color-opacity-4: 0.04;
+
+    // Part FillColor
+    --spectrum-global-color-primary-cover-100: #{$global-color-primary-cover-100};
+    --spectrum-global-color-primary-cover-200: #{$global-color-primary-cover-200};
+    --spectrum-global-color-red-cover-100: #{$global-color-red-cover-100};
+    --spectrum-global-color-red-cover-200: #{$global-color-red-cover-200};
+    --spectrum-global-color-green-cover-100: #{$global-color-green-cover-100};
+    --spectrum-global-color-green-cover-200: #{$global-color-green-cover-200};
+    --spectrum-global-color-gray-cover-100: #{$global-color-gray-cover-100};
+    --spectrum-global-color-gray-cover-200: #{$global-color-gray-cover-200};
+
+    --spectrum-global-color-gray-100-cover-100: #{$global-color-gray-100-cover-100};
+    --spectrum-global-color-gray-100-cover-200: #{$global-color-gray-100-cover-200};
+    --spectrum-global-color-gray-200-cover-100: #{$global-color-gray-200-cover-100};
+    --spectrum-global-color-gray-200-cover-200: #{$global-color-gray-200-cover-200};
+    --spectrum-global-color-gray-300-cover-100: #{$global-color-gray-300-cover-100};
+    --spectrum-global-color-gray-300-cover-200: #{$global-color-gray-300-cover-200};
+    --spectrum-global-color-gray-400-cover-100: #{$global-color-gray-400-cover-100};
+    --spectrum-global-color-gray-400-cover-200: #{$global-color-gray-400-cover-200};
+    --spectrum-global-color-gray-600-cover-100: #{$global-color-gray-600-cover-100};
+    --spectrum-global-color-gray-600-cover-200: #{$global-color-gray-600-cover-200};
+    --spectrum-global-color-gray-700-cover-100: #{$global-color-gray-700-cover-100};
+    --spectrum-global-color-gray-700-cover-200: #{$global-color-gray-700-cover-200};
+    --spectrum-global-color-gray-800-cover-100: #{$global-color-gray-800-cover-100};
+    --spectrum-global-color-gray-800-cover-200: #{$global-color-gray-800-cover-200};
+    --spectrum-global-color-gray-900-cover-100: #{$global-color-gray-900-cover-100};
+    --spectrum-global-color-gray-900-cover-200: #{$global-color-gray-900-cover-200};
 }

@@ -11,7 +11,7 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-@import './variable-core.scss';
+@import './variable-theme-light.scss';
 :host,
 :root {
     --spectrum-alias-background-color-default: var(
@@ -256,9 +256,13 @@ governing permissions and limitations under the License.
     --spectrum-alias-text-color-link: #{$global-text-color-link};
 
     // Part IconColor
-    --spectrum-alias-icon-color-primary: #{$global-icon-color-primary};
-    --spectrum-alias-icon-color-secondary: #{$global-icon-color-secondary};
-    --spectrum-alias-icon-color-tertiary: #{$global-icon-color-tertiary};
-    --spectrum-alias-icon-color-disabled: #{$global-icon-color-disabled};
-    --spectrum-alias-icon-color-activited: #{$global-icon-color-activited};
+    --spectrum-alias-icon-color-primary: var(--spectrum-global-color-gray-900);
+    --spectrum-alias-icon-color-secondary: var(
+        --spectrum-global-color-gray-800
+    );
+    --spectrum-alias-icon-color-tertiary: var(--spectrum-global-color-gray-700);
+    --spectrum-alias-icon-color-disabled: var(--spectrum-global-color-gray-500);
+    --spectrum-alias-icon-color-activited: var(
+        --spectrum-global-color-static-primary-500
+    );
 }
