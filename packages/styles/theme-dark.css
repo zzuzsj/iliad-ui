@@ -168,26 +168,23 @@ governing permissions and limitations under the License.
     --spectrum-colorwheel-border-color-down: rgba(255, 255, 255, 0.1);
     --spectrum-colorwheel-border-color-key-focus: rgba(255, 255, 255, 0.1);
     --spectrum-well-border-color: rgba(255, 255, 255, 0.05);
-    --spectrum-global-text-color-primary: rgba(255, 255, 255, 0.96);
-    --spectrum-global-text-color-secondary: rgba(255, 255, 255, 0.72);
-    --spectrum-global-text-color-placeholder: rgba(255, 255, 255, 0.48);
-    --spectrum-global-text-color-disabled: rgba(255, 255, 255, 0.32);
-    --spectrum-global-text-color-link: #009cf0;
-    --spectrum-global-icon-color-primary: #b8b8b8;
-    --spectrum-global-icon-color-secondary: #b8b8b8;
-    --spectrum-global-icon-color-tertiary: #7a7a7a;
-    --spectrum-global-icon-color-disabled: #525252;
-    --spectrum-global-icon-color-activited: #009cf0;
-    --spectrum-global-bg-color-0: #191919;
-    --spectrum-global-bg-color-100: #242424;
-    --spectrum-global-bg-color-200: #383838;
-    --spectrum-global-bg-color-300: #292929;
-    --spectrum-global-bg-color-disabled: #292929;
-    --spectrum-global-cover-color-0: rgba(255, 255, 255, 0);
-    --spectrum-global-cover-color-100: rgba(255, 255, 255, 0.08);
-    --spectrum-global-cover-color-200: rgba(255, 255, 255, 0.16);
-    --spectrum-global-border-color-100: rgba(255, 255, 255, 0.08);
-    --spectrum-global-border-color-200: rgba(255, 255, 255, 0.16);
+    --spectrum-alias-cover-color-0: rgba(255, 255, 255, 0);
+    --spectrum-alias-cover-color-100: rgba(255, 255, 255, 0.08);
+    --spectrum-alias-cover-color-200: rgba(255, 255, 255, 0.16);
+    --spectrum-alias-border-color-100: rgba(255, 255, 255, 0.08);
+    --spectrum-alias-border-color-200: rgba(255, 255, 255, 0.16);
+    --spectrum-alias-border-color-light: var(--spectrum-alias-border-color-100);
+    --spectrum-alias-border-color-dark: var(--spectrum-alias-border-color-200);
+    --spectrum-alias-text-color-primary: rgba(255, 255, 255, 0.96);
+    --spectrum-alias-text-color-secondary: rgba(255, 255, 255, 0.72);
+    --spectrum-alias-text-color-placeholder: rgba(255, 255, 255, 0.48);
+    --spectrum-alias-text-color-disabled: rgba(255, 255, 255, 0.32);
+    --spectrum-alias-text-color-link: #009cf0;
+    --spectrum-alias-icon-color-primary: #b8b8b8;
+    --spectrum-alias-icon-color-secondary: #b8b8b8;
+    --spectrum-alias-icon-color-tertiary: #7a7a7a;
+    --spectrum-alias-icon-color-disabled: #525252;
+    --spectrum-alias-icon-color-activited: #009cf0;
 }
 
 /* stylelint-enable */

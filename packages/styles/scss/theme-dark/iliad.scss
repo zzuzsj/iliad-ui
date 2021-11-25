@@ -146,33 +146,29 @@ governing permissions and limitations under the License.
     --spectrum-colorwheel-border-color-key-focus: rgba(255, 255, 255, 0.1);
     --spectrum-well-border-color: rgba(255, 255, 255, 0.05);
 
-    // Part TextColor
-    --spectrum-global-text-color-primary: #{$global-text-color-primary};
-    --spectrum-global-text-color-secondary: #{$global-text-color-secondary};
-    --spectrum-global-text-color-placeholder: #{$global-text-color-placeholder};
-    --spectrum-global-text-color-disabled: #{$global-text-color-disabled};
-    --spectrum-global-text-color-link: #{$global-text-color-link};
-
-    // Part IconColor
-    --spectrum-global-icon-color-primary: #{$global-icon-color-primary};
-    --spectrum-global-icon-color-secondary: #{$global-icon-color-secondary};
-    --spectrum-global-icon-color-tertiary: #{$global-icon-color-tertiary};
-    --spectrum-global-icon-color-disabled: #{$global-icon-color-disabled};
-    --spectrum-global-icon-color-activited: #{$global-icon-color-activited};
-
-    // Part BgColor
-    --spectrum-global-bg-color-0: #{$global-bg-color-0};
-    --spectrum-global-bg-color-100: #{$global-bg-color-100};
-    --spectrum-global-bg-color-200: #{$global-bg-color-200};
-    --spectrum-global-bg-color-300: #{$global-bg-color-300};
-    --spectrum-global-bg-color-disabled: #{$global-bg-color-disabled};
+    // 下面颜色带透明度 且与主题有关 默认是light主题
     // Part CoverColor
-    --spectrum-global-cover-color-0: #{$global-cover-color-0};
-    --spectrum-global-cover-color-100: #{$global-cover-color-100};
-    --spectrum-global-cover-color-200: #{$global-cover-color-200};
+    --spectrum-alias-cover-color-0: #{$global-cover-color-0};
+    --spectrum-alias-cover-color-100: #{$global-cover-color-100};
+    --spectrum-alias-cover-color-200: #{$global-cover-color-200};
 
     // Part BorderColor
-    --spectrum-global-border-color-100: #{$global-border-color-100};
-    --spectrum-global-border-color-200: #{$global-border-color-200};
+    --spectrum-alias-border-color-100: #{$global-border-color-100};
+    --spectrum-alias-border-color-200: #{$global-border-color-200};
+    --spectrum-alias-border-color-light: var(--spectrum-alias-border-color-100);
+    --spectrum-alias-border-color-dark: var(--spectrum-alias-border-color-200);
+    // Part TextColor
+    --spectrum-alias-text-color-primary: #{$global-text-color-primary};
+    --spectrum-alias-text-color-secondary: #{$global-text-color-secondary};
+    --spectrum-alias-text-color-placeholder: #{$global-text-color-placeholder};
+    --spectrum-alias-text-color-disabled: #{$global-text-color-disabled};
+    --spectrum-alias-text-color-link: #{$global-text-color-link};
+
+    // Part IconColor
+    --spectrum-alias-icon-color-primary: #{$global-icon-color-primary};
+    --spectrum-alias-icon-color-secondary: #{$global-icon-color-secondary};
+    --spectrum-alias-icon-color-tertiary: #{$global-icon-color-tertiary};
+    --spectrum-alias-icon-color-disabled: #{$global-icon-color-disabled};
+    --spectrum-alias-icon-color-activited: #{$global-icon-color-activited};
 }
 /* stylelint-enable */

@@ -164,26 +164,23 @@ governing permissions and limitations under the License.
     );
     --spectrum-well-background-color: rgba(75, 75, 75, 0.02);
     --spectrum-well-border-color: rgba(44, 44, 44, 0.05);
-    --spectrum-global-text-color-primary: rgba(0, 0, 0, 0.88);
-    --spectrum-global-text-color-secondary: rgba(0, 0, 0, 0.64);
-    --spectrum-global-text-color-placeholder: rgba(0, 0, 0, 0.42);
-    --spectrum-global-text-color-disabled: rgba(0, 0, 0, 0.28);
-    --spectrum-global-text-color-link: #009cf0;
-    --spectrum-global-icon-color-primary: #1f1f1f;
-    --spectrum-global-icon-color-secondary: #5c5c5c;
-    --spectrum-global-icon-color-tertiary: #949494;
-    --spectrum-global-icon-color-disabled: #b8b8b8;
-    --spectrum-global-icon-color-activited: #009cf0;
-    --spectrum-global-bg-color-0: white;
-    --spectrum-global-bg-color-100: #fafafa;
-    --spectrum-global-bg-color-200: white;
-    --spectrum-global-bg-color-300: whitesmoke;
-    --spectrum-global-bg-color-disabled: whitesmoke;
-    --spectrum-global-cover-color-0: rgba(0, 0, 0, 0);
-    --spectrum-global-cover-color-100: rgba(0, 0, 0, 0.08);
-    --spectrum-global-cover-color-200: rgba(0, 0, 0, 0.16);
-    --spectrum-global-border-color-100: rgba(0, 0, 0, 0.08);
-    --spectrum-global-border-color-200: rgba(0, 0, 0, 0.16);
+    --spectrum-alias-cover-color-0: rgba(0, 0, 0, 0);
+    --spectrum-alias-cover-color-100: rgba(0, 0, 0, 0.08);
+    --spectrum-alias-cover-color-200: rgba(0, 0, 0, 0.16);
+    --spectrum-alias-border-color-100: rgba(0, 0, 0, 0.08);
+    --spectrum-alias-border-color-200: rgba(0, 0, 0, 0.16);
+    --spectrum-alias-border-color-light: var(--spectrum-alias-border-color-100);
+    --spectrum-alias-border-color-dark: var(--spectrum-alias-border-color-200);
+    --spectrum-alias-text-color-primary: rgba(0, 0, 0, 0.88);
+    --spectrum-alias-text-color-secondary: rgba(0, 0, 0, 0.64);
+    --spectrum-alias-text-color-placeholder: rgba(0, 0, 0, 0.42);
+    --spectrum-alias-text-color-disabled: rgba(0, 0, 0, 0.28);
+    --spectrum-alias-text-color-link: #009cf0;
+    --spectrum-alias-icon-color-primary: #1f1f1f;
+    --spectrum-alias-icon-color-secondary: #5c5c5c;
+    --spectrum-alias-icon-color-tertiary: #949494;
+    --spectrum-alias-icon-color-disabled: #b8b8b8;
+    --spectrum-alias-icon-color-activited: #009cf0;
 }
 
 /* stylelint-enable */

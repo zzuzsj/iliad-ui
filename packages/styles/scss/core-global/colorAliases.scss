@@ -220,6 +220,7 @@ governing permissions and limitations under the License.
         --spectrum-global-color-static-yellow-200
     );
 
+    // 下面颜色带透明度 且与主题有关 默认是light主题
     // Part BgColor
     --spectrum-alias-background-color-primary: var(
         --spectrum-global-color-gray-100
@@ -237,7 +238,6 @@ governing permissions and limitations under the License.
         --spectrum-global-color-gray-300
     );
 
-    // 下面颜色带透明度 且与主题有关 现在是设为默认颜色
     // Part CoverColor
     --spectrum-alias-cover-color-0: #{$global-cover-color-0};
     --spectrum-alias-cover-color-100: #{$global-cover-color-100};
@@ -246,7 +246,8 @@ governing permissions and limitations under the License.
     // Part BorderColor
     --spectrum-alias-border-color-100: #{$global-border-color-100};
     --spectrum-alias-border-color-200: #{$global-border-color-200};
-
+    --spectrum-alias-border-color-light: var(--spectrum-alias-border-color-100);
+    --spectrum-alias-border-color-dark: var(--spectrum-alias-border-color-200);
     // Part TextColor
     --spectrum-alias-text-color-primary: #{$global-text-color-primary};
     --spectrum-alias-text-color-secondary: #{$global-text-color-secondary};

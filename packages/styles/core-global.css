@@ -17,7 +17,7 @@ governing permissions and limitations under the License.
     --spectrum-global-color-version: 5.3;
     --spectrum-global-color-static-white: #ffffff;
     --spectrum-global-color-static-black: #000000;
-    --spectrum-global-color-static-transparent: #000000;
+    --spectrum-global-color-static-transparent: transparent;
     --spectrum-global-color-static-extend: #ffffff;
     --spectrum-global-color-static-celery-200: rgb(88, 224, 111);
     --spectrum-global-color-static-celery-300: rgb(81, 210, 103);
@@ -914,15 +914,10 @@ governing permissions and limitations under the License.
     --spectrum-alias-item-mark-size-xl: var(
         --spectrum-global-dimension-size-325
     );
-    --spectrum-alias-workflow-icon-size-s: var(
-        --spectrum-global-dimension-size-200
-    );
-    --spectrum-alias-workflow-icon-size-m: var(
-        --spectrum-global-dimension-size-225
-    );
-    --spectrum-alias-workflow-icon-size-xl: var(
-        --spectrum-global-dimension-size-275
-    );
+    --spectrum-alias-workflow-icon-size-s: var(--spectrum-alias-icon-size-s);
+    --spectrum-alias-workflow-icon-size-m: var(--spectrum-alias-icon-size-m);
+    --spectrum-alias-workflow-icon-size-l: var(--spectrum-alias-icon-size-l);
+    --spectrum-alias-workflow-icon-size-xl: var(--spectrum-alias-icon-size-xl);
     --spectrum-alias-ui-icon-alert-size-75: var(
         --spectrum-global-dimension-size-200
     );
@@ -1127,12 +1122,14 @@ governing permissions and limitations under the License.
     --spectrum-alias-control-height-xl: var(
         --spectrum-global-dimension-size-500
     );
-    --spectrum-alias-icon-size-s: --spectrum-global-dimension-size-150;
-    --spectrum-alias-icon-size-m: --spectrum-global-dimension-size-200;
-    --spectrum-alias-icon-size-l: --spectrum-global-dimension-size-250;
-    --spectrum-alias-common-border-s: --spectrum-global-dimension-size-10;
-    --spectrum-alias-common-border-m: --spectrum-global-dimension-size-25;
-    --spectrum-alias-common-border-l: --spectrum-global-dimension-size-50;
+    --spectrum-alias-icon-size-s: var(--spectrum-global-dimension-size-150);
+    --spectrum-alias-icon-size-m: var(--spectrum-global-dimension-size-200);
+    --spectrum-alias-icon-size-l: var(--spectrum-global-dimension-size-250);
+    --spectrum-alias-icon-size-xl: var(--spectrum-global-dimension-size-300);
+    --spectrum-alias-border-size-s: var(--spectrum-global-dimension-size-10);
+    --spectrum-alias-border-size-m: var(--spectrum-global-dimension-size-25);
+    --spectrum-alias-border-size-l: var(--spectrum-global-dimension-size-50);
+    --spectrum-alias-border-size-xl: var(--spectrum-global-dimension-size-100);
 }
 
 /*
@@ -1374,6 +1371,8 @@ governing permissions and limitations under the License.
     --spectrum-alias-cover-color-200: rgba(0, 0, 0, 0.16);
     --spectrum-alias-border-color-100: rgba(0, 0, 0, 0.08);
     --spectrum-alias-border-color-200: rgba(0, 0, 0, 0.16);
+    --spectrum-alias-border-color-light: var(--spectrum-alias-border-color-100);
+    --spectrum-alias-border-color-dark: var(--spectrum-alias-border-color-200);
     --spectrum-alias-text-color-primary: rgba(0, 0, 0, 0.88);
     --spectrum-alias-text-color-secondary: rgba(0, 0, 0, 0.64);
     --spectrum-alias-text-color-placeholder: rgba(0, 0, 0, 0.42);
