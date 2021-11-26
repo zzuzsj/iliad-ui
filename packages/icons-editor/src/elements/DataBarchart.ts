@@ -17,7 +17,7 @@ import { SvgDataBarchart } from '../icons/DataBarchart.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-data_barchart
+ * @element sp-data-barchart
  */
 export class IconDataBarchart extends IconBase {
     protected render(): TemplateResult {

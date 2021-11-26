@@ -17,7 +17,7 @@ import { SvgCornerRadiusBottomRight } from '../icons/CornerRadiusBottomRight.js'
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-corner_radius_bottom_right
+ * @element sp-corner-radius-bottom-right
  */
 export class IconCornerRadiusBottomRight extends IconBase {
     protected render(): TemplateResult {

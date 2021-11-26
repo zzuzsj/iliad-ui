@@ -17,7 +17,7 @@ import { SvgMoreHoriz } from '../icons/MoreHoriz.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-more_horiz
+ * @element sp-more-horiz
  */
 export class IconMoreHoriz extends IconBase {
     protected render(): TemplateResult {

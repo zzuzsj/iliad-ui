@@ -17,7 +17,7 @@ import { SvgFormatJustified } from '../icons/FormatJustified.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-format_justified
+ * @element sp-format-justified
  */
 export class IconFormatJustified extends IconBase {
     protected render(): TemplateResult {

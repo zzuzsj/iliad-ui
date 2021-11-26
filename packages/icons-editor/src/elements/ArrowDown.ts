@@ -17,7 +17,7 @@ import { SvgArrowDown } from '../icons/ArrowDown.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-arrow_down
+ * @element sp-arrow-down
  */
 export class IconArrowDown extends IconBase {
     protected render(): TemplateResult {

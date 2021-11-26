@@ -17,7 +17,7 @@ import { SvgCheckFill } from '../icons/CheckFill.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-check_fill
+ * @element sp-check-fill
  */
 export class IconCheckFill extends IconBase {
     protected render(): TemplateResult {

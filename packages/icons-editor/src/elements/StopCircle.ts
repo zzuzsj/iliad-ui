@@ -17,7 +17,7 @@ import { SvgStopCircle } from '../icons/StopCircle.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-stop_circle
+ * @element sp-stop-circle
  */
 export class IconStopCircle extends IconBase {
     protected render(): TemplateResult {

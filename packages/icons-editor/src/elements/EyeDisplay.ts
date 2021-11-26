@@ -17,7 +17,7 @@ import { SvgEyeDisplay } from '../icons/EyeDisplay.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-eye_display
+ * @element sp-eye-display
  */
 export class IconEyeDisplay extends IconBase {
     protected render(): TemplateResult {

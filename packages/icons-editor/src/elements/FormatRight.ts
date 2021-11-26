@@ -17,7 +17,7 @@ import { SvgFormatRight } from '../icons/FormatRight.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-format_right
+ * @element sp-format-right
  */
 export class IconFormatRight extends IconBase {
     protected render(): TemplateResult {

@@ -17,7 +17,7 @@ import { SvgFileFolder } from '../icons/FileFolder.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-file_folder
+ * @element sp-file-folder
  */
 export class IconFileFolder extends IconBase {
     protected render(): TemplateResult {

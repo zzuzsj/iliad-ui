@@ -17,7 +17,7 @@ import { SvgRotateLeft } from '../icons/RotateLeft.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-rotate_left
+ * @element sp-rotate-left
  */
 export class IconRotateLeft extends IconBase {
     protected render(): TemplateResult {

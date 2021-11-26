@@ -17,7 +17,7 @@ import { SvgLabelD } from '../icons/LabelD.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-label_d
+ * @element sp-label-d
  */
 export class IconLabelD extends IconBase {
     protected render(): TemplateResult {

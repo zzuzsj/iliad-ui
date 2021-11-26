@@ -17,7 +17,7 @@ import { SvgArrowLeft } from '../icons/ArrowLeft.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-arrow_left
+ * @element sp-arrow-left
  */
 export class IconArrowLeft extends IconBase {
     protected render(): TemplateResult {

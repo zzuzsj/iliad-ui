@@ -17,7 +17,7 @@ import { SvgAlignHorizTop } from '../icons/AlignHorizTop.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-align_horiz_top
+ * @element sp-align-horiz-top
  */
 export class IconAlignHorizTop extends IconBase {
     protected render(): TemplateResult {

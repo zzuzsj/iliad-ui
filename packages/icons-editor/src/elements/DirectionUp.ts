@@ -17,7 +17,7 @@ import { SvgDirectionUp } from '../icons/DirectionUp.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-direction_up
+ * @element sp-direction-up
  */
 export class IconDirectionUp extends IconBase {
     protected render(): TemplateResult {

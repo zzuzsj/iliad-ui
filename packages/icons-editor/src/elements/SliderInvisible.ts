@@ -17,7 +17,7 @@ import { SvgSliderInvisible } from '../icons/SliderInvisible.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-slider_invisible
+ * @element sp-slider-invisible
  */
 export class IconSliderInvisible extends IconBase {
     protected render(): TemplateResult {

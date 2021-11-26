@@ -17,7 +17,7 @@ import { SvgTabletMac } from '../icons/TabletMac.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-tablet_mac
+ * @element sp-tablet-mac
  */
 export class IconTabletMac extends IconBase {
     protected render(): TemplateResult {

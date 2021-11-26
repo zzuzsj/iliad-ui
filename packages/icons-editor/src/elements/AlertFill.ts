@@ -17,7 +17,7 @@ import { SvgAlertFill } from '../icons/AlertFill.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-alert_fill
+ * @element sp-alert-fill
  */
 export class IconAlertFill extends IconBase {
     protected render(): TemplateResult {

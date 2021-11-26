@@ -17,7 +17,7 @@ import { SvgPageHeader } from '../icons/PageHeader.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-page_header
+ * @element sp-page-header
  */
 export class IconPageHeader extends IconBase {
     protected render(): TemplateResult {

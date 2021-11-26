@@ -17,7 +17,7 @@ import { SvgViewDay } from '../icons/ViewDay.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-view_day
+ * @element sp-view-day
  */
 export class IconViewDay extends IconBase {
     protected render(): TemplateResult {

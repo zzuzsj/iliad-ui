@@ -17,7 +17,7 @@ import { SvgPageFooter } from '../icons/PageFooter.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-page_footer
+ * @element sp-page-footer
  */
 export class IconPageFooter extends IconBase {
     protected render(): TemplateResult {

@@ -17,7 +17,7 @@ import { SvgFormatSpacingLetter } from '../icons/FormatSpacingLetter.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-format_spacing-letter
+ * @element sp-format-spacing-letter
  */
 export class IconFormatSpacingLetter extends IconBase {
     protected render(): TemplateResult {

@@ -17,7 +17,7 @@ import { SvgFormatListNumbered } from '../icons/FormatListNumbered.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-format_list_numbered
+ * @element sp-format-list-numbered
  */
 export class IconFormatListNumbered extends IconBase {
     protected render(): TemplateResult {

@@ -17,7 +17,7 @@ import { SvgEyeOff } from '../icons/EyeOff.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-eye_off
+ * @element sp-eye-off
  */
 export class IconEyeOff extends IconBase {
     protected render(): TemplateResult {

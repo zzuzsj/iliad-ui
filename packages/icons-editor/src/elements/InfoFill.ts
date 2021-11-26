@@ -17,7 +17,7 @@ import { SvgInfoFill } from '../icons/InfoFill.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-info_fill
+ * @element sp-info-fill
  */
 export class IconInfoFill extends IconBase {
     protected render(): TemplateResult {

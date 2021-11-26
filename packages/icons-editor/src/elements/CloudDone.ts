@@ -17,7 +17,7 @@ import { SvgCloudDone } from '../icons/CloudDone.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-cloud_done
+ * @element sp-cloud-done
  */
 export class IconCloudDone extends IconBase {
     protected render(): TemplateResult {

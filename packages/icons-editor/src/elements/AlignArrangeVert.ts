@@ -17,7 +17,7 @@ import { SvgAlignArrangeVert } from '../icons/AlignArrangeVert.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-align_arrange_vert
+ * @element sp-align-arrange-vert
  */
 export class IconAlignArrangeVert extends IconBase {
     protected render(): TemplateResult {

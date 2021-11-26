@@ -17,7 +17,7 @@ import { SvgFormatCenter } from '../icons/FormatCenter.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-format_center
+ * @element sp-format-center
  */
 export class IconFormatCenter extends IconBase {
     protected render(): TemplateResult {

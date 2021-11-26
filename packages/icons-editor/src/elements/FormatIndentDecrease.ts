@@ -17,7 +17,7 @@ import { SvgFormatIndentDecrease } from '../icons/FormatIndentDecrease.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-format_indent_decrease
+ * @element sp-format-indent-decrease
  */
 export class IconFormatIndentDecrease extends IconBase {
     protected render(): TemplateResult {

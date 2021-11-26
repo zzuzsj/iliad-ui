@@ -17,7 +17,7 @@ import { SvgFormatListBulleted } from '../icons/FormatListBulleted.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-format_list_bulleted
+ * @element sp-format-list-bulleted
  */
 export class IconFormatListBulleted extends IconBase {
     protected render(): TemplateResult {
