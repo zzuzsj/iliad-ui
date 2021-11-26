@@ -26,11 +26,11 @@ governing permissions and limitations under the License.
     --spectrum-listitem-heading-padding: 0 var(--spectrum-alias-padding-l) 0
         var(--spectrum-alias-padding-m);
     --spectrum-listitem-heading-line-height: var(
-        --spectrum-alias-body-text-line-height,
+        --spectrum-global-dimension-size-300,
         var(--spectrum-global-font-line-height-medium)
     );
     --spectrum-listheading-text-color: var(
-        --spectrum-global-text-color-disabled
+        --spectrum-alias-text-color-disabled
     );
 }
 :host {

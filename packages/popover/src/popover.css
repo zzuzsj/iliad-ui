@@ -15,9 +15,9 @@ governing permissions and limitations under the License.
 :host {
     --spectrum-popover-background-color: var(--spectrum-global-color-gray-100);
     --spectrum-popover-border-color: var(--spectrum-alias-border-color-dark);
-    --spectrum-popover-box-shadow: var(--spectrum-alias-box-shadow-m);
+    --spectrum-popover-box-shadow: var(--spectrum-global-shadow-static-m);
     --spectrum-popover-elevation: 2dp;
-    --spectrum-popover-border-size: var(--spectrum-alias-border-size-none);
+    --spectrum-popover-border-size: var(--spectrum-global-dimension-size-0);
     --spectrum-popover-border-radius: var(--spectrum-alias-border-radius-large);
     --spectrum-popover-padding-x: var(--spectrum-global-dimension-size-100);
     --spectrum-popover-padding-y: var(--spectrum-global-dimension-size-100);

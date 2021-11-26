@@ -15,49 +15,43 @@ governing permissions and limitations under the License.
 /* override */
 :host {
     --spectrum-divider-s-background-color: var(
-        --spectrum-global-border-color-common-default
+        --spectrum-alias-border-color-default
     );
-    --spectrum-divider-s-border-radius: var(
-        --spectrum-alias-border-radius-none
-    );
+    --spectrum-divider-s-border-radius: var(--spectrum-global-dimension-size-0);
     --spectrum-divider-s-height: var(--spectrum-global-dimension-size-10);
     --spectrum-divider-s-vertical-background-color: var(
-        --spectrum-alias-border-color-common-default
+        --spectrum-alias-border-color-default
     );
     --spectrum-divider-s-vertical-border-radius: var(
-        --spectrum-alias-border-radius-none
+        --spectrum-global-dimension-size-0
     );
     --spectrum-divider-s-vertical-width: var(
         --spectrum-global-dimension-size-10
     );
     --spectrum-divider-m-background-color: var(
-        --spectrum-global-border-color-common-default
+        --spectrum-alias-border-color-default
     );
-    --spectrum-divider-m-border-radius: var(
-        --spectrum-alias-border-radius-none
-    );
+    --spectrum-divider-m-border-radius: var(--spectrum-global-dimension-size-0);
     --spectrum-divider-m-height: var(--spectrum-global-dimension-size-25);
     --spectrum-divider-m-vertical-background-color: var(
-        --spectrum-alias-border-color-common-default
+        --spectrum-alias-border-color-default
     );
     --spectrum-divider-m-vertical-border-radius: var(
-        --spectrum-alias-border-radius-none
+        --spectrum-global-dimension-size-0
     );
     --spectrum-divider-m-vertical-width: var(
         --spectrum-global-dimension-size-25
     );
     --spectrum-divider-l-background-color: var(
-        --spectrum-global-border-color-common-default
+        --spectrum-alias-border-color-default
     );
-    --spectrum-divider-l-border-radius: var(
-        --spectrum-alias-border-radius-none
-    );
+    --spectrum-divider-l-border-radius: var(--spectrum-global-dimension-size-0);
     --spectrum-divider-l-height: var(--spectrum-global-dimension-size-50);
     --spectrum-divider-l-vertical-background-color: var(
-        --spectrum-alias-border-color-common-default
+        --spectrum-alias-border-color-default
     );
     --spectrum-divider-l-vertical-border-radius: var(
-        --spectrum-alias-border-radius-none
+        --spectrum-global-dimension-size-0
     );
     --spectrum-divider-l-vertical-width: var(
         --spectrum-global-dimension-size-50
