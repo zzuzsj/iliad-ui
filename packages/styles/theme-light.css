@@ -161,6 +161,8 @@ governing permissions and limitations under the License.
     );
     --spectrum-global-color-primary-cover-100: rgba(36, 114, 233, 0.53);
     --spectrum-global-color-primary-cover-200: rgba(35, 111, 226, 0.56);
+    --spectrum-global-color-blue-cover-100: rgba(0, 151, 233, 0.53);
+    --spectrum-global-color-blue-cover-200: rgba(0, 147, 226, 0.56);
     --spectrum-global-color-red-cover-100: rgba(238, 80, 62, 0.53);
     --spectrum-global-color-red-cover-200: rgba(230, 77, 60, 0.56);
     --spectrum-global-color-green-cover-100: rgba(7, 178, 110, 0.53);

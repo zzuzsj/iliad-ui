@@ -19,6 +19,16 @@ governing permissions and limitations under the License.
     --spectrum-global-color-static-black: #000000;
     --spectrum-global-color-static-transparent: transparent;
     --spectrum-global-color-static-extend: #ffffff;
+    --spectrum-global-color-static-primary: #2576f0;
+    --spectrum-global-color-static-red: #f55240;
+    --spectrum-global-color-static-green: #07b871;
+    --spectrum-global-color-static-orange: #fa9b0c;
+    --spectrum-global-color-static-white-opacity-300: rgba(255, 255, 255, 0.3);
+    --spectrum-global-color-static-black-opacity-300: rgba(0, 0, 0, 0.3);
+    --spectrum-global-color-static-primary-opacity-300: rgba(37, 118, 240, 0.3);
+    --spectrum-global-color-static-red-opacity-300: rgba(245, 82, 64, 0.3);
+    --spectrum-global-color-static-green-opacity-300: rgba(7, 184, 113, 0.3);
+    --spectrum-global-color-static-orange-opacity-300: rgba(250, 155, 12, 0.3);
     --spectrum-global-color-static-celery-200: rgb(88, 224, 111);
     --spectrum-global-color-static-celery-300: rgb(81, 210, 103);
     --spectrum-global-color-static-celery-400: rgb(75, 195, 95);
@@ -1566,7 +1576,7 @@ governing permissions and limitations under the License.
         --spectrum-global-color-static-green-700
     );
     --spectrum-semantic-informative-color-background: var(
-        --spectrum-global-color-static-primary-700
+        --spectrum-global-color-static-blue-700
     );
     --spectrum-semantic-informative-color-default: var(
         --spectrum-global-color-blue-500
@@ -1596,28 +1606,31 @@ governing permissions and limitations under the License.
         --spectrum-global-color-blue-400
     );
     --spectrum-semantic-informative-background-color-default: var(
-        --spectrum-global-color-static-primary-500
+        --spectrum-global-color-static-blue-600
     );
     --spectrum-semantic-informative-background-color-hover: var(
-        --spectrum-global-color-static-primary-600
+        --spectrum-global-color-static-blue-700
     );
     --spectrum-semantic-informative-background-color-down: var(
-        --spectrum-global-color-static-primary-700
+        --spectrum-global-color-static-blue-800
     );
     --spectrum-semantic-informative-background-color-key-focus: var(
-        --spectrum-global-color-static-primary-600
+        --spectrum-global-color-static-blue-700
     );
     --spectrum-semantic-cta-color-background-default: var(
         --spectrum-global-color-static-primary-500
     );
     --spectrum-semantic-cta-color-background-hover: var(
-        --spectrum-global-color-static-primary-600
+        --spectrum-global-color-primary-cover-100
     );
     --spectrum-semantic-cta-color-background-down: var(
-        --spectrum-global-color-static-primary-700
+        --spectrum-global-color-primary-cover-200
     );
     --spectrum-semantic-cta-color-background-key-focus: var(
         --spectrum-global-color-static-primary-500
+    );
+    --spectrum-semantic-cta-color-background-disabled: var(
+        --spectrum-global-color-static-primary-opacity-300
     );
     --spectrum-semantic-neutral-background-color-default: var(
         --spectrum-global-color-static-gray-600
@@ -1647,18 +1660,10 @@ governing permissions and limitations under the License.
     --spectrum-semantic-presence-color-8: var(
         --spectrum-global-color-static-fuchsia-600
     );
-    --spectrum-global-color-info: var(
-        --spectrum-global-color-static-primary-500
-    );
-    --spectrum-global-color-negative: var(
-        --spectrum-global-color-static-red-500
-    );
-    --spectrum-global-color-tips: var(
-        --spectrum-global-color-static-orange-500
-    );
-    --spectrum-global-color-positive: var(
-        --spectrum-global-color-static-green-500
-    );
+    --spectrum-global-color-info: var(--spectrum-global-color-static-primary);
+    --spectrum-global-color-negative: var(--spectrum-global-color-static-red);
+    --spectrum-global-color-tips: var(--spectrum-global-color-static-orange);
+    --spectrum-global-color-positive: var(--spectrum-global-color-static-green);
 }
 
 /*
