@@ -22,10 +22,12 @@ export const SvgFormatCenter = (): string | TemplateResult => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
-            <path d="M21 5H3V7H21V5Z" fill="#1F1F1F" />
-            <path d="M18 9H6V11H18V9Z" fill="#1F1F1F" />
-            <path d="M3 13H21V15H3V13Z" fill="#1F1F1F" />
-            <path d="M18 17H6V19H18V17Z" fill="#1F1F1F" />
+            <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M21 6.75H3V5.25H21V6.75ZM21 18.75H3V17.25H21V18.75ZM7 12.75H16V11.25H7V12.75Z"
+                fill="#1F1F1F"
+            />
         </svg>
     `;
 };

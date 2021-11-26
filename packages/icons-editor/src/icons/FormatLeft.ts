@@ -22,10 +22,12 @@ export const SvgFormatLeft = (): string | TemplateResult => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
-            <path d="M21 5H3V7H21V5Z" fill="#1F1F1F" />
-            <path d="M16 9H3V11H16V9Z" fill="#1F1F1F" />
-            <path d="M3 13H21V15H3V13Z" fill="#1F1F1F" />
-            <path d="M16 17H3V19H16V17Z" fill="#1F1F1F" />
+            <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M21 6.75H3V5.25H21V6.75ZM12 12.75H3V11.25H12V12.75ZM3 17.25V18.75H21V17.25H3Z"
+                fill="#1F1F1F"
+            />
         </svg>
     `;
 };

@@ -17,7 +17,7 @@ import { SvgTextItaly } from '../icons/TextItaly.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-text-italy
+ * @element sp-text_italy
  */
 export class IconTextItaly extends IconBase {
     protected render(): TemplateResult {

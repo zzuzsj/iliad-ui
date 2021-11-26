@@ -22,10 +22,12 @@ export const SvgFormatJustified = (): string | TemplateResult => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
-            <path d="M21 5H2.99996V7H21V5Z" fill="#1F1F1F" />
-            <path d="M21 9H2.99996V11H21V9Z" fill="#1F1F1F" />
-            <path d="M2.99996 13H21V15H2.99996V13Z" fill="#1F1F1F" />
-            <path d="M16.2 17H2.99996V19H16.2V17Z" fill="#1F1F1F" />
+            <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M21 6.75H3V5.25H21V6.75ZM21 12.75H3V11.25H21V12.75ZM3 18.75H12V17.25H3V18.75Z"
+                fill="#1F1F1F"
+            />
         </svg>
     `;
 };

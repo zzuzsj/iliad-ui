@@ -17,7 +17,7 @@ import { SvgTextDeleteline } from '../icons/TextDeleteline.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-text-deleteline
+ * @element sp-text_deleteline
  */
 export class IconTextDeleteline extends IconBase {
     protected render(): TemplateResult {
