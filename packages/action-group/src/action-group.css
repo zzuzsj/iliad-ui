@@ -1,5 +1,6 @@
 /*
 Copyright 2020 Adobe. All rights reserved.
+Copyright 2021 Gaoding. All rights reserved.
 This file is licensed to you under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License. You may obtain a copy
 of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -26,76 +27,31 @@ governing permissions and limitations under the License.
  * End Spectrum CSS #795 fixes.
  */
 
-/**
- * The following styles correct realities outlined in https://github.com/adobe/spectrum-web-components/issues/1434
- */
-
-:host([justified]) ::slotted(:not([role])),
-:host([vertical]) ::slotted(:not([role])) {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
-
-:host([compact]:not([quiet])) ::slotted(:not([role])) {
-    /* .spectrum-ActionGroup--compact:not(.spectrum-ActionGroup--quiet) .spectrum-ActionGroup-item */
-    --spectrum-actionbutton-m-border-radius: 0;
-    --spectrum-actionbutton-s-border-radius: var(
-        --spectrum-actionbutton-m-border-radius
+/* override */
+:host {
+    --spectrum-actiongroup-width: fit-content;
+    --spectrum-actiongroup-quiet-background: var(
+        --spectrum-global-color-gray-300
     );
-    --spectrum-actionbutton-l-border-radius: var(
-        --spectrum-actionbutton-m-border-radius
+    --spectrum-actiongroup-button-gap-y: var(
+        --spectrum-global-dimension-size-0
     );
-    --spectrum-actionbutton-xl-border-radius: var(
-        --spectrum-actionbutton-m-border-radius
+    --spectrum-actiongroup-button-gap-x: var(
+        --spectrum-global-dimension-size-100
+    );
+    --spectrum-actionbutton-m-border-radius: var(
+        --spectrum-alias-border-radius-regular
+    );
+    --spectrum-actionbutton-m-border-size: var(
+        --spectrum-alias-border-size-thin
     );
 }
 
-:host([compact][vertical]:not([quiet])) ::slotted(:not([role]):first-child) {
-    /* [dir=ltr] .spectrum-ActionGroup--compact:not(.spectrum-ActionGroup--quiet) .spectrum-ActionGroup-item:first-child */
-    --spectrum-actionbutton-m-border-radius: var(
-            --spectrum-alias-border-radius-regular
-        )
-        var(--spectrum-alias-border-radius-regular) 0 0;
+:host {
+    width: var(--spectrum-actiongroup-width);
 }
-
-:host([compact][vertical]:not([quiet])) ::slotted(:not([role]):last-child) {
-    /* [dir=ltr] .spectrum-ActionGroup--compact:not(.spectrum-ActionGroup--quiet) .spectrum-ActionGroup-item:last-child */
-    --spectrum-actionbutton-m-border-radius: 0 0
-        var(--spectrum-alias-border-radius-regular)
-        var(--spectrum-alias-border-radius-regular);
+:host[compact][quiet] {
+    background: var(--spectrum-actiongroup-quiet-background);
+    border-radius: var(--spectrum-actionbutton-m-border-radius);
 }
-
-:host([dir='ltr'][compact]:not([quiet]):not([vertical]))
-    ::slotted(:not([role]):first-child) {
-    /* [dir=ltr] .spectrum-ActionGroup--compact:not(.spectrum-ActionGroup--quiet) .spectrum-ActionGroup-item:first-child */
-    --spectrum-actionbutton-m-border-radius: var(
-            --spectrum-alias-border-radius-regular
-        )
-        0 0 var(--spectrum-alias-border-radius-regular);
-}
-
-:host([dir='rtl'][compact]:not([quiet]):not([vertical]))
-    ::slotted(:not([role]):first-child) {
-    /* [dir=rtl] .spectrum-ActionGroup--compact:not(.spectrum-ActionGroup--quiet) .spectrum-ActionGroup-item:first-child */
-    --spectrum-actionbutton-m-border-radius: 0
-        var(--spectrum-alias-border-radius-regular)
-        var(--spectrum-alias-border-radius-regular) 0;
-}
-
-:host([dir='ltr'][compact]:not([quiet]):not([vertical]))
-    ::slotted(:not([role]):last-child) {
-    /* [dir=ltr] .spectrum-ActionGroup--compact:not(.spectrum-ActionGroup--quiet) .spectrum-ActionGroup-item:last-child */
-    --spectrum-actionbutton-m-border-radius: 0
-        var(--spectrum-alias-border-radius-regular)
-        var(--spectrum-alias-border-radius-regular) 0;
-}
-
-:host([dir='rtl'][compact]:not([quiet]):not([vertical]))
-    ::slotted(:not([role]):last-child) {
-    /* [dir=rtl] .spectrum-ActionGroup--compact:not(.spectrum-ActionGroup--quiet) .spectrum-ActionGroup-item:last-child */
-    --spectrum-actionbutton-m-border-radius: var(
-            --spectrum-alias-border-radius-regular
-        )
-        0 0 var(--spectrum-alias-border-radius-regular);
-}
+/* override */
