@@ -21,12 +21,17 @@ import {
 import '@iliad-ui/underlay/sp-underlay.js';
 import '@iliad-ui/sidenav/sp-sidenav.js';
 import '@iliad-ui/sidenav/sp-sidenav-item.js';
+import '@iliad-ui/status-light/sp-status-light.js';
 import { SidenavSelectDetail, SideNavItem } from '@iliad-ui/sidenav';
 import { AppRouter } from '../router.js';
 import './side-nav-search.js';
 import { search, Result } from './search-index.js';
 import sideNavStyles from './side-nav.css';
 import './adobe-logo.js';
+
+interface IResult extends Result {
+    updated: boolean;
+}
 
 class SideNav extends SpectrumElement {
     public static get styles(): CSSResultArray {
@@ -39,7 +44,7 @@ class SideNav extends SpectrumElement {
     public open = false;
 
     @property({ type: Array })
-    private components: Result[] = [];
+    private components: IResult[] = [];
 
     private handleSelect(
         event: CustomEvent<SidenavSelectDetail>,
@@ -82,7 +87,30 @@ class SideNav extends SpectrumElement {
         const docs = await search('*');
         const components = docs.find((item) => item.name === 'components');
         if (components) {
-            this.components = components.results;
+            const updatedComponents = [
+                'Action Button',
+                'Action Group',
+                'Button',
+                'Button Group',
+                'Color Area',
+                'Color Slider',
+                'Color Handle',
+                'Popover',
+                'Icons Editor',
+                'Menu',
+                'Menu Item',
+                'Textarea',
+                'Textfield',
+                'Theme',
+                'Tree',
+            ];
+            this.components = components.results.map((cv) => {
+                const updated = updatedComponents.includes(cv.label);
+                return {
+                    ...cv,
+                    updated,
+                };
+            });
             components.results.sort((a, b) => (a.name < b.name ? -1 : 1));
         }
     }
@@ -99,11 +127,7 @@ class SideNav extends SpectrumElement {
                     <div id="logo-container">
                         <a href="#index">
                             <docs-spectrum-logo></docs-spectrum-logo>
-                            <div id="header-title">
-                                Spectrum
-                                <br />
-                                Web Components
-                            </div>
+                            <div id="header-title">Iliad UI</div>
                         </a>
                     </div>
                     <docs-search></docs-search>
@@ -127,7 +151,16 @@ class SideNav extends SpectrumElement {
                                         <sp-sidenav-item
                                             value="${item.name}"
                                             label="${item.label}"
-                                        ></sp-sidenav-item>
+                                        >
+                                            ${item.updated
+                                                ? html`
+                                                      <sp-status-light
+                                                          size="m"
+                                                          variant="positive"
+                                                      ></sp-status-light>
+                                                  `
+                                                : ''}
+                                        </sp-sidenav-item>
                                     `
                             )}
                         </sp-sidenav-item>

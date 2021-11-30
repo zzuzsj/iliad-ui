@@ -232,7 +232,7 @@
         "cssnano/**/postcss-calc": "7.0.0",
         "playwright": "1.13.0"
     },
-    "customElements": "documentation/custom-elements.json",
+    "customElements": ".storybook/custom-elements.json",
     "maintainers": [
         {
             "name": "saiye",
