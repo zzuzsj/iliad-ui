@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconFormatListBulleted } from '../src/elements/FormatListBulleted.js';
+import { IconFormatListBulleted } from '../src/elements/IconFormatListBulleted.js';
 
 iliadCustomElementsDefine('sp-format-list-bulleted', IconFormatListBulleted);
 

@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconTextBold } from '../src/elements/TextBold.js';
+import { IconTextBold } from '../src/elements/IconTextBold.js';
 
 iliadCustomElementsDefine('sp-text-bold', IconTextBold);
 

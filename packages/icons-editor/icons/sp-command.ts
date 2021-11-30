@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconCommand } from '../src/elements/Command.js';
+import { IconCommand } from '../src/elements/IconCommand.js';
 
 iliadCustomElementsDefine('sp-command', IconCommand);
 

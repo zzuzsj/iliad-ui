@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconHelp } from '../src/elements/Help.js';
+import { IconHelp } from '../src/elements/IconHelp.js';
 
 iliadCustomElementsDefine('sp-help', IconHelp);
 

@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconFormatLeft } from '../src/elements/FormatLeft.js';
+import { IconFormatLeft } from '../src/elements/IconFormatLeft.js';
 
 iliadCustomElementsDefine('sp-format-left', IconFormatLeft);
 

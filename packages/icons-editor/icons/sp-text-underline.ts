@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconTextUnderline } from '../src/elements/TextUnderline.js';
+import { IconTextUnderline } from '../src/elements/IconTextUnderline.js';
 
 iliadCustomElementsDefine('sp-text-underline', IconTextUnderline);
 

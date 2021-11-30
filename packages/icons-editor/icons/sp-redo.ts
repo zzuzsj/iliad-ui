@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconRedo } from '../src/elements/Redo.js';
+import { IconRedo } from '../src/elements/IconRedo.js';
 
 iliadCustomElementsDefine('sp-redo', IconRedo);
 

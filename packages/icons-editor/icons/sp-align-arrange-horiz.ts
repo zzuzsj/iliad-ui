@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconAlignArrangeHoriz } from '../src/elements/AlignArrangeHoriz.js';
+import { IconAlignArrangeHoriz } from '../src/elements/IconAlignArrangeHoriz.js';
 
 iliadCustomElementsDefine('sp-align-arrange-horiz', IconAlignArrangeHoriz);
 

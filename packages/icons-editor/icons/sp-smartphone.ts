@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconSmartphone } from '../src/elements/Smartphone.js';
+import { IconSmartphone } from '../src/elements/IconSmartphone.js';
 
 iliadCustomElementsDefine('sp-smartphone', IconSmartphone);
 

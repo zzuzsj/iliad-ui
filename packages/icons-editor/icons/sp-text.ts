@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconText } from '../src/elements/Text.js';
+import { IconText } from '../src/elements/IconText.js';
 
 iliadCustomElementsDefine('sp-text', IconText);
 

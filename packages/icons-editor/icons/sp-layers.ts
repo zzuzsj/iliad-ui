@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconLayers } from '../src/elements/Layers.js';
+import { IconLayers } from '../src/elements/IconLayers.js';
 
 iliadCustomElementsDefine('sp-layers', IconLayers);
 

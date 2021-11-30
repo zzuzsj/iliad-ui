@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconAnimation } from '../src/elements/Animation.js';
+import { IconAnimation } from '../src/elements/IconAnimation.js';
 
 iliadCustomElementsDefine('sp-animation', IconAnimation);
 

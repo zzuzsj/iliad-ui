@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconFormatIndentIncrease } from '../src/elements/FormatIndentIncrease.js';
+import { IconFormatIndentIncrease } from '../src/elements/IconFormatIndentIncrease.js';
 
 iliadCustomElementsDefine(
     'sp-format-indent-increase',

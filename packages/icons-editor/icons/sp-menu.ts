@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconMenu } from '../src/elements/Menu.js';
+import { IconMenu } from '../src/elements/IconMenu.js';
 
 iliadCustomElementsDefine('sp-menu', IconMenu);
 

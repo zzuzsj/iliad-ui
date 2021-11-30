@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconStar } from '../src/elements/Star.js';
+import { IconStar } from '../src/elements/IconStar.js';
 
 iliadCustomElementsDefine('sp-star', IconStar);
 

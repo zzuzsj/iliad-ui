@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconTextScale } from '../src/elements/TextScale.js';
+import { IconTextScale } from '../src/elements/IconTextScale.js';
 
 iliadCustomElementsDefine('sp-text-scale', IconTextScale);
 

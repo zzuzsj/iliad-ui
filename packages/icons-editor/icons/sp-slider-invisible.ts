@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconSliderInvisible } from '../src/elements/SliderInvisible.js';
+import { IconSliderInvisible } from '../src/elements/IconSliderInvisible.js';
 
 iliadCustomElementsDefine('sp-slider-invisible', IconSliderInvisible);
 

@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconFormatCenter } from '../src/elements/FormatCenter.js';
+import { IconFormatCenter } from '../src/elements/IconFormatCenter.js';
 
 iliadCustomElementsDefine('sp-format-center', IconFormatCenter);
 

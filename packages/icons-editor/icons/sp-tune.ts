@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconTune } from '../src/elements/Tune.js';
+import { IconTune } from '../src/elements/IconTune.js';
 
 iliadCustomElementsDefine('sp-tune', IconTune);
 

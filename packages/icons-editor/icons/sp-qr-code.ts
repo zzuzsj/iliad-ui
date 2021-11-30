@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconQrCode } from '../src/elements/QrCode.js';
+import { IconQrCode } from '../src/elements/IconQrCode.js';
 
 iliadCustomElementsDefine('sp-qr-code', IconQrCode);
 

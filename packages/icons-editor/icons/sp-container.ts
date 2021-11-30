@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconContainer } from '../src/elements/Container.js';
+import { IconContainer } from '../src/elements/IconContainer.js';
 
 iliadCustomElementsDefine('sp-container', IconContainer);
 

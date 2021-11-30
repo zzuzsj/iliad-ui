@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconFocus } from '../src/elements/Focus.js';
+import { IconFocus } from '../src/elements/IconFocus.js';
 
 iliadCustomElementsDefine('sp-focus', IconFocus);
 

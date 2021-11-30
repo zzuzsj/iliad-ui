@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconFormatListNumbered } from '../src/elements/FormatListNumbered.js';
+import { IconFormatListNumbered } from '../src/elements/IconFormatListNumbered.js';
 
 iliadCustomElementsDefine('sp-format-list-numbered', IconFormatListNumbered);
 

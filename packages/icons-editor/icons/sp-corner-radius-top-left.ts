@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconCornerRadiusTopLeft } from '../src/elements/CornerRadiusTopLeft.js';
+import { IconCornerRadiusTopLeft } from '../src/elements/IconCornerRadiusTopLeft.js';
 
 iliadCustomElementsDefine('sp-corner-radius-top-left', IconCornerRadiusTopLeft);
 

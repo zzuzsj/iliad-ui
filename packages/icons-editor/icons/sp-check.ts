@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconCheck } from '../src/elements/Check.js';
+import { IconCheck } from '../src/elements/IconCheck.js';
 
 iliadCustomElementsDefine('sp-check', IconCheck);
 

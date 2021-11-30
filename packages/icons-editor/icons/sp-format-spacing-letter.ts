@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconFormatSpacingLetter } from '../src/elements/FormatSpacingLetter.js';
+import { IconFormatSpacingLetter } from '../src/elements/IconFormatSpacingLetter.js';
 
 iliadCustomElementsDefine('sp-format-spacing-letter', IconFormatSpacingLetter);
 

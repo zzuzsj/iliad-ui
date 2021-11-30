@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconCloudOff } from '../src/elements/CloudOff.js';
+import { IconCloudOff } from '../src/elements/IconCloudOff.js';
 
 iliadCustomElementsDefine('sp-cloud-off', IconCloudOff);
 

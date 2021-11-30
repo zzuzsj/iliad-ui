@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconDesktop } from '../src/elements/Desktop.js';
+import { IconDesktop } from '../src/elements/IconDesktop.js';
 
 iliadCustomElementsDefine('sp-desktop', IconDesktop);
 

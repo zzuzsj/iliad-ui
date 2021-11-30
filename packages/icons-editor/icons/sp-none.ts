@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconNone } from '../src/elements/None.js';
+import { IconNone } from '../src/elements/IconNone.js';
 
 iliadCustomElementsDefine('sp-none', IconNone);
 

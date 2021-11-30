@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconInfoFill } from '../src/elements/InfoFill.js';
+import { IconInfoFill } from '../src/elements/IconInfoFill.js';
 
 iliadCustomElementsDefine('sp-info-fill', IconInfoFill);
 

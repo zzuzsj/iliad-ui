@@ -13,7 +13,7 @@ governing permissions and limitations under the License.
 
 import { tag as html, TemplateResult } from '../custom-tag.js';
 export { setCustomTemplateLiteralTag } from '../custom-tag.js';
-export const SvgHome = (): string | TemplateResult => {
+export const HomeIcon = (): string | TemplateResult => {
     return html`
         <svg
             width="24"

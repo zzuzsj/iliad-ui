@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconLink } from '../src/elements/Link.js';
+import { IconLink } from '../src/elements/IconLink.js';
 
 iliadCustomElementsDefine('sp-link', IconLink);
 

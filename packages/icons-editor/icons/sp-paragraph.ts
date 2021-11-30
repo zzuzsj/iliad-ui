@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconParagraph } from '../src/elements/Paragraph.js';
+import { IconParagraph } from '../src/elements/IconParagraph.js';
 
 iliadCustomElementsDefine('sp-paragraph', IconParagraph);
 

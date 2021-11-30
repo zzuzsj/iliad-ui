@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconVideo } from '../src/elements/Video.js';
+import { IconVideo } from '../src/elements/IconVideo.js';
 
 iliadCustomElementsDefine('sp-video', IconVideo);
 

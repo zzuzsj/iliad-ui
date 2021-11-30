@@ -13,7 +13,7 @@ governing permissions and limitations under the License.
 
 import { tag as html, TemplateResult } from '../custom-tag.js';
 export { setCustomTemplateLiteralTag } from '../custom-tag.js';
-export const SvgArrowRight = (): string | TemplateResult => {
+export const ArrowRightIcon = (): string | TemplateResult => {
     return html`
         <svg
             width="24"
@@ -25,7 +25,7 @@ export const SvgArrowRight = (): string | TemplateResult => {
             <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M15.0303 11.4697L10.0303 6.46967L8.96967 7.53033L13.4393 12L8.96967 16.4697L10.0303 17.5303L15.0303 12.5303C15.3232 12.2374 15.3232 11.7626 15.0303 11.4697Z"
+                d="M16.8107 11.4697L8.81066 3.46967L7.75 4.53033L15.2197 12L7.75 19.4697L8.81066 20.5303L16.8107 12.5303C17.1036 12.2374 17.1036 11.7626 16.8107 11.4697Z"
                 fill="#1F1F1F"
             />
         </svg>

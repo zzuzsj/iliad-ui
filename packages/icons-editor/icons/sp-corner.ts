@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconCorner } from '../src/elements/Corner.js';
+import { IconCorner } from '../src/elements/IconCorner.js';
 
 iliadCustomElementsDefine('sp-corner', IconCorner);
 

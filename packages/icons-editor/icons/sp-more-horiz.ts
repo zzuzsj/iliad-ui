@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconMoreHoriz } from '../src/elements/MoreHoriz.js';
+import { IconMoreHoriz } from '../src/elements/IconMoreHoriz.js';
 
 iliadCustomElementsDefine('sp-more-horiz', IconMoreHoriz);
 

@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconViewDay } from '../src/elements/ViewDay.js';
+import { IconViewDay } from '../src/elements/IconViewDay.js';
 
 iliadCustomElementsDefine('sp-view-day', IconViewDay);
 

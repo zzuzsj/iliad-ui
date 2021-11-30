@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconDirectionDown } from '../src/elements/DirectionDown.js';
+import { IconDirectionDown } from '../src/elements/IconDirectionDown.js';
 
 iliadCustomElementsDefine('sp-direction-down', IconDirectionDown);
 

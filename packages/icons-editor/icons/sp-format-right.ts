@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconFormatRight } from '../src/elements/FormatRight.js';
+import { IconFormatRight } from '../src/elements/IconFormatRight.js';
 
 iliadCustomElementsDefine('sp-format-right', IconFormatRight);
 

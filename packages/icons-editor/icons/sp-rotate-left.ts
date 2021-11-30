@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconRotateLeft } from '../src/elements/RotateLeft.js';
+import { IconRotateLeft } from '../src/elements/IconRotateLeft.js';
 
 iliadCustomElementsDefine('sp-rotate-left', IconRotateLeft);
 

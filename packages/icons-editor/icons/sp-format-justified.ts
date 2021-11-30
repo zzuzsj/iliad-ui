@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconFormatJustified } from '../src/elements/FormatJustified.js';
+import { IconFormatJustified } from '../src/elements/IconFormatJustified.js';
 
 iliadCustomElementsDefine('sp-format-justified', IconFormatJustified);
 

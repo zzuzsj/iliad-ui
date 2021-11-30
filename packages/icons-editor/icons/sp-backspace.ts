@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconBackspace } from '../src/elements/Backspace.js';
+import { IconBackspace } from '../src/elements/IconBackspace.js';
 
 iliadCustomElementsDefine('sp-backspace', IconBackspace);
 

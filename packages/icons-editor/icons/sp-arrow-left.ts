@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconArrowLeft } from '../src/elements/ArrowLeft.js';
+import { IconArrowLeft } from '../src/elements/IconArrowLeft.js';
 
 iliadCustomElementsDefine('sp-arrow-left', IconArrowLeft);
 

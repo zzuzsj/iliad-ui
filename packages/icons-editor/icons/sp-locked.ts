@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconLocked } from '../src/elements/Locked.js';
+import { IconLocked } from '../src/elements/IconLocked.js';
 
 iliadCustomElementsDefine('sp-locked', IconLocked);
 

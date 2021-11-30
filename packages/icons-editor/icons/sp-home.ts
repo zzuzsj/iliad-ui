@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconHome } from '../src/elements/Home.js';
+import { IconHome } from '../src/elements/IconHome.js';
 
 iliadCustomElementsDefine('sp-home', IconHome);
 

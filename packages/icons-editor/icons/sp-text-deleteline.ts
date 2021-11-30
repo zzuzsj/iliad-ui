@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconTextDeleteline } from '../src/elements/TextDeleteline.js';
+import { IconTextDeleteline } from '../src/elements/IconTextDeleteline.js';
 
 iliadCustomElementsDefine('sp-text-deleteline', IconTextDeleteline);
 

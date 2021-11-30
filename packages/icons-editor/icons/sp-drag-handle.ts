@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconDragHandle } from '../src/elements/DragHandle.js';
+import { IconDragHandle } from '../src/elements/IconDragHandle.js';
 
 iliadCustomElementsDefine('sp-drag-handle', IconDragHandle);
 

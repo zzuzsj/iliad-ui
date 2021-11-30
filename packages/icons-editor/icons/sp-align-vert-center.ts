@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconAlignVertCenter } from '../src/elements/AlignVertCenter.js';
+import { IconAlignVertCenter } from '../src/elements/IconAlignVertCenter.js';
 
 iliadCustomElementsDefine('sp-align-vert-center', IconAlignVertCenter);
 

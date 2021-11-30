@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconUndo } from '../src/elements/Undo.js';
+import { IconUndo } from '../src/elements/IconUndo.js';
 
 iliadCustomElementsDefine('sp-undo', IconUndo);
 

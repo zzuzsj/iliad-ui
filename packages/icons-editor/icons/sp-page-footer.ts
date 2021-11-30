@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconPageFooter } from '../src/elements/PageFooter.js';
+import { IconPageFooter } from '../src/elements/IconPageFooter.js';
 
 iliadCustomElementsDefine('sp-page-footer', IconPageFooter);
 

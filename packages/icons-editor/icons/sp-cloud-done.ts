@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconCloudDone } from '../src/elements/CloudDone.js';
+import { IconCloudDone } from '../src/elements/IconCloudDone.js';
 
 iliadCustomElementsDefine('sp-cloud-done', IconCloudDone);
 

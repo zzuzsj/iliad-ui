@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEye } from '../src/elements/Eye.js';
+import { IconEye } from '../src/elements/IconEye.js';
 
 iliadCustomElementsDefine('sp-eye', IconEye);
 

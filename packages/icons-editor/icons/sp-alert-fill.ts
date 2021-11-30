@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconAlertFill } from '../src/elements/AlertFill.js';
+import { IconAlertFill } from '../src/elements/IconAlertFill.js';
 
 iliadCustomElementsDefine('sp-alert-fill', IconAlertFill);
 

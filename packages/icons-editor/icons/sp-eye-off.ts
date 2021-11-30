@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEyeOff } from '../src/elements/EyeOff.js';
+import { IconEyeOff } from '../src/elements/IconEyeOff.js';
 
 iliadCustomElementsDefine('sp-eye-off', IconEyeOff);
 

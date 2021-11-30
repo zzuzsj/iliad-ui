@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconCrop } from '../src/elements/Crop.js';
+import { IconCrop } from '../src/elements/IconCrop.js';
 
 iliadCustomElementsDefine('sp-crop', IconCrop);
 

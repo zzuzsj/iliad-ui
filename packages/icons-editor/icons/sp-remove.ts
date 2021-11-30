@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconRemove } from '../src/elements/Remove.js';
+import { IconRemove } from '../src/elements/IconRemove.js';
 
 iliadCustomElementsDefine('sp-remove', IconRemove);
 

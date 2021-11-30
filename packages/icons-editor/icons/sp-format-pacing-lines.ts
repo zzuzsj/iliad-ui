@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconFormatPacingLines } from '../src/elements/FormatPacingLines.js';
+import { IconFormatPacingLines } from '../src/elements/IconFormatPacingLines.js';
 
 iliadCustomElementsDefine('sp-format-pacing-lines', IconFormatPacingLines);
 

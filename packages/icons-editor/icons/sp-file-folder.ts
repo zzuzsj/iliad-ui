@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconFileFolder } from '../src/elements/FileFolder.js';
+import { IconFileFolder } from '../src/elements/IconFileFolder.js';
 
 iliadCustomElementsDefine('sp-file-folder', IconFileFolder);
 

@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconDirectionUp } from '../src/elements/DirectionUp.js';
+import { IconDirectionUp } from '../src/elements/IconDirectionUp.js';
 
 iliadCustomElementsDefine('sp-direction-up', IconDirectionUp);
 

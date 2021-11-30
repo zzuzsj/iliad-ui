@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconAlignHorizBottom } from '../src/elements/AlignHorizBottom.js';
+import { IconAlignHorizBottom } from '../src/elements/IconAlignHorizBottom.js';
 
 iliadCustomElementsDefine('sp-align-horiz-bottom', IconAlignHorizBottom);
 

@@ -13,7 +13,7 @@ governing permissions and limitations under the License.
 
 import { tag as html, TemplateResult } from '../custom-tag.js';
 export { setCustomTemplateLiteralTag } from '../custom-tag.js';
-export const SvgFormatListBulleted = (): string | TemplateResult => {
+export const FormatListBulletedIcon = (): string | TemplateResult => {
     return html`
         <svg
             width="24"

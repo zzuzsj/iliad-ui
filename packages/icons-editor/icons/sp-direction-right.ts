@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconDirectionRight } from '../src/elements/DirectionRight.js';
+import { IconDirectionRight } from '../src/elements/IconDirectionRight.js';
 
 iliadCustomElementsDefine('sp-direction-right', IconDirectionRight);
 

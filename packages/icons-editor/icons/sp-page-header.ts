@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconPageHeader } from '../src/elements/PageHeader.js';
+import { IconPageHeader } from '../src/elements/IconPageHeader.js';
 
 iliadCustomElementsDefine('sp-page-header', IconPageHeader);
 

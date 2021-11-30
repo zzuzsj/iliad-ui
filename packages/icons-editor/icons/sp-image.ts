@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconImage } from '../src/elements/Image.js';
+import { IconImage } from '../src/elements/IconImage.js';
 
 iliadCustomElementsDefine('sp-image', IconImage);
 

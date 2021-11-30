@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconShift } from '../src/elements/Shift.js';
+import { IconShift } from '../src/elements/IconShift.js';
 
 iliadCustomElementsDefine('sp-shift', IconShift);
 

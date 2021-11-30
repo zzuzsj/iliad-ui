@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconLabelX } from '../src/elements/LabelX.js';
+import { IconLabelX } from '../src/elements/IconLabelX.js';
 
 iliadCustomElementsDefine('sp-label-x', IconLabelX);
 

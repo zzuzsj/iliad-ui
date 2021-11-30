@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconDataBarchart } from '../src/elements/DataBarchart.js';
+import { IconDataBarchart } from '../src/elements/IconDataBarchart.js';
 
 iliadCustomElementsDefine('sp-data-barchart', IconDataBarchart);
 

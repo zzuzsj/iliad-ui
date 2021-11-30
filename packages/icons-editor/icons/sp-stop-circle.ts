@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconStopCircle } from '../src/elements/StopCircle.js';
+import { IconStopCircle } from '../src/elements/IconStopCircle.js';
 
 iliadCustomElementsDefine('sp-stop-circle', IconStopCircle);
 

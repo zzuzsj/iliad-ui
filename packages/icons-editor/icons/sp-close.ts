@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconClose } from '../src/elements/Close.js';
+import { IconClose } from '../src/elements/IconClose.js';
 
 iliadCustomElementsDefine('sp-close', IconClose);
 

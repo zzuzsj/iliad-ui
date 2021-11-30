@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconTabletMac } from '../src/elements/TabletMac.js';
+import { IconTabletMac } from '../src/elements/IconTabletMac.js';
 
 iliadCustomElementsDefine('sp-tablet-mac', IconTabletMac);
 

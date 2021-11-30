@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconOpenFull } from '../src/elements/OpenFull.js';
+import { IconOpenFull } from '../src/elements/IconOpenFull.js';
 
 iliadCustomElementsDefine('sp-open-full', IconOpenFull);
 

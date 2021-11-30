@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconKeyline } from '../src/elements/Keyline.js';
+import { IconKeyline } from '../src/elements/IconKeyline.js';
 
 iliadCustomElementsDefine('sp-Keyline', IconKeyline);
 

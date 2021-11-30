@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconContacts } from '../src/elements/Contacts.js';
+import { IconContacts } from '../src/elements/IconContacts.js';
 
 iliadCustomElementsDefine('sp-contacts', IconContacts);
 
