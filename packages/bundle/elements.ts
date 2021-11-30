@@ -39,6 +39,7 @@ import '@iliad-ui/field-label/sp-field-label.js';
 import '@iliad-ui/icon/sp-icon.js';
 import '@iliad-ui/icons/sp-icons-large.js';
 import '@iliad-ui/icons/sp-icons-medium.js';
+import '@iliad-ui/icons/sp-icons-editor.js';
 import '@iliad-ui/illustrated-message/sp-illustrated-message.js';
 import '@iliad-ui/link/sp-link.js';
 import '@iliad-ui/menu/sp-menu.js';
