@@ -53,11 +53,6 @@ const spectrumIconsPath = path.resolve(
 );
 
 // define the target icon sizes for each scale
-const scales = {
-    medium: { width: 18, height: 18 },
-    large: { width: 24, height: 24 },
-};
-
 const processIconsList = [
     {
         name: 'medium',

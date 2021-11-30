@@ -23,7 +23,7 @@ import iconsSVG from './icons-editor.svg.js';
 export class IconsEditor extends IconsetSVG {
     public constructor() {
         super();
-        this.name = 'ui'; // default iconset name for these icons
+        this.name = 'editor'; // default iconset name for these icons
     }
 
     protected renderDefaultContent(): TemplateResult {
