@@ -17,7 +17,7 @@ import { CommandIcon } from '../icons/Command.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-command
+ * @element sp-icon-command
  */
 export class IconCommand extends IconBase {
     protected render(): TemplateResult {

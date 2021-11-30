@@ -17,7 +17,7 @@ import { FormatIndentIncreaseIcon } from '../icons/FormatIndentIncrease.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-format-indent-increase
+ * @element sp-icon-format-indent-increase
  */
 export class IconFormatIndentIncrease extends IconBase {
     protected render(): TemplateResult {

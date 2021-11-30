@@ -17,7 +17,7 @@ import { AddIcon } from '../icons/Add.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-add
+ * @element sp-icon-add
  */
 export class IconAdd extends IconBase {
     protected render(): TemplateResult {

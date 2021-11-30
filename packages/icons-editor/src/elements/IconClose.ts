@@ -17,7 +17,7 @@ import { CloseIcon } from '../icons/Close.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-close
+ * @element sp-icon-close
  */
 export class IconClose extends IconBase {
     protected render(): TemplateResult {

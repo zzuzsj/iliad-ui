@@ -17,7 +17,7 @@ import { ImageIcon } from '../icons/Image.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-image
+ * @element sp-icon-image
  */
 export class IconImage extends IconBase {
     protected render(): TemplateResult {

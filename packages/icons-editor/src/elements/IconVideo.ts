@@ -17,7 +17,7 @@ import { VideoIcon } from '../icons/Video.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-video
+ * @element sp-icon-video
  */
 export class IconVideo extends IconBase {
     protected render(): TemplateResult {

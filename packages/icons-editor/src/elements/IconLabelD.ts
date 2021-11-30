@@ -17,7 +17,7 @@ import { LabelDIcon } from '../icons/LabelD.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-label-d
+ * @element sp-icon-label-d
  */
 export class IconLabelD extends IconBase {
     protected render(): TemplateResult {

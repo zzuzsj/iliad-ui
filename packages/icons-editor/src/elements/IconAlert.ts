@@ -17,7 +17,7 @@ import { AlertIcon } from '../icons/Alert.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-alert
+ * @element sp-icon-alert
  */
 export class IconAlert extends IconBase {
     protected render(): TemplateResult {

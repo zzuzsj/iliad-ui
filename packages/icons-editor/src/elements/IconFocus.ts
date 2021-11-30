@@ -17,7 +17,7 @@ import { FocusIcon } from '../icons/Focus.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-focus
+ * @element sp-icon-focus
  */
 export class IconFocus extends IconBase {
     protected render(): TemplateResult {

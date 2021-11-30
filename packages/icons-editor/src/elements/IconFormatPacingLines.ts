@@ -17,7 +17,7 @@ import { FormatPacingLinesIcon } from '../icons/FormatPacingLines.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-format-pacing-lines
+ * @element sp-icon-format-pacing-lines
  */
 export class IconFormatPacingLines extends IconBase {
     protected render(): TemplateResult {

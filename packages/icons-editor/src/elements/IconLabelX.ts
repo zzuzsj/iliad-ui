@@ -17,7 +17,7 @@ import { LabelXIcon } from '../icons/LabelX.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-label-x
+ * @element sp-icon-label-x
  */
 export class IconLabelX extends IconBase {
     protected render(): TemplateResult {

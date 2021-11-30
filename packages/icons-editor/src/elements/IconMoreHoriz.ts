@@ -17,7 +17,7 @@ import { MoreHorizIcon } from '../icons/MoreHoriz.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-more-horiz
+ * @element sp-icon-more-horiz
  */
 export class IconMoreHoriz extends IconBase {
     protected render(): TemplateResult {

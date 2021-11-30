@@ -17,7 +17,7 @@ import { LockedIcon } from '../icons/Locked.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-locked
+ * @element sp-icon-locked
  */
 export class IconLocked extends IconBase {
     protected render(): TemplateResult {

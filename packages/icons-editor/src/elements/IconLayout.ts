@@ -17,7 +17,7 @@ import { LayoutIcon } from '../icons/Layout.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-layout
+ * @element sp-icon-layout
  */
 export class IconLayout extends IconBase {
     protected render(): TemplateResult {

@@ -17,7 +17,7 @@ import { MenuIcon } from '../icons/Menu.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-menu
+ * @element sp-icon-menu
  */
 export class IconMenu extends IconBase {
     protected render(): TemplateResult {

@@ -17,7 +17,7 @@ import { UnlockedIcon } from '../icons/Unlocked.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-unlocked
+ * @element sp-icon-unlocked
  */
 export class IconUnlocked extends IconBase {
     protected render(): TemplateResult {

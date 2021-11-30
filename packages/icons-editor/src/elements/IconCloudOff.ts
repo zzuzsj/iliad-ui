@@ -17,7 +17,7 @@ import { CloudOffIcon } from '../icons/CloudOff.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-cloud-off
+ * @element sp-icon-cloud-off
  */
 export class IconCloudOff extends IconBase {
     protected render(): TemplateResult {

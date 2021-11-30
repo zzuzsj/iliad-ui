@@ -17,7 +17,7 @@ import { TextUnderlineIcon } from '../icons/TextUnderline.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-text-underline
+ * @element sp-icon-text-underline
  */
 export class IconTextUnderline extends IconBase {
     protected render(): TemplateResult {

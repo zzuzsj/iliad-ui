@@ -17,7 +17,7 @@ import { NoneIcon } from '../icons/None.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-none
+ * @element sp-icon-none
  */
 export class IconNone extends IconBase {
     protected render(): TemplateResult {

@@ -17,7 +17,7 @@ import { ContactsIcon } from '../icons/Contacts.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-contacts
+ * @element sp-icon-contacts
  */
 export class IconContacts extends IconBase {
     protected render(): TemplateResult {

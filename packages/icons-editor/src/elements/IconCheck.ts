@@ -17,7 +17,7 @@ import { CheckIcon } from '../icons/Check.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-check
+ * @element sp-icon-check
  */
 export class IconCheck extends IconBase {
     protected render(): TemplateResult {

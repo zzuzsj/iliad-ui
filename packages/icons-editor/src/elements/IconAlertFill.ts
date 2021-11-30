@@ -17,7 +17,7 @@ import { AlertFillIcon } from '../icons/AlertFill.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-alert-fill
+ * @element sp-icon-alert-fill
  */
 export class IconAlertFill extends IconBase {
     protected render(): TemplateResult {

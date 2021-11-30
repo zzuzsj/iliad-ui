@@ -17,7 +17,7 @@ import { AnimationIcon } from '../icons/Animation.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-animation
+ * @element sp-icon-animation
  */
 export class IconAnimation extends IconBase {
     protected render(): TemplateResult {

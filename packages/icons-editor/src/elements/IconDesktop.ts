@@ -17,7 +17,7 @@ import { DesktopIcon } from '../icons/Desktop.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-desktop
+ * @element sp-icon-desktop
  */
 export class IconDesktop extends IconBase {
     protected render(): TemplateResult {

@@ -17,7 +17,7 @@ import { HelpIcon } from '../icons/Help.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-help
+ * @element sp-icon-help
  */
 export class IconHelp extends IconBase {
     protected render(): TemplateResult {

@@ -17,7 +17,7 @@ import { TextBoldIcon } from '../icons/TextBold.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-text-bold
+ * @element sp-icon-text-bold
  */
 export class IconTextBold extends IconBase {
     protected render(): TemplateResult {

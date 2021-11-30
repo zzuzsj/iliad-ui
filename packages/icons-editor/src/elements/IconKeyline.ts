@@ -17,7 +17,7 @@ import { KeylineIcon } from '../icons/Keyline.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-Keyline
+ * @element sp-icon-Keyline
  */
 export class IconKeyline extends IconBase {
     protected render(): TemplateResult {

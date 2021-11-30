@@ -17,7 +17,7 @@ import { SmartphoneIcon } from '../icons/Smartphone.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-smartphone
+ * @element sp-icon-smartphone
  */
 export class IconSmartphone extends IconBase {
     protected render(): TemplateResult {

@@ -17,7 +17,7 @@ import { FormatJustifiedIcon } from '../icons/FormatJustified.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-format-justified
+ * @element sp-icon-format-justified
  */
 export class IconFormatJustified extends IconBase {
     protected render(): TemplateResult {

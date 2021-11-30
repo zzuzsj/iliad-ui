@@ -17,7 +17,7 @@ import { OpenFullIcon } from '../icons/OpenFull.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-open-full
+ * @element sp-icon-open-full
  */
 export class IconOpenFull extends IconBase {
     protected render(): TemplateResult {

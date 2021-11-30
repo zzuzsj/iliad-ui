@@ -17,7 +17,7 @@ import { CornerIcon } from '../icons/Corner.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-corner
+ * @element sp-icon-corner
  */
 export class IconCorner extends IconBase {
     protected render(): TemplateResult {

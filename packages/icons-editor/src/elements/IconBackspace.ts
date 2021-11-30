@@ -17,7 +17,7 @@ import { BackspaceIcon } from '../icons/Backspace.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-backspace
+ * @element sp-icon-backspace
  */
 export class IconBackspace extends IconBase {
     protected render(): TemplateResult {

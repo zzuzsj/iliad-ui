@@ -17,7 +17,7 @@ import { TuneIcon } from '../icons/Tune.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-tune
+ * @element sp-icon-tune
  */
 export class IconTune extends IconBase {
     protected render(): TemplateResult {

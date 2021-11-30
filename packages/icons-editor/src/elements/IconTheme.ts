@@ -17,7 +17,7 @@ import { ThemeIcon } from '../icons/Theme.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-theme
+ * @element sp-icon-theme
  */
 export class IconTheme extends IconBase {
     protected render(): TemplateResult {

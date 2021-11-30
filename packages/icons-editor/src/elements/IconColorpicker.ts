@@ -17,7 +17,7 @@ import { ColorpickerIcon } from '../icons/Colorpicker.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-colorpicker
+ * @element sp-icon-colorpicker
  */
 export class IconColorpicker extends IconBase {
     protected render(): TemplateResult {

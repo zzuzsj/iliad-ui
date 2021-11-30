@@ -17,7 +17,7 @@ import { TextScaleIcon } from '../icons/TextScale.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-text-scale
+ * @element sp-icon-text-scale
  */
 export class IconTextScale extends IconBase {
     protected render(): TemplateResult {

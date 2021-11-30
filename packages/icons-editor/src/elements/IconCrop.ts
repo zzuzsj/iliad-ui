@@ -17,7 +17,7 @@ import { CropIcon } from '../icons/Crop.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-crop
+ * @element sp-icon-crop
  */
 export class IconCrop extends IconBase {
     protected render(): TemplateResult {

@@ -17,7 +17,7 @@ import { ParagraphIcon } from '../icons/Paragraph.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-paragraph
+ * @element sp-icon-paragraph
  */
 export class IconParagraph extends IconBase {
     protected render(): TemplateResult {

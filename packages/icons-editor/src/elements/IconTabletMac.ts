@@ -17,7 +17,7 @@ import { TabletMacIcon } from '../icons/TabletMac.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-tablet-mac
+ * @element sp-icon-tablet-mac
  */
 export class IconTabletMac extends IconBase {
     protected render(): TemplateResult {

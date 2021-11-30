@@ -17,7 +17,7 @@ import { HomeIcon } from '../icons/Home.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-home
+ * @element sp-icon-home
  */
 export class IconHome extends IconBase {
     protected render(): TemplateResult {

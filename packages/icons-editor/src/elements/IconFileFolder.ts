@@ -17,7 +17,7 @@ import { FileFolderIcon } from '../icons/FileFolder.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-file-folder
+ * @element sp-icon-file-folder
  */
 export class IconFileFolder extends IconBase {
     protected render(): TemplateResult {

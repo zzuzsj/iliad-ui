@@ -17,7 +17,7 @@ import { ArrowRightIcon } from '../icons/ArrowRight.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-arrow-right
+ * @element sp-icon-arrow-right
  */
 export class IconArrowRight extends IconBase {
     protected render(): TemplateResult {

@@ -17,7 +17,7 @@ import { PageFooterIcon } from '../icons/PageFooter.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-page-footer
+ * @element sp-icon-page-footer
  */
 export class IconPageFooter extends IconBase {
     protected render(): TemplateResult {

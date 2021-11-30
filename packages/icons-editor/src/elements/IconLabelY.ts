@@ -17,7 +17,7 @@ import { LabelYIcon } from '../icons/LabelY.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-label-y
+ * @element sp-icon-label-y
  */
 export class IconLabelY extends IconBase {
     protected render(): TemplateResult {

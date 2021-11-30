@@ -17,7 +17,7 @@ import { UndoIcon } from '../icons/Undo.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-undo
+ * @element sp-icon-undo
  */
 export class IconUndo extends IconBase {
     protected render(): TemplateResult {

@@ -17,7 +17,7 @@ import { AlignHorizMiddleIcon } from '../icons/AlignHorizMiddle.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-align-horiz-middle
+ * @element sp-icon-align-horiz-middle
  */
 export class IconAlignHorizMiddle extends IconBase {
     protected render(): TemplateResult {

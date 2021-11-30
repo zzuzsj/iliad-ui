@@ -17,7 +17,7 @@ import { ContainerIcon } from '../icons/Container.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-container
+ * @element sp-icon-container
  */
 export class IconContainer extends IconBase {
     protected render(): TemplateResult {

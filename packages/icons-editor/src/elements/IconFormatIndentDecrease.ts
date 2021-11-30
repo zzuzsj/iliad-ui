@@ -17,7 +17,7 @@ import { FormatIndentDecreaseIcon } from '../icons/FormatIndentDecrease.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-format-indent-decrease
+ * @element sp-icon-format-indent-decrease
  */
 export class IconFormatIndentDecrease extends IconBase {
     protected render(): TemplateResult {

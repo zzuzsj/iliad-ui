@@ -17,7 +17,7 @@ import { AlignVertLeftIcon } from '../icons/AlignVertLeft.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-align-vert-left
+ * @element sp-icon-align-vert-left
  */
 export class IconAlignVertLeft extends IconBase {
     protected render(): TemplateResult {

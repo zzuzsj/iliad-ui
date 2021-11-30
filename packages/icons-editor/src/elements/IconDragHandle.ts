@@ -17,7 +17,7 @@ import { DragHandleIcon } from '../icons/DragHandle.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-drag-handle
+ * @element sp-icon-drag-handle
  */
 export class IconDragHandle extends IconBase {
     protected render(): TemplateResult {

@@ -17,7 +17,7 @@ import { CornerRadiusBottomLeftIcon } from '../icons/CornerRadiusBottomLeft.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-corner-radius-bottom-left
+ * @element sp-icon-corner-radius-bottom-left
  */
 export class IconCornerRadiusBottomLeft extends IconBase {
     protected render(): TemplateResult {

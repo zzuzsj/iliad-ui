@@ -17,7 +17,7 @@ import { LayersIcon } from '../icons/Layers.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-layers
+ * @element sp-icon-layers
  */
 export class IconLayers extends IconBase {
     protected render(): TemplateResult {

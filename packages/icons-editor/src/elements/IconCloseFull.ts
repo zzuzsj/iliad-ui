@@ -17,7 +17,7 @@ import { CloseFullIcon } from '../icons/CloseFull.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-close-full
+ * @element sp-icon-close-full
  */
 export class IconCloseFull extends IconBase {
     protected render(): TemplateResult {

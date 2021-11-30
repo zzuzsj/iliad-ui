@@ -17,7 +17,7 @@ import { SettingsIcon } from '../icons/Settings.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-settings
+ * @element sp-icon-settings
  */
 export class IconSettings extends IconBase {
     protected render(): TemplateResult {

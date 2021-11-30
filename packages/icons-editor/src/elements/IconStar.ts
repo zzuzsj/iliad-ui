@@ -17,7 +17,7 @@ import { StarIcon } from '../icons/Star.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-star
+ * @element sp-icon-star
  */
 export class IconStar extends IconBase {
     protected render(): TemplateResult {

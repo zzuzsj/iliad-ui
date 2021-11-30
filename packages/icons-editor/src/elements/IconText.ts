@@ -17,7 +17,7 @@ import { TextIcon } from '../icons/Text.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-text
+ * @element sp-icon-text
  */
 export class IconText extends IconBase {
     protected render(): TemplateResult {

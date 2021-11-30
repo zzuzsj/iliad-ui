@@ -17,7 +17,7 @@ import { AlignHorizTopIcon } from '../icons/AlignHorizTop.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-align-horiz-top
+ * @element sp-icon-align-horiz-top
  */
 export class IconAlignHorizTop extends IconBase {
     protected render(): TemplateResult {

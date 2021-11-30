@@ -17,7 +17,7 @@ import { FormatRightIcon } from '../icons/FormatRight.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-format-right
+ * @element sp-icon-format-right
  */
 export class IconFormatRight extends IconBase {
     protected render(): TemplateResult {

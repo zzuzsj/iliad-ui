@@ -17,7 +17,7 @@ import { RemoveIcon } from '../icons/Remove.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-remove
+ * @element sp-icon-remove
  */
 export class IconRemove extends IconBase {
     protected render(): TemplateResult {

@@ -17,7 +17,7 @@ import { PagesIcon } from '../icons/Pages.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-pages
+ * @element sp-icon-pages
  */
 export class IconPages extends IconBase {
     protected render(): TemplateResult {

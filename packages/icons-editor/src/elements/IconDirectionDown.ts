@@ -17,7 +17,7 @@ import { DirectionDownIcon } from '../icons/DirectionDown.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-direction-down
+ * @element sp-icon-direction-down
  */
 export class IconDirectionDown extends IconBase {
     protected render(): TemplateResult {

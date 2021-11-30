@@ -17,7 +17,7 @@ import { QrCodeIcon } from '../icons/QrCode.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-qr-code
+ * @element sp-icon-qr-code
  */
 export class IconQrCode extends IconBase {
     protected render(): TemplateResult {

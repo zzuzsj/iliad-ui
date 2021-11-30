@@ -17,7 +17,7 @@ import { EyeOffIcon } from '../icons/EyeOff.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-eye-off
+ * @element sp-icon-eye-off
  */
 export class IconEyeOff extends IconBase {
     protected render(): TemplateResult {

@@ -17,7 +17,7 @@ import { DirectionLeftIcon } from '../icons/DirectionLeft.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-direction-left
+ * @element sp-icon-direction-left
  */
 export class IconDirectionLeft extends IconBase {
     protected render(): TemplateResult {

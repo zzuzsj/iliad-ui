@@ -17,7 +17,7 @@ import { LinkIcon } from '../icons/Link.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-link
+ * @element sp-icon-link
  */
 export class IconLink extends IconBase {
     protected render(): TemplateResult {

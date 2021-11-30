@@ -17,7 +17,7 @@ import { ShiftIcon } from '../icons/Shift.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-shift
+ * @element sp-icon-shift
  */
 export class IconShift extends IconBase {
     protected render(): TemplateResult {

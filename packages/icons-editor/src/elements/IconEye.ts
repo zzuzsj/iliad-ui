@@ -17,7 +17,7 @@ import { EyeIcon } from '../icons/Eye.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-eye
+ * @element sp-icon-eye
  */
 export class IconEye extends IconBase {
     protected render(): TemplateResult {

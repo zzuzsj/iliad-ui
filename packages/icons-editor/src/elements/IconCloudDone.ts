@@ -17,7 +17,7 @@ import { CloudDoneIcon } from '../icons/CloudDone.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-cloud-done
+ * @element sp-icon-cloud-done
  */
 export class IconCloudDone extends IconBase {
     protected render(): TemplateResult {

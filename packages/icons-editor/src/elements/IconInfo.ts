@@ -17,7 +17,7 @@ import { InfoIcon } from '../icons/Info.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-info
+ * @element sp-icon-info
  */
 export class IconInfo extends IconBase {
     protected render(): TemplateResult {

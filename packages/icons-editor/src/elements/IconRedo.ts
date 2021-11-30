@@ -17,7 +17,7 @@ import { RedoIcon } from '../icons/Redo.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-redo
+ * @element sp-icon-redo
  */
 export class IconRedo extends IconBase {
     protected render(): TemplateResult {
