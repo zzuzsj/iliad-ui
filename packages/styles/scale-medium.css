@@ -10,6 +10,7 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
+
 /* stylelint-disable */
 :host,
 :root {
@@ -1942,5 +1943,4 @@ governing permissions and limitations under the License.
     --spectrum-tooltip-padding-bottom: 5px;
     --spectrum-tooltip-positive-padding-bottom: 5px;
 }
-
 /* stylelint-enable */

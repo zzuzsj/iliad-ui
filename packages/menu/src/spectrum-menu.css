@@ -83,13 +83,13 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
     display: inline-block; /* .spectrum-Menu */
     list-style-type: none;
     margin-bottom: var(
-        --spectrum-menu-margin-y,
+        --spectrum-popover-padding-y,
         var(--spectrum-global-dimension-size-50)
     );
     margin-left: 0;
     margin-right: 0;
     margin-top: var(
-        --spectrum-menu-margin-y,
+        --spectrum-popover-padding-y,
         var(--spectrum-global-dimension-size-50)
     );
     overflow: auto;
