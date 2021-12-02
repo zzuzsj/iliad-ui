@@ -52,6 +52,7 @@ import '@iliad-ui/overlay/active-overlay.js';
 import '@iliad-ui/overlay/overlay-trigger.js';
 import '@iliad-ui/picker/sp-picker.js';
 import '@iliad-ui/popover/sp-popover.js';
+import '@iliad-ui/popover/sp-panel.js';
 import '@iliad-ui/progress-bar/sp-progress-bar.js';
 import '@iliad-ui/progress-circle/sp-progress-circle.js';
 import '@iliad-ui/quick-actions/sp-quick-actions.js';

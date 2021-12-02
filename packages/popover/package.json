@@ -24,7 +24,9 @@
         "./src/*": "./src/*",
         "./package.json": "./package.json",
         "./sp-popover": "./sp-popover.js",
-        "./sp-popover.js": "./sp-popover.js"
+        "./sp-popover.js": "./sp-popover.js",
+        "./sp-panel": "./sp-panel.js",
+        "./sp-panel.js": "./sp-panel.js"
     },
     "scripts": {
         "test": "echo \"Error: run tests from mono-repo root.\" && exit 1"
