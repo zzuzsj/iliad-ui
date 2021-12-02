@@ -2,6 +2,7 @@
 
 /*
 Copyright 2020 Adobe. All rights reserved.
+Copyright 2021 Gaoding. All rights reserved.
 This file is licensed to you under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License. You may obtain a copy
 of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -12,6 +13,7 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
+/* eslint-disable */
 import path from 'path';
 import fs from 'fs-extra';
 import postcss from 'postcss';
@@ -113,33 +115,34 @@ const scales = ['medium', 'large'];
 const cores = ['global'];
 const processes = [];
 
-themes.forEach(async (theme) => {
-    const srcPath = path.join(spectrumPath, `spectrum-${theme}.css`);
-    const dstPath = path.resolve(
-        path.join(__dirname, '..', 'packages', 'styles', `theme-${theme}.css`)
-    );
+// theme scale 和 core的变量不再从@spectrum-css输出 由scss产出，后续font系列也是这样
+// themes.forEach(async (theme) => {
+//     const srcPath = path.join(spectrumPath, `spectrum-${theme}.css`);
+//     const dstPath = path.resolve(
+//         path.join(__dirname, '..', 'packages', 'styles', `theme-${theme}.css`)
+//     );
 
-    console.log(`processing theme ${srcPath}`);
-    processes.push(await processCSS(srcPath, dstPath, theme));
-});
+//     console.log(`processing theme ${srcPath}`);
+//     processes.push(await processCSS(srcPath, dstPath, theme));
+// });
 
-scales.forEach(async (scale) => {
-    const srcPath = path.join(spectrumPath, `spectrum-${scale}.css`);
-    const dstPath = path.resolve(
-        path.join(__dirname, '..', 'packages', 'styles', `scale-${scale}.css`)
-    );
-    console.log(`processing scale  ${srcPath}`);
-    processes.push(await processCSS(srcPath, dstPath, scale));
-});
+// scales.forEach(async (scale) => {
+//     const srcPath = path.join(spectrumPath, `spectrum-${scale}.css`);
+//     const dstPath = path.resolve(
+//         path.join(__dirname, '..', 'packages', 'styles', `scale-${scale}.css`)
+//     );
+//     console.log(`processing scale  ${srcPath}`);
+//     processes.push(await processCSS(srcPath, dstPath, scale));
+// });
 
-cores.forEach(async (core) => {
-    const srcPath = path.join(spectrumPath, `spectrum-${core}.css`);
-    const dstPath = path.resolve(
-        path.join(__dirname, '..', 'packages', 'styles', `core-${core}.css`)
-    );
-    console.log(`processing core ${srcPath}`);
-    processes.push(await processCSS(srcPath, dstPath, core));
-});
+// cores.forEach(async (core) => {
+//     const srcPath = path.join(spectrumPath, `spectrum-${core}.css`);
+//     const dstPath = path.resolve(
+//         path.join(__dirname, '..', 'packages', 'styles', `core-${core}.css`)
+//     );
+//     console.log(`processing core ${srcPath}`);
+//     processes.push(await processCSS(srcPath, dstPath, core));
+// });
 
 (async () => {
     {
@@ -213,3 +216,4 @@ cores.forEach(async (core) => {
         console.log('complete.');
     });
 })();
+/* eslint-disable */

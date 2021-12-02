@@ -57,16 +57,17 @@ async function processComponent(componentPath) {
     );
     console.log(chalk.bold.green(`- ${spectrumConfig.spectrum}`));
     return Promise.all(
+        // @spectrum-css 过来的css样式文件增加swc后缀，不再覆盖现有css样式
         spectrumConfig.components.map(async (component) => {
             const outputCssPath = path.join(
                 componentPath,
-                `spectrum-${component.name}.css`
+                `spectrum-${component.name}.swc.css`
             );
             const outputJsonPath = path.join(
                 componentPath,
                 `spectrum-vars.json`
             );
-            const outputVarCssPath = path.join(componentPath, 'vars.css');
+            const outputVarCssPath = path.join(componentPath, 'vars.swc.css');
             // 从@spectrum-css的vars.css生成组件库vars.css 单独维护，两者解绑
             const outputCss = await postcss([
                 ...(packageCss ? postCSSPlugins() : []),
