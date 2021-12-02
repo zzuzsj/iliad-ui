@@ -23,6 +23,7 @@ import postcssSpectrumPlugin from './process-spectrum-postcss-plugin.js';
 import reporter from 'postcss-reporter';
 import postcssCustomProperties from 'postcss-custom-properties';
 import { fileURLToPath, pathToFileURL } from 'url';
+import postcssRemove from './postcss-remove-declaration-plugins.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -65,6 +66,8 @@ async function processComponent(componentPath) {
                 componentPath,
                 `spectrum-vars.json`
             );
+            const outputVarCssPath = path.join(componentPath, 'vars.css');
+            // 从@spectrum-css的vars.css生成组件库vars.css 单独维护，两者解绑
             const outputCss = await postcss([
                 ...(packageCss ? postCSSPlugins() : []),
                 postcssSpectrumPlugin({ component }),
@@ -75,12 +78,28 @@ async function processComponent(componentPath) {
             });
             const srcPath = `node_modules/@spectrum-css/${spectrumConfig.spectrum}/dist/vars.css`;
             await postcss([
+                // 去除所有的无效变量 比如值为undifined的变量
+                postcssRemove({
+                    remove: {
+                        ':root': {
+                            '*': 'undefined',
+                        },
+                    },
+                }),
                 postcssCustomProperties({
-                    exportTo: [outputJsonPath],
+                    exportTo: [outputJsonPath, outputVarCssPath],
                 }),
             ]).process(inputCustomProperties, {
                 from: srcPath,
             });
+            const cssVars = await fs.readFile(outputVarCssPath, 'utf8');
+            await fs.writeFile(
+                outputVarCssPath,
+                cssVars.replace(':root {', ':host {'),
+                {
+                    encoding: 'utf8',
+                }
+            );
             console.log(chalk.bold.green(`  o ${component.name}`));
             // await fs.writeFile(outputJsonPath, outputJson, { encoding: 'utf8' });
             return fs.writeFile(outputCssPath, outputCss.css, {

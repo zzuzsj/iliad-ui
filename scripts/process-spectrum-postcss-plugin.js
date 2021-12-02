@@ -578,11 +578,11 @@ class SpectrumProcessor {
         this.root = root;
         this.result = result;
 
-        const comment = postcss.comment({ text: this.headerText });
         this.result.root = postcss.root({
             nodes: [
                 postcss.comment({ text: ' stylelint-disable ' }),
                 postcss.comment({ text: this.headerText }),
+                postcss.atRule({ name: 'import', params: '"./vars.css"' }),
             ],
         });
 
@@ -764,7 +764,8 @@ class SpectrumProcessor {
                 encoding: 'utf8',
             });
             licenseText = licenseText.split('\n').slice(1, -2).join('\n');
-            this._headerText = ` \n${licenseText}\n\nTHIS FILE IS MACHINE GENERATED. DO NOT EDIT `;
+            // spectrum-*.css不再作为机器代码 与spectrum-css剥离
+            this._headerText = ` \n${licenseText}\n\n`;
         }
         return this._headerText;
     }
