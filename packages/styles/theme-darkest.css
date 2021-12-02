@@ -10,12 +10,11 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
-
 /* stylelint-disable */
 :host,
 :root {
     --spectrum-global-color-status: Verified;
-    --spectrum-global-color-version: 5.1;
+    --spectrum-global-color-version: 5.3;
     --spectrum-global-color-celery-400: #3da74e;
     --spectrum-global-color-celery-500: #44b556;
     --spectrum-global-color-celery-600: #4bc35f;
@@ -147,4 +146,5 @@ governing permissions and limitations under the License.
     --spectrum-well-background-color: rgba(200, 200, 200, 0.02);
     --spectrum-well-border-color: rgba(239, 239, 239, 0.05);
 }
+
 /* stylelint-enable */

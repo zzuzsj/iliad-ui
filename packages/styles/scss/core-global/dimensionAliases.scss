@@ -407,29 +407,21 @@ governing permissions and limitations under the License.
     --spectrum-alias-avatar-size-700: var(--spectrum-global-dimension-size-500);
 
     // Part Space
-    --spectrum-alias-space-none: var(--spectrum-global-dimension-size-0);
-    --spectrum-alias-space-extra-tight: var(
-        --spectrum-global-dimension-size-50
-    );
-    --spectrum-alias-space-tight: var(--spectrum-global-dimension-size-100);
-    --spectrum-alias-space-base-tight: var(
-        --spectrum-global-dimension-size-150
-    );
-    --spectrum-alias-space-base: var(--spectrum-global-dimension-size-200);
-    --spectrum-alias-space-base-loose: var(
-        --spectrum-global-dimension-size-300
-    );
-    --spectrum-alias-space-loose: var(--spectrum-global-dimension-size-400);
-    --spectrum-alias-space-extra-loose: var(
-        --spectrum-global-dimension-size-500
-    );
+    --spectrum-alias-space-0: var(--spectrum-global-dimension-size-0);
+    --spectrum-alias-space-50: var(--spectrum-global-dimension-size-50);
+    --spectrum-alias-space-100: var(--spectrum-global-dimension-size-100);
+    --spectrum-alias-space-150: var(--spectrum-global-dimension-size-150);
+    --spectrum-alias-space-200: var(--spectrum-global-dimension-size-200);
+    --spectrum-alias-space-300: var(--spectrum-global-dimension-size-300);
+    --spectrum-alias-space-400: var(--spectrum-global-dimension-size-400);
+    --spectrum-alias-space-500: var(--spectrum-global-dimension-size-500);
 
     // Part Padding
-    --spectrum-alias-padding-none: 0;
-    --spectrum-alias-padding-s: var(--spectrum-alias-space-extra-tight);
-    --spectrum-alias-padding-m: var(--spectrum-alias-space-tight);
-    --spectrum-alias-padding-l: var(--spectrum-alias-space-base-tight);
-    --spectrum-alias-padding-xl: var(--spectrum-alias-space-extra);
+    --spectrum-alias-padding-none: var(--spectrum-alias-space-0); //0
+    --spectrum-alias-padding-s: var(--spectrum-alias-space-50); // 4
+    --spectrum-alias-padding-m: var(--spectrum-alias-space-100); // 8
+    --spectrum-alias-padding-l: var(--spectrum-alias-space-150); // 12
+    --spectrum-alias-padding-xl: var(--spectrum-alias-space-200); // 16
 
     // Part Control Height
     --spectrum-alias-control-height-s: var(
@@ -439,10 +431,10 @@ governing permissions and limitations under the License.
         --spectrum-global-dimension-size-400
     );
     --spectrum-alias-control-height-l: var(
-        --spectrum-global-dimension-size-450
+        --spectrum-global-dimension-size-500
     );
     --spectrum-alias-control-height-xl: var(
-        --spectrum-global-dimension-size-500
+        --spectrum-global-dimension-size-600
     );
 
     // # Part IconSize

@@ -51,8 +51,8 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
 }
 :host {
     border-radius: var(
-        --spectrum-alias-border-radius-regular,
-        var(--spectrum-global-dimension-size-50)
+        --spectrum-alias-border-radius-medium,
+        var(--spectrum-global-dimension-size-100)
     );
     display: inline-flex; /* .spectrum-Stepper */
     flex-direction: row;
