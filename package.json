@@ -41,7 +41,7 @@
         "docs:ts": "tsc --build documentation/tsconfig.json",
         "get-ready": "yarn build:clear-cache && run-p process-icons && yarn build:clean",
         "icons": "node ./scripts/process-icons.js && pretty-quick --pattern \"packages/**/*.svg.ts\"",
-        "icons:editor": "lerna run --scope @iliad-ui/icons-editor build:clean",
+        "icons:editor": "lerna run --scope @iliad-ui/icons-editor build:clean && yarn icons",
         "icons:ui": "lerna run --scope @iliad-ui/icons-ui build",
         "icons:workflow": "lerna run --scope @iliad-ui/icons-workflow build",
         "lerna-publish": "lerna publish --message \"chore: release new versions\"",

@@ -27,8 +27,8 @@ import {
 import '@iliad-ui/action-button/sp-action-button.js';
 import '@iliad-ui/button/sp-button.js';
 import '@iliad-ui/button-group/sp-button-group.js';
-import '@iliad-ui/icons-editor/icons/sp-icon-close.js';
-import '@iliad-ui/icons-editor/icons/sp-icon-arrow-left.js';
+import '@iliad-ui/icons-editor/icons/sp-icon-editor-close.js';
+import '@iliad-ui/icons-editor/icons/sp-icon-editor-arrow-left.js';
 
 /**
  * @element sp-panel
@@ -140,10 +140,10 @@ export class Panel extends FocusVisiblePolyfillMixin(
                                   size="m"
                                   @click=${this.doBack}
                               >
-                                  <sp-icon-arrow-left
+                                  <sp-icon-editor-arrow-left
                                       class="back-icon"
                                       slot="icon"
-                                  ></sp-icon-arrow-left>
+                                  ></sp-icon-editor-arrow-left>
                               </sp-action-button>
                           `
                         : html``}
@@ -169,10 +169,10 @@ export class Panel extends FocusVisiblePolyfillMixin(
                                   size="m"
                                   @click=${this.doClose}
                               >
-                                  <sp-icon-close
+                                  <sp-icon-editor-close
                                       class="spectrum-UIIcon-Cross500"
                                       slot="icon"
-                                  ></sp-icon-close>
+                                  ></sp-icon-editor-close>
                               </sp-action-button>
                           `
                         : html``}
