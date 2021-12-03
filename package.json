@@ -39,7 +39,7 @@
         "docs:start": "yarn docs:analyze && run-p watch:css build:watch \"docs:ts -w\" docs:start:watch",
         "docs:start:watch": "node ./tasks/watch-documentation.js",
         "docs:ts": "tsc --build documentation/tsconfig.json",
-        "get-ready": "yarn build:clear-cache && run-p process-icons process-spectrum && yarn build:clean",
+        "get-ready": "yarn build:clear-cache && run-p process-icons && yarn build:clean",
         "icons": "node ./scripts/process-icons.js && pretty-quick --pattern \"packages/**/*.svg.ts\"",
         "icons:editor": "lerna run --scope @iliad-ui/icons-editor build:clean",
         "icons:ui": "lerna run --scope @iliad-ui/icons-ui build",
