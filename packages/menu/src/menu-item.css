@@ -16,8 +16,6 @@ governing permissions and limitations under the License.
 @import './spectrum-menu-item.css';
 @import './spectrum-itemLabel.css';
 
-/* override */
-
 /* var 赋值在menu.css中 */
 :host {
     border-radius: var(--spectrum-listitem-m-border-radius);
@@ -46,7 +44,6 @@ slot[name='value'] {
 :host([disabled]) slot[name='value'] {
     color: var(--spectrum-listitem-m-icon-color-disabled);
 }
-/* override */
 
 :host([hidden]) {
     display: none;

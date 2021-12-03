@@ -23,8 +23,8 @@ sp-field-button {
 
 :host([hide-stepper]) .input {
     border-radius: var(
-        --spectrum-alias-border-radius-regular,
-        var(--spectrum-global-dimension-size-50)
+        --spectrum-alias-border-radius-medium,
+        var(--spectrum-global-dimension-size-100)
     );
 }
 

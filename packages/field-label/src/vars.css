@@ -12,10 +12,10 @@ governing permissions and limitations under the License.
 */
 :host {
     --spectrum-fieldlabel-s-text-font-weight: var(
-        --spectrum-alias-body-text-font-weight
+        --spectrum-alias-font-weight-m
     );
     --spectrum-fieldlabel-s-text-line-height: var(
-        --spectrum-alias-component-text-line-height
+        --spectrum-global-font-line-height-medium
     );
     --spectrum-fieldlabel-s-text-size: var(
         --spectrum-global-dimension-font-size-75
@@ -26,17 +26,15 @@ governing permissions and limitations under the License.
     --spectrum-fieldlabel-s-asterisk-margin-y: var(
         --spectrum-global-dimension-size-50
     );
-    --spectrum-fieldlabel-s-padding-top: var(
-        --spectrum-global-dimension-size-50
-    );
+    --spectrum-fieldlabel-s-padding-top: var(--spectrum-alias-item-padding-s);
     --spectrum-fieldlabel-s-padding-bottom: var(
-        --spectrum-global-dimension-size-65
+        --spectrum-alias-item-padding-s
     );
     --spectrum-fieldlabel-m-text-font-weight: var(
-        --spectrum-alias-body-text-font-weight
+        --spectrum-alias-font-weight-m
     );
     --spectrum-fieldlabel-m-text-line-height: var(
-        --spectrum-alias-component-text-line-height
+        --spectrum-global-font-line-height-medium
     );
     --spectrum-fieldlabel-m-text-size: var(
         --spectrum-global-dimension-font-size-75
@@ -47,17 +45,13 @@ governing permissions and limitations under the License.
     --spectrum-fieldlabel-m-asterisk-margin-y: var(
         --spectrum-global-dimension-size-50
     );
-    --spectrum-fieldlabel-m-padding-top: var(
-        --spectrum-global-dimension-size-50
-    );
-    --spectrum-fieldlabel-m-padding-bottom: var(
-        --spectrum-global-dimension-size-65
-    );
+    --spectrum-fieldlabel-m-padding-top: var(--spectrum-alias-padding-m);
+    --spectrum-fieldlabel-m-padding-bottom: var(--spectrum-alias-padding-m);
     --spectrum-fieldlabel-l-text-font-weight: var(
-        --spectrum-alias-body-text-font-weight
+        --spectrum-alias-font-weight-m
     );
     --spectrum-fieldlabel-l-text-line-height: var(
-        --spectrum-alias-component-text-line-height
+        --spectrum-global-font-line-height-medium
     );
     --spectrum-fieldlabel-l-text-size: var(
         --spectrum-global-dimension-font-size-100
@@ -68,17 +62,15 @@ governing permissions and limitations under the License.
     --spectrum-fieldlabel-l-asterisk-margin-y: var(
         --spectrum-global-dimension-size-50
     );
-    --spectrum-fieldlabel-l-padding-top: var(
-        --spectrum-global-dimension-size-75
-    );
+    --spectrum-fieldlabel-l-padding-top: var(--spectrum-alias-item-padding-l);
     --spectrum-fieldlabel-l-padding-bottom: var(
-        --spectrum-global-dimension-size-115
+        --spectrum-alias-item-padding-l
     );
     --spectrum-fieldlabel-xl-text-font-weight: var(
-        --spectrum-alias-body-text-font-weight
+        --spectrum-alias-font-weight-m
     );
     --spectrum-fieldlabel-xl-text-line-height: var(
-        --spectrum-alias-component-text-line-height
+        --spectrum-global-font-line-height-medium
     );
     --spectrum-fieldlabel-xl-text-size: var(
         --spectrum-global-dimension-font-size-200
@@ -89,11 +81,9 @@ governing permissions and limitations under the License.
     --spectrum-fieldlabel-xl-asterisk-margin-y: var(
         --spectrum-global-dimension-size-50
     );
-    --spectrum-fieldlabel-xl-padding-top: var(
-        --spectrum-global-dimension-size-115
-    );
+    --spectrum-fieldlabel-xl-padding-top: var(--spectrum-alias-item-padding-xl);
     --spectrum-fieldlabel-xl-padding-bottom: var(
-        --spectrum-global-dimension-size-130
+        --spectrum-alias-item-padding-xl
     );
     --spectrum-fieldlabel-side-m-padding-right: var(
         --spectrum-global-dimension-size-150
@@ -104,14 +94,16 @@ governing permissions and limitations under the License.
     --spectrum-fieldlabel-side-m-asterisk-margin-y: var(
         --spectrum-global-dimension-size-50
     );
-    --spectrum-fieldlabel-m-text-color: var(--spectrum-alias-label-text-color);
+    --spectrum-fieldlabel-m-text-color: var(
+        --spectrum-alias-text-color-primary
+    );
     --spectrum-fieldlabel-m-text-color-disabled: var(
         --spectrum-alias-text-color-disabled
     );
     --spectrum-fieldlabel-m-asterisk-color-disabled: var(
-        --spectrum-alias-text-color-disabled
+        --spectrum-alias-icon-color-disabled
     );
     --spectrum-fieldlabel-m-asterisk-color: var(
-        --spectrum-global-color-gray-600
+        --spectrum-alias-icon-color-primary
     );
 }

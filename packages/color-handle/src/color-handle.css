@@ -13,38 +13,6 @@ governing permissions and limitations under the License.
 
 @import './spectrum-color-handle.css';
 
-/* override */
-:host {
-    --spectrum-colorhandle-size: var(--spectrum-global-dimension-size-200);
-    --spectrum-colorhandle-inner-border-size: var(
-        --spectrum-global-dimension-static-size-25
-    );
-    --spectrum-colorhandle-inner-border-color: var(
-        --spectrum-global-color-static-white
-    );
-    --spectrum-colorhandle-outer-box-shadow: var(
-        --spectrum-global-shadow-static-m
-    );
-    --spectrum-colorhandle-outer-border-size: var(
-        --spectrum-alias-border-size-m
-    );
-    --spectrum-colorhandle-outer-border-color: var(
-        --spectrum-alias-colorhandle-outer-border-color
-    );
-    --spectrum-colorhandle-inner-border-color-disabled: var(
-        --spectrum-global-color-gray-400
-    );
-    --spectrum-colorhandle-fill-color-disabled: var(
-        --spectrum-global-color-gray-300
-    );
-    --spectrum-colorhandle-focus-background-color: var(
-        --spectrum-global-color-static-primary-500;
-    );
-    --spectrum-colorhandle-focus-background-width: var(
-        --spectrum-global-color-static-primary-500;
-    );
-}
-
 :host {
     box-shadow: var(--spectrum-colorhandle-outer-box-shadow);
 }
@@ -62,7 +30,6 @@ governing permissions and limitations under the License.
     margin-top: calc(-1 * var(--spectrum-colorhandle-focus-width));
     margin-left: calc(-1 * var(--spectrum-colorhandle-focus-width));
 }
-/* override */
 
 :host {
     touch-action: none;

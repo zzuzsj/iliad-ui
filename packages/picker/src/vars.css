@@ -15,19 +15,19 @@ governing permissions and limitations under the License.
         --spectrum-global-font-family-base
     );
     --spectrum-picker-s-border-size: var(--spectrum-alias-border-size-thin);
-    --spectrum-picker-s-text-size: var(--spectrum-alias-item-text-size-s);
+    --spectrum-picker-s-text-size: var(--spectrum-alias-font-size-s);
     --spectrum-picker-s-icon-gap: var(
         --spectrum-alias-item-workflow-icon-gap-s
     );
-    --spectrum-picker-s-height: var(--spectrum-alias-item-height-s);
+    --spectrum-picker-s-height: var(--spectrum-alias-control-height-s);
     --spectrum-picker-s-placeholder-text-font-style: var(
-        --spectrum-global-font-style-italic
+        --spectrum-global-font-style-regular
     );
     --spectrum-picker-s-placeholder-text-font-weight: var(
-        --spectrum-global-font-weight-regular
+        --spectrum-alias-font-weight-m
     );
     --spectrum-picker-s-border-radius: var(
-        --spectrum-alias-border-radius-regular
+        --spectrum-alias-border-radius-medium
     );
     --spectrum-picker-s-width: var(--spectrum-global-dimension-size-2000);
     --spectrum-picker-s-min-width: var(--spectrum-global-dimension-size-450);
@@ -38,26 +38,22 @@ governing permissions and limitations under the License.
     --spectrum-picker-s-error-icon-margin-left: var(
         --spectrum-global-dimension-size-100
     );
-    --spectrum-picker-s-textonly-padding-left: var(
-        --spectrum-alias-item-padding-s
-    );
-    --spectrum-picker-s-textonly-padding-right: var(
-        --spectrum-alias-item-padding-s
-    );
+    --spectrum-picker-s-textonly-padding-left: var(--spectrum-alias-padding-s);
+    --spectrum-picker-s-textonly-padding-right: var(--spectrum-alias-padding-s);
     --spectrum-picker-m-border-size: var(--spectrum-alias-border-size-thin);
-    --spectrum-picker-m-text-size: var(--spectrum-alias-item-text-size-m);
-    --spectrum-picker-m-height: var(--spectrum-alias-item-height-m);
+    --spectrum-picker-m-text-size: var(--spectrum-alias-font-size-s);
+    --spectrum-picker-m-height: var(--spectrum-alias-control-height-m);
     --spectrum-picker-m-icon-gap: var(
         --spectrum-alias-item-workflow-icon-gap-m
     );
     --spectrum-picker-m-placeholder-text-font-style: var(
-        --spectrum-global-font-style-italic
+        --spectrum-global-font-style-regular
     );
     --spectrum-picker-m-placeholder-text-font-weight: var(
-        --spectrum-global-font-weight-regular
+        --spectrum-alias-font-weight-m
     );
     --spectrum-picker-m-border-radius: var(
-        --spectrum-alias-border-radius-regular
+        --spectrum-alias-border-radius-medium
     );
     --spectrum-picker-m-width: var(--spectrum-global-dimension-size-3000);
     --spectrum-picker-m-min-width: var(--spectrum-global-dimension-size-600);
@@ -68,26 +64,22 @@ governing permissions and limitations under the License.
     --spectrum-picker-m-error-icon-margin-left: var(
         --spectrum-global-dimension-size-150
     );
-    --spectrum-picker-m-textonly-padding-left: var(
-        --spectrum-alias-item-padding-m
-    );
-    --spectrum-picker-m-textonly-padding-right: var(
-        --spectrum-alias-item-padding-m
-    );
+    --spectrum-picker-m-textonly-padding-left: var(--spectrum-alias-padding-m);
+    --spectrum-picker-m-textonly-padding-right: var(--spectrum-alias-padding-m);
     --spectrum-picker-l-border-size: var(--spectrum-alias-border-size-thin);
-    --spectrum-picker-l-text-size: var(--spectrum-alias-item-text-size-l);
+    --spectrum-picker-l-text-size: var(--spectrum-alias-font-size-m);
     --spectrum-picker-l-icon-gap: var(
         --spectrum-alias-item-workflow-icon-gap-l
     );
-    --spectrum-picker-l-height: var(--spectrum-alias-item-height-l);
+    --spectrum-picker-l-height: var(--spectrum-alias-control-height-l);
     --spectrum-picker-l-placeholder-text-font-style: var(
-        --spectrum-global-font-style-italic
+        --spectrum-global-font-style-regular
     );
     --spectrum-picker-l-placeholder-text-font-weight: var(
-        --spectrum-global-font-weight-regular
+        --spectrum-alias-font-weight-m
     );
     --spectrum-picker-l-border-radius: var(
-        --spectrum-alias-border-radius-regular
+        --spectrum-alias-border-radius-medium
     );
     --spectrum-picker-l-width: var(--spectrum-global-dimension-size-2000);
     --spectrum-picker-l-min-width: var(--spectrum-global-dimension-size-750);
@@ -98,26 +90,22 @@ governing permissions and limitations under the License.
     --spectrum-picker-l-error-icon-margin-left: var(
         --spectrum-global-dimension-size-185
     );
-    --spectrum-picker-l-textonly-padding-left: var(
-        --spectrum-alias-item-padding-l
-    );
-    --spectrum-picker-l-textonly-padding-right: var(
-        --spectrum-alias-item-padding-l
-    );
+    --spectrum-picker-l-textonly-padding-left: var(--spectrum-alias-padding-l);
+    --spectrum-picker-l-textonly-padding-right: var(--spectrum-alias-padding-l);
     --spectrum-picker-xl-border-size: var(--spectrum-alias-border-size-thin);
     --spectrum-picker-xl-icon-gap: var(
         --spectrum-alias-item-workflow-icon-gap-l
     );
-    --spectrum-picker-xl-text-size: var(--spectrum-alias-item-text-size-xl);
-    --spectrum-picker-xl-height: var(--spectrum-alias-item-height-xl);
+    --spectrum-picker-xl-text-size: var(--spectrum-alias-font-size-l);
+    --spectrum-picker-xl-height: var(--spectrum-alias-control-height-xl);
     --spectrum-picker-xl-placeholder-text-font-style: var(
-        --spectrum-global-font-style-italic
+        --spectrum-global-font-style-regular
     );
     --spectrum-picker-xl-placeholder-text-font-weight: var(
-        --spectrum-global-font-weight-regular
+        --spectrum-alias-font-weight-m
     );
     --spectrum-picker-xl-border-radius: var(
-        --spectrum-alias-border-radius-regular
+        --spectrum-alias-border-radius-medium
     );
     --spectrum-picker-xl-width: var(--spectrum-global-dimension-size-3000);
     --spectrum-picker-xl-min-width: var(--spectrum-global-dimension-size-900);
@@ -129,50 +117,50 @@ governing permissions and limitations under the License.
         --spectrum-global-dimension-size-225
     );
     --spectrum-picker-xl-textonly-padding-left: var(
-        --spectrum-alias-item-padding-xl
+        --spectrum-alias-padding-xl
     );
     --spectrum-picker-xl-textonly-padding-right: var(
-        --spectrum-alias-item-padding-xl
+        --spectrum-alias-padding-xl
     );
     --spectrum-picker-quiet-m-popover-offset-x: var(
         --spectrum-global-dimension-size-150
     );
     --spectrum-popover-border-size: var(--spectrum-alias-border-size-thin);
-    --spectrum-picker-m-text-color: var(--spectrum-alias-text-color);
-    --spectrum-picker-m-background-color: var(--spectrum-global-color-gray-75);
-    --spectrum-picker-m-border-color: var(--spectrum-alias-border-color);
+    --spectrum-picker-m-text-color: var(--spectrum-alias-text-color-primary);
+    --spectrum-picker-m-background-color: var(--spectrum-global-color-gray-300);
+    --spectrum-picker-m-border-color: var(--spectrum-picker-m-background-color);
     --spectrum-picker-m-text-color-hover: var(
-        --spectrum-alias-text-color-hover
+        --spectrum-alias-text-color-primary
     );
     --spectrum-picker-m-background-color-hover: var(
-        --spectrum-global-color-gray-50
+        --spectrum-global-color-gray-300
     );
     --spectrum-picker-m-border-color-hover: var(
         --spectrum-alias-border-color-hover
     );
     --spectrum-picker-m-icon-color-hover: var(
-        --spectrum-alias-icon-color-hover
+        --spectrum-alias-icon-color-primary
     );
     --spectrum-picker-m-background-color-down: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-300
     );
     --spectrum-picker-m-border-color-down: var(
         --spectrum-alias-border-color-down
     );
     --spectrum-picker-m-placeholder-text-color-down: var(
-        --spectrum-alias-placeholder-text-color-down
+        --spectrum-alias-text-color-primary
     );
     --spectrum-picker-m-background-color-key-focus: var(
-        --spectrum-global-color-gray-50
+        --spectrum-global-color-gray-300
     );
     --spectrum-picker-m-border-color-key-focus: var(
         --spectrum-alias-border-color-focus
     );
     --spectrum-picker-m-text-color-key-focus: var(
-        --spectrum-alias-text-color-hover
+        --spectrum-alias-text-color-primary
     );
     --spectrum-picker-m-placeholder-text-color-key-focus: var(
-        --spectrum-alias-placeholder-text-color-hover
+        --spectrum-alias-text-color-primary
     );
     --spectrum-picker-m-border-color-error: var(
         --spectrum-global-color-red-500
@@ -190,7 +178,7 @@ governing permissions and limitations under the License.
         --spectrum-alias-border-color-focus
     );
     --spectrum-picker-m-background-color-disabled: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-300
     );
     --spectrum-picker-m-text-color-disabled: var(
         --spectrum-alias-text-color-disabled
@@ -201,15 +189,15 @@ governing permissions and limitations under the License.
     --spectrum-picker-m-placeholder-text-color-disabled: var(
         --spectrum-alias-text-color-disabled
     );
-    --spectrum-picker-m-icon-color: var(--spectrum-alias-icon-color);
+    --spectrum-picker-m-icon-color: var(--spectrum-alias-icon-color-primary);
     --spectrum-picker-m-placeholder-text-color: var(
-        --spectrum-alias-placeholder-text-color
+        --spectrum-alias-text-color-placeholder
     );
     --spectrum-picker-m-placeholder-text-color-hover: var(
-        --spectrum-alias-placeholder-text-color-hover
+        --spectrum-alias-text-color-primary
     );
     --spectrum-picker-m-placeholder-text-color-mouse-focus: var(
-        --spectrum-alias-placeholder-text-color
+        --spectrum-alias-text-color-primary
     );
     --spectrum-picker-quiet-m-border-color: var(
         --spectrum-alias-border-color-transparent
@@ -224,10 +212,10 @@ governing permissions and limitations under the License.
         --spectrum-alias-background-color-transparent
     );
     --spectrum-picker-quiet-m-placeholder-text-color-key-focus: var(
-        --spectrum-alias-placeholder-text-color-hover
+        --spectrum-alias-text-color-primary
     );
     --spectrum-picker-m-icon-color-key-focus: var(
-        --spectrum-alias-icon-color-focus
+        --spectrum-alias-icon-color-primary
     );
     --spectrum-picker-quiet-m-background-color-down: var(
         --spectrum-alias-background-color-transparent

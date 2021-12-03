@@ -13,28 +13,6 @@ governing permissions and limitations under the License.
 
 @import './spectrum-color-area.css';
 
-/* override */
-:host {
-    --spectrum-colorarea-default-width: var(
-        --spectrum-global-dimension-size-2400
-    );
-    --spectrum-colorarea-default-height: var(
-        --spectrum-global-dimension-size-2400
-    );
-    --spectrum-colorarea-border-radius: var(
-        --spectrum-alias-border-radius-medium
-    );
-    --spectrum-colorarea-border-size: var(--spectrum-global-dimension-size-0);
-    --spectrum-colorarea-border-color: undefined;
-    --spectrum-colorarea-fill-color-disabled: var(
-        --spectrum-global-color-gray-300
-    );
-    --spectrum-colorarea-border-color-disabled: var(
-        --spectrum-global-color-gray-300
-    );
-}
-/* override */
-
 :host {
     touch-action: none;
 }

@@ -18,8 +18,11 @@ governing permissions and limitations under the License.
     --spectrum-colorhandle-inner-border-color: var(
         --spectrum-global-color-static-white
     );
+    --spectrum-colorhandle-outer-box-shadow: var(
+        --spectrum-global-shadow-static-m
+    );
     --spectrum-colorhandle-outer-border-size: var(
-        --spectrum-global-dimension-static-size-10
+        --spectrum-alias-border-size-m
     );
     --spectrum-colorhandle-outer-border-color: var(
         --spectrum-alias-colorhandle-outer-border-color
@@ -29,5 +32,11 @@ governing permissions and limitations under the License.
     );
     --spectrum-colorhandle-fill-color-disabled: var(
         --spectrum-global-color-gray-300
+    );
+    --spectrum-colorhandle-focus-background-color: var(
+        --spectrum-global-color-static-primary-500;
+    );
+    --spectrum-colorhandle-focus-background-width: var(
+        --spectrum-global-color-static-primary-500;
     );
 }

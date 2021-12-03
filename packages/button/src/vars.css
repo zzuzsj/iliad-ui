@@ -22,7 +22,7 @@ governing permissions and limitations under the License.
         --spectrum-global-dimension-size-100
     );
     --spectrum-logicbutton-and-border-size: var(
-        --spectrum-alias-border-size-thick
+        --spectrum-global-dimension-size-0
     );
     --spectrum-logicbutton-and-border-radius: var(
         --spectrum-alias-border-radius-regular
@@ -161,6 +161,7 @@ governing permissions and limitations under the License.
     --spectrum-button-primary-s-text-padding-top: var(
         --spectrum-alias-item-text-padding-top-s
     );
+    --spectrum-button-primary-m-min-width: undefined;
     --spectrum-button-primary-m-text-font-weight: var(
         --spectrum-global-font-weight-bold
     );
@@ -168,7 +169,7 @@ governing permissions and limitations under the License.
         --spectrum-alias-component-text-line-height
     );
     --spectrum-button-primary-m-border-size: var(
-        --spectrum-alias-border-size-thick
+        --spectrum-global-dimension-size-0
     );
     --spectrum-button-primary-m-text-size: var(
         --spectrum-alias-item-text-size-m
@@ -202,7 +203,7 @@ governing permissions and limitations under the License.
         --spectrum-alias-component-text-line-height
     );
     --spectrum-button-primary-l-border-size: var(
-        --spectrum-alias-border-size-thick
+        --spectrum-global-dimension-size-0
     );
     --spectrum-button-primary-l-text-size: var(
         --spectrum-alias-item-text-size-l
@@ -239,7 +240,7 @@ governing permissions and limitations under the License.
         --spectrum-alias-component-text-line-height
     );
     --spectrum-button-primary-xl-border-size: var(
-        --spectrum-alias-border-size-thick
+        --spectrum-global-dimension-size-0
     );
     --spectrum-button-primary-xl-icon-gap: var(
         --spectrum-alias-item-workflow-icon-gap-l
@@ -266,6 +267,7 @@ governing permissions and limitations under the License.
     --spectrum-button-primary-xl-textonly-padding-right: var(
         --spectrum-alias-item-rounded-padding-xl
     );
+    /* cta */
     --spectrum-button-cta-m-background-color: var(
         --spectrum-semantic-cta-color-background-default
     );
@@ -303,143 +305,151 @@ governing permissions and limitations under the License.
         --spectrum-global-color-static-white
     );
     --spectrum-button-cta-m-background-color-disabled: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-300
     );
     --spectrum-button-cta-m-border-color-disabled: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-300
     );
     --spectrum-button-cta-m-text-color-disabled: var(
-        --spectrum-global-color-gray-500
+        --spectrum-alias-text-color-disabled
     );
+    /* primary */
     --spectrum-button-primary-m-background-color: var(
-        --spectrum-alias-background-color-transparent
+        --spectrum-global-color-gray-400
     );
     --spectrum-button-primary-m-border-color: var(
-        --spectrum-global-color-gray-800
+        --spectrum-global-color-gray-400
     );
     --spectrum-button-primary-m-text-color: var(
-        --spectrum-global-color-gray-800
+        --spectrum-alias-text-color-primary
     );
     --spectrum-button-primary-m-background-color-hover: var(
-        --spectrum-global-color-gray-800
+        --spectrum-global-color-gray-400-cover-100
     );
     --spectrum-button-primary-m-border-color-hover: var(
-        --spectrum-global-color-gray-800
+        --spectrum-global-color-gray-400-cover-100
     );
     --spectrum-button-primary-m-text-color-hover: var(
-        --spectrum-global-color-gray-50
+        --spectrum-alias-text-color-primary
     );
     --spectrum-button-primary-m-background-color-key-focus: var(
-        --spectrum-global-color-gray-800
+        --spectrum-global-color-gray-400-cover-100
     );
     --spectrum-button-primary-m-border-color-key-focus: var(
-        --spectrum-global-color-gray-800
+        --spectrum-global-color-gray-400-cover-100
     );
     --spectrum-button-primary-m-text-color-key-focus: var(
-        --spectrum-global-color-gray-50
+        --spectrum-alias-text-color-primary
     );
     --spectrum-button-primary-m-background-color-down: var(
-        --spectrum-global-color-gray-900
+        --spectrum-global-color-gray-400-cover-200
     );
     --spectrum-button-primary-m-border-color-down: var(
-        --spectrum-global-color-gray-900
+        --spectrum-global-color-gray-400-cover-200
     );
     --spectrum-button-primary-m-text-color-down: var(
-        --spectrum-global-color-gray-50
+        --spectrum-alias-text-color-primary
     );
     --spectrum-button-primary-m-background-color-disabled: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-300
     );
     --spectrum-button-primary-m-border-color-disabled: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-300
     );
     --spectrum-button-primary-m-text-color-disabled: var(
-        --spectrum-global-color-gray-500
+        --spectrum-alias-text-color-disabled
     );
+    /* secondary */
     --spectrum-button-secondary-m-background-color: var(
-        --spectrum-alias-background-color-transparent
+        --spectrum-global-color-gray-300
     );
-    --spectrum-button-secondary-m-border-color: var(
-        --spectrum-global-color-gray-700
-    );
+    --spectrum-button-secondary-m-border-color: var(--spectrum-global-gray-300);
     --spectrum-button-secondary-m-text-color: var(
-        --spectrum-global-color-gray-700
+        --spectrum-alias-text-color-secondary
     );
     --spectrum-button-secondary-m-background-color-hover: var(
-        --spectrum-global-color-gray-700
+        --spectrum-global-color-gray-300-cover-100
     );
     --spectrum-button-secondary-m-border-color-hover: var(
-        --spectrum-global-color-gray-700
+        --spectrum-global-color-gray-300-cover-100
     );
     --spectrum-button-secondary-m-text-color-hover: var(
-        --spectrum-global-color-gray-50
+        --spectrum-alias-text-color-secondary
     );
     --spectrum-button-secondary-m-background-color-key-focus: var(
-        --spectrum-global-color-gray-700
+        --spectrum-global-color-gray-300-cover-100
     );
     --spectrum-button-secondary-m-border-color-key-focus: var(
-        --spectrum-global-color-gray-700
+        --spectrum-global-color-gray-300-cover-100
     );
     --spectrum-button-secondary-m-text-color-key-focus: var(
-        --spectrum-global-color-gray-50
+        --spectrum-alias-text-color-secondary
     );
     --spectrum-button-secondary-m-background-color-down: var(
-        --spectrum-global-color-gray-800
+        --spectrum-global-color-gray-300-cover-200
     );
     --spectrum-button-secondary-m-border-color-down: var(
-        --spectrum-global-color-gray-800
+        --spectrum-global-color-gray-300-cover-200
     );
     --spectrum-button-secondary-m-text-color-down: var(
-        --spectrum-global-color-gray-50
+        --spectrum-alias-text-color-secondary
+    );
+    --spectrum-button-primary-m-background-color-disabled: var(
+        --spectrum-global-color-gray-300
+    );
+    --spectrum-button-primary-m-border-color-disabled: var(
+        --spectrum-global-color-gray-300
     );
     --spectrum-button-secondary-m-text-color-disabled: var(
-        --spectrum-global-color-gray-500
+        --spectrum-alias-text-color-disabled
     );
+    /* warning */
     --spectrum-button-warning-m-background-color: var(
-        --spectrum-alias-background-color-transparent
+        --spectrum-global-color-red-500
     );
     --spectrum-button-warning-m-border-color: var(
-        --spectrum-semantic-negative-color-text-small
+        --spectrum-global-color-red-500
     );
     --spectrum-button-warning-m-text-color: var(
-        --spectrum-semantic-negative-color-text-small
+        --spectrum-global-color-static-white
     );
     --spectrum-button-warning-m-background-color-hover: var(
-        --spectrum-semantic-negative-color-text-small
+        --spectrum-global-color-red-cover-100
     );
     --spectrum-button-warning-m-border-color-hover: var(
-        --spectrum-semantic-negative-color-text-small
+        --spectrum-global-color-red-cover-100
     );
     --spectrum-button-warning-m-text-color-hover: var(
-        --spectrum-global-color-gray-50
+        --spectrum-global-color-static-white
     );
     --spectrum-button-warning-m-background-color-key-focus: var(
-        --spectrum-semantic-negative-color-text-small
+        --spectrum-global-color-red-cover-100
     );
     --spectrum-button-warning-m-border-color-key-focus: var(
-        --spectrum-semantic-negative-color-text-small
+        --spectrum-global-color-red-cover-100
     );
     --spectrum-button-warning-m-text-color-key-focus: var(
-        --spectrum-global-color-gray-50
+        --spectrum-global-color-static-white
     );
     --spectrum-button-warning-m-background-color-down: var(
-        --spectrum-global-color-red-700
+        --spectrum-global-color-red-cover-200
     );
     --spectrum-button-warning-m-border-color-down: var(
-        --spectrum-global-color-red-700
+        --spectrum-global-color-red-cover-200
     );
     --spectrum-button-warning-m-text-color-down: var(
-        --spectrum-global-color-gray-50
+        --spectrum-global-color-static-white
     );
     --spectrum-button-warning-m-background-color-disabled: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-300
     );
     --spectrum-button-warning-m-border-color-disabled: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-300
     );
     --spectrum-button-warning-m-text-color-disabled: var(
-        --spectrum-global-color-gray-500
+        --spectrum-alias-text-color-disabled
     );
+    /* over background */
     --spectrum-button-over-background-m-background-color: var(
         --spectrum-alias-background-color-transparent
     );
@@ -482,6 +492,7 @@ governing permissions and limitations under the License.
         255,
         0.35
     );
+    /* quiet over background */
     --spectrum-button-quiet-over-background-m-background-color: var(
         --spectrum-alias-background-color-transparent
     );
@@ -527,6 +538,7 @@ governing permissions and limitations under the License.
         255,
         0.15
     );
+    /* quiet primary */
     --spectrum-button-quiet-primary-m-background-color: var(
         --spectrum-alias-background-color-transparent
     );
@@ -534,7 +546,7 @@ governing permissions and limitations under the License.
         --spectrum-alias-border-color-transparent
     );
     --spectrum-button-quiet-primary-m-text-color: var(
-        --spectrum-global-color-gray-800
+        --spectrum-alias-text-color-primary
     );
     --spectrum-button-quiet-primary-m-background-color-hover: var(
         --spectrum-global-color-gray-200
@@ -543,7 +555,7 @@ governing permissions and limitations under the License.
         --spectrum-global-color-gray-200
     );
     --spectrum-button-quiet-primary-m-text-color-hover: var(
-        --spectrum-global-color-gray-900
+        --spectrum-alias-text-color-primary
     );
     --spectrum-button-quiet-primary-m-background-color-key-focus: var(
         --spectrum-global-color-gray-200
@@ -552,7 +564,7 @@ governing permissions and limitations under the License.
         --spectrum-global-color-gray-200
     );
     --spectrum-button-quiet-primary-m-text-color-key-focus: var(
-        --spectrum-global-color-gray-900
+        --spectrum-alias-text-color-primary
     );
     --spectrum-button-quiet-primary-m-background-color-down: var(
         --spectrum-global-color-gray-300
@@ -561,7 +573,7 @@ governing permissions and limitations under the License.
         --spectrum-global-color-gray-300
     );
     --spectrum-button-quiet-primary-m-text-color-down: var(
-        --spectrum-global-color-gray-900
+        --spectrum-alias-text-color-primary
     );
     --spectrum-button-quiet-primary-m-background-color-disabled: var(
         --spectrum-alias-background-color-transparent
@@ -570,8 +582,9 @@ governing permissions and limitations under the License.
         --spectrum-alias-border-color-transparent
     );
     --spectrum-button-quiet-primary-m-text-color-disabled: var(
-        --spectrum-global-color-gray-500
+        --spectrum-alias-text-color-disabled
     );
+    /* quiet secondary */
     --spectrum-button-quiet-secondary-m-background-color: var(
         --spectrum-alias-background-color-transparent
     );
@@ -579,34 +592,34 @@ governing permissions and limitations under the License.
         --spectrum-alias-border-color-transparent
     );
     --spectrum-button-quiet-secondary-m-text-color: var(
-        --spectrum-global-color-gray-700
+        --spectrum-alias-text-color-secondary
     );
     --spectrum-button-quiet-secondary-m-background-color-hover: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-300-cover-100
     );
     --spectrum-button-quiet-secondary-m-border-color-hover: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-300-cover-100
     );
     --spectrum-button-quiet-secondary-m-text-color-hover: var(
-        --spectrum-global-color-gray-800
+        --spectrum-alias-text-color-secondary
     );
     --spectrum-button-quiet-secondary-m-background-color-key-focus: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-300-cover-100
     );
     --spectrum-button-quiet-secondary-m-border-color-key-focus: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-300-cover-100
     );
     --spectrum-button-quiet-secondary-m-text-color-key-focus: var(
-        --spectrum-global-color-gray-800
+        --spectrum-alias-text-color-secondary
     );
     --spectrum-button-quiet-secondary-m-background-color-down: var(
-        --spectrum-global-color-gray-300
+        --spectrum-global-color-gray-300-cover-200
     );
     --spectrum-button-quiet-secondary-m-border-color-down: var(
-        --spectrum-global-color-gray-300
+        --spectrum-global-color-gray-300-cover-200
     );
     --spectrum-button-quiet-secondary-m-text-color-down: var(
-        --spectrum-global-color-gray-800
+        --spectrum-alias-text-color-secondary
     );
     --spectrum-button-quiet-secondary-m-background-color-disabled: var(
         --spectrum-alias-background-color-transparent
@@ -615,8 +628,9 @@ governing permissions and limitations under the License.
         --spectrum-alias-border-color-transparent
     );
     --spectrum-button-quiet-secondary-m-text-color-disabled: var(
-        --spectrum-global-color-gray-500
+        --spectrum-alias-text-color-disabled
     );
+    /* quiet warning */
     --spectrum-button-quiet-warning-m-background-color: var(
         --spectrum-alias-background-color-transparent
     );
@@ -624,42 +638,42 @@ governing permissions and limitations under the License.
         --spectrum-alias-border-color-transparent
     );
     --spectrum-button-quiet-warning-m-text-color: var(
-        --spectrum-semantic-negative-color-text-small
+        --spectrum-global-color-red-500
     );
     --spectrum-button-quiet-warning-m-background-color-hover: var(
-        --spectrum-global-color-gray-200
+        --spectrum-alias-cover-color-100
     );
     --spectrum-button-quiet-warning-m-border-color-hover: var(
-        --spectrum-global-color-gray-200
+        --spectrum-alias-cover-color-100
     );
     --spectrum-button-quiet-warning-m-text-color-hover: var(
-        --spectrum-global-color-red-700
+        --spectrum-global-color-red-500
     );
     --spectrum-button-quiet-warning-m-background-color-key-focus: var(
-        --spectrum-global-color-gray-200
+        --spectrum-alias-cover-color-100
     );
     --spectrum-button-quiet-warning-m-border-color-key-focus: var(
-        --spectrum-global-color-gray-200
+        --spectrum-alias-cover-color-100
     );
     --spectrum-button-quiet-warning-m-text-color-key-focus: var(
-        --spectrum-global-color-red-700
+        --spectrum-global-color-red-500
     );
     --spectrum-button-quiet-warning-m-background-color-down: var(
-        --spectrum-global-color-gray-300
+        --spectrum-alias-cover-color-200
     );
     --spectrum-button-quiet-warning-m-border-color-down: var(
-        --spectrum-global-color-gray-300
+        --spectrum-alias-cover-color-200
     );
     --spectrum-button-quiet-warning-m-text-color-down: var(
-        --spectrum-global-color-red-700
+        --spectrum-global-color-red-500
     );
     --spectrum-button-quiet-warning-m-background-color-disabled: var(
-        --spectrum-alias-background-color-transparent
+        --spectrum-global-color-gray-300
     );
     --spectrum-button-quiet-warning-m-border-color-disabled: var(
-        --spectrum-alias-border-color-transparent
+        --spectrum-global-color-gray-300
     );
     --spectrum-button-quiet-warning-m-text-color-disabled: var(
-        --spectrum-global-color-gray-500
+        --spectrum-alias-text-color-disabled
     );
 }

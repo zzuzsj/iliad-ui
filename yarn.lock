@@ -19242,6 +19242,13 @@ postcss-reduce-transforms@^5.0.1:
     cssnano-utils "^2.0.1"
     postcss-value-parser "^4.1.0"
 
+postcss-remove-declaration@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmmirror.com/postcss-remove-declaration/download/postcss-remove-declaration-1.0.0.tgz#a1afb6f6165d15e3848f03cc6e9bd8c70b76ae24"
+  integrity sha1-oa+29hZdFeOEjwPMbpvYxwt2riQ=
+  dependencies:
+    postcss "^7.0.16"
+
 postcss-replace-overflow-wrap@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/postcss-replace-overflow-wrap/-/postcss-replace-overflow-wrap-3.0.0.tgz#61b360ffdaedca84c7c918d2b0f0d0ea559ab01c"
@@ -19421,6 +19428,14 @@ postcss@^6.0.22, postcss@^6.0.9:
     chalk "^2.4.1"
     source-map "^0.6.1"
     supports-color "^5.4.0"
+
+postcss@^7.0.16:
+  version "7.0.39"
+  resolved "https://registry.npmmirror.com/postcss/download/postcss-7.0.39.tgz#9624375d965630e2e1f2c02a935c82a59cb48309"
+  integrity sha1-liQ3XZZWMOLh8sAqk1yCpZy0gwk=
+  dependencies:
+    picocolors "^0.2.1"
+    source-map "^0.6.1"
 
 postcss@^8.1.6, postcss@^8.1.7, postcss@^8.2.15, postcss@^8.2.4:
   version "8.3.6"

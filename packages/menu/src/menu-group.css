@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 @import './spectrum-menu-sectionHeading.css';
-/* override */
+/* TODO: 可以考虑和spectrum-menu里的赋值合并 */
 :host {
     --spectrum-listitem-heading-text-size: var(
         --spectrum-global-dimension-font-size-50
@@ -33,9 +33,6 @@ governing permissions and limitations under the License.
         --spectrum-alias-text-color-disabled
     );
 }
-:host {
-}
-/* override */
 
 :host {
     margin: 0;

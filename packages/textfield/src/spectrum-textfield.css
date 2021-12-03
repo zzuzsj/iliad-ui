@@ -121,8 +121,6 @@ governing permissions and limitations under the License.
         --spectrum-textarea-m-padding-right,
         var(--spectrum-alias-item-padding-m)
     );
-    --spectrum-textfield-padding-top: 3px;
-    --spectrum-textfield-padding-bottom: 5px;
     --spectrum-textfield-text-font-family: var(
         --spectrum-alias-body-text-font-family,
         var(--spectrum-global-font-family-base)

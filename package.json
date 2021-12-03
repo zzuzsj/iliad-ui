@@ -68,7 +68,7 @@
         "pretest:visual": "yarn build && yarn storybook:stories:build && yarn test:build",
         "process-icons": "run-p icons icons:ui icons:workflow",
         "process-spectrum": "yarn spectrum-vars && yarn spectrum-css && pretty-quick --pattern \"packages/**/*.css\"",
-        "spectrum-css": "node ./scripts/process-spectrum-css.js",
+        "spectrum-css": "node ./scripts/process-spectrum-css.js && pretty-quick --pattern \"packages/**/*.css\"",
         "spectrum-vars": "node ./scripts/spectrum-vars.js",
         "storybook": "yarn build:ts && yarn build:css && run-p storybook:start watch:css build:watch",
         "storybook:build": "yarn storybook:stories:build && build-storybook -o documentation/dist/storybook",

@@ -11,16 +11,17 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 :host {
+    --spectrum-actiongroup-width: fit-content;
     --spectrum-actiongroup-button-gap-y: var(
         --spectrum-global-dimension-size-100
     );
     --spectrum-actiongroup-button-gap-x: var(
         --spectrum-global-dimension-size-100
     );
-    --spectrum-actionbutton-m-border-radius: var(
+    --spectrum-actiongroup-quiet-compact-border-radius: var(
         --spectrum-alias-border-radius-regular
     );
-    --spectrum-actionbutton-m-border-size: var(
-        --spectrum-alias-border-size-thin
+    --spectrum-actiongroup-quiet-compact-background-color: var(
+        --spectrum-global-color-gray-300
     );
 }

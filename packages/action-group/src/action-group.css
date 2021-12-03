@@ -27,31 +27,12 @@ governing permissions and limitations under the License.
  * End Spectrum CSS #795 fixes.
  */
 
-/* override */
-:host {
-    --spectrum-actiongroup-width: fit-content;
-    --spectrum-actiongroup-quiet-background: var(
-        --spectrum-global-color-gray-300
-    );
-    --spectrum-actiongroup-button-gap-y: var(
-        --spectrum-global-dimension-size-0
-    );
-    --spectrum-actiongroup-button-gap-x: var(
-        --spectrum-global-dimension-size-100
-    );
-    --spectrum-actionbutton-m-border-radius: var(
-        --spectrum-alias-border-radius-regular
-    );
-    --spectrum-actionbutton-m-border-size: var(
-        --spectrum-alias-border-size-thin
-    );
-}
-
 :host {
     width: var(--spectrum-actiongroup-width);
 }
 :host[compact][quiet] {
-    background: var(--spectrum-actiongroup-quiet-background);
-    border-radius: var(--spectrum-actionbutton-m-border-radius);
+    background: var(--spectrum-actiongroup-quiet-compact-background-color);
+    border-radius: var(--spectrum-actiongroup-quiet-compact-border-radius);
+    display: flex;
+    align-items: center;
 }
-/* override */

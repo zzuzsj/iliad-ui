@@ -12,7 +12,7 @@ governing permissions and limitations under the License.
 */
 
 @import './spectrum-menu-divider.css';
-/* override */
+/* TODO: 后续可以和divider vars.css 合并 */
 :host {
     --spectrum-divider-s-background-color: var(
         --spectrum-alias-border-color-default
@@ -61,7 +61,6 @@ governing permissions and limitations under the License.
 :host {
     margin: var(--spectrum-divider-margin-size) 0;
 }
-/* override */
 
 :host {
     display: block;

@@ -11,7 +11,6 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 :host {
-    --spectrum-colorhandle-size: var(--spectrum-global-dimension-size-200);
     --spectrum-colorarea-default-width: var(
         --spectrum-global-dimension-size-2400
     );
@@ -19,9 +18,10 @@ governing permissions and limitations under the License.
         --spectrum-global-dimension-size-2400
     );
     --spectrum-colorarea-border-radius: var(
-        --spectrum-alias-border-radius-regular
+        --spectrum-alias-border-radius-medium
     );
-    --spectrum-colorarea-border-size: var(--spectrum-alias-border-size-thin);
+    --spectrum-colorarea-border-size: var(--spectrum-global-dimension-size-0);
+    --spectrum-colorarea-border-color: undefined;
     --spectrum-colorarea-fill-color-disabled: var(
         --spectrum-global-color-gray-300
     );

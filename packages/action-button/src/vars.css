@@ -14,11 +14,12 @@ governing permissions and limitations under the License.
     --spectrum-alias-body-text-font-family: var(
         --spectrum-global-font-family-base
     );
+    --spectrum-actionbutton-border-size: var(--spectrum-alias-border-size-s;);
     --spectrum-actionbutton-s-quiet-border-size: var(
-        --spectrum-alias-border-size-thin
+        --spectrum-alias-border-size-s
     );
     --spectrum-actionbutton-s-quiet-border-radius: var(
-        --spectrum-alias-border-radius-regular
+        --spectrum-alias-border-radius-medium
     );
     --spectrum-actionbutton-s-quiet-text-font-weight: var(
         --spectrum-alias-body-text-font-weight
@@ -26,11 +27,9 @@ governing permissions and limitations under the License.
     --spectrum-actionbutton-s-quiet-text-size: var(
         --spectrum-alias-item-text-size-s
     );
-    --spectrum-actionbutton-s-border-size: var(
-        --spectrum-alias-border-size-thin
-    );
+    --spectrum-actionbutton-s-border-size: var(--spectrum-alias-border-size-s);
     --spectrum-actionbutton-s-border-radius: var(
-        --spectrum-alias-border-radius-regular
+        --spectrum-alias-border-radius-medium
     );
     --spectrum-actionbutton-s-min-width: var(
         --spectrum-global-dimension-size-400
@@ -42,30 +41,26 @@ governing permissions and limitations under the License.
         --spectrum-alias-component-text-line-height
     );
     --spectrum-actionbutton-s-text-size: var(--spectrum-alias-item-text-size-s);
-    --spectrum-actionbutton-s-icon-gap: var(
-        --spectrum-alias-item-workflow-icon-gap-s
-    );
+    --spectrum-actionbutton-s-icon-gap: var(--spectrum-alias-space-50);
     --spectrum-actionbutton-s-height: var(--spectrum-alias-item-height-s);
-    --spectrum-actionbutton-s-padding-left: var(
-        --spectrum-alias-item-workflow-padding-left-s
-    );
+    --spectrum-actionbutton-s-padding-left: var(--spectrum-alias-padding-s);
     --spectrum-actionbutton-s-icononly-padding-left: var(
-        --spectrum-alias-item-icononly-padding-s
+        --spectrum-alias-padding-s
     );
     --spectrum-actionbutton-s-icononly-padding-right: var(
-        --spectrum-alias-item-icononly-padding-s
+        --spectrum-alias-padding-s
     );
     --spectrum-actionbutton-s-textonly-padding-left: var(
-        --spectrum-alias-item-padding-s
+        --spectrum-alias-padding-s
     );
     --spectrum-actionbutton-s-textonly-padding-right: var(
-        --spectrum-alias-item-padding-s
+        --spectrum-alias-padding-s
     );
     --spectrum-actionbutton-m-quiet-border-size: var(
-        --spectrum-alias-border-size-thin
+        --spectrum-alias-border-size-s
     );
     --spectrum-actionbutton-m-quiet-border-radius: var(
-        --spectrum-alias-border-radius-regular
+        --spectrum-alias-border-radius-medium
     );
     --spectrum-actionbutton-m-quiet-text-font-weight: var(
         --spectrum-alias-body-text-font-weight
@@ -73,11 +68,9 @@ governing permissions and limitations under the License.
     --spectrum-actionbutton-m-quiet-text-size: var(
         --spectrum-alias-item-text-size-m
     );
-    --spectrum-actionbutton-m-border-size: var(
-        --spectrum-alias-border-size-thin
-    );
+    --spectrum-actionbutton-m-border-size: var(--spectrum-alias-border-size-s);
     --spectrum-actionbutton-m-border-radius: var(
-        --spectrum-alias-border-radius-regular
+        --spectrum-alias-border-radius-medium
     );
     --spectrum-actionbutton-m-min-width: var(
         --spectrum-global-dimension-size-400
@@ -90,29 +83,25 @@ governing permissions and limitations under the License.
     );
     --spectrum-actionbutton-m-text-size: var(--spectrum-alias-item-text-size-m);
     --spectrum-actionbutton-m-height: var(--spectrum-alias-item-height-m);
-    --spectrum-actionbutton-m-icon-gap: var(
-        --spectrum-alias-item-workflow-icon-gap-m
-    );
-    --spectrum-actionbutton-m-padding-left: var(
-        --spectrum-alias-item-workflow-padding-left-m
-    );
+    --spectrum-actionbutton-m-icon-gap: var(--spectrum-alias-space-50);
+    --spectrum-actionbutton-m-padding-left: var(--spectrum-alias-padding-m);
     --spectrum-actionbutton-m-icononly-padding-left: var(
-        --spectrum-alias-item-icononly-padding-m
+        --spectrum-alias-padding-m
     );
     --spectrum-actionbutton-m-icononly-padding-right: var(
-        --spectrum-alias-item-icononly-padding-m
+        --spectrum-alias-padding-m
     );
     --spectrum-actionbutton-m-textonly-padding-left: var(
-        --spectrum-alias-item-padding-m
+        --spectrum-alias-padding-m
     );
     --spectrum-actionbutton-m-textonly-padding-right: var(
-        --spectrum-alias-item-padding-m
+        --spectrum-alias-padding-m
     );
     --spectrum-actionbutton-l-quiet-border-size: var(
-        --spectrum-alias-border-size-thin
+        --spectrum-alias-border-size-s
     );
     --spectrum-actionbutton-l-quiet-border-radius: var(
-        --spectrum-alias-border-radius-regular
+        --spectrum-alias-border-radius-medium
     );
     --spectrum-actionbutton-l-quiet-text-font-weight: var(
         --spectrum-alias-body-text-font-weight
@@ -120,11 +109,9 @@ governing permissions and limitations under the License.
     --spectrum-actionbutton-l-quiet-text-size: var(
         --spectrum-alias-item-text-size-l
     );
-    --spectrum-actionbutton-l-border-size: var(
-        --spectrum-alias-border-size-thin
-    );
+    --spectrum-actionbutton-l-border-size: var(--spectrum-alias-border-size-s);
     --spectrum-actionbutton-l-border-radius: var(
-        --spectrum-alias-border-radius-regular
+        --spectrum-alias-border-radius-medium
     );
     --spectrum-actionbutton-l-min-width: var(
         --spectrum-global-dimension-size-400
@@ -136,30 +123,26 @@ governing permissions and limitations under the License.
         --spectrum-alias-component-text-line-height
     );
     --spectrum-actionbutton-l-text-size: var(--spectrum-alias-item-text-size-l);
-    --spectrum-actionbutton-l-icon-gap: var(
-        --spectrum-alias-item-workflow-icon-gap-l
-    );
+    --spectrum-actionbutton-l-icon-gap: var(--spectrum-alias-space-100);
     --spectrum-actionbutton-l-height: var(--spectrum-alias-item-height-l);
-    --spectrum-actionbutton-l-padding-left: var(
-        --spectrum-alias-item-workflow-padding-left-l
-    );
+    --spectrum-actionbutton-l-padding-left: var(--spectrum-alias-padding-l);
     --spectrum-actionbutton-l-icononly-padding-left: var(
-        --spectrum-alias-item-icononly-padding-l
+        --spectrum-alias-padding-l
     );
     --spectrum-actionbutton-l-icononly-padding-right: var(
-        --spectrum-alias-item-icononly-padding-l
+        --spectrum-alias-padding-l
     );
     --spectrum-actionbutton-l-textonly-padding-left: var(
-        --spectrum-alias-item-padding-l
+        --spectrum-alias-padding-l
     );
     --spectrum-actionbutton-l-textonly-padding-right: var(
-        --spectrum-alias-item-padding-l
+        --spectrum-alias-padding-l
     );
     --spectrum-actionbutton-xl-quiet-border-size: var(
-        --spectrum-alias-border-size-thin
+        --spectrum-alias-border-size-s
     );
     --spectrum-actionbutton-xl-quiet-border-radius: var(
-        --spectrum-alias-border-radius-regular
+        --spectrum-alias-border-radius-medium
     );
     --spectrum-actionbutton-xl-quiet-text-font-weight: var(
         --spectrum-alias-body-text-font-weight
@@ -167,11 +150,9 @@ governing permissions and limitations under the License.
     --spectrum-actionbutton-xl-quiet-text-size: var(
         --spectrum-alias-item-text-size-xl
     );
-    --spectrum-actionbutton-xl-border-size: var(
-        --spectrum-alias-border-size-thin
-    );
+    --spectrum-actionbutton-xl-border-size: var(--spectrum-alias-border-size-s);
     --spectrum-actionbutton-xl-border-radius: var(
-        --spectrum-alias-border-radius-regular
+        --spectrum-alias-border-radius-medium
     );
     --spectrum-actionbutton-xl-min-width: var(
         --spectrum-global-dimension-size-400
@@ -182,85 +163,90 @@ governing permissions and limitations under the License.
     --spectrum-actionbutton-xl-text-line-height: var(
         --spectrum-alias-component-text-line-height
     );
-    --spectrum-actionbutton-xl-icon-gap: var(
-        --spectrum-alias-item-workflow-icon-gap-l
-    );
+    --spectrum-actionbutton-xl-icon-gap: var(--spectrum-alias-space-150);
     --spectrum-actionbutton-xl-text-size: var(
         --spectrum-alias-item-text-size-xl
     );
     --spectrum-actionbutton-xl-height: var(--spectrum-alias-item-height-xl);
-    --spectrum-actionbutton-xl-padding-left: var(
-        --spectrum-alias-item-workflow-padding-left-xl
-    );
+    --spectrum-actionbutton-xl-padding-left: var(--spectrum-alias-padding-xl);
     --spectrum-actionbutton-xl-icononly-padding-left: var(
-        --spectrum-alias-item-icononly-padding-xl
+        --spectrum-alias-padding-xl
     );
     --spectrum-actionbutton-xl-icononly-padding-right: var(
-        --spectrum-alias-item-icononly-padding-xl
+        --spectrum-alias-padding-xl
     );
     --spectrum-actionbutton-xl-textonly-padding-left: var(
-        --spectrum-alias-item-padding-xl
+        --spectrum-alias-padding-xl
     );
     --spectrum-actionbutton-xl-textonly-padding-right: var(
-        --spectrum-alias-item-padding-xl
+        --spectrum-alias-padding-xl
     );
+    /* default */
     --spectrum-actionbutton-m-background-color: var(
-        --spectrum-global-color-gray-75
+        --spectrum-global-color-gray-300
     );
-    --spectrum-actionbutton-m-border-color: var(--spectrum-alias-border-color);
-    --spectrum-actionbutton-m-text-color: var(--spectrum-alias-text-color);
-    --spectrum-actionbutton-m-icon-color: var(--spectrum-alias-icon-color);
-    --spectrum-actionbutton-m-hold-icon-color: var(--spectrum-alias-icon-color);
+    --spectrum-actionbutton-m-border-color: var(
+        --spectrum-global-color-gray-300
+    );
+    --spectrum-actionbutton-m-text-color: var(
+        --spectrum-alias-text-color-primary
+    );
+    --spectrum-actionbutton-m-icon-color: var(
+        --spectrum-alias-icon-color-primary
+    );
+    --spectrum-actionbutton-m-hold-icon-color: var(
+        --spectrum-alias-icon-color-primary
+    );
     --spectrum-actionbutton-m-background-color-hover: var(
-        --spectrum-global-color-gray-50
+        --spectrum-global-color-gray-300-cover-100
     );
     --spectrum-actionbutton-m-border-color-hover: var(
-        --spectrum-alias-border-color-hover
+        --spectrum-global-color-gray-300-cover-100
     );
     --spectrum-actionbutton-m-text-color-hover: var(
-        --spectrum-alias-text-color-hover
+        --spectrum-alias-text-color-primary
     );
     --spectrum-actionbutton-m-icon-color-hover: var(
-        --spectrum-alias-icon-color-hover
+        --spectrum-alias-icon-color-primary
     );
     --spectrum-actionbutton-m-hold-icon-color-hover: var(
-        --spectrum-alias-icon-color-hover
+        --spectrum-alias-icon-color-primary
     );
     --spectrum-actionbutton-m-background-color-key-focus: var(
-        --spectrum-global-color-gray-50
+        --spectrum-global-color-gray-300-cover-100
     );
     --spectrum-actionbutton-m-border-color-key-focus: var(
-        --spectrum-alias-border-color-focus
+        --spectrum-global-color-gray-300-cover-100
     );
     --spectrum-actionbutton-m-quiet-border-size-key-focus: var(
-        --spectrum-alias-border-size-thick
+        --spectrum-alias-border-size-s
     );
     --spectrum-actionbutton-m-text-color-key-focus: var(
-        --spectrum-alias-text-color-hover
+        --spectrum-alias-text-color-primary
     );
     --spectrum-actionbutton-m-icon-color-key-focus: var(
-        --spectrum-alias-icon-color-focus
+        --spectrum-alias-icon-color-primary
     );
     --spectrum-actionbutton-m-hold-icon-color-key-focus: var(
-        --spectrum-alias-icon-color-hover
+        --spectrum-alias-icon-color-primary
     );
     --spectrum-actionbutton-m-background-color-down: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-300-cover-200
     );
     --spectrum-actionbutton-m-border-color-down: var(
-        --spectrum-alias-border-color-down
+        --spectrum-global-color-gray-300-cover-200
     );
     --spectrum-actionbutton-m-text-color-down: var(
-        --spectrum-alias-text-color-down
+        --spectrum-alias-text-color-primary
     );
     --spectrum-actionbutton-m-hold-icon-color-down: var(
-        --spectrum-alias-icon-color-down
+        --spectrum-alias-icon-color-primary
     );
     --spectrum-actionbutton-m-background-color-disabled: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-300
     );
     --spectrum-actionbutton-m-border-color-disabled: var(
-        --spectrum-alias-border-color-disabled
+        --spectrum-global-color-gray-300
     );
     --spectrum-actionbutton-m-text-color-disabled: var(
         --spectrum-alias-text-color-disabled
@@ -271,134 +257,139 @@ governing permissions and limitations under the License.
     --spectrum-actionbutton-m-hold-icon-color-disabled: var(
         --spectrum-alias-icon-color-disabled
     );
+    /* selected */
     --spectrum-actionbutton-m-background-color-selected: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-100
     );
     --spectrum-actionbutton-m-border-color-selected: var(
-        --spectrum-alias-border-color
+        --spectrum-global-color-gray-100
+    );
+    --spectrum-actionbutton-m-default-border-color-selected: var(
+        --spectrum-alias-border-color-light
     );
     --spectrum-actionbutton-m-text-color-selected: var(
-        --spectrum-alias-text-color
+        --spectrum-global-color-static-primary
     );
     --spectrum-actionbutton-m-icon-color-selected: var(
-        --spectrum-alias-icon-color
+        --spectrum-global-color-static-primary
     );
     --spectrum-actionbutton-m-background-color-selected-key-focus: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-100-cover-100
     );
     --spectrum-actionbutton-m-border-color-selected-key-focus: var(
-        --spectrum-alias-border-color-focus
+        --spectrum-global-color-gray-100-cover-100
     );
     --spectrum-actionbutton-m-text-color-selected-key-focus: var(
-        --spectrum-alias-text-color-hover
+        --spectrum-global-color-static-primary
     );
     --spectrum-actionbutton-m-icon-color-selected-key-focus: var(
-        --spectrum-alias-icon-color-hover
+        --spectrum-global-color-static-primary
     );
     --spectrum-actionbutton-m-background-color-selected-hover: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-100-cover-100
     );
     --spectrum-actionbutton-m-border-color-selected-hover: var(
-        --spectrum-alias-border-color-hover
+        --spectrum-global-color-gray-100-cover-100
     );
     --spectrum-actionbutton-m-text-color-selected-hover: var(
-        --spectrum-alias-text-color-hover
+        --spectrum-global-color-static-primary
     );
     --spectrum-actionbutton-m-icon-color-selected-hover: var(
-        --spectrum-alias-icon-color-hover
+        --spectrum-global-color-static-primary
     );
     --spectrum-actionbutton-m-background-color-selected-down: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-100-cover-200
     );
     --spectrum-actionbutton-m-border-color-selected-down: var(
-        --spectrum-alias-border-color-down
+        --spectrum-global-color-gray-100-cover-200
     );
     --spectrum-actionbutton-m-text-color-selected-down: var(
-        --spectrum-alias-text-color-down
+        --spectrum-global-color-static-primary
     );
     --spectrum-actionbutton-m-icon-color-selected-down: var(
-        --spectrum-alias-icon-color-down
+        --spectrum-global-color-static-primary
     );
     --spectrum-actionbutton-m-background-color-selected-disabled: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-300
     );
     --spectrum-actionbutton-m-border-color-selected-disabled: var(
-        --spectrum-alias-border-color-disabled
+        --spectrum-global-color-gray-300
     );
     --spectrum-actionbutton-m-text-color-selected-disabled: var(
-        --spectrum-alias-text-color-disabled
+        --spectrum-global-color-static-primary-opacity-300
     );
     --spectrum-actionbutton-m-icon-color-selected-disabled: var(
-        --spectrum-alias-icon-color-disabled
+        --spectrum-global-color-static-primary-opacity-300
     );
+    /* emphasized */
     --spectrum-actionbutton-m-emphasized-background-color: var(
-        --spectrum-global-color-gray-75
+        --spectrum-global-color-gray-300
     );
     --spectrum-actionbutton-m-emphasized-border-color: var(
-        --spectrum-alias-border-color
+        --spectrum-global-color-gray-300
     );
     --spectrum-actionbutton-m-emphasized-text-color: var(
-        --spectrum-alias-text-color
+        --spectrum-alias-text-color-primary
     );
     --spectrum-actionbutton-m-emphasized-icon-color: var(
-        --spectrum-alias-icon-color
+        --spectrum-alias-icon-color-primary
     );
     --spectrum-actionbutton-m-emphasized-hold-icon-color: var(
-        --spectrum-alias-icon-color
+        --spectrum-alias-icon-color-primary
     );
     --spectrum-actionbutton-m-emphasized-hold-icon-color-selected: var(
-        --spectrum-global-color-static-white
+        --spectrum-alias-icon-color-primary
     );
     --spectrum-actionbutton-m-emphasized-text-color-selected-hover: var(
-        --spectrum-global-color-static-white
+        --spectrum-alias-icon-color-primary
     );
     --spectrum-actionbutton-m-emphasized-background-color-hover: var(
-        --spectrum-global-color-gray-50
+        --spectrum-global-color-gray-300-cover-100
     );
     --spectrum-actionbutton-m-emphasized-border-color-hover: var(
-        --spectrum-alias-border-color-hover
+        --spectrum-global-color-gray-300-cover-100
     );
     --spectrum-actionbutton-m-emphasized-text-color-hover: var(
-        --spectrum-alias-text-color-hover
+        --spectrum-alias-text-color-primary
     );
     --spectrum-actionbutton-m-emphasized-icon-color-hover: var(
-        --spectrum-alias-icon-color-hover
+        --spectrum-alias-icon-color-primary
     );
     --spectrum-actionbutton-m-emphasized-hold-icon-color-hover: var(
-        --spectrum-alias-icon-color-hover
+        --spectrum-alias-icon-color-primary
     );
     --spectrum-actionbutton-m-emphasized-background-color-key-focus: var(
-        --spectrum-global-color-gray-50
+        --spectrum-global-color-gray-300-cover-100
     );
     --spectrum-actionbutton-m-emphasized-border-color-key-focus: var(
-        --spectrum-alias-border-color-hover
+        --spectrum-global-color-gray-300-cover-100
     );
     --spectrum-actionbutton-m-emphasized-text-color-key-focus: var(
-        --spectrum-alias-text-color-hover
+        --spectrum-alias-text-color-primary
     );
     --spectrum-actionbutton-m-emphasized-icon-color-key-focus: var(
-        --spectrum-alias-icon-color-focus
+        --spectrum-alias-icon-color-primary
     );
     --spectrum-actionbutton-m-emphasized-hold-icon-color-key-focus: var(
-        --spectrum-alias-icon-color-hover
+        --spectrum-alias-icon-color-primary
     );
     --spectrum-actionbutton-m-emphasized-background-color-down: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-300-cover-200
     );
     --spectrum-actionbutton-m-emphasized-border-color-down: var(
-        --spectrum-alias-border-color-down
+        --spectrum-global-color-gray-300-cover-200
     );
     --spectrum-actionbutton-m-emphasized-text-color-down: var(
-        --spectrum-alias-text-color-down
+        --spectrum-alias-text-color-primary
     );
     --spectrum-actionbutton-m-emphasized-hold-icon-color-down: var(
-        --spectrum-alias-icon-color-down
+        --spectrum-alias-text-color-primary
     );
     --spectrum-actionbutton-m-emphasized-background-color-disabled: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-300
     );
     --spectrum-actionbutton-m-emphasized-border-color-disabled: var(
-        --spectrum-alias-border-color-disabled
+        --spectrum-global-color-gray-300
     );
     --spectrum-actionbutton-m-emphasized-text-color-disabled: var(
         --spectrum-alias-text-color-disabled
@@ -409,6 +400,7 @@ governing permissions and limitations under the License.
     --spectrum-actionbutton-m-emphasized-hold-icon-color-disabled: var(
         --spectrum-alias-icon-color-disabled
     );
+    /* emphasized selected */
     --spectrum-actionbutton-m-emphasized-background-color-selected: var(
         --spectrum-semantic-cta-color-background-default
     );
@@ -439,6 +431,9 @@ governing permissions and limitations under the License.
     --spectrum-actionbutton-m-emphasized-border-color-selected-hover: var(
         --spectrum-semantic-cta-color-background-hover
     );
+    --spectrum-actionbutton-m-emphasized-text-color-selected-hover: var(
+        --spectrum-global-color-static-white
+    );
     --spectrum-actionbutton-m-emphasized-icon-color-selected-hover: var(
         --spectrum-global-color-static-white
     );
@@ -455,17 +450,18 @@ governing permissions and limitations under the License.
         --spectrum-global-color-static-white
     );
     --spectrum-actionbutton-m-emphasized-background-color-selected-disabled: var(
-        --spectrum-global-color-gray-200
+        --spectrum-semantic-cta-color-background-disabled
     );
     --spectrum-actionbutton-m-emphasized-border-color-selected-disabled: var(
-        --spectrum-alias-border-color-disabled
+        --spectrum-semantic-cta-color-background-disabled
     );
     --spectrum-actionbutton-m-emphasized-text-color-selected-disabled: var(
-        --spectrum-alias-text-color-disabled
+        --spectrum-global-color-static-white
     );
     --spectrum-actionbutton-m-emphasized-icon-color-selected-disabled: var(
-        --spectrum-alias-icon-color-disabled
+        --spectrum-global-color-static-white
     );
+    /* quiet default */
     --spectrum-actionbutton-m-quiet-background-color: var(
         --spectrum-alias-background-color-transparent
     );
@@ -473,87 +469,88 @@ governing permissions and limitations under the License.
         --spectrum-alias-border-color-transparent
     );
     --spectrum-actionbutton-m-quiet-text-color: var(
-        --spectrum-alias-text-color
+        --spectrum-alias-text-color-primary
     );
     --spectrum-actionbutton-m-quiet-background-color-hover: var(
-        --spectrum-alias-background-color-transparent
+        --spectrum-global-color-gray-300-cover-100
     );
     --spectrum-actionbutton-m-quiet-border-color-hover: var(
-        --spectrum-alias-border-color-transparent
+        --spectrum-global-color-gray-300-cover-100
     );
     --spectrum-actionbutton-m-quiet-text-color-hover: var(
-        --spectrum-alias-text-color-hover
+        --spectrum-alias-text-color-primary
     );
     --spectrum-actionbutton-m-quiet-background-color-key-focus: var(
-        --spectrum-alias-background-color-transparent
+        --spectrum-global-color-gray-300-cover-100
     );
     --spectrum-actionbutton-m-quiet-border-color-key-focus: var(
-        --spectrum-alias-border-color-focus
+        --spectrum-global-color-gray-300-cover-100
     );
     --spectrum-actionbutton-m-quiet-text-color-key-focus: var(
-        --spectrum-alias-text-color-hover
+        --spectrum-alias-text-color-primary
     );
     --spectrum-actionbutton-m-quiet-background-color-down: var(
-        --spectrum-global-color-gray-300
+        --spectrum-global-color-gray-300-cover-200
     );
     --spectrum-actionbutton-m-quiet-border-color-down: var(
-        --spectrum-alias-border-color-transparent
+        --spectrum-global-color-gray-300-cover-200
     );
     --spectrum-actionbutton-m-quiet-text-color-down: var(
-        --spectrum-alias-text-color-down
+        --spectrum-alias-text-color-primary
     );
     --spectrum-actionbutton-m-quiet-background-color-disabled: var(
-        --spectrum-alias-background-color-transparent
+        --spectrum-global-color-gray-300
     );
     --spectrum-actionbutton-m-quiet-border-color-disabled: var(
-        --spectrum-alias-border-color-transparent
+        --spectrum-global-color-gray-300
     );
     --spectrum-actionbutton-m-quiet-text-color-disabled: var(
         --spectrum-alias-text-color-disabled
     );
+    /* quiet selected */
     --spectrum-actionbutton-m-quiet-background-color-selected: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-100
     );
     --spectrum-actionbutton-m-quiet-border-color-selected: var(
-        --spectrum-alias-border-color-transparent
+        --spectrum-global-color-gray-100
     );
     --spectrum-actionbutton-m-quiet-text-color-selected: var(
-        --spectrum-alias-text-color
+        --spectrum-global-color-static-primary
     );
     --spectrum-actionbutton-m-quiet-background-color-selected-key-focus: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-100-cover-100
     );
     --spectrum-actionbutton-m-quiet-border-color-selected-key-focus: var(
-        --spectrum-alias-border-color-transparent
+        --spectrum-global-color-gray-100-cover-100
     );
     --spectrum-actionbutton-m-quiet-text-color-selected-key-focus: var(
-        --spectrum-alias-text-color-hover
+        --spectrum-global-color-static-primary
     );
     --spectrum-actionbutton-m-quiet-background-color-selected-hover: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-100-cover-100
     );
     --spectrum-actionbutton-m-quiet-border-color-selected-hover: var(
-        --spectrum-alias-border-color-transparent
+        --spectrum-global-color-gray-100-cover-100
     );
     --spectrum-actionbutton-m-quiet-text-color-selected-hover: var(
-        --spectrum-alias-text-color-hover
+        --spectrum-global-color-static-primary
     );
     --spectrum-actionbutton-m-quiet-background-color-selected-down: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-100-cover-200
     );
     --spectrum-actionbutton-m-quiet-border-color-selected-down: var(
-        --spectrum-alias-border-color-transparent
+        --spectrum-global-color-gray-100-cover-200
     );
     --spectrum-actionbutton-m-quiet-text-color-selected-down: var(
-        --spectrum-alias-text-color-down
+        --spectrum-global-color-static-primary
     );
     --spectrum-actionbutton-m-quiet-background-color-selected-disabled: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-100
     );
     --spectrum-actionbutton-m-quiet-border-color-selected-disabled: var(
-        --spectrum-alias-border-color-transparent
+        --spectrum-global-color-gray-100
     );
     --spectrum-actionbutton-m-quiet-text-color-selected-disabled: var(
-        --spectrum-alias-text-color-disabled
+        --spectrum-global-color-static-primary-opacity-300
     );
 }

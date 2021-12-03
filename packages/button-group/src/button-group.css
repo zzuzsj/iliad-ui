@@ -13,17 +13,6 @@ governing permissions and limitations under the License.
 
 @import './spectrum-button-group.css';
 
-/* override */
-:host {
-    --spectrum-buttongroup-button-gap-x: var(
-        --spectrum-global-dimension-static-size-100
-    );
-    --spectrum-buttongroup-button-gap-y: var(
-        --spectrum-global-dimension-static-size-100
-    );
-}
-/* override */
-
 :host([vertical]) ::slotted(sp-action-button) {
     --spectrum-actionbutton-label-flex-grow: 1;
 }

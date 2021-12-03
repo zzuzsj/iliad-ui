@@ -13,39 +13,35 @@ governing permissions and limitations under the License.
 :host {
     --spectrum-textfield-m-border-size: var(--spectrum-alias-border-size-thin);
     --spectrum-textfield-m-text-line-height: var(
-        --spectrum-alias-component-text-line-height
+        --spectrum-global-font-line-height-medium
     );
-    --spectrum-textfield-m-text-size: var(--spectrum-alias-item-text-size-m);
-    --spectrum-textfield-m-height: var(--spectrum-alias-item-height-m);
-    --spectrum-textfield-m-padding-left: var(--spectrum-alias-item-padding-m);
-    --spectrum-textfield-m-padding-right: var(--spectrum-alias-item-padding-m);
+    --spectrum-textfield-m-text-size: var(--spectrum-alias-font-size-s);
+    --spectrum-textfield-m-height: var(--spectrum-alias-control-height-m);
+    --spectrum-textfield-m-padding-left: var(--spectrum-alias-padding-m);
+    --spectrum-textfield-m-padding-right: var(--spectrum-alias-padding-m);
     --spectrum-textfield-m-min-width: var(--spectrum-global-dimension-size-600);
     --spectrum-textfield-m-success-icon-height: var(
-        --spectrum-alias-ui-icon-checkmark-size-100
+        --spectrum-alias-icon-size-m
     );
     --spectrum-textfield-m-success-icon-width: var(
-        --spectrum-alias-ui-icon-checkmark-size-100
+        --spectrum-alias-icon-size-m
     );
     --spectrum-textfield-m-success-icon-margin-left: var(
         --spectrum-global-dimension-size-150
     );
-    --spectrum-textfield-m-error-icon-height: var(
-        --spectrum-alias-ui-icon-alert-size-100
-    );
-    --spectrum-textfield-m-error-icon-width: var(
-        --spectrum-alias-ui-icon-alert-size-100
-    );
+    --spectrum-textfield-m-error-icon-height: var(--spectrum-alias-icon-size-m);
+    --spectrum-textfield-m-error-icon-width: var(--spectrum-alias-icon-size-m);
     --spectrum-textfield-m-error-icon-margin-left: var(
         --spectrum-global-dimension-size-150
     );
     --spectrum-textfield-m-placeholder-text-font-style: var(
-        --spectrum-global-font-style-italic
+        --spectrum-global-font-style-regular
     );
     --spectrum-textfield-m-placeholder-text-font-weight: var(
         --spectrum-global-font-weight-regular
     );
     --spectrum-textfield-m-border-radius: var(
-        --spectrum-alias-border-radius-regular
+        --spectrum-alias-border-radius-medium
     );
     --spectrum-textfield-quiet-m-border-size: var(
         --spectrum-alias-border-size-thin
@@ -53,27 +49,28 @@ governing permissions and limitations under the License.
     --spectrum-textfield-quiet-m-padding-left: 0;
     --spectrum-textfield-quiet-m-padding-right: 0;
     --spectrum-textfield-quiet-m-success-icon-margin-left: var(
-        --spectrum-global-dimension-size-150
+        --spectrum-global-dimension-size-100
     );
     --spectrum-textfield-quiet-m-error-icon-margin-left: var(
-        --spectrum-global-dimension-size-150
+        --spectrum-global-dimension-size-100
     );
     --spectrum-textfield-quiet-m-border-radius: 0px;
     --spectrum-textarea-m-text-padding-top: var(
-        --spectrum-alias-item-text-padding-top-m
+        --spectrum-global-dimeniion-size-100
     );
     --spectrum-textarea-m-text-padding-bottom: var(
-        --spectrum-alias-item-text-padding-bottom-m
+        --spectrum-global-dimeniion-size-100
     );
     --spectrum-textarea-m-height: var(--spectrum-alias-item-height-m);
-    --spectrum-textarea-m-padding-left: var(--spectrum-alias-item-padding-m);
-    --spectrum-textarea-m-padding-right: var(--spectrum-alias-item-padding-m);
+    --spectrum-textarea-m-padding-left: var(--spectrum-alias-padding-m);
+    --spectrum-textarea-m-padding-right: var(--spectrum-alias-padding-m);
     --spectrum-alias-body-text-font-family: var(
         --spectrum-global-font-family-base
     );
     --spectrum-alias-single-line-width: var(
         --spectrum-global-dimension-size-2400
     );
+    --spectrum-icon-checkmark-medium-width: undefined;
     --spectrum-icon-alert-medium-width: var(
         --spectrum-global-dimension-size-225
     );
@@ -87,10 +84,10 @@ governing permissions and limitations under the License.
         --spectrum-alias-border-color-hover
     );
     --spectrum-textfield-m-placeholder-text-color-hover: var(
-        --spectrum-alias-placeholder-text-color-hover
+        --spectrum-alias-text-color-primary
     );
     --spectrum-textfield-m-icon-color-hover: var(
-        --spectrum-global-color-gray-900
+        --spectrum-alias-icon-color-primary
     );
     --spectrum-textfield-m-border-color-down: var(
         --spectrum-alias-border-color-mouse-focus
@@ -99,7 +96,7 @@ governing permissions and limitations under the License.
         --spectrum-alias-icon-color-down
     );
     --spectrum-textfield-m-validation-icon-color-valid: var(
-        --spectrum-global-color-green-400
+        --spectrum-global-color-green
     );
     --spectrum-textfield-m-validation-icon-color-error: var(
         --spectrum-semantic-negative-color-icon
@@ -108,34 +105,39 @@ governing permissions and limitations under the License.
         --spectrum-semantic-negative-color-state-hover
     );
     --spectrum-textfield-m-validation-icon-color-disabled: var(
-        --spectrum-global-color-gray-500
+        --spectrum-alias-icon-color-disabled
     );
     --spectrum-textfield-m-icon-color-disabled: var(
-        --spectrum-global-color-gray-500
+        --spectrum-alias-icon-color-disabled
     );
-    --spectrum-textfield-m-icon-color: var(--spectrum-alias-icon-color);
+    --spectrum-textfield-m-icon-color: var(--spectrum-alias-icon-color-primary);
+    --spectrum-textfield-m-background-color-focus: var(
+        --spectrum-global-color-gray-100
+    );
     --spectrum-textfield-m-background-color: var(
-        --spectrum-global-color-gray-50
+        --spectrum-global-color-gray-300
     );
-    --spectrum-textfield-m-border-color: var(--spectrum-alias-border-color);
-    --spectrum-textfield-m-text-color: var(--spectrum-alias-text-color);
+    --spectrum-textfield-m-border-color: var(
+        --spectrum-textfield-m-background-color
+    );
+    --spectrum-textfield-m-text-color: var(--spectrum-alias-text-color-primary);
     --spectrum-textfield-m-placeholder-text-color: var(
-        --spectrum-global-color-gray-600
+        --spectrum-alias-text-color-placeholder
     );
     --spectrum-textfield-m-border-color-key-focus: var(
-        --spectrum-alias-border-color-focus
+        --spectrum-global-color-static-primary
     );
     --spectrum-textfield-m-border-color-error: var(
         --spectrum-semantic-negative-color-default
     );
     --spectrum-textfield-m-border-color-error-key-focus: var(
-        --spectrum-alias-border-color-focus
+        --spectrum-global-color-static-primary
     );
     --spectrum-textfield-m-background-color-disabled: var(
-        --spectrum-global-color-gray-200
+        --spectrum-global-color-gray-300
     );
     --spectrum-textfield-m-border-color-disabled: var(
-        --spectrum-alias-border-color-transparent
+        --spectrum-textfield-m-background-color
     );
     --spectrum-textfield-m-text-color-disabled: var(
         --spectrum-alias-text-color-disabled
@@ -165,7 +167,7 @@ governing permissions and limitations under the License.
         --spectrum-semantic-negative-color-state-hover
     );
     --spectrum-textfield-quiet-m-border-color-error-key-focus: var(
-        --spectrum-alias-border-color-focus
+        --spectrum-global-color-static-primary
     );
     --spectrum-textfield-quiet-m-background-color-disabled: var(
         --spectrum-alias-background-color-transparent
@@ -173,4 +175,13 @@ governing permissions and limitations under the License.
     --spectrum-textfield-quiet-m-border-color-disabled: var(
         --spectrum-alias-border-color-mid
     );
+
+    --spectrum-textfield-padding-top: calc(
+        (
+                var(--spectrum-textfield-height) -
+                    var(--spectrum-textfield-text-size) *
+                    var(--spectrum-textfield-text-line-height)
+            ) / 2
+    );
+    --spectrum-textfield-padding-bottom: var(--spectrum-textfield-padding-top);
 }

@@ -11,29 +11,13 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 @import './spectrum-popover.css';
-/* override */
-:host {
-    --spectrum-popover-background-color: var(--spectrum-global-color-gray-100);
-    --spectrum-popover-border-color: var(--spectrum-alias-border-color-dark);
-    --spectrum-popover-box-shadow: var(--spectrum-global-shadow-static-m);
-    --spectrum-popover-elevation: 2dp;
-    --spectrum-popover-border-size: var(--spectrum-global-dimension-size-0);
-    --spectrum-popover-border-radius: var(--spectrum-alias-border-radius-large);
-    --spectrum-popover-padding-x: var(--spectrum-global-dimension-size-100);
-    --spectrum-popover-padding-y: var(--spectrum-global-dimension-size-100);
-    --spectrum-popover-tip-width: var(--spectrum-global-dimension-size-250);
-    --spectrum-popover-tip-height: var(--spectrum-global-dimension-size-125);
-    --spectrum-popover-source-gap: var(--spectrum-global-dimension-size-75);
-    --spectrum-popover-min-width: var(--spectrum-global-dimension-size-400);
-    --spectrum-popover-min-height: var(--spectrum-global-dimension-size-400);
-}
+
 :host {
     filter: none;
     will-change: unset;
     box-shadow: var(--spectrum-popover-box-shadow);
     padding: var(--spectrum-popover-padding-y) var(--spectrum-popover-padding-x);
 }
-/* override */
 
 :host {
     --sp-popover-tip-size: 24px;
