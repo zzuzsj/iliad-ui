@@ -45,6 +45,7 @@
         "icons:ui": "lerna run --scope @iliad-ui/icons-ui build",
         "icons:workflow": "lerna run --scope @iliad-ui/icons-workflow build",
         "lerna-publish": "lerna publish --message \"chore: release new versions\"",
+        "lerna-publish:force": "lerna publish --message \"chore: release new versions\" --force-publish",
         "lint": "run-p lint:js lint:docs lint:ts lint:css lint:packagejson",
         "lint:css": "stylelint \"packages/**/*.css\"",
         "lint:docs": "eslint -f pretty \"documentation/**/*.ts\"",
