@@ -72,6 +72,7 @@
         "@iliad-ui/field-label": "^0.9.6",
         "@iliad-ui/icon": "^0.15.5",
         "@iliad-ui/icons": "^0.11.6",
+        "@iliad-ui/icons-editor": "^0.0.8",
         "@iliad-ui/icons-ui": "^0.12.5",
         "@iliad-ui/icons-workflow": "^0.12.5",
         "@iliad-ui/iconset": "^0.11.5",
