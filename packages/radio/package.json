@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/radio",
-    "version": "0.13.3",
+    "version": "0.13.4",
     "publishConfig": {
         "access": "public"
     },
@@ -46,9 +46,9 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.10.3",
-        "@iliad-ui/field-group": "^0.7.4",
-        "@iliad-ui/shared": "^0.18.3",
+        "@iliad-ui/base": "^0.10.4",
+        "@iliad-ui/field-group": "^0.7.5",
+        "@iliad-ui/shared": "^0.18.4",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

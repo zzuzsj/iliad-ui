@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/tree",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "publishConfig": {
         "access": "public"
     },
@@ -44,7 +44,7 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.10.3",
+        "@iliad-ui/base": "^0.10.4",
         "tslib": "^2.0.0"
     },
     "types": "./src/index.d.ts",

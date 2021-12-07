@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/color-handle",
-    "version": "0.5.4",
+    "version": "0.5.5",
     "publishConfig": {
         "access": "public"
     },
@@ -44,8 +44,8 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.10.3",
-        "@iliad-ui/color-loupe": "^0.5.3",
+        "@iliad-ui/base": "^0.10.4",
+        "@iliad-ui/color-loupe": "^0.5.4",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/shared",
-    "version": "0.18.3",
+    "version": "0.18.4",
     "publishConfig": {
         "access": "public"
     },
@@ -42,7 +42,7 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.10.3",
+        "@iliad-ui/base": "^0.10.4",
         "focus-visible": "^5.1.0",
         "tslib": "^2.0.0"
     },

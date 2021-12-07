@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/search",
-    "version": "0.12.3",
+    "version": "0.12.4",
     "publishConfig": {
         "access": "public"
     },
@@ -44,11 +44,11 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.10.3",
-        "@iliad-ui/button": "^0.20.4",
-        "@iliad-ui/icon": "^0.15.3",
-        "@iliad-ui/icons-workflow": "^0.12.3",
-        "@iliad-ui/textfield": "^0.14.4",
+        "@iliad-ui/base": "^0.10.4",
+        "@iliad-ui/button": "^0.20.5",
+        "@iliad-ui/icon": "^0.15.4",
+        "@iliad-ui/icons-workflow": "^0.12.4",
+        "@iliad-ui/textfield": "^0.14.5",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

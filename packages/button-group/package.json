@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/button-group",
-    "version": "0.10.6",
+    "version": "0.10.7",
     "publishConfig": {
         "access": "public"
     },
@@ -44,7 +44,7 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.10.3",
+        "@iliad-ui/base": "^0.10.4",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

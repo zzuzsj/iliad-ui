@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/story-decorator",
-    "version": "0.9.3",
+    "version": "0.9.4",
     "publishConfig": {
         "access": "public"
     },
@@ -45,13 +45,13 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.10.3",
-        "@iliad-ui/field-label": "^0.9.4",
-        "@iliad-ui/menu": "^0.15.4",
-        "@iliad-ui/overlay": "^0.17.3",
-        "@iliad-ui/picker": "^0.13.4",
-        "@iliad-ui/switch": "^0.11.3",
-        "@iliad-ui/theme": "^0.14.4",
+        "@iliad-ui/base": "^0.10.4",
+        "@iliad-ui/field-label": "^0.9.5",
+        "@iliad-ui/menu": "^0.15.5",
+        "@iliad-ui/overlay": "^0.17.4",
+        "@iliad-ui/picker": "^0.13.5",
+        "@iliad-ui/switch": "^0.11.4",
+        "@iliad-ui/theme": "^0.14.5",
         "tslib": "^2.0.0"
     },
     "types": "./src/index.d.ts",
