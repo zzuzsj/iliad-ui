@@ -172,14 +172,14 @@ governing permissions and limitations under the License.
         --spectrum-global-dimension-size-0
     );
     --spectrum-button-primary-m-text-size: var(
-        --spectrum-alias-item-text-size-m
+        --spectrum-alias-item-text-size-s
     );
     --spectrum-button-primary-m-text-padding-top: var(
         --spectrum-alias-item-text-padding-top-m
     );
     --spectrum-button-primary-m-height: var(--spectrum-alias-item-height-m);
     --spectrum-button-primary-m-icon-gap: var(
-        --spectrum-alias-item-workflow-icon-gap-m
+        --spectrum-global-dimension-size-75
     );
     --spectrum-button-primary-m-padding-left: var(
         --spectrum-alias-item-rounded-workflow-padding-left-m
@@ -206,7 +206,7 @@ governing permissions and limitations under the License.
         --spectrum-global-dimension-size-0
     );
     --spectrum-button-primary-l-text-size: var(
-        --spectrum-alias-item-text-size-l
+        --spectrum-alias-item-text-size-m
     );
     --spectrum-button-primary-l-text-padding-top: var(
         --spectrum-alias-item-text-padding-top-l
@@ -246,7 +246,7 @@ governing permissions and limitations under the License.
         --spectrum-alias-item-workflow-icon-gap-l
     );
     --spectrum-button-primary-xl-text-size: var(
-        --spectrum-alias-item-text-size-xl
+        --spectrum-alias-item-text-size-l
     );
     --spectrum-button-primary-xl-text-padding-top: var(
         --spectrum-alias-item-text-padding-top-xl

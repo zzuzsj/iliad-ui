@@ -41,7 +41,9 @@ governing permissions and limitations under the License.
         --spectrum-alias-component-text-line-height
     );
     --spectrum-actionbutton-s-text-size: var(--spectrum-alias-item-text-size-s);
-    --spectrum-actionbutton-s-icon-gap: var(--spectrum-alias-space-50);
+    --spectrum-actionbutton-s-icon-gap: var(
+        --spectrum-alias-item-workflow-icon-gap-s
+    );
     --spectrum-actionbutton-s-height: var(--spectrum-alias-item-height-s);
     --spectrum-actionbutton-s-padding-left: var(--spectrum-alias-padding-s);
     --spectrum-actionbutton-s-icononly-padding-left: var(
@@ -83,7 +85,9 @@ governing permissions and limitations under the License.
     );
     --spectrum-actionbutton-m-text-size: var(--spectrum-alias-item-text-size-m);
     --spectrum-actionbutton-m-height: var(--spectrum-alias-item-height-m);
-    --spectrum-actionbutton-m-icon-gap: var(--spectrum-alias-space-50);
+    --spectrum-actionbutton-m-icon-gap: var(
+        --spectrum-alias-item-workflow-icon-gap-s
+    );
     --spectrum-actionbutton-m-padding-left: var(--spectrum-alias-padding-m);
     --spectrum-actionbutton-m-icononly-padding-left: var(
         --spectrum-alias-padding-m
@@ -123,7 +127,9 @@ governing permissions and limitations under the License.
         --spectrum-alias-component-text-line-height
     );
     --spectrum-actionbutton-l-text-size: var(--spectrum-alias-item-text-size-l);
-    --spectrum-actionbutton-l-icon-gap: var(--spectrum-alias-space-100);
+    --spectrum-actionbutton-l-icon-gap: var(
+        --spectrum-alias-item-workflow-icon-gap-l
+    );
     --spectrum-actionbutton-l-height: var(--spectrum-alias-item-height-l);
     --spectrum-actionbutton-l-padding-left: var(--spectrum-alias-padding-l);
     --spectrum-actionbutton-l-icononly-padding-left: var(
@@ -163,7 +169,9 @@ governing permissions and limitations under the License.
     --spectrum-actionbutton-xl-text-line-height: var(
         --spectrum-alias-component-text-line-height
     );
-    --spectrum-actionbutton-xl-icon-gap: var(--spectrum-alias-space-150);
+    --spectrum-actionbutton-xl-icon-gap: var(
+        --spectrum-alias-item-workflow-icon-gap-xl
+    );
     --spectrum-actionbutton-xl-text-size: var(
         --spectrum-alias-item-text-size-xl
     );

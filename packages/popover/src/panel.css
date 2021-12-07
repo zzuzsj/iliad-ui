@@ -35,7 +35,7 @@ governing permissions and limitations under the License.
     --spectrum-panel-title-line-height: var(
         --spectrum-global-font-line-height-medium
     );
-    --spectrum-panel-title-font-size: var(--spectrum-alias-font-size-s);
+    --spectrum-panel-title-font-size: var(--spectrum-alias-font-size-m);
     --spectrum-panel-title-font-weight: var(--spectrum-alias-font-weight-l);
     --spectrum-panel-icon-inner-space: var(--spectrum-alias-padding-m);
 }

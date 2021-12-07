@@ -20,10 +20,11 @@ governing permissions and limitations under the License.
     );
 
     --spectrum-alias-font-size-s: var(--spectrum-global-dimension-font-size-75);
-    --spectrum-alias-font-size-m: var(
+    --spectrum-alias-font-size-m: var(--spectrum-global-dimension-font-size-75);
+    --spectrum-alias-font-size-l: var(
         --spectrum-global-dimension-font-size-100
     );
-    --spectrum-alias-font-size-l: var(
+    --spectrum-alias-font-size-xl: var(
         --spectrum-global-dimension-font-size-300
     );
 }

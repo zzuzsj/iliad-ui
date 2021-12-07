@@ -18,13 +18,13 @@ governing permissions and limitations under the License.
         --spectrum-global-dimension-size-10
     );
     --spectrum-alias-font-size-default: var(
-        --spectrum-global-dimension-font-size-100
+        --spectrum-global-dimension-font-size-75
     );
     --spectrum-alias-layout-label-gap-size: var(
         --spectrum-global-dimension-size-100
     );
     --spectrum-alias-pill-button-text-size: var(
-        --spectrum-global-dimension-font-size-100
+        --spectrum-global-dimension-font-size-75
     );
     --spectrum-alias-pill-button-text-baseline: var(
         --spectrum-global-dimension-size-150
@@ -280,40 +280,40 @@ governing permissions and limitations under the License.
         --spectrum-global-dimension-size-160
     );
     --spectrum-alias-item-workflow-icon-gap-s: var(
-        --spectrum-global-dimension-size-85
+        --spectrum-global-dimension-size-50
     );
     --spectrum-alias-item-workflow-icon-gap-m: var(
         --spectrum-global-dimension-size-100
     );
     --spectrum-alias-item-workflow-icon-gap-l: var(
-        --spectrum-global-dimension-size-115
+        --spectrum-global-dimension-size-125
     );
     --spectrum-alias-item-workflow-icon-gap-xl: var(
-        --spectrum-global-dimension-size-125
+        --spectrum-global-dimension-size-150
     );
-    --spectrum-alias-item-mark-gap-s: var(--spectrum-global-dimension-size-85);
+    --spectrum-alias-item-mark-gap-s: var(--spectrum-global-dimension-size-50);
     --spectrum-alias-item-mark-gap-m: var(--spectrum-global-dimension-size-100);
-    --spectrum-alias-item-mark-gap-l: var(--spectrum-global-dimension-size-115);
+    --spectrum-alias-item-mark-gap-l: var(--spectrum-global-dimension-size-125);
     --spectrum-alias-item-mark-gap-xl: var(
-        --spectrum-global-dimension-size-125
+        --spectrum-global-dimension-size-150
     );
     --spectrum-alias-item-ui-icon-gap-s: var(
-        --spectrum-global-dimension-size-85
+        --spectrum-global-dimension-size-50
     );
     --spectrum-alias-item-ui-icon-gap-m: var(
         --spectrum-global-dimension-size-100
     );
     --spectrum-alias-item-ui-icon-gap-l: var(
-        --spectrum-global-dimension-size-115
+        --spectrum-global-dimension-size-125
     );
     --spectrum-alias-item-ui-icon-gap-xl: var(
-        --spectrum-global-dimension-size-125
+        --spectrum-global-dimension-size-150
     );
     --spectrum-alias-item-clearbutton-gap-s: var(
         --spectrum-global-dimension-size-50
     );
     --spectrum-alias-item-clearbutton-gap-m: var(
-        --spectrum-global-dimension-size-85
+        --spectrum-global-dimension-size-100
     );
     --spectrum-alias-item-clearbutton-gap-l: var(
         --spectrum-global-dimension-size-125

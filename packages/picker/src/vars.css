@@ -41,7 +41,7 @@ governing permissions and limitations under the License.
     --spectrum-picker-s-textonly-padding-left: var(--spectrum-alias-padding-s);
     --spectrum-picker-s-textonly-padding-right: var(--spectrum-alias-padding-s);
     --spectrum-picker-m-border-size: var(--spectrum-alias-border-size-thin);
-    --spectrum-picker-m-text-size: var(--spectrum-alias-font-size-s);
+    --spectrum-picker-m-text-size: var(--spectrum-alias-font-size-m);
     --spectrum-picker-m-height: var(--spectrum-alias-control-height-m);
     --spectrum-picker-m-icon-gap: var(
         --spectrum-alias-item-workflow-icon-gap-m
@@ -67,7 +67,7 @@ governing permissions and limitations under the License.
     --spectrum-picker-m-textonly-padding-left: var(--spectrum-alias-padding-m);
     --spectrum-picker-m-textonly-padding-right: var(--spectrum-alias-padding-m);
     --spectrum-picker-l-border-size: var(--spectrum-alias-border-size-thin);
-    --spectrum-picker-l-text-size: var(--spectrum-alias-font-size-m);
+    --spectrum-picker-l-text-size: var(--spectrum-alias-font-size-l);
     --spectrum-picker-l-icon-gap: var(
         --spectrum-alias-item-workflow-icon-gap-l
     );
@@ -96,7 +96,7 @@ governing permissions and limitations under the License.
     --spectrum-picker-xl-icon-gap: var(
         --spectrum-alias-item-workflow-icon-gap-l
     );
-    --spectrum-picker-xl-text-size: var(--spectrum-alias-font-size-l);
+    --spectrum-picker-xl-text-size: var(--spectrum-alias-font-size-xl);
     --spectrum-picker-xl-height: var(--spectrum-alias-control-height-xl);
     --spectrum-picker-xl-placeholder-text-font-style: var(
         --spectrum-global-font-style-regular

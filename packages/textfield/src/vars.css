@@ -15,7 +15,7 @@ governing permissions and limitations under the License.
     --spectrum-textfield-m-text-line-height: var(
         --spectrum-global-font-line-height-medium
     );
-    --spectrum-textfield-m-text-size: var(--spectrum-alias-font-size-s);
+    --spectrum-textfield-m-text-size: var(--spectrum-alias-font-size-m);
     --spectrum-textfield-m-height: var(--spectrum-alias-control-height-m);
     --spectrum-textfield-m-padding-left: var(--spectrum-alias-padding-m);
     --spectrum-textfield-m-padding-right: var(--spectrum-alias-padding-m);
