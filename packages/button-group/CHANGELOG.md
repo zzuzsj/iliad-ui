@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.6](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/button-group@0.10.4...@iliad-ui/button-group@0.10.6) (2021-12-07)
+
+### Features
+
+-   button group 版本更新 ([fe2a3f3](https://github.com/gaoding-inc/iliad-ui/commit/fe2a3f3291aea64757318d9cad208e6affffb448))
+
 ## [0.10.4](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/button-group@0.10.2...@iliad-ui/button-group@0.10.4) (2021-12-07)
 
 ### Features

@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/bundle",
-    "version": "0.26.6",
+    "version": "0.26.7",
     "publishConfig": {
         "access": "public"
     },
@@ -56,7 +56,7 @@
         "@iliad-ui/banner": "^0.12.3",
         "@iliad-ui/breadcrumb": "^0.1.4",
         "@iliad-ui/button": "^0.20.4",
-        "@iliad-ui/button-group": "^0.10.4",
+        "@iliad-ui/button-group": "^0.10.6",
         "@iliad-ui/card": "^0.14.3",
         "@iliad-ui/checkbox": "^0.14.3",
         "@iliad-ui/coachmark": "^0.10.3",
@@ -65,7 +65,7 @@
         "@iliad-ui/color-loupe": "^0.5.3",
         "@iliad-ui/color-slider": "^0.7.4",
         "@iliad-ui/color-wheel": "^0.7.3",
-        "@iliad-ui/dialog": "^0.10.3",
+        "@iliad-ui/dialog": "^0.10.4",
         "@iliad-ui/divider": "^0.6.4",
         "@iliad-ui/dropzone": "^0.11.3",
         "@iliad-ui/field-group": "^0.7.4",
