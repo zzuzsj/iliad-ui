@@ -10,7 +10,7 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
-import { ReactiveElement, PropertyValues } from 'lit';
+import { PropertyValues, ReactiveElement } from 'lit';
 import { property } from 'lit/decorators.js';
 
 type Constructor<T = Record<string, unknown>> = {
@@ -30,25 +30,27 @@ export function SizedMixin<T extends Constructor<ReactiveElement>>(
     {
         validSizes = ['s', 'm', 'l', 'xl'],
         noDefaultSize,
+        defaultSize = 'm',
     }: {
         validSizes?: ElementSize[];
         noDefaultSize?: boolean;
+        defaultSize?: ElementSize;
     } = {}
 ): T & Constructor<SizedElementInterface> {
     class SizedElement extends constructor {
         @property({ type: String, reflect: true })
         public get size(): ElementSize {
-            return this._size || 'm';
+            return this._size || defaultSize;
         }
 
         public set size(value: ElementSize) {
-            const defaultSize = noDefaultSize ? null : 'm';
-            const size = (value
-                ? value.toLocaleLowerCase()
-                : value) as ElementSize;
-            const validSize = (validSizes.includes(size)
-                ? size
-                : defaultSize) as ElementSize;
+            const fallbackSize = noDefaultSize ? null : defaultSize;
+            const size = (
+                value ? value.toLocaleLowerCase() : value
+            ) as ElementSize;
+            const validSize = (
+                validSizes.includes(size) ? size : fallbackSize
+            ) as ElementSize;
             if (validSize) {
                 this.setAttribute('size', validSize);
             }
@@ -60,7 +62,7 @@ export function SizedMixin<T extends Constructor<ReactiveElement>>(
             this.requestUpdate('size', oldSize);
         }
 
-        private _size: ElementSize | null = 'm';
+        private _size: ElementSize | null = defaultSize;
 
         protected firstUpdated(changes: PropertyValues): void {
             super.firstUpdated(changes);

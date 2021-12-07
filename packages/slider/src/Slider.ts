@@ -25,7 +25,7 @@ import {
 
 import sliderStyles from './slider.css.js';
 import { ObserveSlotText } from '@iliad-ui/shared/src/observe-slot-text.js';
-import { StyleInfo } from 'lit-html/directives/style-map';
+import { StyleInfo } from 'lit/directives/style-map';
 import '@iliad-ui/field-label/sp-field-label.js';
 import type { NumberField } from '@iliad-ui/number-field';
 import { HandleController, HandleValueDictionary } from './HandleController.js';
