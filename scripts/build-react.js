@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /*
 Copyright 2020 Adobe. All rights reserved.
 Copyright 2021 Gaoding. All rights reserved.
