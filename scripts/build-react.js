@@ -16,22 +16,27 @@ import { execSync } from 'child_process';
 import chalk from 'chalk';
 import commandLineArgs from 'command-line-args';
 import prettier from 'prettier';
+import { fileURLToPath } from 'url';
 
-const { publish } = commandLineArgs([
-    { name: 'publish', type: Boolean },
-]);
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const configPath = path.resolve(path.join(__dirname, '..', 'config'));
+const header = fs.readFileSync(path.join(configPath, 'license.js'), 'utf8');
+
+const { publish } = commandLineArgs([{ name: 'publish', type: Boolean }]);
 
 if (publish) {
-    console.log(chalk.yellow('The --publish flag was used so the package will be published to npm after building!\n'));
+    console.log(
+        chalk.yellow(
+            'The --publish flag was used so the package will be published to npm after building!\n'
+        )
+    );
 }
 
 // Clear build directory
 process.chdir('./packages/react/');
 
 // Fetch component metadata
-const metadata = JSON.parse(
-    fs.readFileSync('./custom-elements.json', 'utf8')
-);
+const metadata = JSON.parse(fs.readFileSync('./custom-elements.json', 'utf8'));
 
 // Wrap components
 console.log('Wrapping components...');
@@ -39,15 +44,17 @@ console.log('Wrapping components...');
 function getAllComponents() {
     const allComponents = [];
 
-    metadata.modules.map(module => {
+    metadata.modules.map((module) => {
         if (module.path.startsWith('packages')) {
-            module.declarations?.map(declaration => {
+            module.declarations?.map((declaration) => {
                 if (declaration.customElement && declaration.tagName) {
                     const component = declaration;
                     const modulePath = module.path;
 
                     if (component) {
-                        allComponents.push(Object.assign(component, { modulePath }));
+                        allComponents.push(
+                            Object.assign(component, { modulePath })
+                        );
                     }
                 }
             });
@@ -59,28 +66,27 @@ function getAllComponents() {
 
 const components = getAllComponents();
 
-const mainExports = []
+const mainExports = [];
 
 function formatCode(string) {
     return prettier.format(string, {
         parser: 'babel-ts',
         singleQuote: true,
-    })
+    });
 }
 
-components.map(component => {
+components.map((component) => {
     const { name } = component;
-    const componentFile = path.join('./src', `${name}.ts`)
+    const componentFile = path.join('./src', `${name}.ts`);
 
     const events = (component.events || [])
-        .map(event => {
+        .map((event) => {
             return `'${event.name}': '${event.name}'`;
         })
         .join(',\n');
 
     const source = formatCode(
-        `
-      import * as React from 'react';
+        `${header}import * as React from 'react';
       import { createComponent } from '@lit-labs/react';
       import { ${name} as Component } from '@iliad-ui/bundle';
 
@@ -93,17 +99,28 @@ components.map(component => {
         },
         '${name}'
       );
-    `);
+    `
+    );
 
     fs.writeFileSync(componentFile, source, 'utf8');
-    mainExports.push(`export * from './src/${name}'`)
+    mainExports.push(`export * from './src/${name}'`);
     console.log(`✓ <${component.tagName}>`);
 });
 
-fs.writeFileSync('./index.ts', formatCode(mainExports.join('\n')), 'utf8');
+fs.writeFileSync(
+    './index.ts',
+    formatCode(`${header}/* 注册 web components sideEffect */
+    import '@iliad-ui/bundle/elements';
+
+    /* 脚本自动生成 */
+    ${mainExports.join('\n')}`),
+    'utf8'
+);
 
 // Run TypeScript on the generated src directory
-console.log('Source files have been generated. Running the TypeScript compiler...');
+console.log(
+    'Source files have been generated. Running the TypeScript compiler...'
+);
 execSync('npx tsc', { stdio: 'inherit' });
 
 // Publish to npm
