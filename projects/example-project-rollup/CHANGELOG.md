@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.30](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-rollup@0.3.29...example-project-rollup@0.3.30) (2021-12-07)
+
+### Features
+
+- 测试案例更改 ([9b118ec](https://github.com/zzuzsj/spectrum-web-components/commit/9b118ecfde397f0ef01c1b94c148fad1cd7f4726))
+
 ## [0.3.29](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-rollup@0.3.28...example-project-rollup@0.3.29) (2021-11-19)
 
 **Note:** Version bump only for package example-project-rollup

@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/color-wheel",
-    "version": "0.7.2",
+    "version": "0.7.3",
     "publishConfig": {
         "access": "public"
     },
@@ -45,9 +45,9 @@
     ],
     "dependencies": {
         "@ctrl/tinycolor": "^3.3.3",
-        "@iliad-ui/base": "^0.10.2",
-        "@iliad-ui/color-handle": "^0.5.2",
-        "@iliad-ui/shared": "^0.18.2",
+        "@iliad-ui/base": "^0.10.3",
+        "@iliad-ui/color-handle": "^0.5.4",
+        "@iliad-ui/shared": "^0.18.3",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.3](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icon@0.15.2...@iliad-ui/icon@0.15.3) (2021-12-07)
+
+### Features
+
+-   弹出层+菜单项修改 ([c6057c2](https://github.com/gaoding-inc/iliad-ui/commit/c6057c2575c80a3150e08e05f122f26a905e259e))
+
 ## [0.15.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icon@0.15.1...@iliad-ui/icon@0.15.2) (2021-11-19)
 
 ### Bug Fixes

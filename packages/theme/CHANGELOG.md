@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.14.4](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/theme@0.14.2...@iliad-ui/theme@0.14.4) (2021-12-07)
+
+**Note:** Version bump only for package @iliad-ui/theme
+
 ## [0.14.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/theme@0.14.1...@iliad-ui/theme@0.14.2) (2021-11-19)
 
 ### Features

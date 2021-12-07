@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.4](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons@0.11.2...@iliad-ui/icons@0.11.4) (2021-12-07)
+
+### Features
+
+-   bundle 依赖更新 ([8b897a3](https://github.com/gaoding-inc/iliad-ui/commit/8b897a3c85e99075b1c488fa92a71e6e6733020a))
+-   icon 发版 ([f3fae42](https://github.com/gaoding-inc/iliad-ui/commit/f3fae42a3dc5ce509fda413e5ddf933847a43c92))
+-   icons 代码更新 ([6d1def3](https://github.com/gaoding-inc/iliad-ui/commit/6d1def3150119dea7c87fb1854607d4f9360966d))
+-   icons 文件获取更新 ([3da42d2](https://github.com/gaoding-inc/iliad-ui/commit/3da42d26985f0502748e44d446c8993ad94112f3))
+-   icons 相关更新 ([732826a](https://github.com/gaoding-inc/iliad-ui/commit/732826a8eab0fe3156420b83c9031028df6f30a3))
+
 ## [0.11.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons@0.11.1...@iliad-ui/icons@0.11.2) (2021-11-19)
 
 **Note:** Version bump only for package @iliad-ui/icons

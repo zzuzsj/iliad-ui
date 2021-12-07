@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.17](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/react@0.4.12...@iliad-ui/react@0.4.17) (2021-12-07)
+
+### Features
+
+-   icons 相关更新 ([732826a](https://github.com/gaoding-inc/iliad-ui/commit/732826a8eab0fe3156420b83c9031028df6f30a3))
+-   react 包导出 Overlay ([ca88335](https://github.com/gaoding-inc/iliad-ui/commit/ca88335f8b69ec66e29f7525e2c10cde3e44006a))
+-   react 增加 icons 依赖 ([b983c1f](https://github.com/gaoding-inc/iliad-ui/commit/b983c1fc9632fbcad298c94ce66936f64a2035b7))
+-   react 增加 iconseditor 组件 ([da60910](https://github.com/gaoding-inc/iliad-ui/commit/da60910fd2e4d1fa68b52690396c6283af7482e8))
+
 ## [0.4.12](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/react@0.4.5...@iliad-ui/react@0.4.12) (2021-11-19)
 
 ### Bug Fixes

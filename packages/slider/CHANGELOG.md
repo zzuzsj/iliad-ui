@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.16.3](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/slider@0.16.2...@iliad-ui/slider@0.16.3) (2021-12-07)
+
+### Features
+
+-   lit 版本升级为 2.0 ([6e40df2](https://github.com/gaoding-inc/iliad-ui/commit/6e40df2bac248524ac3d8cf6c2aa23e7b57019cb))
+
 ## [0.16.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/slider@0.16.1...@iliad-ui/slider@0.16.2) (2021-11-19)
 
 ### Features

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.26.6](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/bundle@0.26.3...@iliad-ui/bundle@0.26.6) (2021-12-07)
+
+### Features
+
+-   增加 panel 组件 ([af4d69e](https://github.com/gaoding-inc/iliad-ui/commit/af4d69ec21e9e14db2130f6b9376cdbbca8bce64))
+-   bundle icons 依赖更新 ([b868614](https://github.com/gaoding-inc/iliad-ui/commit/b868614d2efaa81f7b572fef24c621a329677f32))
+-   bundle 依赖更新 ([8b897a3](https://github.com/gaoding-inc/iliad-ui/commit/8b897a3c85e99075b1c488fa92a71e6e6733020a))
+-   icons 相关更新 ([732826a](https://github.com/gaoding-inc/iliad-ui/commit/732826a8eab0fe3156420b83c9031028df6f30a3))
+
 ## [0.26.3](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/bundle@0.26.2...@iliad-ui/bundle@0.26.3) (2021-11-19)
 
 ### Bug Fixes

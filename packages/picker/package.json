@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/picker",
-    "version": "0.13.3",
+    "version": "0.13.4",
     "publishConfig": {
         "access": "public"
     },
@@ -48,15 +48,15 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.10.2",
-        "@iliad-ui/button": "^0.20.2",
-        "@iliad-ui/icon": "^0.15.2",
-        "@iliad-ui/icons-ui": "^0.12.2",
-        "@iliad-ui/icons-workflow": "^0.12.2",
-        "@iliad-ui/menu": "^0.15.2",
-        "@iliad-ui/overlay": "^0.17.2",
-        "@iliad-ui/popover": "^0.13.2",
-        "@iliad-ui/shared": "^0.18.2",
+        "@iliad-ui/base": "^0.10.3",
+        "@iliad-ui/button": "^0.20.4",
+        "@iliad-ui/icon": "^0.15.3",
+        "@iliad-ui/icons-ui": "^0.12.3",
+        "@iliad-ui/icons-workflow": "^0.12.3",
+        "@iliad-ui/menu": "^0.15.4",
+        "@iliad-ui/overlay": "^0.17.3",
+        "@iliad-ui/popover": "^0.13.4",
+        "@iliad-ui/shared": "^0.18.3",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

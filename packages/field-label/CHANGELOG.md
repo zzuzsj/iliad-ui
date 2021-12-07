@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.4](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/field-label@0.9.2...@iliad-ui/field-label@0.9.4) (2021-12-07)
+
+### Features
+
+-   css 样式更改 ([f0c9476](https://github.com/gaoding-inc/iliad-ui/commit/f0c9476e27b07ad3da62ecd717675c7329e5f78e))
+
 ## [0.9.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/field-label@0.9.1...@iliad-ui/field-label@0.9.2) (2021-11-19)
 
 **Note:** Version bump only for package @iliad-ui/field-label

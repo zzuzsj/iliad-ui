@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.3](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/story-decorator@0.9.2...@iliad-ui/story-decorator@0.9.3) (2021-12-07)
+
+### Features
+
+-   lit 升级为 2.0 ([167b136](https://github.com/gaoding-inc/iliad-ui/commit/167b13667224dcb077cf18dd02d044da07cb492c))
+
 ## [0.9.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/story-decorator@0.9.1...@iliad-ui/story-decorator@0.9.2) (2021-11-19)
 
 ### Features
