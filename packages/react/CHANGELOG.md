@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/react@0.4.21...@iliad-ui/react@0.5.0) (2021-12-07)
+
+### Features
+
+-   react 代码库增加 panel 引入 ([4bc1ca9](https://github.com/gaoding-inc/iliad-ui/commit/4bc1ca902694a6b7dc5b2bb98d94975bfba8f4eb))
+
 ## [0.4.21](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/react@0.4.20...@iliad-ui/react@0.4.21) (2021-12-07)
 
 **Note:** Version bump only for package @iliad-ui/react
