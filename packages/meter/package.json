@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/meter",
-    "version": "0.8.4",
+    "version": "0.8.5",
     "publishConfig": {
         "access": "public"
     },
@@ -44,9 +44,9 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.10.4",
-        "@iliad-ui/field-label": "^0.9.5",
-        "@iliad-ui/shared": "^0.18.4",
+        "@iliad-ui/base": "^0.11.0",
+        "@iliad-ui/field-label": "^0.9.6",
+        "@iliad-ui/shared": "^0.18.5",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

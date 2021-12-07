@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.17.5](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/overlay@0.17.4...@iliad-ui/overlay@0.17.5) (2021-12-07)
+
+**Note:** Version bump only for package @iliad-ui/overlay
+
 ## [0.17.4](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/overlay@0.17.3...@iliad-ui/overlay@0.17.4) (2021-12-07)
 
 **Note:** Version bump only for package @iliad-ui/overlay

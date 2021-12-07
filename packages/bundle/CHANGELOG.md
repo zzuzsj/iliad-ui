@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.26.9](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/bundle@0.26.8...@iliad-ui/bundle@0.26.9) (2021-12-07)
+
+**Note:** Version bump only for package @iliad-ui/bundle
+
 ## [0.26.8](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/bundle@0.26.7...@iliad-ui/bundle@0.26.8) (2021-12-07)
 
 **Note:** Version bump only for package @iliad-ui/bundle

@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/vrt-compare",
-    "version": "0.6.4",
+    "version": "0.6.5",
     "publishConfig": {
         "access": "public"
     },
@@ -44,14 +44,14 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/action-bar": "^0.6.4",
-        "@iliad-ui/action-button": "^0.11.5",
-        "@iliad-ui/action-group": "^0.10.5",
-        "@iliad-ui/base": "^0.10.4",
-        "@iliad-ui/icons-workflow": "^0.12.4",
-        "@iliad-ui/shared": "^0.18.4",
-        "@iliad-ui/split-view": "^0.8.4",
-        "@iliad-ui/styles": "^0.13.5",
+        "@iliad-ui/action-bar": "^0.6.5",
+        "@iliad-ui/action-button": "^0.11.6",
+        "@iliad-ui/action-group": "^0.10.6",
+        "@iliad-ui/base": "^0.11.0",
+        "@iliad-ui/icons-workflow": "^0.12.5",
+        "@iliad-ui/shared": "^0.18.5",
+        "@iliad-ui/split-view": "^0.8.5",
+        "@iliad-ui/styles": "^0.13.6",
         "tslib": "^2.0.0"
     },
     "types": "./src/index.d.ts",
