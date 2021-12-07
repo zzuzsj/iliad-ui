@@ -15,7 +15,7 @@ import '@iliad-ui/sidenav/sp-sidenav.js';
 import '@iliad-ui/sidenav/sp-sidenav-item.js';
 import '@iliad-ui/sidenav/sp-sidenav-heading.js';
 import '@iliad-ui/vrt-compare/vrt-compare.js';
-import { html, render, nothing } from 'lit-html';
+import { html, render, nothing } from 'lit';
 
 const review = document.querySelector('vrt-compare');
 const resultTypes = ['new', 'updated', 'removed', 'passed'];

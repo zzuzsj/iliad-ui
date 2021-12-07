@@ -12,13 +12,13 @@ governing permissions and limitations under the License.
 */
 
 import {
-    html,
-    SpectrumElement,
     css,
-    property,
+    html,
+    nothing,
+    SpectrumElement,
     TemplateResult,
     ifDefined,
-    nothing,
+    property,
     queryAsync,
 } from '@iliad-ui/base';
 import '@iliad-ui/theme/sp-theme.js';
