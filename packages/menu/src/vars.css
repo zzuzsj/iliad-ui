@@ -22,8 +22,8 @@ governing permissions and limitations under the License.
     --spectrum-listitem-m-text-font-weight: var(
         --spectrum-alias-body-text-font-weight
     );
-    --spectrum-listitem-m-text-size: var(--spectrum-alias-item-text-size-m);
-    --spectrum-listitem-m-height: var(--spectrum-alias-item-height-m);
+    --spectrum-listitem-m-text-size: var(--spectrum-alias-font-size-m);
+    --spectrum-listitem-m-height: var(--spectrum-alias-control-height-m);
     --spectrum-listitem-m-icon-gap: var(
         --spectrum-alias-item-workflow-icon-gap-m
     );
@@ -71,7 +71,7 @@ governing permissions and limitations under the License.
         --spectrum-listitem-m-icon-color-selected
     );
     --spectrum-listitem-m-background-color-down: var(
-        --spectrum-alias-background-color-hover-overlay
+        --spectrum-listitem-m-background-color-selected
     );
     --spectrum-listitem-m-background-color-disabled: var(
         --spectrum-global-color-gray-100
