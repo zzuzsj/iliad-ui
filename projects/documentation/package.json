@@ -8,7 +8,7 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
-        "build": "yarn build:tsc && yarn build-search-index && yarn build:move-css && yarn build:eleventy && yarn build:postcss && yarn build:rollup && yarn deploy",
+        "build": "yarn build:tsc && yarn build-search-index && yarn build:move-css && yarn build:eleventy && yarn build:postcss && yarn build:rollup",
         "build-search-index": "node scripts/build-search-index.js",
         "build:eleventy": "eleventy --config=.eleventy.cjs --incremental",
         "build:move-css": "cp src/components/*.css _site/src/components/",
@@ -16,7 +16,7 @@
         "build:production": "yarn build",
         "build:rollup": "rollup -c rollup.config.js",
         "build:tsc": "tsc --build tsconfig.json",
-        "copy-docs": "node scripts/copy-component-docs.js",
+        "copy-docs": "node ./scripts/copy-component-docs.js",
         "deploy": "gh-pages -d dist",
         "prebuild": "rimraf _site && mkdir -p _site/src/components && rimraf dist && mkdir dist && yarn copy-docs",
         "prewatch": "yarn build",
