@@ -30,5 +30,5 @@ import '@iliad-ui/tooltip/sp-tooltip.js';
 import '@iliad-ui/dialog/sp-dialog.js';
 import '@iliad-ui/bundle/elements';
 import '@iliad-ui/icons-workflow/icons';
-import '@spectrum-web-components/icons-ui/icons/sp-icon-chevron100.js';
+import '@iliad-ui/icons-ui/icons/sp-icon-chevron100.js';
 // import '@iliad-ui/styles/core-global.css';
