@@ -46,7 +46,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 -   export CSS with appropriate scoping ([3cf9f40](https://github.com/gaoding-inc/iliad-ui/commit/3cf9f40c504c827e14231db23c0f8b9b189b222e))
 -   **styles:** ensure ",map" file inclusion in the published package ([54a2b13](https://github.com/gaoding-inc/iliad-ui/commit/54a2b130d5ec943807429420460ffbd93f033d25))
--   **styles:** move `@spectrum-web-components/base` from devDependencies to dependencies ([246411c](https://github.com/gaoding-inc/iliad-ui/commit/246411c63c96cfdabee5ee6ee36659f25cc4e0d4))
+-   **styles:** move `@iliad-ui/base` from devDependencies to dependencies ([246411c](https://github.com/gaoding-inc/iliad-ui/commit/246411c63c96cfdabee5ee6ee36659f25cc4e0d4))
 -   **styles:** process CSS in package for use directly in a browser ([cf52924](https://github.com/gaoding-inc/iliad-ui/commit/cf52924404112e44a0abc6eacd4092f3ca4a9ea1))
 -   **styles:** update exports listing ([535113d](https://github.com/gaoding-inc/iliad-ui/commit/535113daf33b4bdecda6874f45c44469927469ec))
 -   code review feedback ([441bbb7](https://github.com/gaoding-inc/iliad-ui/commit/441bbb7fac435924adbdd2277fae1f3bf6441c6c))
@@ -110,7 +110,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 -   export CSS with appropriate scoping ([3cf9f40](https://github.com/gaoding-inc/iliad-ui/commit/3cf9f40c504c827e14231db23c0f8b9b189b222e))
 -   **styles:** ensure ",map" file inclusion in the published package ([54a2b13](https://github.com/gaoding-inc/iliad-ui/commit/54a2b130d5ec943807429420460ffbd93f033d25))
--   **styles:** move `@spectrum-web-components/base` from devDependencies to dependencies ([246411c](https://github.com/gaoding-inc/iliad-ui/commit/246411c63c96cfdabee5ee6ee36659f25cc4e0d4))
+-   **styles:** move `@iliad-ui/base` from devDependencies to dependencies ([246411c](https://github.com/gaoding-inc/iliad-ui/commit/246411c63c96cfdabee5ee6ee36659f25cc4e0d4))
 -   **styles:** process CSS in package for use directly in a browser ([cf52924](https://github.com/gaoding-inc/iliad-ui/commit/cf52924404112e44a0abc6eacd4092f3ca4a9ea1))
 -   **styles:** update exports listing ([535113d](https://github.com/gaoding-inc/iliad-ui/commit/535113daf33b4bdecda6874f45c44469927469ec))
 -   code review feedback ([441bbb7](https://github.com/gaoding-inc/iliad-ui/commit/441bbb7fac435924adbdd2277fae1f3bf6441c6c))
@@ -150,7 +150,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 -   export CSS with appropriate scoping ([3cf9f40](https://github.com/gaoding-inc/iliad-ui/commit/3cf9f40c504c827e14231db23c0f8b9b189b222e))
 -   **styles:** ensure ",map" file inclusion in the published package ([54a2b13](https://github.com/gaoding-inc/iliad-ui/commit/54a2b130d5ec943807429420460ffbd93f033d25))
--   **styles:** move `@spectrum-web-components/base` from devDependencies to dependencies ([246411c](https://github.com/gaoding-inc/iliad-ui/commit/246411c63c96cfdabee5ee6ee36659f25cc4e0d4))
+-   **styles:** move `@iliad-ui/base` from devDependencies to dependencies ([246411c](https://github.com/gaoding-inc/iliad-ui/commit/246411c63c96cfdabee5ee6ee36659f25cc4e0d4))
 -   **styles:** process CSS in package for use directly in a browser ([cf52924](https://github.com/gaoding-inc/iliad-ui/commit/cf52924404112e44a0abc6eacd4092f3ca4a9ea1))
 -   **styles:** update exports listing ([535113d](https://github.com/gaoding-inc/iliad-ui/commit/535113daf33b4bdecda6874f45c44469927469ec))
 -   code review feedback ([441bbb7](https://github.com/gaoding-inc/iliad-ui/commit/441bbb7fac435924adbdd2277fae1f3bf6441c6c))

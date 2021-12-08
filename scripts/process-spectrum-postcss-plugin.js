@@ -292,7 +292,15 @@ class SpectrumProcessor {
                     node.parent.parent &&
                     node.parent.parent.type === 'pseudo'
                 ) {
-                    node.replaceWith(attribute.shadowNode.clone());
+                    if (!this.component.spectrumClassIsHost) {
+                        // Attributes in pseudo classes need to be on the :host, too.
+                        const treeRoot = node.parent.parent;
+                        treeRoot.remove();
+                        node.replaceWith(attribute.shadowNode.clone());
+                        addNodeToHost(result, treeRoot);
+                    } else {
+                        node.replaceWith(attribute.shadowNode.clone());
+                    }
                     return;
                 }
 
