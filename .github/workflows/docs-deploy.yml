@@ -2,7 +2,7 @@ name: GitHub Actions Build and Deploy Demo
 on:
     push:
         branches:
-            - f_saiye_token
+            - [main, f_saiye_token]
 jobs:
     build-and-deploy:
         runs-on: ubuntu-latest
@@ -13,7 +13,8 @@ jobs:
                   persist-credentials: false
             - name: Install and Build
               run: |
-                  npm install
+                  npm install lerna -g
+                  lerna bootstrap
                   npm run-script docs:ci
             - name: Deploy
               uses: JamesIves/github-pages-deploy-action@releases/v3
