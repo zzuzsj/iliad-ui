@@ -6,6 +6,7 @@
         "registry": "https://registry-npm.gaoding.com"
     },
     "description": "",
+    "homepage": "https://gaoding-inc/Iliad-ui",
     "type": "module",
     "engines": {
         "node": ">=14.15.3",
