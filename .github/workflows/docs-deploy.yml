@@ -1,4 +1,7 @@
 name: GitHub Actions Build and Deploy Demo
+strategy:
+    matrix:
+        node-version: 14.x
 on:
     push:
         branches:
