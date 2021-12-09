@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.14.6](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/checkbox@0.14.5...@iliad-ui/checkbox@0.14.6) (2021-12-09)
+
+**Note:** Version bump only for package @iliad-ui/checkbox
+
 ## [0.14.5](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/checkbox@0.14.4...@iliad-ui/checkbox@0.14.5) (2021-12-07)
 
 **Note:** Version bump only for package @iliad-ui/checkbox

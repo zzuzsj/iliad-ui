@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.16.6](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/slider@0.16.5...@iliad-ui/slider@0.16.6) (2021-12-09)
+
+**Note:** Version bump only for package @iliad-ui/slider
+
 ## [0.16.5](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/slider@0.16.4...@iliad-ui/slider@0.16.5) (2021-12-07)
 
 **Note:** Version bump only for package @iliad-ui/slider
