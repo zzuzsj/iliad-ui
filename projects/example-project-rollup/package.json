@@ -24,7 +24,7 @@
     "@iliad-ui/button": "^0.21.0",
     "@iliad-ui/field-label": "^0.9.7",
     "@iliad-ui/icons": "^0.11.2",
-    "@iliad-ui/icons-editor": "^0.0.5",
+    "@iliad-ui/icons-editor": "^0.0.9",
     "@iliad-ui/menu": "^0.16.0",
     "@iliad-ui/picker": "^0.13.8",
     "@iliad-ui/styles": "^0.14.0"
