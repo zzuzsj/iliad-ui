@@ -16,7 +16,7 @@
         "build:production": "yarn build",
         "build:rollup": "rollup -c rollup.config.js",
         "build:tsc": "tsc --build tsconfig.json",
-        "copy-docs": "node ./scripts/copy-component-docs.js",
+        "copy-docs": "node scripts/copy-component-docs.js",
         "deploy": "gh-pages -d dist",
         "prebuild": "rimraf _site && mkdir -p _site/src/components && rimraf dist && mkdir dist && yarn copy-docs",
         "prewatch": "yarn build",
