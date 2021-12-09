@@ -30,7 +30,7 @@ governing permissions and limitations under the License.
 :host {
     width: var(--spectrum-actiongroup-width);
 }
-:host[compact][quiet] {
+:host([compact]) {
     background: var(--spectrum-actiongroup-quiet-compact-background-color);
     border-radius: var(--spectrum-actiongroup-quiet-compact-border-radius);
     display: flex;

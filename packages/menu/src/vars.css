@@ -14,7 +14,7 @@ governing permissions and limitations under the License.
     --spectrum-alias-body-text-line-height: var(
         --spectrum-global-font-line-height-medium
     );
-    --spectrum-listitem-m-divider-size: var(--spectrum-alias-border-size-thick);
+    --spectrum-listitem-m-divider-size: var(--spectrum-alias-border-size-thin);
     --spectrum-listitem-m-divider-padding: 3px;
     --spectrum-listitem-m-focus-indicator-size: var(
         --spectrum-global-dimension-size-0

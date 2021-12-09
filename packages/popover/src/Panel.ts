@@ -60,6 +60,9 @@ export class Panel extends FocusVisiblePolyfillMixin(
     @property({ type: Boolean, reflect: true })
     public backable = false;
 
+    @property({ type: Boolean, reflect: true })
+    public divider = false;
+
     @property({ attribute: 'cancel-label' })
     public cancelLabel = '';
 
@@ -125,7 +128,7 @@ export class Panel extends FocusVisiblePolyfillMixin(
 
     protected render(): TemplateResult {
         return html`
-            <div class="panel-header">
+            <div class="panel-header" ?divider=${this.divider}>
                 <div
                     class="header-block header-main ${this.backable
                         ? 'handle-space'
@@ -133,18 +136,11 @@ export class Panel extends FocusVisiblePolyfillMixin(
                 >
                     ${this.backable
                         ? html`
-                              <sp-action-button
-                                  class="icon back"
-                                  label="Back"
-                                  quiet
-                                  size="m"
+                              <sp-icon-editor-arrow-left
+                                  class="back-icon"
+                                  slot="icon"
                                   @click=${this.doBack}
-                              >
-                                  <sp-icon-editor-arrow-left
-                                      class="back-icon"
-                                      slot="icon"
-                                  ></sp-icon-editor-arrow-left>
-                              </sp-action-button>
+                              ></sp-icon-editor-arrow-left>
                           `
                         : html``}
                     ${this.title

@@ -58,6 +58,9 @@ export class ActionGroup extends SpectrumElement {
     @property({ type: Boolean, reflect: true })
     public vertical = false;
 
+    @property({ type: Boolean, reflect: true })
+    public divider = false;
+
     @property({ type: Array })
     public get selected(): string[] {
         return this._selected;

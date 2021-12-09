@@ -13,7 +13,7 @@ governing permissions and limitations under the License.
 
 @import './spectrum-action-button.css';
 
-:host([selected]:not([quite], [emphasized])) {
+/* :host([selected]:not([quite], [emphasized])) {
     border-color: var(--spectrum-actionbutton-m-default-border-color-selected);
 }
 :host([selected]:not([quite], [emphasized])):hover {
@@ -21,7 +21,7 @@ governing permissions and limitations under the License.
 }
 :host([selected]:not([quite], [emphasized]))[active] {
     border-color: var(--spectrum-actionbutton-m-default-border-color-selected);
-}
+} */
 :host {
     display: inline-flex;
     flex-direction: row;

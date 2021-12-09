@@ -73,9 +73,14 @@ export function renderButtonSet(properties: Properties): TemplateResult {
             Click Me
         `,
     });
+    const iconOnly = Object.assign({}, properties, {
+        content: html`
+            <sp-icon-help slot="icon"></sp-icon-help>
+        `,
+    });
     return html`
         ${renderButton(properties)} ${renderButton(disabled)}
-        ${renderButton(icon)}
+        ${renderButton(icon)} ${renderButton(iconOnly)}
     `;
 }
 

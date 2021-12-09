@@ -47,33 +47,33 @@ $global-color-positive: rgba($global-color-static-green-500, 1);
 $global-text-color-primary: rgba($global-color-static-white, 0.96);
 $global-text-color-secondary: rgba($global-color-static-white, 0.72);
 $global-text-color-placeholder: rgba($global-color-static-white, 0.48);
-$global-text-color-disabled: rgba($global-color-static-white, 0.32);
+$global-text-color-disabled: rgba($global-color-static-white, 0.4);
 $global-text-color-link: rgba($global-color-static-blue-500, 1);
 
 // Part IconColor
-$global-icon-color-primary: rgba($global-color-gray-800, 1);
+$global-icon-color-primary: rgba($global-color-gray-900, 1);
 $global-icon-color-secondary: rgba($global-color-gray-800, 1);
 $global-icon-color-tertiary: rgba($global-color-gray-700, 1);
-$global-icon-color-disabled: rgba($global-color-gray-600, 1);
+$global-icon-color-disabled: rgba($global-color-gray-500, 1);
 $global-icon-color-activited: rgba($global-color-static-blue-500, 1);
 
 // Part BgColor
 $global-bg-color-0: rgba($global-color-gray-100, 1);
 $global-bg-color-100: rgba($global-color-gray-200, 1);
-$global-bg-color-200: rgba($global-color-gray-400, 1);
+$global-bg-color-200: rgba($global-color-gray-300, 1);
 $global-bg-color-300: rgba($global-color-gray-300, 1);
 $global-bg-color-disabled: rgba($global-color-gray-300, 1);
 
 // Part CoverColor
 $global-cover-color-0: rgba($global-color-static-white, 0);
-$global-cover-color-100: rgba($global-color-static-white, 0.08);
-$global-cover-color-200: rgba($global-color-static-white, 0.16);
+$global-cover-color-100: rgba($global-color-static-white, 0.06);
+$global-cover-color-200: rgba($global-color-static-white, 0.12);
 
 // Part BorderColor
 $global-border-color-100: rgba($global-color-static-white, 0.08);
 $global-border-color-200: rgba($global-color-static-white, 0.16);
 
-// Part FillColor
+// Part FillColor 叠加色 暂时不做使用
 $global-color-primary-cover-100: mix(
     $global-color-static-primary-500,
     $global-cover-color-100

@@ -40,7 +40,7 @@ governing permissions and limitations under the License.
 :host {
     --spectrum-listitem-divider-size: var(
         --spectrum-listitem-m-divider-size,
-        var(--spectrum-alias-border-size-thick)
+        var(--spectrum-alias-border-size-thin)
     ); /* .spectrum-Menu */
     --spectrum-listitem-divider-padding: var(
         --spectrum-listitem-m-divider-padding,

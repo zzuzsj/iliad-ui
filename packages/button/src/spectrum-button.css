@@ -13,7 +13,9 @@ governing permissions and limitations under the License.
 */
 @import './vars.css';
 :host {
-    --spectrum-button-line-height: 1.3; /* .spectrum-LogicButton,
+    --spectrum-button-line-height: var(
+        --spectrum-global-font-line-height-medium
+    ); /* .spectrum-LogicButton,
    * .spectrum-ClearButton,
    * .spectrum-Button */
     -webkit-font-smoothing: antialiased;
@@ -99,7 +101,7 @@ governing permissions and limitations under the License.
         var(
                 --spectrum-alias-focus-ring-gap,
                 var(--spectrum-global-dimension-static-size-25)
-            ) * -2
+            ) * -1
     ); /* .spectrum-LogicButton.focus-ring:after,
    * .spectrum-ClearButton.focus-ring:after,
    * .spectrum-Button.focus-ring:after */
@@ -109,7 +111,7 @@ governing permissions and limitations under the License.
         var(
                 --spectrum-alias-focus-ring-gap,
                 var(--spectrum-global-dimension-static-size-25)
-            ) * -2
+            ) * -1
     ); /* .spectrum-LogicButton.focus-ring:after,
    * .spectrum-ClearButton.focus-ring:after,
    * .spectrum-Button.focus-ring:after */
@@ -352,6 +354,26 @@ governing permissions and limitations under the License.
         var(--spectrum-button-primary-textonly-padding-right) -
             var(--spectrum-button-primary-border-size)
     );
+    --spectrum-button-primary-icononly-padding-left: calc(
+        (
+                var(--spectrum-button-primary-height) -
+                    var(--spectrum-icon-tshirt-size-height)
+            ) / 2
+    );
+    --spectrum-button-primary-icononly-padding-right: calc(
+        (
+                var(--spectrum-button-primary-height) -
+                    var(--spectrum-icon-tshirt-size-height)
+            ) / 2
+    );
+    --spectrum-button-primary-icononly-padding-left-adjusted: calc(
+        var(--spectrum-button-primary-icononly-padding-left) -
+            var(--spectrum-button-primary-border-size)
+    );
+    --spectrum-button-primary-icononly-padding-right-adjusted: calc(
+        var(--spectrum-button-primary-icononly-padding-right) -
+            var(--spectrum-button-primary-border-size)
+    );
     --spectrum-button-padding-y: calc(
         var(--spectrum-button-primary-text-padding-top) - 1px
     );
@@ -372,6 +394,16 @@ governing permissions and limitations under the License.
         --spectrum-button-primary-textonly-padding-left-adjusted
     ); /* [dir=rtl] .spectrum-Button */
 }
+:host([icononly]) {
+    padding-left: var(--spectrum-button-primary-icononly-padding-left-adjusted);
+    padding-right: var(
+        --spectrum-button-primary-icononly-padding-right-adjusted
+    );
+}
+:host.focus-visible,
+:host:focus-visible {
+    outline: none;
+}
 :host {
     border-radius: var(--spectrum-button-primary-border-radius);
     border-style: solid;
@@ -383,26 +415,26 @@ governing permissions and limitations under the License.
     height: auto;
     min-height: var(--spectrum-button-primary-height);
     min-width: var(--spectrum-button-primary-min-width);
-    padding-bottom: calc(var(--spectrum-button-padding-y) + 1px);
-    padding-top: calc(var(--spectrum-button-padding-y) - 1px);
+    padding-bottom: var(--spectrum-button-padding-y);
+    padding-top: var(--spectrum-button-padding-y);
 }
 :host(:hover),
 :host([active]) {
     box-shadow: none; /* .spectrum-Button:hover,
    * .spectrum-Button:active */
 }
-:host([dir='ltr']) ::slotted([slot='icon']) {
+/* :host([dir='ltr']) ::slotted([slot='icon']) {
     margin-left: calc(
         -1 * (var(--spectrum-button-primary-textonly-padding-left-adjusted) -
                     var(--spectrum-button-primary-padding-left-adjusted))
-    ); /* [dir=ltr] .spectrum-Button .spectrum-Icon */
+    );
 }
 :host([dir='rtl']) ::slotted([slot='icon']) {
     margin-right: calc(
         -1 * (var(--spectrum-button-primary-textonly-padding-left-adjusted) -
                     var(--spectrum-button-primary-padding-left-adjusted))
-    ); /* [dir=rtl] .spectrum-Button .spectrum-Icon */
-}
+    );
+} */
 :host([dir='ltr']) slot[name='icon'] + #label {
     padding-left: var(
         --spectrum-button-primary-icon-gap

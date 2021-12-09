@@ -14,7 +14,13 @@
     <link rel="stylesheet" href="./styles.css" />
     <style>
       .divider {
-        margin: 8px 0;
+        margin: 16px 0;
+      }
+      .title {
+        margin: 8px;
+      }
+      sp-theme[color='dark'] {
+        background-color: var(--spectrum-alias-background-color-primary);
       }
     </style>
   </head>
@@ -33,39 +39,726 @@
         <sp-menu-item> darkest </sp-menu-item>
       </sp-picker>
       <sp-divider class="divider"></sp-divider>
+      <h3>弹出框 / 菜单项</h3>
       <sp-action-menu size="m">
         <span slot="label">More Actions</span>
-        <sp-menu-group id="group-1" selects="single">
+        <sp-menu-group id="group-1">
           <span slot="header">Group 1</span>
-          <sp-menu-item> Central Park </sp-menu-item>
-          <sp-menu-item> Flushing Meadows Corona Park </sp-menu-item>
-          <sp-menu-item> Prospect Park </sp-menu-item>
+          <sp-menu-item>
+            Central Park
+            <sp-icon-chevron75 slot="value"></sp-icon-chevron75>
+          </sp-menu-item>
+          <sp-menu-item>
+            Flushing Meadows Corona Park
+            <sp-icon-chevron75 slot="value"></sp-icon-chevron75>
+          </sp-menu-item>
+          <sp-menu-item>
+            Prospect Park
+            <!-- <fragment slot="value">
+              D
+              <sp-icon-chevron75></sp-icon-chevron75>
+            </fragment> -->
+            <span slot="value">
+              D
+              <sp-icon-chevron75></sp-icon-chevron75>
+            </span>
+          </sp-menu-item>
         </sp-menu-group>
-        <sp-menu-group id="group-1" selects="single">
+        <sp-menu-group id="group-2">
           <span slot="header">Group 2</span>
           <sp-menu-item>
-            <sp-icon-chevron100 slot="icon"></sp-icon-chevron100> Deselect
+            <sp-icon-chevron75 slot="icon"></sp-icon-chevron75> Deselect
+            <sp-icon-chevron75 slot="value"></sp-icon-chevron75>
           </sp-menu-item>
           <sp-menu-item>
             <span slot="value">MenuItem Label</span>
             Select inverse
           </sp-menu-item>
-          <sp-menu-item selected> Feather... </sp-menu-item>
+          <sp-menu-item selected>
+            <sp-icon-chevron75 slot="icon"></sp-icon-chevron75> Deselect
+            Feather...
+          </sp-menu-item>
           <sp-menu-item> Select and mask... </sp-menu-item>
           <sp-menu-divider size="m"></sp-menu-divider>
           <sp-menu-item> Save selection </sp-menu-item>
-          <sp-menu-item disabled> Make work path </sp-menu-item>
+          <sp-menu-item disabled>
+            Make work path
+            <span slot="value">
+              D
+              <sp-icon-chevron75></sp-icon-chevron75>
+            </span>
+          </sp-menu-item>
         </sp-menu-group>
       </sp-action-menu>
+
       <sp-divider class="divider"></sp-divider>
+      <h3>临时面板</h3>
+      <overlay-trigger placement="top-start">
+        <sp-button slot="trigger" variant="primary">Trigger Panel</sp-button>
+        <sp-panel
+          slot="click-content"
+          title="Panel title"
+          backable
+          dismissable
+          underlay
+          confirm-label="确认"
+          cancel-label="取消"
+        >
+          this us Panel Content
+        </sp-panel>
+      </overlay-trigger>
+      <sp-divider class="divider"></sp-divider>
+      <h3>按钮 / 按钮组</h3>
       <div>
-        <sp-button variant="primary">Primary</sp-button>
-        <sp-button variant="secondary" autofocus>secondary</sp-button>
-        <sp-button variant="cta">cta</sp-button>
-        <sp-button variant="negative">negative</sp-button>
-        <sp-button variant="action">action</sp-button>
-        <sp-button disabled>disabled</sp-button>
+        <div style="margin: 4px">
+          <sp-button-group>
+            <sp-button variant="primary" autofocus> Primary</sp-button>
+            <sp-button variant="secondary">secondary</sp-button>
+            <sp-button variant="negative">negative</sp-button>
+            <sp-button variant="action">action</sp-button>
+            <sp-button variant="cta">cta</sp-button>
+            <sp-button disabled>disabled</sp-button>
+          </sp-button-group>
+        </div>
+        <div style="margin: 4px">
+          <sp-button-group>
+            <sp-button variant="primary" quiet> Primary</sp-button>
+            <sp-button variant="secondary" quiet>secondary</sp-button>
+            <sp-button variant="negative" quiet>negative</sp-button>
+            <sp-button variant="action" quiet>action</sp-button>
+          </sp-button-group>
+        </div>
       </div>
+      <sp-divider class="divider"></sp-divider>
+      <h3>操作按钮</h3>
+      <sp-action-bar open>
+        <sp-checkbox indeterminate>228 Selected</sp-checkbox>
+        <sp-action-group quiet>
+          <sp-action-button label="Edit">
+            <sp-icon-edit slot="icon"></sp-icon-edit>
+          </sp-action-button>
+          <sp-action-button label="More">
+            <sp-icon-more slot="icon"></sp-icon-more>
+          </sp-action-button>
+        </sp-action-group>
+      </sp-action-bar>
+      <div>
+        <sp-action-group quiet compact id="compact">
+          <sp-action-button>Edit</sp-action-button>
+          <sp-divider vertical style="height: 24px"></sp-divider>
+          <sp-action-button>
+            <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+            Edit
+          </sp-action-button>
+          <sp-divider vertical style="height: 24px"></sp-divider>
+          <sp-action-button>
+            <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+          </sp-action-button>
+          <sp-divider vertical style="height: 24px"></sp-divider>
+          <sp-action-button hold-affordance>
+            <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+          </sp-action-button>
+        </sp-action-group>
+      </div>
+      <div style="margin: 4px">
+        standard
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            gap: 2em;
+          "
+        >
+          <div>
+            <sp-field-label for="standard">Default</sp-field-label>
+            <sp-action-group id="standard">
+              <sp-action-button>Edit</sp-action-button>
+              <sp-action-button>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+                Edit
+              </sp-action-button>
+              <sp-action-button>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+              <sp-action-button hold-affordance>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+            </sp-action-group>
+          </div>
+
+          <div>
+            <sp-field-label for="standard-selected">Selected</sp-field-label>
+            <sp-action-group id="standard-selected">
+              <sp-action-button selected>Edit</sp-action-button>
+              <sp-action-button selected>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+                Edit
+              </sp-action-button>
+              <sp-action-button selected>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+              <sp-action-button selected hold-affordance>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+            </sp-action-group>
+          </div>
+
+          <div>
+            <sp-field-label for="standard-disabled">Disabled</sp-field-label>
+            <sp-action-group id="standard-disabled">
+              <sp-action-button disabled>Edit</sp-action-button>
+              <sp-action-button disabled>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+                Edit
+              </sp-action-button>
+              <sp-action-button disabled>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+              <sp-action-button disabled hold-affordance>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+            </sp-action-group>
+          </div>
+
+          <div>
+            <sp-field-label for="standard-disabled-selected">
+              Disabled + Selected
+            </sp-field-label>
+            <sp-action-group id="standard-disabled-selected">
+              <sp-action-button disabled selected>Edit</sp-action-button>
+              <sp-action-button disabled selected>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+                Edit
+              </sp-action-button>
+              <sp-action-button disabled selected>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+              <sp-action-button disabled selected hold-affordance>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+            </sp-action-group>
+          </div>
+        </div>
+      </div>
+      <div style="margin: 4px">
+        quiet
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            gap: 2em;
+          "
+        >
+          <div>
+            <sp-field-label for="standard">Default</sp-field-label>
+            <sp-action-group id="standard">
+              <sp-action-button quiet>Edit</sp-action-button>
+              <sp-action-button quiet>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+                Edit
+              </sp-action-button>
+              <sp-action-button quiet>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+              <sp-action-button quiet hold-affordance>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+            </sp-action-group>
+          </div>
+
+          <div>
+            <sp-field-label for="standard-selected">Selected</sp-field-label>
+            <sp-action-group id="standard-selected">
+              <sp-action-button quiet selected>Edit</sp-action-button>
+              <sp-action-button quiet selected>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+                Edit
+              </sp-action-button>
+              <sp-action-button quiet selected>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+              <sp-action-button quiet selected hold-affordance>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+            </sp-action-group>
+          </div>
+
+          <div>
+            <sp-field-label for="standard-disabled">Disabled</sp-field-label>
+            <sp-action-group id="standard-disabled">
+              <sp-action-button quiet disabled>Edit</sp-action-button>
+              <sp-action-button quiet disabled>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+                Edit
+              </sp-action-button>
+              <sp-action-button quiet disabled>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+              <sp-action-button quiet disabled hold-affordance>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+            </sp-action-group>
+          </div>
+
+          <div>
+            <sp-field-label for="standard-disabled-selected">
+              Disabled + Selected
+            </sp-field-label>
+            <sp-action-group id="standard-disabled-selected">
+              <sp-action-button quiet disabled selected>Edit</sp-action-button>
+              <sp-action-button quiet disabled selected>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+                Edit
+              </sp-action-button>
+              <sp-action-button quiet disabled selected>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+              <sp-action-button quiet disabled selected hold-affordance>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+            </sp-action-group>
+          </div>
+        </div>
+      </div>
+      <div style="margin: 4px">
+        Emphasized
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            gap: 2em;
+          "
+        >
+          <div>
+            <sp-field-label for="standard">Default</sp-field-label>
+            <sp-action-group emphasized id="standard">
+              <sp-action-button emphasized>Edit</sp-action-button>
+              <sp-action-button emphasized>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+                Edit
+              </sp-action-button>
+              <sp-action-button emphasized>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+              <sp-action-button emphasized hold-affordance>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+            </sp-action-group>
+          </div>
+
+          <div>
+            <sp-field-label for="standard-selected">Selected</sp-field-label>
+            <sp-action-group emphasized id="standard-selected">
+              <sp-action-button emphasized selected>Edit</sp-action-button>
+              <sp-action-button emphasized selected>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+                Edit
+              </sp-action-button>
+              <sp-action-button emphasized selected>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+              <sp-action-button emphasized selected hold-affordance>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+            </sp-action-group>
+          </div>
+
+          <div>
+            <sp-field-label for="standard-disabled">Disabled</sp-field-label>
+            <sp-action-group emphasized id="standard-disabled">
+              <sp-action-button emphasized disabled>Edit</sp-action-button>
+              <sp-action-button emphasized disabled>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+                Edit
+              </sp-action-button>
+              <sp-action-button emphasized disabled>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+              <sp-action-button emphasized disabled hold-affordance>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+            </sp-action-group>
+          </div>
+
+          <div>
+            <sp-field-label for="standard-disabled-selected">
+              Disabled + Selected
+            </sp-field-label>
+            <sp-action-group emphasized id="standard-disabled-selected">
+              <sp-action-button emphasized disabled selected>
+                Edit
+              </sp-action-button>
+              <sp-action-button emphasized disabled selected>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+                Edit
+              </sp-action-button>
+              <sp-action-button emphasized disabled selected>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+              <sp-action-button emphasized disabled selected hold-affordance>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+            </sp-action-group>
+          </div>
+        </div>
+      </div>
+      <div style="margin: 4px">
+        Emphasized + Quiet
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            gap: 2em;
+          "
+        >
+          <div>
+            <sp-field-label for="standard">Default</sp-field-label>
+            <sp-action-group emphasized quiet id="standard">
+              <sp-action-button emphasized quiet>Edit</sp-action-button>
+              <sp-action-button emphasized quiet>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+                Edit
+              </sp-action-button>
+              <sp-action-button emphasized quiet>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+              <sp-action-button emphasized quiet hold-affordance>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+            </sp-action-group>
+          </div>
+
+          <div>
+            <sp-field-label for="standard-selected">Selected</sp-field-label>
+            <sp-action-group emphasized quiet id="standard-selected">
+              <sp-action-button emphasized quiet selected
+                >Edit</sp-action-button
+              >
+              <sp-action-button emphasized quiet selected>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+                Edit
+              </sp-action-button>
+              <sp-action-button emphasized quiet selected>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+              <sp-action-button emphasized quiet selected hold-affordance>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+            </sp-action-group>
+          </div>
+
+          <div>
+            <sp-field-label for="standard-disabled">Disabled</sp-field-label>
+            <sp-action-group emphasized quiet id="standard-disabled">
+              <sp-action-button emphasized quiet disabled
+                >Edit</sp-action-button
+              >
+              <sp-action-button emphasized quiet disabled>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+                Edit
+              </sp-action-button>
+              <sp-action-button emphasized quiet disabled>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+              <sp-action-button emphasized quiet disabled hold-affordance>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+            </sp-action-group>
+          </div>
+
+          <div>
+            <sp-field-label for="standard-disabled-selected">
+              Disabled + Selected
+            </sp-field-label>
+            <sp-action-group emphasized quiet id="standard-disabled-selected">
+              <sp-action-button emphasized quiet disabled selected>
+                Edit
+              </sp-action-button>
+              <sp-action-button emphasized quiet disabled selected>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+                Edit
+              </sp-action-button>
+              <sp-action-button emphasized quiet disabled selected>
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+              <sp-action-button
+                emphasized
+                quiet
+                disabled
+                selected
+                hold-affordance
+              >
+                <sp-icon-chevron75 slot="icon"></sp-icon-chevron75>
+              </sp-action-button>
+            </sp-action-group>
+          </div>
+        </div>
+      </div>
+      <sp-divider class="divider"></sp-divider>
+      <h3>颜色</h3>
+      <div>
+        <sp-color-area color="blue"></sp-color-area> ｜
+        <sp-color-area disabled></sp-color-area>
+      </div>
+      <div>
+        <sp-color-slider color="#ccff01"></sp-color-slider> ｜
+        <sp-color-slider disabled></sp-color-slider> ｜
+        <sp-color-slider vertical></sp-color-slider> ｜
+      </div>
+      <div>
+        <sp-color-handle></sp-color-handle>
+        ｜
+        <sp-color-handle disabled></sp-color-handle>
+      </div>
+      <sp-divider class="divider"></sp-divider>
+      <h3>文本</h3>
+      <div>
+        <sp-field-label for="name-0">Name</sp-field-label>
+        <sp-textfield id="name-0" placeholder="Enter your name"></sp-textfield>
+      </div>
+      <div>
+        <sp-field-label for="name-1" required>Name</sp-field-label>
+        <sp-textfield
+          id="name-1"
+          placeholder="Enter your name"
+          valid
+          value="My Name"
+        ></sp-textfield>
+      </div>
+      <div>
+        <sp-field-label for="name-2" required>Name</sp-field-label>
+        <sp-textfield
+          id="name-2"
+          invalid
+          placeholder="Enter your name"
+        ></sp-textfield>
+      </div>
+      <div>
+        <sp-field-label for="name-3">Name (quietly)</sp-field-label>
+        <sp-textfield
+          id="name-3"
+          placeholder="Enter your name"
+          quiet
+        ></sp-textfield>
+      </div>
+      <sp-divider class="divider"></sp-divider>
+      <h3>下拉框</h3>
+      <div>
+        <div>
+          <sp-field-label for="picker-m" size="m"
+            >Selection type:</sp-field-label
+          >
+          <sp-picker id="picker-m" size="m" label="Selection type">
+            <sp-menu-item>Deselect</sp-menu-item>
+            <sp-menu-item>Select inverse</sp-menu-item>
+            <sp-menu-item>Feather...</sp-menu-item>
+            <sp-menu-item>Select and mask...</sp-menu-item>
+            <sp-menu-divider></sp-menu-divider>
+            <sp-menu-item>Save selection</sp-menu-item>
+            <sp-menu-item disabled>Make work path</sp-menu-item>
+          </sp-picker>
+        </div>
+        <div>
+          <sp-field-label for="picker-m-quiet" size="m">
+            Selection type:
+          </sp-field-label>
+          <sp-picker id="picker-m-quiet" quiet size="m" label="Selection type">
+            <sp-menu-item>Deselect</sp-menu-item>
+            <sp-menu-item>Select inverse</sp-menu-item>
+            <sp-menu-item>Feather...</sp-menu-item>
+            <sp-menu-item>Select and mask...</sp-menu-item>
+            <sp-menu-divider></sp-menu-divider>
+            <sp-menu-item>Save selection</sp-menu-item>
+            <sp-menu-item disabled>Make work path</sp-menu-item>
+          </sp-picker>
+        </div>
+        <div>
+          <sp-field-label for="picker-icons"
+            >Choose an action...</sp-field-label
+          >
+          <sp-picker
+            label="What would you like to do?"
+            value="item-2"
+            id="picker-icons"
+          >
+            <sp-menu-item>
+              <sp-icon name="ui:Arrow400" slot="icon"></sp-icon>
+              Save
+            </sp-menu-item>
+            <sp-menu-item>
+              <sp-icon name="ui:Arrow400" slot="icon"></sp-icon>
+              Finish
+            </sp-menu-item>
+            <sp-menu-item>
+              <sp-icon name="ui:Arrow400" slot="icon"></sp-icon>
+              Review
+            </sp-menu-item>
+          </sp-picker>
+        </div>
+        <div>
+          <sp-field-label for="picker-icons-only"
+            >Choose an action...</sp-field-label
+          >
+          <sp-picker
+            label="What would you like to do?"
+            value="item-2"
+            id="picker-icons-only"
+          >
+            <sp-menu-item value="item-1">
+              <sp-icon name="ui:Arrow400" slot="icon" label="Save"></sp-icon>
+            </sp-menu-item>
+            <sp-menu-item value="item-2">
+              <sp-icon name="ui:Arrow400" slot="icon" label="Finish"></sp-icon>
+            </sp-menu-item>
+            <sp-menu-item value="item-3">
+              <sp-icon name="ui:Arrow400" slot="icon" label="Review"></sp-icon>
+            </sp-menu-item>
+          </sp-picker>
+        </div>
+      </div>
+      <sp-divider class="divider"></sp-divider>
+      <h3>输入域</h3>
+      <div>
+        <sp-field-label for="story-0">Background</sp-field-label>
+        <sp-textfield
+          id="story-0"
+          multiline
+          placeholder="Enter your life story"
+        ></sp-textfield>
+      </div>
+      <div>
+        <sp-field-label for="story-1" required>Background</sp-field-label>
+        <sp-textfield
+          id="story-1"
+          multiline
+          placeholder="Enter your name"
+          valid
+        ></sp-textfield>
+        <div>
+          <sp-field-label for="story-2" required>Background</sp-field-label>
+          <sp-textfield
+            id="story-2"
+            invalid
+            multiline
+            placeholder="Enter your name"
+          ></sp-textfield>
+        </div>
+      </div>
+      <sp-divider class="divider"></sp-divider>
+      <h3>数字输入</h3>
+      <div>
+        <sp-number-field value="1024" style="width: 200px"></sp-number-field>
+      </div>
+      <div>
+        <sp-field-label for="decimals">Adjust exposure</sp-field-label>
+        <sp-number-field
+          id="decimals"
+          value="0"
+          style="width: 100px"
+          format-options='{
+        "signDisplay": "exceptZero",
+        "minimumFractionDigits": 1,
+        "maximumFractionDigits": 2
+    }'
+        ></sp-number-field>
+      </div>
+
+      <div>
+        <sp-field-label for="percents">Sales tax</sp-field-label>
+        <sp-number-field
+          id="percents"
+          style="width: 200px"
+          value="0.05"
+          format-options='{
+        "style": "percent"
+    }'
+        ></sp-number-field>
+      </div>
+      <!-- <sp-divider class="divider"></sp-divider> -->
+      <!-- <h3>颜色</h3> -->
+
+      <!-- ======================== -->
+      <!-- <sp-radio-group name="example" onchange="handleRadioChange">
+        <sp-radio invalid value="first">Option 1</sp-radio>
+        <sp-radio value="second">Option 2</sp-radio>
+        <sp-radio disabled value="third">Option 3</sp-radio>
+        <sp-radio checked value="fourth">Option 4</sp-radio>
+      </sp-radio-group>
+      <span onclick="buttonClick()">test</span>
+      <sp-button class="popoverButton2" onclick="buttonClick()"
+        >Press me</sp-button
+      >
+
+      <overlay-trigger placement="top-start">
+        <sp-button slot="trigger" variant="primary">Trigger Element</sp-button>
+        <sp-dialog-wrapper
+          slot="click-content"
+          headline="Dialog title"
+          dismissable
+          underlay
+          footer="Content for footer"
+        >
+          Content of the dialog
+        </sp-dialog-wrapper>
+      </overlay-trigger>
+      <overlay-trigger id="trigger" placement="bottom" offset="6">
+        <sp-button variant="primary" slot="trigger">Button popover</sp-button>
+        <sp-popover dialog slot="click-content" direction="bottom" tip>
+          <div class="options-popover-content">
+            <sp-slider
+              value="5"
+              step="0.5"
+              min="0"
+              max="20"
+              label="Awesomeness"
+            ></sp-slider>
+            <sp-button class="popoverButton" onclick="buttonClick"
+              >Press me</sp-button
+            >
+          </div>
+        </sp-popover>
+        <sp-tooltip slot="hover-content" delayed>Tooltip</sp-tooltip>
+        <sp-popover slot="longpress-content" tip>
+          <sp-action-group
+            selects="single"
+            vertical
+            style="
+              margin: calc(
+                var(
+                    --spectrum-actiongroup-button-gap-y,
+                    var(--spectrum-global-dimension-size-100)
+                  ) / 2
+              );
+            "
+          >
+            <sp-action-button>
+              <sp-icon name="ui:Arrow400" slot="icon"></sp-icon>
+            </sp-action-button>
+            <sp-action-button>
+              <sp-icon name="ui:Arrow400" slot="icon"></sp-icon>
+            </sp-action-button>
+            <sp-action-button>
+              <sp-icon name="ui:Arrow400" slot="icon"></sp-icon>
+            </sp-action-button>
+          </sp-action-group>
+        </sp-popover>
+      </overlay-trigger>
+      <sp-icon name="ui:Arrow100"></sp-icon>
+      <sp-icon name="editor:AlignArrangeHoriz"></sp-icon> -->
+      <!-- <sp-icons-medium></sp-icons-medium>
+      <sp-icons-editor></sp-icons-editor>
+      <sp-icon name="ui:Arrow100"></sp-icon>
+      <sp-icon name="ui:Arrow200"></sp-icon>
+      <sp-icon name="ui:Arrow300"></sp-icon>
+      <sp-icon name="ui:Arrow400"></sp-icon>
+      <sp-icon name="ui:Arrow500"></sp-icon>
+      <sp-icon name="editor:align-arrange-horiz"></sp-icon>
+      <sp-icon name="editor:add"></sp-icon>
+      <sp-icon name="editor:alert"></sp-icon>
+      <sp-icon name="editor:check-fill"></sp-icon>
+      <sp-icon name="editor:close"></sp-icon>
+      <sp-icon-align-arrange-horiz></sp-icon-align-arrange-horiz> -->
+      <!-- <h3>字段标签</h3>
       <div>
         <sp-checkbox checked>checked</sp-checkbox>
         <sp-checkbox indeterminate>indeterminate</sp-checkbox>
@@ -194,7 +887,6 @@
         <sp-dialog-wrapper
           id="dialog-wrapper-demo"
           headline="Dialog title"
-          mode="fullscreen"
           confirm-label="Keep Both"
           secondary-label="Replace"
           cancel-label="Cancel"
@@ -223,7 +915,7 @@
         >
           Toggle Dialog
         </sp-button>
-      </div>
+      </div> -->
     </sp-theme>
 
     <script type="module" src="./out-tsc/src/example-app.js"></script>
@@ -237,6 +929,25 @@
         // this.value = e.target.value;
         theme.color = e.target.value;
       }
+      document
+        .querySelector('sp-radio-group')
+        .addEventListener('change', handleRadioChange);
+      function handleRadioChange(e) {
+        console.log(e);
+      }
+
+      document
+        .querySelector('.popoverButton')
+        .addEventListener('click', buttonClick);
+      function buttonClick() {
+        console.log('button click');
+      }
+      const arr = [...document.querySelectorAll('overlay-trigger')];
+      arr.forEach(cv => {
+        cv.addEventListener('sp-close', e => {
+          console.loge();
+        });
+      });
     </script>
   </body>
 </html>

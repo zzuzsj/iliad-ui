@@ -83,6 +83,8 @@ governing permissions and limitations under the License.
     position: absolute;
     width: 100%;
     z-index: 1;
+    top: 0;
+    left: 0;
 }
 :host([disabled]) #input {
     cursor: default; /* .spectrum-Radio-input:disabled */
@@ -466,4 +468,41 @@ governing permissions and limitations under the License.
             var(--spectrum-global-color-gray-700)
         );
     }
+}
+
+:host([type='button']) {
+    height: var(--spectrum-radio-button-m-height);
+    min-height: var(--spectrum-radio-button-m-height);
+    background-color: var(--spectrum-radio-button-m-background-color);
+    border-radius: var(--spectrum-radio-button-m-border-radius);
+    padding: var(--spectrum-radio-button-m-padding-y)
+        var(--spectrum-radio-button-m-padding-x);
+    box-sizing: border-box;
+    transition: background var(--spectrum-global-animation-duration-100, 0.13s)
+            ease-out,
+        color var(--spectrum-global-animation-duration-100, 0.13s) ease-out,
+        box-shadow var(--spectrum-global-animation-duration-100, 0.13s) ease-out;
+}
+:host([type='button'][checked]) {
+    background-color: var(--spectrum-radio-button-m-background-color-selected);
+    box-shadow: var(--spectrum-radio-button-m-box-shadow-selected);
+}
+:host([type='button']) #label {
+    margin: 0;
+}
+
+/* 设置icon样式 */
+:host ::slotted([slot='icon']) {
+    flex-shrink: 0;
+    max-height: 100%;
+    color: var(--spectrum-radio-button-m-icon-color);
+}
+:host(:hover) ::slotted([slot='icon']) {
+    color: var(--spectrum-radio-button-m-icon-color-hover);
+}
+:host([disabled]) ::slotted([slot='icon']) {
+    color: var(--spectrum-radio-button-m-icon-color-disabled);
+}
+:host([checked]) ::slotted([slot='icon']) {
+    color: var(--spectrum-radio-button-m-icon-color-selected);
 }

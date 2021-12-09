@@ -324,28 +324,28 @@ governing permissions and limitations under the License.
         --spectrum-alias-text-color-primary
     );
     --spectrum-button-primary-m-background-color-hover: var(
-        --spectrum-global-color-gray-400-cover-100
+        --spectrum-global-color-gray-400
     );
     --spectrum-button-primary-m-border-color-hover: var(
-        --spectrum-global-color-gray-400-cover-100
+        --spectrum-global-color-gray-400
     );
     --spectrum-button-primary-m-text-color-hover: var(
         --spectrum-alias-text-color-primary
     );
     --spectrum-button-primary-m-background-color-key-focus: var(
-        --spectrum-global-color-gray-400-cover-100
+        --spectrum-global-color-gray-400
     );
     --spectrum-button-primary-m-border-color-key-focus: var(
-        --spectrum-global-color-gray-400-cover-100
+        --spectrum-global-color-gray-400
     );
     --spectrum-button-primary-m-text-color-key-focus: var(
         --spectrum-alias-text-color-primary
     );
     --spectrum-button-primary-m-background-color-down: var(
-        --spectrum-global-color-gray-400-cover-200
+        --spectrum-global-color-gray-500
     );
     --spectrum-button-primary-m-border-color-down: var(
-        --spectrum-global-color-gray-400-cover-200
+        --spectrum-global-color-gray-500
     );
     --spectrum-button-primary-m-text-color-down: var(
         --spectrum-alias-text-color-primary
@@ -363,33 +363,35 @@ governing permissions and limitations under the License.
     --spectrum-button-secondary-m-background-color: var(
         --spectrum-global-color-gray-300
     );
-    --spectrum-button-secondary-m-border-color: var(--spectrum-global-gray-300);
+    --spectrum-button-secondary-m-border-color: var(
+        --spectrum-global-color-gray-300
+    );
     --spectrum-button-secondary-m-text-color: var(
         --spectrum-alias-text-color-secondary
     );
     --spectrum-button-secondary-m-background-color-hover: var(
-        --spectrum-global-color-gray-300-cover-100
+        --spectrum-global-color-gray-400
     );
     --spectrum-button-secondary-m-border-color-hover: var(
-        --spectrum-global-color-gray-300-cover-100
+        --spectrum-global-color-gray-400
     );
     --spectrum-button-secondary-m-text-color-hover: var(
         --spectrum-alias-text-color-secondary
     );
     --spectrum-button-secondary-m-background-color-key-focus: var(
-        --spectrum-global-color-gray-300-cover-100
+        --spectrum-global-color-gray-400
     );
     --spectrum-button-secondary-m-border-color-key-focus: var(
-        --spectrum-global-color-gray-300-cover-100
+        --spectrum-global-color-gray-400
     );
     --spectrum-button-secondary-m-text-color-key-focus: var(
         --spectrum-alias-text-color-secondary
     );
     --spectrum-button-secondary-m-background-color-down: var(
-        --spectrum-global-color-gray-300-cover-200
+        --spectrum-global-color-gray-500
     );
     --spectrum-button-secondary-m-border-color-down: var(
-        --spectrum-global-color-gray-300-cover-200
+        --spectrum-global-color-gray-500
     );
     --spectrum-button-secondary-m-text-color-down: var(
         --spectrum-alias-text-color-secondary
@@ -414,28 +416,28 @@ governing permissions and limitations under the License.
         --spectrum-global-color-static-white
     );
     --spectrum-button-warning-m-background-color-hover: var(
-        --spectrum-global-color-red-cover-100
+        --spectrum-global-color-red-400
     );
     --spectrum-button-warning-m-border-color-hover: var(
-        --spectrum-global-color-red-cover-100
+        --spectrum-global-color-red-400
     );
     --spectrum-button-warning-m-text-color-hover: var(
         --spectrum-global-color-static-white
     );
     --spectrum-button-warning-m-background-color-key-focus: var(
-        --spectrum-global-color-red-cover-100
+        --spectrum-global-color-red-400
     );
     --spectrum-button-warning-m-border-color-key-focus: var(
-        --spectrum-global-color-red-cover-100
+        --spectrum-global-color-red-400
     );
     --spectrum-button-warning-m-text-color-key-focus: var(
         --spectrum-global-color-static-white
     );
     --spectrum-button-warning-m-background-color-down: var(
-        --spectrum-global-color-red-cover-200
+        --spectrum-global-color-red-600
     );
     --spectrum-button-warning-m-border-color-down: var(
-        --spectrum-global-color-red-cover-200
+        --spectrum-global-color-red-600
     );
     --spectrum-button-warning-m-text-color-down: var(
         --spectrum-global-color-static-white
@@ -595,28 +597,28 @@ governing permissions and limitations under the License.
         --spectrum-alias-text-color-secondary
     );
     --spectrum-button-quiet-secondary-m-background-color-hover: var(
-        --spectrum-global-color-gray-300-cover-100
+        --spectrum-global-color-gray-400
     );
     --spectrum-button-quiet-secondary-m-border-color-hover: var(
-        --spectrum-global-color-gray-300-cover-100
+        --spectrum-global-color-gray-400
     );
     --spectrum-button-quiet-secondary-m-text-color-hover: var(
         --spectrum-alias-text-color-secondary
     );
     --spectrum-button-quiet-secondary-m-background-color-key-focus: var(
-        --spectrum-global-color-gray-300-cover-100
+        --spectrum-global-color-gray-400
     );
     --spectrum-button-quiet-secondary-m-border-color-key-focus: var(
-        --spectrum-global-color-gray-300-cover-100
+        --spectrum-global-color-gray-400
     );
     --spectrum-button-quiet-secondary-m-text-color-key-focus: var(
         --spectrum-alias-text-color-secondary
     );
     --spectrum-button-quiet-secondary-m-background-color-down: var(
-        --spectrum-global-color-gray-300-cover-200
+        --spectrum-global-color-gray-500
     );
     --spectrum-button-quiet-secondary-m-border-color-down: var(
-        --spectrum-global-color-gray-300-cover-200
+        --spectrum-global-color-gray-500
     );
     --spectrum-button-quiet-secondary-m-text-color-down: var(
         --spectrum-alias-text-color-secondary

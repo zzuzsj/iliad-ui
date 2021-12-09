@@ -34,6 +34,9 @@ governing permissions and limitations under the License.
         var(--spectrum-listitem-padding-y) var(--spectrum-listitem-padding-left);
     position: relative;
     text-decoration: none;
+    transition: background-color
+            var(--spectrum-global-animation-duration-100, 0.13s) ease-in-out,
+        color var(--spectrum-global-animation-duration-100, 0.13s) ease-in-out;
 }
 :host(:focus) {
     outline: none; /* .spectrum-Menu-item:focus */

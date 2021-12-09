@@ -14,6 +14,7 @@ governing permissions and limitations under the License.
 import {
     html,
     property,
+    CSSResultArray,
     TemplateResult,
     queryAssignedNodes,
     PropertyValues,
@@ -22,15 +23,21 @@ import { FocusVisiblePolyfillMixin } from '@iliad-ui/shared/src/focus-visible.js
 import { FieldGroup } from '@iliad-ui/field-group';
 
 import { Radio } from './Radio.js';
-
+import radioGroupStyles from './radio-group.css.js';
 /**
  * @element sp-radio-group
  *
  * @slot - The `sp-radio` elements to display/manage in the group.
  */
 export class RadioGroup extends FocusVisiblePolyfillMixin(FieldGroup) {
+    public static get styles(): CSSResultArray {
+        return [radioGroupStyles];
+    }
     @property({ type: String })
     public name = '';
+
+    @property({ type: String, reflect: true })
+    public type?: '' | 'button';
 
     @queryAssignedNodes('')
     public defaultNodes!: Node[];

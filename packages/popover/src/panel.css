@@ -12,12 +12,19 @@ governing permissions and limitations under the License.
 */
 :host {
     --spectrum-panel-background-color: var(--spectrum-global-color-gray-100);
+    --spectrum-panel-divider-color: var(--spectrum-alias-border-color-light);
+    --spectrum-panel-divider-width: var(--spectrum-alias-border-size-thin);
     --spectrum-panel-border-color: var(--spectrum-alias-border-color-dark);
     --spectrum-panel-box-shadow: var(--spectrum-global-shadow-static-m);
     --spectrum-panel-border-size: var(--spectrum-global-dimension-size-0);
     --spectrum-panel-border-radius: var(--spectrum-alias-border-radius-large);
     --spectrum-panel-padding: var(--spectrum-global-dimension-size-200);
-    --spectrum-panel-padding: var(--spectrum-global-dimension-size-200);
+    --spectrum-panel-header-padding-left: var(
+        --spectrum-global-dimension-size-200
+    );
+    --spectrum-panel-header-padding-right: var(
+        --spectrum-global-dimension-size-100
+    );
     --spectrum-panel-icon-gap: var(--spectrum-global-dimension-size-50);
     --spectrum-panel-header-height: var(--spectrum-alias-control-height-xl);
     --spectrum-panel-min-width: var(
@@ -37,7 +44,6 @@ governing permissions and limitations under the License.
     );
     --spectrum-panel-title-font-size: var(--spectrum-alias-font-size-m);
     --spectrum-panel-title-font-weight: var(--spectrum-alias-font-weight-l);
-    --spectrum-panel-icon-inner-space: var(--spectrum-alias-padding-m);
 }
 
 :host([open]) {
@@ -80,11 +86,16 @@ governing permissions and limitations under the License.
 :host .panel-header {
     width: 100%;
     height: var(--spectrum-panel-header-height);
-    padding: 0 var(--spectrum-panel-padding);
+    padding: 0 var(--spectrum-panel-header-padding-right) 0
+        var(--spectrum-panel-header-padding-left);
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
+}
+:host .panel-header[divider] {
+    border-bottom: var(--spectrum-panel-divider-width) solid
+        var(--spectrum-panel-divider-color);
 }
 :host .panel-header .header-block {
     display: flex;
@@ -97,15 +108,6 @@ governing permissions and limitations under the License.
     justify-content: flex-end;
 }
 
-/* 处理action button内部间距 使得视觉上能对齐 */
-:host .panel-header .header-main.handle-space {
-    margin-left: calc(-1 * var(--spectrum-panel-icon-inner-space));
-}
-
-:host .panel-header .header-others.handle-space {
-    margin-right: calc(-1 * var(--spectrum-panel-icon-inner-space));
-}
-
 :host .panel-header .header-main .title {
     color: var(--spectrum-panel-title-color);
     font-size: var(--spectrum-panel-title-font-size);
@@ -113,7 +115,7 @@ governing permissions and limitations under the License.
     font-weight: var(--spectrum-panel-title-font-weight);
     margin-right: var(--spectrum-panel-icon-gap);
 }
-:host .panel-header .header-main .back {
+:host .panel-header .header-main .back-icon {
     color: var(--spectrum-panel-icon-main-color);
     margin-right: var(--spectrum-panel-icon-gap);
 }

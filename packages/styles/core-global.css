@@ -72,7 +72,7 @@ governing permissions and limitations under the License.
     --spectrum-global-color-static-primary-100: #eef4fe;
     --spectrum-global-color-static-primary-200: #cadefb;
     --spectrum-global-color-static-primary-300: #8fb8f7;
-    --spectrum-global-color-static-primary-400: #5393f3;
+    --spectrum-global-color-static-primary-400: #3d86f3;
     --spectrum-global-color-static-primary-500: #2576f0;
     --spectrum-global-color-static-primary-600: #1f61ed;
     --spectrum-global-color-static-primary-700: #1544ea;
@@ -83,7 +83,7 @@ governing permissions and limitations under the License.
     --spectrum-global-color-static-green-100: #ebf9f4;
     --spectrum-global-color-static-green-200: #c3eedc;
     --spectrum-global-color-static-green-300: #7fdbb5;
-    --spectrum-global-color-static-green-400: #3cc78f;
+    --spectrum-global-color-static-green-400: #28c787;
     --spectrum-global-color-static-green-500: #07b871;
     --spectrum-global-color-static-green-600: #06ab5d;
     --spectrum-global-color-static-green-700: #049a42;
@@ -94,7 +94,7 @@ governing permissions and limitations under the License.
     --spectrum-global-color-static-orange-100: #fff7ec;
     --spectrum-global-color-static-orange-200: #fee7c4;
     --spectrum-global-color-static-orange-300: #fccc82;
-    --spectrum-global-color-static-orange-400: #fbb03f;
+    --spectrum-global-color-static-orange-400: #fbad37;
     --spectrum-global-color-static-orange-500: #fa9b0c;
     --spectrum-global-color-static-orange-600: #f9890a;
     --spectrum-global-color-static-orange-700: #f87107;
@@ -105,7 +105,7 @@ governing permissions and limitations under the License.
     --spectrum-global-color-static-red-100: #fef1f0;
     --spectrum-global-color-static-red-200: #fdd5d1;
     --spectrum-global-color-static-red-300: #faa69d;
-    --spectrum-global-color-static-red-400: #f77769;
+    --spectrum-global-color-static-red-400: #f76454;
     --spectrum-global-color-static-red-500: #f55240;
     --spectrum-global-color-static-red-600: #f34334;
     --spectrum-global-color-static-red-700: #f13025;
@@ -116,7 +116,7 @@ governing permissions and limitations under the License.
     --spectrum-global-color-static-purple-100: #f2f1ff;
     --spectrum-global-color-static-purple-200: #d7d2ff;
     --spectrum-global-color-static-purple-300: #aaa0ff;
-    --spectrum-global-color-static-purple-400: #7d6eff;
+    --spectrum-global-color-static-purple-400: #6857ff;
     --spectrum-global-color-static-purple-500: #5a47ff;
     --spectrum-global-color-static-purple-600: #4a3aff;
     --spectrum-global-color-static-purple-700: #3429ff;
@@ -127,7 +127,7 @@ governing permissions and limitations under the License.
     --spectrum-global-color-static-blue-100: #ebf7fe;
     --spectrum-global-color-static-blue-200: #c1e7fb;
     --spectrum-global-color-static-blue-300: #7bccf7;
-    --spectrum-global-color-static-blue-400: #36b1f3;
+    --spectrum-global-color-static-blue-400: #27acf3;
     --spectrum-global-color-static-blue-500: #009cf0;
     --spectrum-global-color-static-blue-600: #008aed;
     --spectrum-global-color-static-blue-700: #0072ea;
@@ -141,7 +141,7 @@ governing permissions and limitations under the License.
     --spectrum-global-color-static-lakeblue-100: #ebfbfd;
     --spectrum-global-color-static-lakeblue-200: #c2f2f7;
     --spectrum-global-color-static-lakeblue-300: #7ee4ef;
-    --spectrum-global-color-static-lakeblue-400: #39d5e6;
+    --spectrum-global-color-static-lakeblue-400: #25d3e6;
     --spectrum-global-color-static-lakeblue-500: #04cae0;
     --spectrum-global-color-static-lakeblue-600: #03c0da;
     --spectrum-global-color-static-lakeblue-700: #02b4d3;
@@ -152,7 +152,7 @@ governing permissions and limitations under the License.
     --spectrum-global-color-static-magenta-100: #fff1f3;
     --spectrum-global-color-static-magenta-200: #ffd4db;
     --spectrum-global-color-static-magenta-300: #ffa4b2;
-    --spectrum-global-color-static-magenta-400: #ff748a;
+    --spectrum-global-color-static-magenta-400: #ff667e;
     --spectrum-global-color-static-magenta-500: #ff4f6a;
     --spectrum-global-color-static-magenta-600: #ff4157;
     --spectrum-global-color-static-magenta-700: #ff2e3d;
@@ -1380,10 +1380,10 @@ governing permissions and limitations under the License.
     --spectrum-alias-border-color-light: var(--spectrum-alias-border-color-100);
     --spectrum-alias-border-color-dark: var(--spectrum-alias-border-color-200);
     --spectrum-alias-text-color-primary: rgba(0, 0, 0, 0.88);
-    --spectrum-alias-text-color-secondary: rgba(0, 0, 0, 0.64);
+    --spectrum-alias-text-color-secondary: rgba(0, 0, 0, 0.72);
     --spectrum-alias-text-color-placeholder: rgba(0, 0, 0, 0.42);
-    --spectrum-alias-text-color-disabled: rgba(0, 0, 0, 0.28);
-    --spectrum-alias-text-color-link: #009cf0;
+    --spectrum-alias-text-color-disabled: rgba(0, 0, 0, 0.24);
+    --spectrum-alias-text-color-link: #2576f0;
     --spectrum-alias-icon-color-primary: var(--spectrum-global-color-gray-900);
     --spectrum-alias-icon-color-secondary: var(
         --spectrum-global-color-gray-800
@@ -1626,10 +1626,10 @@ governing permissions and limitations under the License.
         --spectrum-global-color-static-primary-500
     );
     --spectrum-semantic-cta-color-background-hover: var(
-        --spectrum-global-color-primary-cover-100
+        --spectrum-global-color-static-primary-400
     );
     --spectrum-semantic-cta-color-background-down: var(
-        --spectrum-global-color-primary-cover-200
+        --spectrum-global-color-static-primary-600
     );
     --spectrum-semantic-cta-color-background-key-focus: var(
         --spectrum-global-color-static-primary-500
