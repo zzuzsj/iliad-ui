@@ -38,6 +38,7 @@ projects/**/*.js
 projects/**/*.js.map
 projects/**/*.d.ts
 !projects/*/global.d.ts
+!projects/documentation/scripts/*.js
 
 # typescript assets
 !test/global.d.ts
