@@ -17,7 +17,8 @@ jobs:
             - name: Install and Build
               run: |
                   npm install lerna -g
-                  lerna bootstrap --scope documentation
+                  lerna bootstrap
+                  npm run-script build
                   npm run-script docs:ci
             - name: Deploy
               uses: JamesIves/github-pages-deploy-action@releases/v3
