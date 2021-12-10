@@ -40,6 +40,7 @@
         "docs:start": "yarn docs:analyze && run-p watch:css build:watch eleventy:watch",
         "docs:watch": "run-p build:watch watch:css eleventy:watch",
         "eleventy": "lerna run --scope documentation build --stream",
+        "eleventy:deploy": "lerna run --scope documentation deploy",
         "eleventy:production": "lerna run --scope documentation build:production --stream",
         "eleventy:watch": "lerna run --scope documentation watch --stream",
         "get-ready": "yarn build:clear-cache && run-p process-icons && yarn build:clean",
@@ -233,7 +234,7 @@
         "@web/storybook-prebuilt": "0.1.27-alpha.0",
         "cssnano/**/postcss-calc": "7.0.0"
     },
-    "customElements": ".storybook/custom-elements.json",
+    "customElements": "projects/documentation/custom-elements.json",
     "maintainers": [
         {
             "name": "saiye",
