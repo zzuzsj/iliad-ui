@@ -1,0 +1,182 @@
+@import './variable-core.scss';
+
+// PART OTHERS (default Theme Light)*/
+
+// Part Theme Custom
+// Part Color
+$global-color-gray-100: #ffffff;
+$global-color-gray-200: #fafafa;
+$global-color-gray-300: #f5f5f5;
+$global-color-gray-400: #ebebeb;
+$global-color-gray-500: #e0e0e0; //*
+$global-color-gray-600: #c2c2c2;
+$global-color-gray-700: #949494;
+$global-color-gray-800: #474747;
+$global-color-gray-900: #1f1f1f;
+
+$global-color-magenta-400: #{$global-color-static-magenta-400};
+$global-color-magenta-500: #{$global-color-static-magenta-500};
+$global-color-magenta-600: #{$global-color-static-magenta-600};
+$global-color-magenta-700: #{$global-color-static-magenta-700};
+$global-color-purple-400: #{$global-color-static-purple-400};
+$global-color-purple-500: #{$global-color-static-purple-500};
+$global-color-purple-600: #{$global-color-static-purple-600};
+$global-color-purple-700: #{$global-color-static-purple-700};
+$global-color-red-400: #{$global-color-static-red-400};
+$global-color-red-500: #{$global-color-static-red-500};
+$global-color-red-600: #{$global-color-static-red-600};
+$global-color-red-700: #{$global-color-static-red-700};
+$global-color-orange-400: #{$global-color-static-orange-400};
+$global-color-orange-500: #{$global-color-static-orange-500};
+$global-color-orange-600: #{$global-color-static-orange-600};
+$global-color-orange-700: #{$global-color-static-orange-700};
+$global-color-green-400: #{$global-color-static-green-400};
+$global-color-green-500: #{$global-color-static-green-500};
+$global-color-green-600: #{$global-color-static-green-600};
+$global-color-green-700: #{$global-color-static-green-700};
+$global-color-blue-400: #{$global-color-static-blue-400};
+$global-color-blue-500: #{$global-color-static-blue-500};
+$global-color-blue-600: #{$global-color-static-blue-600};
+$global-color-blue-700: #{$global-color-static-blue-700};
+
+// Part Brand
+$global-color-info: rgba($global-color-static-primary-500, 1);
+$global-color-negative: rgba($global-color-static-red-500, 1);
+$global-color-tips: rgba($global-color-static-orange-500, 1);
+$global-color-positive: rgba($global-color-static-green-500, 1);
+
+// Part TextColor
+$global-text-color-primary: rgba($global-color-static-black, 0.88);
+$global-text-color-secondary: rgba($global-color-static-black, 0.72);
+$global-text-color-placeholder: rgba($global-color-static-black, 0.42);
+$global-text-color-disabled: rgba($global-color-static-black, 0.24);
+$global-text-color-link: rgba($global-color-static-primary-500, 1);
+
+// Part IconColor
+$global-icon-color-primary: rgba($global-color-gray-900, 1);
+$global-icon-color-secondary: rgba($global-color-gray-800, 1);
+$global-icon-color-tertiary: rgba($global-color-gray-700, 1);
+$global-icon-color-disabled: rgba($global-color-gray-500, 1);
+$global-icon-color-activited: rgba($global-color-static-primary-500, 1);
+
+// Part BgColor
+$global-bg-color-0: rgba($global-color-gray-100, 1);
+$global-bg-color-100: rgba($global-color-gray-200, 1);
+$global-bg-color-200: rgba($global-color-gray-100, 1);
+$global-bg-color-300: rgba($global-color-gray-300, 1);
+$global-bg-color-disabled: rgba($global-color-gray-300, 1);
+
+// Part CoverColor
+$global-cover-color-0: rgba($global-color-static-black, 0);
+$global-cover-color-100: rgba($global-color-static-black, 0.06);
+$global-cover-color-200: rgba($global-color-static-black, 0.12);
+
+// Part BorderColor
+$global-border-color-100: rgba($global-color-static-black, 0.08);
+$global-border-color-200: rgba($global-color-static-black, 0.16);
+
+// Part FillColor 叠加色 暂时不做使用
+$global-color-primary-cover-100: mix(
+    $global-color-static-primary-500,
+    $global-cover-color-100
+);
+$global-color-primary-cover-200: mix(
+    $global-color-static-primary-500,
+    $global-cover-color-200
+);
+$global-color-blue-cover-100: mix(
+    $global-color-static-blue-500,
+    $global-cover-color-100
+);
+$global-color-blue-cover-200: mix(
+    $global-color-static-blue-500,
+    $global-cover-color-200
+);
+$global-color-red-cover-100: mix(
+    $global-color-static-red-500,
+    $global-cover-color-100
+);
+$global-color-red-cover-200: mix(
+    $global-color-static-red-500,
+    $global-cover-color-200
+);
+$global-color-green-cover-100: mix(
+    $global-color-static-green-500,
+    $global-cover-color-100
+);
+$global-color-green-cover-200: mix(
+    $global-color-static-green-500,
+    $global-cover-color-200
+);
+$global-color-gray-cover-100: mix(
+    $global-color-gray-500,
+    $global-cover-color-100
+);
+$global-color-gray-cover-200: mix(
+    $global-color-gray-500,
+    $global-cover-color-200
+);
+$global-color-gray-100-cover-100: mix(
+    $global-color-gray-100,
+    $global-cover-color-100
+);
+$global-color-gray-100-cover-200: mix(
+    $global-color-gray-100,
+    $global-cover-color-200
+);
+$global-color-gray-200-cover-100: mix(
+    $global-color-gray-200,
+    $global-cover-color-100
+);
+$global-color-gray-200-cover-200: mix(
+    $global-color-gray-200,
+    $global-cover-color-200
+);
+$global-color-gray-300-cover-100: mix(
+    $global-color-gray-300,
+    $global-cover-color-100
+);
+$global-color-gray-300-cover-200: mix(
+    $global-color-gray-300,
+    $global-cover-color-200
+);
+$global-color-gray-400-cover-100: mix(
+    $global-color-gray-400,
+    $global-cover-color-100
+);
+$global-color-gray-400-cover-200: mix(
+    $global-color-gray-400,
+    $global-cover-color-200
+);
+$global-color-gray-600-cover-100: mix(
+    $global-color-gray-600,
+    $global-cover-color-100
+);
+$global-color-gray-600-cover-200: mix(
+    $global-color-gray-600,
+    $global-cover-color-200
+);
+$global-color-gray-700-cover-100: mix(
+    $global-color-gray-700,
+    $global-cover-color-100
+);
+$global-color-gray-700-cover-200: mix(
+    $global-color-gray-700,
+    $global-cover-color-200
+);
+$global-color-gray-800-cover-100: mix(
+    $global-color-gray-800,
+    $global-cover-color-100
+);
+$global-color-gray-800-cover-200: mix(
+    $global-color-gray-800,
+    $global-cover-color-200
+);
+$global-color-gray-900-cover-100: mix(
+    $global-color-gray-900,
+    $global-cover-color-100
+);
+$global-color-gray-900-cover-200: mix(
+    $global-color-gray-900,
+    $global-icon-color-primary
+);

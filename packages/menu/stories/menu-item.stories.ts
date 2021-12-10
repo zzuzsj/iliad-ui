@@ -15,7 +15,8 @@ import '@iliad-ui/icons-workflow/icons/sp-icon-edit.js';
 
 import '../sp-menu.js';
 import '../sp-menu-item.js';
-import '@iliad-ui/icons-workflow/icons/sp-icon-edit.js';
+// import '@iliad-ui/icons-editor/icons/sp-icon-editor-crop';
+// import '@iliad-ui/icons-editor/icons/sp-icon-editor-desktop';
 
 export default {
     component: 'sp-menu-item',
@@ -69,6 +70,11 @@ export const valueSlot = (): TemplateResult => {
             <sp-menu-item disabled>
                 Save All
                 <kbd slot="value">⌥​⌘​S</kbd>
+            </sp-menu-item>
+            <sp-menu-item>
+                <sp-icon-edit slot="icon"></sp-icon-edit>
+                Save All
+                <sp-icon-edit slot="value"></sp-icon-edit>
             </sp-menu-item>
         </sp-menu>
     `;

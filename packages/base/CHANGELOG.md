@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/base@0.10.4...@iliad-ui/base@0.11.0) (2021-12-07)
+
+### Features
+
+-   更新 base 版本号 ([0f126a4](https://github.com/gaoding-inc/iliad-ui/commit/0f126a43b5f034df58a195c14fabb3d8565f9c8a))
+
+## [0.10.4](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/base@0.10.3...@iliad-ui/base@0.10.4) (2021-12-07)
+
+**Note:** Version bump only for package @iliad-ui/base
+
+## [0.10.3](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/base@0.10.2...@iliad-ui/base@0.10.3) (2021-12-07)
+
+### Features
+
+-   lit 版本升级为 2.0 ([6e40df2](https://github.com/gaoding-inc/iliad-ui/commit/6e40df2bac248524ac3d8cf6c2aa23e7b57019cb))
+-   lit 升级为 2.0 ([167b136](https://github.com/gaoding-inc/iliad-ui/commit/167b13667224dcb077cf18dd02d044da07cb492c))
+
+## [0.10.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/base@0.10.1...@iliad-ui/base@0.10.2) (2021-11-19)
+
+### Features
+
+-   update lit-\* dependencies, wip ([70743bf](https://github.com/gaoding-inc/iliad-ui/commit/70743bf6855c08924a0a3ec1a14dc43862f9cf42))
+
 ## [0.10.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/base@0.10.0...@iliad-ui/base@0.10.1) (2021-10-21)
 
 **Note:** Version bump only for package @iliad-ui/base

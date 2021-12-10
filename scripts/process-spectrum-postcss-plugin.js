@@ -1,5 +1,6 @@
 /*
 Copyright 2020 Adobe. All rights reserved.
+Copyright 2021 Gaoding. All rights reserved.
 This file is licensed to you under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License. You may obtain a copy
 of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -291,7 +292,15 @@ class SpectrumProcessor {
                     node.parent.parent &&
                     node.parent.parent.type === 'pseudo'
                 ) {
-                    node.replaceWith(attribute.shadowNode.clone());
+                    if (!this.component.spectrumClassIsHost) {
+                        // Attributes in pseudo classes need to be on the :host, too.
+                        const treeRoot = node.parent.parent;
+                        treeRoot.remove();
+                        node.replaceWith(attribute.shadowNode.clone());
+                        addNodeToHost(result, treeRoot);
+                    } else {
+                        node.replaceWith(attribute.shadowNode.clone());
+                    }
                     return;
                 }
 
@@ -578,11 +587,11 @@ class SpectrumProcessor {
         this.root = root;
         this.result = result;
 
-        const comment = postcss.comment({ text: this.headerText });
         this.result.root = postcss.root({
             nodes: [
                 postcss.comment({ text: ' stylelint-disable ' }),
                 postcss.comment({ text: this.headerText }),
+                postcss.atRule({ name: 'import', params: '"./vars.css"' }),
             ],
         });
 
@@ -764,7 +773,8 @@ class SpectrumProcessor {
                 encoding: 'utf8',
             });
             licenseText = licenseText.split('\n').slice(1, -2).join('\n');
-            this._headerText = ` \n${licenseText}\n\nTHIS FILE IS MACHINE GENERATED. DO NOT EDIT `;
+            // spectrum-*.css不再作为机器代码 与spectrum-css剥离
+            this._headerText = ` \n${licenseText}\n\n`;
         }
         return this._headerText;
     }

@@ -62,7 +62,7 @@ export class DelayedReady extends SpectrumElement {
 
 @customElement('icons-demo')
 export class IconsDemo extends SpectrumElement {
-    @property()
+    @property({ type: String, reflect: true })
     public name = 'ui';
 
     @property()

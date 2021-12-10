@@ -12,7 +12,7 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
-
+/* eslint-disable */
 import Walker from 'walker';
 import path from 'path';
 import chalk from 'chalk';
@@ -23,6 +23,7 @@ import postcssSpectrumPlugin from './process-spectrum-postcss-plugin.js';
 import reporter from 'postcss-reporter';
 import postcssCustomProperties from 'postcss-custom-properties';
 import { fileURLToPath, pathToFileURL } from 'url';
+import postcssRemove from './postcss-remove-declaration-plugins.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -56,15 +57,18 @@ async function processComponent(componentPath) {
     );
     console.log(chalk.bold.green(`- ${spectrumConfig.spectrum}`));
     return Promise.all(
+        // @spectrum-css 过来的css样式文件增加swc后缀，不再覆盖现有css样式
         spectrumConfig.components.map(async (component) => {
             const outputCssPath = path.join(
                 componentPath,
-                `spectrum-${component.name}.css`
+                `spectrum-${component.name}.swc.css`
             );
             const outputJsonPath = path.join(
                 componentPath,
                 `spectrum-vars.json`
             );
+            const outputVarCssPath = path.join(componentPath, 'vars.swc.css');
+            // 从@spectrum-css的vars.css生成组件库vars.css 单独维护，两者解绑
             const outputCss = await postcss([
                 ...(packageCss ? postCSSPlugins() : []),
                 postcssSpectrumPlugin({ component }),
@@ -75,12 +79,28 @@ async function processComponent(componentPath) {
             });
             const srcPath = `node_modules/@spectrum-css/${spectrumConfig.spectrum}/dist/vars.css`;
             await postcss([
+                // 去除所有的无效变量 比如值为undifined的变量
+                postcssRemove({
+                    remove: {
+                        ':root': {
+                            '*': 'undefined',
+                        },
+                    },
+                }),
                 postcssCustomProperties({
-                    exportTo: [outputJsonPath],
+                    exportTo: [outputJsonPath, outputVarCssPath],
                 }),
             ]).process(inputCustomProperties, {
                 from: srcPath,
             });
+            const cssVars = await fs.readFile(outputVarCssPath, 'utf8');
+            await fs.writeFile(
+                outputVarCssPath,
+                cssVars.replace(':root {', ':host {'),
+                {
+                    encoding: 'utf8',
+                }
+            );
             console.log(chalk.bold.green(`  o ${component.name}`));
             // await fs.writeFile(outputJsonPath, outputJson, { encoding: 'utf8' });
             return fs.writeFile(outputCssPath, outputCss.css, {
@@ -120,3 +140,4 @@ async function main() {
 }
 
 main();
+/* eslint-disable */

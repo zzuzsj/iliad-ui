@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/toast",
-    "version": "0.14.1",
+    "version": "0.14.6",
     "publishConfig": {
         "access": "public"
     },
@@ -44,10 +44,10 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.10.1",
-        "@iliad-ui/button": "^0.20.1",
-        "@iliad-ui/icon": "^0.15.1",
-        "@iliad-ui/icons-workflow": "^0.12.1",
+        "@iliad-ui/base": "^0.11.0",
+        "@iliad-ui/button": "^0.21.0",
+        "@iliad-ui/icon": "^0.16.0",
+        "@iliad-ui/icons-workflow": "^0.12.6",
         "tslib": "^2.0.0"
     },
     "devDependencies": {
@@ -55,7 +55,7 @@
     },
     "types": "./src/index.d.ts",
     "customElements": "custom-elements.json",
-    "gitHead": "9bbd945c65ea91178a699382b30c499e57e3f450",
+    "gitHead": "2c03ae2437dbe18e8d274b92575c57aeddd90344",
     "maintainers": [
         {
             "name": "saiye",

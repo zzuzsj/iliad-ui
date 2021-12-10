@@ -20,6 +20,16 @@ export default {
     component: 'sp-radio',
     title: 'Radio',
     argTypes: {
+        type: {
+            name: 'type',
+            type: { name: 'string', required: false },
+            description: 'Radio type',
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: 'default' },
+            },
+            control: 'string',
+        },
         checked: {
             name: 'checked',
             type: { name: 'boolean', required: false },
@@ -196,6 +206,49 @@ export const horizontalTabIndexExample = (): TemplateResult => {
             <sp-radio value="one" tabindex="1" autofocus>Tab Index 1</sp-radio>
             <sp-radio value="four" tabindex="4">Tab Index 4</sp-radio>
             <sp-radio invalid value="two" tabindex="2">Tab Index 2</sp-radio>
+        </sp-radio-group>
+    `;
+};
+
+export const radioButtonGroup = (): TemplateResult => {
+    return html`
+        <sp-radio-group type="button" horizontal name="group-example">
+            <sp-radio type="button" emphasized value="zero" tabindex="0">
+                Tab Index 0
+            </sp-radio>
+            <sp-radio type="button" disabled value="three" tabindex="3">
+                Tab Index 3
+            </sp-radio>
+            <sp-radio type="button" value="one" tabindex="1" autofocus>
+                Tab Index 1
+            </sp-radio>
+            <sp-radio type="button" value="four" tabindex="4">
+                Tab Index 4
+            </sp-radio>
+            <sp-radio type="button" invalid value="two" tabindex="2">
+                Tab Index 2
+            </sp-radio>
+        </sp-radio-group>
+    `;
+};
+export const radioButtonIconGroup = (): TemplateResult => {
+    return html`
+        <sp-radio-group type="button" horizontal name="group-example">
+            <sp-radio type="button" emphasized value="zero" tabindex="0">
+                <sp-icon-edit slot="icon"></sp-icon-edit>
+            </sp-radio>
+            <sp-radio type="button" disabled value="three" tabindex="3">
+                <sp-icon-edit slot="icon"></sp-icon-edit>
+            </sp-radio>
+            <sp-radio type="button" value="one" tabindex="1" autofocus>
+                <sp-icon-edit slot="icon"></sp-icon-edit>
+            </sp-radio>
+            <sp-radio type="button" value="four" tabindex="4">
+                <sp-icon-edit slot="icon"></sp-icon-edit>
+            </sp-radio>
+            <sp-radio type="button" invalid value="two" tabindex="2">
+                <sp-icon-edit slot="icon"></sp-icon-edit>
+            </sp-radio>
         </sp-radio-group>
     `;
 };

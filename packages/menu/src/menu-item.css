@@ -1,5 +1,6 @@
 /*
 Copyright 2020 Adobe. All rights reserved.
+Copyright 2021 Gaoding. All rights reserved.
 This file is licensed to you under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License. You may obtain a copy
 of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -14,6 +15,35 @@ governing permissions and limitations under the License.
 @import './spectrum-chevron.css';
 @import './spectrum-menu-item.css';
 @import './spectrum-itemLabel.css';
+
+/* var 赋值在menu.css中 */
+:host {
+    border-radius: var(--spectrum-listitem-m-border-radius);
+}
+
+:host([selected]) {
+    background-color: var(--spectrum-listitem-m-background-color-selected);
+}
+:host(:hover) .checkmark {
+    color: var(--spectrum-listitem-m-icon-color-hover);
+}
+:host([disabled]) .checkmark {
+    color: var(--spectrum-listitem-m-icon-color-disabled);
+}
+
+/* value颜色 */
+slot[name='value'] {
+    color: var(--spectrum-listitem-m-icon-color);
+}
+:host([selected]) slot[name='value'] {
+    color: var(--spectrum-listitem-m-icon-color-selected);
+}
+:host(:hover) slot[name='value'] {
+    color: var(--spectrum-listitem-m-icon-color-hover);
+}
+:host([disabled]) slot[name='value'] {
+    color: var(--spectrum-listitem-m-icon-color-disabled);
+}
 
 :host([hidden]) {
     display: none;

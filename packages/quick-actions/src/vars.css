@@ -1,0 +1,35 @@
+/*
+Copyright 2020 Adobe. All rights reserved.
+Copyright 2021 Gaoding. All rights reserved.
+This file is licensed to you under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License. You may obtain a copy
+of the License at http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under
+the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+OF ANY KIND, either express or implied. See the License for the specific language
+governing permissions and limitations under the License.
+*/
+:host {
+    --spectrum-picker-m-popover-offset-y: var(
+        --spectrum-global-dimension-size-75
+    );
+    --spectrum-quickactions-padding-y: var(--spectrum-global-dimension-size-50);
+    --spectrum-quickactions-padding-x: var(--spectrum-global-dimension-size-50);
+    --spectrum-quickactions-height: var(--spectrum-global-dimension-size-500);
+    --spectrum-quickactions-border-radius: var(
+        --spectrum-alias-border-radius-regular
+    );
+    --spectrum-quickactions-button-gap-x: var(
+        --spectrum-global-dimension-size-100
+    );
+    --spectrum-quickactions-text-button-gap-x: var(
+        --spectrum-global-dimension-size-50
+    );
+    --spectrum-quickactions-overlay-color: var(
+        --spectrum-alias-background-color-quickactions-overlay
+    );
+    --spectrum-quickactions-background-color: var(
+        --spectrum-alias-background-color-quickactions
+    );
+}

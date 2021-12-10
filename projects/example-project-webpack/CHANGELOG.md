@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.20](https://github.com/zzuzsj/iliad-ui/compare/example-project-webpack@1.5.19...example-project-webpack@1.5.20) (2021-12-09)
+
+**Note:** Version bump only for package example-project-webpack
+
+## [1.5.19](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.18...example-project-webpack@1.5.19) (2021-12-07)
+
+**Note:** Version bump only for package example-project-webpack
+
+## [1.5.18](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.17...example-project-webpack@1.5.18) (2021-12-07)
+
+**Note:** Version bump only for package example-project-webpack
+
+## [1.5.17](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.16...example-project-webpack@1.5.17) (2021-12-07)
+
+**Note:** Version bump only for package example-project-webpack
+
+## [1.5.16](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.15...example-project-webpack@1.5.16) (2021-12-07)
+
+**Note:** Version bump only for package example-project-webpack
+
+## [1.5.15](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.14...example-project-webpack@1.5.15) (2021-12-07)
+
+**Note:** Version bump only for package example-project-webpack
+
+## [1.5.14](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.13...example-project-webpack@1.5.14) (2021-12-07)
+
+### Features
+
+-   测试案例更改 ([9b118ec](https://github.com/zzuzsj/spectrum-web-components/commit/9b118ecfde397f0ef01c1b94c148fad1cd7f4726))
+
+## [1.5.13](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.12...example-project-webpack@1.5.13) (2021-11-19)
+
+### Features
+
+-   update lit-\* dependencies, wip ([70743bf](https://github.com/zzuzsj/spectrum-web-components/commit/70743bf6855c08924a0a3ec1a14dc43862f9cf42))
+
 ## [1.5.12](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-webpack@1.5.11...example-project-webpack@1.5.12) (2021-10-21)
 
 **Note:** Version bump only for package example-project-webpack

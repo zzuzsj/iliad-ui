@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.8](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/button-group@0.10.7...@iliad-ui/button-group@0.10.8) (2021-12-07)
+
+**Note:** Version bump only for package @iliad-ui/button-group
+
+## [0.10.7](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/button-group@0.10.6...@iliad-ui/button-group@0.10.7) (2021-12-07)
+
+**Note:** Version bump only for package @iliad-ui/button-group
+
+## [0.10.6](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/button-group@0.10.4...@iliad-ui/button-group@0.10.6) (2021-12-07)
+
+### Features
+
+-   button group 版本更新 ([fe2a3f3](https://github.com/gaoding-inc/iliad-ui/commit/fe2a3f3291aea64757318d9cad208e6affffb448))
+
+## [0.10.4](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/button-group@0.10.2...@iliad-ui/button-group@0.10.4) (2021-12-07)
+
+### Features
+
+-   actionbutton,colorarea,button,colorslider 样式更改 ([fffc4fa](https://github.com/gaoding-inc/iliad-ui/commit/fffc4fa9927a1b3a2d11ebc7ef831a1c64dff3e2))
+-   css 样式更改 ([f0c9476](https://github.com/gaoding-inc/iliad-ui/commit/f0c9476e27b07ad3da62ecd717675c7329e5f78e))
+
+## [0.10.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/button-group@0.10.1...@iliad-ui/button-group@0.10.2) (2021-11-19)
+
+**Note:** Version bump only for package @iliad-ui/button-group
+
 ## [0.10.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/button-group@0.10.0...@iliad-ui/button-group@0.10.1) (2021-10-21)
 
 **Note:** Version bump only for package @iliad-ui/button-group

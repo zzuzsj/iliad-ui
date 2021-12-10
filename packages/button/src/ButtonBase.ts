@@ -43,6 +43,9 @@ export class ButtonBase extends LikeAnchor(
         return this.slotHasContent;
     }
 
+    @property({ type: Boolean, reflect: true })
+    public icononly = false;
+
     @query('.anchor')
     private anchorElement!: HTMLButtonElement;
 
@@ -65,6 +68,7 @@ export class ButtonBase extends LikeAnchor(
             content.unshift(html`
                 <slot name="icon" ?icon-only=${!this.hasLabel}></slot>
             `);
+            this.icononly = !this.hasLabel;
         }
         return content;
     }

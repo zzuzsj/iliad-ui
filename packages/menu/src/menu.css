@@ -1,5 +1,6 @@
 /*
 Copyright 2020 Adobe. All rights reserved.
+Copyright 2021 Gaoding. All rights reserved.
 This file is licensed to you under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License. You may obtain a copy
 of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -13,14 +14,18 @@ governing permissions and limitations under the License.
 @import './spectrum-menu.css';
 
 :host {
-    /**
-     * TODO: remove the following when https://github.com/adobe/spectrum-css/issues/1130
-     is correct
-     */
-    --spectrum-listitem-selectable-padding-right: calc(
-        var(--spectrum-global-dimension-size-100) +
-            var(--spectrum-icon-checkmark-medium-width) +
-            var(--spectrum-listitem-icon-gap)
+    margin-bottom: var(
+        --spectrum-menu-margin-y,
+        var(--spectrum-global-dimension-size-50)
+    );
+    margin-top: var(
+        --spectrum-menu-margin-y,
+        var(--spectrum-global-dimension-size-50)
+    );
+}
+:host {
+    --spectrum-listitem-selectable-padding-right: var(
+        --spectrum-listitem-m-padding-right
     );
 }
 

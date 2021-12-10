@@ -1,5 +1,6 @@
 /* stylelint-disable */ /* 
 Copyright 2020 Adobe. All rights reserved.
+Copyright 2021 Gaoding. All rights reserved.
 This file is licensed to you under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License. You may obtain a copy
 of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -9,7 +10,8 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 
-THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
+*/
+@import './vars.css';
 :host {
     --spectrum-button-line-height: 1.3; /* .spectrum-ActionButton */
     -webkit-font-smoothing: antialiased;
@@ -499,10 +501,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         --spectrum-actionbutton-m-background-color,
         var(--spectrum-global-color-gray-75)
     ); /* .spectrum-ActionButton */
-    border-color: var(
-        --spectrum-actionbutton-m-border-color,
-        var(--spectrum-alias-border-color)
-    );
+    border-color: var(--spectrum-actionbutton-m-border-color);
     color: var(
         --spectrum-actionbutton-m-text-color,
         var(--spectrum-alias-text-color)
@@ -515,20 +514,14 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
     ); /* .spectrum-ActionButton .spectrum-Icon */
 }
 #hold-affordance {
-    color: var(
-        --spectrum-actionbutton-m-hold-icon-color,
-        var(--spectrum-alias-icon-color)
-    ); /* .spectrum-ActionButton .spectrum-ActionButton-hold */
+    color: inherit;
 }
 :host(:hover) {
     background-color: var(
         --spectrum-actionbutton-m-background-color-hover,
         var(--spectrum-global-color-gray-50)
     ); /* .spectrum-ActionButton:hover */
-    border-color: var(
-        --spectrum-actionbutton-m-border-color-hover,
-        var(--spectrum-alias-border-color-hover)
-    );
+    border-color: var(--spectrum-actionbutton-m-border-color-hover);
     color: var(
         --spectrum-actionbutton-m-text-color-hover,
         var(--spectrum-alias-text-color-hover)
@@ -540,30 +533,12 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-alias-icon-color-hover)
     ); /* .spectrum-ActionButton:hover .spectrum-Icon */
 }
-:host(:hover) #hold-affordance {
-    color: var(
-        --spectrum-actionbutton-m-hold-icon-color-hover,
-        var(--spectrum-alias-icon-color-hover)
-    ); /* .spectrum-ActionButton:hover .spectrum-ActionButton-hold */
-}
 :host(.focus-visible) {
     background-color: var(
         --spectrum-actionbutton-m-background-color-key-focus,
         var(--spectrum-global-color-gray-50)
     ); /* .spectrum-ActionButton.focus-ring */
-    border-color: var(
-        --spectrum-actionbutton-m-border-color-key-focus,
-        var(--spectrum-alias-border-color-focus)
-    );
-    box-shadow: 0 0 0
-        var(
-            --spectrum-actionbutton-m-quiet-border-size-key-focus,
-            var(--spectrum-alias-border-size-thick)
-        )
-        var(
-            --spectrum-actionbutton-m-border-color-key-focus,
-            var(--spectrum-alias-border-color-focus)
-        );
+    border-color: var(--spectrum-actionbutton-m-border-color-key-focus);
     color: var(
         --spectrum-actionbutton-m-text-color-key-focus,
         var(--spectrum-alias-text-color-hover)
@@ -574,19 +549,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         --spectrum-actionbutton-m-background-color-key-focus,
         var(--spectrum-global-color-gray-50)
     ); /* .spectrum-ActionButton.focus-ring */
-    border-color: var(
-        --spectrum-actionbutton-m-border-color-key-focus,
-        var(--spectrum-alias-border-color-focus)
-    );
-    box-shadow: 0 0 0
-        var(
-            --spectrum-actionbutton-m-quiet-border-size-key-focus,
-            var(--spectrum-alias-border-size-thick)
-        )
-        var(
-            --spectrum-actionbutton-m-border-color-key-focus,
-            var(--spectrum-alias-border-color-focus)
-        );
+    border-color: var(--spectrum-actionbutton-m-border-color-key-focus);
     color: var(
         --spectrum-actionbutton-m-text-color-key-focus,
         var(--spectrum-alias-text-color-hover)
@@ -600,8 +563,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
 }
 :host(:focus-visible[active]) {
     border-color: var(
-        --spectrum-actionbutton-m-border-color-key-focus,
-        var(--spectrum-alias-border-color-focus)
+        --spectrum-actionbutton-m-border-color-key-focus
     ); /* .spectrum-ActionButton.focus-ring:active */
 }
 :host(.focus-visible) ::slotted([slot='icon']) {
@@ -616,37 +578,16 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-alias-icon-color-focus)
     ); /* .spectrum-ActionButton.focus-ring .spectrum-Icon */
 }
-:host(.focus-visible) #hold-affordance {
-    color: var(
-        --spectrum-actionbutton-m-hold-icon-color-key-focus,
-        var(--spectrum-alias-icon-color-hover)
-    ); /* .spectrum-ActionButton.focus-ring .spectrum-ActionButton-hold */
-}
-:host(:focus-visible) #hold-affordance {
-    color: var(
-        --spectrum-actionbutton-m-hold-icon-color-key-focus,
-        var(--spectrum-alias-icon-color-hover)
-    ); /* .spectrum-ActionButton.focus-ring .spectrum-ActionButton-hold */
-}
 :host([active]) {
     background-color: var(
         --spectrum-actionbutton-m-background-color-down,
         var(--spectrum-global-color-gray-200)
     ); /* .spectrum-ActionButton:active */
-    border-color: var(
-        --spectrum-actionbutton-m-border-color-down,
-        var(--spectrum-alias-border-color-down)
-    );
+    border-color: var(--spectrum-actionbutton-m-border-color-down);
     color: var(
         --spectrum-actionbutton-m-text-color-down,
         var(--spectrum-alias-text-color-down)
     );
-}
-:host([active]) #hold-affordance {
-    color: var(
-        --spectrum-actionbutton-m-hold-icon-color-down,
-        var(--spectrum-alias-icon-color-down)
-    ); /* .spectrum-ActionButton:active .spectrum-ActionButton-hold */
 }
 :host(:disabled),
 :host([disabled]) {
@@ -655,10 +596,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-global-color-gray-200)
     ); /* .spectrum-ActionButton:disabled,
    * .spectrum-ActionButton.is-disabled */
-    border-color: var(
-        --spectrum-actionbutton-m-border-color-disabled,
-        var(--spectrum-alias-border-color-disabled)
-    );
+    border-color: var(--spectrum-actionbutton-m-border-color-disabled);
     color: var(
         --spectrum-actionbutton-m-text-color-disabled,
         var(--spectrum-alias-text-color-disabled)
@@ -672,23 +610,12 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
     ); /* .spectrum-ActionButton:disabled .spectrum-Icon,
    * .spectrum-ActionButton.is-disabled .spectrum-Icon */
 }
-:host(:disabled) #hold-affordance,
-:host([disabled]) #hold-affordance {
-    color: var(
-        --spectrum-actionbutton-m-hold-icon-color-disabled,
-        var(--spectrum-alias-icon-color-disabled)
-    ); /* .spectrum-ActionButton:disabled .spectrum-ActionButton-hold,
-   * .spectrum-ActionButton.is-disabled .spectrum-ActionButton-hold */
-}
 :host([selected]) {
     background-color: var(
         --spectrum-actionbutton-m-background-color-selected,
         var(--spectrum-global-color-gray-200)
     ); /* .spectrum-ActionButton.is-selected */
-    border-color: var(
-        --spectrum-actionbutton-m-border-color-selected,
-        var(--spectrum-alias-border-color)
-    );
+    border-color: var(--spectrum-actionbutton-m-border-color-selected);
     color: var(
         --spectrum-actionbutton-m-text-color-selected,
         var(--spectrum-alias-text-color)
@@ -706,8 +633,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-global-color-gray-200)
     ); /* .spectrum-ActionButton.is-selected.focus-ring */
     border-color: var(
-        --spectrum-actionbutton-m-border-color-selected-key-focus,
-        var(--spectrum-alias-border-color-focus)
+        --spectrum-actionbutton-m-border-color-selected-key-focus
     );
     color: var(
         --spectrum-actionbutton-m-text-color-selected-key-focus,
@@ -720,8 +646,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-global-color-gray-200)
     ); /* .spectrum-ActionButton.is-selected.focus-ring */
     border-color: var(
-        --spectrum-actionbutton-m-border-color-selected-key-focus,
-        var(--spectrum-alias-border-color-focus)
+        --spectrum-actionbutton-m-border-color-selected-key-focus
     );
     color: var(
         --spectrum-actionbutton-m-text-color-selected-key-focus,
@@ -757,10 +682,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         --spectrum-actionbutton-m-background-color-selected-hover,
         var(--spectrum-global-color-gray-200)
     ); /* .spectrum-ActionButton.is-selected:hover */
-    border-color: var(
-        --spectrum-actionbutton-m-border-color-selected-hover,
-        var(--spectrum-alias-border-color-hover)
-    );
+    border-color: var(--spectrum-actionbutton-m-border-color-selected-hover);
     color: var(
         --spectrum-actionbutton-m-text-color-selected-hover,
         var(--spectrum-alias-text-color-hover)
@@ -777,10 +699,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         --spectrum-actionbutton-m-background-color-selected-down,
         var(--spectrum-global-color-gray-200)
     ); /* .spectrum-ActionButton.is-selected:active */
-    border-color: var(
-        --spectrum-actionbutton-m-border-color-selected-down,
-        var(--spectrum-alias-border-color-down)
-    );
+    border-color: var(--spectrum-actionbutton-m-border-color-selected-down);
     color: var(
         --spectrum-actionbutton-m-text-color-selected-down,
         var(--spectrum-alias-text-color-down)
@@ -799,10 +718,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-global-color-gray-200)
     ); /* .spectrum-ActionButton.is-selected:disabled,
    * .spectrum-ActionButton.is-selected.is-disabled */
-    border-color: var(
-        --spectrum-actionbutton-m-border-color-selected-disabled,
-        var(--spectrum-alias-border-color-disabled)
-    );
+    border-color: var(--spectrum-actionbutton-m-border-color-selected-disabled);
     color: var(
         --spectrum-actionbutton-m-text-color-selected-disabled,
         var(--spectrum-alias-text-color-disabled)
@@ -821,10 +737,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         --spectrum-actionbutton-m-emphasized-background-color,
         var(--spectrum-global-color-gray-75)
     ); /* .spectrum-ActionButton--emphasized */
-    border-color: var(
-        --spectrum-actionbutton-m-emphasized-border-color,
-        var(--spectrum-alias-border-color)
-    );
+    border-color: var(--spectrum-actionbutton-m-emphasized-border-color);
     color: var(
         --spectrum-actionbutton-m-emphasized-text-color,
         var(--spectrum-alias-text-color)
@@ -836,34 +749,12 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-alias-icon-color)
     ); /* .spectrum-ActionButton--emphasized .spectrum-Icon */
 }
-:host([emphasized]) #hold-affordance {
-    color: var(
-        --spectrum-actionbutton-m-emphasized-hold-icon-color,
-        var(--spectrum-alias-icon-color)
-    ); /* .spectrum-ActionButton--emphasized .spectrum-ActionButton-hold */
-}
-:host([emphasized][selected]) #hold-affordance {
-    color: var(
-        --spectrum-actionbutton-m-emphasized-hold-icon-color-selected,
-        var(--spectrum-global-color-static-white)
-    ); /* .spectrum-ActionButton--emphasized.is-selected .spectrum-ActionButton-hold */
-}
-:host([emphasized][selected]:hover) #hold-affordance {
-    color: var(
-        --spectrum-actionbutton-m-emphasized-text-color-selected-hover,
-        var(--spectrum-global-color-static-white)
-    ); /* .spectrum-ActionButton--emphasized.is-selected:hover .spectrum-ActionButton-hold */
-}
 :host([emphasized]:hover) {
     background-color: var(
         --spectrum-actionbutton-m-emphasized-background-color-hover,
         var(--spectrum-global-color-gray-50)
     ); /* .spectrum-ActionButton--emphasized:hover */
-    border-color: var(
-        --spectrum-actionbutton-m-emphasized-border-color-hover,
-        var(--spectrum-alias-border-color-hover)
-    );
-    box-shadow: none;
+    border-color: var(--spectrum-actionbutton-m-emphasized-border-color-hover);
     color: var(
         --spectrum-actionbutton-m-emphasized-text-color-hover,
         var(--spectrum-alias-text-color-hover)
@@ -875,30 +766,14 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-alias-icon-color-hover)
     ); /* .spectrum-ActionButton--emphasized:hover .spectrum-Icon */
 }
-:host([emphasized]:hover) #hold-affordance {
-    color: var(
-        --spectrum-actionbutton-m-emphasized-hold-icon-color-hover,
-        var(--spectrum-alias-icon-color-hover)
-    ); /* .spectrum-ActionButton--emphasized:hover .spectrum-ActionButton-hold */
-}
 :host([emphasized].focus-visible) {
     background-color: var(
         --spectrum-actionbutton-m-emphasized-background-color-key-focus,
         var(--spectrum-global-color-gray-50)
     ); /* .spectrum-ActionButton--emphasized.focus-ring */
     border-color: var(
-        --spectrum-actionbutton-m-emphasized-border-color-key-focus,
-        var(--spectrum-alias-border-color-hover)
+        --spectrum-actionbutton-m-emphasized-border-color-key-focus
     );
-    box-shadow: 0 0 0
-        var(
-            --spectrum-actionbutton-m-quiet-border-size-key-focus,
-            var(--spectrum-alias-border-size-thick)
-        )
-        var(
-            --spectrum-actionbutton-m-border-color-key-focus,
-            var(--spectrum-alias-border-color-focus)
-        );
     color: var(
         --spectrum-actionbutton-m-emphasized-text-color-key-focus,
         var(--spectrum-alias-text-color-hover)
@@ -910,18 +785,8 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-global-color-gray-50)
     ); /* .spectrum-ActionButton--emphasized.focus-ring */
     border-color: var(
-        --spectrum-actionbutton-m-emphasized-border-color-key-focus,
-        var(--spectrum-alias-border-color-hover)
+        --spectrum-actionbutton-m-emphasized-border-color-key-focus
     );
-    box-shadow: 0 0 0
-        var(
-            --spectrum-actionbutton-m-quiet-border-size-key-focus,
-            var(--spectrum-alias-border-size-thick)
-        )
-        var(
-            --spectrum-actionbutton-m-border-color-key-focus,
-            var(--spectrum-alias-border-color-focus)
-        );
     color: var(
         --spectrum-actionbutton-m-emphasized-text-color-key-focus,
         var(--spectrum-alias-text-color-hover)
@@ -939,38 +804,16 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-alias-icon-color-focus)
     ); /* .spectrum-ActionButton--emphasized.focus-ring .spectrum-Icon */
 }
-:host([emphasized].focus-visible) #hold-affordance {
-    color: var(
-        --spectrum-actionbutton-m-emphasized-hold-icon-color-key-focus,
-        var(--spectrum-alias-icon-color-hover)
-    ); /* .spectrum-ActionButton--emphasized.focus-ring .spectrum-ActionButton-hold */
-}
-:host([emphasized]:focus-visible) #hold-affordance {
-    color: var(
-        --spectrum-actionbutton-m-emphasized-hold-icon-color-key-focus,
-        var(--spectrum-alias-icon-color-hover)
-    ); /* .spectrum-ActionButton--emphasized.focus-ring .spectrum-ActionButton-hold */
-}
 :host([emphasized][active]) {
     background-color: var(
         --spectrum-actionbutton-m-emphasized-background-color-down,
         var(--spectrum-global-color-gray-200)
     ); /* .spectrum-ActionButton--emphasized.is-active */
-    border-color: var(
-        --spectrum-actionbutton-m-emphasized-border-color-down,
-        var(--spectrum-alias-border-color-down)
-    );
-    box-shadow: none;
+    border-color: var(--spectrum-actionbutton-m-emphasized-border-color-down);
     color: var(
         --spectrum-actionbutton-m-emphasized-text-color-down,
         var(--spectrum-alias-text-color-down)
     );
-}
-:host([emphasized][active]) #hold-affordance {
-    color: var(
-        --spectrum-actionbutton-m-emphasized-hold-icon-color-down,
-        var(--spectrum-alias-icon-color-down)
-    ); /* .spectrum-ActionButton--emphasized.is-active .spectrum-ActionButton-hold */
 }
 :host([emphasized]:disabled),
 :host([emphasized][disabled]) {
@@ -980,8 +823,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
     ); /* .spectrum-ActionButton--emphasized:disabled,
    * .spectrum-ActionButton--emphasized.is-disabled */
     border-color: var(
-        --spectrum-actionbutton-m-emphasized-border-color-disabled,
-        var(--spectrum-alias-border-color-disabled)
+        --spectrum-actionbutton-m-emphasized-border-color-disabled
     );
     color: var(
         --spectrum-actionbutton-m-emphasized-text-color-disabled,
@@ -996,14 +838,6 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
     ); /* .spectrum-ActionButton--emphasized:disabled .spectrum-Icon,
    * .spectrum-ActionButton--emphasized.is-disabled .spectrum-Icon */
 }
-:host([emphasized]:disabled) #hold-affordance,
-:host([emphasized][disabled]) #hold-affordance {
-    color: var(
-        --spectrum-actionbutton-m-emphasized-hold-icon-color-disabled,
-        var(--spectrum-alias-icon-color-disabled)
-    ); /* .spectrum-ActionButton--emphasized:disabled .spectrum-ActionButton-hold,
-   * .spectrum-ActionButton--emphasized.is-disabled .spectrum-ActionButton-hold */
-}
 :host([emphasized][quiet][selected]),
 :host([emphasized][selected]) {
     background-color: var(
@@ -1012,8 +846,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
     ); /* .spectrum-ActionButton--emphasized.spectrum-ActionButton--quiet.is-selected,
    * .spectrum-ActionButton--emphasized.is-selected */
     border-color: var(
-        --spectrum-actionbutton-m-emphasized-border-color-selected,
-        var(--spectrum-semantic-cta-color-background-default)
+        --spectrum-actionbutton-m-emphasized-border-color-selected
     );
     color: var(
         --spectrum-actionbutton-m-emphasized-text-color-selected,
@@ -1036,8 +869,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
     ); /* .spectrum-ActionButton--emphasized.spectrum-ActionButton--quiet.is-selected.focus-ring,
    * .spectrum-ActionButton--emphasized.is-selected.focus-ring */
     border-color: var(
-        --spectrum-actionbutton-m-emphasized-border-color-selected-key-focus,
-        var(--spectrum-semantic-cta-color-background-key-focus)
+        --spectrum-actionbutton-m-emphasized-border-color-selected-key-focus
     );
     color: var(
         --spectrum-actionbutton-m-emphasized-text-color-selected-key-focus,
@@ -1052,8 +884,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
     ); /* .spectrum-ActionButton--emphasized.spectrum-ActionButton--quiet.is-selected.focus-ring,
    * .spectrum-ActionButton--emphasized.is-selected.focus-ring */
     border-color: var(
-        --spectrum-actionbutton-m-emphasized-border-color-selected-key-focus,
-        var(--spectrum-semantic-cta-color-background-key-focus)
+        --spectrum-actionbutton-m-emphasized-border-color-selected-key-focus
     );
     color: var(
         --spectrum-actionbutton-m-emphasized-text-color-selected-key-focus,
@@ -1084,8 +915,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
     ); /* .spectrum-ActionButton--emphasized.spectrum-ActionButton--quiet.is-selected:hover,
    * .spectrum-ActionButton--emphasized.is-selected:hover */
     border-color: var(
-        --spectrum-actionbutton-m-emphasized-border-color-selected-hover,
-        var(--spectrum-semantic-cta-color-background-hover)
+        --spectrum-actionbutton-m-emphasized-border-color-selected-hover
     );
     color: var(
         --spectrum-actionbutton-m-emphasized-text-color-selected-hover,
@@ -1108,8 +938,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
     ); /* .spectrum-ActionButton--emphasized.spectrum-ActionButton--quiet.is-selected.is-active,
    * .spectrum-ActionButton--emphasized.is-selected.is-active */
     border-color: var(
-        --spectrum-actionbutton-m-emphasized-border-color-selected-down,
-        var(--spectrum-semantic-cta-color-background-down)
+        --spectrum-actionbutton-m-emphasized-border-color-selected-down
     );
     color: var(
         --spectrum-actionbutton-m-emphasized-text-color-selected-down,
@@ -1136,8 +965,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
    * .spectrum-ActionButton--emphasized.is-selected:disabled,
    * .spectrum-ActionButton--emphasized.is-selected.is-disabled */
     border-color: var(
-        --spectrum-actionbutton-m-emphasized-border-color-selected-disabled,
-        var(--spectrum-alias-border-color-disabled)
+        --spectrum-actionbutton-m-emphasized-border-color-selected-disabled
     );
     color: var(
         --spectrum-actionbutton-m-emphasized-text-color-selected-disabled,
@@ -1161,10 +989,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         --spectrum-actionbutton-m-quiet-background-color,
         var(--spectrum-alias-background-color-transparent)
     ); /* .spectrum-ActionButton--quiet */
-    border-color: var(
-        --spectrum-actionbutton-m-quiet-border-color,
-        var(--spectrum-alias-border-color-transparent)
-    );
+    border-color: var(--spectrum-actionbutton-m-quiet-border-color);
     color: var(
         --spectrum-actionbutton-m-quiet-text-color,
         var(--spectrum-alias-text-color)
@@ -1175,10 +1000,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         --spectrum-actionbutton-m-quiet-background-color-hover,
         var(--spectrum-alias-background-color-transparent)
     ); /* .spectrum-ActionButton--quiet:hover */
-    border-color: var(
-        --spectrum-actionbutton-m-quiet-border-color-hover,
-        var(--spectrum-alias-border-color-transparent)
-    );
+    border-color: var(--spectrum-actionbutton-m-quiet-border-color-hover);
     color: var(
         --spectrum-actionbutton-m-quiet-text-color-hover,
         var(--spectrum-alias-text-color-hover)
@@ -1189,19 +1011,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         --spectrum-actionbutton-m-quiet-background-color-key-focus,
         var(--spectrum-alias-background-color-transparent)
     ); /* .spectrum-ActionButton--quiet.focus-ring */
-    border-color: var(
-        --spectrum-actionbutton-m-quiet-border-color-key-focus,
-        var(--spectrum-alias-border-color-focus)
-    );
-    box-shadow: 0 0 0
-        var(
-            --spectrum-actionbutton-m-quiet-border-size-key-focus,
-            var(--spectrum-alias-border-size-thick)
-        )
-        var(
-            --spectrum-actionbutton-m-quiet-border-color-key-focus,
-            var(--spectrum-alias-border-color-focus)
-        );
+    border-color: var(--spectrum-actionbutton-m-quiet-border-color-key-focus);
     color: var(
         --spectrum-actionbutton-m-quiet-text-color-key-focus,
         var(--spectrum-alias-text-color-hover)
@@ -1212,19 +1022,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         --spectrum-actionbutton-m-quiet-background-color-key-focus,
         var(--spectrum-alias-background-color-transparent)
     ); /* .spectrum-ActionButton--quiet.focus-ring */
-    border-color: var(
-        --spectrum-actionbutton-m-quiet-border-color-key-focus,
-        var(--spectrum-alias-border-color-focus)
-    );
-    box-shadow: 0 0 0
-        var(
-            --spectrum-actionbutton-m-quiet-border-size-key-focus,
-            var(--spectrum-alias-border-size-thick)
-        )
-        var(
-            --spectrum-actionbutton-m-quiet-border-color-key-focus,
-            var(--spectrum-alias-border-color-focus)
-        );
+    border-color: var(--spectrum-actionbutton-m-quiet-border-color-key-focus);
     color: var(
         --spectrum-actionbutton-m-quiet-text-color-key-focus,
         var(--spectrum-alias-text-color-hover)
@@ -1235,10 +1033,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         --spectrum-actionbutton-m-quiet-background-color-down,
         var(--spectrum-global-color-gray-300)
     ); /* .spectrum-ActionButton--quiet:active */
-    border-color: var(
-        --spectrum-actionbutton-m-quiet-border-color-down,
-        var(--spectrum-alias-border-color-transparent)
-    );
+    border-color: var(--spectrum-actionbutton-m-quiet-border-color-down);
     color: var(
         --spectrum-actionbutton-m-quiet-text-color-down,
         var(--spectrum-alias-text-color-down)
@@ -1251,10 +1046,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-alias-background-color-transparent)
     ); /* .spectrum-ActionButton--quiet:disabled,
    * .spectrum-ActionButton--quiet.is-disabled */
-    border-color: var(
-        --spectrum-actionbutton-m-quiet-border-color-disabled,
-        var(--spectrum-alias-border-color-transparent)
-    );
+    border-color: var(--spectrum-actionbutton-m-quiet-border-color-disabled);
     color: var(
         --spectrum-actionbutton-m-quiet-text-color-disabled,
         var(--spectrum-alias-text-color-disabled)
@@ -1265,10 +1057,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         --spectrum-actionbutton-m-quiet-background-color-selected,
         var(--spectrum-global-color-gray-200)
     ); /* .spectrum-ActionButton--quiet.is-selected */
-    border-color: var(
-        --spectrum-actionbutton-m-quiet-border-color-selected,
-        var(--spectrum-alias-border-color-transparent)
-    );
+    border-color: var(--spectrum-actionbutton-m-quiet-border-color-selected);
     color: var(
         --spectrum-actionbutton-m-quiet-text-color-selected,
         var(--spectrum-alias-text-color)
@@ -1280,8 +1069,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-global-color-gray-200)
     ); /* .spectrum-ActionButton--quiet.is-selected.focus-ring */
     border-color: var(
-        --spectrum-actionbutton-m-quiet-border-color-selected-key-focus,
-        var(--spectrum-alias-border-color-transparent)
+        --spectrum-actionbutton-m-quiet-border-color-selected-key-focus
     );
     color: var(
         --spectrum-actionbutton-m-quiet-text-color-selected-key-focus,
@@ -1294,8 +1082,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-global-color-gray-200)
     ); /* .spectrum-ActionButton--quiet.is-selected.focus-ring */
     border-color: var(
-        --spectrum-actionbutton-m-quiet-border-color-selected-key-focus,
-        var(--spectrum-alias-border-color-transparent)
+        --spectrum-actionbutton-m-quiet-border-color-selected-key-focus
     );
     color: var(
         --spectrum-actionbutton-m-quiet-text-color-selected-key-focus,
@@ -1308,8 +1095,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-global-color-gray-200)
     ); /* .spectrum-ActionButton--quiet.is-selected:hover */
     border-color: var(
-        --spectrum-actionbutton-m-quiet-border-color-selected-hover,
-        var(--spectrum-alias-border-color-transparent)
+        --spectrum-actionbutton-m-quiet-border-color-selected-hover
     );
     color: var(
         --spectrum-actionbutton-m-quiet-text-color-selected-hover,
@@ -1322,8 +1108,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
         var(--spectrum-global-color-gray-200)
     ); /* .spectrum-ActionButton--quiet.is-selected:active */
     border-color: var(
-        --spectrum-actionbutton-m-quiet-border-color-selected-down,
-        var(--spectrum-alias-border-color-transparent)
+        --spectrum-actionbutton-m-quiet-border-color-selected-down
     );
     color: var(
         --spectrum-actionbutton-m-quiet-text-color-selected-down,
@@ -1338,8 +1123,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
     ); /* .spectrum-ActionButton--quiet.is-selected:disabled,
    * .spectrum-ActionButton--quiet.is-selected.is-disabled */
     border-color: var(
-        --spectrum-actionbutton-m-quiet-border-color-selected-disabled,
-        var(--spectrum-alias-border-color-transparent)
+        --spectrum-actionbutton-m-quiet-border-color-selected-disabled
     );
     color: var(
         --spectrum-actionbutton-m-quiet-text-color-selected-disabled,
@@ -1461,8 +1245,7 @@ THIS FILE IS MACHINE GENERATED. DO NOT EDIT */
             var(--spectrum-semantic-cta-color-background-down)
         );
         border-color: var(
-            --spectrum-actionbutton-m-emphasized-border-color-selected-down,
-            var(--spectrum-semantic-cta-color-background-down)
+            --spectrum-actionbutton-m-emphasized-border-color-selected-down
         );
         color: var(
             --spectrum-actionbutton-m-emphasized-text-color-selected-down,

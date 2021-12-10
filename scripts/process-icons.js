@@ -11,6 +11,7 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
+/* eslint-disable */
 import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
@@ -21,17 +22,18 @@ const processIcon = (srcPath, fd, scaleWidth, scaleHeight) => {
     // get icon name from filename
     const iconName = path.basename(srcPath, path.extname(srcPath));
     // regex will extract width, height and svg content into $1, $2 and $3 respectively
-    const regex = new RegExp(/<svg.*viewBox="(.*)">(.*?)<\/svg>/i);
+    const regex = new RegExp(/<svg.*viewBox=\"(.*?)\".*>\n?(.+)\n?<\/svg>/i);
 
-    const content = fs.readFileSync(srcPath, 'utf8');
+    const originContent = fs.readFileSync(srcPath, 'utf8');
+    const content = originContent.replace(/\n/g, '');
 
     const match = content.match(regex);
     if (!match) {
+        console.log(`---- match error: ${iconName} ${srcPath}`);
         // no matching result, bail
         return;
     }
-    const viewBox = match[1];
-    const svgContent = match[2];
+    const [, viewBox, svgContent] = match;
     // append the content to the target file handle
     fs.writeSync(
         fd,
@@ -51,24 +53,56 @@ const spectrumIconsPath = path.resolve(
 );
 
 // define the target icon sizes for each scale
-const scales = {
-    medium: { width: 18, height: 18 },
-    large: { width: 24, height: 24 },
-};
+const processIconsList = [
+    {
+        name: 'medium',
+        scale: {
+            width: 18,
+            height: 18,
+        },
+        // const srcPath = ;
+        srcPath: path.join(spectrumIconsPath, 'medium'),
+    },
+    {
+        name: 'large',
+        scale: {
+            width: 24,
+            height: 24,
+        },
+        srcPath: path.join(spectrumIconsPath, 'large'),
+    },
+    {
+        name: 'editor',
+        scale: {
+            width: 24,
+            height: 24,
+        },
+        srcPath: path.join(
+            __dirname,
+            '..',
+            'packages',
+            'icons-editor',
+            'src',
+            `svg`
+        ),
+    },
+];
 
 // process the scales
-Object.keys(scales).forEach((scaleKey) => {
-    console.log(`processing scale ${scaleKey}...`);
+// Object.keys(scales).forEach((scaleKey) => {});
+processIconsList.forEach(createIconsSvg);
 
-    const scale = scales[scaleKey];
-    const srcPath = path.join(spectrumIconsPath, scaleKey);
+function createIconsSvg(item) {
+    const { name, scale, srcPath } = item;
+    console.log(`processing scale ${name}...`);
+
     const outputPath = path.join(
         __dirname,
         '..',
         'packages',
         'icons',
         'src',
-        `icons-${scaleKey}.svg.ts`
+        `icons-${name}.svg.ts`
     );
     let outputFd = fs.openSync(outputPath, 'w');
 
@@ -86,6 +120,7 @@ Object.keys(scales).forEach((scaleKey) => {
 
     fs.writeSync(outputFd, '</svg>`;');
     fs.closeSync(outputFd);
-});
+}
 
 console.log('complete.');
+/* eslint-disable */

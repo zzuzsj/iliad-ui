@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icon@0.15.5...@iliad-ui/icon@0.16.0) (2021-12-09)
+
+### Features
+
+-   组件样式走查，增加 radio button 样式 ([61342d3](https://github.com/gaoding-inc/iliad-ui/commit/61342d3a086263c65611d4033f20428f8db2b8fa))
+
+## [0.15.5](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icon@0.15.4...@iliad-ui/icon@0.15.5) (2021-12-07)
+
+**Note:** Version bump only for package @iliad-ui/icon
+
+## [0.15.4](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icon@0.15.3...@iliad-ui/icon@0.15.4) (2021-12-07)
+
+**Note:** Version bump only for package @iliad-ui/icon
+
+## [0.15.3](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icon@0.15.2...@iliad-ui/icon@0.15.3) (2021-12-07)
+
+### Features
+
+-   弹出层+菜单项修改 ([c6057c2](https://github.com/gaoding-inc/iliad-ui/commit/c6057c2575c80a3150e08e05f122f26a905e259e))
+
+## [0.15.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icon@0.15.1...@iliad-ui/icon@0.15.2) (2021-11-19)
+
+### Bug Fixes
+
+-   **icon:** prevent async race resulting in multiple inner SVG elements ([b05e2d5](https://github.com/gaoding-inc/iliad-ui/commit/b05e2d5c7891026fa5b9585b03444b6728a30d0a))
+
+### Features
+
+-   update lit-\* dependencies, wip ([70743bf](https://github.com/gaoding-inc/iliad-ui/commit/70743bf6855c08924a0a3ec1a14dc43862f9cf42))
+
 ## [0.15.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icon@0.15.0...@iliad-ui/icon@0.15.1) (2021-10-21)
 
 **Note:** Version bump only for package @iliad-ui/icon

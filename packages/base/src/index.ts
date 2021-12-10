@@ -14,6 +14,9 @@ governing permissions and limitations under the License.
 export * from './Base.js';
 export * from './sizedMixin.js';
 export * from 'lit';
+export { html } from 'lit';
+
+// TODO: Lit已经升级 后续这些入口逐步挪到 decorators和directives 中
 export * from 'lit/decorators.js';
 export { nothing, render } from 'lit/html.js';
 export { ifDefined } from 'lit/directives/if-defined.js';

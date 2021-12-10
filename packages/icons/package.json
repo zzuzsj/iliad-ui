@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/icons",
-    "version": "0.11.1",
+    "version": "0.11.6",
     "publishConfig": {
         "access": "public"
     },
@@ -26,7 +26,9 @@
         "./sp-icons-large": "./sp-icons-large.js",
         "./sp-icons-large.js": "./sp-icons-large.js",
         "./sp-icons-medium": "./sp-icons-medium.js",
-        "./sp-icons-medium.js": "./sp-icons-medium.js"
+        "./sp-icons-medium.js": "./sp-icons-medium.js",
+        "./sp-icons-editor": "./sp-icons-editor.js",
+        "./sp-icons-editor.js": "./sp-icons-editor.js"
     },
     "scripts": {
         "test": "echo \"Error: run tests from mono-repo root.\" && exit 1"
@@ -46,13 +48,13 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.10.1",
-        "@iliad-ui/iconset": "^0.11.1",
+        "@iliad-ui/base": "^0.11.0",
+        "@iliad-ui/iconset": "^0.11.5",
         "tslib": "^2.0.0"
     },
     "types": "./src/index.d.ts",
     "customElements": "custom-elements.json",
-    "gitHead": "9bbd945c65ea91178a699382b30c499e57e3f450",
+    "gitHead": "2c03ae2437dbe18e8d274b92575c57aeddd90344",
     "maintainers": [
         {
             "name": "saiye",

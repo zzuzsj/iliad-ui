@@ -1,0 +1,93 @@
+/*
+Copyright 2020 Adobe. All rights reserved.
+Copyright 2021 Gaoding. All rights reserved.
+This file is licensed to you under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License. You may obtain a copy
+of the License at http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under
+the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+OF ANY KIND, either express or implied. See the License for the specific language
+governing permissions and limitations under the License.
+*/
+:host {
+    --spectrum-alias-body-text-line-height: var(
+        --spectrum-global-font-line-height-medium
+    );
+    --spectrum-listitem-m-divider-size: var(--spectrum-alias-border-size-thin);
+    --spectrum-listitem-m-divider-padding: 3px;
+    --spectrum-listitem-m-focus-indicator-size: var(
+        --spectrum-global-dimension-size-0
+    );
+    --spectrum-listitem-m-text-font-weight: var(
+        --spectrum-alias-body-text-font-weight
+    );
+    --spectrum-listitem-m-text-size: var(--spectrum-alias-font-size-m);
+    --spectrum-listitem-m-height: var(--spectrum-alias-control-height-m);
+    --spectrum-listitem-m-icon-gap: var(
+        --spectrum-alias-item-workflow-icon-gap-m
+    );
+    --spectrum-listitem-m-padding-left: var(--spectrum-alias-padding-m);
+    --spectrum-listitem-m-padding-right: var(--spectrum-alias-padding-l);
+    --spectrum-listitem-m-thumbnail-padding-left: var(
+        --spectrum-alias-padding-m
+    );
+    --spectrum-popover-padding-y: var(--spectrum-alias-padding-m);
+    --spectrum-popover-border-size: var(--spectrum-global-dimension-size-0);
+    --spectrum-icon-checkmark-medium-width: undefined;
+    --spectrum-alias-workflow-icon-size-m: var(--spectrum-alias-icon-size-m);
+    --spectrum-listitem-m-background-color: var(
+        --spectrum-global-color-gray-100
+    );
+    --spectrum-listitem-m-text-color: var(
+        --spectrum-alias-text-color-secondary
+    );
+    --spectrum-listitem-m-icon-color: var(--spectrum-global-color-gray-600;);
+    --spectrum-listitem-m-background-color-selected: var(
+        --spectrum-global-color-static-primary-500
+    );
+    --spectrum-listitem-m-text-color-selected: var(
+        --spectrum-global-color-static-white
+    );
+    --spectrum-listitem-m-icon-color-selected: var(
+        --spectrum-global-color-static-white
+    );
+    --spectrum-listitem-m-focus-indicator-color: var(
+        --spectrum-global-color-static-transparent
+    );
+    --spectrum-listitem-m-background-color-key-focus: var(
+        --spectrum-listitem-m-background-color-selected
+    );
+    --spectrum-listitem-m-text-color-key-focus: var(
+        --spectrum-listitem-m-text-color-selected
+    );
+    --spectrum-listitem-m-background-color-hover: var(
+        --spectrum-listitem-m-background-color-selected
+    );
+    --spectrum-listitem-m-text-color-hover: var(
+        --spectrum-listitem-m-text-color-selected
+    );
+    --spectrum-listitem-m-icon-color-hover: var(
+        --spectrum-listitem-m-icon-color-selected
+    );
+    --spectrum-listitem-m-background-color-down: var(
+        --spectrum-listitem-m-background-color-selected
+    );
+    --spectrum-listitem-m-background-color-disabled: var(
+        --spectrum-global-color-gray-100
+    );
+    --spectrum-listitem-m-text-color-disabled: var(
+        --spectrum-alias-text-color-disabled
+    );
+    --spectrum-listitem-m-icon-color-disabled: var(
+        --spectrum-alias-icon-color-disabled
+    );
+    --spectrum-listitem-m-divider-color: var(
+        --spectrum-alias-border-color-light
+    );
+    --spectrum-listitem-m-border-radius: var(
+        --spectrum-alias-border-radius-medium
+    );
+    --spectrum-menu-padding-y: var(--spectrum-global-dimension-size-0);
+    --spectrum-menu-margin-y: var(--spectrum-global-dimension-size-0);
+}

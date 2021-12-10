@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/zzuzsj/iliad-ui/compare/example-project-rollup@0.3.34...example-project-rollup@0.4.0) (2021-12-09)
+
+### Features
+
+- 组件样式走查，增加 radio button 样式 ([61342d3](https://github.com/zzuzsj/iliad-ui/commit/61342d3a086263c65611d4033f20428f8db2b8fa))
+
+## [0.3.34](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-rollup@0.3.33...example-project-rollup@0.3.34) (2021-12-07)
+
+**Note:** Version bump only for package example-project-rollup
+
+## [0.3.33](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-rollup@0.3.32...example-project-rollup@0.3.33) (2021-12-07)
+
+**Note:** Version bump only for package example-project-rollup
+
+## [0.3.32](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-rollup@0.3.31...example-project-rollup@0.3.32) (2021-12-07)
+
+**Note:** Version bump only for package example-project-rollup
+
+## [0.3.31](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-rollup@0.3.30...example-project-rollup@0.3.31) (2021-12-07)
+
+**Note:** Version bump only for package example-project-rollup
+
+## [0.3.30](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-rollup@0.3.29...example-project-rollup@0.3.30) (2021-12-07)
+
+### Features
+
+- 测试案例更改 ([9b118ec](https://github.com/zzuzsj/spectrum-web-components/commit/9b118ecfde397f0ef01c1b94c148fad1cd7f4726))
+
+## [0.3.29](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-rollup@0.3.28...example-project-rollup@0.3.29) (2021-11-19)
+
+**Note:** Version bump only for package example-project-rollup
+
 ## [0.3.28](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-rollup@0.3.28-alpha.2...example-project-rollup@0.3.28) (2021-10-21)
 
 **Note:** Version bump only for package example-project-rollup

@@ -1,5 +1,6 @@
 /*
 Copyright 2020 Adobe. All rights reserved.
+Copyright 2021 Gaoding. All rights reserved.
 This file is licensed to you under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License. You may obtain a copy
 of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -11,6 +12,11 @@ governing permissions and limitations under the License.
 */
 
 @import './spectrum-textfield.css';
+
+.input:focus,
+:host([focused]) .input {
+    background-color: var(--spectrum-textfield-m-background-color-focus);
+}
 
 :host([multiline]) {
     resize: both;
@@ -38,7 +44,7 @@ textarea {
         solid;
     border-radius: var(
         --spectrum-textfield-border-radius,
-        var(--spectrum-alias-border-radius-regular)
+        var(--spectrum-alias-border-radius-medium)
     );
     padding: var(--spectrum-textarea-padding-top)
         var(--spectrum-textarea-padding-right)

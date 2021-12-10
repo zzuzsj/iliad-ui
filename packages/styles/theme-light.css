@@ -1,5 +1,6 @@
 /*
 Copyright 2020 Adobe. All rights reserved.
+Copyright 2021 Gaoding. All rights reserved.
 This file is licensed to you under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License. You may obtain a copy
 of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -9,12 +10,11 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
-
 /* stylelint-disable */
 :host,
 :root {
     --spectrum-global-color-status: Verified;
-    --spectrum-global-color-version: 5.1;
+    --spectrum-global-color-version: 5.3;
     --spectrum-global-color-celery-400: #44b556;
     --spectrum-global-color-celery-500: #3da74e;
     --spectrum-global-color-celery-600: #379947;
@@ -27,18 +27,10 @@ governing permissions and limitations under the License.
     --spectrum-global-color-yellow-500: #d2b200;
     --spectrum-global-color-yellow-600: #c4a600;
     --spectrum-global-color-yellow-700: #b79900;
-    --spectrum-global-color-magenta-400: #d83790;
-    --spectrum-global-color-magenta-500: #ce2783;
-    --spectrum-global-color-magenta-600: #bc1c74;
-    --spectrum-global-color-magenta-700: #ae0e66;
     --spectrum-global-color-fuchsia-400: #c038cc;
     --spectrum-global-color-fuchsia-500: #b130bd;
     --spectrum-global-color-fuchsia-600: #a228ad;
     --spectrum-global-color-fuchsia-700: #93219e;
-    --spectrum-global-color-purple-400: #9256d9;
-    --spectrum-global-color-purple-500: #864ccc;
-    --spectrum-global-color-purple-600: #7a42bf;
-    --spectrum-global-color-purple-700: #6f38b1;
     --spectrum-global-color-indigo-400: #6767ec;
     --spectrum-global-color-indigo-500: #5c5ce0;
     --spectrum-global-color-indigo-600: #5151d3;
@@ -47,41 +39,86 @@ governing permissions and limitations under the License.
     --spectrum-global-color-seafoam-500: #16878c;
     --spectrum-global-color-seafoam-600: #0f797d;
     --spectrum-global-color-seafoam-700: #096c6f;
-    --spectrum-global-color-red-400: #e34850;
-    --spectrum-global-color-red-500: #d7373f;
-    --spectrum-global-color-red-600: #c9252d;
-    --spectrum-global-color-red-700: #bb121a;
-    --spectrum-global-color-orange-400: #e68619;
-    --spectrum-global-color-orange-500: #da7b11;
-    --spectrum-global-color-orange-600: #cb6f10;
-    --spectrum-global-color-orange-700: #bd640d;
-    --spectrum-global-color-green-400: #2d9d78;
-    --spectrum-global-color-green-500: #268e6c;
-    --spectrum-global-color-green-600: #12805c;
-    --spectrum-global-color-green-700: #107154;
-    --spectrum-global-color-blue-400: #2680eb;
-    --spectrum-global-color-blue-500: #1473e6;
-    --spectrum-global-color-blue-600: #0d66d0;
-    --spectrum-global-color-blue-700: #095aba;
-    --spectrum-global-color-gray-50: #fff;
-    --spectrum-global-color-gray-75: #fafafa;
-    --spectrum-global-color-gray-100: #f5f5f5;
-    --spectrum-global-color-gray-200: #eaeaea;
-    --spectrum-global-color-gray-300: #e1e1e1;
-    --spectrum-global-color-gray-400: #cacaca;
-    --spectrum-global-color-gray-500: #b3b3b3;
-    --spectrum-global-color-gray-600: #8e8e8e;
-    --spectrum-global-color-gray-700: #6e6e6e;
-    --spectrum-global-color-gray-800: #4b4b4b;
-    --spectrum-global-color-gray-900: #2c2c2c;
+    --spectrum-global-color-magenta-100: #fff1f3;
+    --spectrum-global-color-magenta-200: #ffd4db;
+    --spectrum-global-color-magenta-300: #ffa4b2;
+    --spectrum-global-color-magenta-400: #ff667e;
+    --spectrum-global-color-magenta-500: #ff4f6a;
+    --spectrum-global-color-magenta-600: #ff4157;
+    --spectrum-global-color-magenta-700: #ff2e3d;
+    --spectrum-global-color-magenta-800: #ffffff;
+    --spectrum-global-color-magenta-900: #ffffff;
+    --spectrum-global-color-purple-100: #f2f1ff;
+    --spectrum-global-color-purple-200: #d7d2ff;
+    --spectrum-global-color-purple-300: #aaa0ff;
+    --spectrum-global-color-purple-400: #6857ff;
+    --spectrum-global-color-purple-500: #5a47ff;
+    --spectrum-global-color-purple-600: #4a3aff;
+    --spectrum-global-color-purple-700: #3429ff;
+    --spectrum-global-color-purple-800: #ffffff;
+    --spectrum-global-color-purple-900: #ffffff;
+    --spectrum-global-color-red-100: #fef1f0;
+    --spectrum-global-color-red-200: #fdd5d1;
+    --spectrum-global-color-red-300: #faa69d;
+    --spectrum-global-color-red-400: #f76454;
+    --spectrum-global-color-red-500: #f55240;
+    --spectrum-global-color-red-600: #f34334;
+    --spectrum-global-color-red-700: #f13025;
+    --spectrum-global-color-red-800: #ffffff;
+    --spectrum-global-color-red-900: #ffffff;
+    --spectrum-global-color-orange-100: #fff7ec;
+    --spectrum-global-color-orange-200: #fee7c4;
+    --spectrum-global-color-orange-300: #fccc82;
+    --spectrum-global-color-orange-400: #fbad37;
+    --spectrum-global-color-orange-500: #fa9b0c;
+    --spectrum-global-color-orange-600: #f9890a;
+    --spectrum-global-color-orange-700: #f87107;
+    --spectrum-global-color-orange-800: #ffffff;
+    --spectrum-global-color-orange-900: #ffffff;
+    --spectrum-global-color-green-100: #ebf9f4;
+    --spectrum-global-color-green-200: #c3eedc;
+    --spectrum-global-color-green-300: #7fdbb5;
+    --spectrum-global-color-green-400: #28c787;
+    --spectrum-global-color-green-500: #07b871;
+    --spectrum-global-color-green-600: #06ab5d;
+    --spectrum-global-color-green-700: #049a42;
+    --spectrum-global-color-green-800: #ffffff;
+    --spectrum-global-color-green-900: #ffffff;
+    --spectrum-global-color-primary-100: #eef4fe;
+    --spectrum-global-color-primary-200: #cadefb;
+    --spectrum-global-color-primary-300: #8fb8f7;
+    --spectrum-global-color-primary-400: #3d86f3;
+    --spectrum-global-color-primary-500: #2576f0;
+    --spectrum-global-color-primary-600: #1f61ed;
+    --spectrum-global-color-primary-700: #1544ea;
+    --spectrum-global-color-primary-800: #ffffff;
+    --spectrum-global-color-primary-900: #ffffff;
+    --spectrum-global-color-blue-100: #ebf7fe;
+    --spectrum-global-color-blue-200: #c1e7fb;
+    --spectrum-global-color-blue-300: #7bccf7;
+    --spectrum-global-color-blue-400: #27acf3;
+    --spectrum-global-color-blue-500: #009cf0;
+    --spectrum-global-color-blue-600: #008aed;
+    --spectrum-global-color-blue-700: #0072ea;
+    --spectrum-global-color-blue-800: #ffffff;
+    --spectrum-global-color-blue-900: #ffffff;
+    --spectrum-global-color-gray-100: #ffffff;
+    --spectrum-global-color-gray-200: #fafafa;
+    --spectrum-global-color-gray-300: #f5f5f5;
+    --spectrum-global-color-gray-400: #ebebeb;
+    --spectrum-global-color-gray-500: #e0e0e0;
+    --spectrum-global-color-gray-600: #c2c2c2;
+    --spectrum-global-color-gray-700: #949494;
+    --spectrum-global-color-gray-800: #474747;
+    --spectrum-global-color-gray-900: #1f1f1f;
     --spectrum-alias-background-color-primary: var(
-        --spectrum-global-color-gray-50
-    );
-    --spectrum-alias-background-color-secondary: var(
         --spectrum-global-color-gray-100
     );
+    --spectrum-alias-background-color-secondary: var(
+        --spectrum-global-color-gray-200
+    );
     --spectrum-alias-background-color-tertiary: var(
-        --spectrum-global-color-gray-300
+        --spectrum-global-color-gray-100
     );
     --spectrum-alias-background-color-modal-overlay: rgba(0, 0, 0, 0.4);
     --spectrum-alias-dropshadow-color: rgba(0, 0, 0, 0.15);
@@ -140,5 +177,53 @@ governing permissions and limitations under the License.
     );
     --spectrum-well-background-color: rgba(75, 75, 75, 0.02);
     --spectrum-well-border-color: rgba(44, 44, 44, 0.05);
+    --spectrum-alias-cover-color-0: rgba(0, 0, 0, 0);
+    --spectrum-alias-cover-color-100: rgba(0, 0, 0, 0.06);
+    --spectrum-alias-cover-color-200: rgba(0, 0, 0, 0.12);
+    --spectrum-alias-border-color-100: rgba(0, 0, 0, 0.08);
+    --spectrum-alias-border-color-200: rgba(0, 0, 0, 0.16);
+    --spectrum-alias-border-color-light: var(--spectrum-alias-border-color-100);
+    --spectrum-alias-border-color-dark: var(--spectrum-alias-border-color-200);
+    --spectrum-alias-text-color-primary: rgba(0, 0, 0, 0.88);
+    --spectrum-alias-text-color-secondary: rgba(0, 0, 0, 0.72);
+    --spectrum-alias-text-color-placeholder: rgba(0, 0, 0, 0.42);
+    --spectrum-alias-text-color-disabled: rgba(0, 0, 0, 0.24);
+    --spectrum-alias-text-color-link: #2576f0;
+    --spectrum-alias-icon-color-primary: var(--spectrum-global-color-gray-900);
+    --spectrum-alias-icon-color-secondary: var(
+        --spectrum-global-color-gray-800
+    );
+    --spectrum-alias-icon-color-tertiary: var(--spectrum-global-color-gray-700);
+    --spectrum-alias-icon-color-disabled: var(--spectrum-global-color-gray-500);
+    --spectrum-alias-icon-color-activited: var(
+        --spectrum-global-color-static-primary-500
+    );
+    --spectrum-global-color-primary-cover-100: rgba(36, 114, 233, 0.53);
+    --spectrum-global-color-primary-cover-200: rgba(35, 111, 226, 0.56);
+    --spectrum-global-color-blue-cover-100: rgba(0, 151, 233, 0.53);
+    --spectrum-global-color-blue-cover-200: rgba(0, 147, 226, 0.56);
+    --spectrum-global-color-red-cover-100: rgba(238, 80, 62, 0.53);
+    --spectrum-global-color-red-cover-200: rgba(230, 77, 60, 0.56);
+    --spectrum-global-color-green-cover-100: rgba(7, 178, 110, 0.53);
+    --spectrum-global-color-green-cover-200: rgba(7, 173, 106, 0.56);
+    --spectrum-global-color-gray-cover-100: rgba(217, 217, 217, 0.53);
+    --spectrum-global-color-gray-cover-200: rgba(211, 211, 211, 0.56);
+    --spectrum-global-color-gray-100-cover-100: rgba(247, 247, 247, 0.53);
+    --spectrum-global-color-gray-100-cover-200: rgba(240, 240, 240, 0.56);
+    --spectrum-global-color-gray-200-cover-100: rgba(243, 243, 243, 0.53);
+    --spectrum-global-color-gray-200-cover-200: rgba(235, 235, 235, 0.56);
+    --spectrum-global-color-gray-300-cover-100: rgba(238, 238, 238, 0.53);
+    --spectrum-global-color-gray-300-cover-200: rgba(230, 230, 230, 0.56);
+    --spectrum-global-color-gray-400-cover-100: rgba(228, 228, 228, 0.53);
+    --spectrum-global-color-gray-400-cover-200: rgba(221, 221, 221, 0.56);
+    --spectrum-global-color-gray-600-cover-100: rgba(188, 188, 188, 0.53);
+    --spectrum-global-color-gray-600-cover-200: rgba(182, 182, 182, 0.56);
+    --spectrum-global-color-gray-700-cover-100: rgba(144, 144, 144, 0.53);
+    --spectrum-global-color-gray-700-cover-200: rgba(139, 139, 139, 0.56);
+    --spectrum-global-color-gray-800-cover-100: rgba(69, 69, 69, 0.53);
+    --spectrum-global-color-gray-800-cover-200: rgba(67, 67, 67, 0.56);
+    --spectrum-global-color-gray-900-cover-100: rgba(30, 30, 30, 0.53);
+    --spectrum-global-color-gray-900-cover-200: #1f1f1f;
 }
+
 /* stylelint-enable */

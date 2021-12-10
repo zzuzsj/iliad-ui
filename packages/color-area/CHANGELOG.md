@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.6](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/color-area@0.8.5...@iliad-ui/color-area@0.8.6) (2021-12-07)
+
+**Note:** Version bump only for package @iliad-ui/color-area
+
+## [0.8.5](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/color-area@0.8.4...@iliad-ui/color-area@0.8.5) (2021-12-07)
+
+**Note:** Version bump only for package @iliad-ui/color-area
+
+## [0.8.4](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/color-area@0.8.2...@iliad-ui/color-area@0.8.4) (2021-12-07)
+
+### Features
+
+-   actionbutton,colorarea,button,colorslider 样式更改 ([fffc4fa](https://github.com/gaoding-inc/iliad-ui/commit/fffc4fa9927a1b3a2d11ebc7ef831a1c64dff3e2))
+-   css 样式更改 ([f0c9476](https://github.com/gaoding-inc/iliad-ui/commit/f0c9476e27b07ad3da62ecd717675c7329e5f78e))
+
+## [0.8.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/color-area@0.8.1...@iliad-ui/color-area@0.8.2) (2021-11-19)
+
+### Features
+
+-   update lit-\* dependencies, wip ([70743bf](https://github.com/gaoding-inc/iliad-ui/commit/70743bf6855c08924a0a3ec1a14dc43862f9cf42))
+
 ## [0.8.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/color-area@0.8.0...@iliad-ui/color-area@0.8.1) (2021-10-21)
 
 **Note:** Version bump only for package @iliad-ui/color-area

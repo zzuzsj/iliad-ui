@@ -1,0 +1,148 @@
+/*
+Copyright 2020 Adobe. All rights reserved.
+Copyright 2021 Gaoding. All rights reserved.
+This file is licensed to you under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License. You may obtain a copy
+of the License at http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under
+the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+OF ANY KIND, either express or implied. See the License for the specific language
+governing permissions and limitations under the License.
+*/
+:host {
+    --spectrum-panel-background-color: var(--spectrum-global-color-gray-100);
+    --spectrum-panel-divider-color: var(--spectrum-alias-border-color-light);
+    --spectrum-panel-divider-width: var(--spectrum-alias-border-size-thin);
+    --spectrum-panel-border-color: var(--spectrum-alias-border-color-dark);
+    --spectrum-panel-box-shadow: var(--spectrum-global-shadow-static-m);
+    --spectrum-panel-border-size: var(--spectrum-global-dimension-size-0);
+    --spectrum-panel-border-radius: var(--spectrum-alias-border-radius-large);
+    --spectrum-panel-padding: var(--spectrum-global-dimension-size-200);
+    --spectrum-panel-header-padding-left: var(
+        --spectrum-global-dimension-size-200
+    );
+    --spectrum-panel-header-padding-right: var(
+        --spectrum-global-dimension-size-100
+    );
+    --spectrum-panel-icon-gap: var(--spectrum-global-dimension-size-50);
+    --spectrum-panel-header-height: var(--spectrum-alias-control-height-xl);
+    --spectrum-panel-min-width: var(
+        --spectrum-global-dimension-static-size-3200
+    );
+    --spectrum-panel-content-min-height: var(
+        --spectrum-global-dimension-static-size-1000
+    );
+    --spectrum-panel-footer-margin-top: var(--spectrum-panel-padding);
+    --spectrum-panel-title-color: var(--spectrum-alias-text-color-primary);
+    --spectrum-panel-icon-main-color: var(--spectrum-alias-icon-color-primary);
+    --spectrum-panel-icon-others-color: var(
+        --spectrum-alias-icon-color-tertiary
+    );
+    --spectrum-panel-title-line-height: var(
+        --spectrum-global-font-line-height-medium
+    );
+    --spectrum-panel-title-font-size: var(--spectrum-alias-font-size-m);
+    --spectrum-panel-title-font-weight: var(--spectrum-alias-font-weight-l);
+}
+
+:host([open]) {
+    opacity: 1;
+    pointer-events: auto;
+    transition-delay: 0ms;
+    visibility: visible; /* .spectrum-Popover.is-open */
+}
+:host {
+    border-radius: var(
+        --spectrum-panel-border-radius,
+        var(--spectrum-alias-border-radius-regular)
+    );
+    border-style: solid;
+    border-width: var(
+        --spectrum-panel-border-size,
+        var(--spectrum-alias-border-size-thin)
+    );
+    box-sizing: border-box;
+    display: inline-flex; /* .spectrum-Popover */
+    flex-direction: column;
+    min-width: var(
+        --spectrum-panel-min-width,
+        var(--spectrum-global-dimension-size-400)
+    );
+    outline: none;
+    position: absolute;
+}
+
+:host {
+    background-color: var(--spectrum-panel-background-color);
+    border-color: var(
+        --spectrum-panel-border-color,
+        var(--spectrum-alias-border-color-dark)
+    );
+    box-shadow: var(--spectrum-panel-box-shadow);
+    padding: 0 0 var(--spectrum-panel-padding) 0;
+}
+
+:host .panel-header {
+    width: 100%;
+    height: var(--spectrum-panel-header-height);
+    padding: 0 var(--spectrum-panel-header-padding-right) 0
+        var(--spectrum-panel-header-padding-left);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+:host .panel-header[divider] {
+    border-bottom: var(--spectrum-panel-divider-width) solid
+        var(--spectrum-panel-divider-color);
+}
+:host .panel-header .header-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    overflow: hidden;
+}
+:host .panel-header .header-block.header-others {
+    justify-content: flex-end;
+}
+
+:host .panel-header .header-main .title {
+    color: var(--spectrum-panel-title-color);
+    font-size: var(--spectrum-panel-title-font-size);
+    line-height: var(--spectrum-panel-title-line-height);
+    font-weight: var(--spectrum-panel-title-font-weight);
+    margin-right: var(--spectrum-panel-icon-gap);
+}
+:host .panel-header .header-main .back-icon {
+    color: var(--spectrum-panel-icon-main-color);
+    margin-right: var(--spectrum-panel-icon-gap);
+}
+:host .panel-header .header-main .close {
+    color: var(--spectrum-panel-icon-others-color);
+    margin-left: var(--spectrum-panel-icon-gap);
+}
+::slotted([slot='info']) {
+    color: var(--spectrum-panel-icon-others-color);
+}
+::slotted([slot='more']) {
+    color: var(--spectrum-panel-icon-others-color);
+}
+:host .panel-content {
+    width: 100%;
+    height: auto;
+    min-height: var(--spectrum-panel-content-min-height);
+}
+:host .panel-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: var(--spectrum-panel-footer-margin-top);
+    padding: 0 var(--spectrum-panel-padding);
+    box-sizing: border-box;
+}
+
+::slotted(*) {
+    overscroll-behavior: contain;
+}

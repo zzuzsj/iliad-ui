@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/popover",
-    "version": "0.13.1",
+    "version": "0.14.0",
     "publishConfig": {
         "access": "public"
     },
@@ -24,7 +24,9 @@
         "./src/*": "./src/*",
         "./package.json": "./package.json",
         "./sp-popover": "./sp-popover.js",
-        "./sp-popover.js": "./sp-popover.js"
+        "./sp-popover.js": "./sp-popover.js",
+        "./sp-panel": "./sp-panel.js",
+        "./sp-panel.js": "./sp-panel.js"
     },
     "scripts": {
         "test": "echo \"Error: run tests from mono-repo root.\" && exit 1"
@@ -44,8 +46,9 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.10.1",
-        "@iliad-ui/overlay": "^0.17.1",
+        "@iliad-ui/base": "^0.11.0",
+        "@iliad-ui/icons-editor": "^0.0.9",
+        "@iliad-ui/overlay": "^0.17.6",
         "tslib": "^2.0.0"
     },
     "devDependencies": {
@@ -53,7 +56,7 @@
     },
     "types": "./src/index.d.ts",
     "customElements": "custom-elements.json",
-    "gitHead": "9bbd945c65ea91178a699382b30c499e57e3f450",
+    "gitHead": "2c03ae2437dbe18e8d274b92575c57aeddd90344",
     "maintainers": [
         {
             "name": "saiye",

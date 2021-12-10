@@ -21,13 +21,20 @@ import {
     SpectrumElement,
 } from '@iliad-ui/base';
 import { FocusVisiblePolyfillMixin } from '@iliad-ui/shared/src/focus-visible.js';
+import { ObserveSlotText, ObserveSlotPresence } from '@iliad-ui/shared';
 
 import radioStyles from './radio.css.js';
+
+enum RatioType {
+    'button' = 'button',
+    'default' = 'default',
+}
 
 /**
  * @element sp-radio
  *
  * @slot - text label of the Radio button
+ * @slot icon - icon element(s) to display at the start of the button
  * @attr label-below - Moves the label below the radio button
  * @attr invalid - Uses the invalid style
  * @attr disabled - Uses the disabled style
@@ -36,7 +43,12 @@ import radioStyles from './radio.css.js';
  *
  * @event sp-radio:change - When the input is interacted with and its state is changed
  */
-export class Radio extends FocusVisiblePolyfillMixin(SpectrumElement) {
+export class Radio extends ObserveSlotText(
+    ObserveSlotPresence(
+        FocusVisiblePolyfillMixin(SpectrumElement),
+        '[slot="icon"]'
+    )
+) {
     public static get styles(): CSSResultArray {
         return [radioStyles];
     }
@@ -66,8 +78,19 @@ export class Radio extends FocusVisiblePolyfillMixin(SpectrumElement) {
     @property({ type: Boolean, reflect: true })
     public readonly = false;
 
+    @property({ type: String, reflect: true })
+    public type?: RatioType;
+
     @query('#input')
     private inputElement!: HTMLInputElement;
+
+    protected get hasIcon(): boolean {
+        return this.slotContentIsPresent;
+    }
+
+    protected get hasLabel(): boolean {
+        return this.slotHasContent;
+    }
 
     public click(): void {
         if (this.disabled) {
@@ -123,12 +146,36 @@ export class Radio extends FocusVisiblePolyfillMixin(SpectrumElement) {
         }
     }
 
-    protected render(): TemplateResult {
+    protected renderDefault(): TemplateResult {
         return html`
             <div id="input"></div>
             <span id="button"></span>
             <span id="label" role="presentation"><slot></slot></span>
         `;
+    }
+    protected renderButton(): TemplateResult {
+        const content = [
+            html`
+                <span id="label" role="presentation"><slot></slot></span>
+            `,
+        ];
+        if (this.hasIcon) {
+            content.unshift(
+                html`
+                    <slot name="icon" ?icon-only=${!this.hasLabel}></slot>
+                `
+            );
+        }
+        return html`
+            <div id="input"></div>
+            ${content}
+        `;
+    }
+
+    protected render(): TemplateResult {
+        return this.type === RatioType.button
+            ? this.renderButton()
+            : this.renderDefault();
     }
 
     protected firstUpdated(changes: PropertyValues): void {

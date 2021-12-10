@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/quick-actions",
-    "version": "0.8.1",
+    "version": "0.8.5",
     "publishConfig": {
         "access": "public"
     },
@@ -44,7 +44,7 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.10.1",
+        "@iliad-ui/base": "^0.11.0",
         "tslib": "^2.0.0"
     },
     "devDependencies": {
@@ -52,7 +52,7 @@
     },
     "types": "./src/index.d.ts",
     "customElements": "custom-elements.json",
-    "gitHead": "9bbd945c65ea91178a699382b30c499e57e3f450",
+    "gitHead": "2c03ae2437dbe18e8d274b92575c57aeddd90344",
     "maintainers": [
         {
             "name": "saiye",

@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.5](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/shared@0.18.4...@iliad-ui/shared@0.18.5) (2021-12-07)
+
+**Note:** Version bump only for package @iliad-ui/shared
+
+## [0.18.4](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/shared@0.18.3...@iliad-ui/shared@0.18.4) (2021-12-07)
+
+**Note:** Version bump only for package @iliad-ui/shared
+
+## [0.18.3](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/shared@0.18.2...@iliad-ui/shared@0.18.3) (2021-12-07)
+
+**Note:** Version bump only for package @iliad-ui/shared
+
+## [0.18.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/shared@0.18.1...@iliad-ui/shared@0.18.2) (2021-11-19)
+
+### Features
+
+-   update lit-\* dependencies, wip ([70743bf](https://github.com/gaoding-inc/iliad-ui/commit/70743bf6855c08924a0a3ec1a14dc43862f9cf42))
+
 ## [0.18.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/shared@0.18.0...@iliad-ui/shared@0.18.1) (2021-10-21)
 
 **Note:** Version bump only for package @iliad-ui/shared

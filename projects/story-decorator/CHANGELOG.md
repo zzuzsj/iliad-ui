@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.7](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/story-decorator@0.9.6...@iliad-ui/story-decorator@0.9.7) (2021-12-09)
+
+**Note:** Version bump only for package @iliad-ui/story-decorator
+
+## [0.9.6](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/story-decorator@0.9.5...@iliad-ui/story-decorator@0.9.6) (2021-12-07)
+
+**Note:** Version bump only for package @iliad-ui/story-decorator
+
+## [0.9.5](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/story-decorator@0.9.4...@iliad-ui/story-decorator@0.9.5) (2021-12-07)
+
+**Note:** Version bump only for package @iliad-ui/story-decorator
+
+## [0.9.4](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/story-decorator@0.9.3...@iliad-ui/story-decorator@0.9.4) (2021-12-07)
+
+**Note:** Version bump only for package @iliad-ui/story-decorator
+
+## [0.9.3](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/story-decorator@0.9.2...@iliad-ui/story-decorator@0.9.3) (2021-12-07)
+
+### Features
+
+-   lit 升级为 2.0 ([167b136](https://github.com/gaoding-inc/iliad-ui/commit/167b13667224dcb077cf18dd02d044da07cb492c))
+
+## [0.9.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/story-decorator@0.9.1...@iliad-ui/story-decorator@0.9.2) (2021-11-19)
+
+### Features
+
+-   update lit-\* dependencies, wip ([70743bf](https://github.com/gaoding-inc/iliad-ui/commit/70743bf6855c08924a0a3ec1a14dc43862f9cf42))
+
 ## [0.9.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/story-decorator@0.9.0...@iliad-ui/story-decorator@0.9.1) (2021-10-21)
 
 **Note:** Version bump only for package @iliad-ui/story-decorator

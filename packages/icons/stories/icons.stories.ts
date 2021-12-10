@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import '../sp-icons-large.js';
 import '../sp-icons-medium.js';
+import '../sp-icons-editor.js';
 import '../../iconset/stories/icons-demo.js';
 import { html, TemplateResult } from '@iliad-ui/base';
 
@@ -47,4 +48,14 @@ export const listLarge = ({ color }: Properties): TemplateResult => html`
 
 listLarge.story = {
     name: 'UI Icons - Large',
+};
+
+export const listEditor = ({ color }: Properties): TemplateResult => html`
+    <icons-demo name="editor" style="color: ${color}">
+        <sp-icons-editor></sp-icons-editor>
+    </icons-demo>
+`;
+
+listEditor.story = {
+    name: 'Editor Icons',
 };

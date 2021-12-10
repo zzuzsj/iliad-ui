@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.16.6](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/slider@0.16.5...@iliad-ui/slider@0.16.6) (2021-12-09)
+
+**Note:** Version bump only for package @iliad-ui/slider
+
+## [0.16.5](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/slider@0.16.4...@iliad-ui/slider@0.16.5) (2021-12-07)
+
+**Note:** Version bump only for package @iliad-ui/slider
+
+## [0.16.4](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/slider@0.16.3...@iliad-ui/slider@0.16.4) (2021-12-07)
+
+**Note:** Version bump only for package @iliad-ui/slider
+
+## [0.16.3](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/slider@0.16.2...@iliad-ui/slider@0.16.3) (2021-12-07)
+
+### Features
+
+-   lit 版本升级为 2.0 ([6e40df2](https://github.com/gaoding-inc/iliad-ui/commit/6e40df2bac248524ac3d8cf6c2aa23e7b57019cb))
+
+## [0.16.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/slider@0.16.1...@iliad-ui/slider@0.16.2) (2021-11-19)
+
+### Features
+
+-   update lit-\* dependencies, wip ([70743bf](https://github.com/gaoding-inc/iliad-ui/commit/70743bf6855c08924a0a3ec1a14dc43862f9cf42))
+
 ## [0.16.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/slider@0.16.0...@iliad-ui/slider@0.16.1) (2021-10-21)
 
 **Note:** Version bump only for package @iliad-ui/slider

@@ -11,8 +11,8 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { html, TemplateResult, render } from 'lit-html';
-import { customElement, LitElement, property } from 'lit-element';
+import { html, LitElement, render, TemplateResult } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
 import '@iliad-ui/theme/sp-theme.js';
 import '@iliad-ui/theme/scale-medium.js';
 import '@iliad-ui/theme/theme-lightest.js';

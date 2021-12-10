@@ -1,0 +1,223 @@
+/*
+Copyright 2020 Adobe. All rights reserved.
+Copyright 2021 Gaoding. All rights reserved.
+This file is licensed to you under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License. You may obtain a copy
+of the License at http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under
+the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+OF ANY KIND, either express or implied. See the License for the specific language
+governing permissions and limitations under the License.
+*/
+
+@import './variable-theme-light.scss';
+:host,
+:root {
+    --spectrum-global-color-status: Verified;
+    --spectrum-global-color-version: 5.3;
+
+    --spectrum-global-color-static-white: #{$global-color-static-white};
+    --spectrum-global-color-static-black: #{$global-color-static-black};
+    --spectrum-global-color-static-transparent: #{$global-color-static-transparent};
+    --spectrum-global-color-static-extend: #{$global-color-static-extend};
+    --spectrum-global-color-static-primary: #{$global-color-static-primary};
+    --spectrum-global-color-static-red: #{$global-color-static-red};
+    --spectrum-global-color-static-green: #{$global-color-static-green};
+    --spectrum-global-color-static-orange: #{$global-color-static-orange};
+
+    --spectrum-global-color-static-white-opacity-300: #{$global-color-static-white-opacity-300};
+    --spectrum-global-color-static-black-opacity-300: #{$global-color-static-black-opacity-300};
+    --spectrum-global-color-static-primary-opacity-300: #{$global-color-static-primary-opacity-300};
+    --spectrum-global-color-static-red-opacity-300: #{$global-color-static-red-opacity-300};
+    --spectrum-global-color-static-green-opacity-300: #{$global-color-static-green-opacity-300};
+    --spectrum-global-color-static-orange-opacity-300: #{$global-color-static-orange-opacity-300};
+
+    --spectrum-global-color-static-celery-200: rgb(88, 224, 111);
+    --spectrum-global-color-static-celery-300: rgb(81, 210, 103);
+    --spectrum-global-color-static-celery-400: rgb(75, 195, 95);
+    --spectrum-global-color-static-celery-500: rgb(68, 181, 86);
+    --spectrum-global-color-static-celery-600: rgb(61, 167, 78);
+    --spectrum-global-color-static-celery-700: rgb(55, 153, 71);
+    --spectrum-global-color-static-celery-800: rgb(49, 139, 64);
+
+    --spectrum-global-color-static-chartreuse-300: rgb(155, 236, 84);
+    --spectrum-global-color-static-chartreuse-400: rgb(142, 222, 73);
+    --spectrum-global-color-static-chartreuse-500: rgb(133, 208, 68);
+    --spectrum-global-color-static-chartreuse-600: rgb(124, 195, 63);
+    --spectrum-global-color-static-chartreuse-700: rgb(115, 181, 58);
+    --spectrum-global-color-static-chartreuse-800: rgb(106, 168, 52);
+
+    --spectrum-global-color-static-yellow-200: rgb(255, 226, 46);
+    --spectrum-global-color-static-yellow-300: rgb(250, 217, 0);
+    --spectrum-global-color-static-yellow-400: rgb(237, 204, 0);
+    --spectrum-global-color-static-yellow-500: rgb(223, 191, 0);
+    --spectrum-global-color-static-yellow-600: rgb(210, 178, 0);
+    --spectrum-global-color-static-yellow-700: rgb(196, 166, 0);
+    --spectrum-global-color-static-yellow-800: rgb(183, 153, 0);
+
+    --spectrum-global-color-static-fuchsia-400: rgb(207, 62, 220);
+    --spectrum-global-color-static-fuchsia-500: rgb(192, 56, 204);
+    --spectrum-global-color-static-fuchsia-600: rgb(177, 48, 189);
+    --spectrum-global-color-static-fuchsia-700: rgb(162, 40, 173);
+    --spectrum-global-color-static-fuchsia-800: rgb(147, 33, 158);
+
+    --spectrum-global-color-static-indigo-200: rgb(144, 144, 250);
+    --spectrum-global-color-static-indigo-300: rgb(130, 130, 246);
+    --spectrum-global-color-static-indigo-400: rgb(117, 117, 241);
+    --spectrum-global-color-static-indigo-500: rgb(103, 103, 236);
+    --spectrum-global-color-static-indigo-600: rgb(92, 92, 224);
+    --spectrum-global-color-static-indigo-700: rgb(81, 81, 211);
+    --spectrum-global-color-static-indigo-800: rgb(70, 70, 198);
+
+    --spectrum-global-color-static-seafoam-200: rgb(38, 192, 199);
+    --spectrum-global-color-static-seafoam-300: rgb(35, 178, 184);
+    --spectrum-global-color-static-seafoam-400: rgb(32, 163, 168);
+    --spectrum-global-color-static-seafoam-500: rgb(27, 149, 154);
+    --spectrum-global-color-static-seafoam-600: rgb(22, 135, 140);
+    --spectrum-global-color-static-seafoam-700: rgb(15, 121, 125);
+    --spectrum-global-color-static-seafoam-800: rgb(9, 108, 111);
+    /* color primary */
+    --spectrum-global-color-static-primary-100: #{$global-color-static-primary-100};
+    --spectrum-global-color-static-primary-200: #{$global-color-static-primary-200};
+    --spectrum-global-color-static-primary-300: #{$global-color-static-primary-300};
+    --spectrum-global-color-static-primary-400: #{$global-color-static-primary-400};
+    --spectrum-global-color-static-primary-500: #{$global-color-static-primary-500}; //*
+    --spectrum-global-color-static-primary-600: #{$global-color-static-primary-600};
+    --spectrum-global-color-static-primary-700: #{$global-color-static-primary-700};
+    /* TODO: to extend */
+    --spectrum-global-color-static-primary-800: #{$global-color-static-primary-800};
+    --spectrum-global-color-static-primary-900: #{$global-color-static-primary-900};
+
+    /* color green */
+    --spectrum-global-color-static-green-100: #{$global-color-static-green-100};
+    --spectrum-global-color-static-green-200: #{$global-color-static-green-200};
+    --spectrum-global-color-static-green-300: #{$global-color-static-green-300};
+    --spectrum-global-color-static-green-400: #{$global-color-static-green-400};
+    --spectrum-global-color-static-green-500: #{$global-color-static-green-500}; //*
+    --spectrum-global-color-static-green-600: #{$global-color-static-green-600};
+    --spectrum-global-color-static-green-700: #{$global-color-static-green-700};
+    /* TODO: to extend */
+    --spectrum-global-color-static-green-800: #{$global-color-static-green-800};
+    --spectrum-global-color-static-green-900: #{$global-color-static-green-900};
+
+    /* color orange */
+    --spectrum-global-color-static-orange-100: #{$global-color-static-orange-100};
+    --spectrum-global-color-static-orange-200: #{$global-color-static-orange-200};
+    --spectrum-global-color-static-orange-300: #{$global-color-static-orange-300};
+    --spectrum-global-color-static-orange-400: #{$global-color-static-orange-400};
+    --spectrum-global-color-static-orange-500: #{$global-color-static-orange-500}; //*
+    --spectrum-global-color-static-orange-600: #{$global-color-static-orange-600};
+    --spectrum-global-color-static-orange-700: #{$global-color-static-orange-700};
+    /* TODO: to extend */
+    --spectrum-global-color-static-orange-800: #{$global-color-static-orange-800};
+    --spectrum-global-color-static-orange-900: #{$global-color-static-orange-900};
+
+    /* color red */
+    --spectrum-global-color-static-red-100: #{$global-color-static-red-100};
+    --spectrum-global-color-static-red-200: #{$global-color-static-red-200};
+    --spectrum-global-color-static-red-300: #{$global-color-static-red-300};
+    --spectrum-global-color-static-red-400: #{$global-color-static-red-400};
+    --spectrum-global-color-static-red-500: #{$global-color-static-red-500}; //*
+    --spectrum-global-color-static-red-600: #{$global-color-static-red-600};
+    --spectrum-global-color-static-red-700: #{$global-color-static-red-700};
+    /* TODO: to extend */
+    --spectrum-global-color-static-red-800: #{$global-color-static-red-800};
+    --spectrum-global-color-static-red-900: #{$global-color-static-red-900};
+
+    /* color purple */
+    --spectrum-global-color-static-purple-100: #{$global-color-static-purple-100};
+    --spectrum-global-color-static-purple-200: #{$global-color-static-purple-200};
+    --spectrum-global-color-static-purple-300: #{$global-color-static-purple-300};
+    --spectrum-global-color-static-purple-400: #{$global-color-static-purple-400};
+    --spectrum-global-color-static-purple-500: #{$global-color-static-purple-500}; //*
+    --spectrum-global-color-static-purple-600: #{$global-color-static-purple-600};
+    --spectrum-global-color-static-purple-700: #{$global-color-static-purple-700};
+    /* TODO: to extend */
+    --spectrum-global-color-static-purple-800: #{$global-color-static-purple-800};
+    --spectrum-global-color-static-purple-900: #{$global-color-static-purple-900};
+
+    /* color blue */
+    --spectrum-global-color-static-blue-100: #{$global-color-static-blue-100};
+    --spectrum-global-color-static-blue-200: #{$global-color-static-blue-200};
+    --spectrum-global-color-static-blue-300: #{$global-color-static-blue-300};
+    --spectrum-global-color-static-blue-400: #{$global-color-static-blue-400};
+    --spectrum-global-color-static-blue-500: #{$global-color-static-blue-500}; //*
+    --spectrum-global-color-static-blue-600: #{$global-color-static-blue-600};
+    --spectrum-global-color-static-blue-700: #{$global-color-static-blue-700};
+    /* TODO: to extend */
+    --spectrum-global-color-static-blue-800: #{$global-color-static-blue-800};
+    --spectrum-global-color-static-blue-900: #{$global-color-static-blue-900};
+    --spectrum-global-color-static-blue: var(
+        --spectrum-global-color-static-blue-500
+    );
+
+    /* color lakeblue */
+    --spectrum-global-color-static-lakeblue-100: #{$global-color-static-lakeblue-100};
+    --spectrum-global-color-static-lakeblue-200: #{$global-color-static-lakeblue-200};
+    --spectrum-global-color-static-lakeblue-300: #{$global-color-static-lakeblue-300};
+    --spectrum-global-color-static-lakeblue-400: #{$global-color-static-lakeblue-400};
+    --spectrum-global-color-static-lakeblue-500: #{$global-color-static-lakeblue-500}; //*
+    --spectrum-global-color-static-lakeblue-600: #{$global-color-static-lakeblue-600};
+    --spectrum-global-color-static-lakeblue-700: #{$global-color-static-lakeblue-700};
+    /* TODO: to extend */
+    --spectrum-global-color-static-lakeblue-800: #{$global-color-static-lakeblue-800};
+    --spectrum-global-color-static-lakeblue-900: #{$global-color-static-lakeblue-900};
+
+    /* color magenta */
+    --spectrum-global-color-static-magenta-100: #{$global-color-static-magenta-100};
+    --spectrum-global-color-static-magenta-200: #{$global-color-static-magenta-200};
+    --spectrum-global-color-static-magenta-300: #{$global-color-static-magenta-300};
+    --spectrum-global-color-static-magenta-400: #{$global-color-static-magenta-400};
+    --spectrum-global-color-static-magenta-500: #{$global-color-static-magenta-500}; //*
+    --spectrum-global-color-static-magenta-600: #{$global-color-static-magenta-600};
+    --spectrum-global-color-static-magenta-700: #{$global-color-static-magenta-700};
+    /* TODO: to extend */
+    --spectrum-global-color-static-magenta-800: #{$global-color-static-magenta-800};
+    --spectrum-global-color-static-magenta-900: #{$global-color-static-magenta-900};
+
+    --spectrum-global-color-opacity-100: 1;
+    --spectrum-global-color-opacity-90: 0.9;
+    --spectrum-global-color-opacity-80: 0.8;
+    --spectrum-global-color-opacity-60: 0.6;
+    --spectrum-global-color-opacity-50: 0.5;
+    --spectrum-global-color-opacity-42: 0.42;
+    --spectrum-global-color-opacity-40: 0.4;
+    --spectrum-global-color-opacity-30: 0.3;
+    --spectrum-global-color-opacity-25: 0.25;
+    --spectrum-global-color-opacity-20: 0.2;
+    --spectrum-global-color-opacity-15: 0.15;
+    --spectrum-global-color-opacity-10: 0.1;
+    --spectrum-global-color-opacity-8: 0.08;
+    --spectrum-global-color-opacity-7: 0.07;
+    --spectrum-global-color-opacity-6: 0.06;
+    --spectrum-global-color-opacity-5: 0.05;
+    --spectrum-global-color-opacity-4: 0.04;
+
+    // Part FillColor 叠加色 暂时不做使用
+    --spectrum-global-color-primary-cover-100: #{$global-color-primary-cover-100};
+    --spectrum-global-color-primary-cover-200: #{$global-color-primary-cover-200};
+    --spectrum-global-color-red-cover-100: #{$global-color-red-cover-100};
+    --spectrum-global-color-red-cover-200: #{$global-color-red-cover-200};
+    --spectrum-global-color-green-cover-100: #{$global-color-green-cover-100};
+    --spectrum-global-color-green-cover-200: #{$global-color-green-cover-200};
+    --spectrum-global-color-gray-cover-100: #{$global-color-gray-cover-100};
+    --spectrum-global-color-gray-cover-200: #{$global-color-gray-cover-200};
+
+    --spectrum-global-color-gray-100-cover-100: #{$global-color-gray-100-cover-100};
+    --spectrum-global-color-gray-100-cover-200: #{$global-color-gray-100-cover-200};
+    --spectrum-global-color-gray-200-cover-100: #{$global-color-gray-200-cover-100};
+    --spectrum-global-color-gray-200-cover-200: #{$global-color-gray-200-cover-200};
+    --spectrum-global-color-gray-300-cover-100: #{$global-color-gray-300-cover-100};
+    --spectrum-global-color-gray-300-cover-200: #{$global-color-gray-300-cover-200};
+    --spectrum-global-color-gray-400-cover-100: #{$global-color-gray-400-cover-100};
+    --spectrum-global-color-gray-400-cover-200: #{$global-color-gray-400-cover-200};
+    --spectrum-global-color-gray-600-cover-100: #{$global-color-gray-600-cover-100};
+    --spectrum-global-color-gray-600-cover-200: #{$global-color-gray-600-cover-200};
+    --spectrum-global-color-gray-700-cover-100: #{$global-color-gray-700-cover-100};
+    --spectrum-global-color-gray-700-cover-200: #{$global-color-gray-700-cover-200};
+    --spectrum-global-color-gray-800-cover-100: #{$global-color-gray-800-cover-100};
+    --spectrum-global-color-gray-800-cover-200: #{$global-color-gray-800-cover-200};
+    --spectrum-global-color-gray-900-cover-100: #{$global-color-gray-900-cover-100};
+    --spectrum-global-color-gray-900-cover-200: #{$global-color-gray-900-cover-200};
+}

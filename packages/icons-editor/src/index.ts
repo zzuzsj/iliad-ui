@@ -10,16 +10,11 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
-export { IconBorder } from './elements/Border.js';
-export { IconClose } from './elements/Close.js';
-export { IconFormatCenter } from './elements/FormatCenter.js';
-export { IconFormatJustified } from './elements/FormatJustified.js';
-export { IconFormatLeft } from './elements/FormatLeft.js';
-export { IconFormatPacingLines } from './elements/FormatPacingLines.js';
-export { IconFormatRight } from './elements/FormatRight.js';
-export { IconFormatSpacingLetter } from './elements/FormatSpacingLetter.js';
-export { IconTextBold } from './elements/TextBold.js';
-export { IconTextDeleteline } from './elements/TextDeleteline.js';
-export { IconTextItaly } from './elements/TextItaly.js';
-export { IconTextScale } from './elements/TextScale.js';
-export { IconTextUnderline } from './elements/TextUnderline.js';
+
+import { html } from '@iliad-ui/base';
+import { setCustomTemplateLiteralTag } from './custom-tag.js';
+
+setCustomTemplateLiteralTag(html);
+
+export { setCustomTemplateLiteralTag };
+export * from './icons.js';

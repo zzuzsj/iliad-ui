@@ -39,6 +39,7 @@ const postCSSPlugins = (resourcePath, toTS) => {
                 {
                     svgo: false,
                     discardComments: !!toTS,
+                    uniqueSelectors: false,
                 },
             ],
         }),

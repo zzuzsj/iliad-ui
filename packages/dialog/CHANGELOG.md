@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.7](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/dialog@0.10.6...@iliad-ui/dialog@0.10.7) (2021-12-09)
+
+**Note:** Version bump only for package @iliad-ui/dialog
+
+## [0.10.6](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/dialog@0.10.5...@iliad-ui/dialog@0.10.6) (2021-12-07)
+
+**Note:** Version bump only for package @iliad-ui/dialog
+
+## [0.10.5](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/dialog@0.10.4...@iliad-ui/dialog@0.10.5) (2021-12-07)
+
+**Note:** Version bump only for package @iliad-ui/dialog
+
+## [0.10.4](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/dialog@0.10.3...@iliad-ui/dialog@0.10.4) (2021-12-07)
+
+**Note:** Version bump only for package @iliad-ui/dialog
+
+## [0.10.3](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/dialog@0.10.2...@iliad-ui/dialog@0.10.3) (2021-12-07)
+
+### Features
+
+-   增加 panel 组件 ([af4d69e](https://github.com/gaoding-inc/iliad-ui/commit/af4d69ec21e9e14db2130f6b9376cdbbca8bce64))
+-   actionbutton,colorarea,button,colorslider 样式更改 ([fffc4fa](https://github.com/gaoding-inc/iliad-ui/commit/fffc4fa9927a1b3a2d11ebc7ef831a1c64dff3e2))
+
+## [0.10.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/dialog@0.10.1...@iliad-ui/dialog@0.10.2) (2021-11-19)
+
+**Note:** Version bump only for package @iliad-ui/dialog
+
 ## [0.10.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/dialog@0.10.0...@iliad-ui/dialog@0.10.1) (2021-10-21)
 
 **Note:** Version bump only for package @iliad-ui/dialog
