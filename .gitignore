@@ -38,7 +38,9 @@ projects/**/*.js
 projects/**/*.js.map
 projects/**/*.d.ts
 !projects/*/global.d.ts
-!projects/documentation/scripts/*.js
+!projects/documentation/**/*.js
+!projects/documentation/**/*.js.map
+!projects/documentation/**/*.d.ts
 
 # typescript assets
 !test/global.d.ts
@@ -47,6 +49,7 @@ projects/**/*.d.ts
 # built css assets
 packages/**/*.css.ts
 projects/**/*.css.ts
+!projects/documentation/**/*.css.ts
 styles/**/*.css.ts
 
 # test assets
