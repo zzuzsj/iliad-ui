@@ -120,20 +120,14 @@ describe('Textfield', () => {
             steps: [
                 {
                     type: 'move',
-                    position: [
-                        startBounds.right - 2,
-                        startBounds.bottom - 2,
-                    ],
+                    position: [startBounds.right - 2, startBounds.bottom - 2],
                 },
                 {
                     type: 'down',
                 },
                 {
                     type: 'move',
-                    position: [
-                        startBounds.right + 50,
-                        startBounds.bottom + 50,
-                    ],
+                    position: [startBounds.right + 50, startBounds.bottom + 50],
                 },
                 {
                     type: 'up',
@@ -162,20 +156,14 @@ describe('Textfield', () => {
             steps: [
                 {
                     type: 'move',
-                    position: [
-                        startBounds.right - 2,
-                        startBounds.bottom - 2,
-                    ],
+                    position: [startBounds.right - 2, startBounds.bottom - 2],
                 },
                 {
                     type: 'down',
                 },
                 {
                     type: 'move',
-                    position: [
-                        startBounds.right + 50,
-                        startBounds.bottom + 50,
-                    ],
+                    position: [startBounds.right + 50, startBounds.bottom + 50],
                 },
                 {
                     type: 'up',

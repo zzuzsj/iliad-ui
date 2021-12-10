@@ -7,97 +7,49 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package swc-templates
 
-
-
-
-
 ## [0.5.11-alpha.3](https://github.com/zzuzsj/spectrum-web-components/compare/swc-templates@0.5.11-alpha.2...swc-templates@0.5.11-alpha.3) (2021-10-21)
 
 **Note:** Version bump only for package swc-templates
-
-
-
-
 
 ## [0.5.11-alpha.2](https://github.com/zzuzsj/spectrum-web-components/compare/swc-templates@0.5.11-alpha.1...swc-templates@0.5.11-alpha.2) (2021-10-21)
 
 **Note:** Version bump only for package swc-templates
 
-
-
-
-
 ## [0.5.11-alpha.1](https://github.com/zzuzsj/spectrum-web-components/compare/swc-templates@0.5.10...swc-templates@0.5.11-alpha.1) (2021-10-20)
 
 **Note:** Version bump only for package swc-templates
-
-
-
-
 
 ## [0.5.11-alpha.0](https://github.com/zzuzsj/spectrum-web-components/compare/swc-templates@0.5.10...swc-templates@0.5.11-alpha.0) (2021-10-20)
 
 **Note:** Version bump only for package swc-templates
 
-
-
-
-
 ## [0.5.10](https://github.com/zzuzsj/spectrum-web-components/compare/swc-templates@0.5.8...swc-templates@0.5.10) (2021-10-20)
 
 **Note:** Version bump only for package swc-templates
-
-
-
-
 
 ## [0.5.9](https://github.com/zzuzsj/spectrum-web-components/compare/swc-templates@0.5.8...swc-templates@0.5.9) (2021-10-19)
 
 **Note:** Version bump only for package swc-templates
 
-
-
-
-
 ## [0.5.8](https://github.com/zzuzsj/spectrum-web-components/compare/swc-templates@0.5.6...swc-templates@0.5.8) (2021-10-19)
 
 **Note:** Version bump only for package swc-templates
-
-
-
-
 
 ## [0.5.7](https://github.com/zzuzsj/spectrum-web-components/compare/swc-templates@0.5.6...swc-templates@0.5.7) (2021-10-18)
 
 **Note:** Version bump only for package swc-templates
 
-
-
-
-
 ## [0.5.6](https://github.com/zzuzsj/spectrum-web-components/compare/swc-templates@0.5.4...swc-templates@0.5.6) (2021-10-18)
 
 **Note:** Version bump only for package swc-templates
-
-
-
-
 
 ## [0.5.5](https://github.com/zzuzsj/spectrum-web-components/compare/swc-templates@0.5.4...swc-templates@0.5.5) (2021-10-18)
 
 **Note:** Version bump only for package swc-templates
 
-
-
-
-
 ## [0.5.4](https://github.com/zzuzsj/spectrum-web-components/compare/swc-templates@0.5.3...swc-templates@0.5.4) (2021-10-15)
 
 **Note:** Version bump only for package swc-templates
-
-
-
-
 
 ## [0.5.3](https://github.com/adobe/spectrum-web-components/compare/swc-templates@0.5.2...swc-templates@0.5.3) (2021-08-24)
 

@@ -7,97 +7,49 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package example-project-rollup
 
-
-
-
-
 ## [0.3.28-alpha.2](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-rollup@0.3.28-alpha.1...example-project-rollup@0.3.28-alpha.2) (2021-10-21)
 
 **Note:** Version bump only for package example-project-rollup
-
-
-
-
 
 ## [0.3.28-alpha.1](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-rollup@0.3.27...example-project-rollup@0.3.28-alpha.1) (2021-10-20)
 
 **Note:** Version bump only for package example-project-rollup
 
-
-
-
-
 ## [0.3.28-alpha.0](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-rollup@0.3.27...example-project-rollup@0.3.28-alpha.0) (2021-10-20)
 
 **Note:** Version bump only for package example-project-rollup
-
-
-
-
 
 ## [0.3.27](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-rollup@0.3.25...example-project-rollup@0.3.27) (2021-10-20)
 
 **Note:** Version bump only for package example-project-rollup
 
-
-
-
-
 ## [0.3.26](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-rollup@0.3.25...example-project-rollup@0.3.26) (2021-10-19)
 
 **Note:** Version bump only for package example-project-rollup
-
-
-
-
 
 ## [0.3.25](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-rollup@0.3.23...example-project-rollup@0.3.25) (2021-10-19)
 
 **Note:** Version bump only for package example-project-rollup
 
-
-
-
-
 ## [0.3.24](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-rollup@0.3.23...example-project-rollup@0.3.24) (2021-10-18)
 
 **Note:** Version bump only for package example-project-rollup
-
-
-
-
 
 ## [0.3.23](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-rollup@0.3.20...example-project-rollup@0.3.23) (2021-10-18)
 
 **Note:** Version bump only for package example-project-rollup
 
-
-
-
-
 ## [0.3.22](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-rollup@0.3.20...example-project-rollup@0.3.22) (2021-10-18)
 
 **Note:** Version bump only for package example-project-rollup
-
-
-
-
 
 ## [0.3.21](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-rollup@0.3.20...example-project-rollup@0.3.21) (2021-10-15)
 
 **Note:** Version bump only for package example-project-rollup
 
-
-
-
-
 ## [0.3.20](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-rollup@0.3.19...example-project-rollup@0.3.20) (2021-10-14)
 
 **Note:** Version bump only for package example-project-rollup
-
-
-
-
 
 ## [0.3.19](https://github.com/zzuzsj/spectrum-web-components/compare/example-project-rollup@0.3.17...example-project-rollup@0.3.19) (2021-10-14)
 

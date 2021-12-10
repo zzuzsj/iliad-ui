@@ -4,9 +4,9 @@
         "composite": true,
         "rootDir": "./",
         "baseUrl": "./",
-        "resolveJsonModule": true,
+        "resolveJsonModule": true
     },
-    "include": ["*.ts", "src/*.ts","*.json"],
+    "include": ["*.ts", "src/*.ts", "*.json"],
     "exclude": ["test/*.ts", "stories/*.ts"],
     "references": [
         { "path": "../accordion" },

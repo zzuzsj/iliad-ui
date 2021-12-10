@@ -65,6 +65,6 @@
         { "path": "../tray" },
         { "path": "../underlay" },
         { "path": "../breadcrumb" },
-        { "path": "../tree" },
+        { "path": "../tree" }
     ]
 }
