@@ -12,15 +12,15 @@ governing permissions and limitations under the License.
 */
 import { html, TemplateResult } from '@iliad-ui/base';
 
-import '../icons/sp-icon-add';
+import '../icons/sp-icon-editor-add';
 
 export const iconManifest = [
     {
         name: 'Arrow100',
-        tag: '<sp-icon-add>',
-        story: (size: string): TemplateResult =>
+        tag: '<sp-icon-editor-add>',
+        story: (): TemplateResult =>
             html`
-                <sp-icon-add size=${size}></sp-icon-add>
+                <sp-icon-editor-add></sp-icon-editor-add>
             `,
     },
 ];
