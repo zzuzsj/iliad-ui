@@ -12,15 +12,15 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorAlignVertCenter } from '../src/elements/IconEditorAlignVertCenter.js';
+import { IconAlignVertCenter } from '../src/elements/IconAlignVertCenter.js';
 
 iliadCustomElementsDefine(
     'sp-icon-editor-align-vert-center',
-    IconEditorAlignVertCenter
+    IconAlignVertCenter
 );
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-align-vert-center': IconEditorAlignVertCenter;
+        'sp-icon-editor-align-vert-center': IconAlignVertCenter;
     }
 }

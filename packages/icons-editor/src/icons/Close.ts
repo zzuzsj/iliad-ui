@@ -13,18 +13,18 @@ governing permissions and limitations under the License.
 
 import { tag as html, TemplateResult } from '../custom-tag.js';
 export { setCustomTemplateLiteralTag } from '../custom-tag.js';
-export const SvgClose = (): string | TemplateResult => {
+export const CloseIcon = (): string | TemplateResult => {
     return html`
         <svg
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
             <path
-                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-                fill="#1F1F1F"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.9393 12L4.3986 5.45925L5.45926 4.39859L12 10.9393L18.5407 4.39859L19.6014 5.45925L13.0607 12L19.6014 18.5407L18.5407 19.6014L12 13.0606L5.45926 19.6014L4.3986 18.5407L10.9393 12Z"
             />
         </svg>
     `;

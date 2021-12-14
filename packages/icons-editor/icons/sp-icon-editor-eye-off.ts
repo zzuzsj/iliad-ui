@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorEyeOff } from '../src/elements/IconEditorEyeOff.js';
+import { IconEyeOff } from '../src/elements/IconEyeOff.js';
 
-iliadCustomElementsDefine('sp-icon-editor-eye-off', IconEditorEyeOff);
+iliadCustomElementsDefine('sp-icon-editor-eye-off', IconEyeOff);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-eye-off': IconEditorEyeOff;
+        'sp-icon-editor-eye-off': IconEyeOff;
     }
 }

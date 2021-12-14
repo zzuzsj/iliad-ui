@@ -12,15 +12,15 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorFormatIndentDecrease } from '../src/elements/IconEditorFormatIndentDecrease.js';
+import { IconFormatIndentDecrease } from '../src/elements/IconFormatIndentDecrease.js';
 
 iliadCustomElementsDefine(
     'sp-icon-editor-format-indent-decrease',
-    IconEditorFormatIndentDecrease
+    IconFormatIndentDecrease
 );
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-format-indent-decrease': IconEditorFormatIndentDecrease;
+        'sp-icon-editor-format-indent-decrease': IconFormatIndentDecrease;
     }
 }

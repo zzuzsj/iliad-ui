@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { MenuGroup as Component } from '@iliad-ui/bundle';
 
 export const MenuGroup = createComponent(
@@ -20,6 +21,7 @@ export const MenuGroup = createComponent(
     Component,
     {
         change: 'change',
+        ...ReactiveEvents,
     },
     'MenuGroup'
 );

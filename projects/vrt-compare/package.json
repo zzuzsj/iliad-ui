@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/vrt-compare",
-    "version": "0.6.7",
+    "version": "0.6.8",
     "publishConfig": {
         "access": "public"
     },
@@ -44,7 +44,7 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/action-bar": "^0.6.7",
+        "@iliad-ui/action-bar": "^0.6.8",
         "@iliad-ui/action-button": "^0.12.0",
         "@iliad-ui/action-group": "^0.11.0",
         "@iliad-ui/base": "^0.11.0",

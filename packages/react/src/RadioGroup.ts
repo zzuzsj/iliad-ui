@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { RadioGroup as Component } from '@iliad-ui/bundle';
 
 export const RadioGroup = createComponent(
@@ -20,6 +21,7 @@ export const RadioGroup = createComponent(
     Component,
     {
         change: 'change',
+        ...ReactiveEvents,
     },
     'RadioGroup'
 );

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons@0.11.6...@iliad-ui/icons@0.12.0) (2021-12-14)
+
+### Features
+
+-   组件样式走查，增加 radio button 样式 ([61342d3](https://github.com/gaoding-inc/iliad-ui/commit/61342d3a086263c65611d4033f20428f8db2b8fa))
+
 ## [0.11.6](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons@0.11.5...@iliad-ui/icons@0.11.6) (2021-12-07)
 
 **Note:** Version bump only for package @iliad-ui/icons

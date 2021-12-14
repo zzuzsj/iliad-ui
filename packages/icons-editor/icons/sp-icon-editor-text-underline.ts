@@ -12,15 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorTextUnderline } from '../src/elements/IconEditorTextUnderline.js';
+import { IconTextUnderline } from '../src/elements/IconTextUnderline.js';
 
-iliadCustomElementsDefine(
-    'sp-icon-editor-text-underline',
-    IconEditorTextUnderline
-);
+iliadCustomElementsDefine('sp-icon-editor-text-underline', IconTextUnderline);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-text-underline': IconEditorTextUnderline;
+        'sp-icon-editor-text-underline': IconTextUnderline;
     }
 }

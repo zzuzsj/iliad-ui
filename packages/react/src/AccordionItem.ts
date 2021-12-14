@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { AccordionItem as Component } from '@iliad-ui/bundle';
 
 export const AccordionItem = createComponent(
@@ -21,6 +22,7 @@ export const AccordionItem = createComponent(
     {
         'sp-accordion-item-toggle': 'sp-accordion-item-toggle',
         keydown: 'keydown',
+        ...ReactiveEvents,
     },
     'AccordionItem'
 );

@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorHelpFill } from '../src/elements/IconEditorHelpFill.js';
+import { IconHelpFill } from '../src/elements/IconHelpFill.js';
 
-iliadCustomElementsDefine('sp-icon-editor-help-fill', IconEditorHelpFill);
+iliadCustomElementsDefine('sp-icon-editor-help-fill', IconHelpFill);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-help-fill': IconEditorHelpFill;
+        'sp-icon-editor-help-fill': IconHelpFill;
     }
 }

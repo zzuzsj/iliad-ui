@@ -12,15 +12,15 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorSliderInvisible } from '../src/elements/IconEditorSliderInvisible.js';
+import { IconSliderInvisible } from '../src/elements/IconSliderInvisible.js';
 
 iliadCustomElementsDefine(
     'sp-icon-editor-slider-invisible',
-    IconEditorSliderInvisible
+    IconSliderInvisible
 );
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-slider-invisible': IconEditorSliderInvisible;
+        'sp-icon-editor-slider-invisible': IconSliderInvisible;
     }
 }

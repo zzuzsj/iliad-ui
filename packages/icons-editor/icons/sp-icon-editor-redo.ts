@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorRedo } from '../src/elements/IconEditorRedo.js';
+import { IconRedo } from '../src/elements/IconRedo.js';
 
-iliadCustomElementsDefine('sp-icon-editor-redo', IconEditorRedo);
+iliadCustomElementsDefine('sp-icon-editor-redo', IconRedo);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-redo': IconEditorRedo;
+        'sp-icon-editor-redo': IconRedo;
     }
 }

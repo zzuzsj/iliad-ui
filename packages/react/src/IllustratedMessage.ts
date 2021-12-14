@@ -12,12 +12,13 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { IllustratedMessage as Component } from '@iliad-ui/bundle';
 
 export const IllustratedMessage = createComponent(
     React,
     'sp-illustrated-message',
     Component,
-    {},
+    { ...ReactiveEvents },
     'IllustratedMessage'
 );

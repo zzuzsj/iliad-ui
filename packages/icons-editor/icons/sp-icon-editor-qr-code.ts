@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorQrCode } from '../src/elements/IconEditorQrCode.js';
+import { IconQrCode } from '../src/elements/IconQrCode.js';
 
-iliadCustomElementsDefine('sp-icon-editor-qr-code', IconEditorQrCode);
+iliadCustomElementsDefine('sp-icon-editor-qr-code', IconQrCode);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-qr-code': IconEditorQrCode;
+        'sp-icon-editor-qr-code': IconQrCode;
     }
 }

@@ -12,15 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorDirectionLeft } from '../src/elements/IconEditorDirectionLeft.js';
+import { IconDirectionLeft } from '../src/elements/IconDirectionLeft.js';
 
-iliadCustomElementsDefine(
-    'sp-icon-editor-direction-left',
-    IconEditorDirectionLeft
-);
+iliadCustomElementsDefine('sp-icon-editor-direction-left', IconDirectionLeft);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-direction-left': IconEditorDirectionLeft;
+        'sp-icon-editor-direction-left': IconDirectionLeft;
     }
 }

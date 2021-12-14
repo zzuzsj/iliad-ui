@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorLabelY } from '../src/elements/IconEditorLabelY.js';
+import { IconLabelY } from '../src/elements/IconLabelY.js';
 
-iliadCustomElementsDefine('sp-icon-editor-label-y', IconEditorLabelY);
+iliadCustomElementsDefine('sp-icon-editor-label-y', IconLabelY);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-label-y': IconEditorLabelY;
+        'sp-icon-editor-label-y': IconLabelY;
     }
 }

@@ -12,12 +12,15 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { SplitView as Component } from '@iliad-ui/bundle';
 
 export const SplitView = createComponent(
     React,
     'sp-split-view',
     Component,
-    {},
+    {
+        ...ReactiveEvents,
+    },
     'SplitView'
 );

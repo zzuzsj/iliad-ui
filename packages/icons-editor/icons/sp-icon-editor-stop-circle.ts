@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorStopCircle } from '../src/elements/IconEditorStopCircle.js';
+import { IconStopCircle } from '../src/elements/IconStopCircle.js';
 
-iliadCustomElementsDefine('sp-icon-editor-stop-circle', IconEditorStopCircle);
+iliadCustomElementsDefine('sp-icon-editor-stop-circle', IconStopCircle);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-stop-circle': IconEditorStopCircle;
+        'sp-icon-editor-stop-circle': IconStopCircle;
     }
 }

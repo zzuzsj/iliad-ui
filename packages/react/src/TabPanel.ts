@@ -12,12 +12,15 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { TabPanel as Component } from '@iliad-ui/bundle';
 
 export const TabPanel = createComponent(
     React,
     'sp-tab-panel',
     Component,
-    {},
+    {
+        ...ReactiveEvents,
+    },
     'TabPanel'
 );

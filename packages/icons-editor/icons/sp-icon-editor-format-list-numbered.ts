@@ -12,15 +12,15 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorFormatListNumbered } from '../src/elements/IconEditorFormatListNumbered.js';
+import { IconFormatListNumbered } from '../src/elements/IconFormatListNumbered.js';
 
 iliadCustomElementsDefine(
     'sp-icon-editor-format-list-numbered',
-    IconEditorFormatListNumbered
+    IconFormatListNumbered
 );
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-format-list-numbered': IconEditorFormatListNumbered;
+        'sp-icon-editor-format-list-numbered': IconFormatListNumbered;
     }
 }

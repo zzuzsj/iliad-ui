@@ -12,12 +12,13 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { TopNav as Component } from '@iliad-ui/bundle';
 
 export const TopNav = createComponent(
     React,
     'sp-top-nav',
     Component,
-    {},
+    { ...ReactiveEvents },
     'TopNav'
 );

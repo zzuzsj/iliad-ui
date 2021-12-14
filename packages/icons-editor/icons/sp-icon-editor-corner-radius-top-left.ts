@@ -12,15 +12,15 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorCornerRadiusTopLeft } from '../src/elements/IconEditorCornerRadiusTopLeft.js';
+import { IconCornerRadiusTopLeft } from '../src/elements/IconCornerRadiusTopLeft.js';
 
 iliadCustomElementsDefine(
     'sp-icon-editor-corner-radius-top-left',
-    IconEditorCornerRadiusTopLeft
+    IconCornerRadiusTopLeft
 );
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-corner-radius-top-left': IconEditorCornerRadiusTopLeft;
+        'sp-icon-editor-corner-radius-top-left': IconCornerRadiusTopLeft;
     }
 }

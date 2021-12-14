@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorCrop } from '../src/elements/IconEditorCrop.js';
+import { IconCrop } from '../src/elements/IconCrop.js';
 
-iliadCustomElementsDefine('sp-icon-editor-crop', IconEditorCrop);
+iliadCustomElementsDefine('sp-icon-editor-crop', IconCrop);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-crop': IconEditorCrop;
+        'sp-icon-editor-crop': IconCrop;
     }
 }

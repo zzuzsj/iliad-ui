@@ -12,15 +12,15 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorFormatSpacingLetter } from '../src/elements/IconEditorFormatSpacingLetter.js';
+import { IconFormatSpacingLetter } from '../src/elements/IconFormatSpacingLetter.js';
 
 iliadCustomElementsDefine(
     'sp-icon-editor-format-spacing-letter',
-    IconEditorFormatSpacingLetter
+    IconFormatSpacingLetter
 );
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-format-spacing-letter': IconEditorFormatSpacingLetter;
+        'sp-icon-editor-format-spacing-letter': IconFormatSpacingLetter;
     }
 }

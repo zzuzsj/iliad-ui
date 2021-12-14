@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorFormatLeft } from '../src/elements/IconEditorFormatLeft.js';
+import { IconFormatLeft } from '../src/elements/IconFormatLeft.js';
 
-iliadCustomElementsDefine('sp-icon-editor-format-left', IconEditorFormatLeft);
+iliadCustomElementsDefine('sp-icon-editor-format-left', IconFormatLeft);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-format-left': IconEditorFormatLeft;
+        'sp-icon-editor-format-left': IconFormatLeft;
     }
 }

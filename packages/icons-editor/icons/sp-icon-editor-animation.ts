@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorAnimation } from '../src/elements/IconEditorAnimation.js';
+import { IconAnimation } from '../src/elements/IconAnimation.js';
 
-iliadCustomElementsDefine('sp-icon-editor-animation', IconEditorAnimation);
+iliadCustomElementsDefine('sp-icon-editor-animation', IconAnimation);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-animation': IconEditorAnimation;
+        'sp-icon-editor-animation': IconAnimation;
     }
 }

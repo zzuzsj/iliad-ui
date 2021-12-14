@@ -12,12 +12,15 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { IconsEditor as Component } from '@iliad-ui/icons';
 
 export const IconsEditor = createComponent(
     React,
     'sp-icons-editor',
     Component,
-    {},
+    {
+        ...ReactiveEvents,
+    },
     'IconsEditor'
 );

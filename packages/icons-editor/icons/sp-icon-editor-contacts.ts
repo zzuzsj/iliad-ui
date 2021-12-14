@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorContacts } from '../src/elements/IconEditorContacts.js';
+import { IconContacts } from '../src/elements/IconContacts.js';
 
-iliadCustomElementsDefine('sp-icon-editor-contacts', IconEditorContacts);
+iliadCustomElementsDefine('sp-icon-editor-contacts', IconContacts);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-contacts': IconEditorContacts;
+        'sp-icon-editor-contacts': IconContacts;
     }
 }

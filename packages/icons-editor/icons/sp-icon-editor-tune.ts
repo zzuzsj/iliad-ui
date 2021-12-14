@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorTune } from '../src/elements/IconEditorTune.js';
+import { IconTune } from '../src/elements/IconTune.js';
 
-iliadCustomElementsDefine('sp-icon-editor-tune', IconEditorTune);
+iliadCustomElementsDefine('sp-icon-editor-tune', IconTune);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-tune': IconEditorTune;
+        'sp-icon-editor-tune': IconTune;
     }
 }

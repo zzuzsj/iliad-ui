@@ -12,15 +12,15 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorAlignArrangeHoriz } from '../src/elements/IconEditorAlignArrangeHoriz.js';
+import { IconAlignArrangeHoriz } from '../src/elements/IconAlignArrangeHoriz.js';
 
 iliadCustomElementsDefine(
     'sp-icon-editor-align-arrange-horiz',
-    IconEditorAlignArrangeHoriz
+    IconAlignArrangeHoriz
 );
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-align-arrange-horiz': IconEditorAlignArrangeHoriz;
+        'sp-icon-editor-align-arrange-horiz': IconAlignArrangeHoriz;
     }
 }

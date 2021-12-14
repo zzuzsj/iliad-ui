@@ -12,15 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorTextDeleteline } from '../src/elements/IconEditorTextDeleteline.js';
+import { IconTextDeleteline } from '../src/elements/IconTextDeleteline.js';
 
-iliadCustomElementsDefine(
-    'sp-icon-editor-text-deleteline',
-    IconEditorTextDeleteline
-);
+iliadCustomElementsDefine('sp-icon-editor-text-deleteline', IconTextDeleteline);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-text-deleteline': IconEditorTextDeleteline;
+        'sp-icon-editor-text-deleteline': IconTextDeleteline;
     }
 }

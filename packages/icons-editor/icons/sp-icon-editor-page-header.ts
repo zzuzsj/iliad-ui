@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorPageHeader } from '../src/elements/IconEditorPageHeader.js';
+import { IconPageHeader } from '../src/elements/IconPageHeader.js';
 
-iliadCustomElementsDefine('sp-icon-editor-page-header', IconEditorPageHeader);
+iliadCustomElementsDefine('sp-icon-editor-page-header', IconPageHeader);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-page-header': IconEditorPageHeader;
+        'sp-icon-editor-page-header': IconPageHeader;
     }
 }

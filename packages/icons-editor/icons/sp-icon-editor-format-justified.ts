@@ -12,15 +12,15 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorFormatJustified } from '../src/elements/IconEditorFormatJustified.js';
+import { IconFormatJustified } from '../src/elements/IconFormatJustified.js';
 
 iliadCustomElementsDefine(
     'sp-icon-editor-format-justified',
-    IconEditorFormatJustified
+    IconFormatJustified
 );
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-format-justified': IconEditorFormatJustified;
+        'sp-icon-editor-format-justified': IconFormatJustified;
     }
 }

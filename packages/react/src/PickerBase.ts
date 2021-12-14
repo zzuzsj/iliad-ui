@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { PickerBase as Component } from '@iliad-ui/bundle';
 
 export const PickerBase = createComponent(
@@ -23,6 +24,7 @@ export const PickerBase = createComponent(
         'sp-opened': 'sp-opened',
         'sp-closed': 'sp-closed',
         keydown: 'keydown',
+        ...ReactiveEvents,
     },
     'PickerBase'
 );

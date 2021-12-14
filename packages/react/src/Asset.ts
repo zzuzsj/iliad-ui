@@ -12,6 +12,15 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { Asset as Component } from '@iliad-ui/bundle';
 
-export const Asset = createComponent(React, 'sp-asset', Component, {}, 'Asset');
+export const Asset = createComponent(
+    React,
+    'sp-asset',
+    Component,
+    {
+        ...ReactiveEvents,
+    },
+    'Asset'
+);

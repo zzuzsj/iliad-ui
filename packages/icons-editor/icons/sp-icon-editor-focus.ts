@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorFocus } from '../src/elements/IconEditorFocus.js';
+import { IconFocus } from '../src/elements/IconFocus.js';
 
-iliadCustomElementsDefine('sp-icon-editor-focus', IconEditorFocus);
+iliadCustomElementsDefine('sp-icon-editor-focus', IconFocus);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-focus': IconEditorFocus;
+        'sp-icon-editor-focus': IconFocus;
     }
 }

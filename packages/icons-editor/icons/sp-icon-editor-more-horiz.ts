@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorMoreHoriz } from '../src/elements/IconEditorMoreHoriz.js';
+import { IconMoreHoriz } from '../src/elements/IconMoreHoriz.js';
 
-iliadCustomElementsDefine('sp-icon-editor-more-horiz', IconEditorMoreHoriz);
+iliadCustomElementsDefine('sp-icon-editor-more-horiz', IconMoreHoriz);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-more-horiz': IconEditorMoreHoriz;
+        'sp-icon-editor-more-horiz': IconMoreHoriz;
     }
 }

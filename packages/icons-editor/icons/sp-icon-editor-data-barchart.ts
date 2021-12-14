@@ -12,15 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorDataBarchart } from '../src/elements/IconEditorDataBarchart.js';
+import { IconDataBarchart } from '../src/elements/IconDataBarchart.js';
 
-iliadCustomElementsDefine(
-    'sp-icon-editor-data-barchart',
-    IconEditorDataBarchart
-);
+iliadCustomElementsDefine('sp-icon-editor-data-barchart', IconDataBarchart);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-data-barchart': IconEditorDataBarchart;
+        'sp-icon-editor-data-barchart': IconDataBarchart;
     }
 }

@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { Search as Component } from '@iliad-ui/bundle';
 
 export const Search = createComponent(
@@ -22,6 +23,7 @@ export const Search = createComponent(
         submit: 'submit',
         change: 'change',
         keydown: 'keydown',
+        ...ReactiveEvents,
     },
     'Search'
 );

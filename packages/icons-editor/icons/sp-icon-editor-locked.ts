@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorLocked } from '../src/elements/IconEditorLocked.js';
+import { IconLocked } from '../src/elements/IconLocked.js';
 
-iliadCustomElementsDefine('sp-icon-editor-locked', IconEditorLocked);
+iliadCustomElementsDefine('sp-icon-editor-locked', IconLocked);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-locked': IconEditorLocked;
+        'sp-icon-editor-locked': IconLocked;
     }
 }
