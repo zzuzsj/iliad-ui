@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorColorpicker } from '../src/elements/IconEditorColorpicker.js';
+import { IconColorpicker } from '../src/elements/IconColorpicker.js';
 
-iliadCustomElementsDefine('sp-icon-editor-colorpicker', IconEditorColorpicker);
+iliadCustomElementsDefine('sp-icon-editor-colorpicker', IconColorpicker);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-colorpicker': IconEditorColorpicker;
+        'sp-icon-editor-colorpicker': IconColorpicker;
     }
 }

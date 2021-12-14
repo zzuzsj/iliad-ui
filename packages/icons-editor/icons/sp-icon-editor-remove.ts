@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorRemove } from '../src/elements/IconEditorRemove.js';
+import { IconRemove } from '../src/elements/IconRemove.js';
 
-iliadCustomElementsDefine('sp-icon-editor-remove', IconEditorRemove);
+iliadCustomElementsDefine('sp-icon-editor-remove', IconRemove);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-remove': IconEditorRemove;
+        'sp-icon-editor-remove': IconRemove;
     }
 }

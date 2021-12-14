@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorUndo } from '../src/elements/IconEditorUndo.js';
+import { IconUndo } from '../src/elements/IconUndo.js';
 
-iliadCustomElementsDefine('sp-icon-editor-undo', IconEditorUndo);
+iliadCustomElementsDefine('sp-icon-editor-undo', IconUndo);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-undo': IconEditorUndo;
+        'sp-icon-editor-undo': IconUndo;
     }
 }

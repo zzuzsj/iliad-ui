@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorBackspace } from '../src/elements/IconEditorBackspace.js';
+import { IconBackspace } from '../src/elements/IconBackspace.js';
 
-iliadCustomElementsDefine('sp-icon-editor-backspace', IconEditorBackspace);
+iliadCustomElementsDefine('sp-icon-editor-backspace', IconBackspace);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-backspace': IconEditorBackspace;
+        'sp-icon-editor-backspace': IconBackspace;
     }
 }

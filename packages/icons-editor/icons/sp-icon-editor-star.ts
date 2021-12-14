@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorStar } from '../src/elements/IconEditorStar.js';
+import { IconStar } from '../src/elements/IconStar.js';
 
-iliadCustomElementsDefine('sp-icon-editor-star', IconEditorStar);
+iliadCustomElementsDefine('sp-icon-editor-star', IconStar);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-star': IconEditorStar;
+        'sp-icon-editor-star': IconStar;
     }
 }

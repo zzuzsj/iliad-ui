@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorEyeDisplay } from '../src/elements/IconEditorEyeDisplay.js';
+import { IconEyeDisplay } from '../src/elements/IconEyeDisplay.js';
 
-iliadCustomElementsDefine('sp-icon-editor-eye-display', IconEditorEyeDisplay);
+iliadCustomElementsDefine('sp-icon-editor-eye-display', IconEyeDisplay);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-eye-display': IconEditorEyeDisplay;
+        'sp-icon-editor-eye-display': IconEyeDisplay;
     }
 }

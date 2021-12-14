@@ -12,15 +12,15 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorFormatPacingLines } from '../src/elements/IconEditorFormatPacingLines.js';
+import { IconFormatPacingLines } from '../src/elements/IconFormatPacingLines.js';
 
 iliadCustomElementsDefine(
     'sp-icon-editor-format-pacing-lines',
-    IconEditorFormatPacingLines
+    IconFormatPacingLines
 );
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-format-pacing-lines': IconEditorFormatPacingLines;
+        'sp-icon-editor-format-pacing-lines': IconFormatPacingLines;
     }
 }

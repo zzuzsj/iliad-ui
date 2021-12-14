@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorArrowRight } from '../src/elements/IconEditorArrowRight.js';
+import { IconArrowRight } from '../src/elements/IconArrowRight.js';
 
-iliadCustomElementsDefine('sp-icon-editor-arrow-right', IconEditorArrowRight);
+iliadCustomElementsDefine('sp-icon-editor-arrow-right', IconArrowRight);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-arrow-right': IconEditorArrowRight;
+        'sp-icon-editor-arrow-right': IconArrowRight;
     }
 }

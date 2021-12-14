@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorNone } from '../src/elements/IconEditorNone.js';
+import { IconNone } from '../src/elements/IconNone.js';
 
-iliadCustomElementsDefine('sp-icon-editor-none', IconEditorNone);
+iliadCustomElementsDefine('sp-icon-editor-none', IconNone);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-none': IconEditorNone;
+        'sp-icon-editor-none': IconNone;
     }
 }

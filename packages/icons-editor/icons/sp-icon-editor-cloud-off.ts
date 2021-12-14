@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorCloudOff } from '../src/elements/IconEditorCloudOff.js';
+import { IconCloudOff } from '../src/elements/IconCloudOff.js';
 
-iliadCustomElementsDefine('sp-icon-editor-cloud-off', IconEditorCloudOff);
+iliadCustomElementsDefine('sp-icon-editor-cloud-off', IconCloudOff);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-cloud-off': IconEditorCloudOff;
+        'sp-icon-editor-cloud-off': IconCloudOff;
     }
 }

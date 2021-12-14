@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorDragHandle } from '../src/elements/IconEditorDragHandle.js';
+import { IconDragHandle } from '../src/elements/IconDragHandle.js';
 
-iliadCustomElementsDefine('sp-icon-editor-drag-handle', IconEditorDragHandle);
+iliadCustomElementsDefine('sp-icon-editor-drag-handle', IconDragHandle);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-drag-handle': IconEditorDragHandle;
+        'sp-icon-editor-drag-handle': IconDragHandle;
     }
 }

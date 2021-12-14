@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorLink } from '../src/elements/IconEditorLink.js';
+import { IconLink } from '../src/elements/IconLink.js';
 
-iliadCustomElementsDefine('sp-icon-editor-link', IconEditorLink);
+iliadCustomElementsDefine('sp-icon-editor-link', IconLink);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-link': IconEditorLink;
+        'sp-icon-editor-link': IconLink;
     }
 }

@@ -12,15 +12,15 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorFormatListBulleted } from '../src/elements/IconEditorFormatListBulleted.js';
+import { IconFormatListBulleted } from '../src/elements/IconFormatListBulleted.js';
 
 iliadCustomElementsDefine(
     'sp-icon-editor-format-list-bulleted',
-    IconEditorFormatListBulleted
+    IconFormatListBulleted
 );
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-format-list-bulleted': IconEditorFormatListBulleted;
+        'sp-icon-editor-format-list-bulleted': IconFormatListBulleted;
     }
 }

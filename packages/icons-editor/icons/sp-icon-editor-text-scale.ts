@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorTextScale } from '../src/elements/IconEditorTextScale.js';
+import { IconTextScale } from '../src/elements/IconTextScale.js';
 
-iliadCustomElementsDefine('sp-icon-editor-text-scale', IconEditorTextScale);
+iliadCustomElementsDefine('sp-icon-editor-text-scale', IconTextScale);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-text-scale': IconEditorTextScale;
+        'sp-icon-editor-text-scale': IconTextScale;
     }
 }

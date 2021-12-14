@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorOpenFull } from '../src/elements/IconEditorOpenFull.js';
+import { IconOpenFull } from '../src/elements/IconOpenFull.js';
 
-iliadCustomElementsDefine('sp-icon-editor-open-full', IconEditorOpenFull);
+iliadCustomElementsDefine('sp-icon-editor-open-full', IconOpenFull);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-open-full': IconEditorOpenFull;
+        'sp-icon-editor-open-full': IconOpenFull;
     }
 }

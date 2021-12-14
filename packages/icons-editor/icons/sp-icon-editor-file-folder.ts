@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorFileFolder } from '../src/elements/IconEditorFileFolder.js';
+import { IconFileFolder } from '../src/elements/IconFileFolder.js';
 
-iliadCustomElementsDefine('sp-icon-editor-file-folder', IconEditorFileFolder);
+iliadCustomElementsDefine('sp-icon-editor-file-folder', IconFileFolder);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-file-folder': IconEditorFileFolder;
+        'sp-icon-editor-file-folder': IconFileFolder;
     }
 }

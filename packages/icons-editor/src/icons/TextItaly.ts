@@ -13,20 +13,18 @@ governing permissions and limitations under the License.
 
 import { tag as html, TemplateResult } from '../custom-tag.js';
 export { setCustomTemplateLiteralTag } from '../custom-tag.js';
-export const SvgTextItaly = (): string | TemplateResult => {
+export const TextItalyIcon = (): string | TemplateResult => {
     return html`
         <svg
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
             <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M9.99998 4V6H12.22L9.21998 18H6.99998V20H14.001V18H11.79L14.791 6H17V4H9.99998Z"
-                fill="#1F1F1F"
+                d="M13.4726 3.75H10.9091V2.25H18V3.75H15.0274L10.5274 20.25H13.0909V21.75H6V20.25H8.97261L13.4726 3.75Z"
             />
         </svg>
     `;

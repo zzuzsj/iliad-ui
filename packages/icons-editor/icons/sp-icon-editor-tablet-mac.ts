@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorTabletMac } from '../src/elements/IconEditorTabletMac.js';
+import { IconTabletMac } from '../src/elements/IconTabletMac.js';
 
-iliadCustomElementsDefine('sp-icon-editor-tablet-mac', IconEditorTabletMac);
+iliadCustomElementsDefine('sp-icon-editor-tablet-mac', IconTabletMac);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-tablet-mac': IconEditorTabletMac;
+        'sp-icon-editor-tablet-mac': IconTabletMac;
     }
 }

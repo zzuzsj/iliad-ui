@@ -12,15 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorFormatCenter } from '../src/elements/IconEditorFormatCenter.js';
+import { IconFormatCenter } from '../src/elements/IconFormatCenter.js';
 
-iliadCustomElementsDefine(
-    'sp-icon-editor-format-center',
-    IconEditorFormatCenter
-);
+iliadCustomElementsDefine('sp-icon-editor-format-center', IconFormatCenter);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-format-center': IconEditorFormatCenter;
+        'sp-icon-editor-format-center': IconFormatCenter;
     }
 }

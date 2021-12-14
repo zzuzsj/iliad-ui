@@ -13,20 +13,18 @@ governing permissions and limitations under the License.
 
 import { tag as html, TemplateResult } from '../custom-tag.js';
 export { setCustomTemplateLiteralTag } from '../custom-tag.js';
-export const SvgFormatPacingLines = (): string | TemplateResult => {
+export const FormatPacingLinesIcon = (): string | TemplateResult => {
     return html`
         <svg
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
             <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M4 5V3H20V5L4 5ZM4 21V19L20 19V21H4ZM10.72 6H13.28L18.01 17.5H15.84L14.84 15H9.08L8.08 17.5H5.91L10.72 6ZM10 13H14.05L12 8.1L10 13Z"
-                fill="#1F1F1F"
+                d="M19 1.25H5V2.75L19 2.75V1.25ZM19 21.25H5V22.75H19V21.25ZM11.7492 5.2501C12.052 5.24498 12.3281 5.42243 12.4493 5.69995L17.6874 17.7L16.3126 18.3L14.763 14.75L9.09658 14.75L7.69712 18.2766L6.30288 17.7234L11.0648 5.72336C11.1765 5.4419 11.4465 5.25522 11.7492 5.2501ZM9.69181 13.25L11.7949 7.95027L14.1082 13.25L9.69181 13.25Z"
             />
         </svg>
     `;

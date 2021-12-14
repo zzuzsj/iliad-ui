@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorCheck } from '../src/elements/IconEditorCheck.js';
+import { IconCheck } from '../src/elements/IconCheck.js';
 
-iliadCustomElementsDefine('sp-icon-editor-check', IconEditorCheck);
+iliadCustomElementsDefine('sp-icon-editor-check', IconCheck);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-check': IconEditorCheck;
+        'sp-icon-editor-check': IconCheck;
     }
 }

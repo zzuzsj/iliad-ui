@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorShift } from '../src/elements/IconEditorShift.js';
+import { IconShift } from '../src/elements/IconShift.js';
 
-iliadCustomElementsDefine('sp-icon-editor-shift', IconEditorShift);
+iliadCustomElementsDefine('sp-icon-editor-shift', IconShift);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-shift': IconEditorShift;
+        'sp-icon-editor-shift': IconShift;
     }
 }

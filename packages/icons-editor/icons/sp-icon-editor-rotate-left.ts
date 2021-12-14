@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEditorRotateLeft } from '../src/elements/IconEditorRotateLeft.js';
+import { IconRotateLeft } from '../src/elements/IconRotateLeft.js';
 
-iliadCustomElementsDefine('sp-icon-editor-rotate-left', IconEditorRotateLeft);
+iliadCustomElementsDefine('sp-icon-editor-rotate-left', IconRotateLeft);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-rotate-left': IconEditorRotateLeft;
+        'sp-icon-editor-rotate-left': IconRotateLeft;
     }
 }
