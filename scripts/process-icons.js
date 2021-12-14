@@ -22,7 +22,7 @@ const processIcon = (srcPath, fd, scaleWidth, scaleHeight) => {
     // get icon name from filename
     const iconName = path.basename(srcPath, path.extname(srcPath));
     // regex will extract width, height and svg content into $1, $2 and $3 respectively
-    const regex = new RegExp(/<svg.*viewBox=\"(.*?)\".*>\n?(.+)\n?<\/svg>/i);
+    const regex = new RegExp(/<svg.*viewBox=\"(.*?)\".*?>\n?(.*)\n?<\/svg>/i);
 
     const originContent = fs.readFileSync(srcPath, 'utf8');
     const content = originContent.replace(/\n/g, '');
