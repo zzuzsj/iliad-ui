@@ -18,6 +18,10 @@ export const FieldLabel = createComponent(
     React,
     'sp-field-label',
     Component,
-    {},
+    {
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
+    },
     'FieldLabel'
 );

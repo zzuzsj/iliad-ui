@@ -18,6 +18,10 @@ export const Popover = createComponent(
     React,
     'sp-popover',
     Component,
-    {},
+    {
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
+    },
     'Popover'
 );

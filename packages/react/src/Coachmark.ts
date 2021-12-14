@@ -18,6 +18,10 @@ export const Coachmark = createComponent(
     React,
     'sp-coachmark',
     Component,
-    {},
+    {
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
+    },
     'Coachmark'
 );

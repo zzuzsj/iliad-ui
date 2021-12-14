@@ -18,6 +18,6 @@ export const QuickActions = createComponent(
     React,
     'sp-quick-actions',
     Component,
-    {},
+    { click: 'click', contextmenu: 'contextmenu', dblclick: 'dblclick' },
     'QuickActions'
 );

@@ -23,6 +23,9 @@ export const Dropzone = createComponent(
         'sp-dropzone-dragover': 'sp-dropzone-dragover',
         'sp-dropzone-dragleave': 'sp-dropzone-dragleave',
         'sp-dropzone-drop': 'sp-dropzone-drop',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'Dropzone'
 );

@@ -18,6 +18,6 @@ export const MenuDivider = createComponent(
     React,
     'sp-menu-divider',
     Component,
-    {},
+    { click: 'click', contextmenu: 'contextmenu', dblclick: 'dblclick' },
     'MenuDivider'
 );

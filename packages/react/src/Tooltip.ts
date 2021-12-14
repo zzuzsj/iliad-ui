@@ -18,6 +18,10 @@ export const Tooltip = createComponent(
     React,
     'sp-tooltip',
     Component,
-    {},
+    {
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
+    },
     'Tooltip'
 );

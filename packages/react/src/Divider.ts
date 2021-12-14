@@ -18,6 +18,10 @@ export const Divider = createComponent(
     React,
     'sp-divider',
     Component,
-    {},
+    {
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
+    },
     'Divider'
 );

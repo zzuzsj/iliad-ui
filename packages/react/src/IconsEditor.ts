@@ -18,6 +18,10 @@ export const IconsEditor = createComponent(
     React,
     'sp-icons-editor',
     Component,
-    {},
+    {
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
+    },
     'IconsEditor'
 );

@@ -21,6 +21,9 @@ export const Textfield = createComponent(
     {
         change: 'change',
         keydown: 'keydown',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'Textfield'
 );

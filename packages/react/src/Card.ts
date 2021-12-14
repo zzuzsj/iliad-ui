@@ -21,6 +21,8 @@ export const Card = createComponent(
     {
         click: 'click',
         change: 'change',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'Card'
 );

@@ -20,6 +20,9 @@ export const Checkbox = createComponent(
     Component,
     {
         keydown: 'keydown',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'Checkbox'
 );

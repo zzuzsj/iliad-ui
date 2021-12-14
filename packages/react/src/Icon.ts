@@ -14,4 +14,10 @@ import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
 import { Icon as Component } from '@iliad-ui/bundle';
 
-export const Icon = createComponent(React, 'sp-icon', Component, {}, 'Icon');
+export const Icon = createComponent(
+    React,
+    'sp-icon',
+    Component,
+    { click: 'click', contextmenu: 'contextmenu', dblclick: 'dblclick' },
+    'Icon'
+);

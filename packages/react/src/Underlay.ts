@@ -18,6 +18,6 @@ export const Underlay = createComponent(
     React,
     'sp-underlay',
     Component,
-    {},
+    { click: 'click', contextmenu: 'contextmenu', dblclick: 'dblclick' },
     'Underlay'
 );

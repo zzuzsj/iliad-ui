@@ -21,6 +21,9 @@ export const ColorArea = createComponent(
     {
         input: 'input',
         change: 'change',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'ColorArea'
 );

@@ -234,7 +234,7 @@
         "@web/storybook-prebuilt": "0.1.27-alpha.0",
         "cssnano/**/postcss-calc": "7.0.0"
     },
-    "customElements": "projects/documentation/custom-elements.json",
+    "customElements": ".storybook/custom-elements.json",
     "maintainers": [
         {
             "name": "saiye",

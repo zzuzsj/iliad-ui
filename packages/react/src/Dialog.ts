@@ -20,6 +20,9 @@ export const Dialog = createComponent(
     Component,
     {
         close: 'close',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'Dialog'
 );

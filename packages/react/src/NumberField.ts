@@ -22,6 +22,9 @@ export const NumberField = createComponent(
         change: 'change',
         input: 'input',
         keydown: 'keydown',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'NumberField'
 );

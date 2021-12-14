@@ -20,6 +20,9 @@ export const Link = createComponent(
     Component,
     {
         keydown: 'keydown',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'Link'
 );

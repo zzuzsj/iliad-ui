@@ -18,6 +18,10 @@ export const ProgressBar = createComponent(
     React,
     'sp-progress-bar',
     Component,
-    {},
+    {
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
+    },
     'ProgressBar'
 );

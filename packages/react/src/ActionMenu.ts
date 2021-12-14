@@ -23,6 +23,9 @@ export const ActionMenu = createComponent(
         'sp-opened': 'sp-opened',
         'sp-closed': 'sp-closed',
         keydown: 'keydown',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'ActionMenu'
 );

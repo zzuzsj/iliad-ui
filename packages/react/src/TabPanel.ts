@@ -18,6 +18,10 @@ export const TabPanel = createComponent(
     React,
     'sp-tab-panel',
     Component,
-    {},
+    {
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
+    },
     'TabPanel'
 );

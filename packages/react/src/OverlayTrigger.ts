@@ -21,6 +21,9 @@ export const OverlayTrigger = createComponent(
     {
         'sp-opened': 'sp-opened',
         'sp-closed': 'sp-closed',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'OverlayTrigger'
 );

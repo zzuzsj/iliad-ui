@@ -20,6 +20,9 @@ export const ClearButton = createComponent(
     Component,
     {
         keydown: 'keydown',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'ClearButton'
 );

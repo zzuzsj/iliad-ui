@@ -18,6 +18,10 @@ export const SideNavHeading = createComponent(
     React,
     'sp-sidenav-heading',
     Component,
-    {},
+    {
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
+    },
     'SideNavHeading'
 );

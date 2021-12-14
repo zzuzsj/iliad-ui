@@ -20,6 +20,9 @@ export const Tag = createComponent(
     Component,
     {
         delete: 'delete',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'Tag'
 );

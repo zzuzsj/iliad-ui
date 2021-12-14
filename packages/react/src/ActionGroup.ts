@@ -18,6 +18,10 @@ export const ActionGroup = createComponent(
     React,
     'sp-action-group',
     Component,
-    {},
+    {
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
+    },
     'ActionGroup'
 );

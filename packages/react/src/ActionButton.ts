@@ -22,6 +22,9 @@ export const ActionButton = createComponent(
         longpress: 'longpress',
         change: 'change',
         keydown: 'keydown',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'ActionButton'
 );

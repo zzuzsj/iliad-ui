@@ -20,6 +20,9 @@ export const Button = createComponent(
     Component,
     {
         keydown: 'keydown',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'Button'
 );

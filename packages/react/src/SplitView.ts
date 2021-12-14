@@ -18,6 +18,10 @@ export const SplitView = createComponent(
     React,
     'sp-split-view',
     Component,
-    {},
+    {
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
+    },
     'SplitView'
 );

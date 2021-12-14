@@ -22,6 +22,9 @@ export const MenuItem = createComponent(
         'sp-menu-item-added': 'sp-menu-item-added',
         'sp-menu-item-removed': 'sp-menu-item-removed',
         keydown: 'keydown',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'MenuItem'
 );

@@ -20,6 +20,9 @@ export const TopNavItem = createComponent(
     Component,
     {
         keydown: 'keydown',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'TopNavItem'
 );

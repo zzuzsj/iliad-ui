@@ -18,6 +18,6 @@ export const TopNav = createComponent(
     React,
     'sp-top-nav',
     Component,
-    {},
+    { click: 'click', contextmenu: 'contextmenu', dblclick: 'dblclick' },
     'TopNav'
 );

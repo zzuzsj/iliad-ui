@@ -20,6 +20,9 @@ export const SideNavItem = createComponent(
     Component,
     {
         keydown: 'keydown',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'SideNavItem'
 );

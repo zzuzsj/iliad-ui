@@ -20,6 +20,9 @@ export const RadioGroup = createComponent(
     Component,
     {
         change: 'change',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'RadioGroup'
 );

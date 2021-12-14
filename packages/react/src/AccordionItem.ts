@@ -21,6 +21,9 @@ export const AccordionItem = createComponent(
     {
         'sp-accordion-item-toggle': 'sp-accordion-item-toggle',
         keydown: 'keydown',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'AccordionItem'
 );

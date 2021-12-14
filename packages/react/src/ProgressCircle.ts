@@ -18,6 +18,10 @@ export const ProgressCircle = createComponent(
     React,
     'sp-progress-circle',
     Component,
-    {},
+    {
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
+    },
     'ProgressCircle'
 );

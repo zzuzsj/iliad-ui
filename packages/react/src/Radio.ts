@@ -22,6 +22,9 @@ export const Radio = createComponent(
         keydown: 'keydown',
         change: 'change',
         'sp-radio:change': 'sp-radio:change',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'Radio'
 );

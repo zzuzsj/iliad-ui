@@ -18,6 +18,10 @@ export const ActiveOverlay = createComponent(
     React,
     'active-overlay',
     Component,
-    {},
+    {
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
+    },
     'ActiveOverlay'
 );

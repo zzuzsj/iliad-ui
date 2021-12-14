@@ -18,6 +18,10 @@ export const Banner = createComponent(
     React,
     'sp-banner',
     Component,
-    {},
+    {
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
+    },
     'Banner'
 );

@@ -18,6 +18,10 @@ export const Thumbnail = createComponent(
     React,
     'sp-thumbnail',
     Component,
-    {},
+    {
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
+    },
     'Thumbnail'
 );

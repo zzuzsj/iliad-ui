@@ -18,6 +18,6 @@ export const Breadcrumb = createComponent(
     React,
     'sp-breadcrumb',
     Component,
-    {},
+    { click: 'click', contextmenu: 'contextmenu', dblclick: 'dblclick' },
     'Breadcrumb'
 );

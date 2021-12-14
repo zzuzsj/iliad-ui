@@ -23,6 +23,9 @@ export const DialogWrapper = createComponent(
         cancel: 'cancel',
         confirm: 'confirm',
         close: 'close',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'DialogWrapper'
 );

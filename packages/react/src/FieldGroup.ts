@@ -18,6 +18,10 @@ export const FieldGroup = createComponent(
     React,
     'sp-field-group',
     Component,
-    {},
+    {
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
+    },
     'FieldGroup'
 );

@@ -20,6 +20,9 @@ export const MenuGroup = createComponent(
     Component,
     {
         change: 'change',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'MenuGroup'
 );

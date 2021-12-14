@@ -18,6 +18,10 @@ export const StatusLight = createComponent(
     React,
     'sp-status-light',
     Component,
-    {},
+    {
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
+    },
     'StatusLight'
 );

@@ -18,6 +18,10 @@ export const Avatar = createComponent(
     React,
     'sp-avatar',
     Component,
-    {},
+    {
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
+    },
     'Avatar'
 );

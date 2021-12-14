@@ -18,6 +18,6 @@ export const IllustratedMessage = createComponent(
     React,
     'sp-illustrated-message',
     Component,
-    {},
+    { click: 'click', contextmenu: 'contextmenu', dblclick: 'dblclick' },
     'IllustratedMessage'
 );

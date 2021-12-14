@@ -18,6 +18,10 @@ export const ColorLoupe = createComponent(
     React,
     'sp-color-loupe',
     Component,
-    {},
+    {
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
+    },
     'ColorLoupe'
 );

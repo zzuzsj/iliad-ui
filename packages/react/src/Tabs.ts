@@ -21,6 +21,9 @@ export const Tabs = createComponent(
     {
         change: 'change',
         keydown: 'keydown',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'Tabs'
 );

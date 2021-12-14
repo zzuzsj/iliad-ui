@@ -20,6 +20,9 @@ export const Toast = createComponent(
     Component,
     {
         close: 'close',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'Toast'
 );

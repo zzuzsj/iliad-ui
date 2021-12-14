@@ -22,6 +22,9 @@ export const ColorWheel = createComponent(
         input: 'input',
         change: 'change',
         keydown: 'keydown',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'ColorWheel'
 );

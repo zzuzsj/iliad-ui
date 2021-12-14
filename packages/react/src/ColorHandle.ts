@@ -18,6 +18,10 @@ export const ColorHandle = createComponent(
     React,
     'sp-color-handle',
     Component,
-    {},
+    {
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
+    },
     'ColorHandle'
 );

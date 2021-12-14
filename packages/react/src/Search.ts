@@ -22,6 +22,9 @@ export const Search = createComponent(
         submit: 'submit',
         change: 'change',
         keydown: 'keydown',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'Search'
 );

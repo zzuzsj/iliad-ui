@@ -14,4 +14,10 @@ import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
 import { Tree as Component } from '@iliad-ui/bundle';
 
-export const Tree = createComponent(React, 'sp-tree', Component, {}, 'Tree');
+export const Tree = createComponent(
+    React,
+    'sp-tree',
+    Component,
+    { click: 'click', contextmenu: 'contextmenu', dblclick: 'dblclick' },
+    'Tree'
+);

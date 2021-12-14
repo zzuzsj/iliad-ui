@@ -18,6 +18,10 @@ export const ActionBar = createComponent(
     React,
     'sp-action-bar',
     Component,
-    {},
+    {
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
+    },
     'ActionBar'
 );

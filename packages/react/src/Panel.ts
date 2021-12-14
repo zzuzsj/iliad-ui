@@ -23,6 +23,9 @@ export const Panel = createComponent(
         back: 'back',
         confirm: 'confirm',
         cancel: 'cancel',
+        click: 'click',
+        contextmenu: 'contextmenu',
+        dblclick: 'dblclick',
     },
     'Panel'
 );
