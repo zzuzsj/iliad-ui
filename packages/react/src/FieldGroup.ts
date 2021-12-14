@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { FieldGroup as Component } from '@iliad-ui/bundle';
 
 export const FieldGroup = createComponent(
@@ -19,9 +20,7 @@ export const FieldGroup = createComponent(
     'sp-field-group',
     Component,
     {
-        click: 'click',
-        contextmenu: 'contextmenu',
-        dblclick: 'dblclick',
+        ...ReactiveEvents,
     },
     'FieldGroup'
 );

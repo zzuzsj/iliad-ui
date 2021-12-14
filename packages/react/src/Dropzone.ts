@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { Dropzone as Component } from '@iliad-ui/bundle';
 
 export const Dropzone = createComponent(
@@ -23,9 +24,7 @@ export const Dropzone = createComponent(
         'sp-dropzone-dragover': 'sp-dropzone-dragover',
         'sp-dropzone-dragleave': 'sp-dropzone-dragleave',
         'sp-dropzone-drop': 'sp-dropzone-drop',
-        click: 'click',
-        contextmenu: 'contextmenu',
-        dblclick: 'dblclick',
+        ...ReactiveEvents,
     },
     'Dropzone'
 );

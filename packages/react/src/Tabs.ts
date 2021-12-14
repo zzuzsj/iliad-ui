@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { Tabs as Component } from '@iliad-ui/bundle';
 
 export const Tabs = createComponent(
@@ -21,9 +22,7 @@ export const Tabs = createComponent(
     {
         change: 'change',
         keydown: 'keydown',
-        click: 'click',
-        contextmenu: 'contextmenu',
-        dblclick: 'dblclick',
+        ...ReactiveEvents,
     },
     'Tabs'
 );

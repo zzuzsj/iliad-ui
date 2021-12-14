@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { IconsEditor as Component } from '@iliad-ui/icons';
 
 export const IconsEditor = createComponent(
@@ -19,9 +20,7 @@ export const IconsEditor = createComponent(
     'sp-icons-editor',
     Component,
     {
-        click: 'click',
-        contextmenu: 'contextmenu',
-        dblclick: 'dblclick',
+        ...ReactiveEvents,
     },
     'IconsEditor'
 );

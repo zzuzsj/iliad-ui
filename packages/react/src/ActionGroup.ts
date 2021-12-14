@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { ActionGroup as Component } from '@iliad-ui/bundle';
 
 export const ActionGroup = createComponent(
@@ -19,9 +20,7 @@ export const ActionGroup = createComponent(
     'sp-action-group',
     Component,
     {
-        click: 'click',
-        contextmenu: 'contextmenu',
-        dblclick: 'dblclick',
+        ...ReactiveEvents,
     },
     'ActionGroup'
 );

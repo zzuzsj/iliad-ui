@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { ProgressBar as Component } from '@iliad-ui/bundle';
 
 export const ProgressBar = createComponent(
@@ -19,9 +20,7 @@ export const ProgressBar = createComponent(
     'sp-progress-bar',
     Component,
     {
-        click: 'click',
-        contextmenu: 'contextmenu',
-        dblclick: 'dblclick',
+        ...ReactiveEvents,
     },
     'ProgressBar'
 );

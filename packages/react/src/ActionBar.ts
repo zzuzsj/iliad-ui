@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { ActionBar as Component } from '@iliad-ui/bundle';
 
 export const ActionBar = createComponent(
@@ -19,9 +20,7 @@ export const ActionBar = createComponent(
     'sp-action-bar',
     Component,
     {
-        click: 'click',
-        contextmenu: 'contextmenu',
-        dblclick: 'dblclick',
+        ...ReactiveEvents,
     },
     'ActionBar'
 );

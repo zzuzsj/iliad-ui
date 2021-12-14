@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { ColorWheel as Component } from '@iliad-ui/bundle';
 
 export const ColorWheel = createComponent(
@@ -22,9 +23,7 @@ export const ColorWheel = createComponent(
         input: 'input',
         change: 'change',
         keydown: 'keydown',
-        click: 'click',
-        contextmenu: 'contextmenu',
-        dblclick: 'dblclick',
+        ...ReactiveEvents,
     },
     'ColorWheel'
 );

@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { ColorLoupe as Component } from '@iliad-ui/bundle';
 
 export const ColorLoupe = createComponent(
@@ -19,9 +20,7 @@ export const ColorLoupe = createComponent(
     'sp-color-loupe',
     Component,
     {
-        click: 'click',
-        contextmenu: 'contextmenu',
-        dblclick: 'dblclick',
+        ...ReactiveEvents,
     },
     'ColorLoupe'
 );

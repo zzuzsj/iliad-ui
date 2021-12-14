@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { ColorHandle as Component } from '@iliad-ui/bundle';
 
 export const ColorHandle = createComponent(
@@ -19,9 +20,7 @@ export const ColorHandle = createComponent(
     'sp-color-handle',
     Component,
     {
-        click: 'click',
-        contextmenu: 'contextmenu',
-        dblclick: 'dblclick',
+        ...ReactiveEvents,
     },
     'ColorHandle'
 );

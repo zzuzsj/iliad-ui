@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { TopNavItem as Component } from '@iliad-ui/bundle';
 
 export const TopNavItem = createComponent(
@@ -20,9 +21,7 @@ export const TopNavItem = createComponent(
     Component,
     {
         keydown: 'keydown',
-        click: 'click',
-        contextmenu: 'contextmenu',
-        dblclick: 'dblclick',
+        ...ReactiveEvents,
     },
     'TopNavItem'
 );

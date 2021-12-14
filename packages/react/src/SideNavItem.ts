@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { SideNavItem as Component } from '@iliad-ui/bundle';
 
 export const SideNavItem = createComponent(
@@ -20,9 +21,7 @@ export const SideNavItem = createComponent(
     Component,
     {
         keydown: 'keydown',
-        click: 'click',
-        contextmenu: 'contextmenu',
-        dblclick: 'dblclick',
+        ...ReactiveEvents,
     },
     'SideNavItem'
 );

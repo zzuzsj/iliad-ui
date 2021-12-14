@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { Thumbnail as Component } from '@iliad-ui/bundle';
 
 export const Thumbnail = createComponent(
@@ -19,9 +20,7 @@ export const Thumbnail = createComponent(
     'sp-thumbnail',
     Component,
     {
-        click: 'click',
-        contextmenu: 'contextmenu',
-        dblclick: 'dblclick',
+        ...ReactiveEvents,
     },
     'Thumbnail'
 );

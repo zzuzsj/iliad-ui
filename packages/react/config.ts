@@ -10,17 +10,9 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
-import * as React from 'react';
-import { createComponent } from '@lit-labs/react';
-import { ReactiveEvents } from '../config';
-import { TabPanel as Component } from '@iliad-ui/bundle';
-
-export const TabPanel = createComponent(
-    React,
-    'sp-tab-panel',
-    Component,
-    {
-        ...ReactiveEvents,
-    },
-    'TabPanel'
-);
+// 为react组件默认添加的响应事件
+export const ReactiveEvents = {
+    click: 'click',
+    dblclick: 'dblclick',
+    contextmenu: 'contextmenu',
+};
