@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons-editor@0.1.0...@iliad-ui/icons-editor@0.1.1) (2021-12-28)
+
+**Note:** Version bump only for package @iliad-ui/icons-editor
+
 # [0.1.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons-editor@0.0.9...@iliad-ui/icons-editor@0.1.0) (2021-12-14)
 
 ### Bug Fixes

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.7](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/color-area@0.8.6...@iliad-ui/color-area@0.8.7) (2021-12-28)
+
+### Bug Fixes
+
+-   部分组件重复注册报错 ([6380f75](https://github.com/gaoding-inc/iliad-ui/commit/6380f7567a4929cfd10105e3252d25600f19173b))
+
 ## [0.8.6](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/color-area@0.8.5...@iliad-ui/color-area@0.8.6) (2021-12-07)
 
 **Note:** Version bump only for package @iliad-ui/color-area

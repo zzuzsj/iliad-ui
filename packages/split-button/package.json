@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/split-button",
-    "version": "0.9.8",
+    "version": "0.9.9",
     "publishConfig": {
         "access": "public"
     },
@@ -46,13 +46,13 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.0",
-        "@iliad-ui/button": "^0.21.0",
-        "@iliad-ui/icon": "^0.16.0",
-        "@iliad-ui/icons-ui": "^0.12.6",
-        "@iliad-ui/icons-workflow": "^0.12.6",
-        "@iliad-ui/overlay": "^0.17.6",
-        "@iliad-ui/picker": "^0.13.9",
+        "@iliad-ui/base": "^0.11.1",
+        "@iliad-ui/button": "^0.21.1",
+        "@iliad-ui/icon": "^0.16.1",
+        "@iliad-ui/icons-ui": "^0.12.7",
+        "@iliad-ui/icons-workflow": "^0.12.7",
+        "@iliad-ui/overlay": "^0.17.7",
+        "@iliad-ui/picker": "^0.13.10",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.7](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/progress-bar@0.7.6...@iliad-ui/progress-bar@0.7.7) (2021-12-28)
+
+**Note:** Version bump only for package @iliad-ui/progress-bar
+
 ## [0.7.6](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/progress-bar@0.7.5...@iliad-ui/progress-bar@0.7.6) (2021-12-09)
 
 **Note:** Version bump only for package @iliad-ui/progress-bar

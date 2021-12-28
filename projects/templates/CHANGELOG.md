@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.14](https://github.com/zzuzsj/iliad-ui/compare/swc-templates@0.5.13...swc-templates@0.5.14) (2021-12-28)
+
+### Bug Fixes
+
+-   部分组件重复注册报错 ([6380f75](https://github.com/zzuzsj/iliad-ui/commit/6380f7567a4929cfd10105e3252d25600f19173b))
+
 ## [0.5.13](https://github.com/zzuzsj/spectrum-web-components/compare/swc-templates@0.5.12...swc-templates@0.5.13) (2021-12-07)
 
 **Note:** Version bump only for package swc-templates
