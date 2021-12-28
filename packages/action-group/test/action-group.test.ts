@@ -21,7 +21,11 @@ import {
 
 import { ActionButton } from '@iliad-ui/action-button';
 import '@iliad-ui/action-button/sp-action-button.js';
-import { TemplateResult, LitElement } from '@iliad-ui/base';
+import {
+    TemplateResult,
+    LitElement,
+    iliadCustomElementsDefine,
+} from '@iliad-ui/base';
 import '@iliad-ui/overlay/overlay-trigger.js';
 import '@iliad-ui/tooltip/sp-tooltip.js';
 import { ActionGroup } from '..';
@@ -46,7 +50,7 @@ class QuietActionGroup extends LitElement {
         `;
     }
 }
-customElements.define('quiet-action-group', QuietActionGroup);
+iliadCustomElementsDefine('quiet-action-group', QuietActionGroup);
 
 class EmphasizedActionGroup extends LitElement {
     protected render(): TemplateResult {
@@ -58,7 +62,7 @@ class EmphasizedActionGroup extends LitElement {
         `;
     }
 }
-customElements.define('emphasized-action-group', EmphasizedActionGroup);
+iliadCustomElementsDefine('emphasized-action-group', EmphasizedActionGroup);
 
 describe('ActionGroup', () => {
     it('loads empty action-group accessibly', async () => {

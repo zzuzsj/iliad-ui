@@ -10,7 +10,11 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
-import { TemplateResult, html } from '@iliad-ui/base';
+import {
+    TemplateResult,
+    html,
+    iliadCustomElementsDefine,
+} from '@iliad-ui/base';
 
 import '../sp-slider.js';
 import '../sp-slider-handle.js';
@@ -71,6 +75,7 @@ export interface StoryArgs {
     labelVisibility?: string;
     onInput?: (val: string) => void;
     onChange?: (val: string) => void;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     [prop: string]: any;
 }
 
@@ -232,7 +237,7 @@ class NumberFieldDefined extends HTMLElement {
     }
 }
 
-customElements.define('number-field-defined', NumberFieldDefined);
+iliadCustomElementsDefine('number-field-defined', NumberFieldDefined);
 
 const editableDecorator = (story: () => TemplateResult): TemplateResult => {
     return html`

@@ -28,7 +28,11 @@ import {
     expect,
     waitUntil,
 } from '@open-wc/testing';
-import { TemplateResult, LitElement } from '@iliad-ui/base';
+import {
+    TemplateResult,
+    LitElement,
+    iliadCustomElementsDefine,
+} from '@iliad-ui/base';
 import { spy } from 'sinon';
 import { executeServerCommand } from '@web/test-runner-commands';
 
@@ -392,7 +396,7 @@ describe('Sidenav', () => {
                 return manageTabIndex();
             }
         }
-        customElements.define('sidenav-test-el', SideNavTestEl);
+        iliadCustomElementsDefine('sidenav-test-el', SideNavTestEl);
         const el = await fixture<SideNav>(html`
             <sidenav-test-el></sidenav-test-el>
         `);

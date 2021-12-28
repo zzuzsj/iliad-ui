@@ -11,7 +11,11 @@ governing permissions and limitations under the License.
 */
 
 import { ObserveSlotPresence } from '../src/observe-slot-presence.js';
-import { LitElement, TemplateResult } from '@iliad-ui/base';
+import {
+    LitElement,
+    TemplateResult,
+    iliadCustomElementsDefine,
+} from '@iliad-ui/base';
 import { fixture, elementUpdated, expect, html } from '@open-wc/testing';
 
 class ObserverTest extends ObserveSlotPresence(
@@ -25,7 +29,7 @@ class ObserverTest extends ObserveSlotPresence(
     }
 }
 
-customElements.define('observe-presence-test', ObserverTest);
+iliadCustomElementsDefine('observe-presence-test', ObserverTest);
 
 describe('ObserveSlotPresence', () => {
     it('does no management when slot unavailable', async () => {

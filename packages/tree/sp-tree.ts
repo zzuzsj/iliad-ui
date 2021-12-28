@@ -12,8 +12,9 @@ governing permissions and limitations under the License.
 */
 
 import { Tree } from './src/Tree.js';
+import { iliadCustomElementsDefine } from '@iliad-ui/base';
 
-customElements.define('sp-tree', Tree);
+iliadCustomElementsDefine('sp-tree', Tree);
 
 declare global {
     interface HTMLElementTagNameMap {

@@ -12,8 +12,9 @@ governing permissions and limitations under the License.
 */
 
 import { Breadcrumb } from './src/Breadcrumb.js';
+import { iliadCustomElementsDefine } from '@iliad-ui/base';
 
-customElements.define('sp-breadcrumb', Breadcrumb);
+iliadCustomElementsDefine('sp-breadcrumb', Breadcrumb);
 
 declare global {
     interface HTMLElementTagNameMap {
