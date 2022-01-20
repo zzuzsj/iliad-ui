@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.10](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/split-button@0.9.9...@iliad-ui/split-button@0.9.10) (2022-01-20)
+
+**Note:** Version bump only for package @iliad-ui/split-button
+
 ## [0.9.9](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/split-button@0.9.8...@iliad-ui/split-button@0.9.9) (2021-12-28)
 
 **Note:** Version bump only for package @iliad-ui/split-button
