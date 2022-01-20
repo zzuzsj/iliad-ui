@@ -13,7 +13,7 @@ governing permissions and limitations under the License.
 
 import { tag as html, TemplateResult } from '../custom-tag.js';
 export { setCustomTemplateLiteralTag } from '../custom-tag.js';
-export const AlignVertRightIcon = (): string | TemplateResult => {
+export const AlignLeftIcon = (): string | TemplateResult => {
     return html`
         <svg
             width="24"
@@ -24,7 +24,7 @@ export const AlignVertRightIcon = (): string | TemplateResult => {
             <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M22 21V3H20.5V21H22ZM18.25 7H2.25V10H18.25V7ZM10.25 14H18.25V17H10.25V14Z"
+                d="M2.25 21V3H3.75V21H2.25ZM6 7H22V10H6V7ZM14 14H6V17H14V14Z"
             />
         </svg>
     `;

@@ -11,17 +11,16 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { html, TemplateResult } from '@iliad-ui/base';
-import { IconBase } from '@iliad-ui/icon';
-import { AlignVertCenterIcon } from '../icons/AlignVertCenter.js';
-import { setCustomTemplateLiteralTag } from '../custom-tag.js';
+import { iliadCustomElementsDefine } from '@iliad-ui/base';
+import { IconAlignHorizCenters } from '../src/elements/IconAlignHorizCenters.js';
 
-/**
- * @element sp-icon-editor-align-vert-center
- */
-export class IconAlignVertCenter extends IconBase {
-    protected render(): TemplateResult {
-        setCustomTemplateLiteralTag(html);
-        return AlignVertCenterIcon() as TemplateResult;
+iliadCustomElementsDefine(
+    'sp-icon-editor-align-horiz-centers',
+    IconAlignHorizCenters
+);
+
+declare global {
+    interface HTMLElementTagNameMap {
+        'sp-icon-editor-align-horiz-centers': IconAlignHorizCenters;
     }
 }

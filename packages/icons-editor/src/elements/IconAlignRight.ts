@@ -11,21 +11,17 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { tag as html, TemplateResult } from '../custom-tag.js';
-export { setCustomTemplateLiteralTag } from '../custom-tag.js';
-export const AlignHorizBottomIcon = (): string | TemplateResult => {
-    return html`
-        <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-        >
-            <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M21 22L3 22L3 20.5L21 20.5L21 22ZM7 18.25L7 2.25L10 2.25L10 18.25L7 18.25ZM14 10.25L14 18.25L17 18.25L17 10.25L14 10.25Z"
-            />
-        </svg>
-    `;
-};
+import { html, TemplateResult } from '@iliad-ui/base';
+import { IconBase } from '@iliad-ui/icon';
+import { AlignRightIcon } from '../icons/AlignRight.js';
+import { setCustomTemplateLiteralTag } from '../custom-tag.js';
+
+/**
+ * @element sp-icon-editor-align-right
+ */
+export class IconAlignRight extends IconBase {
+    protected render(): TemplateResult {
+        setCustomTemplateLiteralTag(html);
+        return AlignRightIcon() as TemplateResult;
+    }
+}
