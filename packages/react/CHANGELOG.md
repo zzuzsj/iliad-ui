@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/react@0.6.4...@iliad-ui/react@0.7.0) (2022-01-27)
+
+### Features
+
+-   增加 change 事件 ([1630468](https://github.com/gaoding-inc/iliad-ui/commit/1630468607da3ae08a802f0fae7c35b009e8dc67))
+
 ## [0.6.4](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/react@0.6.3...@iliad-ui/react@0.6.4) (2022-01-20)
 
 **Note:** Version bump only for package @iliad-ui/react
