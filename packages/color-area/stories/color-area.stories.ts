@@ -17,6 +17,7 @@ import '@iliad-ui/color-slider/sp-color-slider.js';
 import { ColorSlider } from '@iliad-ui/color-slider/src/ColorSlider';
 import '../sp-color-area.js';
 import { ColorArea } from '../src/ColorArea.js';
+import { iliadCustomElementsDefine } from '@iliad-ui/base';
 
 export default {
     title: 'Color/Area',
@@ -176,7 +177,7 @@ class CanvasWriter extends HTMLElement {
     }
 }
 
-customElements.define('area-canvas-writer', CanvasWriter);
+iliadCustomElementsDefine('area-canvas-writer', CanvasWriter);
 
 canvas.decorators = [
     (story: () => TemplateResult): TemplateResult => {

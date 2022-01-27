@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.4](https://github.com/zzuzsj/iliad-ui/compare/documentation@0.1.3...documentation@0.1.4) (2022-01-20)
+
+**Note:** Version bump only for package documentation
+
+## [0.1.3](https://github.com/zzuzsj/iliad-ui/compare/documentation@0.1.2...documentation@0.1.3) (2021-12-28)
+
+### Bug Fixes
+
+-   部分组件重复注册报错 ([6380f75](https://github.com/zzuzsj/iliad-ui/commit/6380f7567a4929cfd10105e3252d25600f19173b))
+
 ## [0.1.2](https://github.com/zzuzsj/iliad-ui/compare/documentation@0.1.1...documentation@0.1.2) (2021-12-14)
 
 **Note:** Version bump only for package documentation

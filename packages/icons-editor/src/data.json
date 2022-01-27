@@ -97,7 +97,7 @@
         "description": "",
         "width": 24,
         "height": 24,
-        "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/f3d2/1594/1d57511f3e65ee0502dd79a4cef999ae"
+        "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/191a/c936/32754c7364ba9b01ad8651a47ea20509"
     },
     "109:393": {
         "name": "info_fill",
@@ -107,7 +107,7 @@
         "description": "",
         "width": 24,
         "height": 24,
-        "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/b428/ad2f/f5dc56e54833561decaa04fd8ca0a00d"
+        "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/b18e/df9f/8215232c317439b0486aa5f9471ffcda"
     },
     "65:373": {
         "name": "alert",
@@ -130,7 +130,7 @@
         "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/f1df/c924/98acef1d38f45e87f570b1a08e20aa97"
     },
     "18:14": {
-        "name": "align_vert_left",
+        "name": "align_left",
         "id": "18:14",
         "key": "29243e2cec1f60c4f3391cef0aa0437a19b81ae0",
         "file": "RTJwK4z4uVvkxsLo6Fd3Yi",
@@ -140,7 +140,7 @@
         "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/4389/6d8d/7a9e7083924fe62270745b81bcc51b58"
     },
     "18:83": {
-        "name": "align_vert_center",
+        "name": "align_horiz_centers",
         "id": "18:83",
         "key": "6124e3ba50ef257bc3436175be635b50ae3364f8",
         "file": "RTJwK4z4uVvkxsLo6Fd3Yi",
@@ -150,7 +150,7 @@
         "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/4e25/fa36/46c00fa5cef06db0b237331dd4979fe5"
     },
     "18:94": {
-        "name": "align_vert_right",
+        "name": "align_right",
         "id": "18:94",
         "key": "48de58deb229a9b79b89ccba0bc23f3bd238e0fd",
         "file": "RTJwK4z4uVvkxsLo6Fd3Yi",
@@ -160,7 +160,7 @@
         "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/0e75/0047/dfdd0112064b8578c32966b9213050b3"
     },
     "18:92": {
-        "name": "align_horiz_top",
+        "name": "align_top",
         "id": "18:92",
         "key": "6294d06a78907ff6bbae5d39d890b558770a10b9",
         "file": "RTJwK4z4uVvkxsLo6Fd3Yi",
@@ -170,7 +170,7 @@
         "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/37b7/1a8c/5d5f8e2238cd4d4c62c5c5cb4b2c59bf"
     },
     "18:90": {
-        "name": "align_horiz_middle",
+        "name": "align_vert_centers",
         "id": "18:90",
         "key": "6fd8404821500599e3fdda3c9dab76c5ca8194c2",
         "file": "RTJwK4z4uVvkxsLo6Fd3Yi",
@@ -180,7 +180,7 @@
         "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/2e70/f205/cf15efc17d2a3ab2c3a8783f22c17445"
     },
     "18:88": {
-        "name": "align_horiz_bottom",
+        "name": "align_bottom",
         "id": "18:88",
         "key": "a739c15321fd0dd32c0139159c01bc210679002f",
         "file": "RTJwK4z4uVvkxsLo6Fd3Yi",
@@ -957,7 +957,7 @@
         "description": "",
         "width": 24,
         "height": 24,
-        "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/3386/dc4b/2889566e16e38bfbe87443416369af51"
+        "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/005d/c79a/31259511afa5445f0a81b6fa55fd51c4"
     },
     "65:583": {
         "name": "contacts",

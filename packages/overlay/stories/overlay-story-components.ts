@@ -18,6 +18,7 @@ import {
     TemplateResult,
     CSSResultGroup,
     query,
+    iliadCustomElementsDefine,
 } from '@iliad-ui/base';
 
 import { Overlay, Placement } from '../';
@@ -67,7 +68,7 @@ class OverlayTargetIcon extends LitElement {
         `;
     }
 }
-customElements.define('overlay-target-icon', OverlayTargetIcon);
+iliadCustomElementsDefine('overlay-target-icon', OverlayTargetIcon);
 
 class OverlayDrag extends LitElement {
     @property({ type: Number })
@@ -179,7 +180,7 @@ class OverlayDrag extends LitElement {
         `;
     }
 }
-customElements.define('overlay-drag', OverlayDrag);
+iliadCustomElementsDefine('overlay-drag', OverlayDrag);
 
 class RecursivePopover extends LitElement {
     @property({ type: String })
@@ -304,7 +305,7 @@ class RecursivePopover extends LitElement {
         `;
     }
 }
-customElements.define('recursive-popover', RecursivePopover);
+iliadCustomElementsDefine('recursive-popover', RecursivePopover);
 
 export class PopoverContent extends LitElement {
     @query('sp-picker')
@@ -375,4 +376,4 @@ export class PopoverContent extends LitElement {
     }
 }
 
-customElements.define('popover-content', PopoverContent);
+iliadCustomElementsDefine('popover-content', PopoverContent);

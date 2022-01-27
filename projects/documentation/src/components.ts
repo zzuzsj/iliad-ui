@@ -35,6 +35,7 @@ import '@iliad-ui/icons-workflow/icons/sp-icon-settings.js';
 import '@iliad-ui/icons-workflow/icons/sp-icon-save-floppy.js';
 import '@iliad-ui/icons-workflow/icons/sp-icon-stopwatch.js';
 import '@iliad-ui/icons-workflow/icons/sp-icon-user-activity.js';
+import { iliadCustomElementsDefine } from '@iliad-ui/base';
 
 declare global {
     interface Window {
@@ -63,4 +64,4 @@ class StyledElement extends HTMLElement {
     }
 }
 
-customElements.define('styled-element', StyledElement);
+iliadCustomElementsDefine('styled-element', StyledElement);

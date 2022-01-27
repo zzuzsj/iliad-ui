@@ -11,7 +11,11 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { html, TemplateResult } from '@iliad-ui/base';
+import {
+    html,
+    TemplateResult,
+    iliadCustomElementsDefine,
+} from '@iliad-ui/base';
 
 import '../sp-color-wheel.js';
 
@@ -103,7 +107,7 @@ class CanvasWriter extends HTMLElement {
     }
 }
 
-customElements.define('wheel-canvas-writer', CanvasWriter);
+iliadCustomElementsDefine('wheel-canvas-writer', CanvasWriter);
 
 canvas.decorators = [
     (story: () => TemplateResult): TemplateResult => {

@@ -17,6 +17,7 @@ import {
     LitElement,
     PropertyValues,
     TemplateResult,
+    iliadCustomElementsDefine,
 } from '@iliad-ui/base';
 import { property } from '@iliad-ui/base/src/decorators.js';
 import '@iliad-ui/theme/sp-theme.js';
@@ -403,4 +404,4 @@ export class LayoutElement extends LitElement {
     }
 }
 
-customElements.define('docs-page', LayoutElement);
+iliadCustomElementsDefine('docs-page', LayoutElement);

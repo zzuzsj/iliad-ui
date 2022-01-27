@@ -17,7 +17,11 @@ import { Tabs, Tab, TabPanel } from '../';
 import '@iliad-ui/icons-workflow/icons/sp-icon-checkmark.js';
 import { fixture, elementUpdated, expect, waitUntil } from '@open-wc/testing';
 import { html } from 'lit/static-html.js';
-import { LitElement, TemplateResult } from '@iliad-ui/base';
+import {
+    LitElement,
+    TemplateResult,
+    iliadCustomElementsDefine,
+} from '@iliad-ui/base';
 import { waitForPredicate, tabEvent } from '../../../test/testing-helpers.js';
 import {
     enterEvent,
@@ -500,7 +504,7 @@ describe('Tabs', () => {
                 `;
             }
         }
-        customElements.define('tab-test-el', TabTestEl);
+        iliadCustomElementsDefine('tab-test-el', TabTestEl);
         const el = await fixture<TabTestEl>(
             html`
                 <tab-test-el></tab-test-el>

@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/dialog",
-    "version": "0.10.7",
+    "version": "0.10.8",
     "publishConfig": {
         "access": "public"
     },
@@ -46,17 +46,17 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/action-button": "^0.12.0",
-        "@iliad-ui/base": "^0.11.0",
-        "@iliad-ui/button": "^0.21.0",
-        "@iliad-ui/button-group": "^0.10.8",
-        "@iliad-ui/divider": "^0.6.6",
-        "@iliad-ui/icon": "^0.16.0",
-        "@iliad-ui/icons-ui": "^0.12.6",
-        "@iliad-ui/icons-workflow": "^0.12.6",
-        "@iliad-ui/modal": "^0.7.5",
-        "@iliad-ui/shared": "^0.18.5",
-        "@iliad-ui/underlay": "^0.10.5",
+        "@iliad-ui/action-button": "^0.12.1",
+        "@iliad-ui/base": "^0.11.1",
+        "@iliad-ui/button": "^0.21.1",
+        "@iliad-ui/button-group": "^0.10.9",
+        "@iliad-ui/divider": "^0.6.7",
+        "@iliad-ui/icon": "^0.16.1",
+        "@iliad-ui/icons-ui": "^0.12.7",
+        "@iliad-ui/icons-workflow": "^0.12.7",
+        "@iliad-ui/modal": "^0.7.6",
+        "@iliad-ui/shared": "^0.18.6",
+        "@iliad-ui/underlay": "^0.10.6",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

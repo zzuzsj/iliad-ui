@@ -13,15 +13,15 @@ governing permissions and limitations under the License.
 
 import { html, TemplateResult } from '@iliad-ui/base';
 import { IconBase } from '@iliad-ui/icon';
-import { AlignVertRightIcon } from '../icons/AlignVertRight.js';
+import { AlignTopIcon } from '../icons/AlignTop.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-icon-editor-align-vert-right
+ * @element sp-icon-editor-align-top
  */
-export class IconAlignVertRight extends IconBase {
+export class IconAlignTop extends IconBase {
     protected render(): TemplateResult {
         setCustomTemplateLiteralTag(html);
-        return AlignVertRightIcon() as TemplateResult;
+        return AlignTopIcon() as TemplateResult;
     }
 }

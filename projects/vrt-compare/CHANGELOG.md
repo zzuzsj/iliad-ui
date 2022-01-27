@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.10](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/vrt-compare@0.6.9...@iliad-ui/vrt-compare@0.6.10) (2022-01-20)
+
+**Note:** Version bump only for package @iliad-ui/vrt-compare
+
+## [0.6.9](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/vrt-compare@0.6.8...@iliad-ui/vrt-compare@0.6.9) (2021-12-28)
+
+### Bug Fixes
+
+-   部分组件重复注册报错 ([6380f75](https://github.com/gaoding-inc/iliad-ui/commit/6380f7567a4929cfd10105e3252d25600f19173b))
+
 ## [0.6.8](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/vrt-compare@0.6.7...@iliad-ui/vrt-compare@0.6.8) (2021-12-14)
 
 **Note:** Version bump only for package @iliad-ui/vrt-compare

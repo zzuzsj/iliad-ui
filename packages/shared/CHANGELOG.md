@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.6](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/shared@0.18.5...@iliad-ui/shared@0.18.6) (2021-12-28)
+
+### Bug Fixes
+
+-   部分组件重复注册报错 ([6380f75](https://github.com/gaoding-inc/iliad-ui/commit/6380f7567a4929cfd10105e3252d25600f19173b))
+
 ## [0.18.5](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/shared@0.18.4...@iliad-ui/shared@0.18.5) (2021-12-07)
 
 **Note:** Version bump only for package @iliad-ui/shared
