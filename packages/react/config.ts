@@ -15,4 +15,6 @@ export const ReactiveEvents = {
     click: 'click',
     dblclick: 'dblclick',
     contextmenu: 'contextmenu',
+    blur: 'blur',
+    focus: 'focus',
 };
