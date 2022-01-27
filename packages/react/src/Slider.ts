@@ -21,6 +21,7 @@ export const Slider = createComponent(
     Component,
     {
         keydown: 'keydown',
+        change: 'change',
         ...ReactiveEvents,
     },
     'Slider'
