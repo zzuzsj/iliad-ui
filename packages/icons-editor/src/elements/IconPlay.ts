@@ -13,15 +13,15 @@ governing permissions and limitations under the License.
 
 import { html, TemplateResult } from '@iliad-ui/base';
 import { IconBase } from '@iliad-ui/icon';
-import { ViewDayIcon } from '../icons/ViewDay.js';
+import { PlayIcon } from '../icons/Play.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-icon-editor-view-day
+ * @element sp-icon-editor-play
  */
-export class IconViewDay extends IconBase {
+export class IconPlay extends IconBase {
     protected render(): TemplateResult {
         setCustomTemplateLiteralTag(html);
-        return ViewDayIcon() as TemplateResult;
+        return PlayIcon() as TemplateResult;
     }
 }

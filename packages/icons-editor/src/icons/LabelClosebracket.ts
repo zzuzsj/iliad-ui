@@ -13,7 +13,7 @@ governing permissions and limitations under the License.
 
 import { tag as html, TemplateResult } from '../custom-tag.js';
 export { setCustomTemplateLiteralTag } from '../custom-tag.js';
-export const ViewDayIcon = (): string | TemplateResult => {
+export const LabelClosebracketIcon = (): string | TemplateResult => {
     return html`
         <svg
             width="24"
@@ -21,11 +21,7 @@ export const ViewDayIcon = (): string | TemplateResult => {
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
         >
-            <g opacity="0.3">
-                <path
-                    d="M18 3L18 22L20 22L20 3L18 3ZM10 5L14 5L14 20L10 20L10 5ZM8 4L8 21C8 21.55 8.45 22 9 22L15 22C15.55 22 16 21.55 16 21L16 4C16 3.45 15.55 3 15 3L9 3C8.45 3 8 3.45 8 4ZM4 3L4 22L6 22L6 3L4 3Z"
-                />
-            </g>
+            <path d="M10 4V20.812H14.41V19.606H11.332V5.206H14.41V4H10Z" />
         </svg>
     `;
 };

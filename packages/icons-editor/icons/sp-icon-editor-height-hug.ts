@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconViewDay } from '../src/elements/IconViewDay.js';
+import { IconHeightHug } from '../src/elements/IconHeightHug.js';
 
-iliadCustomElementsDefine('sp-icon-editor-view-day', IconViewDay);
+iliadCustomElementsDefine('sp-icon-editor-height-hug', IconHeightHug);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-view-day': IconViewDay;
+        'sp-icon-editor-height-hug': IconHeightHug;
     }
 }
