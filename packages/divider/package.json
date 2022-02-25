@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/divider",
-    "version": "0.6.7",
+    "version": "0.6.8",
     "publishConfig": {
         "access": "public"
     },
@@ -44,7 +44,7 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.1",
+        "@iliad-ui/base": "^0.11.2",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

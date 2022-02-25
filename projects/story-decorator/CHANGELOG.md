@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.11](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/story-decorator@0.9.10...@iliad-ui/story-decorator@0.9.11) (2022-02-25)
+
+**Note:** Version bump only for package @iliad-ui/story-decorator
+
 ## [0.9.10](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/story-decorator@0.9.9...@iliad-ui/story-decorator@0.9.10) (2022-01-20)
 
 **Note:** Version bump only for package @iliad-ui/story-decorator

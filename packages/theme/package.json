@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/theme",
-    "version": "0.14.8",
+    "version": "0.14.9",
     "publishConfig": {
         "access": "public"
     },
@@ -56,8 +56,8 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.1",
-        "@iliad-ui/styles": "^0.14.1",
+        "@iliad-ui/base": "^0.11.2",
+        "@iliad-ui/styles": "^0.14.2",
         "tslib": "^2.0.0"
     },
     "types": "./src/index.d.ts",

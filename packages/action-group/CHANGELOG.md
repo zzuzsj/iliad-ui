@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/action-group@0.11.1...@iliad-ui/action-group@0.11.2) (2022-02-25)
+
+**Note:** Version bump only for package @iliad-ui/action-group
+
 ## [0.11.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/action-group@0.11.0...@iliad-ui/action-group@0.11.1) (2021-12-28)
 
 ### Bug Fixes

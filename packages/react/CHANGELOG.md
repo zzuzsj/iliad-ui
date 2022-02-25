@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/react@0.7.0...@iliad-ui/react@0.8.0) (2022-02-25)
+
+### Features
+
+-   新增 blur focus 事件 ([f483e24](https://github.com/gaoding-inc/iliad-ui/commit/f483e24b00334a7da23bf8968f33ae7beb55ef24))
+
 # [0.7.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/react@0.6.4...@iliad-ui/react@0.7.0) (2022-01-27)
 
 ### Features

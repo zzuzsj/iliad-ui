@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/progress-bar",
-    "version": "0.7.7",
+    "version": "0.7.8",
     "publishConfig": {
         "access": "public"
     },
@@ -44,8 +44,8 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.1",
-        "@iliad-ui/field-label": "^0.9.8",
+        "@iliad-ui/base": "^0.11.2",
+        "@iliad-ui/field-label": "^0.9.9",
         "tslib": "^2.0.0"
     },
     "devDependencies": {
