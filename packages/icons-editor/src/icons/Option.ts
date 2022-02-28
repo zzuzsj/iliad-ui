@@ -13,7 +13,7 @@ governing permissions and limitations under the License.
 
 import { tag as html, TemplateResult } from '../custom-tag.js';
 export { setCustomTemplateLiteralTag } from '../custom-tag.js';
-export const LabelClosebracketIcon = (): string | TemplateResult => {
+export const OptionIcon = (): string | TemplateResult => {
     return html`
         <svg
             width="24"
@@ -22,7 +22,9 @@ export const LabelClosebracketIcon = (): string | TemplateResult => {
             xmlns="http://www.w3.org/2000/svg"
         >
             <path
-                d="M10 3.60001V20.412H14.41V19.206H11.332V4.80601H14.41V3.60001H10Z"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4 7.75H7.49223L11.3036 17.2785L11.4922 17.75H12H20V16.25H12.5078L8.69636 6.72146L8.50777 6.25H8H4V7.75ZM13 7.75L20 7.75V6.25H13V7.75Z"
             />
         </svg>
     `;

@@ -97,6 +97,7 @@ export { MenuIcon } from './icons/Menu.js';
 export { MoreHorizIcon } from './icons/MoreHoriz.js';
 export { NoneIcon } from './icons/None.js';
 export { OpenFullIcon } from './icons/OpenFull.js';
+export { OptionIcon } from './icons/Option.js';
 export { PageFooterIcon } from './icons/PageFooter.js';
 export { PageHeaderIcon } from './icons/PageHeader.js';
 export { PagesIcon } from './icons/Pages.js';

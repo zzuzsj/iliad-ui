@@ -487,7 +487,17 @@
         "description": "",
         "width": 24,
         "height": 24,
-        "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/fa37/a406/0eb6c0d7450a9eb5fd78914eb790af2b"
+        "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/be9e/9e6b/65448f17d154d0ddc772997ff3f0e4ff"
+    },
+    "350:2642": {
+        "name": "option",
+        "id": "350:2642",
+        "key": "f31f8390e572eaac97f8211dfe519ea6fa2ff9c1",
+        "file": "RTJwK4z4uVvkxsLo6Fd3Yi",
+        "description": "",
+        "width": 24,
+        "height": 24,
+        "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/309e/e60f/9f0bb5a6809fa0fef2c0e6ff42a4b56d"
     },
     "9:30": {
         "name": "backspace",
@@ -507,7 +517,7 @@
         "description": "",
         "width": 24,
         "height": 24,
-        "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/74e9/4d04/4316a9812abdbbbf54027fcdb55d5453"
+        "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/3a22/fbdb/3e0daf1aad3ee2af6fd7d5ef404b87e7"
     },
     "326:536": {
         "name": "label_closebracket",
@@ -517,7 +527,7 @@
         "description": "",
         "width": 24,
         "height": 24,
-        "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/0494/b7bf/e3bf300830eeb98bd1cc722b3e411ab9"
+        "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/4a50/3d75/12ea21944809be53ee3b1d64db1ded43"
     },
     "24:18": {
         "name": "drag_handle",

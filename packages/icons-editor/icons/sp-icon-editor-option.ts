@@ -11,19 +11,13 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { tag as html, TemplateResult } from '../custom-tag.js';
-export { setCustomTemplateLiteralTag } from '../custom-tag.js';
-export const LabelClosebracketIcon = (): string | TemplateResult => {
-    return html`
-        <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-        >
-            <path
-                d="M10 3.60001V20.412H14.41V19.206H11.332V4.80601H14.41V3.60001H10Z"
-            />
-        </svg>
-    `;
-};
+import { iliadCustomElementsDefine } from '@iliad-ui/base';
+import { IconOption } from '../src/elements/IconOption.js';
+
+iliadCustomElementsDefine('sp-icon-editor-option', IconOption);
+
+declare global {
+    interface HTMLElementTagNameMap {
+        'sp-icon-editor-option': IconOption;
+    }
+}
