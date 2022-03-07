@@ -99,10 +99,6 @@ slot[name='indicator'] * {
             var(
                 --spectrum-tree-item-header-arrow-gap,
                 var(--spectrum-global-dimension-size-100)
-            ) +
-            var(
-                --spectrum-tree-item-border-left-size-key-focus,
-                var(--spectrum-alias-border-size-thick)
             )
     );
 }
@@ -119,10 +115,6 @@ slot[name='indicator'] * {
             var(
                 --spectrum-tree-item-header-arrow-gap,
                 var(--spectrum-global-dimension-size-100)
-            ) +
-            var(
-                --spectrum-tree-item-border-left-size-key-focus,
-                var(--spectrum-alias-border-size-thick)
             )
     );
 }
@@ -161,6 +153,7 @@ slot[name='indicator'] * {
 #header:focus {
     outline: none; /* .spectrum-Tree-itemHeader:focus */
 }
+
 #label {
     flex: 1 1 auto; /* .spectrum-Menu-itemLabel */
     -webkit-hyphens: auto;
@@ -168,26 +161,7 @@ slot[name='indicator'] * {
     line-height: var(--spectrum-tree-item-label-line-height);
     overflow-wrap: break-word;
 }
-:host([dir='ltr']) #header:focus:after {
-    left: 0; /* [dir=ltr] .spectrum-Tree-itemHeader:focus:after */
-}
-:host([dir='rtl']) #header:focus:after {
-    right: 0; /* [dir=rtl] .spectrum-Tree-itemHeader:focus:after */
-}
-#header:focus:after {
-    bottom: calc(
-        -1 * var(--spectrum-tree-item-border-size, var(--spectrum-alias-border-size-thin))
-    );
-    content: ''; /* .spectrum-Tree-itemHeader:focus:after */
-    position: absolute;
-    top: calc(
-        -1 * var(--spectrum-tree-item-border-size, var(--spectrum-alias-border-size-thin))
-    );
-    width: var(
-        --spectrum-tree-item-border-left-size-key-focus,
-        var(--spectrum-alias-border-size-thick)
-    );
-}
+
 #content {
     display: none;
     border-radius: var(--spectrum-tree-item-border-radius);
@@ -245,18 +219,6 @@ slot[name='indicator'] {
     border-color: var(--spectrum-tree-item-border-color-hover);
 }
 
-#header.focus-visible:after {
-    background-color: var(
-        --spectrum-tree-item-border-left-color-key-focus,
-        var(--spectrum-alias-border-color-focus)
-    ); /* .spectrum-Tree-itemHeader.focus-ring:after */
-}
-#header:focus-visible:after {
-    background-color: var(
-        --spectrum-tree-item-border-left-color-key-focus,
-        var(--spectrum-alias-border-color-focus)
-    ); /* .spectrum-Tree-itemHeader.focus-ring:after */
-}
 #header ::slotted([slot='icon']) {
     flex-shrink: 0;
 }
@@ -268,7 +230,6 @@ slot[name='indicator'] {
 }
 
 :host([selected]) #header,
-:host([selected]) #header.focus-visible,
 :host([selected]) #header:hover {
     background-color: var(--spectrum-tree-item-background-color-selected);
     color: var(--spectrum-tree-item-text-color-selected);
@@ -295,7 +256,6 @@ slot[name='indicator'] {
 }
 
 :host([disabled]) #header,
-:host([disabled]) #header:focus-visible,
 :host([disabled]) #header:hover {
     background-color: var(--spectrum-tree-item-background-color-disabled);
     color: var(

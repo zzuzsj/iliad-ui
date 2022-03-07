@@ -17,8 +17,8 @@ import {
     TemplateResult,
     property,
     PropertyValues,
+    SpectrumElement,
 } from '@iliad-ui/base';
-import { Focusable } from '@iliad-ui/shared/src/focusable.js';
 import '@iliad-ui/icons-ui/icons/sp-icon-chevron100.js';
 import chevronIconStyles from '@iliad-ui/icon/src/spectrum-icon-chevron.css.js';
 
@@ -28,7 +28,7 @@ import styles from './tree-item.css.js';
  * @element sp-tree-item
  * @slot - The content of the item that is hidden when the item is not open
  */
-export class TreeItem extends Focusable {
+export class TreeItem extends SpectrumElement {
     public static get styles(): CSSResultArray {
         return [styles, chevronIconStyles];
     }
@@ -52,10 +52,6 @@ export class TreeItem extends Focusable {
 
     @property({ type: Boolean, reflect: true })
     public disabled = false;
-
-    public get focusElement(): HTMLElement {
-        return this.shadowRoot.querySelector('#header') as HTMLElement;
-    }
 
     public get itemChildren(): { icon: Element[]; content: Node[] } {
         const iconSlot = this.shadowRoot.querySelector(
@@ -87,23 +83,10 @@ export class TreeItem extends Focusable {
 
     constructor() {
         super();
-        this.proxyFocus = this.proxyFocus.bind(this);
 
-        this.addEventListener('keydown', this.onKeyDown);
         this.addEventListener('click', this.handleClickCapture, {
             capture: true,
         });
-    }
-
-    private onKeyDown(event: KeyboardEvent): void {
-        /* c8 ignore next 3 */
-        if (this.disabled) {
-            return;
-        }
-        if (event.code === 'Enter' || event.code === 'Space') {
-            event.preventDefault();
-            this.toggle();
-        }
     }
 
     public click(): void {
@@ -125,10 +108,6 @@ export class TreeItem extends Focusable {
             event.stopPropagation();
             return false;
         }
-    }
-
-    private proxyFocus(): void {
-        this.focus();
     }
 
     private onClick(): void {
