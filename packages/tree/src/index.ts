@@ -12,3 +12,4 @@ governing permissions and limitations under the License.
 */
 
 export * from './Tree.js';
+export * from './TreeItem.js';

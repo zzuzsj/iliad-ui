@@ -1,0 +1,102 @@
+/*
+Copyright 2020 Adobe. All rights reserved.
+Copyright 2021 Gaoding. All rights reserved.
+This file is licensed to you under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License. You may obtain a copy
+of the License at http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under
+the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+OF ANY KIND, either express or implied. See the License for the specific language
+governing permissions and limitations under the License.
+*/
+:host {
+    --spectrum-tree-item-height: var(--spectrum-alias-control-height-m);
+    --spectrum-tree-item-title-tracking: var(
+        --spectrum-global-font-letter-spacing-medium
+    );
+    --spectrum-tree-item-padding-x: var(--spectrum-global-dimension-size-100);
+    --spectrum-tree-item-margin-y: var(--spectrum-global-dimension-size-10);
+    --spectrum-tree-item-offset-padding-x: var(
+        --spectrum-global-dimension-size-0
+    );
+    --spectrum-tree-item-header-arrow-gap: var(
+        --spectrum-global-dimension-size-150
+    );
+    --spectrum-tree-icon-width: var(--spectrum-global-dimension-size-125);
+    --spectrum-tree-icon-height: var(--spectrum-global-dimension-size-125);
+    --spectrum-tree-item-border-size: var(--spectrum-alias-border-size-thin);
+    --spectrum-tree-icon-gap: var(--spectrum-alias-item-workflow-icon-gap-m);
+    --spectrum-tree-item-border-left-size-key-focus: var(
+        --spectrum-alias-border-size-thick
+    );
+    --spectrum-tree-item-title-text-size: var(--spectrum-alias-font-size-m);
+    --spectrum-tree-icon-color: var(--spectrum-global-color-gray-600);
+    --spectrum-tree-text-color: var(--spectrum-alias-text-color-secondary);
+    --spectrum-tree-item-background-color: var(
+        --spectrum-alias-background-color-transparent
+    );
+    --spectrum-tree-item-opacity-negative: var(
+        --spectrum-global-color-opacity-30
+    );
+    --spectrum-tree-item-text-color-selected: var(
+        --spectrum-global-color-static-white
+    );
+    --spectrum-tree-item-icon-color-selected: var(
+        --spectrum-global-color-static-white
+    );
+    --spectrum-tree-item-background-color-selected: var(
+        --spectrum-global-color-static-primary-500
+    );
+    --spectrum-tree-item-content-background-color-selected: var(
+        --spectrum-global-color-static-primary-100
+    );
+    --spectrum-tree-item-border-color: var(
+        --spectrum-alias-background-color-transparent
+    );
+    --spectrum-tree-text-color-hover: var(
+        --spectrum-alias-text-color-secondary
+    );
+    --spectrum-tree-item-border-color-hover: var(
+        --spectrum-global-color-static-primary-500
+    );
+    --spectrum-tree-background-color-hover: var(
+        --spectrum-global-color-gray-200
+    );
+    --spectrum-tree-icon-color-hover: var(--spectrum-global-color-gray-800);
+    --spectrum-tree-item-border-left-color-key-focus: var(
+        --spectrum-alias-border-color-focus
+    );
+    --spectrum-tree-text-color-disabled: var(
+        --spectrum-alias-text-color-disabled
+    );
+    --spectrum-tree-icon-color-disabled: var(
+        --spectrum-alias-icon-color-disabled
+    );
+    --spectrum-tree-item-background-color-disabled: var(
+        --spectrum-global-color-gray-100
+    );
+    --spectrum-tree-item-title-tracking-actual: calc(
+        var(
+                --spectrum-tree-item-title-tracking,
+                var(--spectrum-global-font-letter-spacing-medium)
+            ) / 100
+    ); /* .spectrum-Tree */
+
+    --spectrum-tree-item-title-padding-y: var(
+        --spectrum-global-dimension-size-150
+    );
+    --spectrum-tree-item-line-height: var(
+        --spectrum-global-font-line-height-medium
+    );
+    --spectrum-tree-animation-duration: var(
+        --spectrum-global-animation-duration-100,
+        130ms
+    );
+    --spectrum-tree-item-border-radius: var(
+        --spectrum-alias-border-radius-medium
+    );
+    --spectrum-tree-item-content-padding: var(
+        --spectrum-global-dimension-size-200
+    );
+}

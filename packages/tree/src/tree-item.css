@@ -1,0 +1,347 @@
+/* stylelint-disable */ /*
+Copyright 2020 Adobe. All rights reserved.
+Copyright 2021 Gaoding. All rights reserved.
+This file is licensed to you under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License. You may obtain a copy
+of the License at http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under
+the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+OF ANY KIND, either express or implied. See the License for the specific language
+governing permissions and limitations under the License.
+*/
+@import './vars.css';
+:host {
+    margin: 0;
+    position: relative;
+    z-index: inherit;
+}
+:host([dir='ltr']) slot[name='indicator'] {
+    left: var(
+        --spectrum-tree-item-padding-x,
+        var(--spectrum-global-dimension-size-225)
+    ); /* [dir=ltr] .spectrum-Tree-itemIndicator */
+}
+:host([dir='rtl']) slot[name='indicator'] {
+    right: var(
+        --spectrum-tree-item-padding-x,
+        var(--spectrum-global-dimension-size-225)
+    ); /* [dir=rtl] .spectrum-Tree-itemIndicator */
+}
+:host([dir='rtl']) slot[name='indicator'] {
+    transform: matrix(
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0
+    ); /* [dir=rtl] .spectrum-Tree-itemIndicator */
+}
+:host([dir='ltr']) {
+    padding-left: var(--spectrum-tree-item-offset-padding-x);
+    /* padding-left: calc(
+        var(--spectrum-tree-item-offset-padding-x) +
+            var(--spectrum-tree-item-header-arrow-gap)
+    ); */
+}
+:host([dir='rtl']) {
+    padding-left: var(--spectrum-tree-item-offset-padding-x);
+    /* padding-right: calc(
+        var(--spectrum-tree-item-offset-padding-x) +
+            var(--spectrum-tree-item-header-arrow-gap)
+    ); */
+}
+slot[name='indicator'] {
+    display: block; /* .spectrum-Tree-itemIndicator */
+    position: absolute;
+    width: var(--spectrum-tree-icon-width);
+    height: var(--spectrum-tree-icon-height);
+    top: calc(
+        50% -
+            var(
+                --spectrum-tree-icon-height,
+                var(--spectrum-global-dimension-size-125)
+            ) / 2
+    );
+    transition: transform ease var(--spectrum-tree-animation-duration);
+}
+slot[name='indicator'] * {
+    display: block;
+    width: var(--spectrum-tree-icon-width);
+    height: var(--spectrum-tree-icon-height);
+}
+:host(:first-of-type) {
+    border-top: var(
+            --spectrum-tree-item-border-size,
+            var(--spectrum-alias-border-size-thin)
+        )
+        solid transparent; /* .spectrum-Tree-item:first-of-type */
+}
+#heading {
+    box-sizing: border-box;
+    margin: 0; /* .spectrum-Tree-itemHeading */
+    position: relative;
+    min-height: var(--spectrum-tree-item-height);
+    background-color: var(--spectrum-tree-item-background-color);
+    border-radius: var(--spectrum-tree-item-border-radius);
+}
+:host([dir='ltr']) #header {
+    padding-left: calc(
+        var(
+                --spectrum-tree-item-padding-x,
+                var(--spectrum-global-dimension-size-225)
+            ) +
+            var(
+                --spectrum-tree-icon-width,
+                var(--spectrum-global-dimension-size-75)
+            ) +
+            var(
+                --spectrum-tree-item-header-arrow-gap,
+                var(--spectrum-global-dimension-size-100)
+            ) +
+            var(
+                --spectrum-tree-item-border-left-size-key-focus,
+                var(--spectrum-alias-border-size-thick)
+            )
+    );
+}
+:host([dir='rtl']) #header {
+    padding-right: calc(
+        var(
+                --spectrum-tree-item-padding-x,
+                var(--spectrum-global-dimension-size-225)
+            ) +
+            var(
+                --spectrum-tree-icon-width,
+                var(--spectrum-global-dimension-size-75)
+            ) +
+            var(
+                --spectrum-tree-item-header-arrow-gap,
+                var(--spectrum-global-dimension-size-100)
+            ) +
+            var(
+                --spectrum-tree-item-border-left-size-key-focus,
+                var(--spectrum-alias-border-size-thick)
+            )
+    );
+}
+
+:host([dir='ltr']) #header {
+    text-align: left;
+}
+:host([dir='rtl']) #header {
+    text-align: right;
+}
+#header {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: inherit;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    font-family: inherit;
+    font-size: var(
+        --spectrum-tree-item-title-text-size,
+        var(--spectrum-global-dimension-font-size-50)
+    );
+    font-weight: 500;
+    justify-content: flex-start;
+    letter-spacing: var(--spectrum-tree-item-title-tracking-actual);
+    line-height: var(--spectrum-tree-item-line-height);
+    margin: 0;
+    position: relative; /* .spectrum-Tree-itemHeader */
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: var(--spectrum-tree-item-margin-y);
+}
+#header:focus {
+    outline: none; /* .spectrum-Tree-itemHeader:focus */
+}
+#label {
+    flex: 1 1 auto; /* .spectrum-Menu-itemLabel */
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    line-height: var(--spectrum-tree-item-label-line-height);
+    overflow-wrap: break-word;
+}
+:host([dir='ltr']) #header:focus:after {
+    left: 0; /* [dir=ltr] .spectrum-Tree-itemHeader:focus:after */
+}
+:host([dir='rtl']) #header:focus:after {
+    right: 0; /* [dir=rtl] .spectrum-Tree-itemHeader:focus:after */
+}
+#header:focus:after {
+    bottom: calc(
+        -1 * var(--spectrum-tree-item-border-size, var(--spectrum-alias-border-size-thin))
+    );
+    content: ''; /* .spectrum-Tree-itemHeader:focus:after */
+    position: absolute;
+    top: calc(
+        -1 * var(--spectrum-tree-item-border-size, var(--spectrum-alias-border-size-thin))
+    );
+    width: var(
+        --spectrum-tree-item-border-left-size-key-focus,
+        var(--spectrum-alias-border-size-thick)
+    );
+}
+#content {
+    display: none;
+    border-radius: var(--spectrum-tree-item-border-radius);
+}
+:host([dir='ltr'][open]) > #heading > slot[name='indicator'] {
+    transform: rotate(
+        90deg
+    ); /* [dir=ltr] .spectrum-Tree-item.is-open>.spectrum-Tree-itemHeading>.spectrum-Tree-itemIndicator */
+}
+:host([dir='rtl'][open]) > #heading > slot[name='indicator'] {
+    transform: matrix(-1, 0, 0, 1, 0, 0) rotate(90deg); /* [dir=rtl] .spectrum-Tree-item.is-open>.spectrum-Tree-itemHeading>.spectrum-Tree-itemIndicator */
+}
+:host([dir='ltr'][open]) > slot[name='indicator'] {
+    transform: rotate(
+        90deg
+    ); /* [dir=ltr] .spectrum-Tree-item.is-open>.spectrum-Tree-itemIndicator */
+}
+:host([dir='rtl'][open]) > slot[name='indicator'] {
+    transform: matrix(-1, 0, 0, 1, 0, 0) rotate(90deg); /* [dir=rtl] .spectrum-Tree-item.is-open>.spectrum-Tree-itemIndicator */
+}
+:host([open]) > #header:after {
+    height: calc(
+        100% -
+            var(
+                --spectrum-tree-item-border-size,
+                var(--spectrum-alias-border-size-thin)
+            )
+    ); /* .spectrum-Tree-item.is-open>.spectrum-Tree-itemHeader:after */
+}
+:host([open]) > #content {
+    display: block; /* .spectrum-Tree-item.is-open>.spectrum-Tree-itemContent */
+}
+:host([disabled]) #header {
+    cursor: default; /* .spectrum-Tree-item.is-disabled .spectrum-Tree-itemHeader */
+}
+slot[name='indicator'] {
+    color: var(
+        --spectrum-tree-icon-color,
+        var(--spectrum-global-color-gray-600)
+    ); /* .spectrum-Tree-itemIndicator */
+}
+#header {
+    color: var(
+        --spectrum-tree-text-color,
+        var(--spectrum-global-color-gray-700)
+    ); /* .spectrum-Tree-itemHeader */
+    min-height: var(--spectrum-tree-item-height);
+    background-color: var(--spectrum-tree-item-background-color);
+    border-radius: var(--spectrum-tree-item-border-radius);
+    border-color: var(--spectrum-tree-item-border-color);
+    border-width: var(--spectrum-tree-item-border-size);
+    border-style: solid;
+}
+:host #header:hover {
+    border-color: var(--spectrum-tree-item-border-color-hover);
+}
+
+#header.focus-visible:after {
+    background-color: var(
+        --spectrum-tree-item-border-left-color-key-focus,
+        var(--spectrum-alias-border-color-focus)
+    ); /* .spectrum-Tree-itemHeader.focus-ring:after */
+}
+#header:focus-visible:after {
+    background-color: var(
+        --spectrum-tree-item-border-left-color-key-focus,
+        var(--spectrum-alias-border-color-focus)
+    ); /* .spectrum-Tree-itemHeader.focus-ring:after */
+}
+#header ::slotted([slot='icon']) {
+    flex-shrink: 0;
+}
+:host([dir='ltr']) #header ::slotted([slot='icon']) {
+    margin-right: var(--spectrum-tree-icon-gap);
+}
+:host([dir='rtl']) #header ::slotted([slot='icon']) {
+    margin-left: var(--spectrum-tree-icon-gap);
+}
+
+:host([selected]) #header,
+:host([selected]) #header.focus-visible,
+:host([selected]) #header:hover {
+    background-color: var(--spectrum-tree-item-background-color-selected);
+    color: var(--spectrum-tree-item-text-color-selected);
+}
+:host([selected]) slot[name='indicator'],
+:host([selected]) #header slot[name='icon'],
+:host([selected]) #header slot[name='value'] {
+    color: var(--spectrum-tree-item-icon-color-selected);
+}
+:host([selected]) #content {
+    background-color: var(
+        --spectrum-tree-item-content-background-color-selected
+    );
+}
+
+/* 设置透明度 */
+:host([negative]) slot[name='indicator'] .indicator,
+:host([negative]) slot[name='indicator']::slotted(*),
+:host([negative]) slot[name='icon']::slotted(*),
+:host([negative]) slot[name='value']::slotted(*),
+:host([negative]) slot[name='label'] #label,
+:host([negative]) slot[name='label']::slotted(*) {
+    opacity: var(--spectrum-tree-item-opacity-negative);
+}
+
+:host([disabled]) #header,
+:host([disabled]) #header:focus-visible,
+:host([disabled]) #header:hover {
+    background-color: var(--spectrum-tree-item-background-color-disabled);
+    color: var(
+        --spectrum-tree-text-color-disabled,
+        var(--spectrum-global-color-gray-500)
+    );
+}
+
+:host([disabled]) #header:hover {
+    border-color: var(--spectrum-tree-item-border-color);
+}
+
+:host([disabled]) #header + slot[name='indicator'] {
+    color: var(
+        --spectrum-tree-icon-color-disabled,
+        var(--spectrum-global-color-gray-400)
+    ); /* .spectrum-Tree-item.is-disabled .spectrum-Tree-itemHeader+.spectrum-Tree-itemIndicator */
+}
+
+/**
+ * What follows are styles working around: https://github.com/adobe/spectrum-css/issues/1033
+ */
+slot[name='indicator'] {
+    /* .spectrum-Tree-itemIndicator */
+    top: calc(
+        50% -
+            var(
+                --spectrum-tree-icon-height,
+                var(--spectrum-global-dimension-size-125)
+            ) / 2
+    );
+}
+
+#heading {
+    /* .spectrum-Tree-itemHeading */
+    height: auto;
+    position: relative;
+}
+
+:host([open]) > #header:after {
+    /* .spectrum-Tree-item.is-open>.spectrum-Tree-itemHeader:after */
+    height: calc(
+        100% -
+            var(
+                --spectrum-tree-item-border-size,
+                var(--spectrum-alias-border-size-thin)
+            )
+    );
+}

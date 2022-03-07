@@ -24,7 +24,9 @@
         "./src/*": "./src/*.js",
         "./package.json": "./package.json",
         "./sp-tree": "./sp-tree.js",
-        "./sp-tree.js": "./sp-tree.js"
+        "./sp-tree.js": "./sp-tree.js",
+        "./sp-tree-item": "./sp-tree-item.js",
+        "./sp-tree-item.js": "./sp-tree-item.js"
     },
     "scripts": {
         "test": "echo \"Error: run tests from mono-repo root.\" && exit 1"
