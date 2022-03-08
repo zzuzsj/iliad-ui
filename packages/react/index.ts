@@ -84,3 +84,8 @@ export * from './src/Textfield';
 export * from './src/TreeItem';
 export * from './src/Underlay';
 export * from './src/Tray';
+
+/** 手动添加 */
+export * from './src/Picker';
+export * from './src/IconsEditor';
+export { Overlay } from '@iliad-ui/bundle';
