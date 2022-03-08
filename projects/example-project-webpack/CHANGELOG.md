@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.31](https://github.com/zzuzsj/iliad-ui/compare/example-project-webpack@1.5.30...example-project-webpack@1.5.31) (2022-03-08)
+
+**Note:** Version bump only for package example-project-webpack
+
 ## [1.5.30](https://github.com/zzuzsj/iliad-ui/compare/example-project-webpack@1.5.29...example-project-webpack@1.5.30) (2022-03-08)
 
 **Note:** Version bump only for package example-project-webpack

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/tree@0.2.0...@iliad-ui/tree@0.2.1) (2022-03-08)
+
+### Bug Fixes
+
+-   更新导出 ([d4bd50a](https://github.com/gaoding-inc/iliad-ui/commit/d4bd50ac3e6588769332219493f1fa360849452d))
+
 # [0.2.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/tree@0.1.8...@iliad-ui/tree@0.2.0) (2022-03-08)
 
 ### Bug Fixes
