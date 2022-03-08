@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { ColorSlider as Component } from '@iliad-ui/bundle';
 
 export const ColorSlider = createComponent(
@@ -19,6 +20,7 @@ export const ColorSlider = createComponent(
     'sp-color-slider',
     Component,
     {
+        ...ReactiveEvents,
         input: 'input',
         change: 'change',
         keydown: 'keydown',

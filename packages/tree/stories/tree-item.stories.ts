@@ -24,6 +24,7 @@ export default {
         selected: false,
         disabled: false,
         negative: false,
+        empty: false,
     },
     argTypes: {
         open: {
@@ -74,6 +75,18 @@ export default {
                 type: 'boolean',
             },
         },
+        empty: {
+            name: 'empty',
+            type: { name: 'boolean', required: false },
+            description: 'Whether the tree item is empty.',
+            table: {
+                type: { summary: 'boolean' },
+                defaultValue: { summary: false },
+            },
+            control: {
+                type: 'boolean',
+            },
+        },
     },
 };
 
@@ -82,13 +95,15 @@ type Properties = {
     open?: boolean;
     selected?: boolean;
     negative?: boolean;
+    empty?: boolean;
 };
 const Template = (
-    { disabled, open, selected, negative }: Properties = {
+    { disabled, open, selected, negative, empty }: Properties = {
         disabled: false,
         open: false,
         selected: false,
         negative: false,
+        empty: false,
     }
 ): TemplateResult => {
     return html`
@@ -110,7 +125,7 @@ const Template = (
                     <sp-icon-edit slot="icon"></sp-icon-edit>
                     <sp-icon-edit slot="value"></sp-icon-edit>
                 </sp-tree-item>
-                <sp-tree-item offset="2" label="Heading 1-2-2">
+                <sp-tree-item ?empty=${empty} offset="2" label="Heading 1-2-2">
                     <sp-icon-edit slot="icon"></sp-icon-edit>
                     <sp-icon-edit slot="value"></sp-icon-edit>
                 </sp-tree-item>
@@ -120,6 +135,7 @@ const Template = (
         <sp-tree-item
             offset="0"
             ?disabled=${disabled}
+            ?empty=${empty}
             label="Disabeld Tree Item"
         ></sp-tree-item>
         <sp-tree-item

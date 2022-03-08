@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { Panel as Component } from '@iliad-ui/bundle';
 
 export const Panel = createComponent(
@@ -19,6 +20,7 @@ export const Panel = createComponent(
     'sp-panel',
     Component,
     {
+        ...ReactiveEvents,
         close: 'close',
         back: 'back',
         confirm: 'confirm',

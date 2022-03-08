@@ -252,8 +252,12 @@ governing permissions and limitations under the License.
     );
 }
 
+:host([empty]) .indicator {
+    display: none;
+}
+
 /* 设置透明度 */
-:host([negative]) .indicator .indicator,
+:host([negative]) .indicator,
 :host([negative]) .indicator::slotted(*),
 :host([negative]) slot[name='icon']::slotted(*),
 :host([negative]) slot[name='value']::slotted(*),

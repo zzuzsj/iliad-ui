@@ -21,7 +21,7 @@
         "build:compare": "tsc --build projects/vrt-compare/tsconfig.json",
         "build:css": "node ./tasks/build-css.js",
         "build:decorator": "tsc --build projects/story-decorator/tsconfig.json",
-        "build:react": "node ./scripts/build-react.js",
+        "build:react": "yarn docs:build && cp projects/documentation/custom-elements.json packages/react && node ./scripts/build-react.js",
         "build:style": "lerna run build --scope @iliad-ui/styles && yarn build:clean",
         "build:tests": "tsc --build test/tsconfig.json && tsc --build test/tsconfig-node.json",
         "build:ts": "node ./tasks/build-packages.js",

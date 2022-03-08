@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { SideNav as Component } from '@iliad-ui/bundle';
 
 export const SideNav = createComponent(
@@ -19,6 +20,7 @@ export const SideNav = createComponent(
     'sp-sidenav',
     Component,
     {
+        ...ReactiveEvents,
         change: 'change',
     },
     'SideNav'

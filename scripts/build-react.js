@@ -90,6 +90,7 @@ components.map((component) => {
     const source = formatCode(
         `${header}import * as React from 'react';
       import { createComponent } from '@lit-labs/react';
+      import { ReactiveEvents } from '../config';
       import { ${name} as Component } from '@iliad-ui/bundle';
 
       export const ${name} = createComponent(
@@ -97,6 +98,7 @@ components.map((component) => {
         '${component.tagName}',
         Component,
         {
+          ...ReactiveEvents,
           ${events}
         },
         '${name}'

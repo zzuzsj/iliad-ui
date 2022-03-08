@@ -12,6 +12,15 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { Meter as Component } from '@iliad-ui/bundle';
 
-export const Meter = createComponent(React, 'sp-meter', Component, {}, 'Meter');
+export const Meter = createComponent(
+    React,
+    'sp-meter',
+    Component,
+    {
+        ...ReactiveEvents,
+    },
+    'Meter'
+);

@@ -12,12 +12,15 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { MenuDivider as Component } from '@iliad-ui/bundle';
 
 export const MenuDivider = createComponent(
     React,
     'sp-menu-divider',
     Component,
-    {},
+    {
+        ...ReactiveEvents,
+    },
     'MenuDivider'
 );

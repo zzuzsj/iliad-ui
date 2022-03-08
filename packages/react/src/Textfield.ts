@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { Textfield as Component } from '@iliad-ui/bundle';
 
 export const Textfield = createComponent(
@@ -19,6 +20,7 @@ export const Textfield = createComponent(
     'sp-textfield',
     Component,
     {
+        ...ReactiveEvents,
         change: 'change',
         keydown: 'keydown',
     },

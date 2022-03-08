@@ -12,12 +12,15 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { Thumbnail as Component } from '@iliad-ui/bundle';
 
 export const Thumbnail = createComponent(
     React,
     'sp-thumbnail',
     Component,
-    {},
+    {
+        ...ReactiveEvents,
+    },
     'Thumbnail'
 );

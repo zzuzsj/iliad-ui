@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { Menu as Component } from '@iliad-ui/bundle';
 
 export const Menu = createComponent(
@@ -19,6 +20,7 @@ export const Menu = createComponent(
     'sp-menu',
     Component,
     {
+        ...ReactiveEvents,
         change: 'change',
     },
     'Menu'

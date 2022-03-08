@@ -43,6 +43,9 @@ export class TreeItem extends SpectrumElement {
     @property({ type: Boolean, reflect: true })
     public selected = false;
 
+    @property({ type: Boolean, reflect: true })
+    public empty = false;
+
     // 降低label的透明度 但不是disabled
     @property({ type: Boolean, reflect: true })
     public negative = false;

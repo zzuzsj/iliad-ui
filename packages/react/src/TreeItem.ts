@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
+import { ReactiveEvents } from '../config';
 import { TreeItem as Component } from '@iliad-ui/bundle';
 
 export const TreeItem = createComponent(
@@ -19,6 +20,7 @@ export const TreeItem = createComponent(
     'sp-tree-item',
     Component,
     {
+        ...ReactiveEvents,
         'sp-tree-item-select': 'sp-tree-item-select',
         'sp-tree-item-toggle': 'sp-tree-item-toggle',
     },
