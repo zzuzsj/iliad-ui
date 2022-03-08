@@ -109,6 +109,14 @@ components.map((component) => {
     console.log(`✓ <${component.tagName}>`);
 });
 
+// 增加手动导出部分
+mainExports.push(`
+    /** 手动添加 */
+    export * from './src/Picker';
+    export * from './src/IconsEditor';
+    export { Overlay } from '@iliad-ui/bundle';
+`);
+
 fs.writeFileSync(
     './index.ts',
     formatCode(`${header}/* 注册 web components sideEffect */
