@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.26.18](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/bundle@0.26.17...@iliad-ui/bundle@0.26.18) (2022-03-08)
+
+### Bug Fixes
+
+-   更新导出 ([d4bd50a](https://github.com/gaoding-inc/iliad-ui/commit/d4bd50ac3e6588769332219493f1fa360849452d))
+
 ## [0.26.17](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/bundle@0.26.16...@iliad-ui/bundle@0.26.17) (2022-03-08)
 
 **Note:** Version bump only for package @iliad-ui/bundle
