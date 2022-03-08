@@ -16,19 +16,19 @@ governing permissions and limitations under the License.
     position: relative;
     z-index: inherit;
 }
-:host([dir='ltr']) slot[name='indicator'] {
+:host([dir='ltr']) .indicator {
     left: var(
         --spectrum-tree-item-padding-x,
         var(--spectrum-global-dimension-size-225)
     ); /* [dir=ltr] .spectrum-Tree-itemIndicator */
 }
-:host([dir='rtl']) slot[name='indicator'] {
+:host([dir='rtl']) .indicator {
     right: var(
         --spectrum-tree-item-padding-x,
         var(--spectrum-global-dimension-size-225)
     ); /* [dir=rtl] .spectrum-Tree-itemIndicator */
 }
-:host([dir='rtl']) slot[name='indicator'] {
+:host([dir='rtl']) .indicator {
     transform: matrix(
         -1,
         0,
@@ -52,21 +52,28 @@ governing permissions and limitations under the License.
             var(--spectrum-tree-item-header-arrow-gap)
     ); */
 }
-slot[name='indicator'] {
-    display: block; /* .spectrum-Tree-itemIndicator */
-    position: absolute;
-    width: var(--spectrum-tree-icon-width);
-    height: var(--spectrum-tree-icon-height);
-    top: calc(
-        50% -
-            var(
-                --spectrum-tree-icon-height,
-                var(--spectrum-global-dimension-size-125)
-            ) / 2
+.indicator {
+    --indicator-width: calc(
+        var(--spectrum-tree-icon-width) + 2 * var(--spectrum-tree-icon-padding)
     );
+    --indicator-height: calc(
+        var(--spectrum-tree-icon-height) + 2 * var(--spectrum-tree-icon-padding)
+    );
+    --indicator-top: calc(var(--indicator-height) / 2);
+    display: flex; /* .spectrum-Tree-itemIndicator */
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: var(--indicator-width);
+    height: var(--indicator-height);
+    padding: var(--spectrum-tree-icon-padding);
+    top: calc(50% - var(--indicator-top));
     transition: transform ease var(--spectrum-tree-animation-duration);
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
 }
-slot[name='indicator'] * {
+.indicator * {
     display: block;
     width: var(--spectrum-tree-icon-width);
     height: var(--spectrum-tree-icon-height);
@@ -87,36 +94,36 @@ slot[name='indicator'] * {
     border-radius: var(--spectrum-tree-item-border-radius);
 }
 :host([dir='ltr']) #header {
-    padding-left: calc(
+    --indicator-width: calc(
+        var(--spectrum-tree-icon-width) + 2 * var(--spectrum-tree-icon-padding)
+    );
+    --padding-left: calc(
         var(
                 --spectrum-tree-item-padding-x,
                 var(--spectrum-global-dimension-size-225)
-            ) +
-            var(
-                --spectrum-tree-icon-width,
-                var(--spectrum-global-dimension-size-75)
-            ) +
+            ) + var(--indicator-width) +
             var(
                 --spectrum-tree-item-header-arrow-gap,
                 var(--spectrum-global-dimension-size-100)
             )
     );
+    padding-left: var(--padding-left);
 }
 :host([dir='rtl']) #header {
-    padding-right: calc(
+    --indicator-width: calc(
+        var(--spectrum-tree-icon-width) + 2 * var(--spectrum-tree-icon-padding)
+    );
+    --padding-right: calc(
         var(
                 --spectrum-tree-item-padding-x,
                 var(--spectrum-global-dimension-size-225)
-            ) +
-            var(
-                --spectrum-tree-icon-width,
-                var(--spectrum-global-dimension-size-75)
-            ) +
+            ) + var(--indicator-width) +
             var(
                 --spectrum-tree-item-header-arrow-gap,
                 var(--spectrum-global-dimension-size-100)
             )
     );
+    padding-right: var(--padding-right);
 }
 
 :host([dir='ltr']) #header {
@@ -166,20 +173,20 @@ slot[name='indicator'] * {
     display: none;
     border-radius: var(--spectrum-tree-item-border-radius);
 }
-:host([dir='ltr'][open]) > #heading > slot[name='indicator'] {
+:host([dir='ltr'][open]) > #heading > .indicator {
     transform: rotate(
         90deg
     ); /* [dir=ltr] .spectrum-Tree-item.is-open>.spectrum-Tree-itemHeading>.spectrum-Tree-itemIndicator */
 }
-:host([dir='rtl'][open]) > #heading > slot[name='indicator'] {
+:host([dir='rtl'][open]) > #heading > .indicator {
     transform: matrix(-1, 0, 0, 1, 0, 0) rotate(90deg); /* [dir=rtl] .spectrum-Tree-item.is-open>.spectrum-Tree-itemHeading>.spectrum-Tree-itemIndicator */
 }
-:host([dir='ltr'][open]) > slot[name='indicator'] {
+:host([dir='ltr'][open]) > .indicator {
     transform: rotate(
         90deg
     ); /* [dir=ltr] .spectrum-Tree-item.is-open>.spectrum-Tree-itemIndicator */
 }
-:host([dir='rtl'][open]) > slot[name='indicator'] {
+:host([dir='rtl'][open]) > .indicator {
     transform: matrix(-1, 0, 0, 1, 0, 0) rotate(90deg); /* [dir=rtl] .spectrum-Tree-item.is-open>.spectrum-Tree-itemIndicator */
 }
 :host([open]) > #header:after {
@@ -197,7 +204,7 @@ slot[name='indicator'] * {
 :host([disabled]) #header {
     cursor: default; /* .spectrum-Tree-item.is-disabled .spectrum-Tree-itemHeader */
 }
-slot[name='indicator'] {
+.indicator {
     color: var(
         --spectrum-tree-icon-color,
         var(--spectrum-global-color-gray-600)
@@ -234,7 +241,7 @@ slot[name='indicator'] {
     background-color: var(--spectrum-tree-item-background-color-selected);
     color: var(--spectrum-tree-item-text-color-selected);
 }
-:host([selected]) slot[name='indicator'],
+:host([selected]) .indicator,
 :host([selected]) #header slot[name='icon'],
 :host([selected]) #header slot[name='value'] {
     color: var(--spectrum-tree-item-icon-color-selected);
@@ -246,8 +253,8 @@ slot[name='indicator'] {
 }
 
 /* 设置透明度 */
-:host([negative]) slot[name='indicator'] .indicator,
-:host([negative]) slot[name='indicator']::slotted(*),
+:host([negative]) .indicator .indicator,
+:host([negative]) .indicator::slotted(*),
 :host([negative]) slot[name='icon']::slotted(*),
 :host([negative]) slot[name='value']::slotted(*),
 :host([negative]) slot[name='label'] #label,
@@ -268,25 +275,11 @@ slot[name='indicator'] {
     border-color: var(--spectrum-tree-item-border-color);
 }
 
-:host([disabled]) #header + slot[name='indicator'] {
+:host([disabled]) #header + .indicator {
     color: var(
         --spectrum-tree-icon-color-disabled,
         var(--spectrum-global-color-gray-400)
     ); /* .spectrum-Tree-item.is-disabled .spectrum-Tree-itemHeader+.spectrum-Tree-itemIndicator */
-}
-
-/**
- * What follows are styles working around: https://github.com/adobe/spectrum-css/issues/1033
- */
-slot[name='indicator'] {
-    /* .spectrum-Tree-itemIndicator */
-    top: calc(
-        50% -
-            var(
-                --spectrum-tree-icon-height,
-                var(--spectrum-global-dimension-size-125)
-            ) / 2
-    );
 }
 
 #heading {

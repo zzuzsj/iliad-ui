@@ -115,7 +115,7 @@ export class TreeItem extends SpectrumElement {
         if (this.disabled) {
             return;
         }
-        // this.select();
+        this.select();
     }
 
     private onToggle(): void {
@@ -128,7 +128,19 @@ export class TreeItem extends SpectrumElement {
         return handled;
     }
 
-    // private select(): void {}
+    private select(): void {
+        this.selected = !this.selected;
+        const applyDefault = this.dispatchEvent(
+            new CustomEvent('sp-tree-item-select', {
+                bubbles: true,
+                composed: true,
+                cancelable: true,
+            })
+        );
+        if (!applyDefault) {
+            this.open = !this.open;
+        }
+    }
 
     private toggle(): void {
         this.open = !this.open;
@@ -162,12 +174,13 @@ export class TreeItem extends SpectrumElement {
                     </slot>
                     <slot name="value"></slot>
                 </button>
-                <slot name="indicator">
-                    <sp-icon-chevron100
-                        class="indicator spectrum-UIIcon-ChevronRight100"
-                        @click=${this.onToggle}
-                    ></sp-icon-chevron100>
-                </slot>
+                <button class="indicator" @click=${this.onToggle}>
+                    <slot name="indicator">
+                        <sp-icon-chevron100
+                            class="spectrum-UIIcon-ChevronRight100"
+                        ></sp-icon-chevron100>
+                    </slot>
+                </button>
             </h3>
             <div id="content" role="region" aria-labelledby="header">
                 <slot></slot>

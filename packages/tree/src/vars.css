@@ -25,6 +25,7 @@ governing permissions and limitations under the License.
     );
     --spectrum-tree-icon-width: var(--spectrum-global-dimension-size-125);
     --spectrum-tree-icon-height: var(--spectrum-global-dimension-size-125);
+    --spectrum-tree-icon-padding: var(--spectrum-global-dimension-size-50);
     --spectrum-tree-item-border-size: var(--spectrum-alias-border-size-thin);
     --spectrum-tree-icon-gap: var(--spectrum-alias-item-workflow-icon-gap-m);
     --spectrum-tree-item-border-left-size-key-focus: var(
