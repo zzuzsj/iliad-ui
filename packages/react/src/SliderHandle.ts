@@ -12,7 +12,6 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
-import { ReactiveEvents } from '../config';
 import { SliderHandle as Component } from '@iliad-ui/bundle';
 
 export const SliderHandle = createComponent(
@@ -21,8 +20,6 @@ export const SliderHandle = createComponent(
     Component,
     {
         keydown: 'keydown',
-        change: 'change',
-        ...ReactiveEvents,
     },
     'SliderHandle'
 );

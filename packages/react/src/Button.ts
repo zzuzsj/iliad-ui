@@ -12,7 +12,6 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
-import { ReactiveEvents } from '../config';
 import { Button as Component } from '@iliad-ui/bundle';
 
 export const Button = createComponent(
@@ -21,7 +20,6 @@ export const Button = createComponent(
     Component,
     {
         keydown: 'keydown',
-        ...ReactiveEvents,
     },
     'Button'
 );

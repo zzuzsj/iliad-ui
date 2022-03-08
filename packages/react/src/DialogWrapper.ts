@@ -12,7 +12,6 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
-import { ReactiveEvents } from '../config';
 import { DialogWrapper as Component } from '@iliad-ui/bundle';
 
 export const DialogWrapper = createComponent(
@@ -24,7 +23,6 @@ export const DialogWrapper = createComponent(
         cancel: 'cancel',
         confirm: 'confirm',
         close: 'close',
-        ...ReactiveEvents,
     },
     'DialogWrapper'
 );

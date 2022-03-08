@@ -37,6 +37,7 @@ if (publish) {
 process.chdir('./packages/react/');
 
 // Fetch component metadata
+// 从documation目录下获取custom-elements.json
 const metadata = JSON.parse(fs.readFileSync('./custom-elements.json', 'utf8'));
 
 // Wrap components

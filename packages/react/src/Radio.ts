@@ -12,7 +12,6 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
-import { ReactiveEvents } from '../config';
 import { Radio as Component } from '@iliad-ui/bundle';
 
 export const Radio = createComponent(
@@ -23,7 +22,6 @@ export const Radio = createComponent(
         keydown: 'keydown',
         change: 'change',
         'sp-radio:change': 'sp-radio:change',
-        ...ReactiveEvents,
     },
     'Radio'
 );

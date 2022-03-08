@@ -12,13 +12,6 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
-import { ReactiveEvents } from '../config';
 import { Icon as Component } from '@iliad-ui/bundle';
 
-export const Icon = createComponent(
-    React,
-    'sp-icon',
-    Component,
-    { ...ReactiveEvents },
-    'Icon'
-);
+export const Icon = createComponent(React, 'sp-icon', Component, {}, 'Icon');

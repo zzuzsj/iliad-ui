@@ -10,14 +10,17 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
+import * as React from 'react';
+import { createComponent } from '@lit-labs/react';
+import { TreeItem as Component } from '@iliad-ui/bundle';
 
-import { Tree } from './src/Tree.js';
-import { iliadCustomElementsDefine } from '@iliad-ui/base';
-
-iliadCustomElementsDefine('sp-tree', Tree);
-
-declare global {
-    interface HTMLElementTagNameMap {
-        'sp-tree': Tree;
-    }
-}
+export const TreeItem = createComponent(
+    React,
+    'sp-tree-item',
+    Component,
+    {
+        'sp-tree-item-select': 'sp-tree-item-select',
+        'sp-tree-item-toggle': 'sp-tree-item-toggle',
+    },
+    'TreeItem'
+);

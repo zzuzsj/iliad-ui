@@ -94,10 +94,6 @@ export class TreeItem extends SpectrumElement {
             return;
         }
 
-        if (this.shouldProxyClick()) {
-            return;
-        }
-
         super.click();
     }
 
@@ -121,11 +117,6 @@ export class TreeItem extends SpectrumElement {
     private onToggle(): void {
         if (this.disabled) return;
         this.toggle();
-    }
-
-    private shouldProxyClick(): boolean {
-        const handled = false;
-        return handled;
     }
 
     private select(): void {

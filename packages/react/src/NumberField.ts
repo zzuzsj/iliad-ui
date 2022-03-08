@@ -12,7 +12,6 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
-import { ReactiveEvents } from '../config';
 import { NumberField as Component } from '@iliad-ui/bundle';
 
 export const NumberField = createComponent(
@@ -23,7 +22,6 @@ export const NumberField = createComponent(
         change: 'change',
         input: 'input',
         keydown: 'keydown',
-        ...ReactiveEvents,
     },
     'NumberField'
 );

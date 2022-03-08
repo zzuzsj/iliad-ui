@@ -12,7 +12,6 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
-import { ReactiveEvents } from '../config';
 import { ColorArea as Component } from '@iliad-ui/bundle';
 
 export const ColorArea = createComponent(
@@ -22,7 +21,6 @@ export const ColorArea = createComponent(
     {
         input: 'input',
         change: 'change',
-        ...ReactiveEvents,
     },
     'ColorArea'
 );

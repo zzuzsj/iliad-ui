@@ -23,8 +23,6 @@
         ".": "./src/index.js",
         "./src/*": "./src/*.js",
         "./package.json": "./package.json",
-        "./sp-tree": "./sp-tree.js",
-        "./sp-tree.js": "./sp-tree.js",
         "./sp-tree-item": "./sp-tree-item.js",
         "./sp-tree-item.js": "./sp-tree-item.js"
     },

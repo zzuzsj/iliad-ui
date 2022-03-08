@@ -12,13 +12,6 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
-import { ReactiveEvents } from '../config';
 import { Tab as Component } from '@iliad-ui/bundle';
 
-export const Tab = createComponent(
-    React,
-    'sp-tab',
-    Component,
-    { ...ReactiveEvents },
-    'Tab'
-);
+export const Tab = createComponent(React, 'sp-tab', Component, {}, 'Tab');

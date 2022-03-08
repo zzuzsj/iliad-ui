@@ -15,9 +15,9 @@ const config = {
     spectrum: 'tree',
     components: [
         {
-            name: 'tree',
+            name: 'tree-item',
             host: {
-                selector: '.spectrum-Tree',
+                selector: '.spectrum-Tree-item',
             },
         },
     ],

@@ -12,13 +12,6 @@ governing permissions and limitations under the License.
 */
 import * as React from 'react';
 import { createComponent } from '@lit-labs/react';
-import { ReactiveEvents } from '../config';
 import { Tags as Component } from '@iliad-ui/bundle';
 
-export const Tags = createComponent(
-    React,
-    'sp-tags',
-    Component,
-    { ...ReactiveEvents },
-    'Tags'
-);
+export const Tags = createComponent(React, 'sp-tags', Component, {}, 'Tags');
