@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/tree@0.1.8...@iliad-ui/tree@0.2.0) (2022-03-08)
+
+### Bug Fixes
+
+-   去除 focus 样式 ([3fb3a6d](https://github.com/gaoding-inc/iliad-ui/commit/3fb3a6dbcea5401abbd51a56617c677a98a162b3))
+
+### Features
+
+-   向外暴露 tree-item ([b98b851](https://github.com/gaoding-inc/iliad-ui/commit/b98b851c6cbb5076c92d26ff1a2c141d0d5eaec2))
+-   增加 treeItem 组件 ([ff97b1c](https://github.com/gaoding-inc/iliad-ui/commit/ff97b1cd7c2cc8f2f375686efa9b22bf78df935f))
+
 ## [0.1.8](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/tree@0.1.7...@iliad-ui/tree@0.1.8) (2022-02-25)
 
 **Note:** Version bump only for package @iliad-ui/tree
