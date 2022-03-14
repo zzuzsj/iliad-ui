@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/bundle",
-    "version": "0.26.19",
+    "version": "0.26.20",
     "publishConfig": {
         "access": "public"
     },
@@ -104,7 +104,7 @@
         "@iliad-ui/tooltip": "^0.12.8",
         "@iliad-ui/top-nav": "^0.7.7",
         "@iliad-ui/tray": "^0.6.7",
-        "@iliad-ui/tree": "^0.2.1",
+        "@iliad-ui/tree": "^0.3.0",
         "@iliad-ui/underlay": "^0.10.7",
         "tslib": "^2.0.0"
     },
