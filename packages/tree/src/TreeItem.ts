@@ -109,26 +109,29 @@ export class TreeItem extends SpectrumElement {
         }
     }
 
-    private onClick(): void {
+    private onClick(event: MouseEvent): void {
         /* c8 ignore next 3 */
         if (this.disabled) {
             return;
         }
-        this.select();
+        this.select(event);
     }
 
-    private onToggle(): void {
+    private onToggle(event: MouseEvent): void {
         if (this.disabled) return;
-        this.toggle();
+        this.toggle(event);
     }
 
-    private select(): void {
+    private select(event: MouseEvent): void {
         this.selected = !this.selected;
         const applyDefault = this.dispatchEvent(
             new CustomEvent('sp-tree-item-select', {
                 bubbles: true,
                 composed: true,
                 cancelable: true,
+                detail: {
+                    event,
+                },
             })
         );
         if (!applyDefault) {
@@ -136,13 +139,16 @@ export class TreeItem extends SpectrumElement {
         }
     }
 
-    private toggle(): void {
+    private toggle(event: MouseEvent): void {
         this.open = !this.open;
         const applyDefault = this.dispatchEvent(
             new CustomEvent('sp-tree-item-toggle', {
                 bubbles: true,
                 composed: true,
                 cancelable: true,
+                detail: {
+                    event,
+                },
             })
         );
         if (!applyDefault) {
@@ -163,9 +169,11 @@ export class TreeItem extends SpectrumElement {
                     aria-controls="content"
                 >
                     <slot name="icon"></slot>
-                    <slot name="label">
-                        <span id="label">${this.label}</span>
-                    </slot>
+                    <div id="label">
+                        <slot name="label">
+                            <span id="label-text">${this.label}</span>
+                        </slot>
+                    </div>
                     <slot name="value"></slot>
                 </button>
                 <button class="indicator" @click=${this.onToggle}>

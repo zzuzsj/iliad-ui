@@ -14,6 +14,7 @@ governing permissions and limitations under the License.
 import { html, TemplateResult } from '@iliad-ui/base';
 
 import '../sp-tree-item.js';
+import '@iliad-ui/textfield/sp-textfield.js';
 import '@iliad-ui/icons-workflow/icons/sp-icon-edit.js';
 
 export default {
@@ -97,6 +98,7 @@ type Properties = {
     negative?: boolean;
     empty?: boolean;
 };
+
 const Template = (
     { disabled, open, selected, negative, empty }: Properties = {
         disabled: false,
@@ -113,6 +115,7 @@ const Template = (
             ?disabled=${disabled}
             ?open=${open}
         >
+            <span id="info"></span>
             <sp-icon-edit slot="icon"></sp-icon-edit>
             <sp-icon-edit slot="value"></sp-icon-edit>
             <sp-tree-item offset="1" label="Heading 1-1" ?open=${open}>
@@ -138,6 +141,16 @@ const Template = (
             ?empty=${empty}
             label="Disabeld Tree Item"
         ></sp-tree-item>
+        <sp-tree-item
+            offset="0"
+            ?disabled=${disabled}
+            ?empty=${empty}
+            label="Disabeld Tree Item"
+        >
+            <sp-icon-edit slot="icon"></sp-icon-edit>
+            <sp-textfield slot="label" value="Test Input"></sp-textfield>
+            <sp-icon-edit slot="value"></sp-icon-edit>
+        </sp-tree-item>
         <sp-tree-item
             offset="0"
             ?negative=${negative}

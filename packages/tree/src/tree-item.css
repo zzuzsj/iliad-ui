@@ -161,12 +161,17 @@ governing permissions and limitations under the License.
     outline: none; /* .spectrum-Tree-itemHeader:focus */
 }
 
+#header ::slotted([slot='label']) {
+    width: 100%;
+}
 #label {
     flex: 1 1 auto; /* .spectrum-Menu-itemLabel */
     -webkit-hyphens: auto;
     hyphens: auto;
     line-height: var(--spectrum-tree-item-label-line-height);
-    overflow-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 #content {
@@ -234,6 +239,13 @@ governing permissions and limitations under the License.
 }
 :host([dir='rtl']) #header ::slotted([slot='icon']) {
     margin-left: var(--spectrum-tree-icon-gap);
+}
+
+:host([dir='ltr']) #header ::slotted([slot='value']) {
+    margin-left: var(--spectrum-tree-icon-gap);
+}
+:host([dir='rtl']) #header ::slotted([slot='value']) {
+    margin-right: var(--spectrum-tree-icon-gap);
 }
 
 :host([selected]) #header,
