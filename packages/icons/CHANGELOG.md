@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons@0.12.4...@iliad-ui/icons@0.13.0) (2022-03-17)
+
+### Features
+
+-   更新 treeItem 组件样式 ([11249b2](https://github.com/gaoding-inc/iliad-ui/commit/11249b2cf95a02d1df9dd4c84f94a0113714d027))
+
 ## [0.12.4](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons@0.12.3...@iliad-ui/icons@0.12.4) (2022-02-28)
 
 **Note:** Version bump only for package @iliad-ui/icons
