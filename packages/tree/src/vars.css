@@ -23,16 +23,16 @@ governing permissions and limitations under the License.
     --spectrum-tree-item-header-arrow-gap: var(
         --spectrum-global-dimension-size-150
     );
-    --spectrum-tree-icon-width: var(--spectrum-global-dimension-size-125);
-    --spectrum-tree-icon-height: var(--spectrum-global-dimension-size-125);
-    --spectrum-tree-icon-padding: var(--spectrum-global-dimension-size-50);
+    --spectrum-tree-icon-width: var(--spectrum-alias-icon-size-m);
+    --spectrum-tree-icon-height: var(--spectrum-alias-icon-size-m);
+    --spectrum-tree-icon-padding: var(--spectrum-global-dimension-size-0);
     --spectrum-tree-item-border-size: var(--spectrum-alias-border-size-thin);
     --spectrum-tree-icon-gap: var(--spectrum-alias-item-workflow-icon-gap-m);
     --spectrum-tree-item-border-left-size-key-focus: var(
         --spectrum-alias-border-size-thick
     );
     --spectrum-tree-item-title-text-size: var(--spectrum-alias-font-size-m);
-    --spectrum-tree-icon-color: var(--spectrum-global-color-gray-600);
+    --spectrum-tree-icon-color: var(--spectrum-global-color-gray-700);
     --spectrum-tree-text-color: var(--spectrum-alias-text-color-secondary);
     --spectrum-tree-item-background-color: var(
         --spectrum-alias-background-color-transparent

@@ -73,11 +73,6 @@ governing permissions and limitations under the License.
     cursor: pointer;
     background-color: transparent;
 }
-.indicator * {
-    display: block;
-    width: var(--spectrum-tree-icon-width);
-    height: var(--spectrum-tree-icon-height);
-}
 :host(:first-of-type) {
     border-top: var(
             --spectrum-tree-item-border-size,
@@ -227,7 +222,8 @@ governing permissions and limitations under the License.
     border-width: var(--spectrum-tree-item-border-size);
     border-style: solid;
 }
-:host #header:hover {
+:host #header:hover,
+:host([over]) #header {
     border-color: var(--spectrum-tree-item-border-color-hover);
 }
 
@@ -273,8 +269,8 @@ governing permissions and limitations under the License.
 :host([negative]) .indicator::slotted(*),
 :host([negative]) slot[name='icon']::slotted(*),
 :host([negative]) slot[name='value']::slotted(*),
-:host([negative]) slot[name='label'] #label,
-:host([negative]) slot[name='label']::slotted(*) {
+:host([negative]) #label-text,
+:host([negative]) {
     opacity: var(--spectrum-tree-item-opacity-negative);
 }
 

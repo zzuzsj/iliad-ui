@@ -11,19 +11,17 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { tag as html, TemplateResult } from '../custom-tag.js';
-export { setCustomTemplateLiteralTag } from '../custom-tag.js';
-export const LabelOpenbracketIcon = (): string | TemplateResult => {
-    return html`
-        <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-        >
-            <path
-                d="M14.41 3.59998V20.412H10V19.206H13.078V4.80598H10V3.59998H14.41Z"
-            />
-        </svg>
-    `;
-};
+import { html, TemplateResult } from '@iliad-ui/base';
+import { IconBase } from '@iliad-ui/icon';
+import { TimeIcon } from '../icons/Time.js';
+import { setCustomTemplateLiteralTag } from '../custom-tag.js';
+
+/**
+ * @element sp-icon-editor-time
+ */
+export class IconTime extends IconBase {
+    protected render(): TemplateResult {
+        setCustomTemplateLiteralTag(html);
+        return TimeIcon() as TemplateResult;
+    }
+}

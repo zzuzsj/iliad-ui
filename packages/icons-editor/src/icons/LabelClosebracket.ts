@@ -22,7 +22,7 @@ export const LabelClosebracketIcon = (): string | TemplateResult => {
             xmlns="http://www.w3.org/2000/svg"
         >
             <path
-                d="M10 3.60001V20.412H14.41V19.206H11.332V4.80601H14.41V3.60001H10Z"
+                d="M10 3.59998V20.412H14.41V19.206H11.332V4.80598H14.41V3.59998H10Z"
             />
         </svg>
     `;

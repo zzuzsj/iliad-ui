@@ -26,6 +26,7 @@ export default {
         disabled: false,
         negative: false,
         empty: false,
+        over: false,
     },
     argTypes: {
         open: {
@@ -88,6 +89,18 @@ export default {
                 type: 'boolean',
             },
         },
+        over: {
+            name: 'over',
+            type: { name: 'boolean', required: false },
+            description: 'Whether the tree item is over.',
+            table: {
+                type: { summary: 'boolean' },
+                defaultValue: { summary: false },
+            },
+            control: {
+                type: 'boolean',
+            },
+        },
     },
 };
 
@@ -97,15 +110,17 @@ type Properties = {
     selected?: boolean;
     negative?: boolean;
     empty?: boolean;
+    over?: boolean;
 };
 
 const Template = (
-    { disabled, open, selected, negative, empty }: Properties = {
+    { disabled, open, selected, negative, empty, over }: Properties = {
         disabled: false,
         open: false,
         selected: false,
         negative: false,
         empty: false,
+        over: false,
     }
 ): TemplateResult => {
     return html`
@@ -156,6 +171,10 @@ const Template = (
             ?negative=${negative}
             label="Negative Tree Item"
         >
+            <sp-icon-edit slot="icon"></sp-icon-edit>
+            <sp-icon-edit slot="value"></sp-icon-edit>
+        </sp-tree-item>
+        <sp-tree-item offset="0" ?over=${over} label="Over Tree Item">
             <sp-icon-edit slot="icon"></sp-icon-edit>
             <sp-icon-edit slot="value"></sp-icon-edit>
         </sp-tree-item>

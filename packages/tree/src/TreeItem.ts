@@ -20,6 +20,7 @@ import {
     SpectrumElement,
 } from '@iliad-ui/base';
 import '@iliad-ui/icons-ui/icons/sp-icon-chevron100.js';
+import '@iliad-ui/icons-editor/icons/sp-icon-editor-arrow-triangle.js';
 import chevronIconStyles from '@iliad-ui/icon/src/spectrum-icon-chevron.css.js';
 
 import styles from './tree-item.css.js';
@@ -42,6 +43,9 @@ export class TreeItem extends SpectrumElement {
 
     @property({ type: Boolean, reflect: true })
     public selected = false;
+
+    @property({ type: Boolean, reflect: true })
+    public over = false;
 
     @property({ type: Boolean, reflect: true })
     public empty = false;
@@ -178,9 +182,9 @@ export class TreeItem extends SpectrumElement {
                 </button>
                 <button class="indicator" @click=${this.onToggle}>
                     <slot name="indicator">
-                        <sp-icon-chevron100
-                            class="spectrum-UIIcon-ChevronRight100"
-                        ></sp-icon-chevron100>
+                        <sp-icon-editor-arrow-triangle
+                            size="m"
+                        ></sp-icon-editor-arrow-triangle>
                     </slot>
                 </button>
             </h3>
