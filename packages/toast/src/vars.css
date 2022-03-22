@@ -49,7 +49,9 @@ governing permissions and limitations under the License.
     --spectrum-toast-neutral-background-color: var(
         --spectrum-global-color-gray-200
     );
-    --spectrum-toast-neutral-text-color: var(--spectrum-global-color-gray-100);
+    --spectrum-toast-neutral-text-color: var(
+        --spectrum-global-static-color-white
+    );
     --spectrum-toast-warning-background-color: var(
         --spectrum-global-color-orange-500
     );
