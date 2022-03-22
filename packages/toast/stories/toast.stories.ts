@@ -11,6 +11,7 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 import { html, TemplateResult } from '@iliad-ui/base';
+import '@iliad-ui/icons-editor/icons/sp-icon-editor-info.js';
 
 import '../sp-toast.js';
 import '@iliad-ui/button/sp-button.js';
@@ -20,8 +21,15 @@ const toast = ({
     disappearing = false,
     open = true,
     content = '',
+    closeable = true,
 }): TemplateResult => html`
-    <sp-toast variant=${variant} ?disappearing=${disappearing} ?open=${open}>
+    <sp-toast
+        variant=${variant}
+        ?disappearing=${disappearing}
+        ?open=${open}
+        ?closeable=${closeable}
+    >
+        <sp-icon-editor-info slot="icon"></sp-icon-editor-info>
         ${content}
         <sp-button slot="action" variant="overBackground" quiet>Undo</sp-button>
     </sp-toast>
@@ -92,3 +100,9 @@ export const Negative = (args: Properties): TemplateResult =>
 
 export const Info = (args: Properties): TemplateResult =>
     variantDemo({ ...args, variant: 'info' });
+
+export const Warning = (args: Properties): TemplateResult =>
+    variantDemo({ ...args, variant: 'warning' });
+
+export const Error = (args: Properties): TemplateResult =>
+    variantDemo({ ...args, variant: 'error' });

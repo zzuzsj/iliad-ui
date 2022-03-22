@@ -176,6 +176,12 @@ governing permissions and limitations under the License.
     --spectrum-global-color-opacity-6: 0.06;
     --spectrum-global-color-opacity-5: 0.05;
     --spectrum-global-color-opacity-4: 0.04;
+    --spectrum-global-color-light-cover-0: rgba(0, 0, 0, 0);
+    --spectrum-global-color-light-cover-100: rgba(0, 0, 0, 0.06);
+    --spectrum-global-color-light-cover-200: rgba(0, 0, 0, 0.12);
+    --spectrum-global-color-dark-cover-0: rgba(255, 255, 255, 0);
+    --spectrum-global-color-dark-cover-100: rgba(255, 255, 255, 0.06);
+    --spectrum-global-color-dark-cover-200: rgba(255, 255, 255, 0.12);
     --spectrum-global-color-primary-cover-100: rgba(36, 114, 233, 0.53);
     --spectrum-global-color-primary-cover-200: rgba(35, 111, 226, 0.56);
     --spectrum-global-color-red-cover-100: rgba(238, 80, 62, 0.53);
@@ -1452,7 +1458,7 @@ governing permissions and limitations under the License.
 :host,
 :root {
     --spectrum-semantic-negative-color-background: var(
-        --spectrum-global-color-static-red-700
+        --spectrum-global-color-red-500
     );
     --spectrum-semantic-negative-color-default: var(
         --spectrum-global-color-red-500
@@ -1485,16 +1491,16 @@ governing permissions and limitations under the License.
         --spectrum-global-color-red-400
     );
     --spectrum-semantic-negative-background-color-default: var(
-        --spectrum-global-color-static-red-600
+        --spectrum-global-color-red-600
     );
     --spectrum-semantic-negative-background-color-hover: var(
-        --spectrum-global-color-static-red-700
+        --spectrum-global-color-red-700
     );
     --spectrum-semantic-negative-background-color-down: var(
-        --spectrum-global-color-static-red-800
+        --spectrum-global-color-red-800
     );
     --spectrum-semantic-negative-background-color-key-focus: var(
-        --spectrum-global-color-static-red-700
+        --spectrum-global-color-red-700
     );
     --spectrum-semantic-notice-color-background: var(
         --spectrum-global-color-static-orange-700
@@ -1539,7 +1545,7 @@ governing permissions and limitations under the License.
         --spectrum-global-color-static-orange-700
     );
     --spectrum-semantic-positive-color-background: var(
-        --spectrum-global-color-static-green-700
+        --spectrum-global-color-green-500
     );
     --spectrum-semantic-positive-color-default: var(
         --spectrum-global-color-green-500
@@ -1569,19 +1575,19 @@ governing permissions and limitations under the License.
         --spectrum-global-color-green-400
     );
     --spectrum-semantic-positive-background-color-default: var(
-        --spectrum-global-color-static-green-600
+        --spectrum-global-color-green-500
     );
     --spectrum-semantic-positive-background-color-hover: var(
-        --spectrum-global-color-static-green-700
+        --spectrum-global-color-green-600
     );
     --spectrum-semantic-positive-background-color-down: var(
-        --spectrum-global-color-static-green-800
+        --spectrum-global-color-green-700
     );
     --spectrum-semantic-positive-background-color-key-focus: var(
-        --spectrum-global-color-static-green-700
+        --spectrum-global-color-green-600
     );
     --spectrum-semantic-informative-color-background: var(
-        --spectrum-global-color-static-blue-700
+        --spectrum-global-color-blue-500
     );
     --spectrum-semantic-informative-color-default: var(
         --spectrum-global-color-blue-500
@@ -1611,16 +1617,16 @@ governing permissions and limitations under the License.
         --spectrum-global-color-blue-400
     );
     --spectrum-semantic-informative-background-color-default: var(
-        --spectrum-global-color-static-blue-600
+        --spectrum-global-color-blue-600
     );
     --spectrum-semantic-informative-background-color-hover: var(
-        --spectrum-global-color-static-blue-700
+        --spectrum-global-color-blue-700
     );
     --spectrum-semantic-informative-background-color-down: var(
-        --spectrum-global-color-static-blue-800
+        --spectrum-global-color-blue-800
     );
     --spectrum-semantic-informative-background-color-key-focus: var(
-        --spectrum-global-color-static-blue-700
+        --spectrum-global-color-blue-700
     );
     --spectrum-semantic-cta-color-background-default: var(
         --spectrum-global-color-static-primary-500

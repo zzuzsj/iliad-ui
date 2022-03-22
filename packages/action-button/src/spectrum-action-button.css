@@ -1130,6 +1130,87 @@ governing permissions and limitations under the License.
         var(--spectrum-alias-text-color-disabled)
     );
 }
+
+/* overBackground */
+:host([overbackground]) {
+    background-color: var(
+        --spectrum-actionbutton-m-over-background-background-color,
+        var(--spectrum-alias-background-color-transparent)
+    ); /* .spectrum-ActionButton--quiet */
+    border-color: var(--spectrum-actionbutton-m-over-background-border-color);
+    color: var(
+        --spectrum-actionbutton-m-over-background-text-color,
+        var(--spectrum-alias-text-color)
+    );
+}
+:host([overbackground]:hover) {
+    background-color: var(
+        --spectrum-actionbutton-m-over-background-background-color-hover,
+        var(--spectrum-alias-cover-color-100)
+    ); /* .spectrum-ActionButton--quiet:hover */
+    border-color: var(
+        --spectrum-actionbutton-m-over-background-border-color-hover
+    );
+    color: var(
+        --spectrum-actionbutton-m-over-background-text-color-hover,
+        var(--spectrum-alias-text-color-primary)
+    );
+}
+:host([overbackground].focus-visible) {
+    background-color: var(
+        --spectrum-actionbutton-m-over-background-background-color-key-focus,
+        var(--spectrum-alias-cover-color-100)
+    ); /* .spectrum-ActionButton--quiet.focus-ring */
+    border-color: var(
+        --spectrum-actionbutton-m-over-background-border-color-key-focus
+    );
+    color: var(
+        --spectrum-actionbutton-m-over-background-text-color-key-focus,
+        var(--spectrum-alias-text-color-primary)
+    );
+}
+:host([overbackground]:focus-visible) {
+    background-color: var(
+        --spectrum-actionbutton-m-over-background-background-color-key-focus,
+        var(--spectrum-alias-cover-color-100)
+    ); /* .spectrum-ActionButton--quiet.focus-ring */
+    border-color: var(
+        --spectrum-actionbutton-m-over-background-border-color-key-focus
+    );
+    color: var(
+        --spectrum-actionbutton-m-over-background-text-color-key-focus,
+        var(--spectrum-alias-text-color-primary)
+    );
+}
+:host([overbackground][active]) {
+    background-color: var(
+        --spectrum-actionbutton-m-over-background-background-color-down,
+        var(--spectrum-alias-cover-color-200)
+    ); /* .spectrum-ActionButton--quiet:active */
+    border-color: var(
+        --spectrum-actionbutton-m-over-background-border-color-down
+    );
+    color: var(
+        --spectrum-actionbutton-m-over-background-text-color-down,
+        var(--spectrum-alias-text-color-primary)
+    );
+}
+:host([overbackground]:disabled),
+:host([overbackground][disabled]) {
+    background-color: var(
+        --spectrum-actionbutton-m-over-background-background-color-disabled,
+        var(--spectrum-alias-background-color-transparent)
+    ); /* .spectrum-ActionButton--quiet:disabled,
+   * .spectrum-ActionButton--quiet.is-disabled */
+    border-color: var(
+        --spectrum-actionbutton-m-over-background-border-color-disabled
+    );
+    color: var(
+        --spectrum-actionbutton-m-quiet-text-color-disabled,
+        var(--spectrum-alias-text-color-disabled)
+    );
+}
+
 @media (forced-colors: active) {
     :host {
         --spectrum-actionbutton-m-background-color: ButtonFace;

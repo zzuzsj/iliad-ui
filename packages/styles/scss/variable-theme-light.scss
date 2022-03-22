@@ -67,9 +67,9 @@ $global-bg-color-300: rgba($global-color-gray-300, 1);
 $global-bg-color-disabled: rgba($global-color-gray-300, 1);
 
 // Part CoverColor
-$global-cover-color-0: rgba($global-color-static-black, 0);
-$global-cover-color-100: rgba($global-color-static-black, 0.06);
-$global-cover-color-200: rgba($global-color-static-black, 0.12);
+$global-cover-color-0: $global-light-cover-color-0;
+$global-cover-color-100: $global-light-cover-color-100;
+$global-cover-color-200: $global-light-cover-color-200;
 
 // Part BorderColor
 $global-border-color-100: rgba($global-color-static-black, 0.08);
