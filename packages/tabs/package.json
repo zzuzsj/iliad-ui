@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/tabs",
-    "version": "0.12.7",
+    "version": "0.12.8",
     "publishConfig": {
         "access": "public"
     },
@@ -48,8 +48,8 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.2",
-        "@iliad-ui/shared": "^0.18.7",
+        "@iliad-ui/base": "^0.11.3",
+        "@iliad-ui/shared": "^0.18.8",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

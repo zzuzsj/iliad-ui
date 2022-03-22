@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.10](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/illustrated-message@0.10.8...@iliad-ui/illustrated-message@0.10.10) (2022-03-22)
+
+**Note:** Version bump only for package @iliad-ui/illustrated-message
+
 ## [0.10.9](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/illustrated-message@0.10.8...@iliad-ui/illustrated-message@0.10.9) (2022-03-22)
 
 **Note:** Version bump only for package @iliad-ui/illustrated-message

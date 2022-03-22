@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.8](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/tray@0.6.7...@iliad-ui/tray@0.6.8) (2022-03-22)
+
+**Note:** Version bump only for package @iliad-ui/tray
+
 ## [0.6.7](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/tray@0.6.6...@iliad-ui/tray@0.6.7) (2022-02-25)
 
 **Note:** Version bump only for package @iliad-ui/tray

@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/styles",
-    "version": "0.15.0",
+    "version": "0.15.1",
     "publishConfig": {
         "access": "public"
     },
@@ -72,7 +72,7 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.2"
+        "@iliad-ui/base": "^0.11.3"
     },
     "devDependencies": {
         "@spectrum-css/commons": "^3.0.2",
