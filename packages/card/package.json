@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/card",
-    "version": "0.14.8",
+    "version": "0.14.9",
     "publishConfig": {
         "access": "public"
     },
@@ -50,7 +50,7 @@
         "@iliad-ui/icons-workflow": "^0.12.8",
         "@iliad-ui/quick-actions": "^0.8.7",
         "@iliad-ui/shared": "^0.18.7",
-        "@iliad-ui/styles": "^0.14.2",
+        "@iliad-ui/styles": "^0.15.0",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

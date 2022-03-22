@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/toast",
-    "version": "0.14.8",
+    "version": "0.15.0",
     "publishConfig": {
         "access": "public"
     },
@@ -45,7 +45,7 @@
     ],
     "dependencies": {
         "@iliad-ui/base": "^0.11.2",
-        "@iliad-ui/button": "^0.21.2",
+        "@iliad-ui/button": "^0.22.0",
         "@iliad-ui/icon": "^0.16.2",
         "@iliad-ui/icons-workflow": "^0.12.8",
         "tslib": "^2.0.0"

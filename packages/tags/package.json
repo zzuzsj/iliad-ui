@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/tags",
-    "version": "0.12.8",
+    "version": "0.12.9",
     "publishConfig": {
         "access": "public"
     },
@@ -47,7 +47,7 @@
     ],
     "dependencies": {
         "@iliad-ui/base": "^0.11.2",
-        "@iliad-ui/button": "^0.21.2",
+        "@iliad-ui/button": "^0.22.0",
         "@iliad-ui/shared": "^0.18.7",
         "tslib": "^2.0.0"
     },

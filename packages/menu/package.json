@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/menu",
-    "version": "0.16.2",
+    "version": "0.16.3",
     "publishConfig": {
         "access": "public"
     },
@@ -50,7 +50,7 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/action-button": "^0.12.2",
+        "@iliad-ui/action-button": "^0.13.0",
         "@iliad-ui/base": "^0.11.2",
         "@iliad-ui/icon": "^0.16.2",
         "@iliad-ui/icons-ui": "^0.12.8",
