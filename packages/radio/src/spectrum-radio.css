@@ -64,6 +64,7 @@ governing permissions and limitations under the License.
 :host {
     align-items: flex-start;
     display: inline-flex; /* .spectrum-Radio */
+    align-items: center;
     max-width: 100%;
     min-height: var(--spectrum-radio-height);
     position: relative;
@@ -131,9 +132,6 @@ governing permissions and limitations under the License.
     font-style: var(--spectrum-radio-text-font-style);
     font-weight: var(--spectrum-radio-text-font-weight);
     line-height: var(--spectrum-radio-text-line-height);
-    margin-top: var(
-        --spectrum-radio-label-margin-top
-    ); /* .spectrum-Radio-label */
     transition: color var(--spectrum-global-animation-duration-100, 0.13s)
         ease-in-out;
 }

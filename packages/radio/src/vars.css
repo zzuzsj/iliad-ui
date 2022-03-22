@@ -154,4 +154,8 @@ governing permissions and limitations under the License.
     --spectrum-radio-button-m-icon-color-disabled: var(
         --spectrum-alias-icon-color-disabled
     );
+    --spectrum-radio-label-margin-top: var(
+        --spectrum-global-dimension-size-100,
+        6px
+    );
 }
