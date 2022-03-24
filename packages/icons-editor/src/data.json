@@ -537,7 +537,7 @@
         "description": "",
         "width": 24,
         "height": 24,
-        "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/2a1b/fa6d/dc3ee063141e682f004ebc531e1397b1"
+        "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/fe18/9004/50a36476436fb77d35e696da66a460df"
     },
     "326:536": {
         "name": "label_closebracket",
@@ -547,7 +547,7 @@
         "description": "",
         "width": 24,
         "height": 24,
-        "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/fe18/9004/50a36476436fb77d35e696da66a460df"
+        "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/2a1b/fa6d/dc3ee063141e682f004ebc531e1397b1"
     },
     "24:18": {
         "name": "drag_handle",
@@ -1138,6 +1138,16 @@
         "width": 24,
         "height": 24,
         "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/1ace/a89a/b56bdf50d69163384344a45275f330ac"
+    },
+    "439:552": {
+        "name": "materiel",
+        "id": "439:552",
+        "key": "c8b16227ba2dbe5fdaf8f8e9385c5366e6c2dd85",
+        "file": "RTJwK4z4uVvkxsLo6Fd3Yi",
+        "description": "",
+        "width": 24,
+        "height": 24,
+        "image": "https://s3-us-west-2.amazonaws.com/figma-alpha-api/img/9894/92b0/3b49f132e584886e757ce77ac81c6d9f"
     },
     "323:573": {
         "name": "display",

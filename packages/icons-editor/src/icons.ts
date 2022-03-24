@@ -97,6 +97,7 @@ export { LayersIcon } from './icons/Layers.js';
 export { LayoutIcon } from './icons/Layout.js';
 export { LinkIcon } from './icons/Link.js';
 export { LockedIcon } from './icons/Locked.js';
+export { MaterielIcon } from './icons/Materiel.js';
 export { MenuIcon } from './icons/Menu.js';
 export { MoreHorizIcon } from './icons/MoreHoriz.js';
 export { MouseClickIcon } from './icons/MouseClick.js';
