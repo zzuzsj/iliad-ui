@@ -50,6 +50,10 @@ export class TreeItem extends SpectrumElement {
     @property({ type: Boolean, reflect: true })
     public empty = false;
 
+    // 已选中的父节点下子元素节点选中的效果
+    @property({ type: Boolean, reflect: true })
+    public subselected = false;
+
     // 降低label的透明度 但不是disabled
     @property({ type: Boolean, reflect: true })
     public negative = false;
@@ -163,7 +167,7 @@ export class TreeItem extends SpectrumElement {
     protected render(): TemplateResult {
         const initPadding = 8;
         const padding = `${this.offset * 20 + initPadding}px`;
-        this.style.setProperty('--spectrum-tree-item-padding-x', padding);
+        this.style.setProperty('--spectrum-tree-item-padding-left', padding);
         return html`
             <h3 id="heading">
                 <button

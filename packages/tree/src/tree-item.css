@@ -18,13 +18,13 @@ governing permissions and limitations under the License.
 }
 :host([dir='ltr']) .indicator {
     left: var(
-        --spectrum-tree-item-padding-x,
+        --spectrum-tree-item-padding-left,
         var(--spectrum-global-dimension-size-225)
     ); /* [dir=ltr] .spectrum-Tree-itemIndicator */
 }
 :host([dir='rtl']) .indicator {
     right: var(
-        --spectrum-tree-item-padding-x,
+        --spectrum-tree-item-padding-left,
         var(--spectrum-global-dimension-size-225)
     ); /* [dir=rtl] .spectrum-Tree-itemIndicator */
 }
@@ -87,6 +87,8 @@ governing permissions and limitations under the License.
     min-height: var(--spectrum-tree-item-height);
     background-color: var(--spectrum-tree-item-background-color);
     border-radius: var(--spectrum-tree-item-border-radius);
+    margin-bottom: var(--spectrum-tree-item-margin-y);
+    overflow: hidden;
 }
 :host([dir='ltr']) #header {
     --indicator-width: calc(
@@ -94,7 +96,7 @@ governing permissions and limitations under the License.
     );
     --padding-left: calc(
         var(
-                --spectrum-tree-item-padding-x,
+                --spectrum-tree-item-padding-left,
                 var(--spectrum-global-dimension-size-225)
             ) + var(--indicator-width) +
             var(
@@ -103,6 +105,7 @@ governing permissions and limitations under the License.
             )
     );
     padding-left: var(--padding-left);
+    padding-right: var(--spectrum-tree-item-padding-right);
 }
 :host([dir='rtl']) #header {
     --indicator-width: calc(
@@ -110,7 +113,7 @@ governing permissions and limitations under the License.
     );
     --padding-right: calc(
         var(
-                --spectrum-tree-item-padding-x,
+                --spectrum-tree-item-padding-left,
                 var(--spectrum-global-dimension-size-225)
             ) + var(--indicator-width) +
             var(
@@ -118,6 +121,7 @@ governing permissions and limitations under the License.
                 var(--spectrum-global-dimension-size-100)
             )
     );
+    padding-left: var(--spectrum-tree-item-padding-right);
     padding-right: var(--padding-right);
 }
 
@@ -141,6 +145,7 @@ governing permissions and limitations under the License.
         --spectrum-tree-item-title-text-size,
         var(--spectrum-global-dimension-font-size-50)
     );
+    color: inherit;
     font-weight: 500;
     justify-content: flex-start;
     letter-spacing: var(--spectrum-tree-item-title-tracking-actual);
@@ -150,7 +155,7 @@ governing permissions and limitations under the License.
     text-overflow: ellipsis;
     text-transform: uppercase;
     width: 100%;
-    margin-bottom: var(--spectrum-tree-item-margin-y);
+    min-height: inherit;
 }
 #header:focus {
     outline: none; /* .spectrum-Tree-itemHeader:focus */
@@ -210,24 +215,27 @@ governing permissions and limitations under the License.
         var(--spectrum-global-color-gray-600)
     ); /* .spectrum-Tree-itemIndicator */
 }
-#header {
-    color: var(
-        --spectrum-tree-text-color,
-        var(--spectrum-global-color-gray-700)
-    ); /* .spectrum-Tree-itemHeader */
-    min-height: var(--spectrum-tree-item-height);
+
+#heading {
     background-color: var(--spectrum-tree-item-background-color);
     border-radius: var(--spectrum-tree-item-border-radius);
     border-color: var(--spectrum-tree-item-border-color);
     border-width: var(--spectrum-tree-item-border-size);
     border-style: solid;
+    color: var(
+        --spectrum-tree-text-color,
+        var(--spectrum-global-color-gray-700)
+    ); /* .spectrum-Tree-itemHeader */
+    min-height: var(--spectrum-tree-item-height);
 }
-:host #header:hover,
-:host([over]) #header {
+
+:host #heading:hover,
+:host([over]) #heading {
     border-color: var(--spectrum-tree-item-border-color-hover);
 }
 
-#header ::slotted([slot='icon']) {
+#header ::slotted([slot='icon']),
+#header ::slotted([slot='label']) {
     flex-shrink: 0;
 }
 :host([dir='ltr']) #header ::slotted([slot='icon']) {
@@ -244,8 +252,8 @@ governing permissions and limitations under the License.
     margin-right: var(--spectrum-tree-icon-gap);
 }
 
-:host([selected]) #header,
-:host([selected]) #header:hover {
+:host([selected]) #heading,
+:host([selected]) #heading:hover {
     background-color: var(--spectrum-tree-item-background-color-selected);
     color: var(--spectrum-tree-item-text-color-selected);
 }
@@ -255,6 +263,18 @@ governing permissions and limitations under the License.
     color: var(--spectrum-tree-item-icon-color-selected);
 }
 :host([selected]) #content {
+    background-color: var(
+        --spectrum-tree-item-content-background-color-selected
+    );
+}
+
+:host([subselected]) #heading,
+:host([subselected]) #heading:hover {
+    background-color: var(--spectrum-tree-item-background-color-selected);
+    color: var(--spectrum-tree-item-text-color-selected);
+}
+
+:host([subselected]) #content {
     background-color: var(
         --spectrum-tree-item-content-background-color-selected
     );
@@ -274,8 +294,8 @@ governing permissions and limitations under the License.
     opacity: var(--spectrum-tree-item-opacity-negative);
 }
 
-:host([disabled]) #header,
-:host([disabled]) #header:hover {
+:host([disabled]) #heading,
+:host([disabled]) #heading:hover {
     background-color: var(--spectrum-tree-item-background-color-disabled);
     color: var(
         --spectrum-tree-text-color-disabled,
@@ -283,7 +303,7 @@ governing permissions and limitations under the License.
     );
 }
 
-:host([disabled]) #header:hover {
+:host([disabled]) #heading:hover {
     border-color: var(--spectrum-tree-item-border-color);
 }
 

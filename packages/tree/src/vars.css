@@ -15,13 +15,20 @@ governing permissions and limitations under the License.
     --spectrum-tree-item-title-tracking: var(
         --spectrum-global-font-letter-spacing-medium
     );
-    --spectrum-tree-item-padding-x: var(--spectrum-global-dimension-size-100);
-    --spectrum-tree-item-margin-y: var(--spectrum-global-dimension-size-10);
+
+    /* 会被动态覆盖 */
+    --spectrum-tree-item-padding-left: var(
+        --spectrum-global-dimension-size-100
+    );
+    --spectrum-tree-item-padding-right: var(
+        --spectrum-global-dimension-size-100
+    );
+    --spectrum-tree-item-margin-y: var(--spectrum-global-dimension-size-0);
     --spectrum-tree-item-offset-padding-x: var(
         --spectrum-global-dimension-size-0
     );
     --spectrum-tree-item-header-arrow-gap: var(
-        --spectrum-global-dimension-size-150
+        --spectrum-global-dimension-size-100
     );
     --spectrum-tree-icon-width: var(--spectrum-alias-icon-size-m);
     --spectrum-tree-icon-height: var(--spectrum-alias-icon-size-m);
@@ -50,6 +57,12 @@ governing permissions and limitations under the License.
         --spectrum-global-color-static-primary-500
     );
     --spectrum-tree-item-content-background-color-selected: var(
+        --spectrum-global-color-static-primary-100
+    );
+    --spectrum-tree-item-background-color-subselected: var(
+        --spectrum-global-color-static-primary-100
+    );
+    --spectrum-tree-item-content-background-color-subselected: var(
         --spectrum-global-color-static-primary-100
     );
     --spectrum-tree-item-border-color: var(
