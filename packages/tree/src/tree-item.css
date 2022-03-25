@@ -227,6 +227,12 @@ governing permissions and limitations under the License.
         var(--spectrum-global-color-gray-700)
     ); /* .spectrum-Tree-itemHeader */
     min-height: var(--spectrum-tree-item-height);
+    transition: background var(--spectrum-global-animation-duration-100, 0.13s)
+            ease-out,
+        border-color var(--spectrum-global-animation-duration-100, 0.13s)
+            ease-out,
+        color var(--spectrum-global-animation-duration-100, 0.13s) ease-out,
+        box-shadow var(--spectrum-global-animation-duration-100, 0.13s) ease-out;
 }
 
 :host #heading:hover,
@@ -263,18 +269,6 @@ governing permissions and limitations under the License.
     color: var(--spectrum-tree-item-icon-color-selected);
 }
 :host([selected]) #content {
-    background-color: var(
-        --spectrum-tree-item-content-background-color-selected
-    );
-}
-
-:host([subselected]) #heading,
-:host([subselected]) #heading:hover {
-    background-color: var(--spectrum-tree-item-background-color-selected);
-    color: var(--spectrum-tree-item-text-color-selected);
-}
-
-:host([subselected]) #content {
     background-color: var(
         --spectrum-tree-item-content-background-color-selected
     );

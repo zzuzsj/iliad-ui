@@ -50,10 +50,6 @@ export class TreeItem extends SpectrumElement {
     @property({ type: Boolean, reflect: true })
     public empty = false;
 
-    // 已选中的父节点下子元素节点选中的效果
-    @property({ type: Boolean, reflect: true })
-    public subselected = false;
-
     // 降低label的透明度 但不是disabled
     @property({ type: Boolean, reflect: true })
     public negative = false;

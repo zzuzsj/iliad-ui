@@ -59,12 +59,6 @@ governing permissions and limitations under the License.
     --spectrum-tree-item-content-background-color-selected: var(
         --spectrum-global-color-static-primary-100
     );
-    --spectrum-tree-item-background-color-subselected: var(
-        --spectrum-global-color-static-primary-100
-    );
-    --spectrum-tree-item-content-background-color-subselected: var(
-        --spectrum-global-color-static-primary-100
-    );
     --spectrum-tree-item-border-color: var(
         --spectrum-alias-background-color-transparent
     );
