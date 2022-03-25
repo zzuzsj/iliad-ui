@@ -40,7 +40,7 @@ governing permissions and limitations under the License.
     /* color lakeblue */--spectrum-global-color-static-lakeblue-100:#ebfbfd;--spectrum-global-color-static-lakeblue-200:#c2f2f7;--spectrum-global-color-static-lakeblue-300:#7ee4ef;--spectrum-global-color-static-lakeblue-400:#25d3e6;--spectrum-global-color-static-lakeblue-500:#04cae0;--spectrum-global-color-static-lakeblue-600:#03c0da;--spectrum-global-color-static-lakeblue-700:#02b4d3;
     /* TODO: to extend */--spectrum-global-color-static-lakeblue-800:#fff;--spectrum-global-color-static-lakeblue-900:#fff;
     /* color magenta */--spectrum-global-color-static-magenta-100:#fff1f3;--spectrum-global-color-static-magenta-200:#ffd4db;--spectrum-global-color-static-magenta-300:#ffa4b2;--spectrum-global-color-static-magenta-400:#ff667e;--spectrum-global-color-static-magenta-500:#ff4f6a;--spectrum-global-color-static-magenta-600:#ff4157;--spectrum-global-color-static-magenta-700:#ff2e3d;
-    /* TODO: to extend */--spectrum-global-color-static-magenta-800:#fff;--spectrum-global-color-static-magenta-900:#fff;--spectrum-global-color-opacity-100:1;--spectrum-global-color-opacity-90:0.9;--spectrum-global-color-opacity-80:0.8;--spectrum-global-color-opacity-60:0.6;--spectrum-global-color-opacity-50:0.5;--spectrum-global-color-opacity-42:0.42;--spectrum-global-color-opacity-40:0.4;--spectrum-global-color-opacity-30:0.3;--spectrum-global-color-opacity-25:0.25;--spectrum-global-color-opacity-20:0.2;--spectrum-global-color-opacity-15:0.15;--spectrum-global-color-opacity-10:0.1;--spectrum-global-color-opacity-8:0.08;--spectrum-global-color-opacity-7:0.07;--spectrum-global-color-opacity-6:0.06;--spectrum-global-color-opacity-5:0.05;--spectrum-global-color-opacity-4:0.04;--spectrum-global-color-primary-cover-100:rgba(36,114,233,.53);--spectrum-global-color-primary-cover-200:rgba(35,111,226,.56);--spectrum-global-color-red-cover-100:rgba(238,80,62,.53);--spectrum-global-color-red-cover-200:rgba(230,77,60,.56);--spectrum-global-color-green-cover-100:rgba(7,178,110,.53);--spectrum-global-color-green-cover-200:rgba(7,173,106,.56);--spectrum-global-color-gray-cover-100:hsla(0,0%,85%,.53);--spectrum-global-color-gray-cover-200:hsla(0,0%,83%,.56);--spectrum-global-color-gray-100-cover-100:hsla(0,0%,97%,.53);--spectrum-global-color-gray-100-cover-200:hsla(0,0%,94%,.56);--spectrum-global-color-gray-200-cover-100:hsla(0,0%,95%,.53);--spectrum-global-color-gray-200-cover-200:hsla(0,0%,92%,.56);--spectrum-global-color-gray-300-cover-100:hsla(0,0%,93%,.53);--spectrum-global-color-gray-300-cover-200:hsla(0,0%,90%,.56);--spectrum-global-color-gray-400-cover-100:hsla(0,0%,89%,.53);--spectrum-global-color-gray-400-cover-200:hsla(0,0%,87%,.56);--spectrum-global-color-gray-600-cover-100:hsla(0,0%,74%,.53);--spectrum-global-color-gray-600-cover-200:hsla(0,0%,71%,.56);--spectrum-global-color-gray-700-cover-100:hsla(0,0%,56%,.53);--spectrum-global-color-gray-700-cover-200:hsla(0,0%,55%,.56);--spectrum-global-color-gray-800-cover-100:rgba(69,69,69,.53);--spectrum-global-color-gray-800-cover-200:rgba(67,67,67,.56);--spectrum-global-color-gray-900-cover-100:rgba(30,30,30,.53);--spectrum-global-color-gray-900-cover-200:#1f1f1f}
+    /* TODO: to extend */--spectrum-global-color-static-magenta-800:#fff;--spectrum-global-color-static-magenta-900:#fff;--spectrum-global-color-opacity-100:1;--spectrum-global-color-opacity-90:0.9;--spectrum-global-color-opacity-80:0.8;--spectrum-global-color-opacity-60:0.6;--spectrum-global-color-opacity-50:0.5;--spectrum-global-color-opacity-42:0.42;--spectrum-global-color-opacity-40:0.4;--spectrum-global-color-opacity-30:0.3;--spectrum-global-color-opacity-25:0.25;--spectrum-global-color-opacity-20:0.2;--spectrum-global-color-opacity-15:0.15;--spectrum-global-color-opacity-10:0.1;--spectrum-global-color-opacity-8:0.08;--spectrum-global-color-opacity-7:0.07;--spectrum-global-color-opacity-6:0.06;--spectrum-global-color-opacity-5:0.05;--spectrum-global-color-opacity-4:0.04;--spectrum-global-color-light-cover-0:transparent;--spectrum-global-color-light-cover-100:rgba(0,0,0,.06);--spectrum-global-color-light-cover-200:rgba(0,0,0,.12);--spectrum-global-color-dark-cover-0:hsla(0,0%,100%,0);--spectrum-global-color-dark-cover-100:hsla(0,0%,100%,.06);--spectrum-global-color-dark-cover-200:hsla(0,0%,100%,.12);--spectrum-global-color-primary-cover-100:rgba(36,114,233,.53);--spectrum-global-color-primary-cover-200:rgba(35,111,226,.56);--spectrum-global-color-red-cover-100:rgba(238,80,62,.53);--spectrum-global-color-red-cover-200:rgba(230,77,60,.56);--spectrum-global-color-green-cover-100:rgba(7,178,110,.53);--spectrum-global-color-green-cover-200:rgba(7,173,106,.56);--spectrum-global-color-gray-cover-100:hsla(0,0%,85%,.53);--spectrum-global-color-gray-cover-200:hsla(0,0%,83%,.56);--spectrum-global-color-gray-100-cover-100:hsla(0,0%,97%,.53);--spectrum-global-color-gray-100-cover-200:hsla(0,0%,94%,.56);--spectrum-global-color-gray-200-cover-100:hsla(0,0%,95%,.53);--spectrum-global-color-gray-200-cover-200:hsla(0,0%,92%,.56);--spectrum-global-color-gray-300-cover-100:hsla(0,0%,93%,.53);--spectrum-global-color-gray-300-cover-200:hsla(0,0%,90%,.56);--spectrum-global-color-gray-400-cover-100:hsla(0,0%,89%,.53);--spectrum-global-color-gray-400-cover-200:hsla(0,0%,87%,.56);--spectrum-global-color-gray-600-cover-100:hsla(0,0%,74%,.53);--spectrum-global-color-gray-600-cover-200:hsla(0,0%,71%,.56);--spectrum-global-color-gray-700-cover-100:hsla(0,0%,56%,.53);--spectrum-global-color-gray-700-cover-200:hsla(0,0%,55%,.56);--spectrum-global-color-gray-800-cover-100:rgba(69,69,69,.53);--spectrum-global-color-gray-800-cover-200:rgba(67,67,67,.56);--spectrum-global-color-gray-900-cover-100:rgba(30,30,30,.53);--spectrum-global-color-gray-900-cover-200:#1f1f1f}
 /*
 Copyright 2020 Adobe. All rights reserved.
 Copyright 2021 Gaoding. All rights reserved.
@@ -725,7 +725,7 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */:root{--spectrum-semantic-negative-color-background:var(
-        --spectrum-global-color-static-red-700
+        --spectrum-global-color-red-500
     );--spectrum-semantic-negative-color-default:var(
         --spectrum-global-color-red-500
     );--spectrum-semantic-negative-color-state-hover:var(
@@ -747,13 +747,13 @@ governing permissions and limitations under the License.
     );--spectrum-semantic-negative-color-state-focus:var(
         --spectrum-global-color-red-400
     );--spectrum-semantic-negative-background-color-default:var(
-        --spectrum-global-color-static-red-600
+        --spectrum-global-color-red-600
     );--spectrum-semantic-negative-background-color-hover:var(
-        --spectrum-global-color-static-red-700
+        --spectrum-global-color-red-700
     );--spectrum-semantic-negative-background-color-down:var(
-        --spectrum-global-color-static-red-800
+        --spectrum-global-color-red-800
     );--spectrum-semantic-negative-background-color-key-focus:var(
-        --spectrum-global-color-static-red-700
+        --spectrum-global-color-red-700
     );--spectrum-semantic-notice-color-background:var(
         --spectrum-global-color-static-orange-700
     );--spectrum-semantic-notice-color-default:var(
@@ -783,7 +783,7 @@ governing permissions and limitations under the License.
     );--spectrum-semantic-notice-background-color-key-focus:var(
         --spectrum-global-color-static-orange-700
     );--spectrum-semantic-positive-color-background:var(
-        --spectrum-global-color-static-green-700
+        --spectrum-global-color-green-500
     );--spectrum-semantic-positive-color-default:var(
         --spectrum-global-color-green-500
     );--spectrum-semantic-positive-color-dark:var(
@@ -803,15 +803,15 @@ governing permissions and limitations under the License.
     );--spectrum-semantic-positive-color-state-focus:var(
         --spectrum-global-color-green-400
     );--spectrum-semantic-positive-background-color-default:var(
-        --spectrum-global-color-static-green-600
+        --spectrum-global-color-green-500
     );--spectrum-semantic-positive-background-color-hover:var(
-        --spectrum-global-color-static-green-700
+        --spectrum-global-color-green-600
     );--spectrum-semantic-positive-background-color-down:var(
-        --spectrum-global-color-static-green-800
+        --spectrum-global-color-green-700
     );--spectrum-semantic-positive-background-color-key-focus:var(
-        --spectrum-global-color-static-green-700
+        --spectrum-global-color-green-600
     );--spectrum-semantic-informative-color-background:var(
-        --spectrum-global-color-static-blue-700
+        --spectrum-global-color-blue-500
     );--spectrum-semantic-informative-color-default:var(
         --spectrum-global-color-blue-500
     );--spectrum-semantic-informative-color-dark:var(
@@ -831,13 +831,13 @@ governing permissions and limitations under the License.
     );--spectrum-semantic-informative-color-state-focus:var(
         --spectrum-global-color-blue-400
     );--spectrum-semantic-informative-background-color-default:var(
-        --spectrum-global-color-static-blue-600
+        --spectrum-global-color-blue-600
     );--spectrum-semantic-informative-background-color-hover:var(
-        --spectrum-global-color-static-blue-700
+        --spectrum-global-color-blue-700
     );--spectrum-semantic-informative-background-color-down:var(
-        --spectrum-global-color-static-blue-800
+        --spectrum-global-color-blue-800
     );--spectrum-semantic-informative-background-color-key-focus:var(
-        --spectrum-global-color-static-blue-700
+        --spectrum-global-color-blue-700
     );--spectrum-semantic-cta-color-background-default:var(
         --spectrum-global-color-static-primary-500
     );--spectrum-semantic-cta-color-background-hover:var(
