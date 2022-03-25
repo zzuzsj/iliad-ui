@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/color-area",
-    "version": "0.8.9",
+    "version": "0.8.10",
     "publishConfig": {
         "access": "public"
     },
@@ -45,8 +45,8 @@
     ],
     "dependencies": {
         "@ctrl/tinycolor": "^3.3.3",
-        "@iliad-ui/base": "^0.11.3",
-        "@iliad-ui/color-handle": "^0.5.9",
+        "@iliad-ui/base": "^0.11.4",
+        "@iliad-ui/color-handle": "^0.5.10",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

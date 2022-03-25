@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/tray",
-    "version": "0.6.8",
+    "version": "0.6.9",
     "publishConfig": {
         "access": "public"
     },
@@ -44,9 +44,9 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.3",
-        "@iliad-ui/modal": "^0.7.8",
-        "@iliad-ui/underlay": "^0.10.8",
+        "@iliad-ui/base": "^0.11.4",
+        "@iliad-ui/modal": "^0.7.9",
+        "@iliad-ui/underlay": "^0.10.9",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

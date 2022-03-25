@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.11](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/tags@0.12.10...@iliad-ui/tags@0.12.11) (2022-03-25)
+
+**Note:** Version bump only for package @iliad-ui/tags
+
 ## [0.12.10](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/tags@0.12.8...@iliad-ui/tags@0.12.10) (2022-03-22)
 
 **Note:** Version bump only for package @iliad-ui/tags

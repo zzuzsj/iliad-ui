@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/popover",
-    "version": "0.14.9",
+    "version": "0.14.10",
     "publishConfig": {
         "access": "public"
     },
@@ -46,9 +46,9 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.3",
-        "@iliad-ui/icons-editor": "^0.3.0",
-        "@iliad-ui/overlay": "^0.17.10",
+        "@iliad-ui/base": "^0.11.4",
+        "@iliad-ui/icons-editor": "^0.3.1",
+        "@iliad-ui/overlay": "^0.17.11",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

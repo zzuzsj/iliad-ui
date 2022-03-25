@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/card",
-    "version": "0.14.10",
+    "version": "0.14.11",
     "publishConfig": {
         "access": "public"
     },
@@ -44,13 +44,13 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/asset": "^0.8.8",
-        "@iliad-ui/base": "^0.11.3",
-        "@iliad-ui/checkbox": "^0.14.9",
-        "@iliad-ui/icons-workflow": "^0.12.9",
-        "@iliad-ui/quick-actions": "^0.8.8",
-        "@iliad-ui/shared": "^0.18.8",
-        "@iliad-ui/styles": "^0.15.1",
+        "@iliad-ui/asset": "^0.8.9",
+        "@iliad-ui/base": "^0.11.4",
+        "@iliad-ui/checkbox": "^0.14.10",
+        "@iliad-ui/icons-workflow": "^0.12.10",
+        "@iliad-ui/quick-actions": "^0.8.9",
+        "@iliad-ui/shared": "^0.18.9",
+        "@iliad-ui/styles": "^0.15.2",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

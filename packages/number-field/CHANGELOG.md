@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.12](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/number-field@0.7.11...@iliad-ui/number-field@0.7.12) (2022-03-25)
+
+**Note:** Version bump only for package @iliad-ui/number-field
+
 ## [0.7.11](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/number-field@0.7.9...@iliad-ui/number-field@0.7.11) (2022-03-22)
 
 **Note:** Version bump only for package @iliad-ui/number-field

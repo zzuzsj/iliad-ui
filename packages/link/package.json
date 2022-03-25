@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/link",
-    "version": "0.13.8",
+    "version": "0.13.9",
     "publishConfig": {
         "access": "public"
     },
@@ -44,8 +44,8 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.3",
-        "@iliad-ui/shared": "^0.18.8",
+        "@iliad-ui/base": "^0.11.4",
+        "@iliad-ui/shared": "^0.18.9",
         "tslib": "^2.0.0"
     },
     "devDependencies": {
