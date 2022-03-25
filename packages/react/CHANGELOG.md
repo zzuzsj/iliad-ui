@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/react@0.11.0...@iliad-ui/react@0.12.0) (2022-03-25)
+
+### Features
+
+-   react 更新 ([a996630](https://github.com/gaoding-inc/iliad-ui/commit/a996630577c0c647330975fce5f1917c46e18f37))
+
 # [0.11.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/react@0.10.3...@iliad-ui/react@0.11.0) (2022-03-25)
 
 ### Features
