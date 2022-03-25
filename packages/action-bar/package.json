@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/action-bar",
-    "version": "0.6.15",
+    "version": "0.6.16",
     "publishConfig": {
         "access": "public"
     },
@@ -45,7 +45,7 @@
     ],
     "dependencies": {
         "@iliad-ui/base": "^0.11.3",
-        "@iliad-ui/popover": "^0.14.8",
+        "@iliad-ui/popover": "^0.14.9",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

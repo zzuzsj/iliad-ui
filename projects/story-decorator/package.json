@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/story-decorator",
-    "version": "0.9.15",
+    "version": "0.9.16",
     "publishConfig": {
         "access": "public"
     },
@@ -49,7 +49,7 @@
         "@iliad-ui/field-label": "^0.9.10",
         "@iliad-ui/menu": "^0.16.4",
         "@iliad-ui/overlay": "^0.17.10",
-        "@iliad-ui/picker": "^0.13.16",
+        "@iliad-ui/picker": "^0.13.17",
         "@iliad-ui/switch": "^0.11.9",
         "@iliad-ui/theme": "^0.14.11",
         "tslib": "^2.0.0"
