@@ -32,16 +32,16 @@ governing permissions and limitations under the License.
 :host {
     --spectrum-icon-size-s: var(
         --spectrum-alias-workflow-icon-size-s,
-        var(--spectrum-global-dimension-size-200)
+        var(--spectrum-alias-icon-size-s)
     ); /* .spectrum-Icon */
     --spectrum-icon-size-m: var(
         --spectrum-alias-workflow-icon-size-m,
-        var(--spectrum-global-dimension-size-225)
+        var(--spectrum-alias-icon-size-m)
     );
-    --spectrum-icon-size-l: var(--spectrum-alias-workflow-icon-size-l);
+    --spectrum-icon-size-l: var(--spectrum-alias-icon-size-l);
     --spectrum-icon-size-xl: var(
         --spectrum-alias-workflow-icon-size-xl,
-        var(--spectrum-global-dimension-size-275)
+        var(--spectrum-alias-icon-size-xl)
     );
     --spectrum-icon-size-xxl: var(--spectrum-global-dimension-size-400);
 }

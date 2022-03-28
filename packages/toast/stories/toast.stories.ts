@@ -29,7 +29,6 @@ const toast = ({
         ?open=${open}
         ?closeable=${closeable}
     >
-        <sp-icon-editor-info slot="icon"></sp-icon-editor-info>
         ${content}
         <sp-button slot="action" variant="overBackground" quiet>Undo</sp-button>
     </sp-toast>
