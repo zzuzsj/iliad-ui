@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.16.5](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icon@0.16.4...@iliad-ui/icon@0.16.5) (2022-03-28)
+
+### Bug Fixes
+
+-   样式优化 ([384ad6c](https://github.com/gaoding-inc/iliad-ui/commit/384ad6c369aa2939103c13eb4cf450b423a53112))
+
 ## [0.16.4](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icon@0.16.3...@iliad-ui/icon@0.16.4) (2022-03-25)
 
 **Note:** Version bump only for package @iliad-ui/icon

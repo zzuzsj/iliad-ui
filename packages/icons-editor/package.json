@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/icons-editor",
-    "version": "0.3.1",
+    "version": "0.3.2",
     "publishConfig": {
         "access": "public"
     },
@@ -46,7 +46,7 @@
     ],
     "dependencies": {
         "@iliad-ui/base": "^0.11.4",
-        "@iliad-ui/icon": "^0.16.4",
+        "@iliad-ui/icon": "^0.16.5",
         "tslib": "^2.0.0"
     },
     "devDependencies": {
