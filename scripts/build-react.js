@@ -77,11 +77,19 @@ function formatCode(string) {
     });
 }
 
+// 对于部分组件 他的触发事件在组件外部 所以cem不会讲这个事件加入到custom-elements.json 需要手动添加
+const AppendEvents = {
+    SliderHandle: ['input', 'change'],
+};
+
 components.map((component) => {
     const { name } = component;
     const componentFile = path.join('./src', `${name}.ts`);
-
+    const appendEvents = (AppendEvents[name] || []).map((cv) => {
+        return { name: cv };
+    });
     const events = (component.events || [])
+        .concat(appendEvents)
         .map((event) => {
             return `'${event.name}': '${event.name}'`;
         })

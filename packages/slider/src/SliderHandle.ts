@@ -154,6 +154,16 @@ export class SliderHandle extends Focusable {
         this.dispatchEvent(inputEvent);
     }
 
+    public dispatchChangeEvent(): void {
+        const changeEvent = new Event('change', {
+            bubbles: true,
+            composed: true,
+            cancelable: true,
+        });
+
+        this.dispatchEvent(changeEvent);
+    }
+
     protected _numberFormatCache:
         | { numberFormat: NumberFormatter; language: string }
         | undefined;

@@ -327,7 +327,11 @@ export class Slider extends ObserveSlotText(SliderHandle, '') {
         ];
 
         return html`
-            <div id="track" @pointerdown=${this.handleTrackPointerdown}>
+            <div
+                id="track"
+                @pointerdown=${this.handleTrackPointerdown}
+                @pointerup=${this.handleTrackPointerUp}
+            >
                 <div id="controls">
                     ${repeat(
                         trackItems,
@@ -349,6 +353,10 @@ export class Slider extends ObserveSlotText(SliderHandle, '') {
             return;
         }
         this.handleController.beginTrackDrag(event);
+    }
+
+    private handleTrackPointerUp(): void {
+        this.dispatchChangeEvent();
     }
 
     private handleNumberInput(event: Event & { target: NumberField }): void {
@@ -373,6 +381,7 @@ export class Slider extends ObserveSlotText(SliderHandle, '') {
                 // When stepper is not active, sythesize an `input` event so that the
                 // `change` event isn't surprising.
                 this.dispatchInputEvent();
+                this.dispatchChangeEvent();
             }
         }
     }
