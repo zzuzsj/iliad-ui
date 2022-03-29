@@ -10,48 +10,8 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
-:host {
-    --spectrum-panel-background-color: var(--spectrum-global-color-gray-100);
-    --spectrum-panel-divider-color: var(--spectrum-alias-border-color-light);
-    --spectrum-panel-divider-width: var(--spectrum-alias-border-size-thin);
-    --spectrum-panel-border-color: var(--spectrum-alias-border-color-dark);
-    --spectrum-panel-box-shadow: var(--spectrum-global-shadow-static-m);
-    --spectrum-panel-border-size: var(--spectrum-global-dimension-size-0);
-    --spectrum-panel-border-radius: var(--spectrum-alias-border-radius-large);
-    --spectrum-panel-padding: var(--spectrum-global-dimension-size-200);
-    --spectrum-panel-header-padding-left: var(
-        --spectrum-global-dimension-size-200
-    );
-    --spectrum-panel-header-padding-right: var(
-        --spectrum-global-dimension-size-100
-    );
-    --spectrum-panel-icon-gap: var(--spectrum-global-dimension-size-50);
-    --spectrum-panel-header-height: var(--spectrum-alias-control-height-xl);
-    --spectrum-panel-min-width: var(
-        --spectrum-global-dimension-static-size-3200
-    );
-    --spectrum-panel-content-min-height: var(
-        --spectrum-global-dimension-static-size-1000
-    );
-    --spectrum-panel-footer-margin-top: var(--spectrum-panel-padding);
-    --spectrum-panel-title-color: var(--spectrum-alias-text-color-primary);
-    --spectrum-panel-icon-main-color: var(--spectrum-alias-icon-color-primary);
-    --spectrum-panel-icon-others-color: var(
-        --spectrum-alias-icon-color-tertiary
-    );
-    --spectrum-panel-title-line-height: var(
-        --spectrum-global-font-line-height-medium
-    );
-    --spectrum-panel-title-font-size: var(--spectrum-alias-font-size-m);
-    --spectrum-panel-title-font-weight: var(--spectrum-alias-font-weight-l);
-}
+@import './vars.css';
 
-:host([open]) {
-    opacity: 1;
-    pointer-events: auto;
-    transition-delay: 0ms;
-    visibility: visible; /* .spectrum-Popover.is-open */
-}
 :host {
     border-radius: var(
         --spectrum-panel-border-radius,
@@ -63,7 +23,7 @@ governing permissions and limitations under the License.
         var(--spectrum-alias-border-size-thin)
     );
     box-sizing: border-box;
-    display: inline-flex; /* .spectrum-Popover */
+    display: inline-flex;
     flex-direction: column;
     min-width: var(
         --spectrum-panel-min-width,
@@ -71,9 +31,6 @@ governing permissions and limitations under the License.
     );
     outline: none;
     position: absolute;
-}
-
-:host {
     background-color: var(--spectrum-panel-background-color);
     border-color: var(
         --spectrum-panel-border-color,
@@ -81,6 +38,11 @@ governing permissions and limitations under the License.
     );
     box-shadow: var(--spectrum-panel-box-shadow);
     padding: 0 0 var(--spectrum-panel-padding) 0;
+    transform: translate3d(
+        var(--spectrum-panel-translate-x),
+        var(--spectrum-panel-translate-y),
+        0
+    );
 }
 
 :host .panel-header {
@@ -93,10 +55,12 @@ governing permissions and limitations under the License.
     justify-content: space-between;
     box-sizing: border-box;
 }
+
 :host .panel-header[divider] {
     border-bottom: var(--spectrum-panel-divider-width) solid
         var(--spectrum-panel-divider-color);
 }
+
 :host .panel-header .header-block {
     display: flex;
     align-items: center;
@@ -104,6 +68,7 @@ governing permissions and limitations under the License.
     height: 100%;
     overflow: hidden;
 }
+
 :host .panel-header .header-block.header-others {
     justify-content: flex-end;
 }
@@ -115,25 +80,33 @@ governing permissions and limitations under the License.
     font-weight: var(--spectrum-panel-title-font-weight);
     margin-right: var(--spectrum-panel-icon-gap);
 }
-:host .panel-header .header-main .back-icon {
+
+:host .panel-header .header-main .back-icon,
+:host ::slotted([slot='icon']) {
     color: var(--spectrum-panel-icon-main-color);
     margin-right: var(--spectrum-panel-icon-gap);
+    cursor: pointer;
 }
+
 :host .panel-header .header-main .close {
     color: var(--spectrum-panel-icon-others-color);
     margin-left: var(--spectrum-panel-icon-gap);
 }
+
 ::slotted([slot='info']) {
     color: var(--spectrum-panel-icon-others-color);
 }
+
 ::slotted([slot='more']) {
     color: var(--spectrum-panel-icon-others-color);
 }
+
 :host .panel-content {
     width: 100%;
     height: auto;
     min-height: var(--spectrum-panel-content-min-height);
 }
+
 :host .panel-footer {
     display: flex;
     align-items: center;
@@ -141,6 +114,13 @@ governing permissions and limitations under the License.
     margin-top: var(--spectrum-panel-footer-margin-top);
     padding: 0 var(--spectrum-panel-padding);
     box-sizing: border-box;
+}
+
+:host([open]) {
+    opacity: 1;
+    pointer-events: auto;
+    transition-delay: 0ms;
+    visibility: visible;
 }
 
 ::slotted(*) {

@@ -17,11 +17,20 @@ governing permissions and limitations under the License.
     );
 
     /* 会被动态覆盖 */
+    --spectrum-tree-item-offset-left: 0px;
+    --spectrum-tree-item-offset: var(
+        --spectrum-tree-item-offset-left,
+        var(--spectrum-global-dimension-size-0)
+    );
     --spectrum-tree-item-padding-left: var(
-        --spectrum-global-dimension-size-100
+        --spectrum-global-dimension-size-200
     );
     --spectrum-tree-item-padding-right: var(
         --spectrum-global-dimension-size-100
+    );
+    --spectrum-tree-item-indicator-left: calc(
+        var(--spectrum-tree-item-padding-left) +
+            var(--spectrum-tree-item-offset)
     );
     --spectrum-tree-item-margin-y: var(--spectrum-global-dimension-size-0);
     --spectrum-tree-item-offset-padding-x: var(
@@ -34,7 +43,7 @@ governing permissions and limitations under the License.
     --spectrum-tree-icon-height: var(--spectrum-alias-icon-size-m);
     --spectrum-tree-icon-padding: var(--spectrum-global-dimension-size-0);
     --spectrum-tree-item-border-size: var(--spectrum-alias-border-size-thin);
-    --spectrum-tree-icon-gap: var(--spectrum-alias-item-workflow-icon-gap-m);
+    --spectrum-tree-icon-gap: var(--spectrum-global-dimension-size-50);
     --spectrum-tree-item-border-left-size-key-focus: var(
         --spectrum-alias-border-size-thick
     );

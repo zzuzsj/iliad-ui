@@ -125,6 +125,15 @@ const Template = (
 ): TemplateResult => {
     return html`
         <sp-tree-item
+            offset="0"
+            ?empty=${true}
+            ?over=${over}
+            label="Over Tree Item"
+        >
+            <sp-icon-edit slot="icon"></sp-icon-edit>
+            <sp-icon-edit slot="value"></sp-icon-edit>
+        </sp-tree-item>
+        <sp-tree-item
             label="Opened Tree Item"
             offset="0"
             ?disabled=${disabled}
@@ -164,6 +173,7 @@ const Template = (
         >
             <sp-icon-edit slot="icon"></sp-icon-edit>
             <sp-textfield slot="label" value="Test Input"></sp-textfield>
+            <sp-icon-edit slot="value"></sp-icon-edit>
             <sp-icon-edit slot="value"></sp-icon-edit>
         </sp-tree-item>
         <sp-tree-item

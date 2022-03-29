@@ -246,3 +246,49 @@ export const FullSlot = ({
 };
 FullSlot.args = args;
 FullSlot.argTypes = argTypes;
+
+export const MovePanel = ({
+    content,
+    title,
+    confirm,
+    cancel,
+}: {
+    content: string;
+    title: string;
+    confirm: string;
+    cancel: string;
+}): TemplateResult => {
+    return html`
+        <div style="color: var(--spectrum-global-color-gray-800)">
+            <sp-panel
+                variant="default"
+                title="${title}"
+                open
+                dismissable
+                backable
+                moveable
+                style="max-width: 320px"
+                confirm-label="${confirm}"
+                cancel-label="${cancel}"
+                @back=${() => {
+                    alert('back');
+                }}
+                @close=${() => {
+                    alert('close');
+                }}
+                @confirm=${() => {
+                    alert('confirm');
+                }}
+                @cancel=${() => {
+                    alert('cancel');
+                }}
+            >
+                <sp-icon-edit slot="info"></sp-icon-edit>
+                <sp-icon-edit slot="more"></sp-icon-edit>
+                <div style="font-size: 14px; padding: 10px">${content}</div>
+            </sp-panel>
+        </div>
+    `;
+};
+MovePanel.args = args;
+MovePanel.argTypes = argTypes;

@@ -18,14 +18,14 @@ governing permissions and limitations under the License.
 }
 :host([dir='ltr']) .indicator {
     left: var(
-        --spectrum-tree-item-padding-left,
-        var(--spectrum-global-dimension-size-225)
+        --spectrum-tree-item-indicator-left,
+        var(--spectrum-global-dimension-size-200)
     ); /* [dir=ltr] .spectrum-Tree-itemIndicator */
 }
 :host([dir='rtl']) .indicator {
     right: var(
-        --spectrum-tree-item-padding-left,
-        var(--spectrum-global-dimension-size-225)
+        --spectrum-tree-item-indicator-left,
+        var(--spectrum-global-dimension-size-200)
     ); /* [dir=rtl] .spectrum-Tree-itemIndicator */
 }
 :host([dir='rtl']) .indicator {
@@ -95,10 +95,8 @@ governing permissions and limitations under the License.
         var(--spectrum-tree-icon-width) + 2 * var(--spectrum-tree-icon-padding)
     );
     --padding-left: calc(
-        var(
-                --spectrum-tree-item-padding-left,
-                var(--spectrum-global-dimension-size-225)
-            ) + var(--indicator-width) +
+        var(--spectrum-tree-item-offset) +
+            var(--spectrum-tree-item-padding-left) + var(--indicator-width) +
             var(
                 --spectrum-tree-item-header-arrow-gap,
                 var(--spectrum-global-dimension-size-100)
@@ -112,10 +110,8 @@ governing permissions and limitations under the License.
         var(--spectrum-tree-icon-width) + 2 * var(--spectrum-tree-icon-padding)
     );
     --padding-right: calc(
-        var(
-                --spectrum-tree-item-padding-left,
-                var(--spectrum-global-dimension-size-225)
-            ) + var(--indicator-width) +
+        var(--spectrum-tree-item-offset) +
+            var(--spectrum-tree-item-padding-left) + var(--indicator-width) +
             var(
                 --spectrum-tree-item-header-arrow-gap,
                 var(--spectrum-global-dimension-size-100)
@@ -155,7 +151,11 @@ governing permissions and limitations under the License.
     text-overflow: ellipsis;
     text-transform: uppercase;
     width: 100%;
-    min-height: inherit;
+    min-height: calc(
+        var(--spectrum-tree-item-height) - 2 *
+            var(--spectrum-tree-item-border-size)
+    );
+    padding: 0;
 }
 #header:focus {
     outline: none; /* .spectrum-Tree-itemHeader:focus */

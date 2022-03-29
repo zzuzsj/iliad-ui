@@ -161,9 +161,10 @@ export class TreeItem extends SpectrumElement {
     }
 
     protected render(): TemplateResult {
-        const initPadding = 8;
-        const padding = `${this.offset * 20 + initPadding}px`;
-        this.style.setProperty('--spectrum-tree-item-padding-left', padding);
+        this.style.setProperty(
+            '--spectrum-tree-item-offset-left',
+            `${this.offset * 20}px`
+        );
         return html`
             <h3 id="heading">
                 <button
