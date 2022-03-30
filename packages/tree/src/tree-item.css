@@ -227,9 +227,10 @@ governing permissions and limitations under the License.
         var(--spectrum-global-color-gray-700)
     ); /* .spectrum-Tree-itemHeader */
     min-height: var(--spectrum-tree-item-height);
-    transition: background var(--spectrum-global-animation-duration-100, 0.13s)
+    transition: background var(--spectrum-tree-item-animation-duration, 0.13s)
             ease-out,
-        border-color var(--spectrum-global-animation-duration-100, 0.13s)
+        color var(--spectrum-tree-item-animation-duration, 0.13s) ease-out,
+        border-color var(--spectrum-tree-item-animation-duration, 0.13s)
             ease-out;
 }
 

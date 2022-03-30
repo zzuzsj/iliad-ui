@@ -494,6 +494,7 @@ governing permissions and limitations under the License.
     flex-shrink: 0;
     max-height: 100%;
     color: var(--spectrum-radio-button-m-icon-color);
+    display: block;
 }
 :host(:hover) ::slotted([slot='icon']) {
     color: var(--spectrum-radio-button-m-icon-color-hover);

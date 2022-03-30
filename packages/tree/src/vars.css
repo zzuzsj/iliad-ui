@@ -23,7 +23,7 @@ governing permissions and limitations under the License.
         var(--spectrum-global-dimension-size-0)
     );
     --spectrum-tree-item-padding-left: var(
-        --spectrum-global-dimension-size-200
+        --spectrum-global-dimension-size-150
     );
     --spectrum-tree-item-padding-right: var(
         --spectrum-global-dimension-size-100
@@ -106,7 +106,7 @@ governing permissions and limitations under the License.
     --spectrum-tree-item-line-height: var(
         --spectrum-global-font-line-height-medium
     );
-    --spectrum-tree-animation-duration: var(
+    --spectrum-tree-item-animation-duration: var(
         --spectrum-global-animation-duration-100,
         130ms
     );
