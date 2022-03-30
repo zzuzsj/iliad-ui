@@ -25,6 +25,8 @@ export const Panel = createComponent(
         back: 'back',
         confirm: 'confirm',
         cancel: 'cancel',
+        move: 'move',
+        moveEnd: 'moveEnd',
     },
     'Panel'
 );

@@ -119,7 +119,7 @@ components.map((component) => {
     console.log(`✓ <${component.tagName}>`);
 });
 
-// 增加手动导出部分
+// 增加手动导出部分(build:react 不会更新对应src/ts文件，有更新需要手动更新)
 mainExports.push(`
     /** 手动添加 */
     export * from './src/Picker';

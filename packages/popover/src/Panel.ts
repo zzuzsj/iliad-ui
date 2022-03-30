@@ -32,6 +32,8 @@ import '@iliad-ui/icons-editor/icons/sp-icon-editor-close.js';
 import '@iliad-ui/icons-editor/icons/sp-icon-editor-arrow-left.js';
 import { streamingListener } from '@iliad-ui/base/src/streaming-listener.js';
 
+type IVector = { x: number; y: number };
+
 /**
  * @element sp-panel
  *
@@ -39,8 +41,6 @@ import { streamingListener } from '@iliad-ui/base/src/streaming-listener.js';
  * @attr {Boolean} open - The open state of the panel
  * @attr {Boolean} dialog - Adds some padding to the panel
  */
-
-type IVector = { x: number; y: number };
 export class Panel extends FocusVisiblePolyfillMixin(
     ObserveSlotPresence(SpectrumElement, [
         '[slot="info"]',
