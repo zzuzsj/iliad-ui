@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/checkbox",
-    "version": "0.14.11",
+    "version": "0.14.12",
     "publishConfig": {
         "access": "public"
     },
@@ -45,8 +45,8 @@
     ],
     "dependencies": {
         "@iliad-ui/base": "^0.11.4",
-        "@iliad-ui/icon": "^0.16.5",
-        "@iliad-ui/icons-ui": "^0.12.11",
+        "@iliad-ui/icon": "^0.16.6",
+        "@iliad-ui/icons-ui": "^0.12.12",
         "@iliad-ui/shared": "^0.18.9",
         "tslib": "^2.0.0"
     },

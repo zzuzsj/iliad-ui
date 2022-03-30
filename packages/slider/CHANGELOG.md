@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/slider@0.16.12...@iliad-ui/slider@0.17.0) (2022-03-30)
+
+### Features
+
+-   增加 slider change 事件 ([b60072e](https://github.com/gaoding-inc/iliad-ui/commit/b60072ec4e26308955acbf1d1be7ef99485e589a))
+
 ## [0.16.12](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/slider@0.16.11...@iliad-ui/slider@0.16.12) (2022-03-28)
 
 **Note:** Version bump only for package @iliad-ui/slider

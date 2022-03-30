@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.22.4](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/button@0.22.3...@iliad-ui/button@0.22.4) (2022-03-30)
+
+**Note:** Version bump only for package @iliad-ui/button
+
 ## [0.22.3](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/button@0.22.2...@iliad-ui/button@0.22.3) (2022-03-28)
 
 ### Bug Fixes

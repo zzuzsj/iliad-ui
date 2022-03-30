@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/popover@0.14.11...@iliad-ui/popover@0.15.0) (2022-03-30)
+
+### Bug Fixes
+
+-   样式更新 ([1fb01df](https://github.com/gaoding-inc/iliad-ui/commit/1fb01dfbf22775a971423bc3985ececa476bbf29))
+
+### Features
+
+-   样式更改，增加 panel 拖动 ([820d818](https://github.com/gaoding-inc/iliad-ui/commit/820d818617944b82a02e68f12e79f4cabb28b9f1))
+
 ## [0.14.11](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/popover@0.14.10...@iliad-ui/popover@0.14.11) (2022-03-28)
 
 **Note:** Version bump only for package @iliad-ui/popover

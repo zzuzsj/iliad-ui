@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.20](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/action-menu@0.15.19...@iliad-ui/action-menu@0.15.20) (2022-03-30)
+
+**Note:** Version bump only for package @iliad-ui/action-menu
+
 ## [0.15.19](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/action-menu@0.15.18...@iliad-ui/action-menu@0.15.19) (2022-03-28)
 
 **Note:** Version bump only for package @iliad-ui/action-menu
