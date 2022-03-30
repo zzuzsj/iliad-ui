@@ -56,6 +56,10 @@ governing permissions and limitations under the License.
     box-sizing: border-box;
 }
 
+:host([moveable]) .panel-header {
+    cursor: grab;
+}
+
 :host .panel-header[divider] {
     border-bottom: var(--spectrum-panel-divider-width) solid
         var(--spectrum-panel-divider-color);
@@ -81,11 +85,15 @@ governing permissions and limitations under the License.
     margin-right: var(--spectrum-panel-icon-gap);
 }
 
-:host .panel-header .header-main .back-icon,
-:host ::slotted([slot='icon']) {
-    color: var(--spectrum-panel-icon-main-color);
+:host .panel-header .header-main .back-box {
     margin-right: var(--spectrum-panel-icon-gap);
     cursor: pointer;
+}
+
+:host ::slotted([slot='icon']),
+:host .panel-header .header-main .back-icon {
+    color: inherit;
+    display: block;
 }
 
 :host .panel-header .header-main .close {

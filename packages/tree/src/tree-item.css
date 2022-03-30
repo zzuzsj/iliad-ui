@@ -230,9 +230,7 @@ governing permissions and limitations under the License.
     transition: background var(--spectrum-global-animation-duration-100, 0.13s)
             ease-out,
         border-color var(--spectrum-global-animation-duration-100, 0.13s)
-            ease-out,
-        color var(--spectrum-global-animation-duration-100, 0.13s) ease-out,
-        box-shadow var(--spectrum-global-animation-duration-100, 0.13s) ease-out;
+            ease-out;
 }
 
 :host #heading:hover,

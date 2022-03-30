@@ -25,6 +25,7 @@ governing permissions and limitations under the License.
     --spectrum-popover-min-width: var(--spectrum-global-dimension-size-400);
     --spectrum-popover-min-height: var(--spectrum-global-dimension-size-400);
 
+    /* panel var */
     --spectrum-panel-background-color: var(--spectrum-global-color-gray-100);
     --spectrum-panel-divider-color: var(--spectrum-alias-border-color-light);
     --spectrum-panel-divider-width: var(--spectrum-alias-border-size-thin);
@@ -47,6 +48,8 @@ governing permissions and limitations under the License.
     --spectrum-panel-content-min-height: var(
         --spectrum-global-dimension-static-size-1000
     );
+    --spectrum-panel-back-icon-width: var();
+    --spectrum-panel-back-icon-height: var();
     --spectrum-panel-footer-margin-top: var(--spectrum-panel-padding);
     --spectrum-panel-title-color: var(--spectrum-alias-text-color-primary);
     --spectrum-panel-icon-main-color: var(--spectrum-alias-icon-color-primary);

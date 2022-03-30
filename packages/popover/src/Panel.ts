@@ -85,6 +85,12 @@ export class Panel extends FocusVisiblePolyfillMixin(
     @query('#header')
     private header!: HTMLDivElement;
 
+    @query('#backBox')
+    private back!: HTMLDivElement;
+
+    @query('#close')
+    private close!: HTMLElement;
+
     /**
      * @type {"auto" | "auto-start" | "auto-end" | "top" | "bottom" | "right" | "left" | "top-start" | "top-end" | "bottom-start" | "bottom-end" | "right-start" | "right-end" | "left-start" | "left-end" | "none"}
      * @attr
@@ -175,11 +181,15 @@ export class Panel extends FocusVisiblePolyfillMixin(
                 >
                     ${this.backable
                         ? html`
-                              <sp-icon-editor-arrow-left
-                                  class="back-icon"
-                                  slot="icon"
-                                  @click=${this.doBack}
-                              ></sp-icon-editor-arrow-left>
+                              <div id="backBox" class="back-box">
+                                  <slot name="icon">
+                                      <sp-icon-editor-arrow-left
+                                          class="back-icon"
+                                          size="m"
+                                          @click=${this.doBack}
+                                      ></sp-icon-editor-arrow-left>
+                                  </slot>
+                              </div>
                           `
                         : html``}
                     ${this.title
@@ -198,6 +208,7 @@ export class Panel extends FocusVisiblePolyfillMixin(
                     ${this.dismissable
                         ? html`
                               <sp-action-button
+                                  id="close"
                                   class="icon close"
                                   label="Close"
                                   quiet
@@ -259,7 +270,8 @@ export class Panel extends FocusVisiblePolyfillMixin(
         if (
             !this.moveable ||
             (event.button && event.button !== 0) ||
-            event.target !== event.currentTarget
+            event.target === this.back ||
+            event.target === this.close
         ) {
             return;
         }
@@ -285,6 +297,10 @@ export class Panel extends FocusVisiblePolyfillMixin(
                 cancelable: true,
                 detail: {
                     event,
+                    offset: {
+                        x: this.posx,
+                        y: this.posy,
+                    },
                 },
             })
         );
@@ -301,6 +317,10 @@ export class Panel extends FocusVisiblePolyfillMixin(
                 cancelable: true,
                 detail: {
                     event,
+                    offset: {
+                        x: this.posx,
+                        y: this.posy,
+                    },
                 },
             })
         );

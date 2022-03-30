@@ -22,6 +22,8 @@ export const SliderHandle = createComponent(
     {
         ...ReactiveEvents,
         keydown: 'keydown',
+        input: 'input',
+        change: 'change',
     },
     'SliderHandle'
 );
