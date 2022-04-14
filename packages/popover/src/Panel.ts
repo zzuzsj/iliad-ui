@@ -19,7 +19,6 @@ import {
     SpectrumElement,
     TemplateResult,
 } from '@iliad-ui/base';
-import { Placement } from '@iliad-ui/overlay';
 import panelStyles from './panel.css.js';
 import {
     ObserveSlotPresence,
@@ -36,10 +35,6 @@ type IVector = { x: number; y: number };
 
 /**
  * @element sp-panel
- *
- * @slot - content to display within the Panel
- * @attr {Boolean} open - The open state of the panel
- * @attr {Boolean} dialog - Adds some padding to the panel
  */
 export class Panel extends FocusVisiblePolyfillMixin(
     ObserveSlotPresence(SpectrumElement, [
@@ -51,9 +46,6 @@ export class Panel extends FocusVisiblePolyfillMixin(
     public static get styles(): CSSResultArray {
         return [panelStyles];
     }
-
-    @property({ type: Boolean, reflect: true })
-    public open = false;
 
     @property()
     public title = '';
@@ -90,16 +82,6 @@ export class Panel extends FocusVisiblePolyfillMixin(
 
     @query('#close')
     private close!: HTMLElement;
-
-    /**
-     * @type {"auto" | "auto-start" | "auto-end" | "top" | "bottom" | "right" | "left" | "top-start" | "top-end" | "bottom-start" | "bottom-end" | "right-start" | "right-end" | "left-start" | "left-end" | "none"}
-     * @attr
-     */
-    @property({ reflect: true })
-    public placement: Placement = 'none';
-
-    @property({ type: Boolean, reflect: true })
-    public tip = false;
 
     private offset: IVector = { x: 0, y: 0 };
     private initPos: IVector = { x: 0, y: 0 };
