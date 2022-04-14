@@ -20,8 +20,8 @@ export const RadioGroup = createComponent(
     'sp-radio-group',
     Component,
     {
-        change: 'change',
         ...ReactiveEvents,
+        change: 'change',
     },
     'RadioGroup'
 );

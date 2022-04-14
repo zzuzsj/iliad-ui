@@ -15,6 +15,7 @@ import {
     CSSResultArray,
     html,
     property,
+    query,
     SpectrumElement,
     TemplateResult,
 } from '@iliad-ui/base';
@@ -29,6 +30,9 @@ import '@iliad-ui/button/sp-button.js';
 import '@iliad-ui/button-group/sp-button-group.js';
 import '@iliad-ui/icons-editor/icons/sp-icon-editor-close.js';
 import '@iliad-ui/icons-editor/icons/sp-icon-editor-arrow-left.js';
+import { streamingListener } from '@iliad-ui/base/src/streaming-listener.js';
+
+type IVector = { x: number; y: number };
 
 /**
  * @element sp-panel
@@ -61,13 +65,31 @@ export class Panel extends FocusVisiblePolyfillMixin(
     public backable = false;
 
     @property({ type: Boolean, reflect: true })
+    public moveable = false;
+
+    @property({ type: Boolean, reflect: true })
     public divider = false;
+
+    @property({ type: Number, reflect: true })
+    public posx = 0;
+
+    @property({ type: Number, reflect: true })
+    public posy = 0;
 
     @property({ attribute: 'cancel-label' })
     public cancelLabel = '';
 
     @property({ attribute: 'confirm-label' })
     public confirmLabel = '';
+
+    @query('#header')
+    private header!: HTMLDivElement;
+
+    @query('#backBox')
+    private back!: HTMLDivElement;
+
+    @query('#close')
+    private close!: HTMLElement;
 
     /**
      * @type {"auto" | "auto-start" | "auto-end" | "top" | "bottom" | "right" | "left" | "top-start" | "top-end" | "bottom-start" | "bottom-end" | "right-start" | "right-end" | "left-start" | "left-end" | "none"}
@@ -79,6 +101,10 @@ export class Panel extends FocusVisiblePolyfillMixin(
     @property({ type: Boolean, reflect: true })
     public tip = false;
 
+    private offset: IVector = { x: 0, y: 0 };
+    private initPos: IVector = { x: 0, y: 0 };
+    private moving = false;
+
     protected get hasFooter(): boolean {
         return this.getSlotContentPresence('[slot="footer"]');
     }
@@ -89,14 +115,16 @@ export class Panel extends FocusVisiblePolyfillMixin(
     protected get hasMore(): boolean {
         return this.getSlotContentPresence('[slot="more"]');
     }
-    private doClose(): void {
+    private doClose(event: PointerEvent): void {
+        event.stopPropagation();
         this.dispatchEvent(
             new Event('close', {
                 bubbles: true,
             })
         );
     }
-    private doBack(): void {
+    private doBack(event: PointerEvent): void {
+        event.stopPropagation();
         this.dispatchEvent(
             new Event('back', {
                 bubbles: true,
@@ -127,8 +155,25 @@ export class Panel extends FocusVisiblePolyfillMixin(
     }
 
     protected render(): TemplateResult {
+        const { posx, posy } = this;
+        const tx = `${Math.floor(posx)}px`;
+        const ty = `${Math.floor(posy)}px`;
+        this.style.setProperty('--spectrum-panel-translate-x', tx);
+        this.style.setProperty('--spectrum-panel-translate-y', ty);
         return html`
-            <div class="panel-header" ?divider=${this.divider}>
+            <div
+                class="panel-header"
+                ?divider=${this.divider}
+                id="header"
+                ${streamingListener({
+                    start: ['pointerdown', this.onPointerdown],
+                    streamInside: ['pointermove', this.onPointermove],
+                    end: [
+                        ['pointerup', 'pointercancel', 'pointerleave'],
+                        this.onPointerup,
+                    ],
+                })}
+            >
                 <div
                     class="header-block header-main ${this.backable
                         ? 'handle-space'
@@ -136,11 +181,15 @@ export class Panel extends FocusVisiblePolyfillMixin(
                 >
                     ${this.backable
                         ? html`
-                              <sp-icon-editor-arrow-left
-                                  class="back-icon"
-                                  slot="icon"
-                                  @click=${this.doBack}
-                              ></sp-icon-editor-arrow-left>
+                              <div id="backBox" class="back-box">
+                                  <slot name="icon">
+                                      <sp-icon-editor-arrow-left
+                                          class="back-icon"
+                                          size="m"
+                                          @click=${this.doBack}
+                                      ></sp-icon-editor-arrow-left>
+                                  </slot>
+                              </div>
                           `
                         : html``}
                     ${this.title
@@ -159,6 +208,7 @@ export class Panel extends FocusVisiblePolyfillMixin(
                     ${this.dismissable
                         ? html`
                               <sp-action-button
+                                  id="close"
                                   class="icon close"
                                   label="Close"
                                   quiet
@@ -214,5 +264,74 @@ export class Panel extends FocusVisiblePolyfillMixin(
                   `
                 : html``}
         `;
+    }
+
+    private onPointerdown(event: PointerEvent): void {
+        if (
+            !this.moveable ||
+            (event.button && event.button !== 0) ||
+            event.target === this.back ||
+            event.target === this.close
+        ) {
+            return;
+        }
+        this.moving = true;
+        this.offset = this.getOffset();
+        this.initPos = this.getPosition(event);
+        this.header.setPointerCapture(event.pointerId);
+    }
+
+    private onPointermove(event: PointerEvent): void {
+        event.preventDefault();
+        if (!this.moving) {
+            return;
+        }
+        const curPos = this.getPosition(event);
+        const offsetX = curPos.x - this.initPos.x;
+        const offsetY = curPos.y - this.initPos.y;
+
+        this.posx = this.offset.x + offsetX;
+        this.posy = this.offset.y + offsetY;
+        this.dispatchEvent(
+            new CustomEvent('move', {
+                cancelable: true,
+                detail: {
+                    event,
+                    offset: {
+                        x: this.posx,
+                        y: this.posy,
+                    },
+                },
+            })
+        );
+    }
+
+    private onPointerup(event: PointerEvent): void {
+        if (!this.moving) {
+            return;
+        }
+        this.moving = false;
+        this.header.releasePointerCapture(event.pointerId);
+        this.dispatchEvent(
+            new CustomEvent('moveEnd', {
+                cancelable: true,
+                detail: {
+                    event,
+                    offset: {
+                        x: this.posx,
+                        y: this.posy,
+                    },
+                },
+            })
+        );
+    }
+
+    private getOffset(): IVector {
+        return { x: this.posx, y: this.posy };
+    }
+
+    private getPosition(event: PointerEvent): IVector {
+        const { clientX: x, clientY: y } = event;
+        return { x, y };
     }
 }

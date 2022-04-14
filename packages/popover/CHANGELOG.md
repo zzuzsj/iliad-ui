@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/popover@0.15.0...@iliad-ui/popover@0.15.1) (2022-03-30)
+
+**Note:** Version bump only for package @iliad-ui/popover
+
+# [0.15.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/popover@0.14.11...@iliad-ui/popover@0.15.0) (2022-03-30)
+
+### Bug Fixes
+
+-   样式更新 ([1fb01df](https://github.com/gaoding-inc/iliad-ui/commit/1fb01dfbf22775a971423bc3985ececa476bbf29))
+
+### Features
+
+-   样式更改，增加 panel 拖动 ([820d818](https://github.com/gaoding-inc/iliad-ui/commit/820d818617944b82a02e68f12e79f4cabb28b9f1))
+
+## [0.14.11](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/popover@0.14.10...@iliad-ui/popover@0.14.11) (2022-03-28)
+
+**Note:** Version bump only for package @iliad-ui/popover
+
+## [0.14.10](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/popover@0.14.9...@iliad-ui/popover@0.14.10) (2022-03-25)
+
+**Note:** Version bump only for package @iliad-ui/popover
+
+## [0.14.9](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/popover@0.14.8...@iliad-ui/popover@0.14.9) (2022-03-25)
+
+**Note:** Version bump only for package @iliad-ui/popover
+
+## [0.14.8](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/popover@0.14.6...@iliad-ui/popover@0.14.8) (2022-03-22)
+
+**Note:** Version bump only for package @iliad-ui/popover
+
+## [0.14.7](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/popover@0.14.6...@iliad-ui/popover@0.14.7) (2022-03-22)
+
+**Note:** Version bump only for package @iliad-ui/popover
+
+## [0.14.6](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/popover@0.14.5...@iliad-ui/popover@0.14.6) (2022-03-17)
+
+**Note:** Version bump only for package @iliad-ui/popover
+
+## [0.14.5](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/popover@0.14.4...@iliad-ui/popover@0.14.5) (2022-02-28)
+
+**Note:** Version bump only for package @iliad-ui/popover
+
+## [0.14.4](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/popover@0.14.3...@iliad-ui/popover@0.14.4) (2022-02-25)
+
+**Note:** Version bump only for package @iliad-ui/popover
+
 ## [0.14.3](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/popover@0.14.2...@iliad-ui/popover@0.14.3) (2022-01-20)
 
 **Note:** Version bump only for package @iliad-ui/popover

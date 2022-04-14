@@ -20,11 +20,11 @@ export const Dropzone = createComponent(
     'sp-dropzone',
     Component,
     {
+        ...ReactiveEvents,
         'sp-dropzone-should-accept': 'sp-dropzone-should-accept',
         'sp-dropzone-dragover': 'sp-dropzone-dragover',
         'sp-dropzone-dragleave': 'sp-dropzone-dragleave',
         'sp-dropzone-drop': 'sp-dropzone-drop',
-        ...ReactiveEvents,
     },
     'Dropzone'
 );

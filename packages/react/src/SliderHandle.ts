@@ -20,9 +20,10 @@ export const SliderHandle = createComponent(
     'sp-slider-handle',
     Component,
     {
-        keydown: 'keydown',
-        change: 'change',
         ...ReactiveEvents,
+        keydown: 'keydown',
+        input: 'input',
+        change: 'change',
     },
     'SliderHandle'
 );

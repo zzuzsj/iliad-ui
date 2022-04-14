@@ -19,6 +19,8 @@ export const Breadcrumb = createComponent(
     React,
     'sp-breadcrumb',
     Component,
-    { ...ReactiveEvents },
+    {
+        ...ReactiveEvents,
+    },
     'Breadcrumb'
 );

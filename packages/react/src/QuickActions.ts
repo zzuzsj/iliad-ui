@@ -19,6 +19,8 @@ export const QuickActions = createComponent(
     React,
     'sp-quick-actions',
     Component,
-    { ...ReactiveEvents },
+    {
+        ...ReactiveEvents,
+    },
     'QuickActions'
 );

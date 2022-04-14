@@ -19,6 +19,8 @@ export const IllustratedMessage = createComponent(
     React,
     'sp-illustrated-message',
     Component,
-    { ...ReactiveEvents },
+    {
+        ...ReactiveEvents,
+    },
     'IllustratedMessage'
 );

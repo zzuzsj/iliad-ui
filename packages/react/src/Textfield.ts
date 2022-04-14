@@ -20,9 +20,9 @@ export const Textfield = createComponent(
     'sp-textfield',
     Component,
     {
+        ...ReactiveEvents,
         change: 'change',
         keydown: 'keydown',
-        ...ReactiveEvents,
     },
     'Textfield'
 );

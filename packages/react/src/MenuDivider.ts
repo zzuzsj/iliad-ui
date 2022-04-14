@@ -19,6 +19,8 @@ export const MenuDivider = createComponent(
     React,
     'sp-menu-divider',
     Component,
-    { ...ReactiveEvents },
+    {
+        ...ReactiveEvents,
+    },
     'MenuDivider'
 );

@@ -37,6 +37,7 @@ if (publish) {
 process.chdir('./packages/react/');
 
 // Fetch component metadata
+// 从documation目录下获取custom-elements.json
 const metadata = JSON.parse(fs.readFileSync('./custom-elements.json', 'utf8'));
 
 // Wrap components
@@ -76,11 +77,20 @@ function formatCode(string) {
     });
 }
 
+// 对于部分组件 他的触发事件在组件外部 所以cem不会讲这个事件加入到custom-elements.json 需要手动添加
+const AppendEvents = {
+    SliderHandle: ['input', 'change'],
+    Slider: ['input', 'change'],
+};
+
 components.map((component) => {
     const { name } = component;
     const componentFile = path.join('./src', `${name}.ts`);
-
+    const appendEvents = (AppendEvents[name] || []).map((cv) => {
+        return { name: cv };
+    });
     const events = (component.events || [])
+        .concat(appendEvents)
         .map((event) => {
             return `'${event.name}': '${event.name}'`;
         })
@@ -89,6 +99,7 @@ components.map((component) => {
     const source = formatCode(
         `${header}import * as React from 'react';
       import { createComponent } from '@lit-labs/react';
+      import { ReactiveEvents } from '../config';
       import { ${name} as Component } from '@iliad-ui/bundle';
 
       export const ${name} = createComponent(
@@ -96,6 +107,7 @@ components.map((component) => {
         '${component.tagName}',
         Component,
         {
+          ...ReactiveEvents,
           ${events}
         },
         '${name}'
@@ -107,6 +119,14 @@ components.map((component) => {
     mainExports.push(`export * from './src/${name}'`);
     console.log(`✓ <${component.tagName}>`);
 });
+
+// 增加手动导出部分(build:react 不会更新对应src/ts文件，有更新需要手动更新)
+mainExports.push(`
+    /** 手动添加 */
+    export * from './src/Picker';
+    export * from './src/IconsEditor';
+    export { Overlay } from '@iliad-ui/bundle';
+`);
 
 fs.writeFileSync(
     './index.ts',

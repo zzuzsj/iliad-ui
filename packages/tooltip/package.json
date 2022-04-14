@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/tooltip",
-    "version": "0.12.7",
+    "version": "0.12.13",
     "publishConfig": {
         "access": "public"
     },
@@ -44,8 +44,8 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.1",
-        "@iliad-ui/overlay": "^0.17.7",
+        "@iliad-ui/base": "^0.11.4",
+        "@iliad-ui/overlay": "^0.17.13",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

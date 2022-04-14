@@ -20,9 +20,9 @@ export const ColorArea = createComponent(
     'sp-color-area',
     Component,
     {
+        ...ReactiveEvents,
         input: 'input',
         change: 'change',
-        ...ReactiveEvents,
     },
     'ColorArea'
 );

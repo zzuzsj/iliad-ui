@@ -19,6 +19,8 @@ export const Icon = createComponent(
     React,
     'sp-icon',
     Component,
-    { ...ReactiveEvents },
+    {
+        ...ReactiveEvents,
+    },
     'Icon'
 );

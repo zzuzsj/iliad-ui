@@ -19,6 +19,8 @@ export const Tab = createComponent(
     React,
     'sp-tab',
     Component,
-    { ...ReactiveEvents },
+    {
+        ...ReactiveEvents,
+    },
     'Tab'
 );

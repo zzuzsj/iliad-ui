@@ -194,6 +194,14 @@ governing permissions and limitations under the License.
     --spectrum-global-color-opacity-5: 0.05;
     --spectrum-global-color-opacity-4: 0.04;
 
+    // Part CoverColor OverBackground使用
+    --spectrum-global-color-light-cover-0: #{$global-light-cover-color-0};
+    --spectrum-global-color-light-cover-100: #{$global-light-cover-color-100};
+    --spectrum-global-color-light-cover-200: #{$global-light-cover-color-200};
+    --spectrum-global-color-dark-cover-0: #{$global-dark-cover-color-0};
+    --spectrum-global-color-dark-cover-100: #{$global-dark-cover-color-100};
+    --spectrum-global-color-dark-cover-200: #{$global-dark-cover-color-200};
+
     // Part FillColor 叠加色 暂时不做使用
     --spectrum-global-color-primary-cover-100: #{$global-color-primary-cover-100};
     --spectrum-global-color-primary-cover-200: #{$global-color-primary-cover-200};

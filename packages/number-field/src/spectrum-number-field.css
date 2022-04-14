@@ -60,9 +60,7 @@ governing permissions and limitations under the License.
     flex-wrap: nowrap;
     line-height: 0;
     transition: border-color
-            var(--spectrum-global-animation-duration-100, 0.13s) ease-in-out,
-        box-shadow var(--spectrum-global-animation-duration-100, 0.13s)
-            ease-in-out;
+        var(--spectrum-global-animation-duration-100, 0.13s) ease-in-out;
     width: var(--spectrum-stepper-width);
 }
 :host:before {
@@ -106,8 +104,6 @@ governing permissions and limitations under the License.
 }
 .buttons {
     display: block; /* .spectrum-Stepper-buttons */
-    transition: box-shadow var(--spectrum-global-animation-duration-100, 0.13s)
-        ease-in-out;
 }
 :host([dir='ltr']) .stepDown,
 :host([dir='ltr']) .stepUp {
@@ -380,7 +376,6 @@ governing permissions and limitations under the License.
         --spectrum-textfield-m-border-color-mouse-focus,
         var(--spectrum-alias-border-color-mouse-focus)
     ); /* .spectrum-Stepper.is-focused .spectrum-Stepper-input */
-    box-shadow: none;
 }
 :host([focused][invalid]) {
     border-color: var(
@@ -402,22 +397,7 @@ governing permissions and limitations under the License.
         var(--spectrum-semantic-negative-color-state-hover)
     ); /* .spectrum-Stepper.is-focused.is-invalid .spectrum-Stepper-input */
 }
-:host([keyboard-focused]) {
-    box-shadow: 0 0 0 1px
-        var(
-            --spectrum-textfield-m-border-color-key-focus,
-            var(--spectrum-alias-border-color-focus)
-        ); /* .spectrum-Stepper.is-keyboardFocused */
-}
-:host([keyboard-focused]) .buttons,
-:host([keyboard-focused]) .input {
-    box-shadow: 0 0 0 1px
-        var(
-            --spectrum-textfield-m-border-color-key-focus,
-            var(--spectrum-alias-border-color-focus)
-        ); /* .spectrum-Stepper.is-keyboardFocused .spectrum-Stepper-input,
-   * .spectrum-Stepper.is-keyboardFocused .spectrum-Stepper-buttons */
-}
+
 :host([keyboard-focused]) .input,
 :host([keyboard-focused]) .stepDown,
 :host([keyboard-focused]) .stepUp {
@@ -428,13 +408,6 @@ governing permissions and limitations under the License.
    * .spectrum-Stepper.is-keyboardFocused .spectrum-Stepper-stepUp,
    * .spectrum-Stepper.is-keyboardFocused .spectrum-Stepper-stepDown */
 }
-:host([keyboard-focused][invalid]) {
-    box-shadow: 0 0 0 1px
-        var(
-            --spectrum-textfield-m-border-color-error-key-focus,
-            var(--spectrum-alias-border-color-focus)
-        ); /* .spectrum-Stepper.is-keyboardFocused.is-invalid */
-}
 :host([keyboard-focused][invalid]) .stepDown,
 :host([keyboard-focused][invalid]) .stepUp {
     border-color: var(
@@ -442,13 +415,6 @@ governing permissions and limitations under the License.
         var(--spectrum-alias-border-color-focus)
     ); /* .spectrum-Stepper.is-keyboardFocused.is-invalid .spectrum-Stepper-stepUp,
    * .spectrum-Stepper.is-keyboardFocused.is-invalid .spectrum-Stepper-stepDown */
-}
-:host([keyboard-focused][invalid]) .buttons {
-    box-shadow: 0 0 0 1px
-        var(
-            --spectrum-textfield-m-border-color-error-key-focus,
-            var(--spectrum-alias-border-color-focus)
-        ); /* .spectrum-Stepper.is-keyboardFocused.is-invalid .spectrum-Stepper-buttons */
 }
 :host([invalid]) .stepDown,
 :host([invalid]) .stepUp {
@@ -469,18 +435,6 @@ governing permissions and limitations under the License.
         --spectrum-textfield-m-border-color-error-key-focus,
         var(--spectrum-alias-border-color-focus)
     ); /* .spectrum-Stepper.is-invalid.is-keyboardFocused .spectrum-Stepper-input */
-    box-shadow: 0 0 0 1px
-        var(
-            --spectrum-textfield-m-border-color-error-key-focus,
-            var(--spectrum-alias-border-color-focus)
-        );
-}
-:host([invalid][keyboard-focused]) .buttons {
-    box-shadow: 0 0 0 1px
-        var(
-            --spectrum-textfield-m-border-color-error-key-focus,
-            var(--spectrum-alias-border-color-focus)
-        ); /* .spectrum-Stepper.is-invalid.is-keyboardFocused .spectrum-Stepper-buttons */
 }
 :host([disabled]) .stepDown,
 :host([disabled]) .stepUp {
@@ -530,9 +484,6 @@ governing permissions and limitations under the License.
     ); /* .spectrum-Stepper--quiet .spectrum-Stepper-stepUp:disabled,
    * .spectrum-Stepper--quiet .spectrum-Stepper-stepDown:disabled */
 }
-:host([quiet]) .input {
-    box-shadow: none; /* .spectrum-Stepper--quiet .spectrum-Stepper-input */
-}
 :host([quiet][invalid]) .input {
     border-color: var(
         --spectrum-textfield-m-border-color-error,
@@ -545,24 +496,6 @@ governing permissions and limitations under the License.
         var(--spectrum-semantic-negative-color-default)
     ); /* .spectrum-Stepper--quiet.is-invalid .spectrum-Stepper-stepDown */
 }
-:host([quiet][focused]),
-:host([quiet][keyboard-focused]) {
-    box-shadow: none; /* .spectrum-Stepper--quiet.is-keyboardFocused,
-   * .spectrum-Stepper--quiet.is-focused */
-}
-:host([quiet][focused]) .buttons,
-:host([quiet][focused]) .input,
-:host([quiet][keyboard-focused]) .buttons,
-:host([quiet][keyboard-focused]) .input {
-    box-shadow: 0 1px 0 0
-        var(
-            --spectrum-textfield-m-border-color-key-focus,
-            var(--spectrum-alias-border-color-focus)
-        ); /* .spectrum-Stepper--quiet.is-keyboardFocused .spectrum-Stepper-buttons,
-   * .spectrum-Stepper--quiet.is-keyboardFocused .spectrum-Stepper-input,
-   * .spectrum-Stepper--quiet.is-focused .spectrum-Stepper-buttons,
-   * .spectrum-Stepper--quiet.is-focused .spectrum-Stepper-input */
-}
 :host([quiet][focused]) .stepDown,
 :host([quiet][keyboard-focused]) .stepDown {
     border-color: var(
@@ -571,24 +504,7 @@ governing permissions and limitations under the License.
     ); /* .spectrum-Stepper--quiet.is-keyboardFocused .spectrum-Stepper-stepDown,
    * .spectrum-Stepper--quiet.is-focused .spectrum-Stepper-stepDown */
 }
-:host([quiet][focused][invalid]),
-:host([quiet][keyboard-focused][invalid]) {
-    box-shadow: none; /* .spectrum-Stepper--quiet.is-keyboardFocused.is-invalid,
-   * .spectrum-Stepper--quiet.is-focused.is-invalid */
-}
-:host([quiet][focused][invalid]) .buttons,
-:host([quiet][focused][invalid]) .input,
-:host([quiet][keyboard-focused][invalid]) .buttons,
-:host([quiet][keyboard-focused][invalid]) .input {
-    box-shadow: 0 1px 0 0
-        var(
-            --spectrum-textfield-m-border-color-error,
-            var(--spectrum-semantic-negative-color-default)
-        ); /* .spectrum-Stepper--quiet.is-keyboardFocused.is-invalid .spectrum-Stepper-input,
-   * .spectrum-Stepper--quiet.is-keyboardFocused.is-invalid .spectrum-Stepper-buttons,
-   * .spectrum-Stepper--quiet.is-focused.is-invalid .spectrum-Stepper-input,
-   * .spectrum-Stepper--quiet.is-focused.is-invalid .spectrum-Stepper-buttons */
-}
+
 :host([quiet][focused][invalid]) .input,
 :host([quiet][keyboard-focused][invalid]) .input {
     border-color: var(

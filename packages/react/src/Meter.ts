@@ -19,6 +19,8 @@ export const Meter = createComponent(
     React,
     'sp-meter',
     Component,
-    { ...ReactiveEvents },
+    {
+        ...ReactiveEvents,
+    },
     'Meter'
 );

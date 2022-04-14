@@ -84,7 +84,7 @@ governing permissions and limitations under the License.
         --spectrum-alias-border-color-hover
     );
     --spectrum-textfield-m-placeholder-text-color-hover: var(
-        --spectrum-alias-text-color-primary
+        --spectrum-alias-text-color-placeholder
     );
     --spectrum-textfield-m-icon-color-hover: var(
         --spectrum-alias-icon-color-primary

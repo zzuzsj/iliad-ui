@@ -20,8 +20,8 @@ export const Dialog = createComponent(
     'sp-dialog',
     Component,
     {
-        close: 'close',
         ...ReactiveEvents,
+        close: 'close',
     },
     'Dialog'
 );

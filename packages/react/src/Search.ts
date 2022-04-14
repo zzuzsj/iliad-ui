@@ -20,10 +20,10 @@ export const Search = createComponent(
     'sp-search',
     Component,
     {
+        ...ReactiveEvents,
         submit: 'submit',
         change: 'change',
         keydown: 'keydown',
-        ...ReactiveEvents,
     },
     'Search'
 );

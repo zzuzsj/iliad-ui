@@ -20,11 +20,11 @@ export const PickerBase = createComponent(
     'sp-picker',
     Component,
     {
+        ...ReactiveEvents,
         change: 'change',
         'sp-opened': 'sp-opened',
         'sp-closed': 'sp-closed',
         keydown: 'keydown',
-        ...ReactiveEvents,
     },
     'PickerBase'
 );

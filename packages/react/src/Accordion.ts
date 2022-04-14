@@ -20,8 +20,8 @@ export const Accordion = createComponent(
     'sp-accordion',
     Component,
     {
-        keydown: 'keydown',
         ...ReactiveEvents,
+        keydown: 'keydown',
     },
     'Accordion'
 );

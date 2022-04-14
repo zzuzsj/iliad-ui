@@ -19,6 +19,8 @@ export const TopNav = createComponent(
     React,
     'sp-top-nav',
     Component,
-    { ...ReactiveEvents },
+    {
+        ...ReactiveEvents,
+    },
     'TopNav'
 );

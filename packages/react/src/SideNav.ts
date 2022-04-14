@@ -20,9 +20,8 @@ export const SideNav = createComponent(
     'sp-sidenav',
     Component,
     {
-        change: 'change',
-        keydown: 'keydown',
         ...ReactiveEvents,
+        change: 'change',
     },
     'SideNav'
 );

@@ -9,20 +9,20 @@
 yarn add @iliad-ui/tree
 ```
 
-Import the side effectful registration of `<sp-tree>` via:
+Import the side effectful registration of `<sp-tree-item>` via:
 
 ```
-import '@iliad-ui/tree/sp-tree.js';
+import '@iliad-ui/tree/sp-tree-item.js';
 ```
 
 When looking to leverage the `Tree` base class as a type and/or for extension purposes, do so via:
 
 ```
-import { Tree } from '@iliad-ui/tree';
+import { TreeItem } from '@iliad-ui/tree';
 ```
 
 ## Example
 
 ```html
-<sp-tree></sp-tree>
+<sp-tree-item></sp-tree-item>
 ```

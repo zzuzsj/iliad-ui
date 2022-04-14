@@ -24,4 +24,43 @@ governing permissions and limitations under the License.
     --spectrum-popover-source-gap: var(--spectrum-global-dimension-size-75);
     --spectrum-popover-min-width: var(--spectrum-global-dimension-size-400);
     --spectrum-popover-min-height: var(--spectrum-global-dimension-size-400);
+
+    /* panel var */
+    --spectrum-panel-background-color: var(--spectrum-global-color-gray-100);
+    --spectrum-panel-divider-color: var(--spectrum-alias-border-color-light);
+    --spectrum-panel-divider-width: var(--spectrum-alias-border-size-thin);
+    --spectrum-panel-border-color: var(--spectrum-alias-border-color-dark);
+    --spectrum-panel-box-shadow: var(--spectrum-global-shadow-static-m);
+    --spectrum-panel-border-size: var(--spectrum-global-dimension-size-0);
+    --spectrum-panel-border-radius: var(--spectrum-alias-border-radius-large);
+    --spectrum-panel-padding: var(--spectrum-global-dimension-size-200);
+    --spectrum-panel-header-padding-left: var(
+        --spectrum-global-dimension-size-200
+    );
+    --spectrum-panel-header-padding-right: var(
+        --spectrum-global-dimension-size-100
+    );
+    --spectrum-panel-icon-gap: var(--spectrum-global-dimension-size-50);
+    --spectrum-panel-header-height: var(--spectrum-alias-control-height-xl);
+    --spectrum-panel-min-width: var(
+        --spectrum-global-dimension-static-size-3200
+    );
+    --spectrum-panel-content-min-height: var(
+        --spectrum-global-dimension-static-size-1000
+    );
+    --spectrum-panel-back-icon-width: var();
+    --spectrum-panel-back-icon-height: var();
+    --spectrum-panel-footer-margin-top: var(--spectrum-panel-padding);
+    --spectrum-panel-title-color: var(--spectrum-alias-text-color-primary);
+    --spectrum-panel-icon-main-color: var(--spectrum-alias-icon-color-primary);
+    --spectrum-panel-icon-others-color: var(
+        --spectrum-alias-icon-color-tertiary
+    );
+    --spectrum-panel-title-line-height: var(
+        --spectrum-global-font-line-height-medium
+    );
+    --spectrum-panel-title-font-size: var(--spectrum-alias-font-size-m);
+    --spectrum-panel-title-font-weight: var(--spectrum-alias-font-weight-l);
+    --spectrum-panel-translate-x: var(--spectrum-global-dimension-size-0);
+    --spectrum-panel-translate-y: var(--spectrum-global-dimension-size-0);
 }

@@ -11,10 +11,10 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import '@iliad-ui/tree/sp-tree.js';
+import '@iliad-ui/tree/sp-tree-item.js';
 import { html } from '@iliad-ui/base';
 import { measureFixtureCreation } from '../../../../test/benchmark/helpers.js';
 
 measureFixtureCreation(html`
-    <sp-tree></sp-tree>
+    <sp-tree-item label="test"></sp-tree-item>
 `);

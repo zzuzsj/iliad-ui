@@ -20,8 +20,9 @@ export const Card = createComponent(
     'sp-card',
     Component,
     {
-        change: 'change',
         ...ReactiveEvents,
+        click: 'click',
+        change: 'change',
     },
     'Card'
 );

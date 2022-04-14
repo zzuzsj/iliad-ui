@@ -20,8 +20,8 @@ export const Checkbox = createComponent(
     'sp-checkbox',
     Component,
     {
-        keydown: 'keydown',
         ...ReactiveEvents,
+        keydown: 'keydown',
     },
     'Checkbox'
 );

@@ -20,8 +20,8 @@ export const TopNavItem = createComponent(
     'sp-top-nav-item',
     Component,
     {
-        keydown: 'keydown',
         ...ReactiveEvents,
+        keydown: 'keydown',
     },
     'TopNavItem'
 );

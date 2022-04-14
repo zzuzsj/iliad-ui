@@ -20,10 +20,10 @@ export const NumberField = createComponent(
     'sp-number-field',
     Component,
     {
+        ...ReactiveEvents,
         change: 'change',
         input: 'input',
         keydown: 'keydown',
-        ...ReactiveEvents,
     },
     'NumberField'
 );

@@ -20,9 +20,10 @@ export const Slider = createComponent(
     'sp-slider',
     Component,
     {
-        keydown: 'keydown',
-        change: 'change',
         ...ReactiveEvents,
+        keydown: 'keydown',
+        input: 'input',
+        change: 'change',
     },
     'Slider'
 );

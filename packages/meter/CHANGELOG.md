@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.12](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/meter@0.8.11...@iliad-ui/meter@0.8.12) (2022-03-30)
+
+**Note:** Version bump only for package @iliad-ui/meter
+
+## [0.8.11](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/meter@0.8.10...@iliad-ui/meter@0.8.11) (2022-03-28)
+
+**Note:** Version bump only for package @iliad-ui/meter
+
+## [0.8.10](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/meter@0.8.9...@iliad-ui/meter@0.8.10) (2022-03-25)
+
+**Note:** Version bump only for package @iliad-ui/meter
+
+## [0.8.9](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/meter@0.8.8...@iliad-ui/meter@0.8.9) (2022-03-22)
+
+**Note:** Version bump only for package @iliad-ui/meter
+
+## [0.8.8](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/meter@0.8.7...@iliad-ui/meter@0.8.8) (2022-02-25)
+
+**Note:** Version bump only for package @iliad-ui/meter
+
 ## [0.8.7](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/meter@0.8.6...@iliad-ui/meter@0.8.7) (2021-12-28)
 
 **Note:** Version bump only for package @iliad-ui/meter

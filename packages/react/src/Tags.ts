@@ -19,6 +19,8 @@ export const Tags = createComponent(
     React,
     'sp-tags',
     Component,
-    { ...ReactiveEvents },
+    {
+        ...ReactiveEvents,
+    },
     'Tags'
 );

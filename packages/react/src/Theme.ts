@@ -19,6 +19,8 @@ export const Theme = createComponent(
     React,
     'sp-theme',
     Component,
-    { ...ReactiveEvents },
+    {
+        ...ReactiveEvents,
+    },
     'Theme'
 );

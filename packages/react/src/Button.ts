@@ -20,8 +20,8 @@ export const Button = createComponent(
     'sp-button',
     Component,
     {
-        keydown: 'keydown',
         ...ReactiveEvents,
+        keydown: 'keydown',
     },
     'Button'
 );

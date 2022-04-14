@@ -20,8 +20,8 @@ export const Link = createComponent(
     'sp-link',
     Component,
     {
-        keydown: 'keydown',
         ...ReactiveEvents,
+        keydown: 'keydown',
     },
     'Link'
 );

@@ -20,8 +20,8 @@ export const Switch = createComponent(
     'sp-switch',
     Component,
     {
-        keydown: 'keydown',
         ...ReactiveEvents,
+        keydown: 'keydown',
     },
     'Switch'
 );

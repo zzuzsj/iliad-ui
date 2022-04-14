@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/icons-workflow",
-    "version": "0.12.7",
+    "version": "0.12.12",
     "publishConfig": {
         "access": "public"
     },
@@ -44,8 +44,8 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.1",
-        "@iliad-ui/icon": "^0.16.1",
+        "@iliad-ui/base": "^0.11.4",
+        "@iliad-ui/icon": "^0.16.6",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

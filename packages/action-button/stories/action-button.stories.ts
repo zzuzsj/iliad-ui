@@ -28,6 +28,7 @@ interface Properties {
     selected?: boolean;
     toggles?: boolean;
     emphasized?: boolean;
+    overBackground?: boolean;
     size?: 's' | 'm' | 'l' | 'xl';
     holdAffordance?: boolean;
     icon?: TemplateResult;
@@ -40,6 +41,7 @@ function renderButton(args: Properties): TemplateResult {
         <sp-action-button
             ?quiet="${!!args.quiet}"
             ?emphasized="${!!args.emphasized}"
+            ?overBackground="${!!args.overBackground}"
             ?disabled=${!!args.disabled}
             ?selected=${!!args.selected}
             ?toggles=${!!args.toggles}
@@ -58,10 +60,11 @@ export default {
 function renderButtonsSelected(args: Properties): TemplateResult {
     const disabled = Object.assign({}, args, { disabled: true });
     const selected = Object.assign({}, args, { selected: true });
+    const overBackground = Object.assign({}, args, { overBackground: true });
     return html`
         <sp-action-group>
             ${renderButton(args)} ${renderButton(selected)}
-            ${renderButton(disabled)}
+            ${renderButton(disabled)} ${renderButton(overBackground)}
         </sp-action-group>
     `;
 }

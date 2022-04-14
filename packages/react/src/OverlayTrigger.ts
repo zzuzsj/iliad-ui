@@ -20,9 +20,9 @@ export const OverlayTrigger = createComponent(
     'overlay-trigger',
     Component,
     {
+        ...ReactiveEvents,
         'sp-opened': 'sp-opened',
         'sp-closed': 'sp-closed',
-        ...ReactiveEvents,
     },
     'OverlayTrigger'
 );

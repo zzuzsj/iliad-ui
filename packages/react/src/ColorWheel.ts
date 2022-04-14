@@ -20,10 +20,10 @@ export const ColorWheel = createComponent(
     'sp-color-wheel',
     Component,
     {
+        ...ReactiveEvents,
         input: 'input',
         change: 'change',
         keydown: 'keydown',
-        ...ReactiveEvents,
     },
     'ColorWheel'
 );

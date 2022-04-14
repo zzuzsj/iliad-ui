@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.12](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons-ui@0.12.11...@iliad-ui/icons-ui@0.12.12) (2022-03-30)
+
+**Note:** Version bump only for package @iliad-ui/icons-ui
+
+## [0.12.11](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons-ui@0.12.10...@iliad-ui/icons-ui@0.12.11) (2022-03-28)
+
+**Note:** Version bump only for package @iliad-ui/icons-ui
+
+## [0.12.10](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons-ui@0.12.9...@iliad-ui/icons-ui@0.12.10) (2022-03-25)
+
+**Note:** Version bump only for package @iliad-ui/icons-ui
+
+## [0.12.9](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons-ui@0.12.8...@iliad-ui/icons-ui@0.12.9) (2022-03-22)
+
+**Note:** Version bump only for package @iliad-ui/icons-ui
+
+## [0.12.8](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons-ui@0.12.7...@iliad-ui/icons-ui@0.12.8) (2022-02-25)
+
+**Note:** Version bump only for package @iliad-ui/icons-ui
+
 ## [0.12.7](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons-ui@0.12.6...@iliad-ui/icons-ui@0.12.7) (2021-12-28)
 
 **Note:** Version bump only for package @iliad-ui/icons-ui

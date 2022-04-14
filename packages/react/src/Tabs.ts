@@ -20,9 +20,9 @@ export const Tabs = createComponent(
     'sp-tabs',
     Component,
     {
+        ...ReactiveEvents,
         change: 'change',
         keydown: 'keydown',
-        ...ReactiveEvents,
     },
     'Tabs'
 );

@@ -20,10 +20,10 @@ export const ColorSlider = createComponent(
     'sp-color-slider',
     Component,
     {
+        ...ReactiveEvents,
         input: 'input',
         change: 'change',
         keydown: 'keydown',
-        ...ReactiveEvents,
     },
     'ColorSlider'
 );

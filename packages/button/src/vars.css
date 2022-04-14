@@ -451,6 +451,7 @@ governing permissions and limitations under the License.
     --spectrum-button-warning-m-text-color-disabled: var(
         --spectrum-alias-text-color-disabled
     );
+
     /* over background */
     --spectrum-button-over-background-m-background-color: var(
         --spectrum-alias-background-color-transparent
@@ -494,6 +495,7 @@ governing permissions and limitations under the License.
         255,
         0.35
     );
+
     /* quiet over background */
     --spectrum-button-quiet-over-background-m-background-color: var(
         --spectrum-alias-background-color-transparent
@@ -502,44 +504,36 @@ governing permissions and limitations under the License.
         --spectrum-alias-border-color-transparent
     );
     --spectrum-button-quiet-over-background-m-text-color: var(
-        --spectrum-global-color-static-white
+        --spectrum-alias-text-color-primary
     );
-    --spectrum-button-quiet-over-background-m-background-color-hover: rgba(
-        255,
-        255,
-        255,
-        0.1
+    --spectrum-button-quiet-over-background-m-background-color-hover: var(
+        --spectrum-alias-cover-color-100
     );
     --spectrum-button-quiet-over-background-m-border-color-hover: var(
         --spectrum-alias-border-color-transparent
     );
     --spectrum-button-quiet-over-background-m-text-color-hover: var(
-        --spectrum-global-color-static-white
+        --spectrum-alias-text-color-primary
     );
-    --spectrum-button-quiet-over-background-m-background-color-down: rgba(
-        255,
-        255,
-        255,
-        0.2
+    --spectrum-button-quiet-over-background-m-background-color-down: var(
+        --spectrum-alias-cover-color-200
     );
     --spectrum-button-quiet-over-background-m-border-color-down: var(
         --spectrum-alias-border-color-transparent
     );
     --spectrum-button-quiet-over-background-m-text-color-down: var(
-        --spectrum-global-color-static-white
+        --spectrum-alias-text-color-primary
     );
     --spectrum-button-quiet-over-background-m-background-color-disabled: var(
-        --spectrum-alias-background-color-transparent
+        --spectrum-alias-cover-color-100
     );
     --spectrum-button-quiet-over-background-m-border-color-disabled: var(
         --spectrum-alias-border-color-transparent
     );
-    --spectrum-button-quiet-over-background-m-text-color-disabled: rgba(
-        255,
-        255,
-        255,
-        0.15
+    --spectrum-button-quiet-over-background-m-text-color-disabled: var(
+        --spectrum-alias-text-color-disabled
     );
+
     /* quiet primary */
     --spectrum-button-quiet-primary-m-background-color: var(
         --spectrum-alias-background-color-transparent

@@ -20,10 +20,10 @@ export const MenuItem = createComponent(
     'sp-menu-item',
     Component,
     {
+        ...ReactiveEvents,
         'sp-menu-item-added': 'sp-menu-item-added',
         'sp-menu-item-removed': 'sp-menu-item-removed',
         keydown: 'keydown',
-        ...ReactiveEvents,
     },
     'MenuItem'
 );

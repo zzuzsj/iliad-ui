@@ -20,8 +20,8 @@ export const Tag = createComponent(
     'sp-tag',
     Component,
     {
-        delete: 'delete',
         ...ReactiveEvents,
+        delete: 'delete',
     },
     'Tag'
 );

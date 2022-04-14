@@ -20,10 +20,10 @@ export const ActionButton = createComponent(
     'sp-action-button',
     Component,
     {
+        ...ReactiveEvents,
         longpress: 'longpress',
         change: 'change',
         keydown: 'keydown',
-        ...ReactiveEvents,
     },
     'ActionButton'
 );

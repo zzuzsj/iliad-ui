@@ -20,11 +20,11 @@ export const DialogWrapper = createComponent(
     'sp-dialog-wrapper',
     Component,
     {
+        ...ReactiveEvents,
         secondary: 'secondary',
         cancel: 'cancel',
         confirm: 'confirm',
         close: 'close',
-        ...ReactiveEvents,
     },
     'DialogWrapper'
 );

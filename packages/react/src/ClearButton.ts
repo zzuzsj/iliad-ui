@@ -20,8 +20,8 @@ export const ClearButton = createComponent(
     'sp-clear-button',
     Component,
     {
-        keydown: 'keydown',
         ...ReactiveEvents,
+        keydown: 'keydown',
     },
     'ClearButton'
 );

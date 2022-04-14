@@ -20,9 +20,11 @@ import {
     PropertyValues,
 } from '@iliad-ui/base';
 import '@iliad-ui/button/sp-clear-button.js';
-import '@iliad-ui/icons-workflow/icons/sp-icon-alert.js';
-import '@iliad-ui/icons-workflow/icons/sp-icon-info.js';
-import '@iliad-ui/icons-workflow/icons/sp-icon-checkmark-circle.js';
+import '@iliad-ui/action-button/sp-action-button';
+import '@iliad-ui/icons-editor/icons/sp-icon-editor-alert-fill.js';
+import '@iliad-ui/icons-editor/icons/sp-icon-editor-info-fill.js';
+import '@iliad-ui/icons-editor/icons/sp-icon-editor-check-fill.js';
+import '@iliad-ui/icons-editor/icons/sp-icon-editor-close.js';
 
 import toastStyles from './toast.css.js';
 
@@ -56,6 +58,9 @@ export class Toast extends SpectrumElement {
 
     @property({ type: Boolean, reflect: true })
     public open = false;
+
+    @property({ type: Boolean, reflect: true })
+    public closeable = true;
 
     @property({ type: Number })
     public set timeout(timeout: number | null) {
@@ -106,31 +111,64 @@ export class Toast extends SpectrumElement {
     private _variant: ToastVariants = '';
 
     private renderIcon(variant: string): TemplateResult {
+        let content = html``;
         switch (variant) {
             case 'info':
-                return html`
-                    <sp-icon-info
+                content = html`
+                    <sp-icon-editor-info-fill
                         label="Information"
                         class="type"
-                    ></sp-icon-info>
+                        size="l"
+                    ></sp-icon-editor-info-fill>
                 `;
+                break;
             case 'negative':
             case 'error': // deprecated
             case 'warning': // deprecated
-                return html`
-                    <sp-icon-alert label="Error" class="type"></sp-icon-alert>
+                content = html`
+                    <sp-icon-editor-alert-fill
+                        label="Error"
+                        class="type"
+                        size="l"
+                    ></sp-icon-editor-alert-fill>
                 `;
+                break;
             case 'positive':
             case 'success': // deprecated
-                return html`
-                    <sp-icon-checkmark-circle
+                content = html`
+                    <sp-icon-editor-check-fill
                         label="Success"
                         class="type"
-                    ></sp-icon-checkmark-circle>
+                        size="l"
+                    ></sp-icon-editor-check-fill>
                 `;
+                break;
             default:
-                return html``;
+                content = html``;
         }
+        return html`
+            <slot name="icon">${content}</slot>
+        `;
+    }
+
+    private renderButtons() {
+        return this.closeable
+            ? html`
+                  <div class="buttons">
+                      <sp-action-button
+                          label="Close"
+                          overBackground
+                          quiet
+                          size="m"
+                          @click=${this.close}
+                      >
+                          <sp-icon-editor-close
+                              slot="icon"
+                          ></sp-icon-editor-close>
+                      </sp-action-button>
+                  </div>
+              `
+            : html``;
     }
 
     private countdownStart = 0;
@@ -186,13 +224,7 @@ export class Toast extends SpectrumElement {
                 </div>
                 <slot name="action"></slot>
             </div>
-            <div class="buttons">
-                <sp-clear-button
-                    label="Close"
-                    variant="overBackground"
-                    @click=${this.close}
-                ></sp-clear-button>
-            </div>
+            ${this.renderButtons()}
         `;
     }
 

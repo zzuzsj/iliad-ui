@@ -19,6 +19,8 @@ export const ButtonGroup = createComponent(
     React,
     'sp-button-group',
     Component,
-    { ...ReactiveEvents },
+    {
+        ...ReactiveEvents,
+    },
     'ButtonGroup'
 );

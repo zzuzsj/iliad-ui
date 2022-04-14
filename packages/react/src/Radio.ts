@@ -20,10 +20,10 @@ export const Radio = createComponent(
     'sp-radio',
     Component,
     {
+        ...ReactiveEvents,
         keydown: 'keydown',
         change: 'change',
         'sp-radio:change': 'sp-radio:change',
-        ...ReactiveEvents,
     },
     'Radio'
 );

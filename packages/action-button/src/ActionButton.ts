@@ -71,6 +71,9 @@ export class ActionButton extends SizedMixin(ButtonBase) {
     @property({ type: Boolean, reflect: true })
     public toggles = false;
 
+    @property({ type: Boolean, reflect: true })
+    public overBackground = false;
+
     @property({ type: String })
     public get value(): string {
         return this._value || this.itemText;

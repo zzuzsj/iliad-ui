@@ -20,8 +20,8 @@ export const MenuGroup = createComponent(
     'sp-menu-group',
     Component,
     {
-        change: 'change',
         ...ReactiveEvents,
+        change: 'change',
     },
     'MenuGroup'
 );

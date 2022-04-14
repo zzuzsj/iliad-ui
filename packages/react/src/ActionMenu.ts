@@ -20,11 +20,11 @@ export const ActionMenu = createComponent(
     'sp-action-menu',
     Component,
     {
+        ...ReactiveEvents,
         change: 'change',
         'sp-opened': 'sp-opened',
         'sp-closed': 'sp-closed',
         keydown: 'keydown',
-        ...ReactiveEvents,
     },
     'ActionMenu'
 );

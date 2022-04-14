@@ -20,8 +20,8 @@ export const Toast = createComponent(
     'sp-toast',
     Component,
     {
-        close: 'close',
         ...ReactiveEvents,
+        close: 'close',
     },
     'Toast'
 );

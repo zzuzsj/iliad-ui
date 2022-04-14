@@ -20,9 +20,9 @@ export const AccordionItem = createComponent(
     'sp-accordion-item',
     Component,
     {
+        ...ReactiveEvents,
         'sp-accordion-item-toggle': 'sp-accordion-item-toggle',
         keydown: 'keydown',
-        ...ReactiveEvents,
     },
     'AccordionItem'
 );

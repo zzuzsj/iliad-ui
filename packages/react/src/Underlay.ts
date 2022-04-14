@@ -19,6 +19,8 @@ export const Underlay = createComponent(
     React,
     'sp-underlay',
     Component,
-    { ...ReactiveEvents },
+    {
+        ...ReactiveEvents,
+    },
     'Underlay'
 );

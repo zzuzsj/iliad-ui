@@ -20,11 +20,13 @@ export const Panel = createComponent(
     'sp-panel',
     Component,
     {
+        ...ReactiveEvents,
         close: 'close',
         back: 'back',
         confirm: 'confirm',
         cancel: 'cancel',
-        ...ReactiveEvents,
+        move: 'move',
+        moveEnd: 'moveEnd',
     },
     'Panel'
 );

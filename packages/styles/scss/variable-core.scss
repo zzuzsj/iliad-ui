@@ -210,6 +210,14 @@ $global-color-gray-700: #949494;
 $global-color-gray-800: #474747;
 $global-color-gray-900: #1f1f1f;
 
+// Part CoverColor
+$global-light-cover-color-0: rgba($global-color-static-black, 0);
+$global-light-cover-color-100: rgba($global-color-static-black, 0.06);
+$global-light-cover-color-200: rgba($global-color-static-black, 0.12);
+$global-dark-cover-color-0: rgba($global-color-static-white, 0);
+$global-dark-cover-color-100: rgba($global-color-static-white, 0.06);
+$global-dark-cover-color-200: rgba($global-color-static-white, 0.12);
+
 // Part Brand
 $global-color-info: rgba($global-color-static-primary-500, 1);
 $global-color-negative: rgba($global-color-static-red-500, 1);

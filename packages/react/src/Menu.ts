@@ -20,8 +20,8 @@ export const Menu = createComponent(
     'sp-menu',
     Component,
     {
-        change: 'change',
         ...ReactiveEvents,
+        change: 'change',
     },
     'Menu'
 );

@@ -84,4 +84,4 @@ import '@iliad-ui/top-nav/sp-top-nav-item.js';
 import '@iliad-ui/tray/sp-tray.js';
 import '@iliad-ui/underlay/sp-underlay.js';
 import '@iliad-ui/breadcrumb/sp-breadcrumb.js';
-import '@iliad-ui/tree/sp-tree.js';
+import '@iliad-ui/tree/sp-tree-item.js';

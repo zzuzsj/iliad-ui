@@ -20,8 +20,8 @@ export const Tray = createComponent(
     'sp-tray',
     Component,
     {
-        close: 'close',
         ...ReactiveEvents,
+        close: 'close',
     },
     'Tray'
 );
