@@ -25,6 +25,7 @@ custom-elements.json
 packages/*/src/**/*.css.js
 packages/*/custom-elements.json
 packages/**/*.js
+!packages/**/bin/*.js
 packages/**/spectrum-vars.json
 packages/**/*.js.map
 packages/**/*.d.ts

@@ -508,7 +508,8 @@ export class PickerBase extends SizedMixin(Focusable) {
 
     public disconnectedCallback(): void {
         this.open = false;
-
+        this.closeMenu();
+        this.onOverlayClosed();
         super.disconnectedCallback();
     }
 }
