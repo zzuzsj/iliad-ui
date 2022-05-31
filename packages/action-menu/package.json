@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/action-menu",
-    "version": "0.15.21",
+    "version": "0.15.22",
     "publishConfig": {
         "access": "public"
     },
@@ -51,7 +51,7 @@
         "@iliad-ui/icon": "^0.16.6",
         "@iliad-ui/icons-workflow": "^0.12.12",
         "@iliad-ui/menu": "^0.16.7",
-        "@iliad-ui/picker": "^0.13.21",
+        "@iliad-ui/picker": "^0.13.22",
         "@iliad-ui/shared": "^0.18.9",
         "tslib": "^2.0.0"
     },
