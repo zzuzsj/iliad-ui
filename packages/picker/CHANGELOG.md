@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.24](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/picker@0.13.23...@iliad-ui/picker@0.13.24) (2022-05-31)
+
+### Bug Fixes
+
+-   menuStateResolver 报错问题 ([6127f5d](https://github.com/gaoding-inc/iliad-ui/commit/6127f5d18fa826c6591e72ea9ed452b932fc8cc1))
+
 ## [0.13.23](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/picker@0.13.22...@iliad-ui/picker@0.13.23) (2022-05-31)
 
 **Note:** Version bump only for package @iliad-ui/picker

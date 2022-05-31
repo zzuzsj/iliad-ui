@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/picker",
-    "version": "0.13.23",
+    "version": "0.13.24",
     "publishConfig": {
         "access": "public"
     },
