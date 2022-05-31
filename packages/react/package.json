@@ -19,6 +19,11 @@
     "main": "./src/index.js",
     "module": "./src/index.js",
     "type": "module",
+    "exports": {
+        ".": "./src/index.js",
+        "./src/*": "./src/*",
+        "./package.json": "./package.json"
+    },
     "scripts": {
         "test": "echo \"Error: run tests from mono-repo root.\" && exit 1"
     },
