@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconAppear } from '../src/elements/IconAppear.js';
+import { IconEaseinquad } from '../src/elements/IconEaseinquad.js';
 
-iliadCustomElementsDefine('sp-icon-editor-appear', IconAppear);
+iliadCustomElementsDefine('sp-icon-editor-easeinquad', IconEaseinquad);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-appear': IconAppear;
+        'sp-icon-editor-easeinquad': IconEaseinquad;
     }
 }

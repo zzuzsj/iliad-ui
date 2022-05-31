@@ -11,17 +11,21 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { html, TemplateResult } from '@iliad-ui/base';
-import { IconBase } from '@iliad-ui/icon';
-import { AppearIcon } from '../icons/Appear.js';
-import { setCustomTemplateLiteralTag } from '../custom-tag.js';
-
-/**
- * @element sp-icon-editor-appear
- */
-export class IconAppear extends IconBase {
-    protected render(): TemplateResult {
-        setCustomTemplateLiteralTag(html);
-        return AppearIcon() as TemplateResult;
-    }
-}
+import { tag as html, TemplateResult } from '../custom-tag.js';
+export { setCustomTemplateLiteralTag } from '../custom-tag.js';
+export const LinnerIcon = (): string | TemplateResult => {
+    return html`
+        <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M2.46967 20.4697L21.4697 1.46967L22.5303 2.53033L3.53033 21.5303L2.46967 20.4697Z"
+            />
+        </svg>
+    `;
+};
