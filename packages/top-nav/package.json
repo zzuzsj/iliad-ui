@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/top-nav",
-    "version": "0.7.9",
+    "version": "0.7.10",
     "publishConfig": {
         "access": "public"
     },
@@ -46,9 +46,9 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.4",
-        "@iliad-ui/shared": "^0.18.9",
-        "@iliad-ui/tabs": "^0.12.9",
+        "@iliad-ui/base": "^0.11.5",
+        "@iliad-ui/shared": "^0.18.10",
+        "@iliad-ui/tabs": "^0.12.10",
         "tslib": "^2.0.0"
     },
     "types": "./src/index.d.ts",

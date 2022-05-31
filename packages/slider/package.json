@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/slider",
-    "version": "0.17.0",
+    "version": "0.17.1",
     "publishConfig": {
         "access": "public"
     },
@@ -48,11 +48,11 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.4",
-        "@iliad-ui/field-label": "^0.9.13",
-        "@iliad-ui/number-field": "^0.8.0",
-        "@iliad-ui/shared": "^0.18.9",
-        "@iliad-ui/theme": "^0.14.12",
+        "@iliad-ui/base": "^0.11.5",
+        "@iliad-ui/field-label": "^0.9.14",
+        "@iliad-ui/number-field": "^0.8.1",
+        "@iliad-ui/shared": "^0.18.10",
+        "@iliad-ui/theme": "^0.14.13",
         "@internationalized/number": "^3.0.0",
         "tslib": "^2.0.0"
     },

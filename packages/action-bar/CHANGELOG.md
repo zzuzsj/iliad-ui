@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.22](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/action-bar@0.6.21...@iliad-ui/action-bar@0.6.22) (2022-05-31)
+
+**Note:** Version bump only for package @iliad-ui/action-bar
+
 ## [0.6.21](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/action-bar@0.6.20...@iliad-ui/action-bar@0.6.21) (2022-05-31)
 
 **Note:** Version bump only for package @iliad-ui/action-bar
