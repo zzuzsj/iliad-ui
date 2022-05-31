@@ -9,6 +9,7 @@
     "include": ["*.ts", "src/*.ts", "*.json"],
     "exclude": ["test/*.ts", "stories/*.ts"],
     "references": [
+        { "path": "./index" },
         { "path": "../accordion" },
         { "path": "../action-bar" },
         { "path": "../action-button" },
