@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/react@0.13.0...@iliad-ui/react@0.14.0) (2022-05-31)
+
+### Features
+
+-   react index 文件移入 src ([c5dd777](https://github.com/gaoding-inc/iliad-ui/commit/c5dd7775d5f3b88b6a5af643e6771d3ecf3fd749))
+
 # [0.13.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/react@0.12.8...@iliad-ui/react@0.13.0) (2022-05-31)
 
 ### Features
