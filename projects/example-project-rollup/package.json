@@ -1,6 +1,6 @@
 {
   "name": "example-project-rollup",
-  "version": "0.4.22",
+  "version": "0.4.23",
   "private": true,
   "description": "An example project that uses the web components and gives an example of how to bundle them minimally with rollup.",
   "license": "Apache-2.0",
@@ -20,13 +20,13 @@
     "tsc:watch": "tsc --watch"
   },
   "dependencies": {
-    "@iliad-ui/bundle": "^0.26.33",
+    "@iliad-ui/bundle": "^0.26.34",
     "@iliad-ui/button": "^0.22.5",
     "@iliad-ui/field-label": "^0.9.14",
-    "@iliad-ui/icons": "^0.15.1",
-    "@iliad-ui/icons-editor": "^0.4.1",
+    "@iliad-ui/icons": "^0.16.0",
+    "@iliad-ui/icons-editor": "^0.5.0",
     "@iliad-ui/menu": "^0.16.8",
-    "@iliad-ui/picker": "^0.13.24",
+    "@iliad-ui/picker": "^0.13.25",
     "@iliad-ui/styles": "^0.15.3"
   },
   "devDependencies": {
