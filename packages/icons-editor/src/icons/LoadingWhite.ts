@@ -13,7 +13,7 @@ governing permissions and limitations under the License.
 
 import { tag as html, TemplateResult } from '../custom-tag.js';
 export { setCustomTemplateLiteralTag } from '../custom-tag.js';
-export const EyeOffIcon = (): string | TemplateResult => {
+export const LoadingWhiteIcon = (): string | TemplateResult => {
     return html`
         <svg
             width="24"
@@ -24,8 +24,21 @@ export const EyeOffIcon = (): string | TemplateResult => {
             <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M2.8321 9.98719L2.6708 9.6646L1.32916 10.3354L1.49046 10.658C2.33137 12.3398 3.47507 13.6951 4.80394 14.7237C4.57414 15.52 3.80193 16.0635 2.94789 15.9777L2.79795 17.4702C4.22096 17.6131 5.52162 16.8154 6.08224 15.5818C7.67456 16.5017 9.45105 17.0178 11.25 17.1299V20H12.75V17.1299C14.5489 17.0178 16.3254 16.5017 17.9177 15.5818C18.4783 16.8154 19.779 17.6131 21.202 17.4702L21.0521 15.9777C20.198 16.0635 19.4258 15.52 19.196 14.7237C20.5249 13.6951 21.6686 12.3398 22.5095 10.658L22.6708 10.3354L21.3292 9.6646L21.1679 9.98719C17.3905 17.5419 6.60948 17.5419 2.8321 9.98719Z"
+                d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM5 12C5 8.13401 8.13401 5 12 5C15.866 5 19 8.13401 19 12C19 15.866 15.866 19 12 19C8.13401 19 5 15.866 5 12Z"
             />
+            <defs>
+                <radialGradient
+                    id="paint0_angular_922_764"
+                    cx="0"
+                    cy="0"
+                    r="1"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(12 12) rotate(90) scale(9.55556)"
+                >
+                    <stop stop-color="white" />
+                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                </radialGradient>
+            </defs>
         </svg>
     `;
 };

@@ -143,8 +143,8 @@ function createIconsIndex() {
 
 function prettierFormat(content) {
     return prettier.format(content, {
-        printWidth: 100,
-        tabWidth: 2,
+        printWidth: 80,
+        tabWidth: 4,
         useTabs: false,
         semi: true,
         singleQuote: true,

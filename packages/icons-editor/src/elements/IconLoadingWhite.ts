@@ -13,15 +13,15 @@ governing permissions and limitations under the License.
 
 import { html, TemplateResult } from '@iliad-ui/base';
 import { IconBase } from '@iliad-ui/icon';
-import { LinnerIcon } from '../icons/Linner.js';
+import { LoadingWhiteIcon } from '../icons/LoadingWhite.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-icon-editor-linner
+ * @element sp-icon-editor-loading-white
  */
-export class IconLinner extends IconBase {
+export class IconLoadingWhite extends IconBase {
     protected render(): TemplateResult {
         setCustomTemplateLiteralTag(html);
-        return LinnerIcon() as TemplateResult;
+        return LoadingWhiteIcon() as TemplateResult;
     }
 }
