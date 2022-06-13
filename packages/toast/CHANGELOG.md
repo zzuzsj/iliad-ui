@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/toast@0.16.6...@iliad-ui/toast@0.17.0) (2022-06-13)
+
+### Features
+
+-   icons update ([248b2c3](https://github.com/gaoding-inc/iliad-ui/commit/248b2c3ba118469e2a7c6b83916d0007ae60b373))
+
 ## [0.16.6](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/toast@0.16.5...@iliad-ui/toast@0.16.6) (2022-06-13)
 
 ### Bug Fixes
