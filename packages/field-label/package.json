@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/field-label",
-    "version": "0.9.14",
+    "version": "0.9.15",
     "publishConfig": {
         "access": "public"
     },
@@ -44,10 +44,10 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.5",
-        "@iliad-ui/icon": "^0.16.7",
-        "@iliad-ui/icons-ui": "^0.12.13",
-        "@iliad-ui/shared": "^0.18.10",
+        "@iliad-ui/base": "^0.11.6",
+        "@iliad-ui/icon": "^0.16.8",
+        "@iliad-ui/icons-ui": "^0.12.14",
+        "@iliad-ui/shared": "^0.18.11",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

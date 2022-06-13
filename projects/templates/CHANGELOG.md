@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.19](https://github.com/zzuzsj/iliad-ui/compare/swc-templates@0.5.18...swc-templates@0.5.19) (2022-06-13)
+
+**Note:** Version bump only for package swc-templates
+
 ## [0.5.18](https://github.com/zzuzsj/iliad-ui/compare/swc-templates@0.5.17...swc-templates@0.5.18) (2022-05-31)
 
 **Note:** Version bump only for package swc-templates

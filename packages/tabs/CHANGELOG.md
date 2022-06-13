@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.11](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/tabs@0.12.10...@iliad-ui/tabs@0.12.11) (2022-06-13)
+
+**Note:** Version bump only for package @iliad-ui/tabs
+
 ## [0.12.10](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/tabs@0.12.9...@iliad-ui/tabs@0.12.10) (2022-05-31)
 
 **Note:** Version bump only for package @iliad-ui/tabs

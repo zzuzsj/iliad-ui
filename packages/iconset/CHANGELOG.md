@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.5](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/iconset@0.12.4...@iliad-ui/iconset@0.12.5) (2022-06-13)
+
+**Note:** Version bump only for package @iliad-ui/iconset
+
 ## [0.12.4](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/iconset@0.12.3...@iliad-ui/iconset@0.12.4) (2022-05-31)
 
 **Note:** Version bump only for package @iliad-ui/iconset

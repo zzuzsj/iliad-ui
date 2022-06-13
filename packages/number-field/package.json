@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/number-field",
-    "version": "0.8.1",
+    "version": "0.8.2",
     "publishConfig": {
         "access": "public"
     },
@@ -44,11 +44,11 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/action-button": "^0.13.5",
-        "@iliad-ui/base": "^0.11.5",
-        "@iliad-ui/icon": "^0.16.7",
-        "@iliad-ui/icons-ui": "^0.12.13",
-        "@iliad-ui/textfield": "^0.14.14",
+        "@iliad-ui/action-button": "^0.13.6",
+        "@iliad-ui/base": "^0.11.6",
+        "@iliad-ui/icon": "^0.16.8",
+        "@iliad-ui/icons-ui": "^0.12.14",
+        "@iliad-ui/textfield": "^0.14.15",
         "@internationalized/number": "^3.0.2",
         "tslib": "^2.0.0"
     },

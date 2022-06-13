@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.12](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/divider@0.6.11...@iliad-ui/divider@0.6.12) (2022-06-13)
+
+**Note:** Version bump only for package @iliad-ui/divider
+
 ## [0.6.11](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/divider@0.6.10...@iliad-ui/divider@0.6.11) (2022-05-31)
 
 **Note:** Version bump only for package @iliad-ui/divider

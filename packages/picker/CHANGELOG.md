@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.27](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/picker@0.13.25...@iliad-ui/picker@0.13.27) (2022-06-13)
+
+**Note:** Version bump only for package @iliad-ui/picker
+
 ## [0.13.26](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/picker@0.13.25...@iliad-ui/picker@0.13.26) (2022-06-13)
 
 **Note:** Version bump only for package @iliad-ui/picker
