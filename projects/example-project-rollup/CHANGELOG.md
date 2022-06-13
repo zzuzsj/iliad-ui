@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.26](https://github.com/zzuzsj/iliad-ui/compare/example-project-rollup@0.4.25...example-project-rollup@0.4.26) (2022-06-13)
+
+### Bug Fixes
+
+- 图标途径更改 ([eff285e](https://github.com/zzuzsj/iliad-ui/commit/eff285e16c04885c7dbd11aa3ca7f39dc94755e3))
+
 ## [0.4.25](https://github.com/zzuzsj/iliad-ui/compare/example-project-rollup@0.4.23...example-project-rollup@0.4.25) (2022-06-13)
 
 **Note:** Version bump only for package example-project-rollup
