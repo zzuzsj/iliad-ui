@@ -11,13 +11,17 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconCheckFill } from '../src/elements/IconCheckFill.js';
+import { html, TemplateResult } from '@iliad-ui/base';
+import { IconBase } from '@iliad-ui/icon';
+import { FigmaIcon } from '../icons/Figma.js';
+import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
-iliadCustomElementsDefine('sp-icon-editor-check-fill', IconCheckFill);
-
-declare global {
-    interface HTMLElementTagNameMap {
-        'sp-icon-editor-check-fill': IconCheckFill;
+/**
+ * @element sp-icon-editor-figma
+ */
+export class IconFigma extends IconBase {
+    protected render(): TemplateResult {
+        setCustomTemplateLiteralTag(html);
+        return FigmaIcon() as TemplateResult;
     }
 }

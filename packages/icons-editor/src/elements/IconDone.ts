@@ -13,15 +13,15 @@ governing permissions and limitations under the License.
 
 import { html, TemplateResult } from '@iliad-ui/base';
 import { IconBase } from '@iliad-ui/icon';
-import { CheckFillIcon } from '../icons/CheckFill.js';
+import { DoneIcon } from '../icons/Done.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-icon-editor-check-fill
+ * @element sp-icon-editor-done
  */
-export class IconCheckFill extends IconBase {
+export class IconDone extends IconBase {
     protected render(): TemplateResult {
         setCustomTemplateLiteralTag(html);
-        return CheckFillIcon() as TemplateResult;
+        return DoneIcon() as TemplateResult;
     }
 }

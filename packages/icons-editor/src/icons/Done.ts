@@ -13,7 +13,7 @@ governing permissions and limitations under the License.
 
 import { tag as html, TemplateResult } from '../custom-tag.js';
 export { setCustomTemplateLiteralTag } from '../custom-tag.js';
-export const CheckIcon = (): string | TemplateResult => {
+export const DoneIcon = (): string | TemplateResult => {
     return html`
         <svg
             width="24"
@@ -24,7 +24,7 @@ export const CheckIcon = (): string | TemplateResult => {
             <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M12 22.25C17.6609 22.25 22.25 17.6609 22.25 12C22.25 6.33908 17.6609 1.75 12 1.75C6.33908 1.75 1.75 6.33908 1.75 12C1.75 17.6609 6.33908 22.25 12 22.25ZM18.0428 9.01751L10.8928 16.5175C10.7464 16.6712 10.5417 16.7555 10.3295 16.7497C10.1173 16.7439 9.91747 16.6484 9.77963 16.487L5.92963 11.9781L7.07037 11.0041L10.3807 14.8809L16.9572 7.98249L18.0428 9.01751Z"
+                d="M9.53033 18.5303L21.5303 6.53033L20.4697 5.46967L9 16.9393L3.53033 11.4697L2.46967 12.5303L8.46967 18.5303C8.61032 18.671 8.80109 18.75 9 18.75C9.19891 18.75 9.38968 18.671 9.53033 18.5303Z"
             />
         </svg>
     `;
