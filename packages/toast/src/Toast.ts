@@ -23,7 +23,7 @@ import '@iliad-ui/button/sp-clear-button.js';
 import '@iliad-ui/action-button/sp-action-button';
 import '@iliad-ui/icons-editor/icons/sp-icon-editor-alert-fill.js';
 import '@iliad-ui/icons-editor/icons/sp-icon-editor-info-fill.js';
-import '@iliad-ui/icons-editor/icons/sp-icon-editor-check.js';
+import '@iliad-ui/icons-editor/icons/sp-icon-editor-check-fill.js';
 import '@iliad-ui/icons-editor/icons/sp-icon-editor-close.js';
 
 import toastStyles from './toast.css.js';
@@ -136,11 +136,11 @@ export class Toast extends SpectrumElement {
             case 'positive':
             case 'success': // deprecated
                 content = html`
-                    <sp-icon-editor-check
+                    <sp-icon-editor-check-fill
                         label="Success"
                         class="type"
                         size="l"
-                    ></sp-icon-editor-check>
+                    ></sp-icon-editor-check-fill>
                 `;
                 break;
             default:

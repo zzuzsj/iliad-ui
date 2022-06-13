@@ -30,6 +30,7 @@ export { AutolayoutHorzIcon } from './icons/AutolayoutHorz.js';
 export { AutolayoutVertIcon } from './icons/AutolayoutVert.js';
 export { BackspaceIcon } from './icons/Backspace.js';
 export { CheckIcon } from './icons/Check.js';
+export { CheckFillIcon } from './icons/CheckFill.js';
 export { ClearIcon } from './icons/Clear.js';
 export { CloseIcon } from './icons/Close.js';
 export { CloseFullIcon } from './icons/CloseFull.js';
