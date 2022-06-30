@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/split-button",
-    "version": "0.9.27",
+    "version": "0.9.28",
     "publishConfig": {
         "access": "public"
     },
@@ -51,8 +51,8 @@
         "@iliad-ui/icon": "^0.16.8",
         "@iliad-ui/icons-ui": "^0.12.14",
         "@iliad-ui/icons-workflow": "^0.12.14",
-        "@iliad-ui/overlay": "^0.17.15",
-        "@iliad-ui/picker": "^0.13.28",
+        "@iliad-ui/overlay": "^0.17.16",
+        "@iliad-ui/picker": "^0.13.29",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

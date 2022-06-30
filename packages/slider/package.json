@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/slider",
-    "version": "0.17.2",
+    "version": "0.17.3",
     "publishConfig": {
         "access": "public"
     },
@@ -52,7 +52,7 @@
         "@iliad-ui/field-label": "^0.9.15",
         "@iliad-ui/number-field": "^0.8.2",
         "@iliad-ui/shared": "^0.18.11",
-        "@iliad-ui/theme": "^0.14.14",
+        "@iliad-ui/theme": "^0.14.15",
         "@internationalized/number": "^3.0.0",
         "tslib": "^2.0.0"
     },

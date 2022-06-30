@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/illustrated-message",
-    "version": "0.10.13",
+    "version": "0.10.14",
     "publishConfig": {
         "access": "public"
     },
@@ -45,7 +45,7 @@
     ],
     "dependencies": {
         "@iliad-ui/base": "^0.11.6",
-        "@iliad-ui/styles": "^0.15.4",
+        "@iliad-ui/styles": "^0.16.0",
         "tslib": "^2.0.0"
     },
     "devDependencies": {
