@@ -13,15 +13,15 @@ governing permissions and limitations under the License.
 
 import { html, TemplateResult } from '@iliad-ui/base';
 import { IconBase } from '@iliad-ui/icon';
-import { AutolayoutVertIcon } from '../icons/AutolayoutVert.js';
+import { WrapIcon } from '../icons/Wrap.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-icon-editor-autolayout-vert
+ * @element sp-icon-editor-wrap
  */
-export class IconAutolayoutVert extends IconBase {
+export class IconWrap extends IconBase {
     protected render(): TemplateResult {
         setCustomTemplateLiteralTag(html);
-        return AutolayoutVertIcon() as TemplateResult;
+        return WrapIcon() as TemplateResult;
     }
 }

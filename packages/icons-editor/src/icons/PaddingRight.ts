@@ -13,7 +13,7 @@ governing permissions and limitations under the License.
 
 import { tag as html, TemplateResult } from '../custom-tag.js';
 export { setCustomTemplateLiteralTag } from '../custom-tag.js';
-export const LoadingIcon = (): string | TemplateResult => {
+export const PaddingRightIcon = (): string | TemplateResult => {
     return html`
         <svg
             width="24"
@@ -24,21 +24,8 @@ export const LoadingIcon = (): string | TemplateResult => {
             <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM19 12C19 15.866 15.866 19 12 19C8.13401 19 5 15.866 5 12C5 8.13401 8.13401 5 12 5C15.866 5 19 8.13401 19 12Z"
+                d="M21.75 20L21.75 4L20.25 4L20.25 20L21.75 20ZM16.75 14.5C16.75 15.7426 15.7426 16.75 14.5 16.75L9.5 16.75C8.25736 16.75 7.25 15.7426 7.25 14.5L7.25 9.5C7.25 8.25736 8.25736 7.25 9.5 7.25L14.5 7.25C15.7426 7.25 16.75 8.25736 16.75 9.5L16.75 14.5ZM14.5 15.25C14.9142 15.25 15.25 14.9142 15.25 14.5L15.25 9.5C15.25 9.08579 14.9142 8.75 14.5 8.75L9.5 8.75C9.08579 8.75 8.75 9.08579 8.75 9.5L8.75 14.5C8.75 14.9142 9.08579 15.25 9.5 15.25L14.5 15.25Z"
             />
-            <defs>
-                <radialGradient
-                    id="paint0_angular_919_758"
-                    cx="0"
-                    cy="0"
-                    r="1"
-                    gradientUnits="userSpaceOnUse"
-                    gradientTransform="translate(12 12) rotate(-90) scale(9.55556)"
-                >
-                    <stop stop-color="#1F1F1F" />
-                    <stop offset="1" stop-color="#1F1F1F" stop-opacity="0" />
-                </radialGradient>
-            </defs>
         </svg>
     `;
 };

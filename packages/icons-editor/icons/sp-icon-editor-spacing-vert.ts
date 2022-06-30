@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconKeyline } from '../src/elements/IconKeyline.js';
+import { IconSpacingVert } from '../src/elements/IconSpacingVert.js';
 
-iliadCustomElementsDefine('sp-icon-editor-keyline', IconKeyline);
+iliadCustomElementsDefine('sp-icon-editor-spacing-vert', IconSpacingVert);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-keyline': IconKeyline;
+        'sp-icon-editor-spacing-vert': IconSpacingVert;
     }
 }

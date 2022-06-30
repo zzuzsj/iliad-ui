@@ -13,7 +13,7 @@ governing permissions and limitations under the License.
 
 import { tag as html, TemplateResult } from '../custom-tag.js';
 export { setCustomTemplateLiteralTag } from '../custom-tag.js';
-export const LoadingIcon = (): string | TemplateResult => {
+export const LayoutVertIcon = (): string | TemplateResult => {
     return html`
         <svg
             width="24"
@@ -24,21 +24,8 @@ export const LoadingIcon = (): string | TemplateResult => {
             <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM19 12C19 15.866 15.866 19 12 19C8.13401 19 5 15.866 5 12C5 8.13401 8.13401 5 12 5C15.866 5 19 8.13401 19 12Z"
+                d="M5 19.25C4.30964 19.25 3.75 18.6904 3.75 18L3.75 16C3.75 15.3096 4.30964 14.75 5 14.75L19 14.75C19.6904 14.75 20.25 15.3096 20.25 16L20.25 18C20.25 18.6904 19.6904 19.25 19 19.25L5 19.25ZM2.25 18C2.25 19.5188 3.48122 20.75 5 20.75L19 20.75C20.5188 20.75 21.75 19.5188 21.75 18L21.75 16C21.75 14.4812 20.5188 13.25 19 13.25L5 13.25C3.48122 13.25 2.25 14.4812 2.25 16L2.25 18ZM5 9.25C4.30964 9.25 3.75 8.69036 3.75 8L3.75 6C3.75 5.30964 4.30964 4.75 5 4.75L19 4.75C19.6904 4.75 20.25 5.30964 20.25 6L20.25 8C20.25 8.69036 19.6904 9.25 19 9.25L5 9.25ZM2.25 8C2.25 9.51878 3.48122 10.75 5 10.75L19 10.75C20.5188 10.75 21.75 9.51878 21.75 8L21.75 6C21.75 4.48122 20.5188 3.25 19 3.25L5 3.25C3.48122 3.25 2.25 4.48122 2.25 6L2.25 8Z"
             />
-            <defs>
-                <radialGradient
-                    id="paint0_angular_919_758"
-                    cx="0"
-                    cy="0"
-                    r="1"
-                    gradientUnits="userSpaceOnUse"
-                    gradientTransform="translate(12 12) rotate(-90) scale(9.55556)"
-                >
-                    <stop stop-color="#1F1F1F" />
-                    <stop offset="1" stop-color="#1F1F1F" stop-opacity="0" />
-                </radialGradient>
-            </defs>
         </svg>
     `;
 };

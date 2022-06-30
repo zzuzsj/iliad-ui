@@ -11,13 +11,17 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconLayout } from '../src/elements/IconLayout.js';
+import { html, TemplateResult } from '@iliad-ui/base';
+import { IconBase } from '@iliad-ui/icon';
+import { LayoutWrapIcon } from '../icons/LayoutWrap.js';
+import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
-iliadCustomElementsDefine('sp-icon-editor-layout', IconLayout);
-
-declare global {
-    interface HTMLElementTagNameMap {
-        'sp-icon-editor-layout': IconLayout;
+/**
+ * @element sp-icon-editor-layout-wrap
+ */
+export class IconLayoutWrap extends IconBase {
+    protected render(): TemplateResult {
+        setCustomTemplateLiteralTag(html);
+        return LayoutWrapIcon() as TemplateResult;
     }
 }

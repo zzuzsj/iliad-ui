@@ -153,6 +153,10 @@ client
                                 options.format === 'svg' ? 'utf8' : 'binary'
                             );
                         });
+                    })
+                    .catch((err) => {
+                        console.log('Got Image Failed', pascalOutputName);
+                        console.log('Error Info: ', err);
                     });
             })
         );

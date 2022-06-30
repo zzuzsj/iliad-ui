@@ -13,7 +13,7 @@ governing permissions and limitations under the License.
 
 import { tag as html, TemplateResult } from '../custom-tag.js';
 export { setCustomTemplateLiteralTag } from '../custom-tag.js';
-export const LoadingIcon = (): string | TemplateResult => {
+export const LayoutHorzIcon = (): string | TemplateResult => {
     return html`
         <svg
             width="24"
@@ -24,21 +24,8 @@ export const LoadingIcon = (): string | TemplateResult => {
             <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM19 12C19 15.866 15.866 19 12 19C8.13401 19 5 15.866 5 12C5 8.13401 8.13401 5 12 5C15.866 5 19 8.13401 19 12Z"
+                d="M4.75 5C4.75 4.30964 5.30964 3.75 6 3.75L8 3.75C8.69036 3.75 9.25 4.30964 9.25 5L9.25 19C9.25 19.6904 8.69036 20.25 8 20.25H6C5.30964 20.25 4.75 19.6904 4.75 19L4.75 5ZM6 2.25C4.48122 2.25 3.25 3.48122 3.25 5L3.25 19C3.25 20.5188 4.48122 21.75 6 21.75H8C9.51878 21.75 10.75 20.5188 10.75 19L10.75 5C10.75 3.48122 9.51878 2.25 8 2.25L6 2.25ZM14.75 5C14.75 4.30964 15.3096 3.75 16 3.75L18 3.75C18.6904 3.75 19.25 4.30964 19.25 5L19.25 19C19.25 19.6904 18.6904 20.25 18 20.25H16C15.3096 20.25 14.75 19.6904 14.75 19L14.75 5ZM16 2.25C14.4812 2.25 13.25 3.48122 13.25 5L13.25 19C13.25 20.5188 14.4812 21.75 16 21.75H18C19.5188 21.75 20.75 20.5188 20.75 19L20.75 5C20.75 3.48122 19.5188 2.25 18 2.25H16Z"
             />
-            <defs>
-                <radialGradient
-                    id="paint0_angular_919_758"
-                    cx="0"
-                    cy="0"
-                    r="1"
-                    gradientUnits="userSpaceOnUse"
-                    gradientTransform="translate(12 12) rotate(-90) scale(9.55556)"
-                >
-                    <stop stop-color="#1F1F1F" />
-                    <stop offset="1" stop-color="#1F1F1F" stop-opacity="0" />
-                </radialGradient>
-            </defs>
         </svg>
     `;
 };

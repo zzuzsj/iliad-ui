@@ -13,15 +13,15 @@ governing permissions and limitations under the License.
 
 import { html, TemplateResult } from '@iliad-ui/base';
 import { IconBase } from '@iliad-ui/icon';
-import { KeylineIcon } from '../icons/Keyline.js';
+import { UnitIcon } from '../icons/Unit.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-icon-editor-keyline
+ * @element sp-icon-editor-unit
  */
-export class IconKeyline extends IconBase {
+export class IconUnit extends IconBase {
     protected render(): TemplateResult {
         setCustomTemplateLiteralTag(html);
-        return KeylineIcon() as TemplateResult;
+        return UnitIcon() as TemplateResult;
     }
 }
