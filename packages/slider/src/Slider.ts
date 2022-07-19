@@ -30,6 +30,7 @@ import '@iliad-ui/field-label/sp-field-label.js';
 import type { NumberField } from '@iliad-ui/number-field';
 import { HandleController, HandleValueDictionary } from './HandleController.js';
 import { SliderHandle } from './SliderHandle.js';
+import { NumberFormatter } from '@internationalized/number';
 
 export const variants = ['filled', 'ramp', 'range', 'tick'];
 
@@ -156,7 +157,7 @@ export class Slider extends ObserveSlotText(SliderHandle, '') {
     @query('#track')
     public track!: HTMLDivElement;
 
-    public get numberFormat(): Intl.NumberFormat {
+    public get numberFormat(): NumberFormatter {
         return this.getNumberFormat();
     }
 
