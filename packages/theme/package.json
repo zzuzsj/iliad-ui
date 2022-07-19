@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/theme",
-    "version": "0.14.15",
+    "version": "0.15.1",
     "publishConfig": {
         "access": "public"
     },
@@ -56,8 +56,8 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.6",
-        "@iliad-ui/styles": "^0.16.0",
+        "@iliad-ui/base": "^0.12.1",
+        "@iliad-ui/styles": "^0.17.1",
         "tslib": "^2.0.0"
     },
     "types": "./src/index.d.ts",
@@ -67,6 +67,10 @@
         {
             "name": "saiye",
             "email": "saiye@gaoding.com"
+        },
+        {
+            "name": "yase",
+            "email": "yase@gaoding.com"
         }
     ],
     "sideEffects": [

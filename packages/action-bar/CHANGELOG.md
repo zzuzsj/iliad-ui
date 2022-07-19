@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/action-bar@0.7.0...@iliad-ui/action-bar@0.7.1) (2022-07-19)
+
+**Note:** Version bump only for package @iliad-ui/action-bar
+
+# 0.7.0 (2022-07-19)
+
+### Bug Fixes
+
+-   correct [@element](https://github.com/element) jsDoc listing across library ([c97a632](https://github.com/gaoding-inc/iliad-ui/commit/c97a6320c16a2b3053637e22bca0d56ce0cd5ae5))
+-   propogate open to child sp-popover ([ae97677](https://github.com/gaoding-inc/iliad-ui/commit/ae97677d0db26f4ae68fa47fc561e58490adaf9b))
+-   update to latest spectrum-css packages ([a5ca19f](https://github.com/gaoding-inc/iliad-ui/commit/a5ca19f67d5b3f0951667c4441d4d977bf1e0937))
+
+### Features
+
+-   **action-bar:** create sp-action-bar component to replace sp-actionbar ([38004b4](https://github.com/gaoding-inc/iliad-ui/commit/38004b472a69302e3592add04b746ca01e44557d))
+-   use latest exports specification ([a7ecf4b](https://github.com/gaoding-inc/iliad-ui/commit/a7ecf4b6da7996f36a8a89f62cc2384709497008))
+
 ## [0.6.28](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/action-bar@0.6.27...@iliad-ui/action-bar@0.6.28) (2022-06-30)
 
 **Note:** Version bump only for package @iliad-ui/action-bar

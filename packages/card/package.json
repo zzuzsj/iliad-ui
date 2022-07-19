@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/card",
-    "version": "0.14.16",
+    "version": "0.15.1",
     "publishConfig": {
         "access": "public"
     },
@@ -44,13 +44,13 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/asset": "^0.8.11",
-        "@iliad-ui/base": "^0.11.6",
-        "@iliad-ui/checkbox": "^0.14.14",
-        "@iliad-ui/icons-workflow": "^0.12.14",
-        "@iliad-ui/quick-actions": "^0.8.11",
-        "@iliad-ui/shared": "^0.18.11",
-        "@iliad-ui/styles": "^0.16.0",
+        "@iliad-ui/asset": "^0.9.1",
+        "@iliad-ui/base": "^0.12.1",
+        "@iliad-ui/checkbox": "^0.15.1",
+        "@iliad-ui/icons-workflow": "^0.13.1",
+        "@iliad-ui/quick-actions": "^0.9.1",
+        "@iliad-ui/shared": "^0.19.1",
+        "@iliad-ui/styles": "^0.17.1",
         "tslib": "^2.0.0"
     },
     "devDependencies": {
@@ -63,6 +63,10 @@
         {
             "name": "saiye",
             "email": "saiye@gaoding.com"
+        },
+        {
+            "name": "yase",
+            "email": "yase@gaoding.com"
         }
     ],
     "sideEffects": [

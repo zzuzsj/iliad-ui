@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1](https://github.com/gaoding-inc/Iliad-ui/compare/example-project-rollup@0.5.0...example-project-rollup@0.5.1) (2022-07-19)
+
+**Note:** Version bump only for package example-project-rollup
+
+# [0.5.0](https://github.com/gaoding-inc/Iliad-ui/compare/example-project-rollup@0.3.17...example-project-rollup@0.5.0) (2022-07-19)
+
+### Bug Fixes
+
+- 图标途径更改 ([eff285e](https://github.com/gaoding-inc/Iliad-ui/commit/eff285e16c04885c7dbd11aa3ca7f39dc94755e3))
+
+### Features
+
+- 测试案例更改 ([9b118ec](https://github.com/gaoding-inc/Iliad-ui/commit/9b118ecfde397f0ef01c1b94c148fad1cd7f4726))
+- 组件样式走查，增加 radio button 样式 ([61342d3](https://github.com/gaoding-inc/Iliad-ui/commit/61342d3a086263c65611d4033f20428f8db2b8fa))
+
 ## [0.4.29](https://github.com/zzuzsj/iliad-ui/compare/example-project-rollup@0.4.28...example-project-rollup@0.4.29) (2022-06-30)
 
 **Note:** Version bump only for package example-project-rollup

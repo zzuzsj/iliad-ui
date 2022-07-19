@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/slider",
-    "version": "0.17.3",
+    "version": "0.18.1",
     "publishConfig": {
         "access": "public"
     },
@@ -48,11 +48,11 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.6",
-        "@iliad-ui/field-label": "^0.9.15",
-        "@iliad-ui/number-field": "^0.8.2",
-        "@iliad-ui/shared": "^0.18.11",
-        "@iliad-ui/theme": "^0.14.15",
+        "@iliad-ui/base": "^0.12.1",
+        "@iliad-ui/field-label": "^0.10.1",
+        "@iliad-ui/number-field": "^0.9.1",
+        "@iliad-ui/shared": "^0.19.1",
+        "@iliad-ui/theme": "^0.15.1",
         "@internationalized/number": "^3.0.0",
         "tslib": "^2.0.0"
     },
@@ -66,6 +66,10 @@
         {
             "name": "saiye",
             "email": "saiye@gaoding.com"
+        },
+        {
+            "name": "yase",
+            "email": "yase@gaoding.com"
         }
     ],
     "sideEffects": [

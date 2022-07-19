@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons-workflow@0.13.0...@iliad-ui/icons-workflow@0.13.1) (2022-07-19)
+
+**Note:** Version bump only for package @iliad-ui/icons-workflow
+
+# 0.13.0 (2022-07-19)
+
+### Bug Fixes
+
+-   correct [@element](https://github.com/element) jsDoc listing across library ([c97a632](https://github.com/gaoding-inc/iliad-ui/commit/c97a6320c16a2b3053637e22bca0d56ce0cd5ae5))
+-   **icon:** clean up docs and types for available size values ([c38850d](https://github.com/gaoding-inc/iliad-ui/commit/c38850d1120a8599d8c623302bbc2c21485c99bc))
+-   **icons-workflow:** rename icons/files to avoid ad blocking ([842b081](https://github.com/gaoding-inc/iliad-ui/commit/842b0810089b567b5d3dfca70ddc5935c4c6f477))
+-   include default export in the "exports" fields ([f32407d](https://github.com/gaoding-inc/iliad-ui/commit/f32407d7bbfd18e72c35b6f27740549e79957858))
+-   include the "types" entry in package.json files ([b432f59](https://github.com/gaoding-inc/iliad-ui/commit/b432f5982b3b79f80af12f6d0312cbe2285e608b))
+-   remove "type: "module"" in package.json for node 12 ([c9f76e2](https://github.com/gaoding-inc/iliad-ui/commit/c9f76e21e24bb844466158fe96512ab19c37c5a9))
+-   ts build error ([15658f7](https://github.com/gaoding-inc/iliad-ui/commit/15658f714fde0cff206d844ee41e2b90ec92232c))
+
+### Features
+
+-   add and use icons-ui package ([d9c3ab2](https://github.com/gaoding-inc/iliad-ui/commit/d9c3ab212b4f756334e857fc513ccbf0a4dff9cc))
+-   **icons-workflow:** add workflow icons package ([6b09287](https://github.com/gaoding-inc/iliad-ui/commit/6b09287d5c169205f0cc332b2158d57e7ef4a4b7))
+-   **icons-workflow:** update spectrum css input ([549b4b6](https://github.com/gaoding-inc/iliad-ui/commit/549b4b6b3743ac6ca3b8fe1048188ab96ba85eee))
+-   **icons-workflow:** vend fully registered icon components ([941f3a4](https://github.com/gaoding-inc/iliad-ui/commit/941f3a41486fbd49eca0805fb63383f63313e71e))
+-   leverage "exports" field in package.json ([321abd7](https://github.com/gaoding-inc/iliad-ui/commit/321abd7b7e78ccd9157cff75a1fa3dbd06e81f79))
+-   update lit-\* dependencies, wip ([70743bf](https://github.com/gaoding-inc/iliad-ui/commit/70743bf6855c08924a0a3ec1a14dc43862f9cf42))
+-   use latest exports specification ([a7ecf4b](https://github.com/gaoding-inc/iliad-ui/commit/a7ecf4b6da7996f36a8a89f62cc2384709497008))
+
+### Performance Improvements
+
+-   use "sideEffects" listing in package.json ([7271614](https://github.com/gaoding-inc/iliad-ui/commit/7271614c0ca3ccf3566583bb59467eb15a6199cd))
+
 ## [0.12.14](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons-workflow@0.12.13...@iliad-ui/icons-workflow@0.12.14) (2022-06-13)
 
 **Note:** Version bump only for package @iliad-ui/icons-workflow

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/progress-bar@0.8.0...@iliad-ui/progress-bar@0.8.1) (2022-07-19)
+
+**Note:** Version bump only for package @iliad-ui/progress-bar
+
+# 0.8.0 (2022-07-19)
+
+### Bug Fixes
+
+-   update to latest spectrum-css packages ([a5ca19f](https://github.com/gaoding-inc/iliad-ui/commit/a5ca19f67d5b3f0951667c4441d4d977bf1e0937))
+
+### Features
+
+-   **progress-bar:** replace bar-loader with progress-bar ([182935c](https://github.com/gaoding-inc/iliad-ui/commit/182935c540013af9e793ccf5654113b7af5d34de))
+-   **tabs:** add sp-tab-panel element ([b17d276](https://github.com/gaoding-inc/iliad-ui/commit/b17d2765cf415578a31e5fa23515c25ff4c3922d))
+-   use latest exports specification ([a7ecf4b](https://github.com/gaoding-inc/iliad-ui/commit/a7ecf4b6da7996f36a8a89f62cc2384709497008))
+
 ## [0.7.14](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/progress-bar@0.7.13...@iliad-ui/progress-bar@0.7.14) (2022-06-13)
 
 **Note:** Version bump only for package @iliad-ui/progress-bar

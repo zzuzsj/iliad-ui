@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/breadcrumb",
-    "version": "0.1.12",
+    "version": "0.2.1",
     "publishConfig": {
         "access": "public"
     },
@@ -44,7 +44,7 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.6",
+        "@iliad-ui/base": "^0.12.1",
         "tslib": "^2.0.0"
     },
     "devDependencies": {
@@ -58,6 +58,10 @@
         {
             "name": "saiye",
             "email": "saiye@gaoding.com"
+        },
+        {
+            "name": "yase",
+            "email": "yase@gaoding.com"
         }
     ],
     "sideEffects": [

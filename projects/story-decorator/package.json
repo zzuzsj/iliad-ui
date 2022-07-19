@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/story-decorator",
-    "version": "0.9.29",
+    "version": "0.10.1",
     "publishConfig": {
         "access": "public"
     },
@@ -45,13 +45,13 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.6",
-        "@iliad-ui/field-label": "^0.9.15",
-        "@iliad-ui/menu": "^0.16.9",
-        "@iliad-ui/overlay": "^0.17.16",
-        "@iliad-ui/picker": "^0.13.30",
-        "@iliad-ui/switch": "^0.11.14",
-        "@iliad-ui/theme": "^0.14.15",
+        "@iliad-ui/base": "^0.12.1",
+        "@iliad-ui/field-label": "^0.10.1",
+        "@iliad-ui/menu": "^0.17.1",
+        "@iliad-ui/overlay": "^0.18.1",
+        "@iliad-ui/picker": "^0.14.1",
+        "@iliad-ui/switch": "^0.12.1",
+        "@iliad-ui/theme": "^0.15.1",
         "tslib": "^2.0.0"
     },
     "types": "./src/index.d.ts",
@@ -61,6 +61,10 @@
         {
             "name": "saiye",
             "email": "saiye@gaoding.com"
+        },
+        {
+            "name": "yase",
+            "email": "yase@gaoding.com"
         }
     ],
     "sideEffects": [

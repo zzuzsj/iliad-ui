@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/styles",
-    "version": "0.16.0",
+    "version": "0.17.1",
     "publishConfig": {
         "access": "public"
     },
@@ -72,7 +72,7 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.6"
+        "@iliad-ui/base": "^0.12.1"
     },
     "devDependencies": {
         "@spectrum-css/commons": "^3.0.2",
@@ -97,6 +97,10 @@
         {
             "name": "saiye",
             "email": "saiye@gaoding.com"
+        },
+        {
+            "name": "yase",
+            "email": "yase@gaoding.com"
         }
     ],
     "sideEffects": [

@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/popover",
-    "version": "0.15.9",
+    "version": "0.16.1",
     "publishConfig": {
         "access": "public"
     },
@@ -46,9 +46,9 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.6",
-        "@iliad-ui/icons-editor": "^0.8.0",
-        "@iliad-ui/overlay": "^0.17.16",
+        "@iliad-ui/base": "^0.12.1",
+        "@iliad-ui/icons-editor": "^0.9.1",
+        "@iliad-ui/overlay": "^0.18.1",
         "tslib": "^2.0.0"
     },
     "devDependencies": {
@@ -61,6 +61,10 @@
         {
             "name": "saiye",
             "email": "saiye@gaoding.com"
+        },
+        {
+            "name": "yase",
+            "email": "yase@gaoding.com"
         }
     ],
     "sideEffects": [

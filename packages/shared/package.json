@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/shared",
-    "version": "0.18.11",
+    "version": "0.19.1",
     "publishConfig": {
         "access": "public"
     },
@@ -42,7 +42,7 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.6",
+        "@iliad-ui/base": "^0.12.1",
         "focus-visible": "^5.1.0",
         "tslib": "^2.0.0"
     },
@@ -53,6 +53,10 @@
         {
             "name": "saiye",
             "email": "saiye@gaoding.com"
+        },
+        {
+            "name": "yase",
+            "email": "yase@gaoding.com"
         }
     ],
     "sideEffects": false

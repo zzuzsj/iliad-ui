@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons-editor@0.9.0...@iliad-ui/icons-editor@0.9.1) (2022-07-19)
+
+**Note:** Version bump only for package @iliad-ui/icons-editor
+
+# 0.9.0 (2022-07-19)
+
+### Bug Fixes
+
+-   icons-editor 错误修复 ([55c1137](https://github.com/gaoding-inc/iliad-ui/commit/55c113746f86a55d5a4223eb47724a6a35dce8aa))
+-   ts build error ([15658f7](https://github.com/gaoding-inc/iliad-ui/commit/15658f714fde0cff206d844ee41e2b90ec92232c))
+
+### Features
+
+-   editor icons 更新 ([f14e19d](https://github.com/gaoding-inc/iliad-ui/commit/f14e19da09c452cfcc31c730ff0edf78f4492b0c))
+-   icon-editor 更新 ([4f14bea](https://github.com/gaoding-inc/iliad-ui/commit/4f14bead01215db6a7b7ed9b2faf6821ae56fc16))
+-   icons update ([248b2c3](https://github.com/gaoding-inc/iliad-ui/commit/248b2c3ba118469e2a7c6b83916d0007ae60b373))
+-   icons updated ([331c2ef](https://github.com/gaoding-inc/iliad-ui/commit/331c2ef2e38371c534d8cd82345451f3020507c8))
+-   icons 更新 ([a83d1cb](https://github.com/gaoding-inc/iliad-ui/commit/a83d1cbb0b12161c78a20747719bc75101555d5c))
+-   icons-editor 增加 story ([04eb899](https://github.com/gaoding-inc/iliad-ui/commit/04eb89912f49941790f8d8ce0cf9ceb81463dca3))
+-   icons-editor 标签更改 ([6b657f0](https://github.com/gaoding-inc/iliad-ui/commit/6b657f0ca87b91d582198aaa78d547c57ed79f3e))
+-   icons-editor 版本更新 ([6c6265d](https://github.com/gaoding-inc/iliad-ui/commit/6c6265d9d5a7b65a5bcf53cf7b1911f89b018ce9))
+-   icons 文件获取更新 ([3da42d2](https://github.com/gaoding-inc/iliad-ui/commit/3da42d26985f0502748e44d446c8993ad94112f3))
+-   icons 更新 ([c6487c8](https://github.com/gaoding-inc/iliad-ui/commit/c6487c8f6a763c9d58a19907c8f13981d0ef0a2d))
+-   icons 更新 ([b831d4c](https://github.com/gaoding-inc/iliad-ui/commit/b831d4c3bf42f16e1a64a7dbcefa75eaee667a1e))
+-   icons 更新 作为下划线格式 ([3b5a371](https://github.com/gaoding-inc/iliad-ui/commit/3b5a371c12939a8d7473ee2ec8ff502409f13362))
+-   icons 版本更新提交 ([9afd7a9](https://github.com/gaoding-inc/iliad-ui/commit/9afd7a967d67cbddf5e783bf13dbed9c30728332))
+-   增加 editor icon package ([2c1a304](https://github.com/gaoding-inc/iliad-ui/commit/2c1a304274e82d8d65ef3cd66ba8ac1a1c7f0f5a))
+-   增加 editor icon package ([0759a3f](https://github.com/gaoding-inc/iliad-ui/commit/0759a3f490094e7dd865e86c94e4c6189378ff90))
+-   增加 tsconfig ([8fd6bc9](https://github.com/gaoding-inc/iliad-ui/commit/8fd6bc97a3431297e14fb335865789c710469512))
+-   新增编辑器 icon 库 ([40e02eb](https://github.com/gaoding-inc/iliad-ui/commit/40e02eb842c0463ee10ff8f0b91287d421877212))
+-   更新 treeItem 组件样式 ([11249b2](https://github.com/gaoding-inc/iliad-ui/commit/11249b2cf95a02d1df9dd4c84f94a0113714d027))
+
 # [0.8.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons-editor@0.7.0...@iliad-ui/icons-editor@0.8.0) (2022-06-30)
 
 ### Features
