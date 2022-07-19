@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.19.0 (2022-07-19)
+
+### Bug Fixes
+
+-   react types 入口 ([c5244b3](https://github.com/gaoding-inc/iliad-ui/commit/c5244b374aa4b760db524da3bbad36f30d34a89f))
+-   react 包注册 web components ([0fbd882](https://github.com/gaoding-inc/iliad-ui/commit/0fbd88253877276e429c8d2460753654c2988d6a))
+-   react 导出组件类型为 any ([a66562c](https://github.com/gaoding-inc/iliad-ui/commit/a66562c71d928d54760679c323f24a074869a9d7))
+-   react 组件包增加 modules.json 导出 ([68996a2](https://github.com/gaoding-inc/iliad-ui/commit/68996a28019c48165eff52ff72bdbb30d49e112d))
+-   增加手动导出 ([bcce210](https://github.com/gaoding-inc/iliad-ui/commit/bcce2107150a1a3837fdade911aa9abd50401691))
+-   样式更新 ([acf675b](https://github.com/gaoding-inc/iliad-ui/commit/acf675b3ebd9fcdb42b96ad1a72879dce37986ba))
+-   样式更新 ([1fb01df](https://github.com/gaoding-inc/iliad-ui/commit/1fb01dfbf22775a971423bc3985ececa476bbf29))
+-   脚本生成 react 包时，遗漏 picker ([be4a517](https://github.com/gaoding-inc/iliad-ui/commit/be4a517dafeb7b96d139d42426c9399a45684cbb))
+
+### Features
+
+-   icons 更新 ([c6487c8](https://github.com/gaoding-inc/iliad-ui/commit/c6487c8f6a763c9d58a19907c8f13981d0ef0a2d))
+-   icons 相关更新 ([732826a](https://github.com/gaoding-inc/iliad-ui/commit/732826a8eab0fe3156420b83c9031028df6f30a3))
+-   radio 组件样式更改 ([e6380dd](https://github.com/gaoding-inc/iliad-ui/commit/e6380dde4650240aec0a342d1f8a390bb0ac2f0f))
+-   react index 文件移入 src ([c5dd777](https://github.com/gaoding-inc/iliad-ui/commit/c5dd7775d5f3b88b6a5af643e6771d3ecf3fd749))
+-   react 包导出 Overlay ([ca88335](https://github.com/gaoding-inc/iliad-ui/commit/ca88335f8b69ec66e29f7525e2c10cde3e44006a))
+-   react 更新 ([2647009](https://github.com/gaoding-inc/iliad-ui/commit/264700904474273a335e82b0c4a5b20dda2ddbba))
+-   react 代码库增加 panel 引入 ([4bc1ca9](https://github.com/gaoding-inc/iliad-ui/commit/4bc1ca902694a6b7dc5b2bb98d94975bfba8f4eb))
+-   react 增加 iconseditor 组件 ([da60910](https://github.com/gaoding-inc/iliad-ui/commit/da60910fd2e4d1fa68b52690396c6283af7482e8))
+-   react 增加 icons 依赖 ([b983c1f](https://github.com/gaoding-inc/iliad-ui/commit/b983c1fc9632fbcad298c94ce66936f64a2035b7))
+-   react 更新 ([39f80c6](https://github.com/gaoding-inc/iliad-ui/commit/39f80c6cb98fbbf255e92e36673dd4d00839053f))
+-   react 更新 ([0aedf7d](https://github.com/gaoding-inc/iliad-ui/commit/0aedf7db569b4654cc4866c12479d514f32eb608))
+-   react 更新 ([040f43a](https://github.com/gaoding-inc/iliad-ui/commit/040f43afd67ecebd7e38efebc1c736e4a15901bb))
+-   react 更新 ([a996630](https://github.com/gaoding-inc/iliad-ui/commit/a996630577c0c647330975fce5f1917c46e18f37))
+-   react 更新 ([c571817](https://github.com/gaoding-inc/iliad-ui/commit/c571817e36b7845785dcd1947cd67f794b0d6ff8))
+-   react 更新 ([fccc154](https://github.com/gaoding-inc/iliad-ui/commit/fccc154bbad7accaffa72087219d82c6d9f1ff7b))
+-   react 组件层增加 modules.json,获取自定义组件事件和属性 ([1a010ba](https://github.com/gaoding-inc/iliad-ui/commit/1a010baba44ec6835d698cb8793fe67fcfdf5923))
+-   react 组件更新 ([026b21a](https://github.com/gaoding-inc/iliad-ui/commit/026b21a2612dbdfb339701823d6c9f50c5f3b717))
+-   增加 change 事件 ([1630468](https://github.com/gaoding-inc/iliad-ui/commit/1630468607da3ae08a802f0fae7c35b009e8dc67))
+-   增加 react 组件普通事件监听 ([2463394](https://github.com/gaoding-inc/iliad-ui/commit/246339477a7d60f7bcafeee718adb17108c26742))
+-   增加 react 适配层 package ([71bb68b](https://github.com/gaoding-inc/iliad-ui/commit/71bb68b90bdec4e88e70936ecde06c4883e05a5d))
+-   增加模块包转换成 react 组件的方法 ([ce9a660](https://github.com/gaoding-inc/iliad-ui/commit/ce9a660521bc96362ea57bb0fef58198e0467fb8))
+-   新增 blur focus 事件 ([f483e24](https://github.com/gaoding-inc/iliad-ui/commit/f483e24b00334a7da23bf8968f33ae7beb55ef24))
+-   更新 react package.json ,增加 customElement 定义 ([8e2fb4b](https://github.com/gaoding-inc/iliad-ui/commit/8e2fb4b80bd1430597fc9fedcadd5acd98b21c8e))
+
 ## [0.18.6](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/react@0.18.5...@iliad-ui/react@0.18.6) (2022-06-30)
 
 **Note:** Version bump only for package @iliad-ui/react

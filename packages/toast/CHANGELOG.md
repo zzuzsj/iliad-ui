@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.18.0 (2022-07-19)
+
+### Bug Fixes
+
+-   correct [@element](https://github.com/element) jsDoc listing across library ([c97a632](https://github.com/gaoding-inc/iliad-ui/commit/c97a6320c16a2b3053637e22bca0d56ce0cd5ae5))
+-   ensure browser understandable extensions ([f4e59f7](https://github.com/gaoding-inc/iliad-ui/commit/f4e59f76f86369593810463c6406565e28ad97e9))
+-   include default export in the "exports" fields ([f32407d](https://github.com/gaoding-inc/iliad-ui/commit/f32407d7bbfd18e72c35b6f27740549e79957858))
+-   include the "types" entry in package.json files ([b432f59](https://github.com/gaoding-inc/iliad-ui/commit/b432f5982b3b79f80af12f6d0312cbe2285e608b))
+-   stop merging selectors in a way that alters the cascade ([369388f](https://github.com/gaoding-inc/iliad-ui/commit/369388f8cc147543891087991c569f849ddb9b38))
+-   **toast:** ensure "close" event only triggers when open===false ([7fa08ba](https://github.com/gaoding-inc/iliad-ui/commit/7fa08ba4b6bf45d28e90d70cd3238df94c8fb7a7))
+-   **toast:** include dependencies ([1b82212](https://github.com/gaoding-inc/iliad-ui/commit/1b82212487dddf4c703e98c60ff94c708d60438a))
+-   update latest Spectrum CSS beta releases ([d8d3acc](https://github.com/gaoding-inc/iliad-ui/commit/d8d3acc86de31e58219db6ba2a9d045b83cbe103))
+-   update side effect listings ([8160d3a](https://github.com/gaoding-inc/iliad-ui/commit/8160d3ab2c4f5ea11ac40897a5cf1fdaa357f4a8))
+-   update to latest spectrum-css packages ([a5ca19f](https://github.com/gaoding-inc/iliad-ui/commit/a5ca19f67d5b3f0951667c4441d4d977bf1e0937))
+-   use icons without "size" values ([3fc7c91](https://github.com/gaoding-inc/iliad-ui/commit/3fc7c91713793a928082eae15fc3d9dec638a31a))
+-   use latest @spectrum-css/\* versions ([c35eb86](https://github.com/gaoding-inc/iliad-ui/commit/c35eb86defd89a0c36b5ea186f6d40f20851b5e5))
+-   图标途径更改 ([eff285e](https://github.com/gaoding-inc/iliad-ui/commit/eff285e16c04885c7dbd11aa3ca7f39dc94755e3))
+-   样式优化 ([384ad6c](https://github.com/gaoding-inc/iliad-ui/commit/384ad6c369aa2939103c13eb4cf450b423a53112))
+
+### Features
+
+-   **action-button:** add action button pattern ([03ac00a](https://github.com/gaoding-inc/iliad-ui/commit/03ac00a710290e6a78340f206d88385a4f8ae8c2))
+-   add and use icons-ui package ([d9c3ab2](https://github.com/gaoding-inc/iliad-ui/commit/d9c3ab212b4f756334e857fc513ccbf0a4dff9cc))
+-   icons update ([248b2c3](https://github.com/gaoding-inc/iliad-ui/commit/248b2c3ba118469e2a7c6b83916d0007ae60b373))
+-   leverage "exports" field in package.json ([321abd7](https://github.com/gaoding-inc/iliad-ui/commit/321abd7b7e78ccd9157cff75a1fa3dbd06e81f79))
+-   pass through autocomplete attribute to inputs ([5416510](https://github.com/gaoding-inc/iliad-ui/commit/541651063fb67766426168ef0ad885bb89b6b762))
+-   **toast:** add "sp-toast" pattern ([d0a5f00](https://github.com/gaoding-inc/iliad-ui/commit/d0a5f009a656b55cdcbd7df471646380aa478ef4))
+-   **toast:** default to "open === false", always dispatch "close" event ([fcb3729](https://github.com/gaoding-inc/iliad-ui/commit/fcb37292178bac2cb2327eebd4f3a01908e27f38))
+-   **toast:** update spectrum css input ([183ee95](https://github.com/gaoding-inc/iliad-ui/commit/183ee95c8f9e0ba2c9f2f8d0bc922728e36fdb0a))
+-   update lit-\* dependencies, wip ([70743bf](https://github.com/gaoding-inc/iliad-ui/commit/70743bf6855c08924a0a3ec1a14dc43862f9cf42))
+-   update to Spectrum CSS v3.0.0 ([e8b3d8f](https://github.com/gaoding-inc/iliad-ui/commit/e8b3d8f75c77c04b4d7af126b91b0f6ad2a40742))
+-   use latest exports specification ([a7ecf4b](https://github.com/gaoding-inc/iliad-ui/commit/a7ecf4b6da7996f36a8a89f62cc2384709497008))
+-   更新 button、actionbutton、toast ([9f071f4](https://github.com/gaoding-inc/iliad-ui/commit/9f071f46e4d37627b84b6bf403da15d86cbd7478))
+-   更新颜色 ([a79f279](https://github.com/gaoding-inc/iliad-ui/commit/a79f27987d5d39965aa6d052b0c2555e6f595de3))
+
+### Performance Improvements
+
+-   use "sideEffects" listing in package.json ([7271614](https://github.com/gaoding-inc/iliad-ui/commit/7271614c0ca3ccf3566583bb59467eb15a6199cd))
+
+### Reverts
+
+-   Revert "chore: release new versions" ([a6d655d](https://github.com/gaoding-inc/iliad-ui/commit/a6d655d1435ee6427a3778b89f1a6cf9fe4beb9d))
+
 # [0.17.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/toast@0.16.6...@iliad-ui/toast@0.17.0) (2022-06-13)
 
 ### Features

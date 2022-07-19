@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.12.0 (2022-07-19)
+
+### Bug Fixes
+
+-   allow for late loading theme scopes ([4c7a124](https://github.com/gaoding-inc/iliad-ui/commit/4c7a1248c4b3917de97b0f34d3cebdf1505cc2dc))
+-   **base:** use full file extension ([6ea4d9d](https://github.com/gaoding-inc/iliad-ui/commit/6ea4d9d299dc805a0b1743c43e5b67d07b0a47b9))
+-   dir should never fall back to null ([6b16c6d](https://github.com/gaoding-inc/iliad-ui/commit/6b16c6dc41e0d4990d07d5de0d762316b324f260))
+-   expand sized functionality to support no default and returning to default values ([acf3cfb](https://github.com/gaoding-inc/iliad-ui/commit/acf3cfb000033d1ef1e22ca571cb8dbbeaadae77))
+-   include default export in the "exports" fields ([f32407d](https://github.com/gaoding-inc/iliad-ui/commit/f32407d7bbfd18e72c35b6f27740549e79957858))
+-   include the "types" entry in package.json files ([b432f59](https://github.com/gaoding-inc/iliad-ui/commit/b432f5982b3b79f80af12f6d0312cbe2285e608b))
+-   reduce cycles ([8917a5e](https://github.com/gaoding-inc/iliad-ui/commit/8917a5efb28d2e3fcc68c9e25ae98c3b824d7fe4))
+-   remove right click value setting ([a44968d](https://github.com/gaoding-inc/iliad-ui/commit/a44968d09120ad9b54915438fb5a134f306fdab2))
+-   support a wider number of sizes ([ee44978](https://github.com/gaoding-inc/iliad-ui/commit/ee4497830da0d3bc63d4414ad5548291a39588c7))
+-   **textfield:** reimplement min/maxlength ([23a4c2e](https://github.com/gaoding-inc/iliad-ui/commit/23a4c2e61dbc399bf9e58bb32952e16b8aa9d5ae))
+-   部分组件重复注册报错 ([6380f75](https://github.com/gaoding-inc/iliad-ui/commit/6380f7567a4929cfd10105e3252d25600f19173b))
+
+### Features
+
+-   allow dir management by sp-theme elements ([2d10158](https://github.com/gaoding-inc/iliad-ui/commit/2d1015883bc0c3a03862c0de8b4d996cd954291f))
+-   apply sizedMixin for t-shirt sizing ([d7b63fb](https://github.com/gaoding-inc/iliad-ui/commit/d7b63fb0db06b5a8a412fea8370964f4db9d18ae))
+-   **base:** insert Spectrum base class/mixin ([37c2ee9](https://github.com/gaoding-inc/iliad-ui/commit/37c2ee9c1ad33e128538f062215713e761192047))
+-   **card:** upgrade to Spectrum CSS v3.0.0 ([84cf1a9](https://github.com/gaoding-inc/iliad-ui/commit/84cf1a9758b1e357f18efac5763d17d6a4db0578))
+-   lit 升级为 2.0 ([167b136](https://github.com/gaoding-inc/iliad-ui/commit/167b13667224dcb077cf18dd02d044da07cb492c))
+-   lit 版本升级为 2.0 ([6e40df2](https://github.com/gaoding-inc/iliad-ui/commit/6e40df2bac248524ac3d8cf6c2aa23e7b57019cb))
+-   observe document.documentElement for dir value ([da84a9a](https://github.com/gaoding-inc/iliad-ui/commit/da84a9a956e35ab40052d9691461de533eae8f49))
+-   **story-decorator:** add story decorator to replace knobs for theme application ([7c0c6be](https://github.com/gaoding-inc/iliad-ui/commit/7c0c6be37d58ad3e6d8973e8d4f5ccc587bf55af))
+-   update lit-\* dependencies, wip ([70743bf](https://github.com/gaoding-inc/iliad-ui/commit/70743bf6855c08924a0a3ec1a14dc43862f9cf42))
+-   update to Spectrum CSS v3.0.0 ([e8b3d8f](https://github.com/gaoding-inc/iliad-ui/commit/e8b3d8f75c77c04b4d7af126b91b0f6ad2a40742))
+-   use 3.0.0-beta.\* release for styles ([877b485](https://github.com/gaoding-inc/iliad-ui/commit/877b485f20c76ec8f77975747322f572eea88e97))
+-   use latest exports specification ([a7ecf4b](https://github.com/gaoding-inc/iliad-ui/commit/a7ecf4b6da7996f36a8a89f62cc2384709497008))
+-   use SixedMixin to manage "size" property ([8819821](https://github.com/gaoding-inc/iliad-ui/commit/88198212cb495833ed2e7644f95b43dca915318d))
+-   更新 base 版本号 ([0f126a4](https://github.com/gaoding-inc/iliad-ui/commit/0f126a43b5f034df58a195c14fabb3d8565f9c8a))
+
 ## [0.11.6](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/base@0.11.5...@iliad-ui/base@0.11.6) (2022-06-13)
 
 **Note:** Version bump only for package @iliad-ui/base

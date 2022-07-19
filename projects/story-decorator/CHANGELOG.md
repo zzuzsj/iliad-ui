@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.10.0 (2022-07-19)
+
+### Bug Fixes
+
+-   manage "lang" via context provided by "sp-theme" ([b1e3457](https://github.com/gaoding-inc/iliad-ui/commit/b1e3457ae447427c54f8645c478866340329750c))
+-   **overlay:** allow external style access to "sp-theme" elements in overlays as a CSS part ([a107f66](https://github.com/gaoding-inc/iliad-ui/commit/a107f66ae171e857e5f84cfff9f7a27cc5bd320d))
+-   remove <sp-menu> usage where deprecated ([387db3b](https://github.com/gaoding-inc/iliad-ui/commit/387db3be95c98ab220e517fe12a4db7a2496fe5f))
+-   **story-decorator:** ensure reduce motion application in overlays ([3f1bc23](https://github.com/gaoding-inc/iliad-ui/commit/3f1bc23bb2e87dedd285915c034ea497a0271d07))
+-   **story-decorator:** use sp-field-label ([5992c98](https://github.com/gaoding-inc/iliad-ui/commit/5992c98024bbb9476a18c4a69a024968c05cac17))
+-   部分组件重复注册报错 ([6380f75](https://github.com/gaoding-inc/iliad-ui/commit/6380f7567a4929cfd10105e3252d25600f19173b))
+
+### Features
+
+-   lit 升级为 2.0 ([167b136](https://github.com/gaoding-inc/iliad-ui/commit/167b13667224dcb077cf18dd02d044da07cb492c))
+-   **story-decorator:** add story decorator to replace knobs for theme application ([7c0c6be](https://github.com/gaoding-inc/iliad-ui/commit/7c0c6be37d58ad3e6d8973e8d4f5ccc587bf55af))
+-   **story-decorator:** ensure version ([dd39772](https://github.com/gaoding-inc/iliad-ui/commit/dd39772af363051c35126c369bb5a33a0c7853d9))
+-   update lit-\* dependencies, wip ([70743bf](https://github.com/gaoding-inc/iliad-ui/commit/70743bf6855c08924a0a3ec1a14dc43862f9cf42))
+-   use latest exports specification ([a7ecf4b](https://github.com/gaoding-inc/iliad-ui/commit/a7ecf4b6da7996f36a8a89f62cc2384709497008))
+
 ## [0.9.29](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/story-decorator@0.9.28...@iliad-ui/story-decorator@0.9.29) (2022-06-30)
 
 **Note:** Version bump only for package @iliad-ui/story-decorator

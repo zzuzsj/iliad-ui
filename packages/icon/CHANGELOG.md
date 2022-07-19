@@ -3,6 +3,53 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.17.0 (2022-07-19)
+
+### Bug Fixes
+
+-   allow "updateComplete" to resolve to a boolean like the LitElement default ([6127946](https://github.com/gaoding-inc/iliad-ui/commit/6127946fd3ffd048a30b7eb4bf6aadf9e7c8752a))
+-   correct [@element](https://github.com/element) jsDoc listing across library ([c97a632](https://github.com/gaoding-inc/iliad-ui/commit/c97a6320c16a2b3053637e22bca0d56ce0cd5ae5))
+-   ensure browser understandable extensions ([f4e59f7](https://github.com/gaoding-inc/iliad-ui/commit/f4e59f76f86369593810463c6406565e28ad97e9))
+-   **icon:** clean up docs and types for available size values ([c38850d](https://github.com/gaoding-inc/iliad-ui/commit/c38850d1120a8599d8c623302bbc2c21485c99bc))
+-   **icon:** prevent async race resulting in multiple inner SVG elements ([b05e2d5](https://github.com/gaoding-inc/iliad-ui/commit/b05e2d5c7891026fa5b9585b03444b6728a30d0a))
+-   include "type" in package.json, generate custom-elements.json ([1a8d716](https://github.com/gaoding-inc/iliad-ui/commit/1a8d716f2f787deb8d868a78bd28c8e62fe90e21))
+-   include default export in the "exports" fields ([f32407d](https://github.com/gaoding-inc/iliad-ui/commit/f32407d7bbfd18e72c35b6f27740549e79957858))
+-   include the "types" entry in package.json files ([b432f59](https://github.com/gaoding-inc/iliad-ui/commit/b432f5982b3b79f80af12f6d0312cbe2285e608b))
+-   normalize "event" and "error" argument names ([8d382cd](https://github.com/gaoding-inc/iliad-ui/commit/8d382cdac98282c886f23c4a8d6cf4910c4a606c))
+-   remove ":" based namespacing of events ([d77a843](https://github.com/gaoding-inc/iliad-ui/commit/d77a843a049a6a37bbeee7bbfb50b4d5eb24f3fd))
+-   update latest Spectrum CSS beta releases ([d8d3acc](https://github.com/gaoding-inc/iliad-ui/commit/d8d3acc86de31e58219db6ba2a9d045b83cbe103))
+-   update side effect listings ([8160d3a](https://github.com/gaoding-inc/iliad-ui/commit/8160d3ab2c4f5ea11ac40897a5cf1fdaa357f4a8))
+-   update to latest spectrum-css packages ([a5ca19f](https://github.com/gaoding-inc/iliad-ui/commit/a5ca19f67d5b3f0951667c4441d4d977bf1e0937))
+-   use icons without "size" values ([3fc7c91](https://github.com/gaoding-inc/iliad-ui/commit/3fc7c91713793a928082eae15fc3d9dec638a31a))
+-   use latest @spectrum-css/\* versions ([c35eb86](https://github.com/gaoding-inc/iliad-ui/commit/c35eb86defd89a0c36b5ea186f6d40f20851b5e5))
+-   样式优化 ([384ad6c](https://github.com/gaoding-inc/iliad-ui/commit/384ad6c369aa2939103c13eb4cf450b423a53112))
+-   样式更新 ([1fb01df](https://github.com/gaoding-inc/iliad-ui/commit/1fb01dfbf22775a971423bc3985ececa476bbf29))
+
+### Features
+
+-   **action-button:** add action button pattern ([03ac00a](https://github.com/gaoding-inc/iliad-ui/commit/03ac00a710290e6a78340f206d88385a4f8ae8c2))
+-   **icon:** add UIIcon styles ([6f03b1a](https://github.com/gaoding-inc/iliad-ui/commit/6f03b1a0b898adf608d5ee2ca94f53416ecffe73))
+-   **icon:** allow <sp-icon> to accept a slotted icon ([cbf7a07](https://github.com/gaoding-inc/iliad-ui/commit/cbf7a078a6adb6e6d28e07d1429cc96e3207db7a))
+-   **icons-workflow:** vend fully registered icon components ([941f3a4](https://github.com/gaoding-inc/iliad-ui/commit/941f3a41486fbd49eca0805fb63383f63313e71e))
+-   **icon:** update spectrum css input ([42f17db](https://github.com/gaoding-inc/iliad-ui/commit/42f17db9ac249a12f224759fe4ead418720e85d4))
+-   leverage "exports" field in package.json ([321abd7](https://github.com/gaoding-inc/iliad-ui/commit/321abd7b7e78ccd9157cff75a1fa3dbd06e81f79))
+-   **overlay:** manage focus throwing and tab trapping ([27a0b53](https://github.com/gaoding-inc/iliad-ui/commit/27a0b53ea94d19bb18b7d3f89763b06dc1b42b59))
+-   update lit-\* dependencies, wip ([70743bf](https://github.com/gaoding-inc/iliad-ui/commit/70743bf6855c08924a0a3ec1a14dc43862f9cf42))
+-   update to Spectrum CSS v3.0.0 ([e8b3d8f](https://github.com/gaoding-inc/iliad-ui/commit/e8b3d8f75c77c04b4d7af126b91b0f6ad2a40742))
+-   use @adobe/spectrum-css@2.15.1 ([3918888](https://github.com/gaoding-inc/iliad-ui/commit/39188887afad9bec52ef48d4e22596f9b757a9fe))
+-   use latest exports specification ([a7ecf4b](https://github.com/gaoding-inc/iliad-ui/commit/a7ecf4b6da7996f36a8a89f62cc2384709497008))
+-   弹出层+菜单项修改 ([c6057c2](https://github.com/gaoding-inc/iliad-ui/commit/c6057c2575c80a3150e08e05f122f26a905e259e))
+-   组件样式走查，增加 radio button 样式 ([61342d3](https://github.com/gaoding-inc/iliad-ui/commit/61342d3a086263c65611d4033f20428f8db2b8fa))
+
+### Performance Improvements
+
+-   use "sideEffects" listing in package.json ([7271614](https://github.com/gaoding-inc/iliad-ui/commit/7271614c0ca3ccf3566583bb59467eb15a6199cd))
+-   use imported TypeScript helpers instead of inlining them ([cc2bd0a](https://github.com/gaoding-inc/iliad-ui/commit/cc2bd0accd643c2f35cbf1ba809b54f52c25628d))
+
+### Reverts
+
+-   Revert "chore: release new versions" ([a6d655d](https://github.com/gaoding-inc/iliad-ui/commit/a6d655d1435ee6427a3778b89f1a6cf9fe4beb9d))
+
 ## [0.16.8](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icon@0.16.7...@iliad-ui/icon@0.16.8) (2022-06-13)
 
 **Note:** Version bump only for package @iliad-ui/icon

@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.9.0 (2022-07-19)
+
+### Bug Fixes
+
+-   add "editable" option to "sp-slider" ([e86d7fa](https://github.com/gaoding-inc/iliad-ui/commit/e86d7fa84491b41a39dbab9c8d85eec42df320cd))
+-   add input validation to Number Field ([b1dd5ea](https://github.com/gaoding-inc/iliad-ui/commit/b1dd5ea79b079e7ff9a3f850c8589f4295878941))
+-   manage "lang" via context provided by "sp-theme" ([b1e3457](https://github.com/gaoding-inc/iliad-ui/commit/b1e3457ae447427c54f8645c478866340329750c))
+-   normalize wheel input directionally for more predictable input ([e4383a8](https://github.com/gaoding-inc/iliad-ui/commit/e4383a82a5c287e45ea1b22e592ce5e022125739))
+-   **number-field:** add an "indeterminate" state ([8bde8a1](https://github.com/gaoding-inc/iliad-ui/commit/8bde8a1ce54e4966736da6676424db8080c81861))
+-   **number-field:** add support for modified stepping ([#1534](https://github.com/gaoding-inc/iliad-ui/issues/1534)) ([f8ec763](https://github.com/gaoding-inc/iliad-ui/commit/f8ec7635e0771097df592df9f60d042113533c4a))
+-   **number-field:** dispatch input/change events as expected ([4a457ee](https://github.com/gaoding-inc/iliad-ui/commit/4a457ee4eb9e0056ea25b30796b34fb32ebdf29f))
+-   **number-field:** include dependancy listings ([5c9031d](https://github.com/gaoding-inc/iliad-ui/commit/5c9031da3694bfe516d020922b0a2d70660e6cf1))
+-   **number-field:** support non-supported units in "Intl.numberFormat" ([d846c0b](https://github.com/gaoding-inc/iliad-ui/commit/d846c0bc75c538b008d6a7f50dc9aecc06a9b606))
+-   prevent console.log in source and test files ([3ee082c](https://github.com/gaoding-inc/iliad-ui/commit/3ee082ceadd9eeef167bb8ac6241fe1501e4426c))
+
+### Features
+
+-   css 样式更改 ([9361d85](https://github.com/gaoding-inc/iliad-ui/commit/9361d85160e63b1c1d09e37e7ba398c7a455f608))
+-   css 样式更改 ([f0c9476](https://github.com/gaoding-inc/iliad-ui/commit/f0c9476e27b07ad3da62ecd717675c7329e5f78e))
+-   **number-field:** add number field pattern ([384ab34](https://github.com/gaoding-inc/iliad-ui/commit/384ab34d5aafe54e3206ff6802eb642c4df556c6))
+-   styles 代码更新 ([551111a](https://github.com/gaoding-inc/iliad-ui/commit/551111a358e2cc12448610dcb03defe51ddc0fed))
+-   update lit-\* dependencies, wip ([70743bf](https://github.com/gaoding-inc/iliad-ui/commit/70743bf6855c08924a0a3ec1a14dc43862f9cf42))
+-   样式更改，增加 panel 拖动 ([820d818](https://github.com/gaoding-inc/iliad-ui/commit/820d818617944b82a02e68f12e79f4cabb28b9f1))
+
 ## [0.8.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/number-field@0.8.1...@iliad-ui/number-field@0.8.2) (2022-06-13)
 
 **Note:** Version bump only for package @iliad-ui/number-field
