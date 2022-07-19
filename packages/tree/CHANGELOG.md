@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.3](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/tree@0.6.2...@iliad-ui/tree@0.6.3) (2022-06-13)
+
+**Note:** Version bump only for package @iliad-ui/tree
+
+## [0.6.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/tree@0.6.1...@iliad-ui/tree@0.6.2) (2022-05-31)
+
+**Note:** Version bump only for package @iliad-ui/tree
+
 ## [0.6.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/tree@0.6.0...@iliad-ui/tree@0.6.1) (2022-03-30)
 
 ### Bug Fixes

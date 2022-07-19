@@ -3,6 +3,48 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.29](https://github.com/zzuzsj/iliad-ui/compare/example-project-rollup@0.4.28...example-project-rollup@0.4.29) (2022-06-30)
+
+**Note:** Version bump only for package example-project-rollup
+
+## [0.4.28](https://github.com/zzuzsj/iliad-ui/compare/example-project-rollup@0.4.27...example-project-rollup@0.4.28) (2022-06-30)
+
+**Note:** Version bump only for package example-project-rollup
+
+## [0.4.27](https://github.com/zzuzsj/iliad-ui/compare/example-project-rollup@0.4.26...example-project-rollup@0.4.27) (2022-06-13)
+
+**Note:** Version bump only for package example-project-rollup
+
+## [0.4.26](https://github.com/zzuzsj/iliad-ui/compare/example-project-rollup@0.4.25...example-project-rollup@0.4.26) (2022-06-13)
+
+### Bug Fixes
+
+- 图标途径更改 ([eff285e](https://github.com/zzuzsj/iliad-ui/commit/eff285e16c04885c7dbd11aa3ca7f39dc94755e3))
+
+## [0.4.25](https://github.com/zzuzsj/iliad-ui/compare/example-project-rollup@0.4.23...example-project-rollup@0.4.25) (2022-06-13)
+
+**Note:** Version bump only for package example-project-rollup
+
+## [0.4.24](https://github.com/zzuzsj/iliad-ui/compare/example-project-rollup@0.4.23...example-project-rollup@0.4.24) (2022-06-13)
+
+**Note:** Version bump only for package example-project-rollup
+
+## [0.4.23](https://github.com/zzuzsj/iliad-ui/compare/example-project-rollup@0.4.22...example-project-rollup@0.4.23) (2022-06-09)
+
+**Note:** Version bump only for package example-project-rollup
+
+## [0.4.22](https://github.com/zzuzsj/iliad-ui/compare/example-project-rollup@0.4.21...example-project-rollup@0.4.22) (2022-05-31)
+
+**Note:** Version bump only for package example-project-rollup
+
+## [0.4.21](https://github.com/zzuzsj/iliad-ui/compare/example-project-rollup@0.4.20...example-project-rollup@0.4.21) (2022-05-31)
+
+**Note:** Version bump only for package example-project-rollup
+
+## [0.4.20](https://github.com/zzuzsj/iliad-ui/compare/example-project-rollup@0.4.19...example-project-rollup@0.4.20) (2022-05-31)
+
+**Note:** Version bump only for package example-project-rollup
+
 ## [0.4.19](https://github.com/zzuzsj/iliad-ui/compare/example-project-rollup@0.4.18...example-project-rollup@0.4.19) (2022-03-30)
 
 **Note:** Version bump only for package example-project-rollup

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.11](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/split-view@0.8.10...@iliad-ui/split-view@0.8.11) (2022-06-13)
+
+**Note:** Version bump only for package @iliad-ui/split-view
+
+## [0.8.10](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/split-view@0.8.9...@iliad-ui/split-view@0.8.10) (2022-05-31)
+
+**Note:** Version bump only for package @iliad-ui/split-view
+
 ## [0.8.9](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/split-view@0.8.8...@iliad-ui/split-view@0.8.9) (2022-03-25)
 
 **Note:** Version bump only for package @iliad-ui/split-view

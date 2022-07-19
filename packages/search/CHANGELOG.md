@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.15](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/search@0.12.14...@iliad-ui/search@0.12.15) (2022-06-13)
+
+**Note:** Version bump only for package @iliad-ui/search
+
+## [0.12.14](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/search@0.12.13...@iliad-ui/search@0.12.14) (2022-05-31)
+
+**Note:** Version bump only for package @iliad-ui/search
+
 ## [0.12.13](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/search@0.12.12...@iliad-ui/search@0.12.13) (2022-03-30)
 
 **Note:** Version bump only for package @iliad-ui/search

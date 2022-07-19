@@ -240,7 +240,7 @@ export class PickerBase extends SizedMixin(Focusable) {
             this.restoreChildren = undefined;
         }
 
-        this.menuStateResolver();
+        this.menuStateResolver?.();
     }
 
     private async openMenu(): Promise<void> {
@@ -507,9 +507,11 @@ export class PickerBase extends SizedMixin(Focusable) {
     }
 
     public disconnectedCallback(): void {
+        if (this.open) {
+            this.onOverlayClosed();
+        }
         this.open = false;
         this.closeMenu();
-        this.onOverlayClosed();
         super.disconnectedCallback();
     }
 }

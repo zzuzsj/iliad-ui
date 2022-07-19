@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/sidenav",
-    "version": "0.14.9",
+    "version": "0.14.11",
     "publishConfig": {
         "access": "public"
     },
@@ -48,8 +48,8 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.11.4",
-        "@iliad-ui/shared": "^0.18.9",
+        "@iliad-ui/base": "^0.11.6",
+        "@iliad-ui/shared": "^0.18.11",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

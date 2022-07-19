@@ -116,20 +116,20 @@ components.map((component) => {
     );
 
     fs.writeFileSync(componentFile, source, 'utf8');
-    mainExports.push(`export * from './src/${name}'`);
+    mainExports.push(`export * from './${name}'`);
     console.log(`✓ <${component.tagName}>`);
 });
 
 // 增加手动导出部分(build:react 不会更新对应src/ts文件，有更新需要手动更新)
 mainExports.push(`
     /** 手动添加 */
-    export * from './src/Picker';
-    export * from './src/IconsEditor';
+    export * from './Picker';
+    export * from './IconsEditor';
     export { Overlay } from '@iliad-ui/bundle';
 `);
 
 fs.writeFileSync(
-    './index.ts',
+    './src/index.ts',
     formatCode(`${header}/* 注册 web components sideEffect */
     import '@iliad-ui/bundle/elements';
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.14](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons-workflow@0.12.13...@iliad-ui/icons-workflow@0.12.14) (2022-06-13)
+
+**Note:** Version bump only for package @iliad-ui/icons-workflow
+
+## [0.12.13](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons-workflow@0.12.12...@iliad-ui/icons-workflow@0.12.13) (2022-05-31)
+
+**Note:** Version bump only for package @iliad-ui/icons-workflow
+
 ## [0.12.12](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons-workflow@0.12.11...@iliad-ui/icons-workflow@0.12.12) (2022-03-30)
 
 **Note:** Version bump only for package @iliad-ui/icons-workflow

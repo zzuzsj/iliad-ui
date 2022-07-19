@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.30](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/picker@0.13.29...@iliad-ui/picker@0.13.30) (2022-06-30)
+
+**Note:** Version bump only for package @iliad-ui/picker
+
+## [0.13.29](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/picker@0.13.28...@iliad-ui/picker@0.13.29) (2022-06-30)
+
+**Note:** Version bump only for package @iliad-ui/picker
+
+## [0.13.28](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/picker@0.13.27...@iliad-ui/picker@0.13.28) (2022-06-13)
+
+**Note:** Version bump only for package @iliad-ui/picker
+
+## [0.13.27](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/picker@0.13.25...@iliad-ui/picker@0.13.27) (2022-06-13)
+
+**Note:** Version bump only for package @iliad-ui/picker
+
+## [0.13.26](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/picker@0.13.25...@iliad-ui/picker@0.13.26) (2022-06-13)
+
+**Note:** Version bump only for package @iliad-ui/picker
+
+## [0.13.25](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/picker@0.13.24...@iliad-ui/picker@0.13.25) (2022-06-09)
+
+**Note:** Version bump only for package @iliad-ui/picker
+
+## [0.13.24](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/picker@0.13.23...@iliad-ui/picker@0.13.24) (2022-05-31)
+
+### Bug Fixes
+
+-   menuStateResolver 报错问题 ([6127f5d](https://github.com/gaoding-inc/iliad-ui/commit/6127f5d18fa826c6591e72ea9ed452b932fc8cc1))
+
+## [0.13.23](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/picker@0.13.22...@iliad-ui/picker@0.13.23) (2022-05-31)
+
+**Note:** Version bump only for package @iliad-ui/picker
+
+## [0.13.22](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/picker@0.13.21...@iliad-ui/picker@0.13.22) (2022-05-31)
+
+### Bug Fixes
+
+-   修复 picker 关闭之后无法重新唤起 overlay 的问题 ([6b4d56d](https://github.com/gaoding-inc/iliad-ui/commit/6b4d56de2a25833278d8960e4b88cda03ae9c6b8))
+-   picker 重新点击打开无效 ([2878ba9](https://github.com/gaoding-inc/iliad-ui/commit/2878ba93adb5fdb45b71b1e995eaab3073330538))
+
 ## [0.13.21](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/picker@0.13.20...@iliad-ui/picker@0.13.21) (2022-03-30)
 
 **Note:** Version bump only for package @iliad-ui/picker
