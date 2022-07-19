@@ -37,6 +37,7 @@ export interface OverlayOpenDetail {
     theme: ThemeData;
     notImmediatelyClosable?: boolean;
     abortPromise?: Promise<boolean>;
+    closeOnClickOutside?: boolean;
 }
 
 export interface OverlayOpenCloseDetail {
@@ -63,6 +64,7 @@ export type OverlayOptions = {
     notImmediatelyClosable?: boolean;
     abortPromise?: Promise<boolean>;
     virtualTrigger?: VirtualTrigger;
+    closeOnClickOutside?: boolean;
 };
 
 declare global {

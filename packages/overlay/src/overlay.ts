@@ -98,6 +98,7 @@ export class Overlay {
         receivesFocus,
         notImmediatelyClosable,
         virtualTrigger,
+        closeOnClickOutside = true,
     }: OverlayOptions): Promise<boolean> {
         /* c8 ignore next */
         if (this.isOpen) return true;
@@ -142,6 +143,7 @@ export class Overlay {
             receivesFocus,
             notImmediatelyClosable,
             virtualTrigger,
+            closeOnClickOutside,
             ...overlayDetailQuery,
         });
         this.isOpen = true;
