@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.1](https://github.com/gaoding-inc/Iliad-ui/compare/example-project-webpack@1.6.0...example-project-webpack@1.6.1) (2022-07-19)
+
+**Note:** Version bump only for package example-project-webpack
+
 # [1.6.0](https://github.com/gaoding-inc/Iliad-ui/compare/example-project-webpack@1.3.17...example-project-webpack@1.6.0) (2022-07-19)
 
 ### Features

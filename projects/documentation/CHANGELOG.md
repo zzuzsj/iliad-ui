@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.32](https://github.com/gaoding-inc/Iliad-ui/compare/documentation@0.1.31...documentation@0.1.32) (2022-07-19)
+
+**Note:** Version bump only for package documentation
+
 ## 0.1.31 (2022-07-19)
 
 ### Bug Fixes
