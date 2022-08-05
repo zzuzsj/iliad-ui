@@ -47,6 +47,24 @@ export const Default = (): TemplateResult => {
             value="Not a valid input"
             disabled
         ></sp-textfield>
+        <sp-textfield
+            type="password"
+            placeholder="Enter your password"
+            required
+            value="Not a valid input"
+        ></sp-textfield>
+        <sp-textfield
+            type="email"
+            placeholder="Enter your email"
+            required
+            value="test@iliad-ui.com"
+        ></sp-textfield>
+        <sp-textfield
+            type="phone"
+            placeholder="Enter your phone"
+            required
+            value="13333333333"
+        ></sp-textfield>
     `;
 };
 

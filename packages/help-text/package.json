@@ -1,0 +1,65 @@
+{
+    "name": "@iliad-ui/help-text",
+    "version": "0.1.11",
+    "publishConfig": {
+        "access": "public"
+    },
+    "description": "",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gaoding-inc/iliad-ui.git",
+        "directory": "packages/help-text"
+    },
+    "author": "",
+    "homepage": "https://adobe.github.io/iliad-ui/components/help-text",
+    "bugs": {
+        "url": "https://github.com/adobe/iliad-ui/issues"
+    },
+    "main": "src/index.js",
+    "module": "src/index.js",
+    "type": "module",
+    "exports": {
+        "./src/*": "./src/*",
+        "./package.json": "./package.json",
+        "./help-text-manager": "./src/help-text-manager.js",
+        "./help-text-manager.js": "./src/help-text-manager.js",
+        "./HelpTextManager": "./src/HelpTextManager.js",
+        "./HelpTextManager.js": "./src/HelpTextManager.js",
+        "./sp-help-text": "./sp-help-text.js",
+        "./sp-help-text.js": "./sp-help-text.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: run tests from mono-repo root.\" && exit 1"
+    },
+    "files": [
+        "**/*.d.ts",
+        "**/*.js",
+        "**/*.js.map",
+        "custom-elements.json",
+        "!stories/",
+        "!test/"
+    ],
+    "keywords": [
+        "spectrum css",
+        "web components",
+        "lit-element",
+        "lit-html"
+    ],
+    "dependencies": {
+        "@iliad-ui/base": "^0.6.0",
+        "@iliad-ui/icons-workflow": "^0.8.12",
+        "tslib": "^2.0.0"
+    },
+    "types": "./src/index.d.ts",
+    "customElements": "custom-elements.json",
+    "maintainers": [
+        {
+            "name": "saiye",
+            "email": "saiye@gaoding.com"
+        }
+    ],
+    "sideEffects": [
+        "./sp-*.js"
+    ]
+}

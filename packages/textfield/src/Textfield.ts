@@ -14,6 +14,7 @@ governing permissions and limitations under the License.
 import {
     html,
     property,
+    state,
     CSSResultArray,
     query,
     TemplateResult,
@@ -30,6 +31,9 @@ import '@iliad-ui/icons-workflow/icons/sp-icon-alert.js';
 import textfieldStyles from './textfield.css.js';
 import checkmarkStyles from '@iliad-ui/icon/src/spectrum-icon-checkmark.css.js';
 
+const textfieldTypes = ['text', 'url', 'tel', 'email', 'password'] as const;
+export type TextfieldType = typeof textfieldTypes[number];
+
 export class TextfieldBase extends Focusable {
     public static get styles(): CSSResultArray {
         return [textfieldStyles, checkmarkStyles];
@@ -37,6 +41,20 @@ export class TextfieldBase extends Focusable {
 
     @property({ attribute: 'allowed-keys' })
     allowedKeys = '';
+
+    @property({ attribute: 'type', reflect: true })
+    private _type: TextfieldType = 'text';
+
+    @state()
+    get type(): TextfieldType {
+        return textfieldTypes.find((t) => t === this._type) ?? 'text';
+    }
+
+    set type(val: TextfieldType) {
+        const prev = this._type;
+        this._type = val;
+        this.requestUpdate('type', prev);
+    }
 
     @property({ type: Boolean, reflect: true })
     public focused = false;
@@ -205,7 +223,7 @@ export class TextfieldBase extends Focusable {
         return html`
             <!-- @ts-ignore -->
             <input
-                type="text"
+                type=${this.type}
                 aria-label=${this.label || this.placeholder}
                 aria-invalid=${ifDefined(this.invalid || undefined)}
                 class="input"

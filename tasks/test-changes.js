@@ -34,7 +34,7 @@ const getChangedPackages = () => {
     let packageList;
     try {
         packageList = JSON.parse(command.toString()).reduce((acc, item) => {
-            const name = item.name.replace('@spectrum-web-components/', '');
+            const name = item.name.replace('@iliad-ui/', '');
             if (
                 // There are no benchmarks available in this directory.
                 item.location.search('projects') === -1 &&
