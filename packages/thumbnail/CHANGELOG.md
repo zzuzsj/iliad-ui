@@ -3,9 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.6.12](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/thumbnail@0.6.11...@iliad-ui/thumbnail@0.6.12) (2022-08-05)
+## [0.7.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/thumbnail@0.7.0...@iliad-ui/thumbnail@0.7.1) (2022-07-19)
 
 **Note:** Version bump only for package @iliad-ui/thumbnail
+
+# 0.7.0 (2022-07-19)
+
+### Features
+
+-   **tabs:** add sp-tab-panel element ([b17d276](https://github.com/gaoding-inc/iliad-ui/commit/b17d2765cf415578a31e5fa23515c25ff4c3922d))
+-   **thumbnail:** add the thumbnail package ([56935d5](https://github.com/gaoding-inc/iliad-ui/commit/56935d5f6183c700b036ffd058629a3d9cbdbbbc))
 
 ## [0.6.11](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/thumbnail@0.6.10...@iliad-ui/thumbnail@0.6.11) (2022-06-13)
 

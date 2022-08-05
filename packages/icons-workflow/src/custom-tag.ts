@@ -16,14 +16,14 @@ export type { TemplateResult };
 
 export type GenericTemplateLiteralTagType = (
     strings: TemplateStringsArray,
-    ...values: unknown[]
+    ...values: any[]
 ) => string;
 type TemplateLiteralTagType = GenericTemplateLiteralTagType | typeof html;
 let customTemplateLiteralTag: TemplateLiteralTagType;
 
 export const tag = function (
     strings: TemplateStringsArray,
-    ...values: unknown[]
+    ...values: any[]
 ): string | TemplateResult {
     if (customTemplateLiteralTag) {
         return customTemplateLiteralTag(strings, ...values);

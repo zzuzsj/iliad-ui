@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/color-wheel",
-    "version": "0.7.12",
+    "version": "0.8.1",
     "publishConfig": {
         "access": "public"
     },
@@ -45,9 +45,9 @@
     ],
     "dependencies": {
         "@ctrl/tinycolor": "^3.3.3",
-        "@iliad-ui/base": "^0.12.0",
-        "@iliad-ui/color-handle": "^0.5.13",
-        "@iliad-ui/shared": "^0.18.12",
+        "@iliad-ui/base": "^0.12.1",
+        "@iliad-ui/color-handle": "^0.6.1",
+        "@iliad-ui/shared": "^0.19.1",
         "tslib": "^2.0.0"
     },
     "devDependencies": {
@@ -60,6 +60,10 @@
         {
             "name": "saiye",
             "email": "saiye@gaoding.com"
+        },
+        {
+            "name": "yase",
+            "email": "yase@gaoding.com"
         }
     ],
     "sideEffects": [

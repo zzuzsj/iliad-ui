@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/split-button",
-    "version": "0.9.30",
+    "version": "0.10.1",
     "publishConfig": {
         "access": "public"
     },
@@ -46,13 +46,13 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.12.0",
-        "@iliad-ui/button": "^0.22.7",
-        "@iliad-ui/icon": "^0.16.9",
-        "@iliad-ui/icons-ui": "^0.12.15",
-        "@iliad-ui/icons-workflow": "^0.12.15",
-        "@iliad-ui/overlay": "^0.17.17",
-        "@iliad-ui/picker": "^0.13.31",
+        "@iliad-ui/base": "^0.12.1",
+        "@iliad-ui/button": "^0.23.1",
+        "@iliad-ui/icon": "^0.17.1",
+        "@iliad-ui/icons-ui": "^0.13.1",
+        "@iliad-ui/icons-workflow": "^0.13.1",
+        "@iliad-ui/overlay": "^0.18.1",
+        "@iliad-ui/picker": "^0.14.1",
         "tslib": "^2.0.0"
     },
     "devDependencies": {
@@ -65,6 +65,10 @@
         {
             "name": "saiye",
             "email": "saiye@gaoding.com"
+        },
+        {
+            "name": "yase",
+            "email": "yase@gaoding.com"
         }
     ],
     "sideEffects": [

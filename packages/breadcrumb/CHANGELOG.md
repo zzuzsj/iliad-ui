@@ -3,9 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.1.13](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/breadcrumb@0.1.12...@iliad-ui/breadcrumb@0.1.13) (2022-08-05)
+## [0.2.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/breadcrumb@0.2.0...@iliad-ui/breadcrumb@0.2.1) (2022-07-19)
 
 **Note:** Version bump only for package @iliad-ui/breadcrumb
+
+# 0.2.0 (2022-07-19)
+
+### Bug Fixes
+
+-   breadcrumb 和 tree 组件之后增加引用路径，保证打包正确 ([264fb7a](https://github.com/gaoding-inc/iliad-ui/commit/264fb7a1c4fd186451973326b4e88a26b3189ffa))
+-   部分组件重复注册报错 ([6380f75](https://github.com/gaoding-inc/iliad-ui/commit/6380f7567a4929cfd10105e3252d25600f19173b))
+
+### Features
+
+-   新增加 breadcrumb 和 tree 空组件 ([8ab9cff](https://github.com/gaoding-inc/iliad-ui/commit/8ab9cff9b5efd0b792bafea53723122a67f77017))
 
 ## [0.1.12](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/breadcrumb@0.1.11...@iliad-ui/breadcrumb@0.1.12) (2022-06-13)
 

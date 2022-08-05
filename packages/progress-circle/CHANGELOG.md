@@ -3,9 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.6.12](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/progress-circle@0.6.11...@iliad-ui/progress-circle@0.6.12) (2022-08-05)
+## [0.7.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/progress-circle@0.7.0...@iliad-ui/progress-circle@0.7.1) (2022-07-19)
 
 **Note:** Version bump only for package @iliad-ui/progress-circle
+
+# 0.7.0 (2022-07-19)
+
+### Bug Fixes
+
+-   update to latest spectrum-css packages ([a5ca19f](https://github.com/gaoding-inc/iliad-ui/commit/a5ca19f67d5b3f0951667c4441d4d977bf1e0937))
+
+### Features
+
+-   **progress-circle:** replace circle-loader with progress-circle ([a852140](https://github.com/gaoding-inc/iliad-ui/commit/a852140797f978078d71aceac58f61f744e5a651))
+-   use latest exports specification ([a7ecf4b](https://github.com/gaoding-inc/iliad-ui/commit/a7ecf4b6da7996f36a8a89f62cc2384709497008))
 
 ## [0.6.11](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/progress-circle@0.6.10...@iliad-ui/progress-circle@0.6.11) (2022-06-13)
 

@@ -3,9 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.7.13](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/color-slider@0.7.12...@iliad-ui/color-slider@0.7.13) (2022-08-05)
+## [0.8.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/color-slider@0.8.0...@iliad-ui/color-slider@0.8.1) (2022-07-19)
 
 **Note:** Version bump only for package @iliad-ui/color-slider
+
+# 0.8.0 (2022-07-19)
+
+### Bug Fixes
+
+-   address westbrooks comments ([634af60](https://github.com/gaoding-inc/iliad-ui/commit/634af60f88b0c998b30697dfbd13c9c466ed539d))
+-   **color-slider:** use correct focus events in test ([b974c12](https://github.com/gaoding-inc/iliad-ui/commit/b974c129c1860eafe920028b20401616f77eca4c))
+-   ensure color wheel in not opinionated about saturation and lightness ([8e0fd9c](https://github.com/gaoding-inc/iliad-ui/commit/8e0fd9ca4b341d497b1fd6092ba88e321ee7044a))
+-   expand support for maintaining hue and saturation across customization ([fe18944](https://github.com/gaoding-inc/iliad-ui/commit/fe18944da268bd16fbb3e643fa4695d7e2d0e5d7))
+-   include touch-action rule for draggable content ([53221da](https://github.com/gaoding-inc/iliad-ui/commit/53221dabc8911749372994cc0fabe55f36858680))
+-   include touch-action rule for draggable content ([3f507e6](https://github.com/gaoding-inc/iliad-ui/commit/3f507e6dba718ae2b7415454eba859a9790e43e7))
+-   key interaction handling no longer prevents "tab" presses ([b542ce8](https://github.com/gaoding-inc/iliad-ui/commit/b542ce8f98a8a26badfa856f2e09ebda16dbcbb1))
+-   manage "focused" across more contexts ([9273c15](https://github.com/gaoding-inc/iliad-ui/commit/9273c15144323bd8d62626b4e35b1975bffabf2a))
+-   normalize focus passing during and after pointer events ([357931b](https://github.com/gaoding-inc/iliad-ui/commit/357931b6eb803759925b10b629d21878e8249678))
+-   prevent tabindex=-1 elements from placing focus on their host ([1ac1293](https://github.com/gaoding-inc/iliad-ui/commit/1ac12931771c6d5fdbc99f5d214702ed644cb81a))
+-   remove right click value setting ([a44968d](https://github.com/gaoding-inc/iliad-ui/commit/a44968d09120ad9b54915438fb5a134f306fdab2))
+-   update colour slider ([9acda67](https://github.com/gaoding-inc/iliad-ui/commit/9acda673d98e39a9928166806926689020dc0577))
+-   use hue normalized color in handle and allow focus ([f9e1fa2](https://github.com/gaoding-inc/iliad-ui/commit/f9e1fa24afd091334341610a49331fc0ec5f8573))
+-   部分组件重复注册报错 ([6380f75](https://github.com/gaoding-inc/iliad-ui/commit/6380f7567a4929cfd10105e3252d25600f19173b))
+
+### Features
+
+-   actionbutton,colorarea,button,colorslider 样式更改 ([fffc4fa](https://github.com/gaoding-inc/iliad-ui/commit/fffc4fa9927a1b3a2d11ebc7ef831a1c64dff3e2))
+-   **color-slider:** add color-slider pattern ([625f6fe](https://github.com/gaoding-inc/iliad-ui/commit/625f6fe28713dabf7806dd94d51157f7e91f95ad))
+-   css 样式更改 ([f0c9476](https://github.com/gaoding-inc/iliad-ui/commit/f0c9476e27b07ad3da62ecd717675c7329e5f78e))
+-   debug colour elements for a11y ([7008f7c](https://github.com/gaoding-inc/iliad-ui/commit/7008f7c0c0b719f6978a8f158bfea4434d1580af))
+-   update lit-\* dependencies, wip ([70743bf](https://github.com/gaoding-inc/iliad-ui/commit/70743bf6855c08924a0a3ec1a14dc43862f9cf42))
 
 ## [0.7.12](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/color-slider@0.7.11...@iliad-ui/color-slider@0.7.12) (2022-06-13)
 

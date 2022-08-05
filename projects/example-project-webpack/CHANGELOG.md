@@ -3,9 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [1.5.63](https://github.com/zzuzsj/iliad-ui/compare/example-project-webpack@1.5.62...example-project-webpack@1.5.63) (2022-08-05)
+## [1.6.1](https://github.com/gaoding-inc/Iliad-ui/compare/example-project-webpack@1.6.0...example-project-webpack@1.6.1) (2022-07-19)
 
 **Note:** Version bump only for package example-project-webpack
+
+# [1.6.0](https://github.com/gaoding-inc/Iliad-ui/compare/example-project-webpack@1.3.17...example-project-webpack@1.6.0) (2022-07-19)
+
+### Features
+
+-   update lit-\* dependencies, wip ([70743bf](https://github.com/gaoding-inc/Iliad-ui/commit/70743bf6855c08924a0a3ec1a14dc43862f9cf42))
+-   测试案例更改 ([9b118ec](https://github.com/gaoding-inc/Iliad-ui/commit/9b118ecfde397f0ef01c1b94c148fad1cd7f4726))
 
 ## [1.5.62](https://github.com/zzuzsj/iliad-ui/compare/example-project-webpack@1.5.61...example-project-webpack@1.5.62) (2022-06-30)
 

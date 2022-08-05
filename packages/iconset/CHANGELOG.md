@@ -3,9 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.12.6](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/iconset@0.12.5...@iliad-ui/iconset@0.12.6) (2022-08-05)
+## [0.13.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/iconset@0.13.0...@iliad-ui/iconset@0.13.1) (2022-07-19)
 
 **Note:** Version bump only for package @iliad-ui/iconset
+
+# 0.13.0 (2022-07-19)
+
+### Bug Fixes
+
+-   allow "updateComplete" to resolve to a boolean like the LitElement default ([6127946](https://github.com/gaoding-inc/iliad-ui/commit/6127946fd3ffd048a30b7eb4bf6aadf9e7c8752a))
+-   ensure browser understandable extensions ([f4e59f7](https://github.com/gaoding-inc/iliad-ui/commit/f4e59f76f86369593810463c6406565e28ad97e9))
+-   include "type" in package.json, generate custom-elements.json ([1a8d716](https://github.com/gaoding-inc/iliad-ui/commit/1a8d716f2f787deb8d868a78bd28c8e62fe90e21))
+-   include default export in the "exports" fields ([f32407d](https://github.com/gaoding-inc/iliad-ui/commit/f32407d7bbfd18e72c35b6f27740549e79957858))
+-   include the "types" entry in package.json files ([b432f59](https://github.com/gaoding-inc/iliad-ui/commit/b432f5982b3b79f80af12f6d0312cbe2285e608b))
+-   lint away debugger statements ([34a498e](https://github.com/gaoding-inc/iliad-ui/commit/34a498e784221f98dbf26e9366114c82fabc9c5b))
+-   normalize "event" and "error" argument names ([8d382cd](https://github.com/gaoding-inc/iliad-ui/commit/8d382cdac98282c886f23c4a8d6cf4910c4a606c))
+-   remove ":" based namespacing of events ([d77a843](https://github.com/gaoding-inc/iliad-ui/commit/d77a843a049a6a37bbeee7bbfb50b4d5eb24f3fd))
+-   remove "type: "module"" in package.json for node 12 ([c9f76e2](https://github.com/gaoding-inc/iliad-ui/commit/c9f76e21e24bb844466158fe96512ab19c37c5a9))
+-   use icons without "size" values ([3fc7c91](https://github.com/gaoding-inc/iliad-ui/commit/3fc7c91713793a928082eae15fc3d9dec638a31a))
+
+### Features
+
+-   **icons-workflow:** vend fully registered icon components ([941f3a4](https://github.com/gaoding-inc/iliad-ui/commit/941f3a41486fbd49eca0805fb63383f63313e71e))
+-   **iconset:** update spectrum css input ([914150a](https://github.com/gaoding-inc/iliad-ui/commit/914150a60e9e123ee68e9a26c8a72653846cd3ea))
+-   leverage "exports" field in package.json ([321abd7](https://github.com/gaoding-inc/iliad-ui/commit/321abd7b7e78ccd9157cff75a1fa3dbd06e81f79))
+-   update lit-\* dependencies, wip ([70743bf](https://github.com/gaoding-inc/iliad-ui/commit/70743bf6855c08924a0a3ec1a14dc43862f9cf42))
+-   use latest exports specification ([a7ecf4b](https://github.com/gaoding-inc/iliad-ui/commit/a7ecf4b6da7996f36a8a89f62cc2384709497008))
+-   组件样式走查，增加 radio button 样式 ([61342d3](https://github.com/gaoding-inc/iliad-ui/commit/61342d3a086263c65611d4033f20428f8db2b8fa))
+
+### Performance Improvements
+
+-   use "sideEffects" listing in package.json ([7271614](https://github.com/gaoding-inc/iliad-ui/commit/7271614c0ca3ccf3566583bb59467eb15a6199cd))
+-   use imported TypeScript helpers instead of inlining them ([cc2bd0a](https://github.com/gaoding-inc/iliad-ui/commit/cc2bd0accd643c2f35cbf1ba809b54f52c25628d))
 
 ## [0.12.5](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/iconset@0.12.4...@iliad-ui/iconset@0.12.5) (2022-06-13)
 

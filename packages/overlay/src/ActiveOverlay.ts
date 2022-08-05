@@ -136,6 +136,7 @@ export class ActiveOverlay extends SpectrumElement {
     public overlayContentTip?: HTMLElement;
     public trigger!: HTMLElement;
     public virtualTrigger?: VirtualTrigger;
+    public closeOnClickOutside?: boolean;
 
     private popper?: Instance;
 
@@ -367,6 +368,7 @@ export class ActiveOverlay extends SpectrumElement {
         this.interaction = detail.interaction;
         this.theme = detail.theme;
         this.receivesFocus = detail.receivesFocus;
+        this.closeOnClickOutside = detail.closeOnClickOutside;
     }
 
     public dispose(): void {

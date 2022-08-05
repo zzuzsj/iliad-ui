@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.20](https://github.com/gaoding-inc/Iliad-ui/compare/swc-templates@0.5.3...swc-templates@0.5.20) (2022-07-19)
+
+### Bug Fixes
+
+-   部分组件重复注册报错 ([6380f75](https://github.com/gaoding-inc/Iliad-ui/commit/6380f7567a4929cfd10105e3252d25600f19173b))
+
 ## [0.5.19](https://github.com/zzuzsj/iliad-ui/compare/swc-templates@0.5.18...swc-templates@0.5.19) (2022-06-13)
 
 **Note:** Version bump only for package swc-templates

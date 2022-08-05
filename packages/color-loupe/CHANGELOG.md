@@ -3,9 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.5.12](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/color-loupe@0.5.11...@iliad-ui/color-loupe@0.5.12) (2022-08-05)
+## [0.6.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/color-loupe@0.6.0...@iliad-ui/color-loupe@0.6.1) (2022-07-19)
 
 **Note:** Version bump only for package @iliad-ui/color-loupe
+
+# 0.6.0 (2022-07-19)
+
+### Bug Fixes
+
+-   address westbrooks comments ([634af60](https://github.com/gaoding-inc/iliad-ui/commit/634af60f88b0c998b30697dfbd13c9c466ed539d))
+
+### Features
+
+-   **color-loupe:** add color-loupe pattern ([e2f0d15](https://github.com/gaoding-inc/iliad-ui/commit/e2f0d159714cc7998f15d9913b38128486f8b7fb))
 
 ## [0.5.11](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/color-loupe@0.5.10...@iliad-ui/color-loupe@0.5.11) (2022-06-13)
 

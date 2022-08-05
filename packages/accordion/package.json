@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/accordion",
-    "version": "0.8.15",
+    "version": "0.9.1",
     "publishConfig": {
         "access": "public"
     },
@@ -46,10 +46,10 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.12.0",
-        "@iliad-ui/icon": "^0.16.9",
-        "@iliad-ui/icons-ui": "^0.12.15",
-        "@iliad-ui/shared": "^0.18.12",
+        "@iliad-ui/base": "^0.12.1",
+        "@iliad-ui/icon": "^0.17.1",
+        "@iliad-ui/icons-ui": "^0.13.1",
+        "@iliad-ui/shared": "^0.19.1",
         "tslib": "^2.0.0"
     },
     "devDependencies": {
@@ -62,6 +62,10 @@
         {
             "name": "saiye",
             "email": "saiye@gaoding.com"
+        },
+        {
+            "name": "yase",
+            "email": "yase@gaoding.com"
         }
     ],
     "sideEffects": [

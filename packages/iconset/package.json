@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/iconset",
-    "version": "0.12.6",
+    "version": "0.13.1",
     "publishConfig": {
         "access": "public"
     },
@@ -41,7 +41,7 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.12.0",
+        "@iliad-ui/base": "^0.12.1",
         "tslib": "^2.0.0"
     },
     "types": "./src/index.d.ts",
@@ -51,6 +51,10 @@
         {
             "name": "saiye",
             "email": "saiye@gaoding.com"
+        },
+        {
+            "name": "yase",
+            "email": "yase@gaoding.com"
         }
     ],
     "sideEffects": [

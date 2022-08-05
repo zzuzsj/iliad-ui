@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/progress-bar",
-    "version": "0.7.15",
+    "version": "0.8.1",
     "publishConfig": {
         "access": "public"
     },
@@ -44,8 +44,8 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.12.0",
-        "@iliad-ui/field-label": "^0.9.16",
+        "@iliad-ui/base": "^0.12.1",
+        "@iliad-ui/field-label": "^0.10.1",
         "tslib": "^2.0.0"
     },
     "devDependencies": {
@@ -58,6 +58,10 @@
         {
             "name": "saiye",
             "email": "saiye@gaoding.com"
+        },
+        {
+            "name": "yase",
+            "email": "yase@gaoding.com"
         }
     ],
     "sideEffects": [

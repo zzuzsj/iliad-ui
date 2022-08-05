@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/picker",
-    "version": "0.13.31",
+    "version": "0.14.1",
     "publishConfig": {
         "access": "public"
     },
@@ -48,15 +48,15 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.12.0",
-        "@iliad-ui/button": "^0.22.7",
-        "@iliad-ui/icon": "^0.16.9",
-        "@iliad-ui/icons-ui": "^0.12.15",
-        "@iliad-ui/icons-workflow": "^0.12.15",
-        "@iliad-ui/menu": "^0.16.10",
-        "@iliad-ui/overlay": "^0.17.17",
-        "@iliad-ui/popover": "^0.15.10",
-        "@iliad-ui/shared": "^0.18.12",
+        "@iliad-ui/base": "^0.12.1",
+        "@iliad-ui/button": "^0.23.1",
+        "@iliad-ui/icon": "^0.17.1",
+        "@iliad-ui/icons-ui": "^0.13.1",
+        "@iliad-ui/icons-workflow": "^0.13.1",
+        "@iliad-ui/menu": "^0.17.1",
+        "@iliad-ui/overlay": "^0.18.1",
+        "@iliad-ui/popover": "^0.16.1",
+        "@iliad-ui/shared": "^0.19.1",
         "tslib": "^2.0.0"
     },
     "devDependencies": {
@@ -69,6 +69,10 @@
         {
             "name": "saiye",
             "email": "saiye@gaoding.com"
+        },
+        {
+            "name": "yase",
+            "email": "yase@gaoding.com"
         }
     ],
     "sideEffects": [
