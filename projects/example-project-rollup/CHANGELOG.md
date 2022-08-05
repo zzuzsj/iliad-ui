@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.2](https://github.com/zzuzsj/iliad-ui/compare/example-project-rollup@0.4.30...example-project-rollup@0.5.2) (2022-08-05)
+
+**Note:** Version bump only for package example-project-rollup
+
 ## [0.5.1](https://github.com/gaoding-inc/Iliad-ui/compare/example-project-rollup@0.5.0...example-project-rollup@0.5.1) (2022-07-19)
 
 **Note:** Version bump only for package example-project-rollup

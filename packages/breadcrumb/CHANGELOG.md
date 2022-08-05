@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/breadcrumb@0.1.13...@iliad-ui/breadcrumb@0.2.2) (2022-08-05)
+
+**Note:** Version bump only for package @iliad-ui/breadcrumb
+
 ## [0.2.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/breadcrumb@0.2.0...@iliad-ui/breadcrumb@0.2.1) (2022-07-19)
 
 **Note:** Version bump only for package @iliad-ui/breadcrumb

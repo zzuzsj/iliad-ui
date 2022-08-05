@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/accordion",
-    "version": "0.9.1",
+    "version": "0.9.2",
     "publishConfig": {
         "access": "public"
     },
@@ -46,10 +46,10 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.12.1",
-        "@iliad-ui/icon": "^0.17.1",
-        "@iliad-ui/icons-ui": "^0.13.1",
-        "@iliad-ui/shared": "^0.19.1",
+        "@iliad-ui/base": "^0.12.2",
+        "@iliad-ui/icon": "^0.17.2",
+        "@iliad-ui/icons-ui": "^0.13.2",
+        "@iliad-ui/shared": "^0.19.2",
         "tslib": "^2.0.0"
     },
     "devDependencies": {

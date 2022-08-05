@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/thumbnail@0.7.1...@iliad-ui/thumbnail@0.7.2) (2022-08-05)
+
+**Note:** Version bump only for package @iliad-ui/thumbnail
+
 ## [0.7.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/thumbnail@0.7.0...@iliad-ui/thumbnail@0.7.1) (2022-07-19)
 
 **Note:** Version bump only for package @iliad-ui/thumbnail

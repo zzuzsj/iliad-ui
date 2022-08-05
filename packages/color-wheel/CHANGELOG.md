@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/color-wheel@0.7.12...@iliad-ui/color-wheel@0.8.2) (2022-08-05)
+
+**Note:** Version bump only for package @iliad-ui/color-wheel
+
 ## [0.8.1](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/color-wheel@0.8.0...@iliad-ui/color-wheel@0.8.1) (2022-07-19)
 
 **Note:** Version bump only for package @iliad-ui/color-wheel
