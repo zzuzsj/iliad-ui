@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.15](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/meter@0.8.14...@iliad-ui/meter@0.8.15) (2022-08-05)
+
+**Note:** Version bump only for package @iliad-ui/meter
+
 ## [0.8.14](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/meter@0.8.13...@iliad-ui/meter@0.8.14) (2022-06-13)
 
 **Note:** Version bump only for package @iliad-ui/meter

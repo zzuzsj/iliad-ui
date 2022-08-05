@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.12](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/top-nav@0.7.11...@iliad-ui/top-nav@0.7.12) (2022-08-05)
+
+**Note:** Version bump only for package @iliad-ui/top-nav
+
 ## [0.7.11](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/top-nav@0.7.10...@iliad-ui/top-nav@0.7.11) (2022-06-13)
 
 **Note:** Version bump only for package @iliad-ui/top-nav

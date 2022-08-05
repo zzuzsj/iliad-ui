@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.16.10](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/menu@0.16.9...@iliad-ui/menu@0.16.10) (2022-08-05)
+
+**Note:** Version bump only for package @iliad-ui/menu
+
 ## [0.16.9](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/menu@0.16.8...@iliad-ui/menu@0.16.9) (2022-06-13)
 
 **Note:** Version bump only for package @iliad-ui/menu

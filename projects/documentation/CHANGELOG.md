@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.31](https://github.com/zzuzsj/iliad-ui/compare/documentation@0.1.30...documentation@0.1.31) (2022-08-05)
+
+**Note:** Version bump only for package documentation
+
 ## [0.1.30](https://github.com/zzuzsj/iliad-ui/compare/documentation@0.1.29...documentation@0.1.30) (2022-06-30)
 
 **Note:** Version bump only for package documentation

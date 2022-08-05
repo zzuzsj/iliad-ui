@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.10](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/popover@0.15.9...@iliad-ui/popover@0.15.10) (2022-08-05)
+
+**Note:** Version bump only for package @iliad-ui/popover
+
 ## [0.15.9](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/popover@0.15.8...@iliad-ui/popover@0.15.9) (2022-06-30)
 
 **Note:** Version bump only for package @iliad-ui/popover

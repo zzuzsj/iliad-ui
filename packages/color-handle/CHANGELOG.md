@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.13](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/color-handle@0.5.12...@iliad-ui/color-handle@0.5.13) (2022-08-05)
+
+**Note:** Version bump only for package @iliad-ui/color-handle
+
 ## [0.5.12](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/color-handle@0.5.11...@iliad-ui/color-handle@0.5.12) (2022-06-13)
 
 **Note:** Version bump only for package @iliad-ui/color-handle

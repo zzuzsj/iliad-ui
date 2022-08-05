@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.12](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/shared@0.18.11...@iliad-ui/shared@0.18.12) (2022-08-05)
+
+**Note:** Version bump only for package @iliad-ui/shared
+
 ## [0.18.11](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/shared@0.18.10...@iliad-ui/shared@0.18.11) (2022-06-13)
 
 **Note:** Version bump only for package @iliad-ui/shared

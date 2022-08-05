@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.17](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/tooltip@0.12.16...@iliad-ui/tooltip@0.12.17) (2022-08-05)
+
+**Note:** Version bump only for package @iliad-ui/tooltip
+
 ## [0.12.16](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/tooltip@0.12.15...@iliad-ui/tooltip@0.12.16) (2022-06-30)
 
 **Note:** Version bump only for package @iliad-ui/tooltip
