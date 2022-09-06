@@ -74,6 +74,11 @@ function formatCode(string) {
     return prettier.format(string, {
         parser: 'babel-ts',
         singleQuote: true,
+        printWidth: 80,
+        tabWidth: 4,
+        semi: true,
+        singleQuote: true,
+        bracketSpacing: true,
     });
 }
 
@@ -83,21 +88,27 @@ const AppendEvents = {
     Slider: ['input', 'change'],
 };
 
-components.map((component) => {
-    const { name } = component;
-    const componentFile = path.join('./src', `${name}.ts`);
-    const appendEvents = (AppendEvents[name] || []).map((cv) => {
-        return { name: cv };
-    });
-    const events = (component.events || [])
-        .concat(appendEvents)
-        .map((event) => {
-            return `'${event.name}': '${event.name}'`;
-        })
-        .join(',\n');
+// 暂时还没开发完毕
+const passedComponents = ['HelpText'];
+components
+    .filter((cv) => {
+        return !passedComponents.includes(cv.name);
+    })
+    .map((component) => {
+        const { name } = component;
+        const componentFile = path.join('./src', `${name}.ts`);
+        const appendEvents = (AppendEvents[name] || []).map((cv) => {
+            return { name: cv };
+        });
+        const events = (component.events || [])
+            .concat(appendEvents)
+            .map((event) => {
+                return `'${event.name}': '${event.name}'`;
+            })
+            .join(',\n');
 
-    const source = formatCode(
-        `${header}import * as React from 'react';
+        const source = formatCode(
+            `${header}import * as React from 'react';
       import { createComponent } from '@lit-labs/react';
       import { ReactiveEvents } from '../config';
       import { ${name} as Component } from '@iliad-ui/bundle';
@@ -113,12 +124,12 @@ components.map((component) => {
         '${name}'
       );
     `
-    );
+        );
 
-    fs.writeFileSync(componentFile, source, 'utf8');
-    mainExports.push(`export * from './${name}'`);
-    console.log(`✓ <${component.tagName}>`);
-});
+        fs.writeFileSync(componentFile, source, 'utf8');
+        mainExports.push(`export * from './${name}'`);
+        console.log(`✓ <${component.tagName}>`);
+    });
 
 // 增加手动导出部分(build:react 不会更新对应src/ts文件，有更新需要手动更新)
 mainExports.push(`

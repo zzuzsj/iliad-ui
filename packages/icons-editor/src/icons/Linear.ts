@@ -24,7 +24,7 @@ export const LinearIcon = (): string | TemplateResult => {
             <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M2.46967 20.4697L21.4697 1.46967L22.5303 2.53033L3.53033 21.5303L2.46967 20.4697Z"
+                d="M2.46967 20.4697L21.4697 1.46973L22.5303 2.53039L3.53033 21.5304L2.46967 20.4697Z"
             />
         </svg>
     `;

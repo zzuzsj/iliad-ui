@@ -21,7 +21,14 @@ export const TriggerIcon = (): string | TemplateResult => {
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
         >
-            <path d="M13 1L5 13H10V23L18 10H13V1Z" />
+            <g clip-path="url(#clip0_848_743)">
+                <path d="M13 1L5 13H10V23L18 10H13V1Z" />
+            </g>
+            <defs>
+                <clipPath id="clip0_848_743">
+                    <rect width="24" height="24" />
+                </clipPath>
+            </defs>
         </svg>
     `;
 };
