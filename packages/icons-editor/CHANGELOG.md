@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons-editor@0.10.0...@iliad-ui/icons-editor@0.11.0) (2022-09-13)
+
+### Features
+
+-   icons 更新 ([f46db89](https://github.com/gaoding-inc/iliad-ui/commit/f46db89695723aaf57b9ae9975ee3f37f35413e1))
+
 # [0.10.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/icons-editor@0.9.2...@iliad-ui/icons-editor@0.10.0) (2022-09-06)
 
 ### Features
