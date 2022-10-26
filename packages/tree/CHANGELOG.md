@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/tree@0.7.2...@iliad-ui/tree@0.8.0) (2022-10-26)
+
+### Bug Fixes
+
+-   修复 treeItem 自动大写问题 ([022905b](https://github.com/gaoding-inc/iliad-ui/commit/022905b02104a1637308e5cd767a29784104d62f))
+
+### Features
+
+-   tree-item 增加 font-weight 变量 ([8d98112](https://github.com/gaoding-inc/iliad-ui/commit/8d98112b0885cb29f7b2a1e0f03d5cdf266952fc))
+
 ## [0.7.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/tree@0.7.1...@iliad-ui/tree@0.7.2) (2022-08-05)
 
 **Note:** Version bump only for package @iliad-ui/tree
