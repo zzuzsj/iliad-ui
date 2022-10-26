@@ -38,20 +38,6 @@ governing permissions and limitations under the License.
         0
     ); /* [dir=rtl] .spectrum-Tree-itemIndicator */
 }
-:host([dir='ltr']) {
-    padding-left: var(--spectrum-tree-item-offset-padding-x);
-    /* padding-left: calc(
-        var(--spectrum-tree-item-offset-padding-x) +
-            var(--spectrum-tree-item-header-arrow-gap)
-    ); */
-}
-:host([dir='rtl']) {
-    padding-left: var(--spectrum-tree-item-offset-padding-x);
-    /* padding-right: calc(
-        var(--spectrum-tree-item-offset-padding-x) +
-            var(--spectrum-tree-item-header-arrow-gap)
-    ); */
-}
 .indicator {
     --indicator-width: calc(
         var(--spectrum-tree-icon-width) + 2 * var(--spectrum-tree-icon-padding)
@@ -81,6 +67,9 @@ governing permissions and limitations under the License.
         solid transparent; /* .spectrum-Tree-item:first-of-type */
 }
 #heading {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     box-sizing: border-box;
     margin: 0; /* .spectrum-Tree-itemHeading */
     position: relative;
@@ -90,7 +79,11 @@ governing permissions and limitations under the License.
     margin-bottom: var(--spectrum-tree-item-margin-y);
     overflow: hidden;
 }
-:host([dir='ltr']) #header {
+#headerContainer {
+    flex: 1;
+    overflow: hidden;
+}
+:host([dir='ltr']) #heading {
     --indicator-width: calc(
         var(--spectrum-tree-icon-width) + 2 * var(--spectrum-tree-icon-padding)
     );
@@ -102,10 +95,13 @@ governing permissions and limitations under the License.
                 var(--spectrum-global-dimension-size-100)
             )
     );
-    padding-left: var(--padding-left);
+
     padding-right: var(--spectrum-tree-item-padding-right);
 }
-:host([dir='rtl']) #header {
+:host([dir='ltr']) #header {
+    padding-left: var(--padding-left);
+}
+:host([dir='rtl']) #heading {
     --indicator-width: calc(
         var(--spectrum-tree-icon-width) + 2 * var(--spectrum-tree-icon-padding)
     );
@@ -117,8 +113,11 @@ governing permissions and limitations under the License.
                 var(--spectrum-global-dimension-size-100)
             )
     );
-    padding-left: var(--spectrum-tree-item-padding-right);
+
     padding-right: var(--padding-right);
+}
+:host([dir='rtl']) #header {
+    padding-left: var(--spectrum-tree-item-padding-right);
 }
 
 :host([dir='ltr']) #header {
@@ -136,6 +135,7 @@ governing permissions and limitations under the License.
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex: 1;
     font-family: inherit;
     font-size: var(
         --spectrum-tree-item-title-text-size,

@@ -167,20 +167,21 @@ export class TreeItem extends SpectrumElement {
         );
         return html`
             <h3 id="heading">
-                <button
-                    id="header"
-                    @click=${this.onClick}
-                    aria-expanded=${this.open}
-                    aria-controls="content"
-                >
-                    <slot name="icon"></slot>
-                    <div id="label">
-                        <slot name="label">
-                            <span id="label-text">${this.label}</span>
-                        </slot>
-                    </div>
-                    <slot name="value"></slot>
-                </button>
+                <div id="headerContainer">
+                    <button
+                        id="header"
+                        @click=${this.onClick}
+                        aria-expanded=${this.open}
+                        aria-controls="content"
+                    >
+                        <slot name="icon"></slot>
+                        <div id="label">
+                            <slot name="label">
+                                <span id="label-text">${this.label}</span>
+                            </slot>
+                        </div>
+                    </button>
+                </div>
                 <button class="indicator" @click=${this.onToggle}>
                     <slot name="indicator">
                         <sp-icon-editor-arrow-triangle
@@ -188,6 +189,7 @@ export class TreeItem extends SpectrumElement {
                         ></sp-icon-editor-arrow-triangle>
                     </slot>
                 </button>
+                <slot name="value"></slot>
             </h3>
             <div id="content" role="region" aria-labelledby="header">
                 <slot></slot>

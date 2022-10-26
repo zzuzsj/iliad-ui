@@ -33,9 +33,6 @@ governing permissions and limitations under the License.
             var(--spectrum-tree-item-offset)
     );
     --spectrum-tree-item-margin-y: var(--spectrum-global-dimension-size-0);
-    --spectrum-tree-item-offset-padding-x: var(
-        --spectrum-global-dimension-size-0
-    );
     --spectrum-tree-item-header-arrow-gap: var(
         --spectrum-global-dimension-size-100
     );
