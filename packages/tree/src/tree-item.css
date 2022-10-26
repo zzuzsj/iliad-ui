@@ -142,7 +142,7 @@ governing permissions and limitations under the License.
         var(--spectrum-global-dimension-font-size-50)
     );
     color: inherit;
-    font-weight: 500;
+    font-weight: var(--spectrum-tree-item-title-font-weight);
     justify-content: flex-start;
     letter-spacing: var(--spectrum-tree-item-title-tracking-actual);
     line-height: var(--spectrum-tree-item-line-height);

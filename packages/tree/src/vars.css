@@ -48,6 +48,7 @@ governing permissions and limitations under the License.
         --spectrum-alias-border-size-thick
     );
     --spectrum-tree-item-title-text-size: var(--spectrum-alias-font-size-m);
+    --spectrum-tree-item-title-font-weight: var(--spectrum-alias-font-weight-m);
     --spectrum-tree-icon-color: var(--spectrum-global-color-gray-700);
     --spectrum-tree-text-color: var(--spectrum-alias-text-color-secondary);
     --spectrum-tree-item-background-color: var(
