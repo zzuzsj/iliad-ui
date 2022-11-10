@@ -19,12 +19,10 @@ export const LabelYIcon = (): string | TemplateResult => {
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
             <path
                 d="M6.13101 5.14795L11.261 12.7799V18H12.737V12.7799L17.867 5.14795H16.085L11.999 11.4119L7.91301 5.14795H6.13101Z"
-                fill="#1F1F1F"
             />
         </svg>
     `;

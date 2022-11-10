@@ -19,7 +19,6 @@ export const RemoveIcon = (): string | TemplateResult => {
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
             <g clip-path="url(#clip0_24_49)">
@@ -27,12 +26,11 @@ export const RemoveIcon = (): string | TemplateResult => {
                     fill-rule="evenodd"
                     clip-rule="evenodd"
                     d="M3 12.75L3 11.25L21 11.25L21 12.75L3 12.75Z"
-                    fill="#1F1F1F"
                 />
             </g>
             <defs>
                 <clipPath id="clip0_24_49">
-                    <rect width="24" height="24" fill="white" />
+                    <rect width="24" height="24" />
                 </clipPath>
             </defs>
         </svg>

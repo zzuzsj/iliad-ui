@@ -19,14 +19,12 @@ export const ArrowRightIcon = (): string | TemplateResult => {
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
             <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M16.8107 11.4697L8.81067 3.46967L7.75 4.53033L15.2197 12L7.75 19.4697L8.81067 20.5303L16.8107 12.5303C17.1036 12.2374 17.1036 11.7626 16.8107 11.4697Z"
-                fill="#1F1F1F"
             />
         </svg>
     `;

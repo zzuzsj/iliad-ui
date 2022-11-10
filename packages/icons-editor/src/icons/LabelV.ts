@@ -19,12 +19,10 @@ export const LabelVIcon = (): string | TemplateResult => {
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
             <path
                 d="M6.34195 5.14795L11.0939 18H12.9119L17.6639 5.14795H16.044L12.0299 16.398H11.9759L7.96195 5.14795H6.34195Z"
-                fill="#1F1F1F"
             />
         </svg>
     `;

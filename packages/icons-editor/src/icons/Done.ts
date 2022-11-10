@@ -19,14 +19,12 @@ export const DoneIcon = (): string | TemplateResult => {
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
             <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M9.53033 18.5303L21.5303 6.53033L20.4697 5.46967L9 16.9393L3.53033 11.4697L2.46967 12.5303L8.46968 18.5303C8.61033 18.671 8.80109 18.75 9 18.75C9.19892 18.75 9.38968 18.671 9.53033 18.5303Z"
-                fill="#1F1F1F"
             />
         </svg>
     `;

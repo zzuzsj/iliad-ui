@@ -19,14 +19,12 @@ export const FormatIndentDecreaseIcon = (): string | TemplateResult => {
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
             <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M6.46967 3.96973L2.46967 7.96973C2.17678 8.26262 2.17678 8.73749 2.46967 9.03039L6.46967 13.0304L7.53033 11.9697L4.06066 8.50006L7.53033 5.03039L6.46967 3.96973ZM12 5.75006H21V4.25006H12V5.75006ZM12 12.7501H21V11.2501H12V12.7501ZM21 18.2501V19.7501H3V18.2501H21Z"
-                fill="#1F1F1F"
             />
         </svg>
     `;

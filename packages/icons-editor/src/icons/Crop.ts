@@ -19,14 +19,12 @@ export const CropIcon = (): string | TemplateResult => {
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
             <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M4.25 5.75V16C4.25 18.0711 5.92893 19.75 8 19.75H18.25V22H19.75V19.75H22V18.25H19.75V8C19.75 5.92893 18.0711 4.25 16 4.25H5.75V2H4.25V4.25H2V5.75H4.25ZM5.75 5.75V16C5.75 17.2426 6.75736 18.25 8 18.25H18.25V8C18.25 6.75736 17.2426 5.75 16 5.75H5.75Z"
-                fill="#1F1F1F"
             />
         </svg>
     `;
