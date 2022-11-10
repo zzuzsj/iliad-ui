@@ -187,7 +187,7 @@ governing permissions and limitations under the License.
     --spectrum-alias-text-color-primary: rgba(0, 0, 0, 0.88);
     --spectrum-alias-text-color-secondary: rgba(0, 0, 0, 0.72);
     --spectrum-alias-text-color-placeholder: rgba(0, 0, 0, 0.52);
-    --spectrum-alias-text-color-disabled: rgba(0, 0, 0, 0.32);
+    --spectrum-alias-text-color-disabled: rgba(0, 0, 0, 0.24);
     --spectrum-alias-text-color-link: #2576f0;
     --spectrum-alias-icon-color-primary: var(--spectrum-global-color-gray-900);
     --spectrum-alias-icon-color-secondary: var(

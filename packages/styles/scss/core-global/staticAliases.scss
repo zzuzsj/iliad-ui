@@ -112,9 +112,6 @@ governing permissions and limitations under the License.
     --spectrum-alias-body-text-font-family: var(
         --spectrum-global-font-family-base
     );
-    --spectrum-alias-body-text-line-height: var(
-        --spectrum-global-font-line-height-medium
-    );
     --spectrum-alias-body-text-font-weight: var(
         --spectrum-global-font-weight-regular
     );
@@ -122,16 +119,19 @@ governing permissions and limitations under the License.
         --spectrum-global-font-weight-bold
     );
     --spectrum-alias-button-text-line-height: var(
-        --spectrum-global-font-line-height-small
+        --spectrum-global-font-line-height-medium
+    );
+    --spectrum-alias-body-text-line-height: var(
+        --spectrum-global-font-line-height-medium
     );
     --spectrum-alias-component-text-line-height: var(
-        --spectrum-global-font-line-height-small
+        --spectrum-global-font-line-height-medium
     );
     --spectrum-alias-han-component-text-line-height: var(
         --spectrum-global-font-line-height-medium
     );
     --spectrum-alias-heading-text-line-height: var(
-        --spectrum-global-font-line-height-small
+        --spectrum-global-font-line-height-medium
     );
     --spectrum-alias-heading-text-font-weight-regular: var(
         --spectrum-global-font-weight-bold

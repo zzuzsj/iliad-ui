@@ -22,6 +22,7 @@ const replace = require('gulp-replace');
 const fs = require('fs-extra');
 const multiDest = require('gulp-multi-dest');
 const del = require('del');
+const prettier = require('gulp-prettier');
 
 gulp.task('variable', function variable() {
     const allFiles = fs.readdirSync('scss');
@@ -59,6 +60,15 @@ gulp.task('scss', function scss() {
             })
         )
         .pipe(sass().on('error', sass.logError))
+        .pipe(
+            prettier({
+                printWidth: 80,
+                tabWidth: 4,
+                useTabs: false,
+                semi: true,
+                singleQuote: true,
+            })
+        )
         .pipe(gulp.dest('.'));
 });
 

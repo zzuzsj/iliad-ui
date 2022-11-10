@@ -481,9 +481,6 @@ governing permissions and limitations under the License.
     --spectrum-alias-body-text-font-family: var(
         --spectrum-global-font-family-base
     );
-    --spectrum-alias-body-text-line-height: var(
-        --spectrum-global-font-line-height-medium
-    );
     --spectrum-alias-body-text-font-weight: var(
         --spectrum-global-font-weight-regular
     );
@@ -491,16 +488,19 @@ governing permissions and limitations under the License.
         --spectrum-global-font-weight-bold
     );
     --spectrum-alias-button-text-line-height: var(
-        --spectrum-global-font-line-height-small
+        --spectrum-global-font-line-height-medium
+    );
+    --spectrum-alias-body-text-line-height: var(
+        --spectrum-global-font-line-height-medium
     );
     --spectrum-alias-component-text-line-height: var(
-        --spectrum-global-font-line-height-small
+        --spectrum-global-font-line-height-medium
     );
     --spectrum-alias-han-component-text-line-height: var(
         --spectrum-global-font-line-height-medium
     );
     --spectrum-alias-heading-text-line-height: var(
-        --spectrum-global-font-line-height-small
+        --spectrum-global-font-line-height-medium
     );
     --spectrum-alias-heading-text-font-weight-regular: var(
         --spectrum-global-font-weight-bold
@@ -892,17 +892,20 @@ governing permissions and limitations under the License.
     --spectrum-alias-item-control-1-size-m: var(
         --spectrum-global-dimension-size-100
     );
-    --spectrum-alias-item-control-2-size-m: var(
-        --spectrum-global-dimension-size-175
+    --spectrum-alias-item-control-2-size-s: var(
+        --spectrum-global-dimension-size-150
     );
-    --spectrum-alias-item-control-2-size-l: var(
+    --spectrum-alias-item-control-2-size-m: var(
         --spectrum-global-dimension-size-200
     );
-    --spectrum-alias-item-control-2-size-xl: var(
+    --spectrum-alias-item-control-2-size-l: var(
         --spectrum-global-dimension-size-225
     );
-    --spectrum-alias-item-control-2-size-xxl: var(
+    --spectrum-alias-item-control-2-size-xl: var(
         --spectrum-global-dimension-size-250
+    );
+    --spectrum-alias-item-control-2-size-xxl: var(
+        --spectrum-global-dimension-size-300
     );
     --spectrum-alias-item-control-3-height-m: var(
         --spectrum-global-dimension-size-175
@@ -1388,7 +1391,7 @@ governing permissions and limitations under the License.
     --spectrum-alias-text-color-primary: rgba(0, 0, 0, 0.88);
     --spectrum-alias-text-color-secondary: rgba(0, 0, 0, 0.72);
     --spectrum-alias-text-color-placeholder: rgba(0, 0, 0, 0.52);
-    --spectrum-alias-text-color-disabled: rgba(0, 0, 0, 0.32);
+    --spectrum-alias-text-color-disabled: rgba(0, 0, 0, 0.24);
     --spectrum-alias-text-color-link: #2576f0;
     --spectrum-alias-icon-color-primary: var(--spectrum-global-color-gray-900);
     --spectrum-alias-icon-color-secondary: var(

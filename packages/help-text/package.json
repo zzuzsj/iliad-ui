@@ -47,8 +47,8 @@
         "lit-html"
     ],
     "dependencies": {
-        "@iliad-ui/base": "^0.6.0",
-        "@iliad-ui/icons-workflow": "^0.8.12",
+        "@iliad-ui/base": "^0.12.2",
+        "@iliad-ui/icons-workflow": "^0.13.2",
         "tslib": "^2.0.0"
     },
     "types": "./src/index.d.ts",

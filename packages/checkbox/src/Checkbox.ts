@@ -21,69 +21,69 @@ import {
     ElementSize,
 } from '@iliad-ui/base';
 import { CheckboxBase } from './CheckboxBase.js';
-import '@iliad-ui/icons-ui/icons/sp-icon-checkmark75.js';
-import '@iliad-ui/icons-ui/icons/sp-icon-checkmark100.js';
-import '@iliad-ui/icons-ui/icons/sp-icon-checkmark200.js';
-import '@iliad-ui/icons-ui/icons/sp-icon-checkmark300.js';
-import '@iliad-ui/icons-ui/icons/sp-icon-dash75.js';
-import '@iliad-ui/icons-ui/icons/sp-icon-dash100.js';
-import '@iliad-ui/icons-ui/icons/sp-icon-dash200.js';
-import '@iliad-ui/icons-ui/icons/sp-icon-dash300.js';
+import '@iliad-ui/icons-editor/icons/sp-icon-editor-remove.js';
+import '@iliad-ui/icons-editor/icons/sp-icon-editor-done.js';
 import checkboxStyles from './checkbox.css.js';
-import checkmarkSmallStyles from '@iliad-ui/icon/src/spectrum-icon-checkmark.css.js';
-import dashSmallStyles from '@iliad-ui/icon/src/spectrum-icon-dash.css.js';
 
 const checkmarkIcon = {
     s: html`
-        <sp-icon-checkmark75
+        <sp-icon-editor-done
             id="checkmark"
+            size="s"
             class="spectrum-UIIcon-Checkmark75"
-        ></sp-icon-checkmark75>
+        ></sp-icon-editor-done>
     `,
     m: html`
-        <sp-icon-checkmark100
+        <sp-icon-editor-done
             id="checkmark"
+            size="m"
             class="spectrum-UIIcon-Checkmark100"
-        ></sp-icon-checkmark100>
+        ></sp-icon-editor-done>
     `,
     l: html`
-        <sp-icon-checkmark200
+        <sp-icon-editor-done
             id="checkmark"
+            size="l"
             class="spectrum-UIIcon-Checkmark200"
-        ></sp-icon-checkmark200>
+        ></sp-icon-editor-done>
     `,
     xl: html`
-        <sp-icon-checkmark300
+        <sp-icon-editor-done
             id="checkmark"
+            size="xl"
             class="spectrum-UIIcon-Checkmark300"
-        ></sp-icon-checkmark300>
+        ></sp-icon-editor-done>
     `,
 };
 
 const dashIcon = {
     s: html`
-        <sp-icon-dash75
+        <sp-icon-editor-remove
             id="partialCheckmark"
+            size="s"
             class="spectrum-UIIcon-Dash75"
-        ></sp-icon-dash75>
+        ></sp-icon-editor-remove>
     `,
     m: html`
-        <sp-icon-dash100
+        <sp-icon-editor-remove
             id="partialCheckmark"
+            size="m"
             class="spectrum-UIIcon-Dash100"
-        ></sp-icon-dash100>
+        ></sp-icon-editor-remove>
     `,
     l: html`
-        <sp-icon-dash200
+        <sp-icon-editor-remove
             id="partialCheckmark"
+            size="l"
             class="spectrum-UIIcon-Dash200"
-        ></sp-icon-dash200>
+        ></sp-icon-editor-remove>
     `,
     xl: html`
-        <sp-icon-dash300
+        <sp-icon-editor-remove
             id="partialCheckmark"
+            size="xl"
             class="spectrum-UIIcon-Dash300"
-        ></sp-icon-dash300>
+        ></sp-icon-editor-remove>
     `,
 };
 
@@ -104,7 +104,7 @@ export class Checkbox extends SizedMixin(CheckboxBase) {
     public emphasized = false;
 
     public static get styles(): CSSResultArray {
-        return [checkboxStyles, checkmarkSmallStyles, dashSmallStyles];
+        return [checkboxStyles];
     }
 
     protected render(): TemplateResult {
