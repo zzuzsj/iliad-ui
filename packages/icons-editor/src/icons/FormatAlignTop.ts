@@ -19,12 +19,14 @@ export const FormatAlignTopIcon = (): string | TemplateResult => {
             width="24"
             height="24"
             viewBox="0 0 24 24"
+            fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
             <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M20 2.25H4V3.75H20V2.25ZM12.5303 6.46967L16.5303 10.4697L15.4697 11.5303L12.75 8.81066V22H11.25V8.81066L8.53033 11.5303L7.46967 10.4697L11.4697 6.46967C11.7626 6.17678 12.2374 6.17678 12.5303 6.46967Z"
+                fill="#1F1F1F"
             />
         </svg>
     `;

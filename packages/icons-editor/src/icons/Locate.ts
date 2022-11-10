@@ -13,18 +13,20 @@ governing permissions and limitations under the License.
 
 import { tag as html, TemplateResult } from '../custom-tag.js';
 export { setCustomTemplateLiteralTag } from '../custom-tag.js';
-export const ArrowDownIcon = (): string | TemplateResult => {
+export const LocateIcon = (): string | TemplateResult => {
     return html`
         <svg
             width="24"
             height="24"
             viewBox="0 0 24 24"
+            fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
             <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
-                d="M12.5303 15.5303L17.5303 10.5303L16.4697 9.46967L12 13.9393L7.53033 9.46967L6.46968 10.5303L11.4697 15.5303C11.7626 15.8232 12.2374 15.8232 12.5303 15.5303Z"
+                d="M11.25 19.7142V22H12.75V19.7142C16.4315 19.3606 19.3607 16.4315 19.7142 12.75H22V11.25H19.7142C19.3606 7.56849 16.4315 4.63935 12.75 4.28582V2H11.25V4.28582C7.56851 4.63935 4.63937 7.56849 4.28583 11.25H2V12.75H4.28582C4.63933 16.4315 7.56849 19.3606 11.25 19.7142ZM11.25 18.2055C8.39772 17.8644 6.13563 15.6023 5.79453 12.75H9V11.25H5.79454C6.13566 8.39771 8.39774 6.13564 11.25 5.79454V9H12.75V5.79454C15.6023 6.13564 17.8643 8.39771 18.2055 11.25H15V12.75H18.2055C17.8644 15.6023 15.6023 17.8644 12.75 18.2055V15H11.25V18.2055Z"
+                fill="#1F1F1F"
             />
         </svg>
     `;

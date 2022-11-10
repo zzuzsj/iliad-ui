@@ -11,17 +11,13 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { html, TemplateResult } from '@iliad-ui/base';
-import { IconBase } from '@iliad-ui/icon';
-import { ArrowDownIcon } from '../icons/ArrowDown.js';
-import { setCustomTemplateLiteralTag } from '../custom-tag.js';
+import { iliadCustomElementsDefine } from '@iliad-ui/base';
+import { IconFigmaStatic } from '../src/elements/IconFigmaStatic.js';
 
-/**
- * @element sp-icon-editor-arrow-down
- */
-export class IconArrowDown extends IconBase {
-    protected render(): TemplateResult {
-        setCustomTemplateLiteralTag(html);
-        return ArrowDownIcon() as TemplateResult;
+iliadCustomElementsDefine('sp-icon-editor-figma-static', IconFigmaStatic);
+
+declare global {
+    interface HTMLElementTagNameMap {
+        'sp-icon-editor-figma-static': IconFigmaStatic;
     }
 }

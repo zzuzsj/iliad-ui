@@ -19,14 +19,15 @@ export const ArrowTriangleIcon = (): string | TemplateResult => {
             width="24"
             height="24"
             viewBox="0 0 24 24"
+            fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
             <g clip-path="url(#clip0_406_539)">
-                <path d="M10 17L16 12L10 7L10 17Z" />
+                <path d="M10 17L16 12L10 7L10 17Z" fill="#1F1F1F" />
             </g>
             <defs>
                 <clipPath id="clip0_406_539">
-                    <rect width="24" height="24" />
+                    <rect width="24" height="24" fill="white" />
                 </clipPath>
             </defs>
         </svg>

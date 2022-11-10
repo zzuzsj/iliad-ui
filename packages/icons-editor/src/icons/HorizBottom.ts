@@ -19,12 +19,14 @@ export const HorizBottomIcon = (): string | TemplateResult => {
             width="24"
             height="24"
             viewBox="0 0 24 24"
+            fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
             <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M4 20L4 4L10 4L10 20L4 20ZM14 20L14 10L20 10L20 20L14 20Z"
+                fill="#1F1F1F"
             />
         </svg>
     `;

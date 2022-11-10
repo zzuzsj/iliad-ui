@@ -11,13 +11,17 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEaseoutelastic } from '../src/elements/IconEaseoutelastic.js';
+import { html, TemplateResult } from '@iliad-ui/base';
+import { IconBase } from '@iliad-ui/icon';
+import { FigmaStaticIcon } from '../icons/FigmaStatic.js';
+import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
-iliadCustomElementsDefine('sp-icon-editor-easeoutelastic', IconEaseoutelastic);
-
-declare global {
-    interface HTMLElementTagNameMap {
-        'sp-icon-editor-easeoutelastic': IconEaseoutelastic;
+/**
+ * @element sp-icon-editor-figma-static
+ */
+export class IconFigmaStatic extends IconBase {
+    protected render(): TemplateResult {
+        setCustomTemplateLiteralTag(html);
+        return FigmaStaticIcon() as TemplateResult;
     }
 }

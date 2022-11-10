@@ -19,12 +19,14 @@ export const LinearIcon = (): string | TemplateResult => {
             width="24"
             height="24"
             viewBox="0 0 24 24"
+            fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
             <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M2.46967 20.4697L21.4697 1.46973L22.5303 2.53039L3.53033 21.5304L2.46967 20.4697Z"
+                fill="#1F1F1F"
             />
         </svg>
     `;

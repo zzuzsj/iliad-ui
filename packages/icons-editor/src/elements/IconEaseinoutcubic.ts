@@ -13,15 +13,15 @@ governing permissions and limitations under the License.
 
 import { html, TemplateResult } from '@iliad-ui/base';
 import { IconBase } from '@iliad-ui/icon';
-import { EaseinoutcubicIcon } from '../icons/Easeinoutcubic.js';
+import { EaseinoutCubicIcon } from '../icons/EaseinoutCubic.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-icon-editor-easeinoutcubic
+ * @element sp-icon-editor-easeinout-cubic
  */
-export class IconEaseinoutcubic extends IconBase {
+export class IconEaseinoutCubic extends IconBase {
     protected render(): TemplateResult {
         setCustomTemplateLiteralTag(html);
-        return EaseinoutcubicIcon() as TemplateResult;
+        return EaseinoutCubicIcon() as TemplateResult;
     }
 }

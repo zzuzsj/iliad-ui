@@ -19,12 +19,14 @@ export const CloseIcon = (): string | TemplateResult => {
             width="24"
             height="24"
             viewBox="0 0 24 24"
+            fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
             <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M10.9393 12L4.3986 5.45928L5.45926 4.39862L12 10.9394L18.5407 4.39862L19.6014 5.45928L13.0607 12L19.6014 18.5408L18.5407 19.6014L12 13.0607L5.45926 19.6014L4.3986 18.5408L10.9393 12Z"
+                fill="#1F1F1F"
             />
         </svg>
     `;

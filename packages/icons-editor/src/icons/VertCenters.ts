@@ -19,12 +19,14 @@ export const VertCentersIcon = (): string | TemplateResult => {
             width="24"
             height="24"
             viewBox="0 0 24 24"
+            fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
             <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M4 4H20V10H4V4ZM7 14H17V20H7V14Z"
+                fill="#1F1F1F"
             />
         </svg>
     `;

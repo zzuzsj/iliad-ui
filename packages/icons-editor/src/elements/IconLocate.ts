@@ -11,13 +11,17 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEaseoutquad } from '../src/elements/IconEaseoutquad.js';
+import { html, TemplateResult } from '@iliad-ui/base';
+import { IconBase } from '@iliad-ui/icon';
+import { LocateIcon } from '../icons/Locate.js';
+import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
-iliadCustomElementsDefine('sp-icon-editor-easeoutquad', IconEaseoutquad);
-
-declare global {
-    interface HTMLElementTagNameMap {
-        'sp-icon-editor-easeoutquad': IconEaseoutquad;
+/**
+ * @element sp-icon-editor-locate
+ */
+export class IconLocate extends IconBase {
+    protected render(): TemplateResult {
+        setCustomTemplateLiteralTag(html);
+        return LocateIcon() as TemplateResult;
     }
 }

@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEaseoutcubic } from '../src/elements/IconEaseoutcubic.js';
+import { IconEaseinCubic } from '../src/elements/IconEaseinCubic.js';
 
-iliadCustomElementsDefine('sp-icon-editor-easeoutcubic', IconEaseoutcubic);
+iliadCustomElementsDefine('sp-icon-editor-easein-cubic', IconEaseinCubic);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-easeoutcubic': IconEaseoutcubic;
+        'sp-icon-editor-easein-cubic': IconEaseinCubic;
     }
 }

@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconEaseoutbounce } from '../src/elements/IconEaseoutbounce.js';
+import { IconTag } from '../src/elements/IconTag.js';
 
-iliadCustomElementsDefine('sp-icon-editor-easeoutbounce', IconEaseoutbounce);
+iliadCustomElementsDefine('sp-icon-editor-tag', IconTag);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-easeoutbounce': IconEaseoutbounce;
+        'sp-icon-editor-tag': IconTag;
     }
 }
