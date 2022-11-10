@@ -43,6 +43,14 @@ export const generateIconComponentRegistrationTemplate = (icon) => {
     return `${CopyHeader}${content}`;
 };
 
+// 对svg内容做一些处理
+const handleSvgContent = (content) => {
+    // 去除svg的fill内容
+    const reg = /fill=".+?"/gi;
+    content = content.replace(reg, '');
+    return content;
+};
+
 // 生成到src/elements 输出为icon元素
 export const generateIconComponentSvgTemplate = (icon) => {
     const { name, svg } = icon;
@@ -50,7 +58,7 @@ export const generateIconComponentSvgTemplate = (icon) => {
     import {tag as html, TemplateResult} from '../custom-tag.js';
     export {setCustomTemplateLiteralTag} from '../custom-tag.js';
     export const ${name}Icon = (): string | TemplateResult => {
-        return html\`${svg}\`;
+        return html\`${handleSvgContent(svg)}\`;
     }
     `;
     return `${CopyHeader}${content}`;
