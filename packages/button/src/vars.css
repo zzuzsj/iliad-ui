@@ -416,28 +416,28 @@ governing permissions and limitations under the License.
         --spectrum-global-color-static-white
     );
     --spectrum-button-warning-m-background-color-hover: var(
-        --spectrum-global-color-red-400
+        --spectrum-global-color-red-600
     );
     --spectrum-button-warning-m-border-color-hover: var(
-        --spectrum-global-color-red-400
+        --spectrum-global-color-red-600
     );
     --spectrum-button-warning-m-text-color-hover: var(
         --spectrum-global-color-static-white
     );
     --spectrum-button-warning-m-background-color-key-focus: var(
-        --spectrum-global-color-red-400
+        --spectrum-global-color-red-500
     );
     --spectrum-button-warning-m-border-color-key-focus: var(
-        --spectrum-global-color-red-400
+        --spectrum-global-color-red-500
     );
     --spectrum-button-warning-m-text-color-key-focus: var(
         --spectrum-global-color-static-white
     );
     --spectrum-button-warning-m-background-color-down: var(
-        --spectrum-global-color-red-600
+        --spectrum-global-color-red-700
     );
     --spectrum-button-warning-m-border-color-down: var(
-        --spectrum-global-color-red-600
+        --spectrum-global-color-red-700
     );
     --spectrum-button-warning-m-text-color-down: var(
         --spectrum-global-color-static-white
