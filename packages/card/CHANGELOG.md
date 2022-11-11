@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.4](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/card@0.15.3...@iliad-ui/card@0.15.4) (2022-11-11)
+
+**Note:** Version bump only for package @iliad-ui/card
+
 ## [0.15.3](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/card@0.15.2...@iliad-ui/card@0.15.3) (2022-11-11)
 
 **Note:** Version bump only for package @iliad-ui/card

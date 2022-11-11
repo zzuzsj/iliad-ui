@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/card",
-    "version": "0.15.3",
+    "version": "0.15.4",
     "publishConfig": {
         "access": "public"
     },
@@ -46,7 +46,7 @@
     "dependencies": {
         "@iliad-ui/asset": "^0.9.2",
         "@iliad-ui/base": "^0.12.2",
-        "@iliad-ui/checkbox": "^0.16.0",
+        "@iliad-ui/checkbox": "^0.16.1",
         "@iliad-ui/icons-workflow": "^0.13.2",
         "@iliad-ui/quick-actions": "^0.9.2",
         "@iliad-ui/shared": "^0.19.2",
