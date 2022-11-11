@@ -142,7 +142,7 @@ client
                         return ensureDir(
                             join(options.outputDir, options.format)
                         ).then(() => {
-                            const content = handleSvgContent(response.body);
+                            const content = response.body.toString();
                             writeFile(
                                 join(
                                     options.outputDir,

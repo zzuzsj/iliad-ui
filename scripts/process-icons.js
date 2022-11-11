@@ -25,6 +25,9 @@ const handleSvgContent = (content) => {
     content = content.replace(reg, '');
     return content;
 };
+const handleSvgFilter = (name, content) => {
+    return name.includes('Static') ? content : handleSvgContent(content);
+};
 
 const processIcon = (srcPath, fd, scaleWidth, scaleHeight) => {
     // get icon name from filename
@@ -45,7 +48,8 @@ const processIcon = (srcPath, fd, scaleWidth, scaleHeight) => {
     // append the content to the target file handle , remove fill info
     fs.writeSync(
         fd,
-        `<symbol id="spectrum-icon-${iconName}" viewBox="${viewBox}">${handleSvgContent(
+        `<symbol id="spectrum-icon-${iconName}" viewBox="${viewBox}">${handleSvgFilter(
+            iconName,
             svgContent
         )}</symbol>`
     );
