@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/bundle",
-    "version": "0.27.7",
+    "version": "0.27.8",
     "publishConfig": {
         "access": "public"
     },
@@ -71,7 +71,7 @@
         "@iliad-ui/field-group": "^0.8.2",
         "@iliad-ui/field-label": "^0.10.2",
         "@iliad-ui/icon": "^0.17.2",
-        "@iliad-ui/icons": "^0.23.0",
+        "@iliad-ui/icons": "^0.23.1",
         "@iliad-ui/icons-editor": "^0.12.0",
         "@iliad-ui/icons-ui": "^0.13.2",
         "@iliad-ui/icons-workflow": "^0.13.2",
