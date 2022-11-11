@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/search",
-    "version": "0.13.2",
+    "version": "0.13.3",
     "publishConfig": {
         "access": "public"
     },
@@ -45,7 +45,7 @@
     ],
     "dependencies": {
         "@iliad-ui/base": "^0.12.2",
-        "@iliad-ui/button": "^0.23.2",
+        "@iliad-ui/button": "^0.24.0",
         "@iliad-ui/icon": "^0.17.2",
         "@iliad-ui/icons-workflow": "^0.13.2",
         "@iliad-ui/textfield": "^0.15.2",

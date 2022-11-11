@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.4](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/react@0.20.3...@iliad-ui/react@0.20.4) (2022-11-11)
+
+**Note:** Version bump only for package @iliad-ui/react
+
 ## [0.20.3](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/react@0.20.2...@iliad-ui/react@0.20.3) (2022-10-26)
 
 **Note:** Version bump only for package @iliad-ui/react

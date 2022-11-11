@@ -1,6 +1,6 @@
 {
     "name": "example-project-webpack",
-    "version": "1.6.6",
+    "version": "1.6.7",
     "private": true,
     "description": "An example project that uses the web components and gives an example of how to bundle them minimally with webpack.",
     "license": "Apache-2.0",
@@ -12,12 +12,12 @@
         "serve": "webpack-dev-server"
     },
     "dependencies": {
-        "@iliad-ui/button": "^0.23.2",
+        "@iliad-ui/button": "^0.24.0",
         "@iliad-ui/field-label": "^0.10.2",
-        "@iliad-ui/menu": "^0.17.2",
-        "@iliad-ui/picker": "^0.14.4",
-        "@iliad-ui/react": "^0.20.3",
-        "@iliad-ui/styles": "^0.17.2",
+        "@iliad-ui/menu": "^0.17.3",
+        "@iliad-ui/picker": "^0.14.5",
+        "@iliad-ui/react": "^0.20.4",
+        "@iliad-ui/styles": "^0.18.0",
         "lit": "^2.0.0"
     },
     "devDependencies": {

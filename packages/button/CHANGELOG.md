@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.24.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/button@0.23.2...@iliad-ui/button@0.24.0) (2022-11-11)
+
+### Features
+
+-   cta 样式颜色修改 ([a5a6c57](https://github.com/gaoding-inc/iliad-ui/commit/a5a6c57d724798f341b9efca3b4eb15f19a3777c))
+
 ## [0.23.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/button@0.22.7...@iliad-ui/button@0.23.2) (2022-08-05)
 
 **Note:** Version bump only for package @iliad-ui/button

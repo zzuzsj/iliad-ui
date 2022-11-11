@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.18.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/styles@0.17.2...@iliad-ui/styles@0.18.0) (2022-11-11)
+
+### Features
+
+-   checkbox 样式更改 ([34b6303](https://github.com/gaoding-inc/iliad-ui/commit/34b6303b9c3b543a8f2f33a8cac57554cf947f2e))
+-   cta 样式颜色修改 ([a5a6c57](https://github.com/gaoding-inc/iliad-ui/commit/a5a6c57d724798f341b9efca3b4eb15f19a3777c))
+
 ## [0.17.2](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/styles@0.17.1...@iliad-ui/styles@0.17.2) (2022-08-05)
 
 **Note:** Version bump only for package @iliad-ui/styles

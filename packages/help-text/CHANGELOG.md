@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/gaoding-inc/iliad-ui/compare/@iliad-ui/help-text@0.2.0...@iliad-ui/help-text@0.3.0) (2022-11-11)
+
+### Features
+
+-   checkbox 样式更改 ([34b6303](https://github.com/gaoding-inc/iliad-ui/commit/34b6303b9c3b543a8f2f33a8cac57554cf947f2e))
+
 # 0.2.0 (2022-08-05)
 
 ### Features
