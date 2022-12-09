@@ -68,6 +68,7 @@ export { EaseoutElasticIcon } from './icons/EaseoutElastic.js';
 export { EaseoutQuadIcon } from './icons/EaseoutQuad.js';
 export { EditIcon } from './icons/Edit.js';
 export { EffectIcon } from './icons/Effect.js';
+export { ErrorFillIcon } from './icons/ErrorFill.js';
 export { EventIcon } from './icons/Event.js';
 export { EyeIcon } from './icons/Eye.js';
 export { EyeDisplayIcon } from './icons/EyeDisplay.js';
