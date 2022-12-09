@@ -12,12 +12,12 @@ governing permissions and limitations under the License.
 */
 
 import { iliadCustomElementsDefine } from '@iliad-ui/base';
-import { IconLoadingWhite } from '../src/elements/IconLoadingWhite.js';
+import { IconLoadingStatic } from '../src/elements/IconLoadingStatic.js';
 
-iliadCustomElementsDefine('sp-icon-editor-loading-white', IconLoadingWhite);
+iliadCustomElementsDefine('sp-icon-editor-loading-static', IconLoadingStatic);
 
 declare global {
     interface HTMLElementTagNameMap {
-        'sp-icon-editor-loading-white': IconLoadingWhite;
+        'sp-icon-editor-loading-static': IconLoadingStatic;
     }
 }

@@ -13,15 +13,15 @@ governing permissions and limitations under the License.
 
 import { html, TemplateResult } from '@iliad-ui/base';
 import { IconBase } from '@iliad-ui/icon';
-import { LoadingIcon } from '../icons/Loading.js';
+import { LoadingWhiteStaticIcon } from '../icons/LoadingWhiteStatic.js';
 import { setCustomTemplateLiteralTag } from '../custom-tag.js';
 
 /**
- * @element sp-icon-editor-loading
+ * @element sp-icon-editor-loading-white-static
  */
-export class IconLoading extends IconBase {
+export class IconLoadingWhiteStatic extends IconBase {
     protected render(): TemplateResult {
         setCustomTemplateLiteralTag(html);
-        return LoadingIcon() as TemplateResult;
+        return LoadingWhiteStaticIcon() as TemplateResult;
     }
 }
