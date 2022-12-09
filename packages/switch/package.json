@@ -1,6 +1,6 @@
 {
     "name": "@iliad-ui/switch",
-    "version": "0.12.5",
+    "version": "0.12.6",
     "publishConfig": {
         "access": "public"
     },
@@ -45,7 +45,7 @@
     ],
     "dependencies": {
         "@iliad-ui/base": "^0.12.2",
-        "@iliad-ui/checkbox": "^0.16.2",
+        "@iliad-ui/checkbox": "^0.16.3",
         "tslib": "^2.0.0"
     },
     "devDependencies": {
